@@ -1,0 +1,56 @@
+# from WinEdt and GitHub
+# ----------------------
+*.aa?
+*.acn
+*.acr
+*.alg
+*.aux
+*.bak
+*.blg
+*.dvi
+*.fdb_latexmk
+*.glg
+*.glo
+*.gls
+*.idx
+*.ilg
+*.ind
+*.ist
+*.lof
+*.log
+*.lot
+*.maf
+*.mtc
+*.mtc0
+*.nav
+*.nlo
+*.out
+*.pdfsync
+*.prj
+*.ps
+*.snm
+*.synctex*
+*.tdo
+*.tmp
+*.toc
+*.vrb
+*.xdy
+
+# le cache tikz
+# ----------------------
+# plus nécéssaire car un .gitignore par répértoire
+# *tikzcach*
+
+# les resultats pdf
+# ----------------------
+*.pdf
+
+# Autres
+# ----------------------
+*.zip
+*.sublime*
+*.auxlock
+*.ptc
+*test*.tex
+#vim
+*~
