@@ -1,0 +1,85 @@
+
+
+\begin{questionmult}{1234}
+
+%Author: exo7
+
+Combien font \(2^{10}\) ?
+
+\begin{choices}
+    \wrongchoice{1000}
+    \correctchoice{1024}
+    \wrongchoice{2048}
+    \wrongchoice{\(\int 10^{10}\)}
+\end{choices}
+\end{questionmult}
+
+
+\begin{questionmult}{jsfwvj}
+
+%Author: exo8
+
+Sachant que \(2+2=2\times 2\), 
+est-ce que \(3+3 = 3\times 3\) ?
+
+Répondez par vrai ou faux !
+
+\begin{choices}
+    \wrongchoice{Vrai.}
+    \correctchoice{Faux.}
+\end{choices}
+\end{questionmult}
+
+
+\begin{questionmult}{1235!1}
+
+%Author: exo7
+
+\textbf{Ceci est le \(x^{10}\) titre.} Test de question avec titre.
+
+\begin{choices}
+    \wrongchoice{Coucou 1.}
+    \correctchoice{Coucou 2.}
+\end{choices}
+\end{questionmult}
+
+
+\begin{questionmult}{1235!2}
+
+%Author: toto
+
+%\tags{L1, facile, test.}
+
+\textbf{Autre question très \(\int\).} Test de question avec titre et je ne sais pas. Et avec tags. Variante de la question précédente.
+
+\begin{choices}[o]
+    \wrongchoice{Coucou \(x^{A}\).}
+    \correctchoice{Coucou \(x^{B}\).}
+\end{choices}
+\end{questionmult}
+
+
+\begin{question}{lille.L1.integrale}
+
+%Author: zorro
+
+%Classification: 127.01,132.08
+
+Test de question avec explications et classification, type de questionnaire. [Ceci n'est pas un titre]
+
+Ceci est une equation :
+\[\sum_{i=1}^n \frac{i}{n}=\int\]
+
+Une image (toujours en fin de d'énoncé) : 
+
+\begin{center}
+\includegraphics[height=3cm]{exemple-image}
+\end{center}
+
+\begin{choiceshoriz}
+    \wrongchoice{Pas coucou \(\frac{y}{x}\).}
+    \correctchoice{Coucou \(\frac{x}{y}\).}
+\end{choiceshoriz}
+\explain{C'était pourtant pas si dur...
+}
+\end{question}

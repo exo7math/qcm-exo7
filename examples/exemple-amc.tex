@@ -1,0 +1,69 @@
+\documentclass[a4paper]{article}
+
+\usepackage[utf8x]{inputenc}    
+\usepackage[T1]{fontenc}
+
+\usepackage{automultiplechoice}    
+
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Ajout Arnaud
+\newcommand{\tags}[1]{\emph{Tags:} #1}
+\newcommand{\explain}[1]{\emph{Explanations:} #1}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+
+\begin{document}
+
+\exemplaire{10}{    
+
+%%% debut de l'en-tête des copies :    
+
+\noindent{\bf QCM  \hfill TEST}
+
+\vspace*{.5cm}
+\begin{minipage}{.4\linewidth}
+\centering\large\bf Test\\ Examen du 01/01/2008\end{minipage}
+\champnom{\fbox{    
+                \begin{minipage}{.5\linewidth}
+                  Nom et prénom :
+
+                  \vspace*{.5cm}\dotfill
+                  \vspace*{1mm}
+                \end{minipage}
+         }}
+
+\begin{center}\em
+Durée : 10 minutes.
+
+  Aucun document n'est autorisé.
+  L'usage de la calculatrice est interdit.
+
+  Les questions faisant apparaître le symbole \multiSymbole{} peuvent
+  présenter zéro, une ou plusieurs bonnes réponses. Les autres ont
+  une unique bonne réponse.
+
+  Des points négatifs pourront être affectés à de \emph{très
+    mauvaises} réponses.
+\end{center}
+\vspace{1ex}
+
+%%% fin de l'en-tête
+
+
+
+
+
+\input{export-exemple-latex.amc}
+
+\clearpage    
+
+}   
+
+\end{document}

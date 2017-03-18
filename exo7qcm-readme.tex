@@ -1,0 +1,288 @@
+ %%%%%%%%%%%%%%%%%% PREAMBULE %%%%%%%%%%%%%%%%%%
+
+\documentclass[12pt,a4paper]{article}
+
+\usepackage{exo7qcm}
+
+
+\begin{document}
+
+ 
+ 
+%%%%%%%%%%%%%%%%%% ENTETE %%%%%%%%%%%%%%%%%%
+
+\LogoExoSept{2}
+
+%\kern-2em
+\hfill\textsf{Ann\'ee 2017}
+
+\vspace*{0.5ex}
+\hrule\vspace*{1.5ex} 
+\hfil\textsf{\textbf{\Large QCM de mathématiques}}
+\vspace*{1ex} \hrule 
+\vspace*{5ex} 
+
+
+Objectif : aider à la conception de nouvelles questions de type qcm.
+
+\bigskip
+
+Voici une courte description de la structure d'une question en \LaTeX\ et de son passage vers d'autres formats. Le but est d'aider à la création d'une base de données des qcm de maths en essayant de définir une structure commune, et de faciliter l'exportation vers différents formats (papier ou web).
+
+\bigskip
+
+Ce qui n'est \emph{pas} le but ici : gérer de beaux questionnaires papiers (c'est le but ACM), ni des questionnaires web (moodle et autres le font). De plus, aucun élément de barème n'apparaît dans l'énoncé des questions/réponses. 
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Usage basique}
+
+Une question à choix multiple (QCM) comporte une question et une liste (finie !) de réponses possibles.
+
+\begin{center}
+\begin{minipage}{0.8\textwidth}
+\begin{question}
+Combien font $2^{10}$ ?
+\begin{answers}
+    \bad{1000}
+    \good{1024}
+    \bad{2048}
+\end{answers}
+\end{question}
+\end{minipage}
+\end{center}
+
+Qui se code par :
+\begin{center}
+\begin{minipage}{0.8\textwidth}
+\begin{verbatim}
+\begin{question}
+Combien font $2^{10}$ ?
+\begin{answers}
+    \bad{1000}
+    \good{1024}
+    \bad{2048}
+\end{answers}
+\end{question}
+\end{verbatim}
+\end{minipage}
+\end{center}
+
+
+Usage possible prévu  :
+\begin{itemize}
+  \item Export vers le format structuré \texttt{yaml}.
+  \item Export vers AMC.
+  \item (À terme : ) Export vers des formats web : xml, moodle, scenarii,...
+\end{itemize}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Options}
+
+\textbf{Titre.} Exemple: \verb|\begin{question}[Théorème de Thalès]|
+
+(Il est peut être déconseillé d'utiliser des maths dans le titre, car les maths ne sont pas supporter après exportation par certaines plateforme (ex. scenari).)
+
+\bigskip
+\textbf{Identifiant.} Exemple \verb|\qid{1234}| ou \verb|\qid{lille1.L2.integrale.33}|. Doit être unique ! 
+Les jeux de caractères sont \texttt{a...z}, \texttt{A...Z}, \texttt{0...9} et les séparateurs \texttt{"."} et \texttt{"!"}. Le point \texttt{"."} sépare des mots clés. 
+Par indiquer que deux questions testent la compréhension de la même chose (et peuvent être interchangée de façon à avoir des versions différentes pour chaque étudiant) on ajoute à la fin la balise double-point \texttt{"!"}.
+Par exemple \verb|\qid{derivee.exp!1}| (demande la dérivée de $x \mapsto e^{x^2-8}$)
+et \verb|\qid{derivee.exp!2}| (demande la dérivée de $x \mapsto e^{3x^3+1}$).
+
+
+
+
+%À terme chaque question devrait avoir un numéro unique, mais sera attribué automatiquement.
+
+\bigskip
+\textbf{Auteurs.} Exemple \verb|\qauthor{exo7}|. 
+
+Nom de l'auteur.
+
+\bigskip
+\textbf{Classification.} Exemple \verb|\qclassification{127.01,132.08}|. 
+
+Fait référence aux catégories d'Exo7.
+
+\bigskip
+\textbf{Tags.} Exemple \verb|\qtags{facile, L1, temps=2}|. Non normalisé. Permet(tra) de personnaliser, d'automatiser certaines tâches ou de retrouver des questions. À définir ultérieurement.
+
+
+
+\bigskip
+\textbf{Garder l'ordre des réponses.} (Non activé par défaut.) Ajouter la commande : \verb|\qkeeporder|. 
+
+Utile par exemple lorsque les réponses sont dans un ordre naturel et qu'on ne veut pas qu'il soit changer. Par exemple : "Quelle est la date de la révolution française ? 1689, 1789, 1889, 1989 ?" 
+
+\bigskip
+\textbf{Case "Je ne sais pas".} (Non activé par défaut.) Ajouter la commande : \verb|\qidontknow|.
+
+Rajoute une case supplémentaire à la fin : "Je ne sais pas".
+
+
+\bigskip
+\textbf{Réponses sur une seule ligne.} (Non activé par défaut.) Ajouter la commande : \verb|\qoneline|.
+
+Cela donne :
+\begin{center}
+\begin{minipage}{0.8\textwidth}
+\begin{question}
+\qoneline
+Combien font $2^{10}$ ?
+\begin{answers}
+    \bad{1000}
+    \good{1024}
+    \bad{2048}
+\end{answers}
+\end{question}
+\end{minipage}
+\end{center}
+
+\bigskip
+\textbf{Explications.} Ajouter des explications après les réponses à l'aide de
+\verb|\begin{explanations}| ... \verb|\end{explanations}|
+
+\bigskip
+\textbf{Images.} Avec la commande \verb|\qimage{monfichier}|, qui est exactement la commande \verb|includegraphics|, avec possibilité d'utiliser les options usuelles, par exemple \verb|\qimage[height=3cm]{monfichier}|.
+Dans la philosophie actuelle, c'est une seule image par question, et en plus l'image est à la fin de l'énoncé. (Pas d'iamge dans les réponses).
+
+\bigskip
+\textbf{Commentaires.} Vous pouvez insérer des commentaires dans votre fichier \LaTeX, mais ils ne seront pas exportés. 
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Exemple sophistiqué}
+
+\begin{center}
+\begin{minipage}{0.8\textwidth}
+\begin{question}[Somme des entiers]
+\qid{5555}
+\qauthor{exo7}
+\qclassification{127.01,132.08}
+\qidontknow
+
+Combien vaut $\sum_{k=2}^{n} k$ ?
+
+\begin{answers}
+    \bad{$\frac{n(n+1)}{2}$.}
+    
+    \bad{$\frac{n(n-1)}{2}$.} 
+    
+    \good{$\frac{(n+2)(n-1)}{2}$.}        
+\end{answers}
+
+\begin{explanations}
+Attention, la somme démarre à $2$ et pas à $1$ !
+\end{explanations}
+
+\end{question}
+\end{minipage}
+\end{center}
+
+\begin{center}
+\begin{minipage}{0.8\textwidth}
+\begin{verbatim}
+\begin{question}[Somme des entiers]
+\qid{5555}
+\qauthor{exo7}
+\qclassification{127.01,132.08}
+\qidontknow
+
+Combien vaut $\sum_{k=2}^{n} k$ ?
+
+\begin{answers}
+    \bad{$\frac{n(n+1)}{2}$.}
+    
+    \bad{$\frac{n(n-1)}{2}$.} 
+    
+    \good{$\frac{(n+2)(n-1)}{2}$.}        
+
+\end{answers}
+
+\begin{explanations}
+Attention, la somme démarre à $2$ et pas à $1$ !
+\end{explanations}
+
+\end{question}
+\end{verbatim}
+\end{minipage}
+\end{center}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Type de question/réponses}
+
+Il est possible de préciser le type de réponse(s) attendue(s) par l'option \verb|\qtype{...}|.
+
+\begin{itemize}
+  \item  \verb|onetoall|. \textbf{Option par défaut.} Une ou plusieurs réponses (voir toutes) sont bonnes.
+  \item \verb|onlyone|. Une unique réponse est vraie
+  \item \verb|zerotoall|. Zéro ou plusieurs réponses (voir toutes) sont bonnes. (Avis personnel : à déconseiller !)
+  \item \verb|trueflase|. Seulement deux choix possibles : vrai ou faux (compatible avec une troisième choix, fourni par l'option \verb|qidontknow|).
+  \item \verb|open|. Question ouverte.
+\end{itemize}  
+  
+
+
+
+
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Conversion}
+
+
+Le format \emph{human-friendly} par défaut est donc la structure \LaTeX\ décrite ci-dessus. Cependant ce n'est pas une format \emph{computer-friendly}. Le format choisi pour une question facilement exploitable par un ordinateur est \texttt{yaml}.
+
+Voici le code \texttt{yaml} d'une question :
+\begin{center}
+\begin{minipage}{0.8\textwidth}
+\begin{verbatim}
+---
+question: |
+        Combien font \(2^{10}\) ?
+
+answers: 
+    - value: |
+        1000
+      correct: False
+
+    - value: |
+        1024
+      correct: True
+
+    - value: |
+        2048
+      correct: False
+\end{verbatim}
+\end{minipage}
+\end{center}
+
+
+Depuis le format \texttt{yaml}, il est facile de convertir une question en à peu près n'importe quoi :
+
+$$\text{\LaTeX} \longleftrightarrow \text{\texttt{yaml}} \longrightarrow \text{amc, xml, moodle,...}$$
+
+\begin{itemize}
+  \item Conversion \LaTeX\ vers \texttt{yaml} : \\
+  \centerline{\texttt{python3 latextoyaml.py toto.tex}}
+  
+   \item Conversion \texttt{yaml} vers \LaTeX\ : \\
+   \centerline{\texttt{python3 yamltoall.py toto.yaml newname.tex}} 
+   
+   Ou plus simplement \texttt{python3 yamltoall.py toto.yaml}
+  
+   \item Conversion \texttt{yaml} vers autre, exemple avec amc : \\
+   \centerline{\texttt{python3 yamltoall.py -f amc toto.yaml newname.amc}} 
+   Ou plus simplement \texttt{python3 yamltoall.py -f amc yamltoall.py} 
+   
+    \item Conversion \texttt{yaml} vers \texttt{moodle} : 
+    \texttt{yamltoall.py -f moodle yamltoall.py}, etc. 
+    
+\end{itemize}
+
+\end{document}

@@ -1,0 +1,128 @@
+---
+id: 1234
+
+author: exo7
+
+
+question: |
+        Combien font \(2^{10}\) ?
+
+answers: 
+    - value: |
+        1000
+      correct: False
+
+    - value: |
+        1024
+      correct: True
+
+    - value: |
+        2048
+      correct: False
+
+    - value: |
+        \(\int 10^{10}\)
+      correct: False
+
+---
+author: exo8
+
+
+question: |
+        Sachant que \(2+2=2\times 2\), 
+        est-ce que \(3+3 = 3\times 3\) ?
+        
+        Répondez par vrai ou faux !
+
+answers: 
+    - value: |
+        Vrai.
+      correct: False
+
+    - value: |
+        Faux.
+      correct: True
+
+---
+id: 1235!1
+
+title: Ceci est le \(x^{10}\) titre
+
+author: exo7
+
+
+question: |
+        Test de question avec titre.
+
+answers: 
+    - value: |
+        Coucou 1.
+      correct: False
+
+    - value: |
+        Coucou 2.
+      correct: True
+
+---
+id: 1235!2
+
+title:  Autre question très \(\int\)
+
+author: toto
+
+tags: L1, facile, test
+
+keeporder: True
+
+idontknow: True
+
+
+question: |
+        Test de question avec titre et je ne sais pas. Et avec tags. Variante de la question précédente.
+
+answers: 
+    - value: |
+        Coucou \(x^{A}\).
+      correct: False
+
+    - value: |
+        Coucou \(x^{B}\).
+      correct: True
+
+---
+id: lille.L1.integrale
+
+author: zorro
+
+classification: 127.01,132.08
+
+type: onlyone
+
+oneline: True
+
+image: 
+    - file: exemple-image
+      options: height=3cm
+
+question: |
+        Test de question avec explications et classification, type de questionnaire. [Ceci n'est pas un titre]
+        
+        Ceci est une equation :
+        \[\sum_{i=1}^n \frac{i}{n}=\int\]
+        
+        Une image (toujours en fin de d'énoncé) : 
+        
+        
+
+answers: 
+    - value: |
+        Pas coucou \(\frac{y}{x}\).
+      correct: False
+
+    - value: |
+        Coucou \(\frac{x}{y}\).
+      correct: True
+
+explanations: |
+        C'était pourtant pas si dur...
+

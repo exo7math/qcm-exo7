@@ -1,0 +1,137 @@
+
+\usepackage{amsfonts,amsmath,amssymb,amsthm}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[francais]{babel}
+\usepackage{tikz}
+\usepackage{graphicx}
+
+% Format de la page
+\usepackage[a4paper,
+  nomarginpar,
+  margin = 2.5cm,
+  %top=0.5in,
+  %right=0.8in, left=0.8in, top=0.5in, bottom=0.7in,
+  bindingoffset=0cm,
+  headsep=21pt, heightrounded,
+%  showframe,
+]{geometry}
+
+
+
+%----- Ensembles : entiers, reels, complexes -----
+\newcommand{\Nn}{\mathbb{N}} \newcommand{\N}{\mathbb{N}}
+\newcommand{\Zz}{\mathbb{Z}} \newcommand{\Z}{\mathbb{Z}}
+\newcommand{\Qq}{\mathbb{Q}} \newcommand{\Q}{\mathbb{Q}}
+\newcommand{\Rr}{\mathbb{R}} \newcommand{\R}{\mathbb{R}}
+\newcommand{\Cc}{\mathbb{C}} \newcommand{\C}{\mathbb{C}}
+\newcommand{\Kk}{\mathbb{K}} \newcommand{\K}{\mathbb{K}}
+
+%----- Modifications de symboles -----
+\renewcommand{\epsilon}{\varepsilon}
+\renewcommand{\Re}{\mathop{\mathrm{Re}}\nolimits}
+\renewcommand{\Im}{\mathop{\mathrm{Im}}\nolimits}
+\newcommand{\llbracket}{\left[\kern-0.15em\left[}
+\newcommand{\rrbracket}{\right]\kern-0.15em\right]}
+\renewcommand{\ge}{\geqslant} \renewcommand{\geq}{\geqslant}
+\renewcommand{\le}{\leqslant} \renewcommand{\leq}{\leqslant}
+
+%----- Fonctions usuelles -----
+\newcommand{\ch}{\mathop{\mathrm{ch}}\nolimits}
+\newcommand{\sh}{\mathop{\mathrm{sh}}\nolimits}
+\renewcommand{\tanh}{\mathop{\mathrm{th}}\nolimits}
+\newcommand{\cotan}{\mathop{\mathrm{cotan}}\nolimits}
+\newcommand{\Arcsin}{\mathop{\mathrm{arcsin}}\nolimits}
+\newcommand{\Arccos}{\mathop{\mathrm{arccos}}\nolimits}
+\newcommand{\Arctan}{\mathop{\mathrm{arctan}}\nolimits}
+\newcommand{\Argsh}{\mathop{\mathrm{argsh}}\nolimits}
+\newcommand{\Argch}{\mathop{\mathrm{argch}}\nolimits}
+\newcommand{\Argth}{\mathop{\mathrm{argth}}\nolimits}
+\newcommand{\pgcd}{\mathop{\mathrm{pgcd}}\nolimits} 
+
+
+
+
+
+%----- Presentation ------
+\setlength{\parindent}{0cm}
+
+
+% --- Logo Exo7
+\definecolor{myred}{rgb}{0.93,0.26,0}
+\definecolor{myorange}{rgb}{0.97,0.58,0}
+\definecolor{myyellow}{rgb}{1,0.86,0}
+
+\newcommand{\LogoExoSept}[1]{  % input : échelle
+{\usefont{U}{cmss}{bx}{n}
+\begin{tikzpicture}[scale=0.1*#1,transform shape]
+  \fill[color=myorange] (0,0)--(4,0)--(4,-4)--(0,-4)--cycle;
+  \fill[color=myred] (0,0)--(0,3)--(-3,3)--(-3,0)--cycle;
+  \fill[color=myyellow] (4,0)--(7,4)--(3,7)--(0,3)--cycle;
+  \node[scale=5] at (3.5,3.5) {Exo7};
+\end{tikzpicture}}
+}
+
+%----- Commandes supplementaires ------
+\newcommand{\Card}{\mathop{\text{Card}}}
+\newcommand{\ppcm}{\mathop{\text{ppcm}}}
+\newcommand{\val}{\mathop{\text{val}}}
+%\newcommand{\pgcd}{\mathop{\text{pgcd}}}
+
+
+
+% Packages pour qcm
+\usepackage{import}
+\usepackage{ifthen}
+\usepackage[inline]{enumitem}
+
+
+%----- Structure des qcm ------
+\theoremstyle{definition}
+\newtheorem{ques}{Question}
+
+\newenvironment{question}{
+\def\myqid{}
+\def\myqtype{}
+\def\myqauthor{}
+\def\myqtags{}
+\def\myqclassification{}
+\def\myqkeeporder{0}
+\def\myqoneline{0}
+\def\myqidontknow{0}
+\renewcommand{\labelitemi}{\large$\square$}
+\begin{ques}
+}{\end{ques}}
+
+\newenvironment{answers}{
+\ifthenelse{\equal{\myqoneline}{0}}{\begin{itemize}}{\begin{center}\begin{itemize*}}
+}
+{
+\ifthenelse{\equal{\myqidontknow}{0}}{}{
+\item I don't know
+}
+\ifthenelse{\equal{\myqoneline}{0}}{\end{itemize}}{\end{itemize*}\end{center}}
+\footnotesize\texttt{\hfill%
+\ifthenelse{\equal{\myqid}{}}{}{[id: \myqid]\quad}
+\ifthenelse{\equal{\myqtype}{}}{}{[type: \myqtype]\quad}
+\ifthenelse{\equal{\myqauthor}{}}{}{[author: \myqauthor]\quad}
+\ifthenelse{\equal{\myqclassification}{}}{}{[class: \myqclassification]\quad}
+\ifthenelse{\equal{\myqtags}{}}{}{[tags: \myqtags]\quad}
+}
+}    
+\newenvironment{explanations}{\emph{Explanations:}}{}   
+\newcommand{\good}[1]{\item~[Vrai] #1}
+\newcommand{\bad}[1]{\item~[Faux] #1}
+\newcommand{\qid}[1]{\def\myqid{#1}}
+\newcommand{\qtype}[1]{\def\myqtype{#1}}
+\newcommand{\qauthor}[1]{\def\myqauthor{#1}}
+\newcommand{\qtags}[1]{\def\myqtags{#1}}
+\newcommand{\qclassification}[1]{\def\myqclassification{#1}}
+\newcommand{\qkeeporder}{\def\myqkeeporder{1}}
+\newcommand{\qoneline}{\def\myqoneline{1}}
+\newcommand{\qidontknow}{\def\myqidontknow{1}}
+%\newcommand{\qtitle}[1]{\def\myqtitlte{#1}}
+
+%\newcommand{\qimage}[2][]{\ifthenelse{\equal{#2}{}}{\includegraphics{#2}}{\includegraphics[#1]{#2}}}
+\newcommand{\qimage}[2][]{\begin{center}\includegraphics[#1]{#2}\end{center}}
+

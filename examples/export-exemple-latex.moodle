@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+
+
+<question type="multichoice">
+<name><text> </text></name>
+<questiontext format="html">
+<text><![CDATA[<p>
+Combien font \(2^{10}\) ?
+</p>]]></text>
+</questiontext>
+<defaultgrade>1.0</defaultgrade>
+<shuffleanswers>1</shuffleanswers>
+<answernumbering>abc</answernumbering>
+<answer fraction="-33.33333" format="html"><text><![CDATA[<p>
+1000
+</p>]]></text></answer>
+<answer fraction="100.00000" format="html"><text><![CDATA[<p>
+1024
+</p>]]></text></answer>
+<answer fraction="-33.33333" format="html"><text><![CDATA[<p>
+2048
+</p>]]></text></answer>
+<answer fraction="-33.33333" format="html"><text><![CDATA[<p>
+\(\int 10^{10}\)
+</p>]]></text></answer>
+</question>
+
+<question type="multichoice">
+<name><text> </text></name>
+<questiontext format="html">
+<text><![CDATA[<p>
+Sachant que \(2+2=2\times 2\), 
+est-ce que \(3+3 = 3\times 3\) ?
+
+Répondez par vrai ou faux !
+</p>]]></text>
+</questiontext>
+<defaultgrade>1.0</defaultgrade>
+<shuffleanswers>1</shuffleanswers>
+<answernumbering>abc</answernumbering>
+<answer fraction="-100.00000" format="html"><text><![CDATA[<p>
+Vrai.
+</p>]]></text></answer>
+<answer fraction="100.00000" format="html"><text><![CDATA[<p>
+Faux.
+</p>]]></text></answer>
+</question>
+
+<question type="multichoice">
+<name><text>Ceci est le \(x^{10}\) titre</text></name>
+<questiontext format="html">
+<text><![CDATA[<p>
+Test de question avec titre.
+</p>]]></text>
+</questiontext>
+<defaultgrade>1.0</defaultgrade>
+<shuffleanswers>1</shuffleanswers>
+<answernumbering>abc</answernumbering>
+<answer fraction="-100.00000" format="html"><text><![CDATA[<p>
+Coucou 1.
+</p>]]></text></answer>
+<answer fraction="100.00000" format="html"><text><![CDATA[<p>
+Coucou 2.
+</p>]]></text></answer>
+</question>
+
+<question type="multichoice">
+<name><text>Autre question très \(\int\)</text></name>
+<questiontext format="html">
+<text><![CDATA[<p>
+Test de question avec titre et je ne sais pas. Et avec tags. Variante de la question précédente.
+</p>]]></text>
+</questiontext>
+<defaultgrade>1.0</defaultgrade>
+<shuffleanswers>0</shuffleanswers>
+<answernumbering>abc</answernumbering>
+<answer fraction="-100.00000" format="html"><text><![CDATA[<p>
+Coucou \(x^{A}\).
+</p>]]></text></answer>
+<answer fraction="100.00000" format="html"><text><![CDATA[<p>
+Coucou \(x^{B}\).
+</p>]]></text></answer>
+</question>
+
+<question type="multichoice">
+<name><text> </text></name>
+<questiontext format="html">
+<text><![CDATA[<p>
+Test de question avec explications et classification, type de questionnaire. [Ceci n'est pas un titre]
+
+Ceci est une equation :
+\[\sum_{i=1}^n \frac{i}{n}=\int\]
+
+Une image (toujours en fin de d'énoncé) : 
+</p>]]></text>
+</questiontext>
+<defaultgrade>1.0</defaultgrade>
+<generalfeedback format="html"><text><![CDATA[<p>
+C'était pourtant pas si dur...
+</p>]]></text></generalfeedback>
+<shuffleanswers>1</shuffleanswers>
+<answernumbering>abc</answernumbering>
+<answer fraction="-100.00000" format="html"><text><![CDATA[<p>
+Pas coucou \(\frac{y}{x}\).
+</p>]]></text></answer>
+<answer fraction="100.00000" format="html"><text><![CDATA[<p>
+Coucou \(\frac{x}{y}\).
+</p>]]></text></answer>
+</question>
+
+</quiz>
