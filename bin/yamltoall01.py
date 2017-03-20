@@ -13,6 +13,7 @@ import os
 import string
 import random
 import re
+import html
 
 #--------------------------------------------------
 #--------------------------------------------------
@@ -328,9 +329,11 @@ if output_format == 'moodle':
 
 
 def f2sxmlcleanup(data):
+    data = html.escape(data)
     data = re.sub('\$(.*?)\$', '<sc:textLeaf role="mathtex">\\1</sc:textLeaf>', data)
     data = re.sub('\\\\\[(.*?)\\\\\]', '<sc:textLeaf role="mathtex">\\1</sc:textLeaf>', data)
     data = re.sub('\\\\\((.*?)\\\\\)', '<sc:textLeaf role="mathtex">\\1</sc:textLeaf>', data)
+    data = re.sub('\\\\textbf\{(.*?)\}', '<sc:inlineStyle role="emp">\\1</sc:inlineStyle>', data)
     return data
 
 beginf2s = '<?xml version="1.0" encoding="UTF-8"?>\n<sc:item xmlns:sc="http://www.utc.fr/ics/scenari/v3/core">\n'
