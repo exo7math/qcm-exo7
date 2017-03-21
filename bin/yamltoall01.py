@@ -12,6 +12,8 @@ import sys
 import os
 import string
 import random
+import re
+import html
 
 #--------------------------------------------------
 #--------------------------------------------------
@@ -54,6 +56,8 @@ else:
         output_file = file_name+'.amc' # Conversation to .amc extension
     if output_format == 'moodle':  # To be done in a near future...
         output_file =  file_name+'.moodle' # Conversation to a xml file with a.moodle extension
+    if output_format == 'f2s':
+        output_file =  file_name # Conversation to a xml file with a quiz extension, but inside the "file_name" directory !
 
 # Read all data
 stream = open(yaml_file, 'r', encoding='utf-8')
@@ -316,3 +320,89 @@ if output_format == 'moodle':
         out.write('</question>')
 
     out.write(endmoodle)
+
+
+#--------------------------------------------------
+#--------------------------------------------------
+#                 FAQ2SCIENCES (f2s)
+# Write data to a xml file in a Scenari / faq2sciences format
+
+
+def f2sxmlcleanup(data):
+    data = html.escape(data)
+    data = re.sub('\$(.*?)\$', '<sc:textLeaf role="mathtex">\\1</sc:textLeaf>', data)
+    data = re.sub('\\\\\[(.*?)\\\\\]', '<sc:textLeaf role="mathtex">\\1</sc:textLeaf>', data)
+    data = re.sub('\\\\\((.*?)\\\\\)', '<sc:textLeaf role="mathtex">\\1</sc:textLeaf>', data)
+    data = re.sub('\\\\textbf\{(.*?)\}', '<sc:inlineStyle role="emp">\\1</sc:inlineStyle>', data)
+    return data
+
+beginf2s = '<?xml version="1.0" encoding="UTF-8"?>\n<sc:item xmlns:sc="http://www.utc.fr/ics/scenari/v3/core">\n'
+endf2s = '\n</sc:item>\n'
+
+if output_format == 'f2s':
+    os.mkdir(output_file)
+
+    for data in all_data:
+        if 'id' in data.keys():
+            file_id = str(data['id'])
+        else:
+            file_id = id_generator()
+        out = open(os.path.join(output_file, file_id+'.quiz'), 'w', encoding='utf-8')
+        out.write(beginf2s)
+
+        single = False
+
+        if 'type' in data.keys() and ( data['type'] == 'onlyone'  or data['type'] == 'truefalse' ):
+            single = True
+            out.write('\n\n<op:mcqSur xmlns:op="utc.fr:ics/opale3" xmlns:sp="http://www.utc.fr/ics/scenari/v3/primitive">\n')
+        else:
+            out.write('\n\n<op:mcqMur xmlns:op="utc.fr:ics/opale3" xmlns:sp="http://www.utc.fr/ics/scenari/v3/primitive">\n')
+
+        if 'title' in data.keys():
+            out.write('<op:exeM><sp:title>'+data['title']+'</sp:title></op:exeM>\n')
+        else: 
+            out.write('<op:exeM></op:exeM>\n')
+
+        out.write('<sc:question><op:res><sp:txt><op:txt><sc:para xml:space="preserve">\n')
+        out.write(f2sxmlcleanup(data['question']))
+        out.write('</sc:para></op:txt></sp:txt></op:res></sc:question>\n')
+
+
+#        if 'image' in data.keys():
+#            dataimage = data['image'][0] 
+#            out.write('\\begin{center}\n')
+#            if 'options' in dataimage.keys():
+#                out.write('\\includegraphics['+dataimage['options']+']{'+dataimage['file']+'}')
+#            else:
+#                out.write('\\includegraphics{'+dataimage['file']+'}')     
+#            out.write('\n\\end{center}\n\n')
+
+        good = 1
+        out.write('<sc:choices>\n')
+        for answers in data['answers']:
+
+            checkstate = ''
+            if not (single):
+                if answers['correct']:
+                    checkstate = ' solution="checked"'
+                else:
+                    checkstate = ' solution="unchecked"'
+            out.write('<sc:choice'+checkstate+'><sc:choiceLabel><op:txt><sc:para xml:space="preserve">\n')
+            out.write(f2sxmlcleanup(answers['value']))
+            out.write('</sc:para></op:txt></sc:choiceLabel></sc:choice>\n')
+            good+=1
+
+        out.write('</sc:choices>')
+        if single:
+            out.write('<sc:solution choice="'+str(good)+'"/>')
+        if 'explanations' in data.keys():
+            out.write('<sc:globalExplanation><op:res><sp:txt><op:txt><sc:para xml:space="preserve">\n')
+            out.write(f2sxmlcleanup(data['explanations']))
+            out.write('</sc:para></op:txt></sp:txt></op:res></sc:globalExplanation>\n')
+
+        if single:
+            out.write('\n\n</op:mcqSur>\n')
+        else:
+            out.write('\n\n</op:mcqMur>\n')
+
+        out.write(endf2s)
