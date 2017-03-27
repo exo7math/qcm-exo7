@@ -15,7 +15,7 @@ Combien font \(2^{10}\) ?
 \end{questionmult}
 
 
-\begin{questionmult}{jsfwvj}
+\begin{questionmult}{dslyir}
 
 %Author: exo8
 
@@ -35,7 +35,7 @@ Répondez par vrai ou faux !
 
 %Author: exo7
 
-\textbf{Ceci est le \(x^{10}\) titre.} Test de question avec titre.
+\textbf{Ceci est le \(x^{10}\) titre.} Test de question avec titre. Et une fonction \(f : \mathbf{R} \to \mathbf{C}\).
 
 \begin{choices}
     \wrongchoice{Coucou 1.}

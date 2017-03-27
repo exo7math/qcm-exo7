@@ -52,7 +52,7 @@ author: exo7
 
 
 question: |
-        Test de question avec titre.
+        Test de question avec titre. Et une fonction \(f : \Rr \to \Cc\).
 
 answers: 
     - value: |

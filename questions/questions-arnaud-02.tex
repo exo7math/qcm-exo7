@@ -238,17 +238,18 @@ est divisible par $24$.}
 \begin{question}
 Soient $a,b,c \ge 1$ des entiers.
 \begin{answers}
-    \good{$ab = \pgcd(a,b)\times \ppcm(a,b)$.}
+    \good{$ab = \operatorname{pgcd}(a,b)\times \operatorname{ppcm}(a,b)$.}
 
-    \bad{$abc = \pgcd(a,b,c)\times \ppcm(a,b,c)$.}
+    \bad{$abc = \operatorname{pgcd}(a,b,c)\times \operatorname{ppcm}(a,b,c)$.}
 
-    \good{$\ppcm(a,b,c)$ est divisible par $c$.}
+    \good{$\operatorname{ppcm}(a,b,c)$ est divisible par $c$.}
 
-    \bad{$\ppcm(1932,345)= 19320$.}
+    \bad{$\operatorname{ppcm}(1932,345)= 19320$.}
 
-    \bad{$\ppcm(5,10,15)= 15$.}
+    \bad{$\operatorname{ppcm}(5,10,15)= 15$.}
 \end{answers}
 \end{question}
+
 
 \begin{question}
 \begin{answers}
@@ -256,12 +257,12 @@ Soient $a,b,c \ge 1$ des entiers.
 
     \good{Sachant que $7$ divise $86419746 \times 111$ alors $7$ divise $86419746$.}
 
-    \good{Si $a = bq + r$ est la division euclidienne de $a$ par $b$ alors $\pgcd(a,b) = \pgcd (b,r)$.}
+    \good{Si $a = bq + r$ est la division euclidienne de $a$ par $b$ alors $\operatorname{pgcd}(a,b) = \operatorname{pgcd} (b,r)$.}
 
     \good{Il existe $u,v \in \Zz$ tels que $195u+2380v=5$.}
 
     \bad{Sachant qu'il existe $u,v$ tels que $2431u+65520v = 39$
-alors $\pgcd(2431,65520)=39$.}
+alors $\operatorname{pgcd}(2431,65520)=39$.}
 
 \end{answers}
 \end{question}
@@ -271,7 +272,7 @@ alors $\pgcd(2431,65520)=39$.}
 \begin{answers}
     \good{$\exists P \in \Zz[X] \quad \forall x \in \Rr \qquad P(x) > 0$.}
 
-    \bad{$\forall P \in \Zz[X] \quad \exists x\in \Rr \qquad |P(x)| < 1$.}
+    \bad{$\forall P \in \Zz[X] \quad \exists x \in \Rr \qquad |P(x)| < 1$.}
 
     \good{$\forall P \in \Qq[X] \qquad  x\in \Qq \implies P(x) \in \Qq$.}
 
@@ -339,17 +340,16 @@ Soit $P,Q \in\Cc[X]$ des polynômes non nuls  $P = \sum_{i=0}^na_iX^i$, soit $I_
 
     \bad{$X^2+7$ est irréductible dans $\Cc[X]$.}
 
-    \bad{Dans $\Zz[X]$, $\pgcd(X(X-1)^2(X^2+1) ,X^2(X-1)(X^2-1) ) = X(X-1)$.}
+    \bad{Dans $\Zz[X]$, $\operatorname{pgcd}(X(X-1)^2(X^2+1) ,X^2(X-1)(X^2-1) ) = X(X-1)$.}
 
-    \good{Dans $\Zz[X]$, $\pgcd(X^4+X^3+X^2+X,X^3-X^2-X+1) = X+1$.}
+    \good{Dans $\Zz[X]$, $\operatorname{pgcd}(X^4+X^3+X^2+X,X^3-X^2-X+1) = X+1$.}
 \end{answers}
 \end{question}
 
 
 \subsection*{Réels}
 
-\begin{question}
-Réel et rationnels
+\begin{question}[Réel et rationnels]
 \begin{answers}
     \good{$(x\in \Qq \text{ et }  y\in\Qq) \implies x+y \in \Qq$}
     \bad{$(x\in \Rr \setminus \Qq \text{ et } y\in\Rr \setminus \Qq) \implies x+y \in \Rr \setminus \Qq$}
@@ -374,8 +374,7 @@ Soient $A,B,C$ des parties de $\Rr$
 \end{question}
 
 
-\begin{question}
-Limites de suites
+\begin{question}[Limites de suites]
 \begin{answers}
     \good{Si $u_n= n\sin(\frac 1 n)$ alors $(u_n)$ tend vers $1$.}
     \bad{Si $u_n=\ln (\ln(n))$ alors $(u_n)$ a une limite finie.}
@@ -386,9 +385,8 @@ Limites de suites
 \end{question}
 
 
-\begin{question}
-Suites définies par récurrence. Soit $f(x) = 2x(1-x)$ et la suite
-définie par $u_0 \in [0,1]$ et $u_{n+1} = f(u_n)$.
+\begin{question}[Suites définies par récurrence]
+Soit $f(x) = 2x(1-x)$ et la suite définie par $u_0 \in [0,1]$ et $u_{n+1} = f(u_n)$.
 \begin{answers}
     \good{$\forall n\in \Nn \qquad u_n \in [0,1]$.}
     \bad{Quelque soit $u_0$ dans $[0,1]$, $(u_n)$ est monotone.}
@@ -399,8 +397,7 @@ définie par $u_0 \in [0,1]$ et $u_{n+1} = f(u_n)$.
 \end{question}
 
 
-\begin{question}
-Fonctions continues
+\begin{question}[Fonctions continues]
 \begin{answers}
     \bad{La somme, le produit et le quotient de deux fonctions continues est continue.}
     \good{La fonction $\sqrt{\sqrt{x}}\ln x$ est prolongeable par continuité en $0$.}
@@ -411,8 +408,7 @@ Fonctions continues
 \end{question}
 
 
-\begin{question}
-Théorème des valeurs intermédiaires, fonctions bornées
+\begin{question}[Théorème des valeurs intermédiaires, fonctions bornées]
 \begin{answers}
     \good{La méthode de dichotomie est basée sur le théorème des valeurs intermédiaires.}
     \bad{Tout polynôme de degré $\ge 3$ a au moins une racine réelle.}
@@ -422,8 +418,7 @@ Théorème des valeurs intermédiaires, fonctions bornées
 \end{answers}
 \end{question}
 
-\begin{question}
-Dérivation
+\begin{question}[Dérivation]
 \begin{answers}
     \bad{La fonction $f(x) = 1/x$ est décroissante sur $\Rr^*$.}
     \good{La fonction $f(x) = x\sin\frac1x$ est continue et dérivable en $0$.}
@@ -434,8 +429,7 @@ Dérivation
 \end{question}
 
 
-\begin{question}
-Théorème de Rolle et des accroissements finis
+\begin{question}[Théorème de Rolle et des accroissements finis]
 \begin{answers}
     \bad{Si $f$ est dérivable sur $[a,b]$ avec $f(a) = f(b)$ il existe un unique $c \in ]a,b[$ tel que $f'( c ) = 0$.}
     \good{Si $f$ est une fonction continue sur $[a,b]$ et dérivable sur $]a,b[$ et $f'(x)$ tend vers $\ell$ quand  $x$ tend vers $a$
@@ -447,26 +441,24 @@ alors $f$ est dérivable en $a$ et $f'(a) = \ell$.}
 \end{question}
 
 
-\begin{question}
-Fonctions usuelles
+\begin{question}[Fonctions usuelles]
 \begin{answers}
     \good{$\forall n \in \Nn \ \lim_{x\rightarrow +\infty} \frac{e^x}{x^n} = +\infty$.}
-    \good{$\forall x \in \Rr \  \ch x \ge \sh x$.}
-    \good{$\frac{\ch x}{\sh x}$ tend vers $1$ quand $x$ tend vers $+\infty$.}
-    \good{$\ch 2x = 1 + 2\sh^2 x$.}
-    \bad{$\tanh(a+b) = \frac{\tanh a+ \tanh b}{1- \tanh a \tanh b}$.}
+    \good{$\forall x \in \Rr \  \operatorname{ch} x \ge \operatorname{sh} x$.}
+    \good{$\frac{\operatorname{ch} x}{\operatorname{sh} x}$ tend vers $1$ quand $x$ tend vers $+\infty$.}
+    \good{$\operatorname{ch} 2x = 1 + 2\operatorname{sh}^2 x$.}
+    \bad{$\operatorname{th}(a+b) = \frac{\operatorname{th} a+ \operatorname{th} b}{1- \operatorname{th} a \operatorname{th} b}$.}
 \end{answers}
 \end{question}
 
 
-\begin{question}
-Fonctions réciproques
+\begin{question}[Fonctions réciproques]
 \begin{answers}
     \bad{Un fonction continue $\Rr \longrightarrow \Rr$ strictement décroissante est bijective.}
     \good{Si $f$ est une fonction continue bijective croissante alors $f^{-1}$ est croissante.}
     \bad{Si $f$ est une fonction continue bijective ne s'annulant jamais alors $(\frac 1 f)^{-1} = f$.}
-    \bad{$\Arcsin (\sin x) = x$ pour tout $x \in [0, 2\pi[$.}
-    \bad{Si $f(x) = \Arctan (x^2)$ alors $f'(x) = \frac{1}{1+x^4}$.}
+    \bad{$\operatorname{arcsin} (\sin x) = x$ pour tout $x \in [0, 2\pi[$.}
+    \bad{Si $f(x) = \operatorname{arctan} (x^2)$ alors $f'(x) = \frac{1}{1+x^4}$.}
 \end{answers}
 \end{question}
 

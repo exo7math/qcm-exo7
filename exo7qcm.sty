@@ -20,35 +20,19 @@
 
 
 %----- Ensembles : entiers, reels, complexes -----
-\newcommand{\Nn}{\mathbb{N}} \newcommand{\N}{\mathbb{N}}
-\newcommand{\Zz}{\mathbb{Z}} \newcommand{\Z}{\mathbb{Z}}
-\newcommand{\Qq}{\mathbb{Q}} \newcommand{\Q}{\mathbb{Q}}
-\newcommand{\Rr}{\mathbb{R}} \newcommand{\R}{\mathbb{R}}
-\newcommand{\Cc}{\mathbb{C}} \newcommand{\C}{\mathbb{C}}
-\newcommand{\Kk}{\mathbb{K}} \newcommand{\K}{\mathbb{K}}
+\newcommand{\Nn}{\mathbb{N}}
+\newcommand{\Zz}{\mathbb{Z}}
+\newcommand{\Qq}{\mathbb{Q}}
+\newcommand{\Rr}{\mathbb{R}}
+\newcommand{\Cc}{\mathbb{C}}
+\newcommand{\Kk}{\mathbb{K}}
 
 %----- Modifications de symboles -----
 \renewcommand{\epsilon}{\varepsilon}
 \renewcommand{\Re}{\mathop{\mathrm{Re}}\nolimits}
 \renewcommand{\Im}{\mathop{\mathrm{Im}}\nolimits}
-\newcommand{\llbracket}{\left[\kern-0.15em\left[}
-\newcommand{\rrbracket}{\right]\kern-0.15em\right]}
 \renewcommand{\ge}{\geqslant} \renewcommand{\geq}{\geqslant}
 \renewcommand{\le}{\leqslant} \renewcommand{\leq}{\leqslant}
-
-%----- Fonctions usuelles -----
-\newcommand{\ch}{\mathop{\mathrm{ch}}\nolimits}
-\newcommand{\sh}{\mathop{\mathrm{sh}}\nolimits}
-\renewcommand{\tanh}{\mathop{\mathrm{th}}\nolimits}
-\newcommand{\cotan}{\mathop{\mathrm{cotan}}\nolimits}
-\newcommand{\Arcsin}{\mathop{\mathrm{arcsin}}\nolimits}
-\newcommand{\Arccos}{\mathop{\mathrm{arccos}}\nolimits}
-\newcommand{\Arctan}{\mathop{\mathrm{arctan}}\nolimits}
-\newcommand{\Argsh}{\mathop{\mathrm{argsh}}\nolimits}
-\newcommand{\Argch}{\mathop{\mathrm{argch}}\nolimits}
-\newcommand{\Argth}{\mathop{\mathrm{argth}}\nolimits}
-\newcommand{\pgcd}{\mathop{\mathrm{pgcd}}\nolimits} 
-
 
 
 
@@ -85,10 +69,50 @@
 \usepackage{ifthen}
 \usepackage[inline]{enumitem}
 
+% ----------------------------------------------------------------------
+% Personnalisation pour les théorèmes,...
+
+
+
+
+\newtheoremstyle{qcmexo7}% name
+{0.5em}% space above
+{0.5em}% space below
+{}% body font
+{}% indent amount
+{\sffamily\bfseries}% head font
+{}% punctuation after head
+{\newline}% space after head
+{\thmname{#1}\ \thmnumber{#2}\ \thmnote{(#3)}}% head spec
+
+%\newtheoremstyle{qcmexo7}% name
+%{3pt}% Space above
+%{3pt}% Space below
+%{\upshape}% Body font
+%{}% Indent amount
+%{\bfseries}% Theorem head font
+%{.\newline}% Punctuation after theorem head
+%{0pt}% Space after theorem head
+%{}% Theorem head spec (can be left empty, meaning ‘normal’ )
+
+
+
 
 %----- Structure des qcm ------
-\theoremstyle{definition}
+\theoremstyle{qcmexo7}
 \newtheorem{ques}{Question}
+
+
+% Fix bug itemize newline if directly after question
+% From http://tex.stackexchange.com/questions/46357
+\makeatletter
+\def\enumfix{%
+\if@inlabel
+ \noindent \par\nobreak\vskip-\parskip\vskip-\baselineskip\hrule\@height\z@
+\fi}
+
+\let\olditemize\itemize
+\def\itemize{\enumfix\olditemize}
 
 \newenvironment{question}{
 \def\myqid{}

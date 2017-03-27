@@ -51,13 +51,13 @@ if output:
     output_file = output    # Name given by user
 else:
     if output_format == 'tex':
-        output_file = file_name+'.tex' # Conversation to .tex extension
+        output_file = file_name+'.tex' # Convert to .tex extension
     if output_format == 'amc':
-        output_file = file_name+'.amc' # Conversation to .amc extension
-    if output_format == 'moodle':  # To be done in a near future...
-        output_file =  file_name+'.moodle' # Conversation to a xml file with a.moodle extension
+        output_file = file_name+'.amc' # Convert to .amc extension
+    if output_format == 'moodle':  
+        output_file =  file_name+'.moodle' # Convert to a xml file with a.moodle extension
     if output_format == 'f2s':
-        output_file =  file_name # Conversation to a xml file with a quiz extension, but inside the "file_name" directory !
+        output_file =  file_name # Convert to a xml file with a quiz extension, but inside the "file_name" directory !
 
 # Read all data
 stream = open(yaml_file, 'r', encoding='utf-8')
@@ -149,6 +149,27 @@ if output_format == 'tex':
 
         out.write('\\end{question}\n')
 
+#--------------------------------------------------
+#--------------------------------------------------
+# Replace custom LaTeX macro for non-LaTeX export
+def replace_latex_macros(text):
+    # Replace \Rr to \mathbf{R} ...
+    text = re.sub("\\\\Nn(?=[^a-zA-Z])","\mathbf{N}",text, re.MULTILINE|re.DOTALL)
+    text = re.sub("\\\\Zz(?=[^a-zA-Z])","\mathbf{Z}",text, re.MULTILINE|re.DOTALL)
+    text = re.sub("\\\\Qq(?=[^a-zA-Z])","\mathbf{Q}",text, re.MULTILINE|re.DOTALL)
+    text = re.sub("\\\\Rr(?=[^a-zA-Z])","\mathbf{R}",text, re.MULTILINE|re.DOTALL)
+    text = re.sub("\\\\Cc(?=[^a-zA-Z])","\mathbf{C}",text, re.MULTILINE|re.DOTALL)
+    text = re.sub("\\\\Kk(?=[^a-zA-Z])","\mathbf{K}",text, re.MULTILINE|re.DOTALL)
+
+    return text
+
+
+# Test
+#text = "Soit $f : \\Nn \\to \\Rr$ et \\Nnon et $\\Nn7$"
+#print(text)
+#text = replace_latex_macros(text)
+#print(text)
+
 
 #--------------------------------------------------
 #--------------------------------------------------
@@ -185,10 +206,10 @@ if output_format == 'amc':
             out.write('%\\tags{'+data['tags']+'.}\n\n')
 
         if 'title' in data.keys():
-            out.write('\\textbf{'+data['title']+'.} ')
+            out.write('\\textbf{'+replace_latex_macros(data['title'])+'.} ')
 
 
-        out.write(data['question']+'\n')
+        out.write(replace_latex_macros(data['question'])+'\n')
 
         if 'image' in data.keys():
             dataimage = data['image'][0] 
@@ -211,7 +232,7 @@ if output_format == 'amc':
 
         for answers in data['answers']:
             value = answers['value']
-            value = value.rstrip()  #re.sub('[\s]*$','',text,re.MULTILINE) # Delete potential space at the end
+            value = replace_latex_macros(value.rstrip())  #re.sub('[\s]*$','',text,re.MULTILINE) # Delete potential space at the end
             correct = answers['correct']
             if correct == True:
                 out.write('    \\correctchoice{'+value+'}\n')
@@ -224,7 +245,7 @@ if output_format == 'amc':
             out.write('\\end{choices}\n')     
 
         if 'explanations' in data.keys():
-            out.write('\explain{'+data['explanations']+'}\n')
+            out.write('\explain{'+replace_latex_macros(data['explanations'])+'}\n')
 
         if 'type' in data.keys() and ( data['type'] == 'onlyone'  or data['type'] == 'truefalse' ):
             out.write('\\end{question}\n')
