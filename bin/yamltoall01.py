@@ -124,7 +124,7 @@ if output_format == 'tex':
 
         if 'image' in data.keys():
             dataimage = data['image'][0] 
-            print(dataimage)
+            #print(dataimage)
             if 'options' in dataimage.keys():
                 out.write('\\qimage['+dataimage['options']+']{'+dataimage['file']+'}\n\n')
             else:
@@ -135,7 +135,7 @@ if output_format == 'tex':
 
         for answers in data['answers']:
             value = answers['value']
-            value = value.rstrip()  #re.sub('[\s]*$','',text,re.MULTILINE) # Delete potential space at the end
+            value = value.rstrip()  #re.sub('[\s]*$','',text,flags=re.MULTILINE) # Delete potential space at the end
             correct = answers['correct']
             if correct == True:
                 out.write('    \\good{'+value+'}\n')
@@ -154,12 +154,12 @@ if output_format == 'tex':
 # Replace custom LaTeX macro for non-LaTeX export
 def replace_latex_macros(text):
     # Replace \Rr to \mathbf{R} ...
-    text = re.sub("\\\\Nn(?=[^a-zA-Z])","\mathbf{N}",text, re.MULTILINE|re.DOTALL)
-    text = re.sub("\\\\Zz(?=[^a-zA-Z])","\mathbf{Z}",text, re.MULTILINE|re.DOTALL)
-    text = re.sub("\\\\Qq(?=[^a-zA-Z])","\mathbf{Q}",text, re.MULTILINE|re.DOTALL)
-    text = re.sub("\\\\Rr(?=[^a-zA-Z])","\mathbf{R}",text, re.MULTILINE|re.DOTALL)
-    text = re.sub("\\\\Cc(?=[^a-zA-Z])","\mathbf{C}",text, re.MULTILINE|re.DOTALL)
-    text = re.sub("\\\\Kk(?=[^a-zA-Z])","\mathbf{K}",text, re.MULTILINE|re.DOTALL)
+    text = re.sub("\\\\Nn(?=[^a-zA-Z])","\mathbf{N}",text, flags=re.MULTILINE|re.DOTALL)
+    text = re.sub("\\\\Zz(?=[^a-zA-Z])","\mathbf{Z}",text, flags=re.MULTILINE|re.DOTALL)
+    text = re.sub("\\\\Qq(?=[^a-zA-Z])","\mathbf{Q}",text, flags=re.MULTILINE|re.DOTALL)
+    text = re.sub("\\\\Rr(?=[^a-zA-Z])","\mathbf{R}",text, flags=re.MULTILINE|re.DOTALL)
+    text = re.sub("\\\\Cc(?=[^a-zA-Z])","\mathbf{C}",text, flags=re.MULTILINE|re.DOTALL)
+    text = re.sub("\\\\Kk(?=[^a-zA-Z])","\mathbf{K}",text, flags=re.MULTILINE|re.DOTALL)
 
     return text
 
@@ -206,10 +206,11 @@ if output_format == 'amc':
             out.write('%\\tags{'+data['tags']+'.}\n\n')
 
         if 'title' in data.keys():
-            out.write('\\textbf{'+replace_latex_macros(data['title'])+'.} ')
+            thetitle = replace_latex_macros(data['title'])
+            out.write('\\textbf{'+ thetitle +'.} ')
 
-
-        out.write(replace_latex_macros(data['question'])+'\n')
+        thequestion = replace_latex_macros(data['question'])
+        out.write(thequestion+'\n')
 
         if 'image' in data.keys():
             dataimage = data['image'][0] 
@@ -232,7 +233,7 @@ if output_format == 'amc':
 
         for answers in data['answers']:
             value = answers['value']
-            value = replace_latex_macros(value.rstrip())  #re.sub('[\s]*$','',text,re.MULTILINE) # Delete potential space at the end
+            value = replace_latex_macros(value.rstrip())  #re.sub('[\s]*$','',text,flags=re.MULTILINE) # Delete potential space at the end
             correct = answers['correct']
             if correct == True:
                 out.write('    \\correctchoice{'+value+'}\n')
@@ -245,7 +246,8 @@ if output_format == 'amc':
             out.write('\\end{choices}\n')     
 
         if 'explanations' in data.keys():
-            out.write('\explain{'+replace_latex_macros(data['explanations'])+'}\n')
+            theexplanations = replace_latex_macros(data['explanations'])
+            out.write('\explain{'+ theexplanations +'}\n')
 
         if 'type' in data.keys() and ( data['type'] == 'onlyone'  or data['type'] == 'truefalse' ):
             out.write('\\end{question}\n')
@@ -278,17 +280,20 @@ if output_format == 'moodle':
             out.write('\n\n<question type="multichoice">\n')
 
         if 'title' in data.keys():
-            out.write('<name><text>'+data['title']+'</text></name>\n')
+            thetitle = replace_latex_macros(data['title'])
+            out.write('<name><text>'+ thetitle +'</text></name>\n')
         else: 
             out.write('<name><text> </text></name>\n')
 
+        thequestion = replace_latex_macros(data['question'])
         out.write('<questiontext format="html">\n<text><![CDATA[<p>\n')
-        out.write(data['question'])
+        out.write(thequestion)
         out.write('</p>]]></text>\n</questiontext>\n<defaultgrade>1.0</defaultgrade>\n')
 
         if 'explanations' in data.keys():
+            theexplanations = replace_latex_macros(data['explanations'])
             out.write('<generalfeedback format="html"><text><![CDATA[<p>\n')
-            out.write(data['explanations'])
+            out.write(theexplanations)
             out.write('</p>]]></text></generalfeedback>\n')
 
         if 'keeporder' in data.keys() and data['keeporder']:
@@ -327,7 +332,8 @@ if output_format == 'moodle':
                 out.write('<answer fraction="'+goodratio+'" format="html"><text><![CDATA[<p>\n')
             else:
                 out.write('<answer fraction="-'+badratio+'" format="html"><text><![CDATA[<p>\n')
-            out.write(answers['value'])
+            thevalue = replace_latex_macros(answers['value'])
+            out.write(thevalue)
             out.write('</p>]]></text></answer>\n')
 
 #            value = 
@@ -380,12 +386,14 @@ if output_format == 'f2s':
             out.write('\n\n<op:mcqMur xmlns:op="utc.fr:ics/opale3" xmlns:sp="http://www.utc.fr/ics/scenari/v3/primitive">\n')
 
         if 'title' in data.keys():
-            out.write('<op:exeM><sp:title>'+data['title']+'</sp:title></op:exeM>\n')
+            thetitle = replace_latex_macros(data['title'])
+            out.write('<op:exeM><sp:title>'+ thetitle +'</sp:title></op:exeM>\n')
         else: 
             out.write('<op:exeM></op:exeM>\n')
 
+        thequestion = replace_latex_macros(data['question'])
         out.write('<sc:question><op:res><sp:txt><op:txt><sc:para xml:space="preserve">\n')
-        out.write(f2sxmlcleanup(data['question']))
+        out.write(f2sxmlcleanup(thequestion))
         out.write('</sc:para></op:txt></sp:txt></op:res></sc:question>\n')
 
 
@@ -409,7 +417,8 @@ if output_format == 'f2s':
                 else:
                     checkstate = ' solution="unchecked"'
             out.write('<sc:choice'+checkstate+'><sc:choiceLabel><op:txt><sc:para xml:space="preserve">\n')
-            out.write(f2sxmlcleanup(answers['value']))
+            thevalue = replace_latex_macros(answers['value'])
+            out.write(f2sxmlcleanup(thevalue))
             out.write('</sc:para></op:txt></sc:choiceLabel></sc:choice>\n')
             good+=1
 
@@ -417,8 +426,9 @@ if output_format == 'f2s':
         if single:
             out.write('<sc:solution choice="'+str(good)+'"/>')
         if 'explanations' in data.keys():
+            theexplanations = replace_latex_macros(data['explanations'])
             out.write('<sc:globalExplanation><op:res><sp:txt><op:txt><sc:para xml:space="preserve">\n')
-            out.write(f2sxmlcleanup(data['explanations']))
+            out.write(f2sxmlcleanup(theexplanations))
             out.write('</sc:para></op:txt></sp:txt></op:res></sc:globalExplanation>\n')
 
         if single:

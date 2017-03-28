@@ -15,13 +15,12 @@ Combien font \(2^{10}\) ?
 \end{questionmult}
 
 
-\begin{questionmult}{dslyir}
+\begin{questionmult}{pahdqf}
 
 %Author: exo8
 
 Sachant que \(2+2=2\times 2\), 
 est-ce que \(3+3 = 3\times 3\) ?
-
 Répondez par vrai ou faux !
 
 \begin{choices}
@@ -66,10 +65,8 @@ Répondez par vrai ou faux !
 %Classification: 127.01,132.08
 
 Test de question avec explications et classification, type de questionnaire. [Ceci n'est pas un titre]
-
 Ceci est une equation :
 \[\sum_{i=1}^n \frac{i}{n}=\int\]
-
 Une image (toujours en fin de d'énoncé) : 
 
 \begin{center}

@@ -48,10 +48,10 @@ def add_space(text):
     indent = ' '*8
     #re.sub(r'^[^a]*','')
     #print('Before\n'+text)
-    spacetext = re.sub('^[\s]*','',text,re.MULTILINE) # Delete potential space at the beginning
+    spacetext = re.sub('^[\s]*','',text,flags=re.MULTILINE) # Delete potential space at the beginning
     #print('After\n'+text)
     spacetext = indent+spacetext  # First line
-    spacetext = re.sub('\n','\n'+indent,spacetext,re.MULTILINE) # Add indentation
+    spacetext = re.sub('\n','\n'+indent,spacetext,flags=re.MULTILINE) # Add indentation
     return spacetext
 
 # Test
@@ -65,9 +65,9 @@ def add_space(text):
 # Convert a text with dollars to text with \( \) or \[ \]
 def dollars_to_tags(text):
     # Substitute $$ to \[ \]
-    text2 = re.sub("\$\$(.+?)\$\$","\\\[\g<1>\\\]",text, re.MULTILINE|re.DOTALL)
+    text2 = re.sub("\$\$(.+?)\$\$","\\\[\g<1>\\\]",text, flags=re.MULTILINE|re.DOTALL)
     # Substitute $ to \( \)
-    text1 = re.sub("\$(.+?)\$","\\\(\g<1>\\\)",text2, re.MULTILINE|re.DOTALL)
+    text1 = re.sub("\$(.+?)\$","\\\(\g<1>\\\)",text2, flags=re.MULTILINE|re.DOTALL)
     return text1
 
 # Test
@@ -83,7 +83,7 @@ def dollars_to_tags(text):
 def one_exo_to_yaml(text_exo):
 
     # delete the comments all the end of a line after a '%'
-    text_exo = re.sub("%(.*)","",text_exo,re.MULTILINE)
+    text_exo = re.sub("%(.*)","",text_exo,flags=re.MULTILINE)
 
 #    # Find the id
 #    theid = re.search('(?<=\{)([0-9]+)',text_exo)
@@ -93,110 +93,110 @@ def one_exo_to_yaml(text_exo):
     text_exo = dollars_to_tags(text_exo)
 
     # Find the question and options
-    theallquestion = re.search('(.*?)(?=[\s*]\\\\begin{answers})',text_exo, re.MULTILINE|re.DOTALL)
+    theallquestion = re.search('(.*?)(?=[\s*]\\\\begin{answers})',text_exo, flags=re.MULTILINE|re.DOTALL)
     allquestion = theallquestion.group(0)
-    allquestion = re.sub("\s+\Z","",allquestion, re.MULTILINE|re.DOTALL)
+    allquestion = re.sub("\s+\Z","",allquestion, flags=re.MULTILINE|re.DOTALL)
     #print('\n\n---question---\n'+allquestion+'\n\n')
 
 
     # The title : search the title (and remove it from the question)
-    thetitle = re.search('^(\s*)\[(.*?)\]',allquestion, re.MULTILINE|re.DOTALL)
+    thetitle = re.search('^(\s*)\[(.*?)\]',allquestion, flags=re.MULTILINE|re.DOTALL)
     if thetitle:
         title = thetitle.group(0)
-        title = re.sub("[\[\]]","",title, re.MULTILINE|re.DOTALL)
+        title = re.sub("[\[\]]","",title, flags=re.MULTILINE|re.DOTALL)
         #print('\n\n---title---\n'+title+'\n\n')
-        allquestion = re.sub("^(\s*)\[(.*?)\]","",allquestion, re.MULTILINE|re.DOTALL)
+        allquestion = re.sub("^(\s*)\[(.*?)\]","",allquestion, flags=re.MULTILINE|re.DOTALL)
     else:
         title = None
 
     # the id  : search the id (and remove it from the question)
-    theid = re.search('(?<=\\\\qid\{)(.*?)(?=\})',allquestion, re.MULTILINE|re.DOTALL)
+    theid = re.search('(?<=\\\\qid\{)(.*?)(?=\})',allquestion, flags=re.MULTILINE|re.DOTALL)
     if theid:
         myid = theid.group(0)
         #print('\n\n---id---\n'+myid+'\n\n')
-        allquestion = re.sub("\\\\qid\{(.*?)\}","",allquestion, re.MULTILINE|re.DOTALL)
+        allquestion = re.sub("\\\\qid\{(.*?)\}","",allquestion, flags=re.MULTILINE|re.DOTALL)
     else:
         myid = None
 
     # the author : idem
-    theauthor = re.search('(?<=\\\\qauthor\{)(.*?)(?=\})',allquestion, re.MULTILINE|re.DOTALL)
+    theauthor = re.search('(?<=\\\\qauthor\{)(.*?)(?=\})',allquestion, flags=re.MULTILINE|re.DOTALL)
     if theauthor:
         author = theauthor.group(0)
         #print('\n\n---auteur---\n'+author+'\n\n')
-        allquestion = re.sub("\\\\qauthor\{(.*?)\}","",allquestion, re.MULTILINE|re.DOTALL)
+        allquestion = re.sub("\\\\qauthor\{(.*?)\}","",allquestion, flags=re.MULTILINE|re.DOTALL)
     else:
         author = None
 
     # the classification : idem
-    theclassification = re.search('(?<=\\\\qclassification\{)(.*?)(?=\})',allquestion, re.MULTILINE|re.DOTALL)
+    theclassification = re.search('(?<=\\\\qclassification\{)(.*?)(?=\})',allquestion, flags=re.MULTILINE|re.DOTALL)
     if theclassification:
         classification = theclassification.group(0)
         #print('\n\n---classification---\n'+classification+'\n\n')
-        allquestion = re.sub("\\\\qclassification\{(.*?)\}","",allquestion, re.MULTILINE|re.DOTALL)
+        allquestion = re.sub("\\\\qclassification\{(.*?)\}","",allquestion, flags=re.MULTILINE|re.DOTALL)
     else:
         classification = None
 
     # the tags : idem
-    thetags = re.search('(?<=\\\\qtags\{)(.*?)(?=\})',allquestion, re.MULTILINE|re.DOTALL)
+    thetags = re.search('(?<=\\\\qtags\{)(.*?)(?=\})',allquestion, flags=re.MULTILINE|re.DOTALL)
     if thetags:
         tags = thetags.group(0)
         #print('\n\n---tags---\n'+tags+'\n\n')
-        allquestion = re.sub("\\\\qtags\{(.*?)\}","",allquestion, re.MULTILINE|re.DOTALL)
+        allquestion = re.sub("\\\\qtags\{(.*?)\}","",allquestion, flags=re.MULTILINE|re.DOTALL)
     else:
         tags = None
 
     # the type : idem
-    thetype = re.search('(?<=\\\\qtype\{)(.*?)(?=\})',allquestion, re.MULTILINE|re.DOTALL)
+    thetype = re.search('(?<=\\\\qtype\{)(.*?)(?=\})',allquestion, flags=re.MULTILINE|re.DOTALL)
     if thetype:
         mytype = thetype.group(0)
         #print('\n\n---type---\n'+mytype+'\n\n')
-        allquestion = re.sub("\\\\qtype\{(.*?)\}","",allquestion, re.MULTILINE|re.DOTALL)
+        allquestion = re.sub("\\\\qtype\{(.*?)\}","",allquestion, flags=re.MULTILINE|re.DOTALL)
     else:
         mytype = None
 
 
     # the oneline flag : idem
-    theoneline = re.search('\\\\qoneline',allquestion, re.MULTILINE|re.DOTALL)
+    theoneline = re.search('\\\\qoneline',allquestion, flags=re.MULTILINE|re.DOTALL)
     if theoneline:
         oneline = True       
-        allquestion = re.sub("\\\\qoneline","",allquestion, re.MULTILINE|re.DOTALL)
+        allquestion = re.sub("\\\\qoneline","",allquestion, flags=re.MULTILINE|re.DOTALL)
     else:
         oneline = False
 
 
     # the keeporder flag : idem
-    thekeeporder = re.search('\\\\qkeeporder',allquestion, re.MULTILINE|re.DOTALL)
+    thekeeporder = re.search('\\\\qkeeporder',allquestion, flags=re.MULTILINE|re.DOTALL)
     if thekeeporder:
         keeporder = True        
-        allquestion = re.sub("\\\\qkeeporder","",allquestion, re.MULTILINE|re.DOTALL)
+        allquestion = re.sub("\\\\qkeeporder","",allquestion, flags=re.MULTILINE|re.DOTALL)
     else:
         keeporder = False
 
     # the idontknow flag : idem
-    theidontknow = re.search('\\\\qidontknow',allquestion, re.MULTILINE|re.DOTALL)
+    theidontknow = re.search('\\\\qidontknow',allquestion, flags=re.MULTILINE|re.DOTALL)
     if theidontknow:
         idontknow = True        
-        allquestion = re.sub("\\\\qidontknow","",allquestion, re.MULTILINE|re.DOTALL)
+        allquestion = re.sub("\\\\qidontknow","",allquestion, flags=re.MULTILINE|re.DOTALL)
     else:
         idontknow = False
 
     # the image without options : idem
     image = None
     imageoptions = None
-    theimage = re.search('(?<=\\\\qimage\{)(.*?)(?=\})',allquestion, re.MULTILINE|re.DOTALL)
+    theimage = re.search('(?<=\\\\qimage\{)(.*?)(?=\})',allquestion, flags=re.MULTILINE|re.DOTALL)
     if theimage:
         image = theimage.group(0)
         #print('\n\n---auteur---\n'+author+'\n\n')
-        allquestion = re.sub("\\\\qimage\{(.*?)\}","",allquestion, re.MULTILINE|re.DOTALL)
+        allquestion = re.sub("\\\\qimage\{(.*?)\}","",allquestion, flags=re.MULTILINE|re.DOTALL)
 
     # the image with options : idem
-    theimage = re.search('(?<=\\\\qimage\[)(.*?)(?=\]\{)(.*?)(?=\})',allquestion, re.MULTILINE|re.DOTALL)
+    theimage = re.search('(?<=\\\\qimage\[)(.*?)(?=\]\{)(.*?)(?=\})',allquestion, flags=re.MULTILINE|re.DOTALL)
     if theimage:
         image = theimage.group(2)[2:]
         imageoptions = theimage.group(1)
         #print('\n\n---image ---\n'+image+'\n\n')
         #print('\n\n---image options---\n'+imageoptions+'\n\n')
-        allquestion = re.sub("\\\\qimage\[(.*?)\}","",allquestion, re.MULTILINE|re.DOTALL)
+        allquestion = re.sub("\\\\qimage\[(.*?)\}","",allquestion, flags=re.MULTILINE|re.DOTALL)
 
 
     #print('\n\n---New question---\n'+allquestion+'\n\n')       
@@ -206,13 +206,13 @@ def one_exo_to_yaml(text_exo):
     question = allquestion
     
     # Find the answers
-    theanswers = re.search('(?<=\\\\begin{answers})(.*)(?=[\s*]\\\\end{answers})',text_exo, re.MULTILINE|re.DOTALL)
+    theanswers = re.search('(?<=\\\\begin{answers})(.*)(?=[\s*]\\\\end{answers})',text_exo, flags=re.MULTILINE|re.DOTALL)
     answers = theanswers.group(0)
     answers = answers.lstrip()
     #print('\n\n'+answers+'\n\n')
 
 
-    eachanswer = re.split('\\\\(bad|good)',answers, re.MULTILINE|re.DOTALL)
+    eachanswer = re.split('\\\\(bad|good)',answers, flags=re.MULTILINE|re.DOTALL)
 
     #print(eachanswer)
 
@@ -221,8 +221,8 @@ def one_exo_to_yaml(text_exo):
     listans = []
     while i < n:
         theans = eachanswer[i+1]
-        theans = re.sub("\s+\Z","",theans, re.MULTILINE|re.DOTALL)
-        ans = re.search('(?<=\{)(.*)(?=\})',theans,re.MULTILINE|re.DOTALL).group(0)
+        theans = re.sub("\s+\Z","",theans, flags=re.MULTILINE|re.DOTALL)
+        ans = re.search('(?<=\{)(.*)(?=\})',theans, flags=re.MULTILINE|re.DOTALL).group(0)
         #print(' --- '+ans+'\n')
         if eachanswer[i]=='good':
             listans = listans + [{'correct':'True','value':ans}]
@@ -231,7 +231,7 @@ def one_exo_to_yaml(text_exo):
         i = i+2
 
     # Find the explanations
-    theexplanations = re.search('(?<=\\\\begin{explanations})(.*)(?=[\s*]\\\\end{explanations})',text_exo, re.MULTILINE|re.DOTALL)
+    theexplanations = re.search('(?<=\\\\begin{explanations})(.*)(?=[\s*]\\\\end{explanations})',text_exo, flags=re.MULTILINE|re.DOTALL)
     if theexplanations:
         explanations = theexplanations.group(0)
         explanations = explanations.lstrip()
@@ -295,7 +295,7 @@ def one_exo_to_yaml(text_exo):
 #--------------------------------------------------
 #--------------------------------------------------
 # Split into each exercices
-text_all_exo = re.findall('\\\\begin\{question\}(.*?)\\\\end\{question\}',text_all, re.MULTILINE|re.DOTALL)
+text_all_exo = re.findall('\\\\begin\{question\}(.*?)\\\\end\{question\}',text_all, flags=re.MULTILINE|re.DOTALL)
 
 #print(text_all_exo)
 

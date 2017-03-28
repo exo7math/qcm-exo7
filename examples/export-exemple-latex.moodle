@@ -32,7 +32,6 @@ Combien font \(2^{10}\) ?
 <text><![CDATA[<p>
 Sachant que \(2+2=2\times 2\), 
 est-ce que \(3+3 = 3\times 3\) ?
-
 Répondez par vrai ou faux !
 </p>]]></text>
 </questiontext>
@@ -51,7 +50,7 @@ Faux.
 <name><text>Ceci est le \(x^{10}\) titre</text></name>
 <questiontext format="html">
 <text><![CDATA[<p>
-Test de question avec titre.
+Test de question avec titre. Et une fonction \(f : \mathbf{R} \to \mathbf{C}\).
 </p>]]></text>
 </questiontext>
 <defaultgrade>1.0</defaultgrade>
@@ -88,10 +87,8 @@ Coucou \(x^{B}\).
 <questiontext format="html">
 <text><![CDATA[<p>
 Test de question avec explications et classification, type de questionnaire. [Ceci n'est pas un titre]
-
 Ceci est une equation :
 \[\sum_{i=1}^n \frac{i}{n}=\int\]
-
 Une image (toujours en fin de d'énoncé) : 
 </p>]]></text>
 </questiontext>

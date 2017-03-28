@@ -74,7 +74,7 @@ Usage possible prévu  :
 \begin{itemize}
   \item Export vers le format structuré \texttt{yaml}.
   \item Export vers AMC.
-  \item (À terme : ) Export vers des formats web : xml, moodle, scenarii,...
+  \item Export vers des formats web : xml, moodle, scenarii,...
 \end{itemize}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -82,12 +82,12 @@ Usage possible prévu  :
 
 \textbf{Titre.} Exemple: \verb|\begin{question}[Théorème de Thalès]|
 
-(Il est peut être déconseillé d'utiliser des maths dans le titre, car les maths ne sont pas supporter après exportation par certaines plateforme (ex. scenari).)
+Il est déconseillé d'utiliser des maths dans le titre, car les maths ne sont pas supporter après exportation par certaines plateformes (ex. scenari).
 
 \bigskip
 \textbf{Identifiant.} Exemple \verb|\qid{1234}| ou \verb|\qid{lille1.L2.integrale.33}|. Doit être unique ! 
 Les jeux de caractères sont \texttt{a...z}, \texttt{A...Z}, \texttt{0...9} et les séparateurs \texttt{"."} et \texttt{"!"}. Le point \texttt{"."} sépare des mots clés. 
-Par indiquer que deux questions testent la compréhension de la même chose (et peuvent être interchangée de façon à avoir des versions différentes pour chaque étudiant) on ajoute à la fin la balise double-point \texttt{"!"}.
+Pour indiquer que deux questions testent la compréhension de la même chose (et peuvent être interchangées de façon à avoir des versions différentes pour chaque étudiant) on ajoute à la fin la balise point d'exclamation \texttt{"!"}.
 Par exemple \verb|\qid{derivee.exp!1}| (demande la dérivée de $x \mapsto e^{x^2-8}$)
 et \verb|\qid{derivee.exp!2}| (demande la dérivée de $x \mapsto e^{3x^3+1}$).
 
@@ -146,7 +146,7 @@ Combien font $2^{10}$ ?
 
 \bigskip
 \textbf{Images.} Avec la commande \verb|\qimage{monfichier}|, qui est exactement la commande \verb|includegraphics|, avec possibilité d'utiliser les options usuelles, par exemple \verb|\qimage[height=3cm]{monfichier}|.
-Dans la philosophie actuelle, c'est une seule image par question, et en plus l'image est à la fin de l'énoncé. (Pas d'iamge dans les réponses).
+Dans la philosophie actuelle, c'est une seule image par question, et en plus l'image est à la fin de l'énoncé. (Pas d'image dans les réponses, ni dans les choix).
 
 \bigskip
 \textbf{Commentaires.} Vous pouvez insérer des commentaires dans votre fichier \LaTeX, mais ils ne seront pas exportés. 
@@ -221,7 +221,7 @@ Il est possible de préciser le type de réponse(s) attendue(s) par l'option \ve
   \item  \verb|onetoall|. \textbf{Option par défaut.} Une ou plusieurs réponses (voir toutes) sont bonnes.
   \item \verb|onlyone|. Une unique réponse est vraie
   \item \verb|zerotoall|. Zéro ou plusieurs réponses (voir toutes) sont bonnes. (Avis personnel : à déconseiller !)
-  \item \verb|trueflase|. Seulement deux choix possibles : vrai ou faux (compatible avec une troisième choix, fourni par l'option \verb|qidontknow|).
+  \item \verb|trueflase|. Seulement deux choix possibles : vrai ou faux (compatible avec un troisième choix, fourni par l'option \verb|qidontknow|).
   \item \verb|open|. Question ouverte.
 \end{itemize}  
   
@@ -233,7 +233,7 @@ Il est possible de préciser le type de réponse(s) attendue(s) par l'option \ve
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\section{Conversion}
+\section{Conversion YAML}
 
 
 Le format \emph{human-friendly} par défaut est donc la structure \LaTeX\ décrite ci-dessus. Cependant ce n'est pas une format \emph{computer-friendly}. Le format choisi pour une question facilement exploitable par un ordinateur est \texttt{yaml}.
@@ -262,14 +262,18 @@ answers:
 \end{minipage}
 \end{center}
 
+\bigskip
 
+Conversion \LaTeX\ vers \texttt{yaml} : \\
+  \centerline{\texttt{python3 latextoyaml.py toto.tex}}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Autres conversions}
 Depuis le format \texttt{yaml}, il est facile de convertir une question en à peu près n'importe quoi :
 
 $$\text{\LaTeX} \longleftrightarrow \text{\texttt{yaml}} \longrightarrow \text{amc, xml, moodle,...}$$
 
 \begin{itemize}
-  \item Conversion \LaTeX\ vers \texttt{yaml} : \\
-  \centerline{\texttt{python3 latextoyaml.py toto.tex}}
   
    \item Conversion \texttt{yaml} vers \LaTeX\ : \\
    \centerline{\texttt{python3 yamltoall.py toto.yaml newname.tex}} 
@@ -278,11 +282,15 @@ $$\text{\LaTeX} \longleftrightarrow \text{\texttt{yaml}} \longrightarrow \text{a
   
    \item Conversion \texttt{yaml} vers autre, exemple avec amc : \\
    \centerline{\texttt{python3 yamltoall.py -f amc toto.yaml newname.amc}} 
-   Ou plus simplement \texttt{python3 yamltoall.py -f amc yamltoall.py} 
+   Ou plus simplement \texttt{python3 yamltoall.py -f amc toto.yaml} 
    
     \item Conversion \texttt{yaml} vers \texttt{moodle} : 
-    \texttt{yamltoall.py -f moodle yamltoall.py}, etc. 
+    \texttt{yamltoall.py -f moodle toto.yaml}
     
+    \item Conversion \texttt{yaml} vers \texttt{scenari} : 
+    \texttt{yamltoall.py -f f2s toto.yaml}    
 \end{itemize}
+
+Par contre à l'exportation vous pouvez perdre de l'information (auteur, tags, classification,...)
 
 \end{document}
