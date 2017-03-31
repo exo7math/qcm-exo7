@@ -82,8 +82,8 @@ def dollars_to_tags(text):
 # Convert one LaTeX exercice to a yaml block
 def one_exo_to_yaml(text_exo):
 
-    # delete the comments all the end of a line after a '%'
-    text_exo = re.sub("%(.*)","",text_exo,flags=re.MULTILINE)
+    # delete the comments at the end of a line after a '%', except for \% !!
+    text_exo = re.sub("[^\\\\]%(.*)","",text_exo,flags=re.MULTILINE)
 
 #    # Find the id
 #    theid = re.search('(?<=\{)([0-9]+)',text_exo)

@@ -1,3 +1,11 @@
+\ProvidesPackage{exo7qcm}
+
+
+% Option de langage
+\newif\if@francais     \@francaisfalse
+\DeclareOption{francais}{\@francaistrue}
+\DeclareOption*{}%% Ne rien faire quand une option est inconnue
+\ProcessOptions
 
 \usepackage{amsfonts,amsmath,amssymb,amsthm}
 \usepackage[utf8]{inputenc}
@@ -17,6 +25,22 @@
 %  showframe,
 ]{geometry}
 
+
+% Language: by default English
+\def\nameQuestion{Question}
+\def\nameExplanations{Explanantions}
+\def\nameGood{Good}
+\def\nameBad{Bad}
+\def\nameIdontknow{I don't know.}
+
+
+\if@francais
+  \def\nameQuestion{Question}
+  \def\nameExplanations{Explications}
+  \def\nameGood{Vrai}
+  \def\nameBad{Faux}
+  \def\nameIdontknow{Je ne sais pas.}
+\fi
 
 
 %----- Ensembles : entiers, reels, complexes -----
@@ -100,7 +124,7 @@
 
 %----- Structure des qcm ------
 \theoremstyle{qcmexo7}
-\newtheorem{ques}{Question}
+\newtheorem{ques}{\nameQuestion}
 
 
 % Fix bug itemize newline if directly after question
@@ -132,7 +156,7 @@
 }
 {
 \ifthenelse{\equal{\myqidontknow}{0}}{}{
-\item I don't know
+\item \nameIdontknow
 }
 \ifthenelse{\equal{\myqoneline}{0}}{\end{itemize}}{\end{itemize*}\end{center}}
 \footnotesize\texttt{\hfill%
@@ -143,9 +167,9 @@
 \ifthenelse{\equal{\myqtags}{}}{}{[tags: \myqtags]\quad}
 }
 }    
-\newenvironment{explanations}{\emph{Explanations:}}{}   
-\newcommand{\good}[1]{\item~[Vrai] #1}
-\newcommand{\bad}[1]{\item~[Faux] #1}
+\newenvironment{explanations}{\emph{\nameExplanations:}}{}   
+\newcommand{\good}[1]{\item~[\nameGood] #1}
+\newcommand{\bad}[1]{\item~[\nameBad] #1}
 \newcommand{\qid}[1]{\def\myqid{#1}}
 \newcommand{\qtype}[1]{\def\myqtype{#1}}
 \newcommand{\qauthor}[1]{\def\myqauthor{#1}}

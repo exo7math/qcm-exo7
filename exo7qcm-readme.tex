@@ -2,7 +2,7 @@
 
 \documentclass[12pt,a4paper]{article}
 
-\usepackage{exo7qcm}
+\usepackage[francais]{exo7qcm}
 
 
 \begin{document}
@@ -40,6 +40,7 @@ Ce qui n'est \emph{pas} le but ici : gérer de beaux questionnaires papiers (c'e
 
 Une question à choix multiple (QCM) comporte une question et une liste (finie !) de réponses possibles.
 
+
 \begin{center}
 \begin{minipage}{0.8\textwidth}
 \begin{question}
@@ -69,6 +70,8 @@ Combien font $2^{10}$ ?
 \end{minipage}
 \end{center}
 
+
+Le package s'appelle par \verb|\usepackage{exo7qcm}| (ou \verb|\usepackage[francais]{exo7qcm}|).
 
 Usage possible prévu  :
 \begin{itemize}
@@ -292,5 +295,20 @@ $$\text{\LaTeX} \longleftrightarrow \text{\texttt{yaml}} \longrightarrow \text{a
 \end{itemize}
 
 Par contre à l'exportation vous pouvez perdre de l'information (auteur, tags, classification,...)
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Conseils et consignes pour l'écriture des questions}
+
+\begin{itemize}
+  \item N'utiliser aucune macro personnelle. Vous disposez de \verb|\Nn|,... pour $\Nn$, $\Zz$, $\Qq$, $\Rr$, $\Cc$, $\Kk$ et c'est tout ! Vous pouvez écrire proprement un opérateur par \verb|\operatorname{arcsin}(x)|, pour $\operatorname{arcsin}(x)$.
+  
+  \item N'utiliser pas de maths dans le titre de la question.
+  
+  \item Les questions doivent être le plus indépendantes les une des autres.
+
+  
+\end{itemize}
 
 \end{document}
