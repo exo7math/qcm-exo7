@@ -100,8 +100,8 @@
 
 
 \newtheoremstyle{qcmexo7}% name
-{0.5em}% space above
-{0.5em}% space below
+{5ex}% space above
+{5ex}% space below
 {}% body font
 {}% indent amount
 {\sffamily\bfseries}% head font
@@ -167,7 +167,7 @@
 \ifthenelse{\equal{\myqtags}{}}{}{[tags: \myqtags]\quad}
 }
 }    
-\newenvironment{explanations}{\emph{\nameExplanations:}}{}   
+\newenvironment{explanations}{\vspace*{-2ex}\\\emph{\nameExplanations :}}{}   
 \newcommand{\good}[1]{\item~[\nameGood] #1}
 \newcommand{\bad}[1]{\item~[\nameBad] #1}
 \newcommand{\qid}[1]{\def\myqid{#1}}
