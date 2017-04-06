@@ -4,6 +4,9 @@
 % Option de langage
 \newif\if@francais     \@francaisfalse
 \DeclareOption{francais}{\@francaistrue}
+% Options solutions cachées
+\newif\if@nosolutions     \@nosolutionsfalse
+\DeclareOption{nosolutions}{\@nosolutionstrue}
 \DeclareOption*{}%% Ne rien faire quand une option est inconnue
 \ProcessOptions
 
@@ -25,10 +28,13 @@
 %  showframe,
 ]{geometry}
 
+% Police par defaut
+\usepackage[charter]{mathdesign}
+
 
 % Language: by default English
 \def\nameQuestion{Question}
-\def\nameExplanations{Explanantions}
+\def\nameExplanations{Explanations}
 \def\nameGood{Good}
 \def\nameBad{Bad}
 \def\nameIdontknow{I don't know.}
@@ -92,6 +98,7 @@
 \usepackage{import}
 \usepackage{ifthen}
 \usepackage[inline]{enumitem}
+\usepackage{comment}
 
 % ----------------------------------------------------------------------
 % Personnalisation pour les théorèmes,...
@@ -104,7 +111,7 @@
 {5ex}% space below
 {}% body font
 {}% indent amount
-{\sffamily\bfseries}% head font
+{\itshape\bfseries}% head font
 {}% punctuation after head
 {\newline}% space after head
 {\thmname{#1}\ \thmnumber{#2}\ \thmnote{(#3)}}% head spec
@@ -166,10 +173,28 @@
 \ifthenelse{\equal{\myqclassification}{}}{}{[class: \myqclassification]\quad}
 \ifthenelse{\equal{\myqtags}{}}{}{[tags: \myqtags]\quad}
 }
-}    
-\newenvironment{explanations}{\vspace*{-2ex}\\\emph{\nameExplanations :}}{}   
+}   
+ 
+ 
+% Explanations (if \nosolutions not called by user) 
+\newenvironment{explanations}{\vspace*{-2ex}~\\\emph{\nameExplanations :}}{}
+\if@nosolutions
+\excludecomment{explanations}
+\fi
+
+\if@nosolutions
+\newcommand{\good}[1]{\item #1}
+\newcommand{\bad}[1]{\item #1}
+\else
 \newcommand{\good}[1]{\item~[\nameGood] #1}
 \newcommand{\bad}[1]{\item~[\nameBad] #1}
+\fi
+%\newcommand{\good}[1]{\ifthenelse{@nosolutions}{\item~[\nameGood] #1}{\item #1}}
+%\newcommand{\bad}[1]{\ifthenelse{@nosolutions}{\item~[\nameBad] #1}{\item #1}}
+%\newcommand{\good}[1]{\item~[\nameGood] #1}
+%\newcommand{\bad}[1]{\item~[\nameBad] #1}
+
+
 \newcommand{\qid}[1]{\def\myqid{#1}}
 \newcommand{\qtype}[1]{\def\myqtype{#1}}
 \newcommand{\qauthor}[1]{\def\myqauthor{#1}}
