@@ -323,9 +323,14 @@ if output_format == 'moodle':
             else:
                 nbbad += 1
 
-        goodratio = str("%.5f" % float(100/nbgood))
-        badratio = str("%.5f" % float(100/nbbad))
-
+        if nbgood > 0:
+            goodratio = str("%.5f" % float(100/nbgood))
+        else: 
+            goodratio = "0"
+        if nbbad > 0: 
+            badratio = str("%.5f" % float(100/nbbad))
+        else:
+            badratio = "0"
 
         for answers in data['answers']:
             if answers['correct']:
@@ -343,7 +348,7 @@ if output_format == 'moodle':
 #                out.write('    \\correctchoice{'+value+'}\n')
 #            else:    
 #                out.write('    \\wrongchoice{'+value+'}\n')
-
+        out.write('<single>false</single>\n')  
         out.write('</question>')
 
     out.write(endmoodle)
