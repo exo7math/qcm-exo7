@@ -14,6 +14,8 @@ import string
 import random
 import re
 import html
+import base64
+
 
 #--------------------------------------------------
 #--------------------------------------------------
@@ -285,10 +287,26 @@ if output_format == 'moodle':
         else: 
             out.write('<name><text> </text></name>\n')
 
+        # question
         thequestion = replace_latex_macros(data['question'])
-        out.write('<questiontext format="html">\n<text><![CDATA[<p>\n')
+        out.write('<questiontext format="html">\n')
+        out.write('<text><![CDATA[<p>\n')
         out.write(thequestion)
-        out.write('</p>]]></text>\n</questiontext>\n<defaultgrade>1.0</defaultgrade>\n')
+        
+        #image in the question
+        if 'image' in data.keys():
+            dataimage = data['image'][0]
+            image_file =  dataimage['file']+'.png'
+            with open(image_file, "rb") as image_file:
+                encoded = base64.b64encode(image_file.read()).decode('ascii')
+            #print(encoded)
+            out.write('</p><p>\n<img src="data:image/png;base64,')            
+            out.write(encoded)
+            out.write('"/>\n')
+
+        # end of the question
+        out.write('</p>]]></text>\n')
+        out.write('</questiontext>\n<defaultgrade>1.0</defaultgrade>\n')
 
         if 'explanations' in data.keys():
             theexplanations = replace_latex_macros(data['explanations'])
@@ -303,14 +321,7 @@ if output_format == 'moodle':
 
         out.write('<answernumbering>abc</answernumbering>\n')
 
-#        if 'image' in data.keys():
-#            dataimage = data['image'][0] 
-#            out.write('\\begin{center}\n')
-#            if 'options' in dataimage.keys():
-#                out.write('\\includegraphics['+dataimage['options']+']{'+dataimage['file']+'}')
-#            else:
-#                out.write('\\includegraphics{'+dataimage['file']+'}')     
-#            out.write('\n\\end{center}\n\n')
+
 
         nbans = 0
         nbgood = 0
