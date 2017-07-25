@@ -147,6 +147,7 @@
 
 \newenvironment{question}{
 \def\myqid{}
+\def\myqnum{}
 \def\myqtype{}
 \def\myqauthor{}
 \def\myqtags{}
@@ -156,23 +157,24 @@
 \def\myqidontknow{0}
 \renewcommand{\labelitemi}{\large$\square$}
 \begin{ques}
-}{\end{ques}}
+}{
+\par
+\footnotesize\texttt{\hfill%
+\ifthenelse{\equal{\myqnum}{}}{}{[\#\myqnum]\quad}
+%\ifthenelse{\equal{\myqtype}{}}{}{[type: \myqtype]\quad}
+\ifthenelse{\equal{\myqauthor}{}}{}{[author: \myqauthor]\quad}
+\ifthenelse{\equal{\myqclassification}{}}{}{[class: \myqclassification]\quad}
+%\ifthenelse{\equal{\myqtags}{}}{}{[tags: \myqtags]\quad}
+}
+\end{ques}
+}
 
 \newenvironment{answers}{
 \ifthenelse{\equal{\myqoneline}{0}}{\begin{itemize}}{\begin{center}\begin{itemize*}}
 }
 {
-\ifthenelse{\equal{\myqidontknow}{0}}{}{
-\item \nameIdontknow
-}
+\ifthenelse{\equal{\myqidontknow}{0}}{}{\item \nameIdontknow}
 \ifthenelse{\equal{\myqoneline}{0}}{\end{itemize}}{\end{itemize*}\end{center}}
-\footnotesize\texttt{\hfill%
-\ifthenelse{\equal{\myqid}{}}{}{[id: \myqid]\quad}
-\ifthenelse{\equal{\myqtype}{}}{}{[type: \myqtype]\quad}
-\ifthenelse{\equal{\myqauthor}{}}{}{[author: \myqauthor]\quad}
-\ifthenelse{\equal{\myqclassification}{}}{}{[class: \myqclassification]\quad}
-\ifthenelse{\equal{\myqtags}{}}{}{[tags: \myqtags]\quad}
-}
 }   
  
  
@@ -196,6 +198,7 @@
 
 
 \newcommand{\qid}[1]{\def\myqid{#1}}
+\newcommand{\qnum}[1]{\def\myqnum{#1}}
 \newcommand{\qtype}[1]{\def\myqtype{#1}}
 \newcommand{\qauthor}[1]{\def\myqauthor{#1}}
 \newcommand{\qtags}[1]{\def\myqtags{#1}}
@@ -203,8 +206,25 @@
 \newcommand{\qkeeporder}{\def\myqkeeporder{1}}
 \newcommand{\qoneline}{\def\myqoneline{1}}
 \newcommand{\qidontknow}{\def\myqidontknow{1}}
-%\newcommand{\qtitle}[1]{\def\myqtitlte{#1}}
+\newcommand{\qsection}{}    % Will be filled automatically
+\newcommand{\qsubsection}{} % Idem
+%\newcommand{\qtitle}[1]{\def\myqtitle{#1}}
 
 %\newcommand{\qimage}[2][]{\ifthenelse{\equal{#2}{}}{\includegraphics{#2}}{\includegraphics[#1]{#2}}}
 \newcommand{\qimage}[2][]{\begin{center}\includegraphics[#1]{#2}\end{center}}
 
+% Title and author of a list of questions
+\newcommand{\qcmtitle}[1]{
+\vspace*{0.5ex}
+\hrule\vspace*{1.5ex} 
+\hfil{\textbf{\Large #1}}
+\vspace*{1ex} \hrule 
+\vspace*{5ex}
+}
+\newcommand{\qcmauthor}[1]{
+\vspace*{0ex}
+\hrule\vspace*{1.5ex} 
+\hfil{\textbf{\large #1}}
+\vspace*{1ex} \hrule 
+\vspace*{5ex}
+}
