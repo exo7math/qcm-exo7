@@ -81,48 +81,68 @@ Usage possible prévu  :
 \end{itemize}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\section{Options}
+\section{Options de base}
 
 \textbf{Titre.} Exemple: \verb|\begin{question}[Théorème de Thalès]|
 
-Il est déconseillé d'utiliser des maths dans le titre, car les maths ne sont pas supporter après exportation par certaines plateformes (ex. scenari).
+Il est déconseillé d'utiliser des maths dans le titre, car les maths ne sont pas supportées après exportation par certaines plateformes (ex. scenari).
+
 
 \bigskip
-\textbf{Identifiant.} Exemple \verb|\qid{1234}| ou \verb|\qid{lille1.L2.integrale.33}|. Doit être unique ! 
+\textbf{Explications.} Ajouter des explications après les réponses à l'aide de
+\verb|\begin{explanations}| ... \verb|\end{explanations}|
+
+\bigskip
+\textbf{Solutions.} Vous pouvez cacher les solutions et explications par l'option 
+\verb|\usepackage[nosolutions]{exo7qcm}|. 
+
+\bigskip
+\textbf{Images.} Avec la commande \verb|\qimage{monfichier}|, qui est exactement la commande \verb|includegraphics|, avec possibilité d'utiliser les options usuelles, par exemple \verb|\qimage[height=3cm]{monfichier}|.
+Dans la philosophie actuelle, c'est une seule image par question, et en plus l'image est à la fin de l'énoncé. (Pas d'image dans les réponses, ni dans les choix).
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Options avancées}
+
+Tout d'abord les méta-données. La plupart seront gérées automatiquement.
+
+\bigskip
+\textbf{Numéro.} Exemple \verb|\qnum{1234}| Numéro unique, attribué automatiquement.
+
+
+\bigskip
+\textbf{Identifiant.} Exemple \verb|\qid{lille1.L2.integrale.33}|. Doit être unique ! 
 Les jeux de caractères sont \texttt{a...z}, \texttt{A...Z}, \texttt{0...9} et les séparateurs \texttt{"."} et \texttt{"!"}. Le point \texttt{"."} sépare des mots clés. 
 Pour indiquer que deux questions testent la compréhension de la même chose (et peuvent être interchangées de façon à avoir des versions différentes pour chaque étudiant) on ajoute à la fin la balise point d'exclamation \texttt{"!"}.
 Par exemple \verb|\qid{derivee.exp!1}| (demande la dérivée de $x \mapsto e^{x^2-8}$)
 et \verb|\qid{derivee.exp!2}| (demande la dérivée de $x \mapsto e^{3x^3+1}$).
 
 
-
-
-%À terme chaque question devrait avoir un numéro unique, mais sera attribué automatiquement.
-
 \bigskip
 \textbf{Auteurs.} Exemple \verb|\qauthor{exo7}|. 
 
-Nom de l'auteur.
+Nom de l'auteur. Est automatiquement extrait de la fiche de questions.
 
 \bigskip
-\textbf{Classification.} Exemple \verb|\qclassification{127.01,132.08}|. 
+\textbf{Classification.} Exemple \verb|\qclassification{127.01,132.08}|. Est (sera) automatiquement extrait de la fiche de questions.
 
 Fait référence aux catégories d'Exo7.
 
 \bigskip
+\textbf{Section, sous-section.} Exemples \verb|\qsection{Fonctions continues}|, \verb|\qsubsection{TVI}|. Sont  automatiquement extraits de la fiche de questions.
+
+
+\bigskip
 \textbf{Tags.} Exemple \verb|\qtags{facile, L1, temps=2}|. Non normalisé. Permet(tra) de personnaliser, d'automatiser certaines tâches ou de retrouver des questions. À définir ultérieurement.
 
+\bigskip
 
+Options de mise en forme. La plupart ne devrait pas être utilisée lors de la conception, mais seulement à l'utilisation.
 
 \bigskip
 \textbf{Garder l'ordre des réponses.} (Non activé par défaut.) Ajouter la commande : \verb|\qkeeporder|. 
 
 Utile par exemple lorsque les réponses sont dans un ordre naturel et qu'on ne veut pas qu'il soit changer. Par exemple : "Quelle est la date de la révolution française ? 1689, 1789, 1889, 1989 ?" 
-
-\bigskip
-\textbf{Case "Je ne sais pas".} (Non activé par défaut.) Ajouter la commande : \verb|\qidontknow|.
-
-Rajoute une case supplémentaire à la fin : "Je ne sais pas".
 
 
 \bigskip
@@ -143,17 +163,12 @@ Combien font $2^{10}$ ?
 \end{minipage}
 \end{center}
 
-\bigskip
-\textbf{Explications.} Ajouter des explications après les réponses à l'aide de
-\verb|\begin{explanations}| ... \verb|\end{explanations}|
 
 \bigskip
-\textbf{Solutions.} Vous pouvez cacher les solutions et explications par l'option 
-\verb|\usepackage[nosolutions]{exo7qcm}|. 
+\textbf{Case "Je ne sais pas".} (Non activé par défaut.) Ajouter la commande : \verb|\qidontknow|. 
 
-\bigskip
-\textbf{Images.} Avec la commande \verb|\qimage{monfichier}|, qui est exactement la commande \verb|includegraphics|, avec possibilité d'utiliser les options usuelles, par exemple \verb|\qimage[height=3cm]{monfichier}|.
-Dans la philosophie actuelle, c'est une seule image par question, et en plus l'image est à la fin de l'énoncé. (Pas d'image dans les réponses, ni dans les choix).
+Rajoute une case supplémentaire à la fin : "Je ne sais pas".
+
 
 \bigskip
 \textbf{Commentaires.} Vous pouvez insérer des commentaires dans votre fichier \LaTeX, mais ils ne seront pas exportés. 
@@ -305,6 +320,40 @@ Par contre à l'exportation vous pouvez perdre de l'information (auteur, tags, c
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Conseils et consignes pour l'écriture des questions}
 
+
+Pour créer une série de questions, il suffit juste de créer un fichier contenant toute vos questions, sur le modèle suivant :
+
+\begin{center}
+\begin{minipage}{0.8\textwidth}
+\begin{verbatim}
+\qcmtitle{Titre pour ma série de questions}
+\qcmauthor{Auteur(s)}
+
+\section{Thème numéro 1}
+
+\begin{question}
+Juste l'énoncé (l'auteur, le numéro, ... seront ajoutés automatiquement).
+Puis les réponses et l'explication.
+\end{question}
+
+\begin{question}
+...
+\end{question}
+
+\section{Thème numéro 2}
+...
+
+\end{verbatim}
+\end{minipage}
+\end{center}
+
+Ensuite le script \texttt{adddataqcm --num=100 toto.tex} ajoute à l'intérieur de chaque exercice l'auteur, un numéro (en commençant ici à $100$) et la section/sous-section concernée.
+
+
+\bigskip
+
+
+Autres conseils :
 \begin{itemize}
   \item N'utiliser aucune macro personnelle. Vous disposez de \verb|\Nn|,... pour $\Nn$, $\Zz$, $\Qq$, $\Rr$, $\Cc$, $\Kk$ et c'est tout ! Vous pouvez écrire proprement un opérateur par \verb|\operatorname{arcsin}(x)|, pour $\operatorname{arcsin}(x)$.
   

@@ -281,9 +281,9 @@ if output_format == 'moodle':
         else:
             out.write('\n\n<question type="multichoice">\n')
 
-        if 'title' in data.keys():
-            thetitle = replace_latex_macros(data['title'])
-            out.write('<name><text>'+ thetitle +'</text></name>\n')
+        if 'num' in data.keys():
+            thenum = 'qcm-exo7-'+str(data['num']).zfill(4)
+            out.write('<name><text>'+ thenum +'</text></name>\n')
         else: 
             out.write('<name><text> </text></name>\n')
 

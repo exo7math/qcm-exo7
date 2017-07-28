@@ -80,7 +80,7 @@ def add_data_one_exo(text_exo,**kwargs):
 #        new_text_exo = re.sub("\\\\qauthor\{(.*?)\}",new_author,new_text_exo, flags=re.MULTILINE|re.DOTALL)
 
     # the current subsection
-    if 'subsection' in kwargs:
+    if ('subsection' in kwargs) and kwargs['subsection']:
         thesubsection = re.search('(?<=\\\\qsubsection\{)(.*?)(?=\})',new_text_exo, flags=re.MULTILINE|re.DOTALL)
         if thesubsection:  # overwrite an existing subsection
             new_subsection = "\\qsubsection{" + kwargs['subsection'] + "}"
@@ -89,7 +89,7 @@ def add_data_one_exo(text_exo,**kwargs):
             new_text_exo = "\n\\qsubsection{" + kwargs['subsection'] + "}" + new_text_exo
 
     # the current section
-    if 'section' in kwargs:
+    if ('section' in kwargs) and kwargs['section']:
         thesection = re.search('(?<=\\\\qsection\{)(.*?)(?=\})',new_text_exo, flags=re.MULTILINE|re.DOTALL)
         if thesection:  # overwrite an existing section
             new_section = "\\qsection{" + kwargs['section'] + "}"
@@ -97,9 +97,8 @@ def add_data_one_exo(text_exo,**kwargs):
         else: # new section
             new_text_exo = "\n\\qsection{" + kwargs['section'] + "}" + new_text_exo
 
-
     # the author
-    if 'author' in kwargs:
+    if ('author' in kwargs) and kwargs['author']:
         theauthor = re.search('(?<=\\\\qauthor\{)(.*?)(?=\})',new_text_exo, flags=re.MULTILINE|re.DOTALL)
         if theauthor:  # overwrite an existing author
             new_author = "\\qauthor{" + kwargs['author'] + "}"
@@ -110,11 +109,11 @@ def add_data_one_exo(text_exo,**kwargs):
     # the counter qnum
     thenum = re.search('(?<=\\\\qnum\{)(.*?)(?=\})',new_text_exo, flags=re.MULTILINE|re.DOTALL)
 
-    if thenum and is_overwrite:  # overwrite an existing numerotation
+    if thenum and is_overwrite and kwargs['num']:  # overwrite an existing numerotation
         new_num = "\\qnum{"+str(kwargs['num'])+"}"
         new_text_exo = re.sub("\\\\qnum\{(.*?)\}",new_num,new_text_exo, flags=re.MULTILINE|re.DOTALL)
 
-    if (not thenum) and option_num: # new author
+    if (not thenum) and option_num and kwargs['num'] : # new author
         new_text_exo = "\\qnum{"+str(kwargs['num'])+"}"+new_text_exo
 
     title = title+"\n"
@@ -129,6 +128,7 @@ def add_data_one_exo(text_exo,**kwargs):
 myauthor = re.search('\\\\qcmauthor\{(.*?)\}',text_all, flags=re.MULTILINE|re.DOTALL)
 if myauthor:
     myauthor = myauthor.group(1)
+    print('Author : '+myauthor)
 
 #--------------------------------------------------
 #--------------------------------------------------

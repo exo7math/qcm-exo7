@@ -109,6 +109,14 @@ def one_exo_to_yaml(text_exo):
     else:
         title = None
 
+    # the num  : search the number of the question (and remove it from the question)
+    thenum = re.search('(?<=\\\\qnum\{)(.*?)(?=\})',allquestion, flags=re.MULTILINE|re.DOTALL)
+    if thenum:
+        mynum = thenum.group(0)
+        allquestion = re.sub("\\\\qnum\{(.*?)\}","",allquestion, flags=re.MULTILINE|re.DOTALL)
+    else:
+        mynum = None
+
     # the id  : search the id (and remove it from the question)
     theid = re.search('(?<=\\\\qid\{)(.*?)(?=\})',allquestion, flags=re.MULTILINE|re.DOTALL)
     if theid:
@@ -127,6 +135,23 @@ def one_exo_to_yaml(text_exo):
     else:
         author = None
 
+    # the section : idem
+    thesection = re.search('(?<=\\\\qsection\{)(.*?)(?=\})',allquestion, flags=re.MULTILINE|re.DOTALL)
+    if thesection:
+        section = thesection.group(0)
+        allquestion = re.sub("\\\\qsection\{(.*?)\}","",allquestion, flags=re.MULTILINE|re.DOTALL)
+    else:
+        section = None
+
+    # the subsection : idem
+    thesubsection = re.search('(?<=\\\\qsubsection\{)(.*?)(?=\})',allquestion, flags=re.MULTILINE|re.DOTALL)
+    if thesubsection:
+        subsection = thesubsection.group(0)
+        allquestion = re.sub("\\\\qsubsection\{(.*?)\}","",allquestion, flags=re.MULTILINE|re.DOTALL)
+    else:
+        subsection = None
+
+ 
     # the classification : idem
     theclassification = re.search('(?<=\\\\qclassification\{)(.*?)(?=\})',allquestion, flags=re.MULTILINE|re.DOTALL)
     if theclassification:
@@ -244,6 +269,9 @@ def one_exo_to_yaml(text_exo):
     text_yaml += '---\n'
     #text_yaml += "id: "+str(id)+'\n\n'
 
+    if mynum:
+        text_yaml += "num: "+mynum+'\n\n'
+
     if myid:
         text_yaml += "id: "+myid+'\n\n'
 
@@ -252,6 +280,12 @@ def one_exo_to_yaml(text_exo):
 
     if author:
         text_yaml += "author: "+author+'\n\n'
+
+    if section:
+        text_yaml += "section: "+section+'\n\n'
+
+    if subsection:
+        text_yaml += "subsection: "+subsection+'\n\n'
 
     if classification:
         text_yaml += "classification: "+classification+'\n\n'
