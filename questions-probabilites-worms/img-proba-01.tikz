@@ -1,0 +1,67 @@
+\usetikzlibrary{arrows}
+\begin{tikzpicture}[scale=0.8,every node/.style={transform shape}]
+
+
+\begin{scope}
+  \draw[->,>=latex,thick,gray] (-0.5,0) -- (3,0);
+  \draw[->,>=latex,thick,gray] (0,0) -- (0,3);
+
+    	%ticks
+    	\foreach \x in {0,...,2}
+     		\draw (\x,3pt) -- (\x,-3pt)
+			node[anchor=north] {\x};
+
+   \draw[very thick, color=red] (0,0)--(0,1);
+   \draw[very thick, color=red] (1,0)--(1,2);
+   \draw[very thick, color=red] (2,0)--(2,1);
+
+  \draw[dashed,thick,color=red] (2,1)--(0,1) node[left] {$a$};
+  \draw[dashed,thick,color=red] (1,2)--(0,2) node[left] {$1-2a$};
+
+\end{scope}
+
+
+
+\begin{scope}[xshift=4.5cm]
+  \draw[->,>=latex,thick,gray] (-0.5,0) -- (3,0);
+  \draw[->,>=latex,thick,gray] (0,0) -- (0,3);
+
+    	%ticks
+    	\foreach \x in {0,...,2}
+     		\draw (\x,3pt) -- (\x,-3pt)
+			node[anchor=north] {\x};
+
+\def\a{0.66}
+
+   \draw[-(,very thick, color=red] (-0.5,0)--(0,0);
+   \draw[(-(,very thick, color=red] (0,\a)--(1,\a);
+   \draw[(-(,very thick, color=red] (1,2*\a)--(2,2*\a);
+   \draw[(-,very thick, color=red] (2,3*\a)--(2.5,3*\a);
+
+  \draw[dashed,thick,color=red] (0,\a)--(0,\a) node[left] {$a$};
+  \draw[dashed,thick,color=red] (1,2*\a)--(0,2*\a) node[left] {$1-2a$};
+  \draw[dashed,thick,color=red] (2,3*\a)--(0,3*\a) node[left] {$1$};
+
+\end{scope}
+
+
+
+\begin{scope}[xshift=9cm]
+  \draw[->,>=latex,thick,gray] (-0.5,0) -- (3,0);
+  \draw[->,>=latex,thick,gray] (0,0) -- (0,3);
+
+    	%ticks
+    	\foreach \x in {0,...,2}
+     		\draw (\x,3pt) -- (\x,-3pt)
+			node[anchor=north] {\x};
+
+\def\a{0.66}
+
+   \draw[very thick, color=red] (-0.5,0)--(0,0)--(1,\a)--(2,2)--(2.5,2);
+
+  \draw[dashed,thick,color=red] (1,\a)--(0,\a) node[left] {$1-a$};
+  \draw[dashed,thick,color=red] (2,3*\a)--(0,3*\a) node[left] {$1$};
+
+\end{scope}
+
+\end{tikzpicture}

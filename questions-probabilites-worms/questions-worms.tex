@@ -1,0 +1,748 @@
+
+\section*{QCM de probabilités L2 par Julien Worms}
+
+\textit{Répondre en cochant la ou les cases correspondant à
+des assertions vraies (et seulement celles-ci).}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Probabilités, événements}
+
+%-------------------------------------------
+\subsection{Probabilités, événements}
+
+Soit ${\cal E}$ une expérience aléatoire et $\Omega$ l'univers qui lui a été associé. Soient $A$ et $B$ deux événements de probabilités respectives $0.5$ et $0.6$.
+
+\begin{question}
+Parmi les affirmations suivantes, lesquelles sont vraies ?
+\begin{answers}
+\bad{$A$ est inclus dans $B$ car $\mathbb{P}(A)\leq \mathbb{P}(B)$.}
+\good{$A$ et $B$ ne peuvent pas être incompatibles car $\mathbb{P}(A)+\mathbb{P}(B)=1.1>1$.}
+\good{Il est impossible que $A$ et $B$ soient indépendants si $A$ implique $B$.}
+\good{$\Omega$ est indépendant de tout autre événement.}
+\good{Deux événements quelconques (mais non tous deux impossibles) ne peuvent être simultanément incompatibles et indépendants.}
+\end{answers}
+\end{question}
+
+
+\begin{question}
+Supposons maintenant que $\mathbb{P}(A\cup B)=4/5$. $A$ et $B$ sont-ils indépendants ?
+\begin{answers}
+\good{Oui.}
+\bad{Non.}
+\bad{On ne peut pas se prononcer car on ne dispose pas de $\mathbb{P}(A\cap B)$.}
+\bad{On ne peut pas se prononcer car on ne dispose pas de détails sur l'expérience, sur $\Omega$, $A$ et $B$.}
+\end{answers}
+\begin{explanations}
+Oui. Il suffit d'utiliser $\mathbb{P}(A \cap B) = \mathbb{P}(A)+\mathbb{P}(B) - \mathbb{P}(A\cup B)$.
+\end{explanations}
+\end{question}
+
+
+\begin{question}
+Soit $\omega\in\Omega$. Et supposons que $B\subset A$ (dans cette question seulement). Parmi les propositions suivantes, laquelle/lesquelles désigne(nt) un événement ?
+\begin{answers}
+\bad{$\omega$}
+\good{$\{\omega\}$}
+\bad{$(\omega)$}
+\good{$A\backslash B$}
+\bad{$B\backslash A$}
+\bad{$A|B$}
+\end{answers}
+\begin{explanations}
+Un événement est un ensemble. $\omega$ est seulement un élément pas un ensemble, $(\omega)$ ne veut rien d'autre que $\omega$. 
+On n'a pas le droit d'écrire $B\backslash A$ si on ne sait pas que $A$ est inclus dans $B$.
+$A|B$ n'est pas un événement ! 
+\end{explanations}
+\end{question}
+
+
+\begin{question}
+Parmi les affirmations suivantes, lesquelles n'ont aucun sens (c'est-à-dire ne sont pas correctes au niveau du langage mathématique) ? 
+\begin{answers}
+\good{Dans certaines circonstances, on a $\mathbb{P}(A\cup B)=\mathbb{P}(A)\cup\mathbb{P}(B)$.}
+\good{Si $C$ est un autre événement impliqué par $A$, on a $A\cup C\cap B=A\cap B$.}
+\good{On a $A\subset A+B$.}
+\good{$\{A,B\} \subset \Omega$}
+\end{answers}
+\begin{explanations}
+Quelques commentaires en vrac : on ne réunit pas des probabilités ... on n'a pas le droit d'enchaîner l'utilisation des symboles $\cap$ et $\cup$ sans parenthèses... on n'additionne pas des événements... et $\{ A,B\}$ est un ensemble contenant deux ensembles, donc n'est pas une sous-ensemble de $\Omega$, mais un sous-ensemble de l'ensemble des parties de $\Omega$.  
+\end{explanations}
+\end{question}
+
+
+
+%-------------------------------------------
+\subsection{Probabilités, événements}
+
+
+En France, on considère la population ${\cal P}$ des candidats au permis de conduire qui essaient de l'obtenir une fois, puis une seconde fois si la première tentative échoue. Parmi eux, un candidat sur trois l'obtient du premier coup, et parmi ceux qui ne l'ont pas eu du premier coup, 30\% d'entre eux l'obtiennent à la seconde tentative.
+On considère l'expérience aléatoire consistant à sélectionner au hasard une personne issue de cette population ${\cal P}$. 
+
+\begin{question}
+Dans ce cadre, le(s)quel(s) des 2 espaces $\Omega$ ci-dessous peu(ven)t être considéré(s) pour cette expérience ?
+\begin{answers}
+\bad{Seulement $\Omega=\{$ permis obtenu \ , \ permis non obtenu  $\}$.}
+\bad{Seulement $\Omega=\{$\ il y a eu une tentative \ , \ il y a eu deux tentatives $\}$.}
+\bad{Aucun des deux n'est un univers adéquat.}
+\good{Les deux peuvent convenir.} 
+\end{answers}
+\begin{explanations}
+Les deux peuvent en effet convenir, mais sont des univers pauvres. Par exemple, "le permis a été obtenu à la première tentative" est un événement pour l'un mais pas pour l'autre, et c'est l'inverse pour "le permis a été obtenu"...
+\end{explanations}
+\end{question}
+
+
+\begin{question}
+On suppose désormais qu'un espace $\Omega$ convenable a été choisi (mais on ne le détaille pas ici ; il permet en tout cas de définir les événements adéquats des questions suivantes). La probabilité d'obtenir le permis au plus tard à la seconde tentative vaut :
+\begin{answers}
+\bad{$1/2$}
+\bad{$2/3$}
+\good{Environ $53\%$}
+\bad{Environ $23\%$}
+\end{answers}
+\end{question}
+
+
+\begin{question}
+Peut-on définir les événements $A=$"la seconde tentative a échoué sachant que la première a échoué"
+et $B=$"la première tentative a échoué et la seconde a réussi" ?
+\begin{answers}
+\bad{Oui pour $A$, oui pour $B$.}
+\bad{Oui pour $A$, non pour $B$.}
+\good{Non pour $A$, oui pour $B$.}
+\bad{Non pour $A$, non pour $B$.}
+\end{answers}
+\begin{explanations}
+A n'est pas un événement ! En effet, à la question "Est-ce que la seconde tentative a échoué sachant que la première a échoué ?", on ne peut pas répondre par oui ou par non, car la question n'a aucun sens. Ce n'est pas le cas de B, qui définit bien un événement.
+\end{explanations}
+\end{question}
+
+
+\begin{question}
+Que vaut la probabilité d'avoir tenté l'épreuve une seconde fois sachant qu'on a obtenu le permis au final ?
+\begin{answers}
+\bad{Zéro.}
+\good{$0,375$}
+\bad{$0,1875$}
+\bad{Une autre valeur que les réponses précédentes.}
+\bad{La question n'a pas de sens.} 
+\end{answers}
+\end{question}
+
+
+\begin{question}
+Les événements $R=$"le permis est obtenu à l'issue de l'expérience" et $T=$"Une deuxième tentative a eu lieu" sont-ils :
+\begin{answers}
+\bad{Indépendants.}
+\bad{Incompatibles.}
+\bad{Indépendants et incompatibles.}
+\good{Ni l'un ni l'autre.}
+\end{answers}
+\end{question}
+
+
+%-------------------------------------------
+\subsection{Probabilités, événements}
+
+
+On suppose que 2000 personnes ont envoyé un SMS dans le cadre d'un mini-jeu télé qui consistait à répondre à une question (particulièrement idiote) à 2 choix. On suppose que la société qui gère ce "jeu-SMS" sélectionne 30 SMS au hasard parmi les 2000. 
+
+
+\begin{question}
+Dans cette question et les suivantes, on note $\Omega$ l'ensemble de tous les sous-ensembles de 30 SMS (distincts). Combien d'éléments $\Omega$ contient-il ?
+\begin{answers}
+\good{$C_{2000}^{30}$} 
+\bad{$A_{2000}^{30}$}
+\bad{1971}
+\bad{$2000!/30!$}
+\end{answers}
+\begin{explanations}
+C'est $C_{2000}^{30}$, voir le cours !
+\end{explanations}
+\end{question}
+
+
+\begin{question}
+A-t-on équiprobabilité dans cette situation ?
+\begin{answers}
+\good{Oui.}
+\bad{Non.}
+\end{answers}
+\begin{explanations}
+Bien sûr que oui. Tous les sous-ensembles de 30 SMS ont autant de chances d'être tirés.
+\end{explanations}
+\end{question}
+
+
+\begin{question}
+On considère maintenant que vous faites partie des personnes qui ont envoyé un SMS. Quelle est la probabilité que vous soyez sélectionné(e) ?
+\begin{answers}
+\good{$1.5\%$}
+\bad{$0.03\%$}
+\bad{$0.15\%$}
+\bad{Environ $1.2\%$.}
+\end{answers}
+\begin{explanations}
+L'événement en question correspond au sous-ensemble de $\Omega$ contenant tous les sous-ensembles de 30 SMS dont le sien, et cet événement est de cardinal $C_{1999}^{29}$, et cela donne, après simplifications, $\mathbb{P}(A) = 30/2000 = 1,5\%$.
+\end{explanations}
+\end{question}
+
+
+\begin{question}
+Votre ami(e) fait également partie des personnes ayant envoyé un SMS. Quelle est la probabilité qu'au moins l'un(e) d'entre vous soit tiré(e) au sort ?
+\begin{answers}
+\bad{Deux fois la réponse à la question précédente.}
+\good{Environ 3\% (mais pas 3\%).}
+\bad{Environ 0,3\% (mais pas 0,3\%).}
+\bad{Une autre valeur.}
+\end{answers}
+\begin{explanations}
+Le cardinal du complémentaire $B^c$ de l'événement étudié est clairement $C_{1998}^{30}$,  nombre de sous-ensembles de 30 éléments parmi les 1998 SMS restants. Cela donne $\mathbb{P}(B)=1- (1970\times 1969)/(2000\times 1999) \simeq  2.98\%$.
+\end{explanations}
+\end{question}
+
+
+
+%-------------------------------------------
+\subsection{Probabilités, événements}
+
+
+Une expérience consiste à lancer deux dés à 3 "faces" (si, si, ça existe ! \'Equiprobables bien entendu.). On note $A_i=$"le premier dé vaut $i$" et $B_i=$"le second dé vaut $i$" pour chaque $i\in\{1,2,3\}$, ainsi que $S_k=$"la somme des deux dés vaut au plus $k$" pour $k\in \{2,3,4,5,6\}$. On note $\Omega$ l'univers associé à cette expérience.
+
+\begin{question}
+Parmi les descriptions ci-dessous, laquelle/lesquelles désigne(nt) une partition de $\Omega$ ?
+\begin{answers}
+\good{$\{B_1,B_2,B_3\}$}
+\good{$\{A_1\cup A_2,A_3\}$}
+\bad{$\{S_2,S_3,S_4,S_5,S_6\}$}
+\end{answers}
+\begin{explanations}
+$\{S_2,S_3,S_4,S_5,S_6\}$ n'est pas du tout une partition car les événements $S_k$ ne sont pas incompatibles deux à deux.
+\end{explanations}
+\end{question}
+
+
+\begin{question}
+Parmi les affirmations suivantes, laquelle/lesquelles est/sont erronée(s) ou n'a/n'ont aucun sens ?
+\begin{answers}
+\good{$(A_1\cup A_2\cup A_3)^c=B_1\cap B_2$}
+\bad{$\mathbb{P}(\Omega)=\cup_{i=1}^3\mathbb{P}(A_i)$}
+\good{$(A_1\cup A_2)\cap(B_1\cup A_3)=(A_1\cap B_1)\cup (A_2\cap B_1)$}
+\bad{$S_3=(A_1\cap B_1)\cup(A_1\cap B_2)$}
+\bad{$S_5^c=A_3\cup B_3$}
+\good{$\mathbb{P}(B_j|A_i)=\mathbb{P}(B_j)$ \ $(\forall (i,j)\in \{1,2,3\}^2)$}
+\end{answers}
+\begin{explanations}
+Pour le $(A_1\cup A_2\cup A_3)^c$,  on vérifie que les deux membres sont vides. Pour $\mathbb{P}(\Omega)=\ldots$, on ne réunit pas des probabilités ! Pour $(A_1\cup A_2)\cap\ldots$ on le vérifie en développant à gauche et en rencontrant certaines intersections vides.   Pour $S_3=\ldots$ il manque $A_2\cap B_1$. Pour $S^c_5=\ldots$ c'est une intersection plutôt. Pour $\mathbb{P}(B_j|A_i)=\ldots$ chaque $B_j$ est indépendant de chaque $A_i$, oui. 
+\end{explanations}
+\end{question}
+
+
+\begin{question}
+Que vaut la probabilité de $S_5$ ?
+\begin{answers}
+\bad{$5/6$}
+\bad{$7/9$}
+\good{$8/9$}
+\end{answers}
+\begin{explanations}
+Comme $S_5^c = A_3 \cap B_3$ et que $A_3$ et $B_3$ sont indépendants de probabilités $1/3$ alors 
+on a $\mathbb{P}(S_5) = 1-1/9 = 8/9$.
+\end{explanations}
+\end{question}
+
+
+\begin{question}
+Que vaut la probabilité de $S_5\backslash S_2$ ?
+\begin{answers}
+\bad{$2/3$}
+\good{$7/9$}
+\bad{$6/9$}
+\bad{L'énoncé ne veut rien dire}
+\end{answers}
+\begin{explanations}
+$S_5\backslash S_2$ signifiant $S_5$ privé de $S_2$, et comme $S_2$ est inclus dans $S_5$, alors 
+$\mathbb{P}(S_5\backslash S_2) = \mathbb{P}(S_5) - \mathbb{P}(S_2)
+= 8/9-1/9 = 7/9$.
+\end{explanations}
+\end{question}
+
+
+\begin{question}
+Que vaut la probabilité conditionnelle de $S_5$ sachant $S_2$ ?
+\begin{answers}
+\bad{$1/8$}
+\good{$1$}
+\bad{$8/9$}
+\bad{L'énoncé ne veut rien dire}
+\end{answers}
+\begin{explanations}
+C'est $1$ car $S_2$ est inclus dans $S_5$.
+\end{explanations}
+\end{question}
+
+
+
+%-------------------------------------------
+\subsection{Probabilités, événements}
+
+\begin{question}
+Soit $n$ un entier non nul et $k$ un entier compris entre $1$ et $n$. On considère un tableau contenant $n$ cases vides. Quel est le nombre de façons différentes de noircir $k$ de ces cases ?
+\begin{answers}
+\bad{$k$}
+\bad{$n-k$}
+\bad{$1-n$}
+\good{Aucune des réponses précédentes.}
+\end{answers}
+\begin{explanations}
+La réponse est évidemment $C_n^k$. Trop facile pour avoir faux !
+\end{explanations}
+\end{question}
+
+
+\begin{question}
+Soit $n$ un entier non nul et $k$ un entier compris entre $1$ et $n$. On lance $n$ fois une pièce équilibrée. Quelle est la probabilité d'obtenir exactement $k$ piles ?
+\begin{answers}
+\bad{$C_n^k p^n(1-p)^{n-k}$}
+\bad{$\displaystyle\frac{k!}{n!(n-k)!}(1/2)^k(1/2)^{n-k}$}
+\good{$n!/(2^n \, k!(n-k)!)$}
+\end{answers}
+\begin{explanations}
+Ce n'est pas $C_n^k p^n(1-p)^{n-k}$, mais $C_n^k p^k(1-p)^{n-k}$ et comme $p=1/2$ alors 
+$p^k(1-p)^{n-k}= \frac{1}{2^n}$.
+\end{explanations}
+\end{question}
+
+
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Variables discrètes}
+
+
+%-------------------------------------------
+\subsection{Variables discrètes}
+
+
+On considère que dans une équipe de basket, chacun des 12 joueurs a 1 chance sur 4 d'être absent au moins une fois durant le mois de juin. On suppose que l'absence ou la présence d'un joueur n'a pas d'impact sur les chances qu'a un autre joueur de se retrouver absent. On s'intéresse au nombre $N$ de joueurs absents durant le mois de juin. 
+
+\begin{question}
+Quelle est la probabilité que $N$ vaille 3 ?
+\begin{answers}
+\bad{Elle vaut $(1/4)^3\simeq 1.56\%$.}
+\bad{On ne peut pas savoir, car on ne connaît pas la loi de $N$.} 
+\good{Aucune des réponses précédentes.}
+\end{answers}
+\begin{explanations}
+$N$ suit bien sûr la loi $B(12,1/4)$, donc la réponse vaut $\simeq 25.81\%$. 
+\end{explanations}
+\end{question}
+
+
+\begin{question}
+Quelle est la probabilité qu'il y ait au moins 4 joueurs absents durant le mois de juin ?
+\begin{answers}
+\bad{Elle vaut exactement $1-\sum_{k=0}^3 (1/4)^k$.}
+\good{Elle vaut environ $35\%$.}
+\bad{Elle vaut environ $19\%$.}
+\bad{On ne peut pas répondre car la loi de $N$ n'est pas connue.}
+\end{answers}
+\begin{explanations}
+C'est $\mathbb{P}(N\geq 4)=1-\mathbb{P}(N\leq 3)\simeq 35\%$.
+\end{explanations}
+\end{question}
+
+
+\begin{question}
+Les familles d'événements 
+$$
+( \; \{N=0\}\, , \, \{N=1\}\, , \ldots , \, \{N=12\} \; ) \makebox[1.5cm][c]{ et } 
+( \;\{N\leq 0\}\, , \, \{N\leq 1\}\, , \ldots , \, \{N\leq 12\}\; )
+$$ 
+constituent-elles des partitions de l'univers $\Omega$ associé à cette expérience ?
+\begin{answers}
+\good{Oui pour la première, non pour la seconde.}
+\bad{Non pour la première, oui pour la seconde.}
+\bad{Non pour les deux familles.}
+\bad{On ne peut pas le savoir car on ne connaît pas l'univers $\Omega$ en question.}
+\end{answers}
+\begin{explanations}
+Dans la seconde famille, les événements sont imbriqués les uns dans les autres et ne sont donc pas incompatibles.
+\end{explanations}
+\end{question}
+
+
+\begin{question}
+Que valent l'espérance et le premier quartile de $N$ ? 
+\begin{answers}
+\bad{Ils valent respectivement $3$ et $1$.} 
+\good{Ils valent respectivement $3$ et $2$.}
+\bad{Ils valent respectivement $4$ et $1$.} 
+\bad{On ne peut toujours pas le dire car on ne connaît toujours pas la loi de $N$ !}
+\end{answers}
+\begin{explanations}
+On a $\mathbb{P}(N\leq 2) \simeq 39,07\% \geq 1/4$ et $\mathbb{P}(N\geq 1) \simeq  84,16\% \geq 3/4$, le premier quartile vaut donc $1$.
+\end{explanations}
+\end{question}
+
+
+
+%-------------------------------------------
+\subsection{Variables discrètes}
+
+On considère qu'une personne un peu éméchée accepte de lancer une pièce de monnaie équilibrée jusqu'à faire pile, mais en donnant 10 euros à son voisin de table à chaque fois qu'elle fait face.
+
+\begin{question}
+Quelle est la loi du nombre $N$ de fois que cette personne fait face (avant de finir par faire pile) ?
+\begin{answers}
+\bad{C'est une loi binomiale de paramètres $10$ et $1/2$.}
+\bad{C'est une loi binomiale négative de paramètres $10$ et $1/2$.}
+\good{C'est une loi géométrique sur $\Nn$ de paramètre $1/2$.}
+\bad{C'est une loi géométrique sur $\Nn^*$ de paramètre $1/2$.}
+\bad{C'est une loi de Poisson de paramètre $1/2$.}
+\end{answers}
+\begin{explanations}
+C'est le nombre d'échecs jusqu'à  réussite dans une succession d'essais indépendants et de même probabilité de réussite $p=\frac 1 2$, donc $\mathbb{P}(N=k)=p(1-p)^{k} \ (\forall k\in\mathbb{N})$.
+\end{explanations}
+\end{question}
+
+
+\begin{question}
+Que valent $\mathbb{E}(N)$, $\operatorname{Var}(N)$, $\mathbb{E}(N^2)$ ? 
+\begin{answers}
+\good{$\mathbb{E}(N)=1 $, $\operatorname{Var}(N)=2$,  $\mathbb{E}(N^2)=3$.}
+\bad{$\mathbb{E}(N)=1 $, $\operatorname{Var}(N)=2$,  $\mathbb{E}(N^2)=1$.}
+\bad{$\mathbb{E}(N)=2 $, $\operatorname{Var}(N)=2$,  $\mathbb{E}(N^2)=6$.} 
+\bad{$\mathbb{E}(N)=2 $, $\operatorname{Var}(N)=2$,  mais le calcul de $\mathbb{E}(N^2)$ est trop compliqué.}
+\bad{Aucune des réponses ci-dessus.}
+\end{answers}
+\begin{explanations}
+Il était conseillé  d'utiliser l'astuce souvent utile $\mathbb{E}(N^2)=\operatorname{Var}(N)+(\mathbb{E}(N))^2$. 
+\end{explanations}
+\end{question}
+
+
+\begin{question}
+Que valent $\mathbb{P}(N\geq 2)$ et la médiane de $N$ ?
+\begin{answers}
+\bad{$\mathbb{P}(N\geq 2)=1/2$ et la médiane de $N$ vaut $1$.}
+\good{$\mathbb{P}(N\geq 2)=1/4$ et la médiane de $N$ vaut $0$.}
+\bad{$\mathbb{P}(N\geq 2)=3/4$ et la médiane de $N$ vaut $1$.}
+\bad{Aucune des réponses ci-dessus.}
+\end{answers}
+\begin{explanations} On a $\mathbb{P}(N\geq 2) = 1-\mathbb{P}(N=1)-\mathbb{P}(N=0) = 1 - p - p(1-p) = 1/4$. En outre, $\mathbb{P}(N\geq 0)=1/2$ est $\geq 1/2$ et $\mathbb{P}(N\leq 0)=1$ est bien $\geq 1/2$ donc $0$ est la médiane de $N$.
+\end{explanations}
+\end{question}
+
+
+\begin{question}
+Quel est le montant moyen que ce joueur devra donner à son voisin de table ?
+\begin{answers}
+\bad{5 euros.}
+\good{10 euros.}
+\bad{20 euros.}
+\bad{Aucune des réponses ci-dessus.}
+\end{answers}
+\begin{explanations} Le montant qu'il doit donner à son voisin est la variable aléatoire $X=10N$, donc $\mathbb{E}(X)=10\mathbb{E}(N) = 10$ euros.
+\end{explanations}
+\end{question}
+
+
+%-------------------------------------------
+\subsection{Variables discrètes}
+
+On considère la variable aléatoire $X$ égale au résultat de la somme de 2 dés à 6 faces équilibrés. 
+
+\begin{question}
+Quelle est la loi de $X$ ?
+\begin{answers}
+\bad{$X$ suit la loi uniforme sur $\{1,2,\ldots,12\}$.}
+\bad{$X$ suit la loi uniforme sur $\{2,3,\ldots,12\}$.}
+\bad{$X$ suit la loi binomiale de paramètres 12 et $1/6$.}
+\good{Aucune des réponses ci-dessus.}
+\end{answers}
+\begin{explanations}
+C'est bien sûr la loi sur $\{2,3,...,12\}$ dont les poids sont (exo facile) :
+
+ $\{1/36,2/36,3/36,4/36,5/36,6/36,5/36,4/36,3/36,2/36,1/36\}$. 
+ 
+Les questions qui suivent en découlent facilement.
+\end{explanations}
+\end{question}
+
+
+\begin{question}
+Que valent l'espérance et la médiane de $X$ ?
+\begin{answers}
+\bad{L'espérance de $X$ vaut $6.5$ et la médiane vaut $7$.}
+\good{Elles valent toutes les deux 7.} 
+\bad{Elles valent d'autres valeurs que celles proposées ci-dessus.}
+\end{answers}
+\end{question}
+
+
+\begin{question}
+Que valent $\mathbb{P}(X\geq 4)$ et la variance de $X$ ?
+\begin{answers}
+\bad{$\mathbb{P}(X\geq 4)=3/4$ et $\mathbb{V}ar(X)=329/6$.}
+\bad{$\mathbb{P}(X\geq 4)=1/4$ et $\mathbb{V}ar(X)=35/6$.}
+\bad{$\mathbb{P}(X\geq 4)=14/36$ et $\mathbb{V}ar(X)=35/6$.}
+\good{$\mathbb{P}(X\geq 4)=11/12$ et $\mathbb{V}ar(X)\simeq 5.8$.} 
+
+\end{answers}
+%\begin{explanations}
+%%% réponse=1-(1+2)/36=11/12   et var=329/6 - 7^2 = 35/6 =5.83333
+%\end{explanations}
+\end{question}
+
+
+%-------------------------------------------
+\subsection{Variables discrètes}
+
+Les deux questions ci-dessous n'ont aucun rapport entre elles (les variables notées $X$ ne sont donc pas les mêmes dans ces deux questions). 
+
+
+\begin{question}
+Soit $X$ une variable aléatoire à valeurs dans $\Nn$ vérifiant $\mathbb{P}(X\geq 3)=64\%$. Que peut-on dire de la médiane de $X$ ?
+\begin{answers}
+\bad{Elle vaut 3.}
+\bad{Elle est inférieure ou égale à 3.}
+\good{Elle est supérieure ou égale à 3.}
+\bad{On manque d'informations pour affirmer l'une des propositions ci-dessus.}
+\end{answers}
+\begin{explanations} 
+Elle ne vaut pas forcément $3$ (par exemple, on peut très bien avoir $\mathbb{P}(X=3)=11\%$ donc $\mathbb{P}(X\leq 3)=\mathbb{P}(X\leq 2)+\mathbb{P}(X= 3)=(1-0.64)+0.11=0.47=47\%$ donc $\mathbb{P}(X\leq 3)<1/2$), et elle est $\geq 3$ car si $k\leq 2$, par croissance de la fonction de répartition on a  $\mathbb{P}(X\leq k) \leq \mathbb{P}(X\leq 2)= 1-\mathbb{P}(X>2) =1-\mathbb{P}(X\geq 3) = 1-0.64 < 1/2$. 
+\end{explanations}
+\end{question}
+
+
+\begin{question}
+Soit $X$ une variable aléatoire réelle d'espérance $2$ et de variance $2$. Peut-on calculer l'espérance de $Y=2X^2+1$ ?
+\begin{answers}
+\bad{Non, car on ne connait pas $\mathbb{E}(X^2)$.}
+\good{Oui, elle vaut 13.}
+\bad{Oui, elle vaut 5.}
+\end{answers}
+\begin{explanations} Bien sûr, $\mathbb{E}(Y)=2\mathbb{E}(X^2)+1=2(\mathbb{V}ar(X)+(\mathbb{E}(X))^2)+1 = 13$.
+\end{explanations}
+\end{question}
+
+
+
+%-------------------------------------------
+\subsection{Variables discrètes}
+
+Soit $X$ une variable aléatoire à valeurs dans $\{0,1,2\}$ et de loi donnée  par
+\[
+ \mathbb{P}(X=0)=\mathbb{P}(X=2)=a \makebox[1.cm][c]{et} \mathbb{P}(X=1)=1-2a
+\]
+où $a$ est une constante réelle. 
+
+
+\begin{question}
+Quelles valeurs la constante $a$ a-t-elle le droit de prendre ?
+\begin{answers}
+\bad{Toutes les valeurs de $]0,1[$ car $\mathbb{P}(X=0)+\mathbb{P}(X=1)+\mathbb{P}(X=2)=1$.}
+\bad{Seulement la valeur $a=1/4$.}
+\good{Toutes les valeurs de $]0,1/2[$.}
+\bad{Une autre réponse que les précédentes.}
+\end{answers}
+\begin{explanations} Les probabilités $\mathbb{P}(X=k)$ doivent appartenir à $]0,1[$ (ni $0$ ni $1$, sinon une ou plusieurs modalités ne pourraient pas être déclarées dans l'espace d'état de $X$), d'où la réponse.
+\end{explanations}
+\end{question}
+
+
+\begin{question}
+Quel est le graphe de la fonction de répartition de $X$ parmi les graphes suivants ?
+
+%[[image]]
+\qimage{img-proba-01}
+%
+%\begin{center}
+%\includegraphics[width=14.cm,height=5.cm]{ImagePourQCM2}
+%\end{center}
+
+
+
+\begin{answers}
+\bad{Le premier.}
+\good{Le second.}
+\bad{Le troisième.}
+\end{answers}
+\end{question}
+
+
+\begin{question}
+Que valent l'espérance et la variance de $X$ ? 
+\begin{answers}
+\bad{$\mathbb{E}(X)=1$ et $\operatorname{Var}(X)=1+2a$.}
+\bad{$\mathbb{E}(X)=2a$ et $\operatorname{Var}(X)=4a^2$.} 
+\good{$\mathbb{E}(X)=1$ et $\operatorname{Var}(X)=2a$.}
+\end{answers}
+\end{question}
+
+
+\begin{question}
+On pose $Y=4-2X$. \emph{Sans déterminer la loi de $Y$}, peut-on calculer l'espérance et l'écart-type de $Y$ ?
+\begin{answers}
+\good{Oui, ils valent respectivement $2$ et $\sqrt{8a}$.} 
+\bad{Oui, ils valent respectivement $2$ et $\sqrt{4(1-a)}$.}
+\bad{Oui, ils valent respectivement $4(1-a)$ et $4a$.}
+\bad{Oui, mais aucune des propositions précédentes n'est correcte.}
+\bad{Non, il nous faut nécessairement la loi pour calculer ces caractéristiques de $Y$.}
+\end{answers}
+\begin{explanations} $\mathbb{E}(Y)=4-2\mathbb{E}(X)$, et $\mathbb{V}ar(Y)=(-2)^2\mathbb{V}ar(X)$, donc l'écart-type de $Y$ vaut 2 fois celui de $X$.
+\end{explanations}
+\end{question}
+
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Variables continues}
+
+Toutes les questions suivantes sont indépendantes les unes des autres. 
+
+\begin{question}
+Parmi les expressions ci-dessous, lesquelles permettent de définir des densités de lois continues ? (Ci-dessous, les lettres $c$ et $c'$ désignent des constantes qu'il n'est pas obligatoire de calculer, mais qui ont la valeur adéquate pour que les fonctions en question soient des densités, si elles le peuvent.)
+\begin{answers}
+\bad{$f_1(x) = \displaystyle\frac {c} x \, \mathbb{I}_{[1,+\infty[}(x)$}  
+\bad{$f_2(x) = c' \, x^{24} \, \mathbb{I}_{[-100,100]}(x)$} 
+\bad{$f_3(x) = \frac 4{15} x^3 \, \mathbb{I}_{[-1,2]}(x)$} 
+\bad{$f_4(x) = \frac {\pi}2 \sin(\pi x) \, \mathbb{I}_{[0,1]}(x)$}  
+\end{answers}
+\begin{explanations} 
+Pour $f_1$, la fonction $x\mapsto 1/x$ n'est pas intégrable en $+\infty$. Pour $f_2$, $c'$ existe bien mais est de très faible valeur... Pour $f_3$, la fonction n'est pas positive partout donc non. Quant à $f_4$, contrairement aux apparences elle est bien positive partout, et intégrable, donc oui, et on vérifie qu'elle est bien d'intégrale $1$. 
+\end{explanations}
+\end{question}
+
+
+\begin{question}
+Soit $X$ le temps de trajet quotidien de Katrin, en heures, variable aléatoire de densité définie par 
+$$ f_X(x) = x\, e^{-x} \mathbb{I}_{[0,+\infty[}(x) $$
+Laquelle des affirmations suivantes est vraie ?
+\begin{answers}
+\bad{$\mathbb{E}(X)=1$ et $\mathbb{P}(X>1)\simeq 63.2\%$.}
+\bad{$\mathbb{E}(X)=2$ et $\mathbb{P}(X>1)\simeq 26.4\%$.}
+\good{$\mathbb{P}(X>1)\simeq 73.6\%$ et on ne peut pas facilement déterminer la médiane de $X$.}
+\bad{$\mathbb{E}(X)$ vaut $+\infty$ (c'est-à-dire $X$ n'admet pas d'espérance) et $\mathbb{P}(X>1)\simeq 26.4\%$.}
+\end{answers}
+\begin{explanations}
+$\mathbb{E}(X)$ vaut effectivement $2$, mais $F(x)=1-(1+x)e^{-x}$ donc $\mathbb{P}(X>1)=\bar F(1) \simeq 73.6\%$. Quant à la médiane, $F$ est bien strictement croissante (le vérifier), mais l'équation $F(x)=1/2$ n'a pas de résolution explicite, il faut recourir à un schéma numérique pour la résoudre. 
+\end{explanations}
+\end{question}
+
+
+\begin{question}
+Si on considère $X$ une variable aléatoire dont la densité est la fonction représentée ci-dessous, laquelle/lesquelles de ces affirmations est/sont vraie(s) ? 
+
+%[[image]]
+\qimage{img-proba-02}
+
+%\begin{center}
+%\centerline{\includegraphics[width=7.cm,height=4.cm]{GraphepourQCM3.jpg}}
+%\end{center}
+
+
+\begin{answers}
+\bad{La médiane de $X$ est positive.} 
+\good{$\mathbb{P}(X<2) > \mathbb{P}(X>-1)$} 
+\bad{$\mathbb{P}( \, \ln(X+3) >0 \, ) < 1/2$} 
+\good{$\mathbb{P}(X>x) < 1/2$ pour tout $x>0$.}
+\end{answers}
+\begin{explanations}
+Pour l'affirmation $\mathbb{P}( \, \ln(X+3) >0 \, ) < 1/2$, on peut répondre non (sans calculs) car $X$ est toujours $\geq -2$, donc $\ln(X+3)$ est toujours $\geq \ln(1)=0$. 
+\end{explanations}
+\end{question}
+
+
+\begin{question}
+On suppose que le temps d'attente (en minutes) d'un bus est une variable aléatoire de densité définie par 
+$$ f_X(x)= \frac{2}{15}\left(1-\frac{x}{15}\right)\mathbb{I}_{[0,15]}(x) $$
+Si l'on suppose que ces temps d'attente pendant 10 jours sont indépendants et de même loi (celle définie précédemment), quelle est la probabilité qu'on ait, durant ces 10 jours, a attendre plus de 10 minutes au moins 3 fois ? 
+\begin{answers}
+\bad{Environ $5\%$.} 
+\good{Environ $9\%$.}
+\bad{Environ $21\%$.}
+\bad{Environ $90\%$.}
+\bad{On ne peut pas répondre à la question, il manque des éléments pour mener le calcul.} 
+\end{answers}
+\begin{explanations}
+On est dans un schéma binomial, on cherche la probabilité $\mathbb{P}(N\geq 3)$ où $N$ est de loi binomiale de paramètres $10$ et $p=\mathbb{P}(X>10)=1/9$ (après calcul). On trouve environ $\mathbb{P}(N\geq 3)=1-\sum_{k=0}^2 \mathbb{P}(N=k)\simeq 9\%$.
+\end{explanations}
+\end{question}
+
+
+\begin{question}
+On considère que la quantité de pain (en centaines de kg) qu'une boulangerie vend en une journée est une variable aléatoire de loi de densité définie par 
+\[
+ f_X(x) = \left\{  \begin{array}[c]{cl} x & \mbox{ si $0\leq x\leq 1$} \\ 2-x & \mbox{ si $1\leq x\leq 2$} \\ 0 & \mbox{ sinon}    \end{array} \right. 
+\]
+On introduit les événements $A$="la boulangerie vendra demain au moins 100kg de pain" et $B$="la boulangerie vendra demain entre 50 et 150kg de pain". Les événements $A$ et $B$ sont ils indépendants ? 
+\begin{answers}
+\good{Oui.}
+\bad{Non.}
+\end{answers}
+\begin{explanations}
+On a $A = \{ X \geq 1 \}$, $B = \{ 0.5 \leq X \leq 1.5 \}$, $A \cap B = \{ 1 \leq X \leq 1.5 \}$ ; il suffit alors de déterminer la fonction de répartition $F$ de $X$, et de vérifier que $\mathbb{P}( A \cap B ) = \mathbb{P}(A)  \mathbb{P}(B)$, c'est-à-dire que $F(1.5) - F(1) = (1-F(1)) (F(1.5) - F(0.5))$. On trouve alors qu'il y a bien égalité.
+\end{explanations}
+\end{question}
+
+
+\begin{question}
+Soit $X$ une variable aléatoire de loi ${\cal N}(0,1)$. On pose $Y=X^2$ (on dit que la loi de $Y$ est la loi du $\chi^2$ à 1 degré de liberté).  On a bien sûr $f_Y(x)=0$ si $x<0$ car $Y$ est une variable positive, mais quelle est l'expression de la densité de $Y$ pour $x>0$ ? (Ci-dessous, $\varphi$ désigne la densité de la loi ${\cal N}(0,1)$ bien sûr.)
+\begin{answers}
+\bad{$f_Y(x) = 2x\varphi(x^2)$}
+\good{$f_Y(x) = \varphi(\sqrt{x}) / \sqrt{x}$} 
+\bad{$f_Y(x) = \varphi(\sqrt{x})$} 
+\bad{$f_Y(x) = (\varphi(x))^2$} 
+\end{answers}
+\begin{explanations}
+Si on note $F_Y$ la fonction de répartition de $Y$ et $\Phi$ celle de $X$, alors on a, pour $y>0$, $F_Y(y)= \mathbb{P}(Y\leq y)=\mathbb{P}(|X|\leq \sqrt{y})=2\Phi(\sqrt{y})-1$. On obtient alors la réponse en dérivant cette fonction composée (et avec $\Phi'=\varphi$). Noter que  la loi du $\chi^2$ à $n$ degrés de libertés est la loi de $Y=X_1^2+\cdots+X_n^2$ lorsque $X_1,\ldots,X_n$ sont des variables indépendantes gaussiennes centrées réduites. C'est une loi très importante en statistique. On prononce $\chi^2$ "ki-deux" ou "ki-carré". %Les plus curieux(ses) d'entre vous pourront aller voir dans un livre ou sur internet comment calculer des probabilités ou des quantiles de ces lois, à l'aide de tables, comme pour les gaussiennes.
+\end{explanations}
+\end{question}
+
+
+\begin{question}
+Soit $X$ une variable aléatoire de loi ${\cal N}(30,25)$. Lesquelles (ou laquelle) des affirmations suivantes sont vraies ? 
+\begin{answers}
+\bad{$X$ a environ 5\% de chances d'être entre $-20$ et $80$, et $\mathbb{P}(X>30)=1/2$.}
+\good{Le premier quartile de $X$ est environ égal à $26.7$ et $\mathbb{P}(X<30)=1/2$.}
+\bad{La loi de $Y=2X$ est ${\cal N}(60,50)$ et $\mathbb{P}(20\leq X\leq 40)\simeq 95\%$.}
+\good{$\mathbb{P}(|X-30|>20)\simeq 0$ et la loi de $Y=2X+10$ est ${\cal N}(70,100)$.}
+\end{answers}
+\begin{explanations}
+Dans cette question, il faut surtout prendre garde à ne pas confondre la variance et l'écart-type. 
+\end{explanations}
+\end{question}
+
+
+\begin{question}
+Quelle(s) affirmation(s), parmi les suivantes, sont vraies ?
+\begin{answers}
+\bad{Si $X$ est de loi continue, alors sa fonction de densité est nécessairement continue sur $\Rr$.}
+\good{Si $X$ est de loi continue, alors sa fonction de répartition est nécessairement continue sur $\Rr$.}
+\bad{Si $X$ est une variable aléatoire de loi ${\cal E}xp(\lambda)$, alors $2X$ est de loi ${\cal E}xp(2\lambda)$.} 
+\bad{Si $X$ est une variable aléatoire de loi uniforme sur $[0,1]$, alors $2X$ est de loi de densité $f(x)=\mathbb{I}_{[0,2]}(x)$.}
+\end{answers}
+\begin{explanations}
+C'est la fonction de répartition d'une loi continue qui est continue, mais pas forcément la densité (regardez par exemple les lois uniformes ou exponentielles !). Quand $X\sim {\cal E}xp(\lambda)$, si on avait $2X$ de loi ${\cal E}xp(2\lambda)$, alors $2X$ (qui a comme espérance $2 \mathbb{E}(X)=2/\lambda$) aurait comme espérance $1/(2\lambda)$, ce qui est contradictoire. Quant à la question sur les lois uniformes, il manque un facteur $1/2$ pour que $f$ constitue une fonction de densité.
+\end{explanations}
+\end{question}
+
+
+\begin{question}
+On suppose que $X$ désigne le montant du gain (en euros) que rapporte un employé à son entreprise en un mois, et que $X$ est de loi ${\cal N}(500,(150)^2)$. L'entreprise verse à l'employé une prime $Y$ égale à $0$ si ce gain est inférieur à 700 euros, et, si le gain $X$ excède 700 euros, à la moitié de l'excès en question.  Laquelle des affirmations suivantes est vraie ? 
+\begin{answers}
+\bad{La loi de $Y$ est une loi continue et l'employé a environ $2,3\%$ de chances d'avoir une prime supérieure à 50 euros.} 
+\good{La loi de $Y$ n'est pas une loi continue et l'employé a environ $2,3\%$ de chances d'avoir une prime supérieure à 50 euros.}
+\bad{La loi de $Y$ est une loi continue et l'employé a environ $17\%$ de chances d'avoir une prime supérieure à 50 euros.}
+\bad{La loi de $Y$ n'est pas une loi continue et l'employé a environ $17\%$ de chances d'avoir une prime supérieure à 50 euros.}
+\end{answers}
+\begin{explanations}
+On a $\{Y=0\} = \{X<700\}$, qui est de probabilité non nulle, ce qui contredit que $Y$ puisse être de loi continue (car on aurait alors $\mathbb{P}(Y=y)=0$ pour tout $y$ de $\Rr$). $Y$ n'est donc pas de loi continue, mais elle a une "composante" continue, on pourrait dire qu'elle continue conditionnellement au fait d'être $>0$. On a ensuite, pour $y >0$, $\{Y>y\} = \{Y>y \mbox{ , } X>700\} = \{ (X-700)/2 > y \mbox{ , } X>700\} = \{ X>700+2y \mbox{ , } X>700\} = \{X>700+2y\}$, donc $\{Y>50\} = \{X>800\} = \{ (X-500)/150 > (800-500)/150 \}$ qui est de probabilité $1-\Phi(2)$, qui vaut en effet environ $2.3\%$.  C'était une question plus difficile, mais très loin d'être inabordable ! Il faut juste écrire les événements tranquillement... 
+\end{explanations}
+\end{question}
+

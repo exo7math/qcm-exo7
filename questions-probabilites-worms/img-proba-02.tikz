@@ -1,0 +1,19 @@
+\begin{tikzpicture}[scale=0.7,every node/.style={transform shape}]
+
+  \draw[->,>=latex,thick,gray] (-3,0) -- (3.5,0);
+  \draw[->,>=latex,thick,gray] (0,0) -- (0,4);
+
+    	%ticks
+    	\foreach \x in {-3,...,3}
+     		\draw (\x,3pt) -- (\x,-3pt)
+			node[anchor=north] {\x};
+
+    	%ticks
+    	\foreach \y in {0,...,3}
+     		\draw (-3pt,\y) -- (+3pt,\y);
+
+ \draw[very thick, color=red] (-3,0)--(-2,0);
+
+ \draw[very thick, color=red,domain=-2:3, smooth,samples=100] plot (\x,{0.1*(\x+2)*exp(-1.2*(\x-2)))});
+
+\end{tikzpicture}
