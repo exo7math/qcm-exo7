@@ -165,12 +165,30 @@ def replace_latex_macros(text):
 
     return text
 
-
 # Test
 #text = "Soit $f : \\Nn \\to \\Rr$ et \\Nnon et $\\Nn7$"
 #print(text)
 #text = replace_latex_macros(text)
 #print(text)
+
+# Delete the code from the section title 
+# Example "My Section | Easy | 123.45" -> "My Section | Easy"
+def delete_exo7_category(text):
+    text = re.sub("\s\|\s[0-9.,\s]+","",text, flags=re.MULTILINE|re.DOTALL)
+
+    return text
+
+# Test
+# text = "Logique | Facile | 100.01, 100.02"
+# print(text)
+# text = delete_exo7_category(text)
+# print(text)
+
+# text = "Logique -- Raisonnement | 100"
+# print(text)
+# text = delete_exo7_category(text)
+# print(text)
+
 
 
 #--------------------------------------------------
@@ -273,6 +291,19 @@ if output_format == 'moodle':
 
     for data in all_data:
 
+        if 'section' in data.keys():
+            thesection = delete_exo7_category(data['section'])
+
+            if 'subsection' in data.keys():           
+                thesubsection = '/' + delete_exo7_category(data['subsection'])
+            else:
+                thesubsection = ''
+
+            course_name = 'Défaut pour LISCINUM2017/'
+
+            out.write('\n\n<question type="category">\n<category>\n<text>\n$course$/'+course_name
+                +thesection+thesubsection+'</text>\n</category>\n</question>\n\n')
+
 #        if 'id' in data.keys():
 #            myid = str(data['id'])
 
@@ -280,6 +311,7 @@ if output_format == 'moodle':
             out.write('\n\n<question type="multichoice">\n')
         else:
             out.write('\n\n<question type="multichoice">\n')
+
 
         if 'num' in data.keys():
             thenum = 'qcm-exo7-'+str(data['num']).zfill(4)

@@ -128,7 +128,7 @@ def add_data_one_exo(text_exo,**kwargs):
 myauthor = re.search('\\\\qcmauthor\{(.*?)\}',text_all, flags=re.MULTILINE|re.DOTALL)
 if myauthor:
     myauthor = myauthor.group(1)
-    print('Author : '+myauthor)
+    #print('Author : '+myauthor)
 
 #--------------------------------------------------
 #--------------------------------------------------
@@ -137,11 +137,11 @@ list_all_section = list(re.finditer('\\\\section\{(.*?)\}',text_all, flags=re.MU
 list_all_subsection = list(re.finditer('\\\\subsection\{(.*?)\}',text_all, flags=re.MULTILINE|re.DOTALL))
 
 
-for section in list_all_section:    # start from the end to keep line number replacement
-    print('---- Section ---- Position %02d-%02d\n %s' % (section.start(), section.end(), section.group(1)))
+# for section in list_all_section:   
+#     print('---- Section ---- Position %02d-%02d\n %s' % (section.start(), section.end(), section.group(1)))
 
-for subsection in list_all_subsection:    # start from the end to keep line number replacement
-    print('---- Subsection ---- Position %02d-%02d\n %s' % (subsection.start(), subsection.end(), subsection.group(1)))
+# for subsection in list_all_subsection:    
+#     print('---- Subsection ---- Position %02d-%02d\n %s' % (subsection.start(), subsection.end(), subsection.group(1)))
 
 #--------------------------------------------------
 #--------------------------------------------------
@@ -161,7 +161,7 @@ numexo = numexo + len(list_all_exo) - 1
 
 for exo in reversed(list_all_exo):    # start from the end to keep line number replacement
     #print('---- Lines %02d-%02d\n %s' % (exo.start(), exo.end(), exo.group(0)))
-    print('---- Exo ---- Position %02d-%02d\n' % (exo.start(), exo.end()))
+    #print('---- Exo ---- Position %02d-%02d\n' % (exo.start(), exo.end()))
     old_exo = exo.group(1)
 
     # find the current section
