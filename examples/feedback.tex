@@ -1,0 +1,76 @@
+ %%%%%%%%%%%%%%%%%% PREAMBULE %%%%%%%%%%%%%%%%%%
+
+\documentclass[12pt,a4paper]{article}
+
+\usepackage[francais]{exo7qcm}
+%\usepackage[francais,nosolutions]{exo7qcm}
+
+\begin{document}
+
+ 
+ 
+%%%%%%%%%%%%%%%%%% ENTETE %%%%%%%%%%%%%%%%%%
+
+\LogoExoSept{2}
+
+%\kern-2em
+\hfill\textsf{Ann\'ee 2017}
+
+\vspace*{0.5ex}
+\hrule\vspace*{1.5ex} 
+\hfil\textsf{\textbf{\Large QCM de mathématiques}}
+\vspace*{1ex} \hrule 
+\vspace*{5ex} 
+
+
+\section{Pas de feedback}
+
+
+\begin{question}
+
+Combien font $2^{10}$ ? 
+
+\begin{answers}  
+    \bad{1000}
+    \good {1024}
+    \bad{2048}
+    \bad{$\int 10^{10} \%$}
+\end{answers}
+\end{question}
+
+
+
+\section{Avec feedback}
+
+\begin{question}
+
+Voici une question avec un feedback pour chaque réponse.
+
+Qu'est-ce qu'un kilo-octet ?
+
+
+\begin{answers}
+	\bad{Un octet qui a pris trop de poids. 
+	\feedback{Vous avez le sens de l'humour !}
+	}
+	
+    \good{$1000$ octets.    
+    \feedback{Oui ! Dans le système international le préfixe "kilo"     
+    signifie $1000$.}   
+    }
+
+    \bad{$1024$ octets.\feedback{Non ! $1024$ octets s'appelle un "kibioctet", abrégé en kio. Blabla $2^{10} = 1024$}.}
+\end{answers}
+
+\begin{explanations}
+Et voici l'explication globale...
+\end{explanations}
+
+\end{question}
+
+
+%\section{Test export yaml, puis export tex}
+
+%\input{export-feedback.tex}
+
+\end{document}

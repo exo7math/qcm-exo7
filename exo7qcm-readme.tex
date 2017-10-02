@@ -173,6 +173,10 @@ Rajoute une case supplémentaire à la fin : "Je ne sais pas".
 \bigskip
 \textbf{Commentaires.} Vous pouvez insérer des commentaires dans votre fichier \LaTeX, mais ils ne seront pas exportés. 
 
+\bigskip
+\textbf{\emph{Feedback}.} Vous pouvez donner une petite réaction associée à chaque réponse à l'aide de \verb|\feedback|, par exemple à la questions \og{}Combien font $6\times 7$?\fg{} on peut avoir comme réponse : 
+\verb|\bad{36 \feedback{Faux : revoyez vos tables ou lisez Ducobu !}	}|
+
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -360,8 +364,14 @@ Autres conseils :
   \item N'utiliser pas de maths dans le titre de la question.
   
   \item Les questions doivent être le plus indépendantes les une des autres.
+  
 
   
 \end{itemize}
 
+Problèmes et bugs connus :
+\begin{itemize}
+  \item N'utilisez pas de macros \LaTeX{} en dehors des balises de maths, car l'export vers certains formats n'est pas géré. Exemples : \verb|\'e|, \verb|\quad|, \verb|\\|, \verb|\bigskip|,\verb|\ldots|...
+  \item Une énoncé \verb|$x<a$| sera compris à l'export comme une balise html. Solution : rajouter des espaces : \verb|$x < a$|.
+ \end{itemize} 
 \end{document}
