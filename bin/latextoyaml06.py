@@ -208,23 +208,23 @@ def one_exo_to_yaml(text_exo):
     else:
         idontknow = False
 
-    # the image without options : idem
-    image = None
-    imageoptions = None
-    theimage = re.search('(?<=\\\\qimage\{)(.*?)(?=\})',allquestion, flags=re.MULTILINE|re.DOTALL)
-    if theimage:
-        image = theimage.group(0)
-        #print('\n\n---auteur---\n'+author+'\n\n')
-        allquestion = re.sub("\\\\qimage\{(.*?)\}","",allquestion, flags=re.MULTILINE|re.DOTALL)
+    # # the image without options : idem
+    # image = None
+    # imageoptions = None
+    # theimage = re.search('(?<=\\\\qimage\{)(.*?)(?=\})',allquestion, flags=re.MULTILINE|re.DOTALL)
+    # if theimage:
+    #     image = theimage.group(0)
+    #     #print('\n\n---auteur---\n'+author+'\n\n')
+    #     allquestion = re.sub("\\\\qimage\{(.*?)\}","",allquestion, flags=re.MULTILINE|re.DOTALL)
 
-    # the image with options : idem
-    theimage = re.search('(?<=\\\\qimage\[)(.*?)(?=\]\{)(.*?)(?=\})',allquestion, flags=re.MULTILINE|re.DOTALL)
-    if theimage:
-        image = theimage.group(2)[2:]
-        imageoptions = theimage.group(1)
-        #print('\n\n---image ---\n'+image+'\n\n')
-        #print('\n\n---image options---\n'+imageoptions+'\n\n')
-        allquestion = re.sub("\\\\qimage\[(.*?)\}","",allquestion, flags=re.MULTILINE|re.DOTALL)
+    # # the image with options : idem
+    # theimage = re.search('(?<=\\\\qimage\[)(.*?)(?=\]\{)(.*?)(?=\})',allquestion, flags=re.MULTILINE|re.DOTALL)
+    # if theimage:
+    #     image = theimage.group(2)[2:]
+    #     imageoptions = theimage.group(1)
+    #     #print('\n\n---image ---\n'+image+'\n\n')
+    #     #print('\n\n---image options---\n'+imageoptions+'\n\n')
+    #     allquestion = re.sub("\\\\qimage\[(.*?)\}","",allquestion, flags=re.MULTILINE|re.DOTALL)
 
 
     #print('\n\n---New question---\n'+allquestion+'\n\n')       
@@ -327,14 +327,14 @@ def one_exo_to_yaml(text_exo):
     if idontknow:
         text_yaml += "idontknow: True"+'\n\n'
 
-    if image:
-        text_yaml += "image: "+'\n'
-        text_yaml += "    - file: "+image+'\n'
+    # if image:
+    #     text_yaml += "image: "+'\n'
+    #     text_yaml += "    - file: "+image+'\n'
 
-    if imageoptions:
-        text_yaml += "      options: "+imageoptions+'\n\n'
-    else:
-        text_yaml += '\n'
+    # if imageoptions:
+    #     text_yaml += "      options: "+imageoptions+'\n\n'
+    # else:
+    #     text_yaml += '\n'
 
     text_yaml += "question: |\n"+add_space(question)+'\n\n'
     text_yaml += "answers: \n"

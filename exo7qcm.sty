@@ -38,6 +38,7 @@
 \def\nameGood{Good}
 \def\nameBad{Bad}
 \def\nameIdontknow{I don't know.}
+\def\nameFeedback{Feedback}
 
 
 \if@francais
@@ -46,6 +47,7 @@
   \def\nameGood{Vrai}
   \def\nameBad{Faux}
   \def\nameIdontknow{Je ne sais pas.}
+  \def\nameFeedback{Réaction}
 \fi
 
 
@@ -196,6 +198,11 @@
 %\newcommand{\good}[1]{\item~[\nameGood] #1}
 %\newcommand{\bad}[1]{\item~[\nameBad] #1}
 
+\if@nosolutions
+\newcommand{\feedback}[1]{}
+\else
+\newcommand{\feedback}[1]{\newline\emph{\nameFeedback: #1}}
+\fi
 
 \newcommand{\qid}[1]{\def\myqid{#1}}
 \newcommand{\qnum}[1]{\def\myqnum{#1}}
@@ -211,7 +218,7 @@
 %\newcommand{\qtitle}[1]{\def\myqtitle{#1}}
 
 %\newcommand{\qimage}[2][]{\ifthenelse{\equal{#2}{}}{\includegraphics{#2}}{\includegraphics[#1]{#2}}}
-\newcommand{\qimage}[2][]{\begin{center}\includegraphics[#1]{#2}\end{center}}
+\newcommand{\qimage}[2][]{\includegraphics[#1]{#2}}
 
 % Title and author of a list of questions
 \newcommand{\qcmtitle}[1]{

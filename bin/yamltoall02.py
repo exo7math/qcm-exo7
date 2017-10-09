@@ -124,13 +124,13 @@ if output_format == 'tex':
 
         out.write('\n'+data['question']+'\n')
 
-        if 'image' in data.keys():
-            dataimage = data['image'][0] 
-            #print(dataimage)
-            if 'options' in dataimage.keys():
-                out.write('\\qimage['+dataimage['options']+']{'+dataimage['file']+'}\n\n')
-            else:
-                out.write('\\qimage{'+dataimage['file']+'}\n\n')     
+        # if 'image' in data.keys():
+        #     dataimage = data['image'][0] 
+        #     #print(dataimage)
+        #     if 'options' in dataimage.keys():
+        #         out.write('\\qimage['+dataimage['options']+']{'+dataimage['file']+'}\n\n')
+        #     else:
+        #         out.write('\\qimage{'+dataimage['file']+'}\n\n')     
 
 
         out.write('\\begin{answers}\n')    
@@ -237,16 +237,19 @@ if output_format == 'amc':
             out.write('\\textbf{'+ thetitle +'.} ')
 
         thequestion = replace_latex_macros(data['question'])
+        thequestion = re.sub("\\\\qimage","\includegraphics",thequestion, flags=re.MULTILINE|re.DOTALL)
         out.write(thequestion+'\n')
 
-        if 'image' in data.keys():
-            dataimage = data['image'][0] 
-            out.write('\\begin{center}\n')
-            if 'options' in dataimage.keys():
-                out.write('\\includegraphics['+dataimage['options']+']{'+dataimage['file']+'}')
-            else:
-                out.write('\\includegraphics{'+dataimage['file']+'}')     
-            out.write('\n\\end{center}\n\n')
+
+
+        # if 'image' in data.keys():
+        #     dataimage = data['image'][0] 
+        #     out.write('\\begin{center}\n')
+        #     if 'options' in dataimage.keys():
+        #         out.write('\\includegraphics['+dataimage['options']+']{'+dataimage['file']+'}')
+        #     else:
+        #         out.write('\\includegraphics{'+dataimage['file']+'}')     
+        #     out.write('\n\\end{center}\n\n')
 
         if 'oneline' in data.keys() and data['oneline']:
             out.write('\\begin{choiceshoriz}')
@@ -261,6 +264,8 @@ if output_format == 'amc':
         for answers in data['answers']:
             value = answers['value']
             value = replace_latex_macros(value.rstrip())  #re.sub('[\s]*$','',text,flags=re.MULTILINE) # Delete potential space at the end
+            value = re.sub("\\\\qimage","\includegraphics",value, flags=re.MULTILINE|re.DOTALL)
+
             correct = answers['correct']
 
             if correct == True:
@@ -275,6 +280,8 @@ if output_format == 'amc':
 
         if 'explanations' in data.keys():
             theexplanations = replace_latex_macros(data['explanations'])
+            theexplanations = re.sub("\\\\qimage","\includegraphics",theexplanations, flags=re.MULTILINE|re.DOTALL)
+
             out.write('\explain{'+ theexplanations +'}\n')
 
         if 'type' in data.keys() and ( data['type'] == 'onlyone'  or data['type'] == 'truefalse' ):
@@ -288,6 +295,46 @@ if output_format == 'amc':
 #--------------------------------------------------
 #                   MOODLE
 # Write data to a xml file in a moodle format 
+
+# Encode an image to be included in xml
+def encode_image(filename):
+    filename =  filename + '.png'
+    with open(filename, "rb") as image_file:
+        encoded = base64.b64encode(image_file.read()).decode('ascii')
+    data = '</p><p>\n<img src="data:image/png;base64,'+encoded+'"/>\n'
+    return data
+
+# Replace all input of images by their encoding
+def replace_images(data):
+
+    # the image without options : idem
+    theimage = re.search('\\\\qimage',data, flags=re.MULTILINE|re.DOTALL)
+
+    while theimage is not None:
+        # the image without options
+        theimage = re.search('(?<=\\\\qimage\{)(.*?)(?=\})',data, flags=re.MULTILINE|re.DOTALL)
+        if theimage:
+            image_name = theimage.group(0)
+            # print("sans option",image_name)
+            new_image = encode_image(image_name)
+            data = re.sub("\\\\qimage\{(.*?)\}",new_image,data, flags=re.MULTILINE|re.DOTALL)
+        else:
+        # the image with options
+            theimage = re.search('(?<=\\\\qimage\[)(.*?)(?=\]\{)(.*?)(?=\})',data, flags=re.MULTILINE|re.DOTALL)
+            image_name = theimage.group(2)[2:]
+            image_options = theimage.group(1)
+            # print("avec option",image_name,image_options)
+            new_image = encode_image(image_name)
+            data = re.sub("\\\\qimage\[(.*?)\]\{(.*?)\}",new_image,data, flags=re.MULTILINE|re.DOTALL)
+
+        # Next image?
+        theimage = re.search('\\\\qimage',data, flags=re.MULTILINE|re.DOTALL)
+
+    return data
+
+    
+
+
 
 beginmoodle = '<?xml version="1.0" encoding="UTF-8"?>\n<quiz>\n'
 endmoodle = '\n\n</quiz>\n'
@@ -329,20 +376,21 @@ if output_format == 'moodle':
 
         # question
         thequestion = replace_latex_macros(data['question'])
+        thequestion = replace_images(thequestion)
         out.write('<questiontext format="html">\n')
         out.write('<text><![CDATA[<p>\n')
         out.write(thequestion)
         
-        #image in the question
-        if 'image' in data.keys():
-            dataimage = data['image'][0]
-            image_file =  dataimage['file']+'.png'
-            with open(image_file, "rb") as image_file:
-                encoded = base64.b64encode(image_file.read()).decode('ascii')
-            #print(encoded)
-            out.write('</p><p>\n<img src="data:image/png;base64,')            
-            out.write(encoded)
-            out.write('"/>\n')
+        # #image in the question
+        # if 'image' in data.keys():
+        #     dataimage = data['image'][0]
+        #     image_file =  dataimage['file']+'.png'
+        #     with open(image_file, "rb") as image_file:
+        #         encoded = base64.b64encode(image_file.read()).decode('ascii')
+        #     #print(encoded)
+        #     out.write('</p><p>\n<img src="data:image/png;base64,')            
+        #     out.write(encoded)
+        #     out.write('"/>\n')
 
         # end of the question
         out.write('</p>]]></text>\n')
@@ -350,6 +398,7 @@ if output_format == 'moodle':
 
         if 'explanations' in data.keys():
             theexplanations = replace_latex_macros(data['explanations'])
+            theexplanations = replace_images(theexplanations)
             out.write('<generalfeedback format="html"><text><![CDATA[<p>\n')
             out.write(theexplanations)
             out.write('</p>]]></text></generalfeedback>\n')
@@ -389,12 +438,14 @@ if output_format == 'moodle':
             else:
                 out.write('<answer fraction="-'+badratio+'" format="html"><text><![CDATA[<p>\n')
             thevalue = replace_latex_macros(answer['value'])
+            thevalue = replace_images(thevalue)
 
             out.write(thevalue)
             out.write('</p>]]></text>\n')
 
             if 'feedback' in answer:
                 feedback = replace_latex_macros(answer['feedback'])
+                feedback = replace_images(feedback)
                 feedback = feedback.rstrip()
                 out.write('<feedback><text><![CDATA[<p>' + feedback + '</p>]]></text></feedback>\n')
             
@@ -473,18 +524,26 @@ if output_format == 'f2s':
 
         good = 1
         out.write('<sc:choices>\n')
-        for answers in data['answers']:
+        for answer in data['answers']:
 
             checkstate = ''
             if not (single):
-                if answers['correct']:
+                if answer['correct']:
                     checkstate = ' solution="checked"'
                 else:
                     checkstate = ' solution="unchecked"'
             out.write('<sc:choice'+checkstate+'><sc:choiceLabel><op:txt><sc:para xml:space="preserve">\n')
-            thevalue = replace_latex_macros(answers['value'])
+            thevalue = replace_latex_macros(answer['value'])
             out.write(f2sxmlcleanup(thevalue))
-            out.write('</sc:para></op:txt></sc:choiceLabel></sc:choice>\n')
+            out.write('</sc:para></op:txt></sc:choiceLabel>')
+
+            if 'feedback' in answer:
+                feedback = replace_latex_macros(answer['feedback'])
+                feedback = f2sxmlcleanup(feedback)
+                feedback = feedback.rstrip()
+                out.write('<sc:choiceExplanation><op:txt><sc:para xml:space="preserve">\n' + feedback +'</sc:para></op:txt></sc:choiceExplanation>\n')
+
+            out.write('</sc:choice>\n')
             good+=1
 
         out.write('</sc:choices>')

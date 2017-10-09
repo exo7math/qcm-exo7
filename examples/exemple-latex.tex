@@ -2,8 +2,8 @@
 
 \documentclass[12pt,a4paper]{article}
 
-\usepackage[francais]{exo7qcm}
-
+\usepackage[francais]{../exo7qcm}
+%\usepackage[francais,nosolutions]{exo7qcm}
 
 \begin{document}
 
@@ -90,6 +90,7 @@ Test de question avec titre et je ne sais pas. Et avec tags. Variante de la ques
 \end{answers}
 \end{question}
 
+\section{Images}
 
 \begin{question}
 \qid{lille.L1.integrale}
@@ -103,7 +104,7 @@ Test de question avec explications et classification, type de questionnaire. [Ce
 Ceci est une equation :
 $$\sum_{i=1}^n \frac{i}{n}=\int$$
 
-Une image (toujours en fin de d'énoncé) : 
+Une image : 
 
 \qimage[height=3cm]{exemple-image}
 
@@ -111,11 +112,40 @@ Une image (toujours en fin de d'énoncé) :
 \begin{answers}
     \bad{Pas coucou $\frac{y}{x}$.}
 
-    \good{Coucou $\frac{x}{y}$.}
+    \good{Coucou $\frac{x}{y}$. \qimage[height=1cm]{exemple-image}}
 \end{answers}
 
 \begin{explanations}
 C'était pourtant pas si dur...
+\end{explanations}
+
+\end{question}
+
+\section{\emph{Feedback} pour chaque question}
+
+\begin{question}
+
+Voici une question avec un feedback pour chaque réponse.
+
+Qu'est-ce qu'un kilo-octet ?
+
+
+\begin{answers}
+	\bad{Un octet qui a pris trop de poids. 
+	\feedback{Vous avez le sens de l'humour !}
+	}
+	
+    \good{$1000$ octets. 
+    \feedback{Oui ! Dans le système international le préfixe "kilo" signifie $1000$.}
+    }
+
+    \good{$1024$ octets.
+	\feedback{Non ! $1024$ octets s'appelle un "kibioctet", abrégé en kio.}    
+    }
+\end{answers}
+
+\begin{explanations}
+Et voici l'explications globale...
 \end{explanations}
 
 \end{question}
