@@ -1,0 +1,2 @@
+COURSE_NAME_TEXT = 'Défaut pour LISCINUM2017/'
+THENUM_PREFIX = 'qcm-exo7-'
