@@ -162,6 +162,7 @@ if output_format == 'tex':
 #--------------------------------------------------
 # Replace custom LaTeX macro for non-LaTeX export
 def replace_latex_macros(text):
+
     # Replace \Rr to \mathbf{R} ...
     text = re.sub("\\\\Nn(?=[^a-zA-Z])","\mathbf{N}",text, flags=re.MULTILINE|re.DOTALL)
     text = re.sub("\\\\Zz(?=[^a-zA-Z])","\mathbf{Z}",text, flags=re.MULTILINE|re.DOTALL)
@@ -170,13 +171,17 @@ def replace_latex_macros(text):
     text = re.sub("\\\\Cc(?=[^a-zA-Z])","\mathbf{C}",text, flags=re.MULTILINE|re.DOTALL)
     text = re.sub("\\\\Kk(?=[^a-zA-Z])","\mathbf{K}",text, flags=re.MULTILINE|re.DOTALL)
 
+    # Replace '<' (resp. '>'') by ' < ' (resp. ' > ') to avoid html mixed up (note the spaces)
+    text = re.sub("<"," < ",text, flags=re.MULTILINE|re.DOTALL)
+    text = re.sub(">"," > ",text, flags=re.MULTILINE|re.DOTALL)
+
     return text
 
 # Test
-#text = "Soit $f : \\Nn \\to \\Rr$ et \\Nnon et $\\Nn7$"
-#print(text)
-#text = replace_latex_macros(text)
-#print(text)
+# text = "Soit $f : \\Nn \\to \\Rr$ et $b<a$ \\Nnon et $\\Nn7$"
+# print(text)
+# text = replace_latex_macros(text)
+# print(text)
 
 # Delete the code from the section title 
 # Example "My Section | Easy | 123.45" -> "My Section | Easy"
