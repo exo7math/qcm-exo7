@@ -1,0 +1,551 @@
+
+\qcmtitle{Dérivabilité}
+
+\qcmauthor{Arnaud Bodin, Abdellah Hanani, Mohamed Mzari}
+
+
+
+\section{Dérivabilité des fonctions réelles | 124}
+
+\subsection{Dérivées | Facile | 124.00}
+
+
+\begin{question}
+Soit $\displaystyle f(x)=\frac{2}{x}$ et $g(x)=2\sqrt{x}$. On note $\mathscr{C}_f$ (resp. $\mathscr{C}_g$) la courbe représentative de $f$ (resp. $g$). Quelles sont les bonnes réponses ?
+\begin{answers}  
+    \good{Une équation de la tangente à $\mathscr{C}_f$ au point $(1,2)$ est $y=-2x+4$.}
+    \bad{Une équation de la tangente à $\mathscr{C}_f$ au point $(1,2)$ est $y=-2x+2$.}
+    \bad{Une équation de la tangente à $\mathscr{C}_g$ au point $(1,2)$ est $y=x+2$.}
+    \good{Une équation de la tangente à $\mathscr{C}_g$ au point $(1,2)$ est $y=x+1$.}
+\end{answers}
+\begin{explanations}
+Une équation de la tangente à $\mathscr{C}_f$ au point $(a,f(a))$ est : 
+$$y=f'(a)(x-a)+f(a).$$
+Ici, $\displaystyle f'(x)=-\frac{2}{x^2}$ et $\displaystyle g'(x)=\frac{1}{\sqrt{x}}$.
+\end{explanations}
+\end{question}
+
+
+
+
+
+\begin{question}
+Etant donné que $\displaystyle f(3)=1$ et $f'(3)=5$. Une équation de la tangente à $\mathscr{C}_f$ au point $(3,1)$ est :
+\begin{answers}  
+    \bad{$y=1(x-3)+5=x+2$}
+    \bad{$y=1(x-3)-5=x-8$}
+    \bad{$y=5(x-3)-1=5x-16$}
+    \good{$y=5(x-3)+1=5x-14$}
+\end{answers}
+\begin{explanations}
+On applique la formule du cours $\displaystyle y=f'(3)(x-3)+f(3)=5(x-3)+1$.
+\end{explanations}
+\end{question}
+
+
+
+\begin{question}
+Soit $\displaystyle f(x)=|x-1|$. On note $f'_d(a)$ (resp. $f'_g(a)$) pour désigner la dérivée à droite (resp. à gauche) en $a$. Quelles sont les bonnes réponses ?
+\begin{answers}  
+    \bad{$f'_d(1)=1$ et $f'_g(1)=1$}
+    \bad{$f$ est dérivable en $1$ et $f'(1)=1$.}
+    \good{$f$ est dérivable en $0$ et $f'(0)=-1$.}
+    \good{$f$ n'est pas dérivable en $1$ car $f'_d(1)=1$ et $f'_g(1)=-1$.}
+\end{answers}
+\begin{explanations}
+Par définition, on a :
+$$f(x)=\left\{ \begin{array}{ll}x-1&\mbox{si }x\geq 1\\ 1-x&\mbox{si }x\leq 1.
+\end{array}\right.$$
+Donc, $f$ est dérivable sur $\Rr\setminus\{1\}$, et
+$$f'(x)=\left\{ \begin{array}{ll}1&\mbox{si }x> 1\\ -1&\mbox{si }x< 1.
+\end{array}\right.$$
+En particulier, $f'(0)=-1$. Par contre $f$ n'est pas dérivable en $1$ car
+$$\lim _{x\to 1^+}\frac{f(x)-f(1)}{x-1}=1 \mbox{ et }\lim _{x\to 1^-}\frac{f(x)-f(1)}{x-1}=-1.$$
+\end{explanations}
+\end{question}
+
+
+
+
+\begin{question}
+Soit $\displaystyle f(x)=\sqrt[3]{(x-2)^2}$. Quelles sont les bonnes réponses ?
+\begin{answers}  
+    \bad{$f$ est continue et dérivable en $2$.}
+    \good{$f$ est continue et non dérivable en $2$.}
+    \good{La tangente à $\mathscr{C}_f$ en $2$ est une droite verticale.}
+    \bad{La tangente à $\mathscr{C}_f$ en $2$ est une droite horizontale.}
+\end{answers}
+\begin{explanations}
+Les théorèmes généraux impliquent que $f$ est continue sur $\Rr$ et est dérivable sur $\Rr\setminus\{2\}$. Mais
+$$\lim_{x\to 2^{\pm}}\frac{f(x)-f(2)}{x-2}=\lim_{x\to 2^{\pm}}\frac{1}{\sqrt[3]{x-2}}={\pm}\infty $$
+Donc, $f$ n'est pas dérivable en $2$ et la tangente à $\mathscr{C}_f$ en $2$ est une droite verticale.
+\end{explanations}
+\end{question}
+
+
+
+
+\begin{question}
+Quelles sont les bonnes réponses ?
+\begin{answers}  
+    \good{La dérivée de $f(x)=(2x+1)^2$ est $f'(x)=4(2x+1)$.}
+    \bad{La dérivée de $f(x)=(2x+1)^2$ est $f'(x)=2(2x+1)$.}
+    \bad{La dérivée de $f(x)=\mathrm{e}^{x^2-2x}$ est $f'(x)=2\mathrm{e}^{x^2-2x}$.}
+    \good{La dérivée de $f(x)=\mathrm{e}^{x^2-2x}$ est $f'(x)=2(x-1)\mathrm{e}^{x^2-2x}$.}
+\end{answers}
+\begin{explanations}
+De manière plus générale, $(u^n)'=nu^{n-1}u'$ et $(\mathrm{e}^v)'=v'\mathrm{e}^v$. Il suffit de prendre $u=2x+1$, $n=2$ et $v=x^2-2x$.
+\end{explanations}
+\end{question}
+
+
+\begin{question}
+Quelles sont les bonnes réponses ?
+\begin{answers}  
+    \bad{La dérivée de $f(x)=\sin [(2x+1)^2]$ est $f'(x)=2\cos [(2x+1)^2]$.}
+    \good{La dérivée de $f(x)=\sin [(2x+1)^2]$ est $f'(x)=4(2x+1)\cos [(2x+1)^2]$.}
+    \good{La dérivée de $f(x)=\tan (1+x^2)$ est $\displaystyle f'(x)=\frac{2x}{\cos ^2(1+x^2)}$.}
+    \bad{La dérivée de $f(x)=\tan (1+x^2)$ est $\displaystyle f'(x)=1+\tan ^2(1+x^2)$.}
+\end{answers}
+\begin{explanations}
+De manière plus générale, $(\sin u)'=u'\cos u$ et 
+$$(\tan v)'=\frac{v'}{\cos ^2v}=v'(1+\tan ^2v).$$
+Il suffit de prendre $u=(2x+1)^2$, $v=1+x^2\Rightarrow u'=4(2x+1)$ et $v'=2x$.
+\end{explanations}
+\end{question}
+
+
+
+
+\begin{question}
+Quelles sont les bonnes réponses ?
+\begin{answers}
+    \good{La dérivée de $f(x)=\arcsin (1-2x^2)$ est $\displaystyle f'(x)=\frac{-2x}{|x|\sqrt{1-x^2}}$.}
+    \bad{La dérivée de $f(x)=\arcsin (1-2x^2)$ est $\displaystyle f'(x)=\frac{1}{\sqrt{1-2x^2}}$.}
+    \bad{La dérivée de $f(x)=\arccos (x^2-1)$ est $\displaystyle f'(x)=\frac{2x}{\sqrt{x^2-1}}$.}
+    \good{La dérivée de $f(x)=\arccos (x^2-1)$ est $\displaystyle f'(x)=\frac{-2x}{|x|\sqrt{2-x^2}}$.}
+\end{answers}
+\begin{explanations}
+On applique les règles
+$$(\arcsin u)'=\frac{u'}{\sqrt{1-u^2}}\mbox{ et }(\arccos v)'=\frac{-v'}{\sqrt{1-v^2}}.$$
+Avec $u=1-2x^2$ et $v=x^2-1$, on obtient :
+$$(\arcsin (1-2x^2))'=\frac{-2x}{|x|\sqrt{1-x^2}}\mbox{ et }(\arccos (x^2-1))'=\frac{-2x}{|x|\sqrt{2-x^2}}.$$
+\end{explanations}
+\end{question}
+
+
+
+\begin{question}
+Soit $\displaystyle f(x)=x^2-\mathrm{e}^{x^2-1}$. Quelles sont les bonnes réponses ?
+\begin{answers}  
+    \good{$f$ admet un minimum local en $0$.}
+    \bad{$f$ admet un maximum local en $0$.}
+    \bad{$f$ admet un point d'inflexion en $0$.}
+    \bad{la tangente à $\mathscr{C}_f$ en $0$ est une droite verticale.}
+\end{answers}
+\begin{explanations}
+On calcule $f'(x)=2x-2x\mathrm{e}^{x^2-1}$ et $f''(x)=2-2(1+2x^2)\mathrm{e}^{x^2-1}$. Ensuite, on vérifie que
+$$f'(x)=0\mbox{ et }f''(0)=2-2\mathrm{e}^{-1}>0.$$
+Donc $f$ admet un minimum local en $0$ et la tangente à $\mathscr{C}_f$ en $0$ est une droite horizontale.
+\end{explanations}
+\end{question}
+
+
+
+\begin{question}
+Soit $\displaystyle f(x)=x^4-x^3+1$. Quelles sont les bonnes réponses ?
+\begin{answers}  
+    \good{$f$ admet un minimum local au point $\displaystyle \frac{3}{4}$.}
+    \bad{$f$ admet un maximum local au point $0$.}
+    \bad{$f$ admet un minimum local au point $0$.}
+    \good{$f$ admet un point d'inflexion au point $0$.}
+\end{answers}
+\begin{explanations}
+On a $f'\left(\frac{3}{4}\right)=0$ et $f''\left(\frac{3}{4}\right)>0$. Donc $f$ admet un minimum au point $\displaystyle \frac{3}{4}$. On vérifie aussi que $f''$ s'annule en $0$ en changeant de signe. Donc $f$ admet un point d'inflexion au point $0$.
+\end{explanations}
+\end{question}
+
+
+
+
+\begin{question}
+Soit $\displaystyle f(x)=\frac{1}{1+x}$. Quelles sont les bonnes réponses ?
+\begin{answers}  
+    \good{$\displaystyle f''(x)=\frac{2}{(1+x)^3}$}
+    \bad{$\displaystyle f''(x)=\frac{-2}{(1+x)^3}$}
+    \bad{pour $n\in \Nn^*$, $\displaystyle f^{(n)}(x)=\frac{n}{(1+x)^{n+1}}$}
+    \good{pour $n\in \Nn^*$, $\displaystyle f^{(n)}(x)=\frac{(-1)^nn!}{(1+x)^{n+1}}$}
+\end{answers}
+\begin{explanations}
+On a $\displaystyle f'(x)=\frac{-1}{(1+x)^2}$, $\displaystyle f''(x)=\frac{2}{(1+x)^3}$ et l'on vérifie, par récurrence, que
+$$\forall n\in \Nn^*,\; f^{(n)}(x)=\frac{(-1)^nn!}{(1+x)^{n+1}}.$$
+\end{explanations}
+\end{question}
+
+
+
+\subsection{Dérivées | Moyen | 124.00}
+
+
+
+
+\begin{question}
+Soit $\displaystyle f(x)=x^2\mathrm{e}^x$. Quelles sont les bonnes réponses ?
+\begin{answers}  
+    \good{$\displaystyle f''(x)=(x^2+4x+2)\mathrm{e}^x$}
+    \bad{$\displaystyle f''(x)=2\mathrm{e}^x$}
+    \good{Pour $n\in \Nn^*$, $\displaystyle f^{(n)}(x)=(x^2+2nx+n^2-n)\mathrm{e}^x$.}
+    \bad{Pour $n\in \Nn^*$, $\displaystyle f^{(n)}(x)=(x^2+2nx+n)\mathrm{e}^x$.}
+\end{answers}
+\begin{explanations}
+On applique la formule de Leibniz 
+$$\displaystyle f^{(n)}(x)=\sum _{k=0}^n\mathrm{C}_n^k(x^2)^{(k)}(\mathrm{e}^x)^{(n-k)}=[x^2+2nx+n(n-1)]\mathrm{e}^x.$$
+\end{explanations}
+\end{question}
+
+
+
+\begin{question}
+Soit $\displaystyle f(x)=x\ln (1+x)$. Quelles sont les bonnes réponses ?
+\begin{answers}  
+    \bad{$\displaystyle f'(x)=(x)'[\ln (1+x)]'=1\times \frac{1}{1+x}$}
+    \good{$\displaystyle f'(x)=\ln (1+x)+\frac{x}{1+x}$}
+    \bad{Pour $n\geq 2$, $\displaystyle f^{(n)}(x)=n\times \frac{1}{(1+x)^n}$.}
+    \good{Pour $n\geq 2$, $\displaystyle f^{(n)}(x)=\frac{(-1)^{n}(n-2)!}{(1+x)^n}\left(x+n\right)$.}
+\end{answers}
+\begin{explanations}
+On applique la formule de Leibniz 
+$$\displaystyle f^{(n)}(x)=\sum _{k=0}^n\mathrm{C}_n^k(x)^{(k)}(\ln (1+x))^{(n-k)}.$$
+Mais $\displaystyle \left[\ln (1+x)\right]^{(k)}=\frac{(-1)^{k-1}(k-1)!}{(1+x)^k}$. Ce qui donne
+$$f^{(n)}(x)=\frac{(-1)^{n}(n-2)!}{(1+x)^n}\left(x+n\right).$$
+\end{explanations}
+\end{question}
+
+
+
+
+\begin{question}
+Soit $\displaystyle f(x)=x^4-3x^3+3x^2-x$. Quelles sont les bonnes réponses ?
+\begin{answers}  
+    \good{Il existe $a\in ]0,1[$ tel que $f'(a)=0$.}
+    \good{Il existe $a\in ]0,1[$ où la tangente à $\mathscr{C}_f$ en $a$ est une droite horizontale.}
+    \bad{Il existe $a\in ]0,1[$ où la tangente à $\mathscr{C}_f$ en $a$ est une droite verticale.}
+    \bad{$\mathscr{C}_f$ admet un point d'inflexion en $0$.}
+\end{answers}
+\begin{explanations}
+La fonction $f$ est dérivable sur $\Rr$. En particulier, la tangente à $\mathscr{C}_f$ en un point $a\in \Rr$ ne peut être une droite verticale. Par ailleurs, $f(0)=f(1)=0$. Donc le théorème de Rolle implique l'existence de $a\in ]0,1[$ tel que $f'(a)=0$ et la tangente à $\mathscr{C}_f$ en ce point est une droite horizontale.
+\end{explanations}
+\end{question}
+
+
+
+\begin{question}
+Soit $a,b\in \Rr$ et $f(x)=\left\{\begin{array}{cl}\displaystyle \mathrm{e}^{x^2+x}&\mbox{si }x\leq 0\\ \\ a \arctan x+b &\mbox{si }x>0.\end{array}\right.$
+
+Quelles valeurs faut-il donner à $a$ et $b$ pour que $f$ soit dérivable sur $\Rr$ ?
+\begin{answers}  
+    \bad{$a=1$ et $b=0$}
+    \bad{$a=0$ et $b=1$}
+    \bad{$a=0$ et $b=0$}
+    \good{$a=1$ et $b=1$}
+\end{answers}
+\begin{explanations}
+La fonction $f$ est continue sur $\Rr^*$ et pour qu'elle soit continue en $0$, il faut que
+$$\lim _{x\to 0^-}f(x)=\lim _{x\to 0^+}f(x)\Rightarrow 1=b.$$ 
+De plus, $f$ est dérivable sur $\Rr^*$ avec
+$$f'(x)=\left\{\begin{array}{cl}\displaystyle (2x+1)\mathrm{e}^{x^2+x}&\mbox{si }x<0\\ \\ \displaystyle \frac{a}{1+x^2} &\mbox{si }x>0\end{array}\right.$$
+et $f'_g(0)=1$ et $f'_d(0)=a$. Donc, pour que $f$ soit dérivable en $0$, on doit avoir $f'_g(0)=f'_d(0)$. D'où $a=1$.
+\end{explanations}
+\end{question}
+
+
+
+\begin{question}
+Soit $f(x)=\left\{\begin{array}{cl}\displaystyle x+x^2\sin \frac{1}{x}&\mbox{si }x\neq 0\\ \\ 0&\mbox{si }x=0.\end{array}\right.$
+
+Quelles sont les bonnes réponses ?
+\begin{answers}  
+    \bad{$f$ n'est pas dérivable en $0$.}
+    \bad{$f$ est dérivable en $0$ est $f'(0)=0$.}
+    \good{$f$ est dérivable en $0$ est $f'(0)=1$.}
+    \good{Pour $x\neq 0$, $\displaystyle f'(x)=1+2x\sin \frac{1}{x}-\cos \frac{1}{x}$.}
+\end{answers}
+\begin{explanations}
+On a
+$$\lim_{x\to 0}\frac{f(x)-f(0)}{x-0}=\lim_{x\to 0}\left(1+x\sin \frac{1}{x}\right)=1.$$
+Donc, $f$ est dérivable en $0$ et $f'(0)=1$. Par ailleurs, les règles de calcul donnent, pour $x\neq 0$,
+$$f'(x)=(x)'+(x^2)'\sin \frac{1}{x}+x^2\left(\sin \frac{1}{x}\right)'=1+2x\sin \frac{1}{x}-\cos \frac{1}{x}.$$
+\end{explanations}
+\end{question}
+
+
+
+
+\begin{question}
+Soit $\displaystyle f(x)=\mathrm{e}^{3x^4-4x^3}$. Quelles sont les bonnes réponses ?
+\begin{answers}  
+    \bad{$\forall x\in \Rr$, $f''(x)>0$}
+    \good{$f$ admet un minimum en $1$.}
+    \bad{$f$ admet un maximum en $1$.}
+    \good{Il existe $a\in ]0,1[$ tel que $f''(a)=0$.}
+\end{answers}
+\begin{explanations}
+On a $f'(x)=(12x^3-12x^2)\mathrm{e}^{3x^4-4x^3}=12x^2(x-1)\mathrm{e}^{3x^4-4x^3}$. On en déduit que $f'(1)=0$ et $f'(x)<0$ pour $x<1$ et $f'(x)>0$ pour $x>1$. Donc $f$ admet un minimum en $1$.
+
+Par ailleurs, $f'(0)=f'(1)=0$ et, puisque $f'$ est continue sur $[0,1]$ et est dérivable sur $]0,1[$, le théorème de Rolle implique qu'il existe $a\in ]0,1[$ tel que $f''(a)=0$.
+\end{explanations}
+\end{question}
+
+
+
+
+
+
+\begin{question}
+Soit $\displaystyle f(x)=\frac{x^2+1}{x+1}$. Quel est l'ensemble $S$ des points $x_0$ où la tangente à $\mathscr{C}_f$ est parallèle à la droite d'équation $y=x$ ?
+\begin{answers}  
+    \bad{$S=\{-1\}$}
+    \bad{$S=\{0\}$}
+    \bad{$S=\{0,1\}$}
+    \good{$S=\varnothing$}
+\end{answers}
+\begin{explanations}
+La pente de la droite $y=x$ est $1$, donc la tangente à $\mathscr{C}_f$ en $x_0$ est parallèle à cette droite si, et seulement si, $f'(x_0)=1$. Une telle équation n'admet pas de solution.
+\end{explanations}
+\end{question}
+
+
+
+\begin{question}
+Soit $\displaystyle f(x)=\frac{x+3}{x+2}$. Quel est l'ensemble $S$ des points $x_0$ où la tangente à $\mathscr{C}_f$ est perpendiculaire à la droite d'équation $y=x$ ?
+\begin{answers}  
+    \bad{$S=\{-2\}$}
+    \bad{$S=\{-3\}$}
+    \good{$S=\{-1,-3\}$}
+    \bad{$S=\varnothing$}
+\end{answers}
+\begin{explanations}
+La pente de la droite $y=x$ est $1$, donc la tangente à $\mathscr{C}_f$ en $x_0$ est perpendiculaire à cette droite si, et seulement si, $f'(x_0)=-1$. C'est-à-dire $x_0=-1$ ou $x_0=-3$.
+\end{explanations}
+\end{question}
+
+
+
+
+\begin{question}
+On considère $\displaystyle f(x)=x^2-x$ sur l'intervalle $[0,1]$. Quelles sont les bonnes réponses ?
+\begin{answers}  
+    \good{$f$ vérifie les hypothèses du théorème de Rolle et une valeur vérifiant la conclusion de ce théorème est $\displaystyle \frac{1}{2}$.}
+    \bad{$f$ ne vérifie pas les hypothèses du théorème de Rolle.}
+    \bad{$f$ ne vérifie pas les hypothèses du théorème des accroissements finis.}
+    \good{$f$ vérifie les hypothèses du théorème des accroissements finis et une valeur vérifiant la conclusion de ce théorème est $\displaystyle \frac{1}{2}$.}
+\end{answers}
+\begin{explanations}
+La fonction $f$ est continue sur $[0,1]$ et est dérivable sur $]0,1[$. Donc elle vérifie les hypothèses du théorème des accroissements finis, et, comme en plus $f(0)=0=f(1)$, elle vérifie aussi les hypothèses du théorème de Rolle. Les deux théorèmes impliquent l'existence de $c\in ]0,1[$ tel que $f'(c)=0$. Soit $\displaystyle c=\frac{1}{2}$.
+\end{explanations}
+\end{question}
+
+
+
+\begin{question}
+Soit $f(x)=\left\{\begin{array}{ll}x^2\ln (x^2)&\mbox{si }x\neq 0\\ 0&\mbox{si }x=0.\end{array} \right.$
+
+Quelles sont les bonnes réponses ?
+\begin{answers}  
+    \good{$f$ est de classe $\mathscr{C}^1$ sur $\Rr$.}
+    \good{$\forall x\in \Rr^*$, $\displaystyle f''(x)=2\ln x^2+6$}
+    \bad{$f$ est deux fois dérivables sur $\Rr$.}
+    \bad{$f$ est de classe $\mathscr{C}^2$ sur $\Rr$.}
+\end{answers}
+\begin{explanations}
+Les théorèmes généraux assurent que $f$ est de classe $\mathscr{C}^2$ sur $\Rr^*$ avec
+$$f'(x)=2x\ln (x^2)+2x\mbox{ et }f''(x)=2\ln x^2+6\mbox{ si }x\neq 0$$
+et $\displaystyle \lim _{x\to 0}\frac{f(x)-f(0)}{x-0}=0=f'(0)$. On a aussi
+$$\lim _{x\to 0}f'(x)=0=f'(0) \Rightarrow f'\mbox{ est continue en }0.$$
+Ainsi $f$ de classe $\mathscr{C}^1$ sur $\Rr$ et est deux fois dérivable sur $\Rr^*$. Elle n'est pas deux fois dérivables en $0$ car
+$$\lim _{x\to 0}\frac{f'(x)-f'(0)}{x-0}=\lim _{x\to 0}[2\ln (x^2)+2]=-\infty.$$
+\end{explanations}
+\end{question}
+
+
+
+\subsection{Dérivées | Difficile | 124.00}
+
+
+
+\begin{question}
+Soit $f(x)=\arctan x+\arctan \frac{1}{x}$ définie sur $\Rr^*$. Quelles sont les bonnes réponses ?
+\begin{answers}  
+    \good{$\forall x\in \Rr^*$, $f'(x)=0$}
+    \bad{$\forall x\in \Rr^*$, $\displaystyle f(x)=\frac{\pi}{2}$}
+    \bad{La fonction $f$ est paire.}
+    \good{$\displaystyle f(x)=\frac{\pi}{2}$ si $x>0$ et $\displaystyle f(x)=-\frac{\pi}{2}$ si $x<0$}
+\end{answers}
+\begin{explanations}
+La fonction $f$, tout comme la fonction $\arctan$, est impaire. On calcule $f'(x)$ pour $x\neq 0$ : 
+$$f'(x)=\frac{1}{1+x^2}+\frac{\left(\frac{1}{x}\right)'}{1+\left(\frac{1}{x}\right)^2}=0$$
+Donc $f$ est constante sur chaque intervalle de son domaine de définition :
+$$f(x)=\left\{\begin{array}{ll}\displaystyle f(1)=\frac{\pi}{2}&\mbox{si }x>0\\ \\ f(-1)=-\frac{\pi}{2}&\mbox{si }x<0.\end{array}
+\right.$$
+\end{explanations}
+\end{question}
+
+
+\begin{question}
+Soit $f$ une fonction continue sur $[-1,1]$ telle que $f(0)=\pi$ et, pour tout $x\in ]-1,1[$, $\displaystyle f'(x)=\frac{1}{\sqrt{1-x^2}}$. Comment peut-on exprimer $f$ ?
+\begin{answers}  
+    \bad{$f(x)=\sqrt{1-x^2}-1+\pi$}
+    \good{$f(x)=\arcsin (x)+\pi$}
+    \good{$\displaystyle f(x)=-\arccos x+\frac{3\pi}{2}$}
+    \bad{Une telle fonction $f$ n'existe pas.}
+\end{answers}
+\begin{explanations}
+On remarque que $f'(x)=(\arcsin x)'=(-\arccos x)'$. Donc, par continuité, 
+$$\forall x\in [-1,1],\; f(x)=\arcsin x+C_1=-\arccos x+C_2.$$
+Mais $f(0)=\pi \Rightarrow C_1=\pi$ et $\displaystyle C_2=\frac{3\pi}{2}$.
+\end{explanations}
+\end{question}
+
+
+\begin{question}
+Soit $\displaystyle f(x)=x^3+x^2+x-\frac{13}{12}$. Quelles sont les bonnes réponses ?
+\begin{answers}  
+    \bad{$\displaystyle f(0)=-\frac{13}{12}<0$ et $\displaystyle f(1)=-\frac{1}{12}<0$, donc $f(x)=0$  n'a pas de solution dans $]0,1[$.}
+    \good{L'équation $f(x)=0$ admet une solution dans $]0,1[$.}
+    \good{Le théorème de Rolle s'applique à une primitive de $f$ sur $[0,1]$.}
+    \bad{Le théorème de Rolle s'applique à $f$ sur $[0,1]$.}
+\end{answers}
+\begin{explanations}
+Le théorème de Rolle ne s'applique pas à $f$ sur $[0,1]$ car $\displaystyle f(0)\neq f(1)$. Mais on peut l'appliquer à 
+$$\displaystyle F(x)=\frac{x^4}{4}+\frac{x^3}{3}+\frac{x^2}{2}-\frac{13}{12}x.$$
+Cette fonction vérifie toutes les hypothèses du théorème, donc
+$$\exists c\in ]0,1[,\; F'(c)=0\Leftrightarrow f(c)=0.$$
+\end{explanations}
+\end{question}
+
+
+
+\begin{question}
+Soit $f(x)=\tan (x)$. Quelles sont les bonnes réponses ?
+\begin{answers}  
+    \bad{$f(0)=0=f(\pi)$ et donc il existe $c\in ]0,\pi[$ tel que $f'(c)=0$.}
+    \good{$f(0)=0=f(\pi)$ mais il n'existe pas de $c\in ]0,\pi[$ tel que $f'(c)=0$.}
+    \bad{Le théorème de Rolle ne s'applique pas à $f$ sur $[0,\pi]$ car $f(0)\neq f(\pi)$.}
+    \good{Le théorème de Rolle ne s'applique pas à $f$ sur $[0,\pi]$.}
+\end{answers}
+\begin{explanations}
+On a bien $f(0)=0=f(\pi)$. Mais, pour tout $\displaystyle x\neq \frac{\pi}{2}+k\pi$, $k\in \Zz$, on a $f'(x)=1+\tan ^2x>0$. On ne peut appliquer le théorème de Rolle à $f$ sur $[0,\pi]$ car $f$ n'est pas définie au point $\displaystyle \frac{\pi}{2}$.
+\end{explanations}
+\end{question}
+
+
+
+\begin{question}
+Soit $\displaystyle f:\Rr\to \Rr$ telle que $f(x)=x^3+3x+1$. Quelles sont les bonnes réponses ?
+\begin{answers}  
+    \good{$\forall x\in \Rr$, $f'(x)>0$}
+    \good{$f$ est une bijection et $\displaystyle (f^{-1})'(1)=\frac{1}{3}$.}
+    \bad{$f$ est une bijection et $\displaystyle (f^{-1})'(1)=\frac{1}{f'(1)}=\frac{1}{6}$.}
+    \bad{$f$ est une bijection et $\displaystyle (f^{-1})'(x)=\frac{1}{f'(x)}$.}
+\end{answers}
+\begin{explanations}
+On a $f'(x)=3x^2+3>0$ pour tout $x\in \Rr$. Ainsi $f$ est continue et est strictement croissante sur $\Rr$. Donc, d'après le théorème de la bijection, $f$ est une bijection et
+$$\forall x\in \Rr,\; (f^{-1})'(x)=\frac{1}{f'\left(f^{-1}(x)\right)}.$$
+En particulier, et puisque $f(0)=1$, $\displaystyle (f^{-1})'(1)=\frac{1}{f'(f^{-1}(1))}=\frac{1}{f'(0)}=\frac{1}{3}$.
+\end{explanations}
+\end{question}
+
+
+
+\begin{question}
+Soit $f$ une fonction réelle continue sur $[a,b]$, dérivable sur $]a,b[$ et telle que $f(a)=f(b)=0$. Soit $\alpha \notin [a,b]$ et $\displaystyle g(x)=\frac{f(x)}{x-\alpha }$.
+\begin{answers}  
+    \good{On peut appliquer le théorème de Rolle à $g$ sur $[a,b]$.}
+    \good{Il existe $c\in ]a,b[$ tel que $\displaystyle f'(c)=\frac{f(c)}{c-\alpha}$.}
+    \good{Il existe $c\in ]a,b[$ tel que la tangente à $\mathscr{C}_f$ en $c$ passe par $(\alpha ,0)$.}
+    \bad{La dérivée de $g$ est $\displaystyle g'(x)=\frac{f'(x)}{(x-\alpha )^2}$.}
+\end{answers}
+\begin{explanations}
+La fonction $g$ est continue sur $[a,b]$ et elle est dérivable sur $]a,b[$ avec
+$$g'(x)=\frac{f'(x)(x-\alpha)-f(x)}{(x-\alpha)^2}.$$
+De plus $g(a)=g(b)=0$. On peut donc appliquer le théorème de Rolle. Il existe alors $c\in ]a,b[$ tel que $$g'(c)=0\Leftrightarrow f'(c)(c-\alpha)-f(c)\Leftrightarrow f'(c)=\frac{f(c)}{c-\alpha}.$$
+La tangente à $\mathscr{C}_f$ en $c$ passe par le point $(\alpha ,0)$.
+\end{explanations}
+\end{question}
+
+
+\begin{question}
+Soit $n\geq 2$ un entier et $\displaystyle f(x)=\frac{1+x^n}{(1+x)^n}$. Quelles sont les bonnes réponses ?
+\begin{answers}  
+    \good{$\displaystyle f'(x)=\frac{n(x^{n-1}-1)}{(1+x)^{n+1}}$ et $f$ admet un minimum en $1$.}
+    \bad{$f'(1)\neq 0$ et donc $f$ n'admet pas d'extremum en $1$.}
+    \bad{Le théorème de Rolle s'applique à $f$ sur $[-1,1]$ car $f(-1)=f(1)$.}
+    \good{$\forall x\geq 0,\; (1+x)^n\leq 2^{n-1}(1+x^n)$.}
+\end{answers}
+\begin{explanations}
+La dérivée de $f(x)$ est $\displaystyle f'(x)=\frac{n(x^{n-1}-1)}{(1+x)^{n+1}}$ et $f$ admet bien un minimum en $1$ (dresser le tableau de variations de $f$). En particulier,
+$$\forall x\geq 0,\; f(1)\leq f(x)\Leftrightarrow (1+x)^n\leq 2^{n-1}(1+x^n).$$
+\end{explanations}
+\end{question}
+
+
+
+\begin{question}
+Soit $f(x)=\mathrm{e}^x$. Quelles sont les bonnes réponses ?
+\begin{answers}  
+    \bad{$f''(x)$ s'annule au moins une fois sur $\Rr$.}
+    \good{$f$ est convexe sur $\Rr$.}
+    \bad{$f$ est concave sur $\Rr$.}
+    \good{$\forall t\in [0,1]$ et $\forall x,y\in \Rr^{+*}$, on a : $t\ln x+(1-t)\ln y\leq \ln \left[tx+(1-t)y\right]$.}
+\end{answers}
+\begin{explanations}
+On a $f''(x)=\mathrm{e}^x>0$. Donc $f$ est convexe sur $\Rr$. Ainsi, par définition,
+$$\forall t\in [0,1]\; \forall a,b\in \Rr,\; f\left[ta+(1-t)b\right]\leq tf(a)+(1-t)f(b).$$
+En prenant $a=\ln x$ et $b=\ln y$, avec $x,y>0$, on aura
+$$\mathrm{e}^{t\ln x+(1-t)\ln y}\leq tx+(1-t)y.$$
+Il suffit de composer par ln, qui est strictement croissante, pour avoir
+$$t\ln x+(1-t)\ln y\leq \ln \left[tx+(1-t)y\right].$$
+\end{explanations}
+\end{question}
+
+
+\begin{question}
+Soit $f(x)=\ln (x)$. Quelles sont les bonnes réponses ?
+\begin{answers}  
+    \bad{$f''(x)$ s'annule au moins une fois sur $\Rr^{+*}$.}
+    \bad{$f$ est convexe sur $\Rr^{+*}$.}
+    \good{$f$ est concave sur $\Rr^{+*}$.}
+    \good{$\forall t\in [0,1]$ et $\forall x,y\in \Rr$, on a : $\mathrm{e}^{tx+(1-t)y}\leq t\mathrm{e}^x+(1-t)\mathrm{e}^y$.}
+\end{answers}
+\begin{explanations}
+On a $\displaystyle f''(x)=-\frac{1}{x^2}<0$. Donc $f$ est concave sur $\Rr^{+*}$. Ainsi, par définition,
+$$\forall t\in [0,1]\; \forall a,b\in \Rr^{+*},\; f\left[ta+(1-t)b\right]\geq tf(a)+(1-t)f(b).$$
+En prenant $a=\mathrm{e}^x$ et $b=\mathrm{e}^x$, où $x,y\in \Rr$, on aura
+$$\ln\left[t\mathrm{e}^x+(1-t)\mathrm{e}^y\right]\geq tx+(1-t)y.$$
+Il suffit de composer par la fonction exponentielle, qui est strictement croissante, pour avoir
+$$t\mathrm{e}^x+(1-t)\mathrm{e}^y\geq \mathrm{e}^{tx+(1-t)y}.$$
+\end{explanations}
+\end{question}
+
+
+
+\begin{question}
+Soit $f(x)=\arcsin (1-2x^2)$ définie sur $[-1,1]$. Quelles sont les bonnes réponses ?
+\begin{answers}  
+    \bad{$\forall x\in [-1,1]$, $\displaystyle f'(x)=\frac{-2}{\sqrt{1-x^2}}$}
+    \bad{$\forall x\in [-1,1]$, $\displaystyle f(x)=-2\arcsin x+\frac{\pi}{2}$}
+    \good{$f'_d(0)=-2$ et $f'_g(0)=2$}
+    \good{La fonction $f$ est paire avec $\displaystyle f(x)=-2\arcsin x+\frac{\pi}{2}$ si $x\in [0,1]$.}
+\end{answers}
+\begin{explanations}
+La fonction $f$ est clairement paire. On calcule $f'(x)$ pour $x\in ]0,1[$ : 
+$$f'(x)=\frac{(1-2x^2)'}{\sqrt{1-(1-2x^2)^2}}=\frac{-2x}{|x|\sqrt{1-x^2}}.$$
+Donc, pour $x\in ]0,1[$, $\displaystyle f'(x)=\frac{-2}{\sqrt{1-x^2}}=(-2\arcsin x)'$. Ainsi, par continuité,
+$$\forall x\in [0,1],\; f(x)=-2\arcsin x+C.$$
+Or $\displaystyle f(0)=\arcsin 1=\frac{\pi}{2}=-2\arcsin 0+C$, donc $\displaystyle C=\frac{\pi}{2}$. Par ailleurs,
+$$\left\{\begin{array}{l}f\mbox{ est continue sur }[0,1]\\ f\mbox{ est dérivable sur }]0,1[\\ \displaystyle \lim _{x\to 0^+}f'(x)=-2
+\end{array}\right\}\Rightarrow f'_d(0)=-2.$$
+On vérifie, de même, que $f'_g(0)=2$.
+\end{explanations}
+\end{question}
+

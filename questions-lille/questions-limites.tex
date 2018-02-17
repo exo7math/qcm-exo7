@@ -1,0 +1,686 @@
+\qcmtitle{Limites de fonction}
+
+\qcmauthor{Arnaud Bodin, Abdellah Hanani, Mohamed Mzari}
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Limites des fonctions réelles | 123}
+
+
+%-------------------------------
+\subsection{Limites des fonctions réelles | Facile | 123.03}
+
+
+\subsubsection{Fraction rationnelle}
+ 
+\begin{question} 
+Soit $f(x)= \frac{x^2+2x+1}{x^2-x-1}$. Quelles sont les assertions vraies ?
+\begin{answers}
+    \bad{$\lim_{x\to +\infty} f(x)=-1$}
+
+    \good{$\lim_{x\to +\infty} f(x)=1$}
+
+    \good{$\lim_{x\to -\infty} f(x)=1$}
+
+    \bad{$\lim_{x\to -\infty} f(x)=-1$}
+\end{answers}
+\begin{explanations}
+La limite en l'infini d'une fraction rationnelle est la limite de la fraction des monômes de plus haut degré.
+
+  
+\end{explanations}
+
+\end{question}
+
+
+\begin{question} 
+Soit $f(x)= \frac{x^2-1}{2x^2-x-1}$. Quelles sont les assertions vraies ?
+\begin{answers}
+    \bad{$\lim_{x\to 1} f(x)=0$}
+
+    \good{$\lim_{x\to 1} f(x)=\frac{2}{3}$}
+
+    \bad{$\lim_{x\to -\frac{1}{2}} f(x) = +\infty$}
+
+    \good{$\lim_{x\to (-\frac{1}{2})^+} f(x)=+\infty$}
+\end{answers}
+\begin{explanations}
+$f(x)=\frac{(x-1)(x+1)}{(x-1)(2x+1)}= \frac{x+1}{2x+1}$.
+\end{explanations}
+
+\end{question}
+
+
+\begin{question} 
+Soit $f(x)= \frac{1}{x+1}+ \frac{3x}{(x+1)(x^2-x+1)}$. Quelles sont les assertions vraies ?
+\begin{answers}
+    \bad{$\lim_{x\to -1^+} f(x)=+\infty$}
+    
+    \bad{$\lim_{x\to -1^-} f(x)=-\infty$}
+
+    \good{$\lim_{x\to -1} f(x)=0$}
+
+    \bad{$\lim_{x\to -1} f(x)=-2$}
+\end{answers}
+\begin{explanations}
+En réduisant au même dénominateur, on obtient :  $f(x)= \frac{x+1}{x^2-x+1}$. 
+\end{explanations}
+
+\end{question}
+
+\subsubsection{Fonction racine carrée}
+
+\begin{question} 
+Soit $f(x)= \frac{\sqrt {x+1}-\sqrt {2x}}{x-1}$. Quelles sont les assertions vraies ?
+\begin{answers}
+    \bad{$\lim_{x\to +\infty} f(x)=+\infty$}
+    
+    \good{$\lim_{x\to +\infty} f(x)=0$}
+
+    \good{$\lim_{x\to 1} f(x)=-\frac{1}{2\sqrt 2}$}
+
+    \bad{$f$ n'admet pas de limite en $1$.}
+\end{answers}
+\begin{explanations}
+On multiplie le numérateur et le dénominateur de $f$ par l'expression conjuguée de $\sqrt {x+1}-\sqrt {2x}$, c'est-à-dire par  $\sqrt {x+1}+\sqrt {2x}$. On obtient : 
+$f(x)= -\frac{1}{\sqrt {x+1}+\sqrt {2x}}$.
+\end{explanations}
+
+\end{question}
+
+
+\begin{question} 
+Soit $f(x)= \sqrt{x^2+x+1}+x$. Quelles sont les assertions vraies ?
+\begin{answers}
+    \bad{$\lim_{x\to -\infty} f(x)=+\infty$}
+    
+    \bad{$\lim_{x\to -\infty} f(x)=-\infty$}
+
+    \good{$\lim_{x\to -\infty} f(x)=-\frac{1}{2}$}
+
+    \bad{$f$ n'admet pas de limite en $-\infty$.}   
+\end{answers}
+\begin{explanations}
+On multiplie le numérateur et le dénominateur de $f$ par l'expression conjuguée de $\sqrt{x^2+x+1}+x$, c'est-à-dire par  $\sqrt{x^2+x+1}-x$. On obtient : 
+$f(x)= \frac{x+1}{\sqrt {x^2+x+1}-x}$. Attention !  $\sqrt {x^2+x+1}=|x|\sqrt {1+\frac{1}{x}+ \frac{1}{x^2}}= -x\sqrt {1+\frac{1}{x}+ \frac{1}{x^2}}, $ pour $x<0$.
+\end{explanations}
+
+\end{question}
+
+
+
+\subsubsection{Croissances comparées}
+
+\begin{question} 
+Soit $f(x)= x\ln x -x^2+1$. Quelles sont les assertions vraies ?
+\begin{answers}
+    \bad{$\lim_{x\to +\infty} f(x)=+\infty$}
+
+    \good{$\lim_{x\to +\infty} f(x)=-\infty$}
+
+    \bad{$\lim_{x\to 0^+} f(x)=0$}
+
+    \good{$\lim_{x\to 0^+} f(x)=1$}
+\end{answers}
+\begin{explanations}
+Si $\alpha$ et $ \beta$ sont des réels $>0$, alors  en $+\infty$, on a :
+$(\ln x)^{\alpha} \ll x^{\beta}$, où la notation $f\ll g$ signifie : $\lim_{x \to + \infty} \frac{f(x)}{g(x)}=0. $  
+On a aussi  $\lim_{x\to 0^+} x^{\beta} |\ln x|^{\alpha} = 0$.
+\end{explanations}
+
+\end{question}
+
+
+\begin{question} 
+Soit $f(x)= e^{2x}-x^7+x^2-1$. Quelles sont les assertions vraies ?
+\begin{answers}
+    \bad{$\lim_{x\to +\infty} f(x)=-\infty$}
+
+    \good{$\lim_{x\to +\infty} f(x)=+\infty$}
+
+    \good{$\lim_{x\to -\infty} f(x)=+\infty$}
+
+    \bad{$\lim_{x\to -\infty} f(x)=-\infty$}
+\end{answers}
+\begin{explanations}
+Si $\alpha$ et $ \beta$ sont des réels $>0$, 
+alors en $+\infty$, on a :
+$ x^{\alpha}\ll  e^{\beta x}$, où la notation $f\ll g$ signifie : $\lim_{x \to + \infty} \frac{f(x)}{g(x)}=0 $.
+\end{explanations}
+
+\end{question}
+
+
+\begin{question} 
+Soit $f(x)= (x^5-x^3+1)e^{-x}$. Quelles sont les assertions vraies ?
+\begin{answers}
+    \good{$\lim_{x\to +\infty} f(x)=0$}
+
+    \bad{$\lim_{x\to +\infty} f(x)=+\infty$}
+
+    \good{$\lim_{x\to -\infty} f(x)=-\infty$}
+
+    \bad{$\lim_{x\to -\infty} f(x)=+\infty$}    
+\end{answers}
+\begin{explanations}
+Si $\alpha$ et $ \beta$ sont des réels $>0$, 
+alors  en $+\infty$, on a :
+$ x^{\alpha}\ll  e^{\beta x}$, où la notation $f\ll g$ signifie : $\lim_{x \to + \infty} \frac{f(x)}{g(x)}=0 $.
+\end{explanations}
+
+\end{question}
+
+
+
+\subsubsection{Encadrement}
+
+\begin{question} 
+Soit $f(x)= \sin x \cdot  \sin\frac{1}{x}$. Quelles sont les assertions vraies ?
+\begin{answers}
+    \bad{$f$ n'admet pas de limite en $0$.}
+    
+    \good{$\lim_{x\to 0} f(x)=0$}
+
+    \good{$\lim_{x\to +\infty} f(x)=0$}
+
+    \bad{$f$ n'admet pas de limite en $+\infty$.}    
+\end{answers}
+\begin{explanations}
+ Encadrer $\sin\frac{1}{x}$ pour la limite en $0$   et encadrer $\sin x$ pour la limite en $+\infty$.
+\end{explanations}
+
+\end{question}
+
+
+\begin{question} 
+Soit $f(x)= e^{-x}\cos(e^{2x})$. Quelles sont les assertions vraies ?
+\begin{answers}
+    \good{$\lim_{x\to +\infty} f(x)=0$}
+    
+    \bad{$f$ n'admet pas de limite en $+\infty$.}
+        
+    \bad{$f$ n'admet pas de limite en $-\infty$.}
+    
+    \good{$\lim_{x\to -\infty} f(x)=+\infty$}   
+\end{answers}
+\begin{explanations}
+ Encadrer $\cos(e^{2x})$ pour la limite en $+\infty$.
+\end{explanations}
+
+\end{question}
+
+
+%-------------------------------
+\subsection{Limites des fonctions réelles | Moyen | 123.03}
+
+\subsubsection{Définition d'une limite}
+
+\begin{question} 
+Soit $a\in \Rr$, $I$ un intervalle contenant $a$ et $f$ une fonction définie sur $I \setminus\{a\}$. Quelles sont les assertions vraies ?
+\begin{answers}
+
+    \good{$\lim_{x\to a} f(x)=l \, (l\in \Rr)$ si et seulement si  $\forall \epsilon >0,  \exists \alpha > 0, \forall x \in I\setminus\{a\}, |x-a| < \alpha \Rightarrow |f(x)-l|<\epsilon$}
+    
+    \bad{$\lim_{x\to a} f(x)=l \, (l\in \Rr)$ si et seulement si $\forall \epsilon >0,  \exists \alpha > 0, \forall x  \in I\setminus\{a\}, |x-a|<\epsilon \Rightarrow |f(x)-l|<\alpha $} 
+    
+    
+    \bad{$\lim_{x\to a} f(x)=+\infty$ si et seulement si $\forall A > 0,  \exists \alpha > 0, \forall x \in I\setminus\{a\}, f(x) > A \Rightarrow |x-a| < \alpha$} 
+    
+    \good{$\lim_{x\to a} f(x)=-\infty$ si et seulement si $\forall A < 0,  \exists \alpha > 0, \forall x \in I\setminus\{a\}, |x-a| < \alpha \Rightarrow f(x) < A$} 
+\end{answers}
+\begin{explanations}
+Voir la définition d'une limite.
+\end{explanations}
+
+\end{question}
+
+
+\begin{question} 
+Soit  $f$ une fonction définie sur $\Rr$. Quelles sont les assertions vraies ?
+\begin{answers}
+
+    \bad{$\lim_{x\to +\infty} f(x)=l \, (l\in \Rr)$  si et seulement si $ \forall \epsilon >0,  \exists A >0, \forall x \in \Rr, |f(x)-l|<\epsilon \Rightarrow x>A$}
+    
+    \good{$\lim_{x\to +\infty} f(x)=l \, (l\in \Rr)$  si et seulement si $\forall \epsilon >0,  \exists A >0, \forall x \in \Rr, x\ge A \Rightarrow |f(x)-l|\le \epsilon$} 
+    
+    \good{$\lim_{x\to -\infty} f(x)=+\infty$  si et seulement si $ \forall A >0,  \exists B <0, \forall x \in \Rr, x\le B \Rightarrow f(x)\ge A$} 
+       
+    \bad{$\lim_{x\to -\infty} f(x)=-\infty$  si et seulement si $  \exists B<0, \forall A < 0,   \forall x \in \Rr, x < B \Rightarrow f(x) < A$} 
+    
+\end{answers}
+\begin{explanations}
+Voir la définition d'une limite.
+\end{explanations}
+
+\end{question}
+
+
+\subsubsection{Fonction racine carrée}
+
+\begin{question} 
+Soit $f(x)= \frac{\sqrt x}{\sqrt{x+\sqrt{x}}}$. Quelles sont les assertions vraies ?
+\begin{answers}
+
+    \good{$\lim_{x\to 0^+} f(x)=0$}
+    
+    \bad{$\lim_{x\to 0^+} f(x)=+\infty$}
+    
+    
+    \bad{$f$ n'admet pas de limite en $+\infty$.}
+    
+
+    \good{$\lim_{x\to +\infty} f(x)=1$}
+
+\end{answers}
+\begin{explanations}
+$f(x)= \frac{1}{\sqrt{1+\frac{1}{\sqrt{x}}}}.$
+\end{explanations}
+
+\end{question}
+
+
+
+
+\subsubsection{Fonction valeur absolue}
+
+
+\begin{question} 
+Soit $f(x)= x-\frac{|x|}{x}$. Quelles sont les assertions vraies ?
+\begin{answers}
+
+    \bad{$\lim_{x\to 0} f(x)=0$}
+    
+    \bad{$\lim_{x\to +\infty} f(x)=0$}
+    
+    
+    \good{$f$ n'admet pas de limite en $0$.}
+    
+
+    \bad{$\lim_{x\to -\infty} f(x)=+\infty$}
+   
+\end{answers}
+\begin{explanations}
+En utilisant la définition de la  valeur absolue, $f(x)=\left\{\begin{array}{cc}x-1,& \mbox{si} \, \, x >0 \\ x+1,& \mbox{si} \,  x <0  \end{array}\right.$.
+\end{explanations}
+
+\end{question}
+
+
+\begin{question} 
+Soit $f(x)= \frac{x}{|x-1|}-\frac{3x-1}{|x^2-1|}$. Quelles sont les assertions vraies ?
+\begin{answers}
+
+    \good{$\lim_{x\to 1} f(x)=0$}
+    
+    \bad{$\lim_{x\to 1} f(x)=1$}
+    
+    
+    \bad{$f$ n'admet pas de limite en $-1$.}
+    
+
+    \good{$\lim_{x\to -1} f(x)=+\infty$}
+
+\end{answers}
+\begin{explanations}
+En utilisant la définition de la valeur absolue, 
+ $f(x)=\left\{\begin{array}{ccc}\frac{x^2+4x-1}{1-x^2},& \mbox{si} \, x \le -1 \\ 
+ \frac{1-x}{1+x} ,& \mbox{si} \,  -1\le x \le 1\\
+   \frac{x-1}{1+x} ,& \mbox{si} \,  x \ge 1 \end{array}\right.$
+\end{explanations}
+
+\end{question}
+
+\subsubsection{Fonction périodique}
+
+\begin{question} 
+Soit $f(x)= \sin x$. Quelles sont les assertions vraies ?
+\begin{answers}
+
+     \bad{$\lim_{x\to +\infty} f(x)=1$}
+     
+    \good{$f$ n'admet pas de limite en $+\infty$.}
+    
+    
+    \bad{$\lim_{x\to -\infty} f(x)=-1$}
+    
+
+    \good{$f$ n'admet pas de limite en $-\infty$.}
+ 
+\end{answers}
+\begin{explanations}
+Toute fonction périodique non constante n'admet pas de limite en l'infini.
+\end{explanations}
+
+\end{question}
+
+
+
+\subsubsection{Dérivabilité en un point}
+
+\begin{question} 
+Soit $f(x)= \frac{\ln(1+x)}{x}$. Quelles sont les assertions vraies ?
+\begin{answers}
+
+    \bad{$\lim_{x\to 0} f(x)=0$}
+    
+    \bad{$\lim_{x\to 0} f(x)=+\infty$}
+    
+    \bad{$f$ n'admet pas de limite en $0$.}
+    
+   \good{$\lim_{x\to 0} f(x)=1$}
+    
+\end{answers}
+\begin{explanations}
+La fonction $g: x\to \ln(1+x)$ est dérivable sur $]-1,+\infty[$  et $g'(x)= \frac{1}{1+x}$, pour tout $x>-1$. Donc  $\lim_{x\to 0}f(x)= \lim_{x\to 0}\frac{g(x)-g(0)}{x-0} = g'(0)=1$.
+\end{explanations}
+
+\end{question}
+
+
+\begin{question} 
+Soit $f(x)= \frac{\sin x}{x}$. Quelles sont les assertions vraies ?
+\begin{answers}
+
+    \bad{$f$ n'admet pas de limite en $0$.}
+    
+    \good{$\lim_{x\to 0} f(x)=1$}
+    
+    
+    \bad{$\lim_{x\to 0} f(x)=0$}
+    
+    \bad{$\lim_{x\to 0} f(x)=+\infty$}
+  
+\end{answers}
+\begin{explanations}
+La fonction $g: x\to \sin x$ est dérivable sur $\Rr$  et $g'(x)= \cos x$, pour tout $x\in \Rr$. Donc  $\lim_{x\to 0}f(x)= \lim_{x\to 0}\frac{g(x)-g(0)}{x-0} = g'(0)=1$.
+\end{explanations}
+
+\end{question}
+
+
+
+\begin{question} 
+Soit $f(x)= \frac{\sin(3x)}{\sin(4x)}$. Quelles sont les assertions vraies ?
+\begin{answers}
+
+    \bad{$f$ n'admet pas de limite en $0$}
+    
+    \good{$\lim_{x\to 0} f(x)=\frac{3}{4}$}
+    
+    
+    \bad{$\lim_{x\to 0} f(x)= \frac{4}{3}$}
+    
+
+    \bad{$\lim_{x\to 0} f(x)=0$}
+ 
+\end{answers}
+\begin{explanations}
+$\lim_{x\to 0}\frac{\sin x}{x} = 1,$ donc $\lim_{x\to 0} f(x)= \lim_{x\to 0}\frac{3x}{4x} \cdot  \frac{\sin (3x)}{3x}\cdot  \frac{4x}{\sin(4x)} = \frac{3}{4}$.
+\end{explanations}
+
+\end{question}
+
+
+
+\begin{question} 
+Soit $f(x)= \frac{\cos x-1}{x^2}$. Quelles sont les assertions vraies ?
+\begin{answers}
+
+    \bad{$f$ n'admet pas de limite en $0$.}
+    
+    \bad{$\lim_{x\to 0} f(x)=+\infty$}
+    
+    
+    \good{$\lim_{x\to 0} f(x)=-\frac{1}{2}$}
+    
+
+    \bad{$\lim_{x\to 0} f(x)=\frac{1}{2}$}
+ 
+\end{answers}
+\begin{explanations}
+On a : $\cos x = \cos^2 (\frac{x}{2}) -  \sin^2 (\frac{x}{2})$ et $1= \cos^2 (\frac{x}{2}) + \sin^2 (\frac{x}{2})$, donc $\cos x - 1 = -2 \sin ^2 (\frac{x}{2})$. D'autre part, $\lim_{x\to 0}\frac{\sin x}{x} = 1$. On déduit que   $\lim_{x\to 0} f(x) = \lim_{x\to 0} -\frac{1}{2}  \big(\frac{\sin (\frac{x}{2})}{\frac{x}{2}}\big)^2 = -\frac{1}{2}$.
+\end{explanations}
+
+\end{question}
+
+
+
+%-------------------------------
+\subsection{Limites des fonctions réelles | Difficile | 123.03}
+
+\subsubsection{Fonction partie entière}
+
+\begin{question} 
+Soit $f(x)= xE(\frac{1}{x})$, où $E$ désigne la partie entière. Quelles sont les assertions vraies ?
+\begin{answers}
+
+    \bad{$\lim_{x\to 0} f(x)=0$}
+    
+    \bad{$\lim_{x\to 0} f(x)=+\infty$}
+    
+    
+    \bad{$f$ n'admet pas de limite en $0$.}
+    
+
+    \good{$\lim_{x\to 0} f(x)=1$} 
+\end{answers}
+\begin{explanations}
+Pour tout $x\in \Rr$, on a : $x-1<E(x)\le x$. Donc $1-x < f(x) \le 1$, pour $x>0$ et  
+$1 \le f(x) < 1-x$, pour $x<0$. On déduit que $\lim_{x\to 0} f(x) =1$. 
+\end{explanations}
+
+\end{question}
+ 
+\begin{question} 
+Soit $f(x)= xE(\frac{1}{x})$, où $E$ désigne la partie entière. Quelles sont les assertions vraies ?
+\begin{answers}
+
+    \good{$\lim_{x\to +\infty} f(x)=0$}
+    
+    \bad{$\lim_{x\to +\infty} f(x)=+\infty$}
+    
+    \bad{$\lim_{x\to -\infty} f(x)=0$}
+    
+    \good{$\lim_{x\to -\infty} f(x)=+\infty$}
+    
+\end{answers}
+\begin{explanations}
+Pour $x>1$,  $E(\frac{1}{x})=0$, donc $f(x)=0$ et donc  $\lim_{x\to +\infty} f(x)=0$. 
+Pour $x<-1$,  $E(\frac{1}{x})=-1$, donc $f(x)=-x$ et donc  $\lim_{x\to -\infty} f(x)=+\infty$. 
+\end{explanations}
+
+\end{question} 
+ 
+ 
+\subsubsection{Densité des rationnels et irrationnels}
+  
+
+\begin{question} 
+Soit  $f$ une fonction définie sur $[0,1]$ par : $f(x)=\left\{\begin{array}{cc}x-1,& \mbox{si} \, x \in \Rr \setminus \Qq\\ 1,&  \mbox{si} \, x \in \Qq  \end{array}\right.$. Quelles sont les assertions vraies ?
+\begin{answers}
+
+    \bad{$\lim_{x\to 0} f(x)=1$}
+    
+    \bad{$\lim_{x\to 0} f(x)=0$}
+    
+    \bad{$\lim_{x\to 0} f(x)=-1$}
+    
+    \good{$f$ n'admet pas de limite en $0$.}
+    
+
+\end{answers}
+\begin{explanations}
+L'ensemble des rationnels est dense dans $\Rr$. Donc il existe une suite de rationnels $(u_n)$ qui tend vers $0$ et donc  $\lim_{n\to +\infty} f(u_n)=1$.  D'autre part, l'ensemble des irrationnels est dense dans $\Rr$.  Donc il existe une suite d'irrationnels $(v_n)$ qui tend vers $0$ et donc  $\lim_{n\to +\infty} f(v_n)=\lim_{n\to +\infty} (v_n-1) = -1 $. On en déduit que  $f$ n'admet pas de limite en $0$.
+\end{explanations}
+
+\end{question}
+
+
+\begin{question} 
+Soit  $f$ une fonction définie sur $]0,1[$ par :  
+$f(x)=1$, si $x \in \Rr \setminus \Qq$ et $f(x)=\frac{1}{m},$ si $x= \frac{n}{m},$ où  $n, m \in \Nn^*$ tels que $ \frac{n}{m}$ soit une fraction irréductible. Quelles sont les assertions vraies ?
+\begin{answers}
+
+    \bad{$\lim_{x\to 1^-} f(x)=0$}
+    
+    \good{$f$ n'admet pas de limite en $1^-$.}
+    
+    
+    \bad{$\lim_{x\to 1^-} f(x)=1$}
+    
+
+    \bad{$\lim_{x\to 1^-} f(x)=+\infty$} 
+\end{answers}
+\begin{explanations}
+L'ensemble des irrationnels est dense dans $\Rr$. Donc il existe une suite d'irrationnels $(u_n)$ qui tend vers $1^-$ et donc  $\lim_{n\to +\infty} f(u_n)=1$.  D'autre part, la suite $(\frac{n}{n+1})$  tend vers $1^-$ et $\lim_{n\to +\infty} f(\frac{n}{n+1})=\lim_{n\to +\infty} \frac{1}{n+1} = 0 $. On déduit que  $f$ n'admet pas de limite en $1^-$.
+\end{explanations}
+
+\end{question}
+
+
+
+\subsubsection{Fonction monotone}
+
+\begin{question} 
+Soit  $f:\Rr \to \Rr$ une fonction croissante. Quelles sont les assertions vraies ?
+\begin{answers}
+      
+      \bad{$f$ n'admet pas de limite en $+\infty$.}
+      
+      \good{$f$ admet une  limite en $+\infty$.}
+      
+    \good{Si $f$ est majorée, $f$ admet une  limite finie en $+\infty$.}
+    
+    \good{Si $f$ est non majorée, $\lim_{x\to +\infty } f(x)=+\infty$.}
+   
+\end{answers}
+\begin{explanations}
+(a)  On suppose que $f$ est majorée et on pose $M=\sup_{x\in \Rr} f(x)$ (le plus petit des majorants de $f$). Alors, $ \lim_{x\to +\infty } f(x)=M$. En effet,
+soit $\epsilon >0$, alors il existe $a>0$ tel que : $M-\epsilon < f(a)\le M $. Comme $f$ est croissante, si $x\ge a$, alors $M-\epsilon < f(a)\le f(x)\le M $. D'où le résultat, d'après la définition d'une limite.
+
+(b)  On suppose que $f$ n'est pas majorée. Alors, $ \lim_{x\to +\infty } f(x)=+\infty$. En effet, soit $A>0$, alors il existe $a>0$ tel que $f(a)>A$. Comme $f$ est croissante, si $x\ge a$, alors $f(x)\ge f(a)>A$. D'où le résultat, d'après la définition d'une limite.
+\end{explanations}
+
+\end{question}
+
+
+\subsubsection{Fonction racine $n$-ième}
+
+
+\begin{question} 
+Soit $f(x)= \frac{\sqrt{x+1}-1}{\sqrt[3]{x+1}-1}$. Quelles sont les assertions vraies ?
+\begin{answers}
+
+    \bad{$\lim_{x\to 0} f(x)=0$}
+    
+    \good{$\lim_{x\to 0} f(x)=\frac{3}{2}$}
+    
+    
+    \bad{$f$ n'admet pas de limite en $0$.}
+    
+
+    \bad{$\lim_{x\to 0} f(x)=+\infty$}  
+\end{answers}
+\begin{explanations}
+On pourra multiplier $f$ par  $\sqrt{x+1}+1$ et $(\sqrt[3]{x+1})^2+\sqrt[3]{x+1}+1$ les expressions conjuguées de $\sqrt{x+1}-1$ et de $\sqrt[3]{x+1}-1$ respectivement. On obtient : 
+$f(x)=\frac{(\sqrt[3]{x+1})^2+\sqrt[3]{x+1}+1}{\sqrt{x+1}+1}$.
+\end{explanations}
+
+\end{question}
+
+
+\begin{question} 
+Soit  $f(x)=x+\sqrt[5]{1-x^5}$. Quelles sont les assertions vraies ?
+\begin{answers}
+
+    \good{$\lim_{x\to +\infty} f(x)=0$}
+    
+    \bad{$\lim_{x\to +\infty } f(x)=+\infty$}    
+    
+    \bad{$\lim_{x\to -\infty } f(x)=-\infty$}
+    
+    \good{$\lim_{x\to -\infty} f(x)=0$}    
+\end{answers}
+\begin{explanations}
+En utilisant l'égalité : $a^5+b^5=(a+b)(a^4-a^3b+a^2b^2-ab^3+b^4)$, on pourra multiplier $f$ par l'expression conjuguée de $x+\sqrt[5]{1-x^5}$. On obtient :
+ $f(x)=\big[x^4-x^3\sqrt[5]{1-x^5} +x^2(\sqrt[5]{1-x^5})^2-x(\sqrt[5]{1-x^5})^3+(\sqrt[5]{1-x^5})^4\big]^{-1}$.
+\end{explanations}
+
+\end{question}
+
+
+\begin{question} 
+Soit  $f(x)=\sqrt{x^3+2x^2+3}-ax\sqrt{x+b}, \, a,b \in \Rr$. $f$ admet une limite  finie en $+\infty$  si et seulement si  :
+\begin{answers}
+
+    \bad{ $ a>0 $ et $b>0$}
+    
+    \bad{ $a=1$ et $b>0$ }
+    
+    \good{$a=1$ et $b=2$}
+    
+    \bad{ $a=1$ et $b=0$}
+    
+\end{answers}
+\begin{explanations}
+Si $a\le 0$, $\lim_{x\to +\infty} f(x)=+\infty$. On suppose donc que $a>0$ et on multiplie $f$ par son expression conjuguée. on obtient : 
+$f(x)= \frac{(1-a^2)x^3+(2-a^2b)x^2+3}{\sqrt{x^3+2x^2+3}+ax\sqrt{x+b}}$. On déduit que $f$ admet une limite finie en $+\infty$ si et seulement si $a=1$ et $b=2$.
+\end{explanations}
+
+\end{question}
+
+
+
+\begin{question} 
+Soit  $f$ la fonction définie sur $]\frac{3}{2}, +\infty[ \setminus \{2\}$  par : $f(x)=\left\{\begin{array}{cc}a\frac{\sqrt{x-1}-1}{x-2},& \mbox{si} \, x<2  \\ \frac{\sqrt{2x-3}-b}{x-2},&  \mbox{si} \, x >2  \end{array}\right.$. $f$ admet une limite  finie quand $x$ tend vers $2$ si et seulement si :
+\begin{answers}
+
+    \good{$a=2$ et $b=1$}
+    
+    \bad{ $a>0$ et $b >0$ }
+      
+    \bad{ $a=2$ et  $b >0$ }
+    
+    \bad{$a=0$ et $b=1$}
+    
+\end{answers}
+\begin{explanations}
+Si $b\neq 1$, $f$ admet une limite infinie quand $x$ tend vers $2^+$. On suppose que $b=1$ et on multiplie $f$ par l'expression conjuguée selon les  cas. On obtient : 
+$f(x)=\left\{\begin{array}{cc} \frac{a}{\sqrt{x-1}+1}& \mbox{si} \, x<2  \\ \frac{2}{\sqrt{2x-3}+1}&  \mbox{si} \, x >2  \end{array}\right.$. On déduit que $f$ admet une limite  finie quand $x$ tend vers $2$ si et seulement si $a=2$.
+\end{explanations}
+
+\end{question}
+
+
+\subsubsection{Fonction puissance}
+
+
+\begin{question} 
+%Soit  $f(x)=\frac{(x^x)^x}{x^{(x^x)}}$. 
+Soit  $f(x)=\frac{(2x)^x}{x^{(2x)}}$. Quelles sont les assertions vraies ?
+\begin{answers}
+
+    \bad{$\lim_{x\to +\infty} f(x)=+\infty$}
+    
+    \good{$\lim_{x\to +\infty } f(x)=0$}
+       
+    \bad{$f$ n'admet pas de limite en $+\infty$.}
+    
+    \bad{$\lim_{x\to +\infty} f(x)=1$}
+
+\end{answers}
+\begin{explanations}
+Par définition, si $u$ et $v$ sont deux fonctions telles  que $u>0$, $u^v=e^{v\ln u}$. On en déduit que $f(x)=\exp[ x\ln (2x )- 2x\ln x] =  \exp[ x\ln 2 - x\ln x]$. Donc $\lim_{x\to +\infty } f(x)=0$.
+\end{explanations}
+
+\end{question}
+
+
+
+
+
+
+
+
+

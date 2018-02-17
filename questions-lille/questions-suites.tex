@@ -1,0 +1,514 @@
+
+\qcmtitle{Suites}
+
+\qcmauthor{Arnaud Bodin, Abdellah Hanani, Mohamed Mzari}
+
+
+
+\section{Suites réelles | 121}
+
+\subsection{Suites | Facile | 121.00}
+
+
+\begin{question}
+Soit $(u_n)$ une suite réelle et $\ell \in \Rr$. Comment traduire $\displaystyle \lim _{n\to +\infty}u_n=\ell$ ?
+\begin{answers}  
+    \bad{$\forall \varepsilon >0,\; \forall n\in \Nn,\; |u_n-\ell|<\varepsilon$}
+    \bad{$\forall \varepsilon >0,\; \exists n\in \Nn,\; |u_n-\ell|<\varepsilon$}
+    \good{$\forall \varepsilon >0,\; \exists n_0\in \Nn,\; \forall n\in \Nn,\; n>n_0\Rightarrow |u_n-\ell|<\varepsilon$}
+    \bad{$\exists \varepsilon >0,\; \exists n_0\in \Nn,\; \forall n\in \Nn,\; n>n_0\Rightarrow |u_n-\ell|<\varepsilon$}
+\end{answers}
+\begin{explanations}
+C'est la définition.
+\end{explanations}
+\end{question}
+
+
+
+\begin{question}
+Soit $(u_n)$ une suite réelle. Comment traduire $\displaystyle \lim _{n\to +\infty}u_n=+\infty$ ?
+\begin{answers}  
+    \bad{$\forall A>0,\; \forall n\in \Nn,\; u_n>A$}
+    \bad{$\forall A>0,\; \exists n\in \Nn,\; u_n>A$}
+    \bad{$\exists A>0,\; \exists n_0\in \Nn,\; \forall n\in \Nn,\; n>n_0\Rightarrow u_n>A$}
+    \good{$\forall A>0,\; \exists n_0\in \Nn,\; \forall n\in \Nn,\; n>n_0\Rightarrow u_n>A$}
+\end{answers}
+\begin{explanations}
+C'est la définition.
+\end{explanations}
+\end{question}
+
+
+
+\begin{question}
+Soit $\displaystyle u_n=\frac{n^2+1}{2n^2-1}$ et $\displaystyle v_n=\frac{2n+1}{n^2-1}$. Quelles sont les bonnes réponses ?
+\begin{answers}  
+    \good{$\displaystyle \lim _{n\to +\infty}u_n=\frac{1}{2}$ et $\displaystyle \lim _{n\to +\infty}v_n=0$ }
+    \bad{$\displaystyle \lim _{n\to +\infty}u_n=2$ et $\displaystyle \lim _{n\to +\infty}v_n=0$}
+    \bad{$\displaystyle \lim _{n\to +\infty}u_n=\frac{1}{2}$ et $\displaystyle \lim _{n\to +\infty}v_n=2$}
+    \bad{$\displaystyle \lim _{n\to +\infty}u_n=2$ et $\displaystyle \lim _{n\to +\infty}v_n=+\infty$}
+\end{answers}
+\begin{explanations}
+D'abord, $\displaystyle u_n=\frac{n^2\left(1+\frac{1}{n^2}\right)}{n^2\left(2-\frac{1}{n^2}\right)}=\frac{1+\frac{1}{n^2}}{2-\frac{1}{n^2}}$. Or, $\displaystyle \lim _{n\to +\infty}\frac{1}{n^2}=0$. Donc $\displaystyle \lim _{n\to +\infty}u_n=\frac{1+0}{2-0}=\frac{1}{2}$. De même, $\displaystyle v_n=\frac{n\left(2+\frac{1}{n}\right)}{n^2\left(1-\frac{1}{n^2}\right)}=\frac{1}{n}\times\frac{2+\frac{1}{n}}{1-\frac{1}{n^2}}$ et donc $\displaystyle \lim _{n\to +\infty}v_n=0$.
+\end{explanations}
+\end{question}
+
+
+
+
+\begin{question}
+Soit $\displaystyle u_n=\sqrt{n+1}-\sqrt{n}$ et $\displaystyle v_n=\cos\left(\frac{n^2+1}{n^2-1}\pi\right)$. Quelles sont les bonnes réponses ?
+\begin{answers}  
+    \bad{$\displaystyle \lim _{n\to +\infty}u_n=1$ et $\displaystyle \lim _{n\to +\infty}v_n=-1$ }
+    \good{$\displaystyle \lim _{n\to +\infty}u_n=0$ et $\displaystyle \lim _{n\to +\infty}v_n=-1$}
+    \bad{$\displaystyle \lim _{n\to +\infty}u_n=1$ et $\displaystyle \lim _{n\to +\infty}v_n=1$}
+    \bad{$\displaystyle \lim _{n\to +\infty}u_n=0$ et $\displaystyle \lim _{n\to +\infty}v_n$ n'existe pas}
+\end{answers}
+\begin{explanations}
+D'abord, $\displaystyle u_n=\frac{\left(\sqrt{n+1}-\sqrt{n}\right)\left(\sqrt{n+1}+\sqrt{n}\right)}{\sqrt{n+1}+\sqrt{n}}=\frac{1}{\sqrt{n+1}+\sqrt{n}}$ et donc $\displaystyle \lim _{n\to +\infty}u_n=0$ car $\displaystyle \lim _{n\to +\infty}\left(\sqrt{n+1}+\sqrt{n}\right)=+\infty$. Par ailleurs,
+$$\displaystyle \frac{n^2+1}{n^2-1}\pi=\frac{n^2\left(1+\frac{1}{n^2}\right)}{n^2\left(1-\frac{1}{n^2}\right)}\pi=\frac{1+\frac{1}{n^2}}{1-\frac{1}{n^2}}\pi.$$
+Donc $\displaystyle \lim _{n\to +\infty}\frac{n^2+1}{n^2-1}\pi=\pi$, et par suite, $\displaystyle \lim _{n\to +\infty}v_n=\cos (\pi)=-1$.
+\end{explanations}
+\end{question}
+
+
+
+
+\begin{question}
+Soit $\displaystyle u_n=3^n-2^n$ et $\displaystyle v_n=3^n-(-3)^n$. Quelles sont les bonnes réponses ?
+\begin{answers}  
+    \bad{$\displaystyle \lim _{n\to +\infty}u_n=+\infty$ et $\displaystyle \lim _{n\to +\infty}v_n=+\infty$ }
+    \bad{$\displaystyle \lim _{n\to +\infty}u_n=0$ et $\displaystyle \lim _{n\to +\infty}v_n=0$}
+    \bad{$\displaystyle \lim _{n\to +\infty}u_n=0$ et $\displaystyle \lim _{n\to +\infty}v_n=-\infty$}
+    \good{$\displaystyle \lim _{n\to +\infty}u_n=+\infty$ et $\displaystyle \lim _{n\to +\infty}v_n$ n'existe pas}
+\end{answers}
+\begin{explanations}
+D'abord, $\displaystyle u_n=3^n\times \left[1-\left(\frac{2}{3}\right)^n\right]$. Or $\displaystyle \left(\frac{2}{3}\right)^n$ est le terme général d'une suite géométrique de limite $0$, donc $\displaystyle \lim _{n\to +\infty}u_n=+\infty\times (1-0)=+\infty$. Par ailleurs, $\displaystyle v_{2n}=0$ et $v_{2n+1}=2\times 3^{2n+1}$. Donc $\displaystyle \lim _{n\to +\infty}v_{2n}=0$ et $\displaystyle \lim _{n\to +\infty}v_{2n+1}=+\infty$. Le théorème des suites extraites implique que $(v_n)$ n'a pas de limite.
+\end{explanations}
+\end{question}
+
+
+
+\begin{question}
+Soit $\displaystyle u_n=n\ln\left(1+\frac{1}{n}\right)$ et $\displaystyle v_n=\left(1+\frac{1}{n}\right)   ^n$. Quelles sont les bonnes réponses ?
+\begin{answers}  
+    \bad{$\displaystyle \lim _{n\to +\infty}u_n=+\infty$ et $\displaystyle \lim _{n\to +\infty}v_n=1$}
+    \bad{$\displaystyle \lim _{n\to +\infty}u_n=0$ et $\displaystyle \lim _{n\to +\infty}v_n=1$}
+    \bad{$\displaystyle \lim _{n\to +\infty}u_n=1$ et $\displaystyle \lim _{n\to +\infty}v_n=1$}
+    \good{$\displaystyle \lim _{n\to +\infty}u_n=1$ et $\displaystyle \lim _{n\to +\infty}v_n=\mathrm{e}$}
+\end{answers}
+\begin{explanations}
+On utilise le fait que si $\displaystyle \lim _{n\to +\infty}a_n=0$, alors les suites $(a_n)$ et $\ln (1+a_n)$ sont équivalentes. Ainsi le terme $u_n$ est équivalent, en $+\infty$, à $\displaystyle n\times \frac{1}{n}=1$. Donc $\displaystyle \lim _{n\to +\infty}u_n=1$ et, puisque $v_n=\mathrm{e}^{u_n}$, $\displaystyle \lim _{n\to +\infty}v_n=\mathrm{e}$.
+\end{explanations}
+\end{question}
+
+
+
+\begin{question}
+Soit $\displaystyle u_n=\frac{\cos n}{2n+1}$ et $\displaystyle v_n=\frac{2n+\cos n}{2n+1}$. Quelles sont les bonnes réponses ?
+\begin{answers}  
+    \bad{$\displaystyle \lim _{n\to +\infty}u_n$ et $\displaystyle \lim _{n\to +\infty}v_n$ n'existent pas}
+    \bad{$\displaystyle \lim _{n\to +\infty}u_n=0$ et $\displaystyle \lim _{n\to +\infty}v_n=+\infty$}
+    \good{$\displaystyle \lim _{n\to +\infty}u_n=0$ et $\displaystyle \lim _{n\to +\infty}v_n=1$}
+    \bad{$\displaystyle \lim _{n\to +\infty}u_n=1$ et $\displaystyle \lim _{n\to +\infty}v_n=1$}
+\end{answers}
+\begin{explanations}
+On utilise le théorème d'encadrement, $\displaystyle 0\leq \left|\frac{\cos n}{2n+1}\right|\leq \frac{1}{2n+1}\underset{+\infty}{\longrightarrow }0$. Donc $\displaystyle \lim _{n\to +\infty}u_n=0$ et, puisque $\displaystyle v_n=\frac{2n}{2n+1}+u_n$, $\displaystyle \lim _{n\to +\infty}v_n=\lim _{n\to +\infty}\frac{2n}{2n+1}+\lim _{n\to +\infty}u_n=1$.
+\end{explanations}
+\end{question}
+
+
+
+\begin{question}
+Soit $\displaystyle u_n=1+\frac{1}{2}+\frac{1}{2^2}+\dots +\frac{1}{2^n}$. Quelles sont les bonnes réponses ?
+\begin{answers}  
+    \bad{La suite $(u_n)$ est divergente.}
+    \good{La suite $(u_n)$ est strictement croissante.}
+    \bad{$\displaystyle \lim _{n\to +\infty}u_n=+\infty$}
+    \good{$\displaystyle \lim _{n\to +\infty}u_n=2$}
+\end{answers}
+\begin{explanations}
+Le terme $u_n$ est la somme des premiers termes de la suite géométrique de raison $\displaystyle \frac{1}{2}$. Donc $(u_n)$ est strictement croissante et
+$$u_n=\frac{1-\frac{1}{2^{n+1}}}{1-\frac{1}{2}}=2-\frac{1}{2^n}\underset{+\infty}{\longrightarrow }2.$$
+\end{explanations}
+\end{question}
+
+
+
+\begin{question}
+Soit $\displaystyle u_n=\ln \left(1+n\mathrm{e}^{-n}\right)$. Quelles sont les bonnes réponses ?
+\begin{answers}
+    \good{La suite $(u_n)$ est bornée.}
+    \bad{$\displaystyle \lim _{n\to +\infty}u_n=+\infty$}
+    \good{$\displaystyle \lim _{n\to +\infty}u_n=0$}
+    \bad{La suite $(u_n)$ est divergente.}
+\end{answers}
+\begin{explanations}
+Par croissances comparées, $\displaystyle \lim _{n\to +\infty}n\mathrm{e}^{-n}=0$ et, par continuité de la fonction logarithme
+$$\lim _{n\to +\infty}u_n=\ln \left[\lim _{n\to +\infty}\left(1+n\mathrm{e}^{-n}\right)\right]=\ln (1)=0.$$
+Donc, $(u_n)$ converge et sa limite est $0$. En outre, elle est bornée comme toute suite convergente.
+\end{explanations}
+\end{question}
+
+
+
+
+\begin{question}
+Soit $\displaystyle u_n=\sqrt[n]{3+\cos n}$. Quelles sont les bonnes réponses ?
+\begin{answers}
+    \good{La suite $(u_n)$ est bornée.}
+    \good{$\displaystyle \lim _{n\to +\infty}u_n=1$}
+    \bad{La suite $(u_n)$ est croissante.}
+    \bad{La suite $(u_n)$ est divergente.}
+\end{answers}
+\begin{explanations}
+On a : $\displaystyle \sqrt[n]{2}\leq u_n\leq \sqrt[n]{4}$. Or 
+$$\lim _{n\to +\infty}\sqrt[n]{2}=1=\lim _{n\to +\infty}\sqrt[n]{4}.$$
+Donc, le théorème d'encadrement implique que $(u_n)$ converge et que sa limite est $1$.
+\end{explanations}
+\end{question}
+
+
+
+
+\subsection{Suites | Moyen | 121.00}
+
+
+
+\begin{question}
+Soit $\displaystyle u_n=\frac{2^{n+1}-3^{n+1}}{2^n+3^n}$ et $\displaystyle v_n=\frac{n2^{2n}-3^n}{n2^{2n}+3^n}$. Quelles sont les bonnes réponses ?
+\begin{answers}  
+    \good{$\displaystyle \lim _{n\to +\infty}u_n=-3$ et $\displaystyle \lim _{n\to +\infty}v_n=1$}
+    \bad{$\displaystyle \lim _{n\to +\infty}u_n=+\infty$ et $\displaystyle \lim _{n\to +\infty}v_n=+          \infty$}
+    \bad{$\displaystyle \lim _{n\to +\infty}u_n=-3$ et $\displaystyle \lim _{n\to +\infty}v_n=+\infty$}
+    \bad{$\displaystyle \lim _{n\to +\infty}u_n=-\infty$ et $\displaystyle \lim _{n\to +\infty}v_n=1$}
+\end{answers}
+\begin{explanations}
+D'abord, $\displaystyle u_n=\frac{3^{n+1}\times \left[\left(\frac{2}{3}\right)^{n+1}-1\right]}{3^n\times \left[\left(\frac{2}{3}\right)^{n}+1\right]}=3\frac{\left(\frac{2}{3}\right)^{n+1}-1}{\left(\frac{2}{3}\right)^n+1}$. Or $\displaystyle \left(\frac{2}{3}\right)^n$ est le terme général d'une suite géométrique de limite $0$, donc $\displaystyle \lim _{n\to +\infty}u_n=3\frac{0-1}{0+1}=-3$. De même, 
+$$\displaystyle v_n=\frac{n(2^2)^n-3^n}{n(2^2)^n+3^n}=\frac{n4^n-3^n}{n4^n+3^n}=\frac{n4^n\times \left[1-\frac{1}{n}\left(\frac{3}{4}\right)^{n}\right]}{n4^n\times \left[1+\frac{1}{n}\left(\frac{3}{4}\right)^{n}\right]}=\frac{1-\frac{1}{n}\left(\frac{3}{4}\right)^{n}}{1+\frac{1}{n}\left(\frac{3}{4}\right)^{n}}.$$
+Donc $\displaystyle \lim _{n\to +\infty}v_n=1$ car $\displaystyle \lim _{n\to +\infty}\frac{1}{n}=0$ et$\displaystyle \lim _{n\to +\infty}\left(\frac{3}{4}\right)^{n}=0$.
+\end{explanations}
+\end{question}
+
+
+
+\begin{question}
+Soit $\displaystyle u_n=\left(1-\frac{1}{n}\right)^n$ et $\displaystyle v_n=\left(1+\frac{(-1)^{n}}{n}\right)^n$. Quelles sont les bonnes réponses ?
+\begin{answers}  
+    \good{$\displaystyle \lim _{n\to +\infty}u_n=\mathrm{e}^{-1}$}
+    \bad{$\displaystyle \lim _{n\to +\infty}v_n=\mathrm{e}^{-1}$}
+    \bad{La suite $(u_n)$ est divergente.}
+    \good{La suite $(v_n)$ est divergente.}
+\end{answers}
+\begin{explanations}
+On utilise le fait que si $\displaystyle \lim _{n\to +\infty}a_n=0$, alors les suites $(a_n)$ et $\ln (1+a_n)$ sont équivalentes. Ainsi 
+$$\ln (u_n)=n\ln \left(1-\frac{1}{n}\right)\sim n\times \frac{-1}{n}=-1.$$
+Donc $(u_n)$ est convergente et sa limite est $\mathrm{e}^{-1}$. On vérifie, de même, que
+$$\displaystyle \lim _{n\to +\infty}v_{2n}=\mathrm{e}\mbox{ et }\lim _{n\to +\infty}v_{2n+1}=\mathrm{e}^{-1}.$$
+Donc, d'après le théorème des suites extraites, $(v_n)$ est divergente.
+\end{explanations}
+\end{question}
+
+
+
+\begin{question}
+Soit $\displaystyle u_n=\frac{2n^2+1}{n^2+1}$. Quelles sont les bonnes réponses ?
+\begin{answers}
+    \bad{$\forall \varepsilon >0,\; \forall n\in \Nn,\; |u_n-2|<\varepsilon$}
+    \good{$\exists \varepsilon >0,\; \forall n\in \Nn,\; |u_n-2|<\varepsilon$}
+    \good{$\forall n\in \Nn,\; n>10\Rightarrow |u_n-2|<10^{-2}$}
+    \good{$\forall \varepsilon >0,\; \exists n_0\in \Nn,\; \forall n\in \Nn,\; n>n_0\Rightarrow |u_n-2|<\varepsilon$}
+\end{answers}
+\begin{explanations}
+D'abord, $\displaystyle u_n-2=\frac{-1}{n^2+1}$. D'une part, $\displaystyle |u_n-2|\leq 1$ pour tout $n\in \Nn$. D'autre part, si $n>10$ alors $\displaystyle n^2+1>10^2+1>10^2$. C'est-à-dire
+$$|u_n-2|=\frac{1}{n^2+1}<10^{-2}.$$
+De même, pour tout $\varepsilon >0$, si $n>n_0=E\left(\sqrt{\varepsilon ^{-1}}\right)+1$ alors $\displaystyle |u_n-2|=\frac{1}{n^2+1}<\varepsilon$.
+\end{explanations}
+\end{question}
+
+
+
+\begin{question}
+Soient $\displaystyle u_n=\sqrt{n^2+4n-1}-n$ et $\displaystyle v_n=\frac{4n-1}{\sqrt{n^2+4n-1}+n}$. Quelles sont les bonnes réponses ?
+\begin{answers}  
+    \bad{$\displaystyle \lim _{n\to +\infty}u_n=+\infty$ et $\displaystyle \lim _{n\to +\infty}v_n=0$ }
+    \bad{$\displaystyle \lim _{n\to +\infty}u_n=0$ et $\displaystyle \lim _{n\to +\infty}v_n=2$}
+    \good{$\displaystyle \lim _{n\to +\infty}u_n=2$ et $\displaystyle \lim _{n\to +\infty}v_n=2$}
+    \bad{$\displaystyle \lim _{n\to +\infty}u_n=+\infty$ et $\displaystyle \lim _{n\to +\infty}v_n=0$}
+\end{answers}
+\begin{explanations}
+On multiplie par le terme conjugué, on obtient $\displaystyle u_n=\frac{4n-1}{\sqrt{n^2+4n-1}+n}=v_n$. Ensuite,
+$$\frac{4n-1}{\sqrt{n^2+4n-1}+n}=\frac{4n\left(1-\frac{1}{4n}\right)}{n\left(\sqrt{1+\frac{4}{n}-\frac{1}{n^2}}+1\right)}=4\frac{1-\frac{1}{4n}}{\sqrt{1+\frac{4}{n}-\frac{1}{n^2}}+1}\underset{+\infty}{\longrightarrow}2.$$
+\end{explanations}
+\end{question}
+
+
+
+\begin{question}
+Soit $\displaystyle u_n=1+\frac{1}{2^2}+\frac{1}{3^2}+\dots +\frac{1}{n^2}$. Quelles sont les bonnes réponses ?
+\begin{answers}  
+    \good{Pour tout $n\geq 1$, on a $\displaystyle u_n\leq 2-\frac{1}{n}$.}
+    \bad{La suite $(u_n)$ est divergente.}
+    \bad{$\displaystyle \lim _{n\to +\infty}u_n=+\infty$}
+    \good{La suite $(u_n)$ est convergente et $\displaystyle \lim _{n\to +\infty}u_n\leq 2$.}
+\end{answers}
+\begin{explanations}
+On vérifie par récurrence que $\displaystyle u_n\leq 2-\frac{1}{n}$, donc $(u_n)$ est majorée par $2$. Par ailleurs, il est clair que $(u_n)$ est croissante. Le théorème des suites monotones implique que $(u_n)$ est convergente et que $\displaystyle \lim _{n\to +\infty}u_n\leq 2$.
+\end{explanations}
+\end{question}
+
+
+
+\begin{question}
+Soit $\displaystyle u_n=\sin\left(\frac{2n\pi}{3}\right)$ et $\displaystyle v_n=\sin\left(\frac{3}{2n\pi}\right)$. Quelles sont les bonnes réponses ?
+\begin{answers}  
+    \good{La suite $(u_n)$ diverge et la suite $(v_n)$ converge.}
+    \bad{Les suites $(u_n)$ et $(v_n)$ sont divergentes.}
+    \good{La suite $(u_n)$ n'a pas de limite et $\displaystyle \lim _{n\to +\infty}v_n=0$.}
+    \bad{$\displaystyle \lim _{n\to +\infty}u_n=0$ et $\displaystyle \lim _{n\to +\infty}v_n=0$}
+\end{answers}
+\begin{explanations}
+Par continuité de la fonction sinus, on a :
+$$\displaystyle \lim _{n\to +\infty}\frac{3}{2n\pi}=0\mbox{ donc }\displaystyle \lim _{n\to +\infty}\sin\left(\frac{2n\pi}{3}\right)=\sin\left(\lim _{n\to +\infty}\frac{3}{2n\pi}\right)=\sin 0=0.$$
+Ainsi, $(v_n)$ converge et sa limite est $0$. Par ailleurs, $$u_{3n}=\sin (2n\pi)=0\mbox{ et }u_{3n+1}=\sin \left(\frac{2\pi}{3}\right)=\frac{\sqrt{3}}{2}.$$
+Donc, d'après le théorème des suites extraites, $(u_n)$ diverge ; elle n'a pas de limite.
+\end{explanations}
+\end{question}
+
+
+
+\begin{question}
+Soit $\displaystyle u_n=\frac{1}{1^2}+\frac{1}{2^2}+\frac{1}{3^2}+\dots+\frac{1}{n^2}$ et $\displaystyle v_n=u_n+\frac{1}{n}$. Quelles sont les bonnes réponses ?
+\begin{answers}  
+    \bad{Si les limites existent, alors $\displaystyle \lim _{n\to +\infty}u_n<\lim _{n\to +\infty}v_n$.}
+    \bad{Les suites $(u_n)$ et $(v_n)$ sont divergentes.}
+    \good{Les suites $(u_n)$ et $(v_n)$ sont adjacentes.}
+    \good{Les suites $(u_n)$ et $(v_n)$ convergent vers la même limite finie.}
+\end{answers}
+\begin{explanations}
+On vérifie que $(u_n)$ est croissante, $(v_n)$ est décroissante et que 
+$$\displaystyle \lim _{n\to +\infty}(u_n-v_n)=0.$$
+Donc $(u_n)$ et $(v_n)$ sont adjacentes. En conséquence, elles convergent vers la même limite finie.
+\end{explanations}
+\end{question}
+
+
+\begin{question}
+Soit $(u_n)$ une suite réelle. On suppose que $\displaystyle |u_{n+1}-1|\leq \frac{1}{2}|u_n-1|$ pour tout $n\geq 0$. Que peut-on en déduire ?
+\begin{answers}  
+    \bad{La suite $(u_n)$ est convergente et $\displaystyle \lim _{n\to +\infty}u_n=0$.}
+    \bad{La suite $(u_n)$ est divergente.}
+    \good{Pour tout $n\geq 1$, $\displaystyle |u_n-1|\leq \frac{1}{2^n}|u_0-1|$.}
+    \good{$\displaystyle \lim _{n\to +\infty}u_n=1$}
+\end{answers}
+\begin{explanations}
+On vérifie par récurrence que $\displaystyle |u_n-1|\leq \frac{1}{2^n}|u_0-1|$, et donc, par passage à la limite, $\displaystyle \lim _{n\to +\infty}(u_n-1)=0$. C'est-à-dire, $\displaystyle \lim _{n\to +\infty}u_n=1$.
+\end{explanations}
+\end{question}
+
+
+\begin{question}
+Soit $(u_n)$ une suite réelle. On suppose que $\displaystyle u_n\geq \sqrt{n}$ pour tout $n\geq 0$. Que peut-on en déduire ?
+\begin{answers}
+    \good{La suite $(u_n)$ n'est pas majorée.}
+    \bad{La suite $(u_n)$ est croissante.}
+    \bad{La suite $(u_n)$ est convergente.}
+    \good{$\displaystyle \lim _{n\to +\infty}u_n=+\infty$}
+\end{answers}
+\begin{explanations}
+Si $(u_n)$ était majorée, il en serait de même pour $\sqrt{n}$ ce qui est absurde. Donc $(u_n)$ est une suite non majorée. Par passage à la limite, on a :
+$$\lim _{n\to +\infty}u_n\geq \lim _{n\to +\infty}\sqrt{n}=+\infty\Rightarrow \displaystyle \lim _{n\to +\infty}u_n=+\infty.$$
+\end{explanations}
+\end{question}
+
+
+
+
+\begin{question}
+Soit $\displaystyle u_n=\sum _{k=1}^n\frac{1}{k(k+1)}$. Quelles sont les bonnes réponses ?
+\begin{answers}  
+    \bad{La suite $(u_n)$ est croissante non majorée.}
+    \bad{La suite $(u_n)$ est divergente.}
+    \good{Pour tout $n\geq 1$, $\displaystyle u_n=1-\frac{1}{n+1}$.}
+    \good{$(u_n)$ est convergente et $\displaystyle \lim _{n\to +\infty}u_n=1$.}
+\end{answers}
+\begin{explanations}
+Le terme $u_n$ est une somme télescopique. En effet, on vérifie que, pour tout $k\geq 1$,
+$$\frac{1}{k(k+1)}=\frac{1}{k}-\frac{1}{k+1}\Rightarrow u_n=1-\frac{1}{n+1}.$$
+Donc $(u_n)$ est convergente et sa même limite est $1$.
+\end{explanations}
+\end{question}
+
+
+
+
+\subsection{Suites | Difficile | 121.00}
+
+
+
+\begin{question}
+Soient $a$ et $b$ deux réels tels que $a>b>0$. On pose $\displaystyle u_n=\frac{a^n-b^n}{a^n+b^n}$ et $\displaystyle v_n=\frac{na^{2n}-b^{2n}}{a^{2n}+b^{2n}}$. Quelles sont les bonnes réponses ?
+\begin{answers}  
+    \bad{Les suites $(u_n)$ et $(v_n)$ sont divergentes.}
+    \good{$\displaystyle \lim _{n\to +\infty}u_n=1$ et $(v_n)$ est divergente.}
+    \good{$\displaystyle \lim _{n\to +\infty}u_n=1$ et $\displaystyle \lim _{n\to +\infty}v_n=+\infty$}
+    \bad{$\displaystyle \lim _{n\to +\infty}u_n=0$ et $\displaystyle \lim _{n\to +\infty}v_n=+\infty$}
+\end{answers}
+\begin{explanations}
+D'abord, $\displaystyle u_n=\frac{a^n\times \left[1-\left(\frac{b}{a}\right)^n\right]}{a^n\times \left[1+\left(\frac{b}{a}\right)^n\right]}=\frac{1-\left(\frac{b}{a}\right)^n}{1+\left(\frac{b}{a}\right)^n}$. Or $\displaystyle \left(\frac{b}{a}\right)^n$ est le terme général d'une suite géométrique de limite $0$, donc $\displaystyle \lim _{n\to +\infty}u_n=1$. De même, 
+$$\displaystyle v_n=\frac{na^{2n}\times \left[1-\frac{1}{n}\left(\frac{b}{a}\right)^{2n}\right]}{a^{2n}\times \left[1+\left(\frac{b}{a}\right)^{2n}\right]}=n\frac{1-\frac{1}{n}\left(\frac{b}{a}\right)^{2n}}{1+\left(\frac{b}{a}\right)^{2n}}.$$
+Donc $\displaystyle \lim _{n\to +\infty}v_n=+\infty$ car $\displaystyle \lim _{n\to +\infty}\frac{1-\frac{1}{n}\left(\frac{b}{a}\right)^{2n}}{1+\frac{1}{n}\left(\frac{b}{a}\right)^{2n}}=1$.
+\end{explanations}
+\end{question}
+
+
+
+\begin{question}
+Soit $\displaystyle u_n=\left|\frac{1}{n}-\frac{2}{n}+\frac{3}{n}-\dots+\frac{(-1)^{n-1}n}{n}\right|$. Quelles sont les bonnes réponses ?
+\begin{answers}  
+    \bad{La suite $(u_n)$ est monotone.}
+    \good{Les suites $(u_{2n})$ et $(u_{2n+1})$ convergent vers la même limite.}
+    \bad{La suite $(u_n)$ est divergente.}
+    \good{$\displaystyle \lim _{n\to +\infty}u_n=\frac{1}{2}$}
+\end{answers}
+\begin{explanations}
+On vérifie que, pour tout $n\geq 1$,
+$$u_{2n}=\frac{1}{2}\mbox{ et }u_{2n+1}=\frac{n+1}{2n+1}.$$
+Donc les suites $(u_{2n})$ et $(u_{2n+1})$ convergent vers la même limite, à savoir $\displaystyle \frac{1}{2}$. D'après le théorème des suites extraites, la suite $(u_n)$ converge aussi vers $\displaystyle \frac{1}{2}$.
+\end{explanations}
+\end{question}
+
+
+
+\begin{question}
+On considère les suites de termes généraux $\displaystyle u_n=\sum _{k=1}^n\frac{(-1)^k}{k}$, $\displaystyle v_n=\sum _{k=1}^{2n}\frac{(-1)^k}{k}$ et $\displaystyle w_n=\sum _{k=1}^{2n+1}\frac{(-1)^k}{k}$. Quelles sont les bonnes réponses ?
+\begin{answers}  
+    \good{Les suites $(v_n)$ et $(w_n)$ sont convergentes.}
+    \good{La suite $(u_n)$ est convergente.}
+    \bad{La suite $(u_n)$ est divergente.}
+    \bad{L'une au moins des suites $(v_n)$ ou $(w_n)$ est divergente.}
+\end{answers}
+\begin{explanations}
+On vérifie que $(v_n)$ est décroissante, $(w_n)$ est croissante et que $\displaystyle \lim _{n\to +\infty}(v_n-w_n)=0$. Donc ces deux suites sont adjacentes. En particulier, elles convergent et elles ont la même limite $\ell \in \Rr$. Or $v_n=u_{2n}$ et $w_n=u_{2n+1}$, donc, d'après le théorème des suites extraites, la suite $(u_n)$ converge aussi vers $\displaystyle \ell$.
+\end{explanations}
+\end{question}
+
+
+\begin{question}
+Soit $a>0$. On définit par récurrence une suite $(u_n)_{n\geq 0}$ par $u_0>0$ et, pour $n\geq 0$, $\displaystyle u_{n+1}= \frac{u_n^2+a^2}{2u_n}$. Que peut-on en déduire ?
+\begin{answers}  
+    \bad{Le terme $u_n$ n'est pas défini pour tout $n\in \Nn$.}
+    \good{$\forall n\in \Nn^*$, $u_n \geq a$, et $(u_n)_{n\geq 1}$ est décroissante.}
+    \good{Pour tout $n\in \Nn$, $\displaystyle \left|u_{n+1}-a\right|\leq \frac{\left|u_1-a\right|}{2^n}$.}
+    \bad{La suite $(u_n)$ est divergente.}
+\end{answers}
+\begin{explanations}
+Par récurrence, $u_n>0$ pour tout $n\in \Nn$. Donc $(u_n)$ est bien définie. D'autre part, 
+$$\displaystyle 0\leq (u_n-a)^2=u_n^2+a^2-2au_n \Rightarrow  a\leq \frac{u_n^2+a^2}{2u_n}.$$
+Donc $u_{n+1}\geq a>0$ pour tout $n\in \Nn$. On en déduit que
+$$\displaystyle u_{n+1}-u_n=\frac{a^2-u_n^2}{2u_n}\leq 0,\mbox{ pour }n\geq 1,$$
+donc $(u_n)_{n\geq 1}$ est décroissante. On vérifie aussi par récurrence que $\displaystyle \left|u_{n+1}-a\right|\leq \frac{\left|u_1-a\right|}{2^n}$, et donc, par passage à la limite, $\displaystyle \lim _{n\to +\infty}(u_n-a)=0$. C'est-à-dire, $(u_n)$ est convergente et $\displaystyle \lim _{n\to +\infty}u_n=a$.
+\end{explanations}
+\end{question}
+
+
+\begin{question}
+Soient $(u_n)$ et $(v_n)$ deux suites réelles. On suppose que $(v_n)$ est croissante non majorée et que $\displaystyle v_n < u_n$ pour tout $n\geq 0$. Que peut-on en déduire ?
+\begin{answers}  
+    \bad{$\displaystyle \lim _{n\to +\infty}v_n<\lim _{n\to +\infty}u_n$}
+    \good{La suite $(u_n)$ est divergente.}
+    \bad{$\displaystyle \lim _{n\to +\infty}v_n\leq u_0$}
+    \good{$\displaystyle \lim _{n\to +\infty}u_n=+\infty$}
+\end{answers}
+\begin{explanations}
+La suite $(v_n)$ est croissante non majorée, donc sa limite est $+\infty$. Il en est de même pour la limite de $(u_n)$, c'est-à-dire $(u_n)$ est divergente et sa limite est $+\infty$.
+\end{explanations}
+\end{question}
+
+
+\begin{question}
+Soit $(u_n)$ une suite croissante. On suppose que $\displaystyle u_{n+1}-u_n\leq \frac{1}{2^n}$ pour tout $n\geq 0$. Que peut-on en déduire ?
+\begin{answers}  
+    \bad{$(u_n)$ est divergente.}
+    \good{$(u_n)$ est bornée et $u_0\leq u_n\leq u_0+2$.}
+    \good{$(u_n)$ est convergente et $\displaystyle u_0\leq \lim _{n\to +\infty}u_n\leq u_0+2$.}
+    \bad{$\displaystyle \lim _{n\to +\infty}u_n=+\infty$}
+\end{answers}
+\begin{explanations}
+On vérifie par récurrence que 
+$$\displaystyle u_0\leq u_n\leq u_0+1+\frac{1}{2}+\frac{1}{2^2}+\dots +\frac{1}{2^{n-1}}=u_0+2-\frac{1}{2^{n-1}}.$$
+Donc, $u_0\leq u_n\leq u_0+2$. Étant à la fois croissante est majorée, la suite $(u_n)$ est convergente et, par passage à la limite, $\displaystyle u_0\leq \lim _{n\to +\infty}u_n\leq u_0+2$.
+\end{explanations}
+\end{question}
+
+
+\begin{question}
+Soit $(u_n)_{n\geq 0}$ la suite définie par $u_0\geq 0$ et $\displaystyle u_{n+1}= \ln(1+u_n)$. Que peut-on en déduire ?
+\begin{answers}  
+    \bad{Une telle suite $(u_n)$ n'existe pas.}
+    \good{$\forall n\in \Nn^*$, $u_n \geq 0$, et $(u_n)$ est décroissante}
+    \bad{$\displaystyle \lim _{n\to +\infty}u_n=+\infty$}
+    \good{$\displaystyle \lim _{n\to +\infty}u_n=0$}
+\end{answers}
+\begin{explanations}
+On vérifie par récurrence que $\displaystyle 0\leq u_n$ pour tout $n\geq 0$. Donc la suite $(u_n)$ est bien définie. On vérifie aussi que $\ln (1+x)\leq x$ pour tout réel $x\geq 0$. En particulier, 
+$$u_{n+1}=\ln (1+u_n)\leq u_n.$$
+Donc $(u_n)$ est décroissante. Étant à la fois décroissante est minorée, la suite $(u_n)$ est convergente et sa limite est l'unique solution de l'équation $x=\ln (1+x)$. Soit $\displaystyle \lim _{n\to +\infty}u_n=0$.
+\end{explanations}
+\end{question}
+
+
+
+\begin{question}
+Soit $(u_n)$ une suite croissante. On suppose que $\displaystyle 0\leq u_{n+1}\leq \frac{1}{2}u_n+\frac{1}{2^n}$ pour tout $n\geq 0$. Quelles sont les bonnes réponses ?
+\begin{answers} 
+    \good{$(u_n)$ est majorée.}
+    \bad{$(u_n)$ est divergente.}
+    \good{$(u_n)$ est convergente et $\displaystyle 0\leq \lim _{n\to +\infty}u_n\leq 2$.}
+    \good{$u_n=0$ pour tout $n\geq 1$.}
+\end{answers}
+\begin{explanations}
+On vérifie par récurrence que, pour tout $n\geq 1$, 
+$$\displaystyle 0\leq u_n\leq \frac{1}{2^n}u_0+1+\frac{1}{2}+\frac{1}{2^2}+\dots +\frac{1}{2^{n-1}}=\frac{1}{2^n}u_0+2-\frac{1}{2^{n-1}}.$$
+Donc, $(u_n)$ est majorée car $\displaystyle \frac{1}{2^{n-1}}\underset{+\infty}{\longrightarrow}0$. \'Etant à la fois croissante est majorée, la suite $(u_n)$ converge vers $\ell \in \Rr$ et, par passage à la limite, $\displaystyle 0\leq \ell\leq 2$. Par ailleurs, l'hypothèse faite sur $u_n$ donne
+$$0\leq \ell \leq \frac{\ell}{2} \Rightarrow \ell =0$$
+et comme $(u_n)_{n\geq 1}$ est croissante positive, $u_n=0$ pour tout $n\geq 1$.
+\end{explanations}
+\end{question}
+
+
+
+\begin{question}
+Soit $(u_n)$ une suite croissante. On suppose que $\displaystyle u_n+\frac{1}{n+1}\leq u_{n+1}$ pour tout $n\geq 0$. Quelles sont les bonnes réponses ?
+\begin{answers} 
+    \bad{$(u_n)$ est majorée.}
+    \good{$(u_n)$ est divergente.}
+    \bad{$(u_n)$ est convergente et $\displaystyle \lim _{n\to +\infty}u_n\geq 0$.}
+    \bad{$u_n=0$ pour tout $n\geq 1$.}
+\end{answers}
+\begin{explanations}
+On vérifie par récurrence que, pour tout $n\geq 1$, 
+$$\displaystyle u_0+1+\frac{1}{2}+\dots +\frac{1}{n}\leq u_n.$$
+Donc, $(u_n)$ n'est pas majorée car sinon, il en serait de même pour la suite de terme général $\displaystyle v_n=1+\frac{1}{2}+\dots +\frac{1}{n}$ et on sait que $\displaystyle \lim _{n\to +\infty}v_n=+\infty$.
+\end{explanations}
+\end{question}
+
+
+
+
+\begin{question}
+On admet que $\forall x \in [0,1[$, $\ln (1+x)\leq x\leq -\ln (1-x)$. Soit $\displaystyle u_n=\sum _{k=1}^n\frac{1}{n+k}$, $n\geq 1$. Quelles sont les bonnes réponses ?
+\begin{answers} 
+    \bad{La suite $(u_n)$ est croissante non majorée.}
+    \good{Pour tout $n\geq 1$, $\displaystyle \ln \left(\frac{2n+1}{n+1}\right)\leq u_n\leq \ln (2)$.}
+    \good{$(u_n)$ est convergente et $\displaystyle \lim _{n\to +\infty}u_n=\ln (2)$.}
+    \bad{$\displaystyle \lim _{n\to +\infty}u_n=+\infty$}
+\end{answers}
+\begin{explanations}
+Avec $\displaystyle x=\frac{1}{n+k}$, on aura :
+$$\ln(n+k+1)-\ln (n+k)\leq \frac{1}{n+k}\leq \ln(n+k)-\ln (n+k-1).$$
+On somme sur $k$ de $1$ à $n$, on obtient :
+$$\ln \left(\frac{2n+1}{n+1}\right)\leq u_n\leq \ln (2n)-\ln (n)=\ln (2).$$
+Le théorème d'encadrement implique que $(u_n)$ converge et que sa limite est $\ln (2)$.
+\end{explanations}
+\end{question}
