@@ -1,0 +1,34 @@
+---
+id: 1234
+
+author: exo7
+
+tags:
+    - theme: un-theme
+    - motcle: premier
+    - motcle: second
+    - niveau: L1
+    - complexite: 1
+    - tag: autre-tag
+    - tag: coucou
+
+question: |
+        Combien font \(2^{10}\) ?
+
+answers: 
+    - value: |
+        1000
+      correct: False
+
+    - value: |
+        1024
+      correct: True
+
+    - value: |
+        2048
+      correct: False
+
+    - value: |
+        \(\int 10^{10} \%\)
+      correct: False
+
