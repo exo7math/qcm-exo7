@@ -15,7 +15,7 @@ import random
 import re
 import html
 import base64
-
+import constant_label as Constants
 
 #--------------------------------------------------
 #--------------------------------------------------
@@ -340,7 +340,7 @@ def encode_image(filename):
     filename =  filename + '.png'
     with open(filename, "rb") as image_file:
         encoded = base64.b64encode(image_file.read()).decode('ascii')
-    data = '</p><p>\n<img src="data:image/png;base64,'+encoded+'"/>\n'
+    data = '</p><p>\n<img style="max-width:100%; margin: 10px auto;" src="data:image/png;base64,'+encoded+'"/>\n'
     return data
 
 # Replace all input of images by their encoding
@@ -393,7 +393,7 @@ if output_format == 'moodle':
             else:
                 thesubsection = ''
 
-            course_name = 'Défaut pour LISCINUM2017/'
+            course_name = Constants.COURSE_NAME_TEXT
 
             out.write('\n\n<question type="category">\n<category>\n<text>\n$course$/'+course_name
                 +thesection+thesubsection+'</text>\n</category>\n</question>\n\n')
@@ -408,7 +408,7 @@ if output_format == 'moodle':
 
 
         if 'num' in data.keys():
-            thenum = 'qcm-exo7-'+str(data['num']).zfill(4)
+            thenum = Constants.THENUM_PREFIX+str(data['num']).zfill(4)
             out.write('<name><text>'+ thenum +'</text></name>\n')
         else: 
             out.write('<name><text> </text></name>\n')
