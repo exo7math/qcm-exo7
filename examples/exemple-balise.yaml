@@ -1,0 +1,23 @@
+---
+question: |
+        Une question avec une balise html <a>lien</a>.
+        Et ici des maths \(b<a\) et \(a<b<c>b>a\), ici (a<b<c) la une formule :
+        \[a<b<i>a'\]
+
+answers: 
+    - value: |
+        1000
+      correct: False
+
+    - value: |
+        \(a<b\) <b>en gras</b>
+      correct: True
+
+    - value: |
+        2048
+      correct: False
+
+    - value: |
+        \(\int 10^{10} \%\)
+      correct: False
+

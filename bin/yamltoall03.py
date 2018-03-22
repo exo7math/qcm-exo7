@@ -183,13 +183,36 @@ def replace_latex_macros(text):
     text = re.sub("\\\\Kk(?=[^a-zA-Z])","\mathbf{K}",text, flags=re.MULTILINE|re.DOTALL)
 
     # Replace '<' (resp. '>'') by ' < ' (resp. ' > ') to avoid html mixed up (note the spaces)
-    text = re.sub("<"," < ",text, flags=re.MULTILINE|re.DOTALL)
-    text = re.sub(">"," > ",text, flags=re.MULTILINE|re.DOTALL)
+    # text = re.sub("<"," < ",text, flags=re.MULTILINE|re.DOTALL)
+    # text = re.sub(">"," > ",text, flags=re.MULTILINE|re.DOTALL)
+
+    # text = re.sub("\((.*?)<(.*?)\)","(\g<1> < \g<2>)",text, flags=re.MULTILINE|re.DOTALL)
+    # text1 = re.sub("\$(.+?)\$","\\\(\g<1>\\\)",text2, flags=re.MULTILINE|re.DOTALL)
+
+    # Gestion of "<"" in text mode (do nothing) and math mode (add space)
+    # Would be happy to a solution using regex!!!
+    in_math = False
+    is_slash = False
+    new_text = ""
+    for c in text:
+        if is_slash and (c == "(" or c == "["):
+            in_math = True
+        if is_slash and (c == ")" or c == "]"):
+            in_math = False
+        if c == "\\":
+            is_slash = True
+        else:
+            is_slash = False
+        if in_math and (c == "<" or c == ">"):
+            new_text += " " + c + " "
+        else:
+            new_text += c
+    text = new_text
 
     return text
 
 # Test
-# text = "Soit $f : \\Nn \\to \\Rr$ et $b<a$ \\Nnon et $\\Nn7$"
+# text = "Une question avec une balise html <a>lien</a>. Et ici des maths \(b<a\) et \(a<b<c>b>a\), ici (a<b<c) la une formule :\[a<b<i>a'\]"
 # print(text)
 # text = replace_latex_macros(text)
 # print(text)
@@ -400,7 +423,7 @@ if output_format == 'moodle':
                 if type(tagval) == int or type(tagval) == float:
                     tagval = str(tagval)
 
-                thetags += '    <tag>' + tagkeywd + "=" + tagval + '</tag>\n'
+                thetags += '    <tag><text>' + tagkeywd + "=" + tagval + '</text></tag>\n'
 
             out.write('<tags>\n'+thetags+'</tags>\n')
 

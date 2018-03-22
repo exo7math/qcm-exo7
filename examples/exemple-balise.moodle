@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+
+
+<question type="multichoice">
+<name><text> </text></name>
+<questiontext format="html">
+<text><![CDATA[<p>
+Une question avec une balise html <a>lien</a>.
+Et ici des maths \(b < a\) et \(a < b < c > b > a\), ici (a<b<c) la une formule :
+\[a < b < i > a'\]
+</p>]]></text>
+</questiontext>
+<defaultgrade>1.0</defaultgrade>
+<shuffleanswers>1</shuffleanswers>
+<answernumbering>abc</answernumbering>
+<answer fraction="-33.33333" format="html"><text><![CDATA[<p>
+1000
+</p>]]></text>
+</answer>
+<answer fraction="100.00000" format="html"><text><![CDATA[<p>
+\(a < b\) <b>en gras</b>
+</p>]]></text>
+</answer>
+<answer fraction="-33.33333" format="html"><text><![CDATA[<p>
+2048
+</p>]]></text>
+</answer>
+<answer fraction="-33.33333" format="html"><text><![CDATA[<p>
+\(\int 10^{10} \%\)
+</p>]]></text>
+</answer>
+<single>false</single>
+</question>
+
+</quiz>

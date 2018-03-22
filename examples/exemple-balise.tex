@@ -1,0 +1,43 @@
+ %%%%%%%%%%%%%%%%%% PREAMBULE %%%%%%%%%%%%%%%%%%
+
+\documentclass[12pt,a4paper]{article}
+
+\usepackage[francais]{../exo7qcm}
+%\usepackage[francais,nosolutions]{exo7qcm}
+
+\begin{document}
+
+ 
+ 
+%%%%%%%%%%%%%%%%%% ENTETE %%%%%%%%%%%%%%%%%%
+
+\LogoExoSept{2}
+
+%\kern-2em
+\hfill\textsf{Ann\'ee 2018}
+
+\vspace*{0.5ex}
+\hrule\vspace*{1.5ex} 
+\hfil{\textbf{\Large QCM de mathématiques}}
+\vspace*{1ex} \hrule 
+\vspace*{5ex} 
+
+\section{Conflit balise < avec symbole inférieur}
+
+
+\begin{question}
+Une question avec une balise html <a>lien</a>.
+Et ici des maths $b<a$ et $a<b<c>b>a$, ici (a<b<c) la une formule :
+$$a<b<i>a'$$
+
+\begin{answers}  
+    \bad{1000}
+    \good{$a<b$ <b>en gras</b>}
+    \bad{2048}
+    \bad{$\int 10^{10} \%$}
+\end{answers}
+\end{question}
+
+
+
+\end{document}
