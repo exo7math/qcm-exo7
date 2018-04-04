@@ -5,13 +5,13 @@
 <question type="multichoice">
 <name><text> </text></name>
 <tags>
-    <tag>theme=un-theme</tag>
-    <tag>motcle=premier</tag>
-    <tag>motcle=second</tag>
-    <tag>niveau=L1</tag>
-    <tag>complexite=1</tag>
-    <tag>tag=autre-tag</tag>
-    <tag>tag=coucou</tag>
+    <tag><text>theme=un-theme</text></tag>
+    <tag><text>motcle=premier</text></tag>
+    <tag><text>motcle=second</text></tag>
+    <tag><text>niveau=L1</text></tag>
+    <tag><text>complexite=1</text></tag>
+    <tag><text>tag=autre-tag</text></tag>
+    <tag><text>tag=coucou</text></tag>
 </tags>
 <questiontext format="html">
 <text><![CDATA[<p>

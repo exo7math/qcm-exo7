@@ -230,7 +230,12 @@ Soit $a\in \Rr$, $I$ un intervalle contenant $a$ et $f$ une fonction définie su
     \good{$\lim_{x\to a} f(x)=-\infty$ si et seulement si $\forall A < 0,  \exists \alpha > 0, \forall x \in I\setminus\{a\}, |x-a| < \alpha \Rightarrow f(x) < A$} 
 \end{answers}
 \begin{explanations}
-Voir la définition d'une limite.
+Voir la définition d'une limite finie ou infinie en un point $a\in\Rr$ :
+
+ $\lim_{x\to a} f(x)=l$ si et seulement si  $\forall \epsilon >0,  \exists \alpha > 0, \forall x \in I\setminus\{a\}, |x-a| < \alpha \Rightarrow |f(x)-l|<\epsilon$
+ 
+ $\lim_{x\to a} f(x)=-\infty$ si et seulement si $\forall A < 0,  \exists \alpha > 0, \forall x \in I\setminus\{a\}, |x-a| < \alpha \Rightarrow f(x) < A$
+ 
 \end{explanations}
 
 \end{question}
@@ -250,7 +255,11 @@ Soit  $f$ une fonction définie sur $\Rr$. Quelles sont les assertions vraies ?
     
 \end{answers}
 \begin{explanations}
-Voir la définition d'une limite.
+Voir la définition d'une limite en $+\infty$ ou $-\infty$ vers une valeur finie ou infinie :
+
+$\lim_{x\to +\infty} f(x)=l \, (l\in \Rr)$  si et seulement si $\forall \epsilon >0,  \exists A >0, \forall x \in \Rr, x\ge A \Rightarrow |f(x)-l|\le \epsilon$
+
+$\lim_{x\to -\infty} f(x)=+\infty$  si et seulement si $ \forall A >0,  \exists B <0, \forall x \in \Rr, x\le B \Rightarrow f(x)\ge A$
 \end{explanations}
 
 \end{question}
