@@ -429,8 +429,11 @@ if output_format == 'moodle':
             out.write('<name><text> </text></name>\n')
 
         # Tags pour export vers scenari
-        # Tags automatique depuis section, subsection,...
+        # Tags automatiques depuis section, subsection,...
         autotags = ""
+        existing_tags = []
+        if 'tags' in data.keys():
+            existing_tags = [list(t.keys())[0] for t in data['tags']]
 
         if 'author' in data.keys():
             tagkeywd,tagval = 'auteur',data['author']
@@ -442,20 +445,22 @@ if output_format == 'moodle':
         if 'subsection' in data.keys():
             thesubsection = data['subsection']
 
-        # Difficulté    
-        if ('Facile' in thesection) or ('Facile' in thesubsection):
-            tagkeywd,tagval = 'difficulte','2'
-            autotags += '    <tag><text>' + tagkeywd + "=" + tagval + '</text></tag>\n'
+        # Complexité automatique depuuis la section/sous-section 
+        if 'complexite' not in existing_tags:  
+            if ('Facile' in thesection) or ('Facile' in thesubsection):
+                tagkeywd,tagval = 'complexite','2'
+                autotags += '    <tag><text>' + tagkeywd + "=" + tagval + '</text></tag>\n'
 
-        if ('Moyen' in thesection) or ('Moyen' in thesubsection):
-            tagkeywd,tagval = 'difficulte','3'
-            autotags += '    <tag><text>' + tagkeywd + "=" + tagval + '</text></tag>\n'
+            if ('Moyen' in thesection) or ('Moyen' in thesubsection):
+                tagkeywd,tagval = 'complexite','3'
+                autotags += '    <tag><text>' + tagkeywd + "=" + tagval + '</text></tag>\n'
 
-        if ('Difficile' in thesection) or ('Difficile' in thesubsection):
-            tagkeywd,tagval = 'difficulte','4'
-            autotags += '    <tag><text>' + tagkeywd + "=" + tagval + '</text></tag>\n'
+            if ('Difficile' in thesection) or ('Difficile' in thesubsection):
+                tagkeywd,tagval = 'complexite','4'
+                autotags += '    <tag><text>' + tagkeywd + "=" + tagval + '</text></tag>\n'
 
         # Catégorie pour scenari
+
         tagval = ""
         if 'Logique' in thesection:
             tagval = 'Logique et raisonnements'
@@ -465,31 +470,42 @@ if output_format == 'moodle':
             tagval = 'Fonctions'
         elif  'Dérivabilité' in thesection:
             tagval = 'Dérivation'
-        elif ('Nombres complexes') or ('Réels' in thesection) in thesection:
+        elif ('Nombres complexes' in thesection) or ('Réels' in thesection):
             tagval = 'Nombres réels et complexes'
         elif 'Polynômes' in thesection:
             tagval = 'Polynômes'  
         elif 'Géométrie' in thesection:
-            tagval = 'Géométrie'
+            tagval = 'Géométrie'      
 
-        if len(tagval)>0:
-            tagkeywd = 'categorie'
+        if ('theme' not in existing_tags) and (len(tagval)>0):
+            tagkeywd = 'theme'
             autotags += '    <tag><text>' + tagkeywd + "=" + tagval + '</text></tag>\n'
 
         # Niveau
-        tagkeywd,tagval = 'niveau','L1'
-        autotags += '    <tag><text>' + tagkeywd + "=" + tagval + '</text></tag>\n'
+        if 'niveau' not in existing_tags:
+            tagkeywd,tagval = 'niveau','L1'
+            autotags += '    <tag><text>' + tagkeywd + "=" + tagval + '</text></tag>\n'
 
         # Titre et mots-clés
-        mots_section = split_section(thesection)
-        mots_subsection = split_section(thesubsection)
+        if len(thesection)>0:
+            mots_section = split_section(thesection)
+        else:
+            mots_section = []
+        if len(thesubsection)>0:
+            mots_subsection = split_section(thesubsection)
+        else:
+            mots_subsection = []
+
         titre = " - ".join(mots_section+mots_subsection)
         mots_cles = ", ".join(mots_section+mots_subsection)
-        tagkeywd,tagval = 'titre',titre
-        autotags += '    <tag><text>' + tagkeywd + "=" + tagval + '</text></tag>\n'
-        for mot in mots_section+mots_subsection:
-            tagkeywd,tagval = 'motscles',mot
+        # print(mots_cles)
+        if 'titre' not in data.keys():
+            tagkeywd,tagval = 'titre',titre
             autotags += '    <tag><text>' + tagkeywd + "=" + tagval + '</text></tag>\n'
+        if 'motcle' not in existing_tags:     
+            for mot in mots_section+mots_subsection:
+                tagkeywd,tagval = 'motcle',mot
+                autotags += '    <tag><text>' + tagkeywd + "=" + tagval + '</text></tag>\n'
 
         # print(autotags)
         # Tags depuis la clé tags
