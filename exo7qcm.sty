@@ -17,6 +17,7 @@
 \usepackage{tikz}
 \usepackage{graphicx}
 
+
 % Format de la page
 \usepackage[a4paper,
   nomarginpar,
@@ -28,8 +29,12 @@
 %  showframe,
 ]{geometry}
 
+
+
 % Police par defaut
 \usepackage[charter]{mathdesign}
+
+
 
 
 % Language: by default English
@@ -101,6 +106,10 @@
 \usepackage{ifthen}
 \usepackage[inline]{enumitem}
 \usepackage{comment}
+
+% PPour liens externes
+\usepackage[hypertexnames=false,pdfencoding=auto]{hyperref}
+\hypersetup{colorlinks=true, linkcolor=blue, urlcolor=blue}
 
 % ----------------------------------------------------------------------
 % Personnalisation pour les théorèmes,...
@@ -234,4 +243,14 @@
 \hfil{\textbf{\large #1}}
 \vspace*{1ex} \hrule 
 \vspace*{5ex}
+}
+
+
+% Link to external sources for the whole questions
+\newcommand{\thelink}[1]{\def\mylink{#1}}
+\newcommand{\qcmlink}[3][link]{\thelink{#2}
+\ifthenelse{\equal{#1}{link}}{\small\texttt{\href{\mylink}{#3}}}{}
+\ifthenelse{\equal{#1}{video}}{\small\texttt{\href{\mylink}{Vidéo {\footnotesize$\blacksquare$} #3}}}{}
+\ifthenelse{\equal{#1}{cours}}{\small\texttt{\href{\mylink}{Cours {\Large\raisebox{-0.1ex}{$\bullet$}} #3}}}{}
+\ifthenelse{\equal{#1}{exercices}}{\small\texttt{\href{\mylink}{Fiche d'exercices $\blacklozenge$ #3}}}{}
 }

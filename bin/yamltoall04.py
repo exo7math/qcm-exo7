@@ -413,6 +413,8 @@ if output_format == 'moodle':
             out.write('\n\n<question type="category">\n<category>\n<text>\n$course$/'+course_name
                 +thesection+thesubsection+'</text>\n</category>\n</question>\n\n')
 
+
+
 #        if 'id' in data.keys():
 #            myid = str(data['id'])
 
@@ -506,6 +508,12 @@ if output_format == 'moodle':
             for mot in mots_section+mots_subsection:
                 tagkeywd,tagval = 'motcle',mot
                 autotags += '    <tag><text>' + tagkeywd + "=" + tagval + '</text></tag>\n'
+
+        if 'link' in data.keys():
+            thelink = data['link']
+            for l in thelink:
+                tagkeywd = 'lien'
+                autotags += '    <tag><text>' + tagkeywd + "=" + l['link']+'['+l['type']+']['+l['title']+']'+'</text></tag>\n'
 
         # print(autotags)
         # Tags depuis la clé tags

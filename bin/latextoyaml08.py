@@ -299,13 +299,16 @@ def one_exo_to_yaml(text_exo,qcmdict={}):
         explanations = None
 
 
-    # Data from outside the exercise
+    # Data from outside the exercises
     if 'qcmauthor' in qcmdict:
         author = qcmdict['qcmauthor']
     if 'qcmsection' in qcmdict:
         section = qcmdict['qcmsection']
     if 'qcmsubsection' in qcmdict:
-        subsection = qcmdict['qcmsubsection']        
+        subsection = qcmdict['qcmsubsection']
+    if 'qcmlink' in qcmdict:
+        link = qcmdict['qcmlink']
+
 
     # Output of one exo
     text_yaml = ''
@@ -332,6 +335,14 @@ def one_exo_to_yaml(text_exo,qcmdict={}):
 
     if classification:
         text_yaml += "classification: "+classification+'\n\n'
+
+    if link:
+        text_yaml += "link:\n"        
+        for l in link:
+            text_yaml += "    - type: " + l[0] + '\n'
+            text_yaml += "      link: " + l[1] + '\n'
+            text_yaml += "      title: " + l[2] + '\n\n'
+
 
     if mytags:
         text_yaml += "tags:\n"
@@ -387,40 +398,23 @@ if theqcmtitle:
 if theqcmauthor:
     qcmauthor = theqcmauthor.group(0)    
 
-# print("Titre :",qcmtitle)
-# print("Auteur :",qcmauthor)
 
+qcmlink = []
+theqcmlink = re.findall("(?<=\\\\qcmlink)\[(.*?)\]\{(.*?)\}\{(.*?)\}",text_all, flags=re.MULTILINE|re.DOTALL)
+# List of elements : (type,link,title)
+if theqcmlink:
+    qcmlink = theqcmlink
 
 # Split text into sections and subsections
 text_split_section = re.split('(\\\\section\{(.*?)\})',text_all, flags=re.MULTILINE|re.DOTALL)
 
-# print("***")
-# print(text_split_section[3])
-# print("***")
 
 text_split = []
 for text_section in text_split_section:
     text_split_subsection = re.split('(\\\\subsection\{(.*?)\})',text_section, flags=re.MULTILINE|re.DOTALL)           
     text_split += text_split_subsection
 
-# for text in text_split:
-#     print("***")
-#     print(text[0:20])
 
-# qcmsection = ""
-# qcmsubsection = ""
-# for mytext in text_split:
-#     thesection = re.search('\\\\section\{(.*?)\}',mytext, flags=re.MULTILINE|re.DOTALL)
-#     thesubsection = re.search('\\\\subsection\{(.*?)\}',mytext, flags=re.MULTILINE|re.DOTALL)
-#     if thesection:
-#         qcmsection = thesection.group(1)
-#         qcmsubsection = ""
-#     if thesubsection:
-#         qcmsubsection = thesubsection.group(1)
-    
-#     print("***")
-#     print("Curent Section:",qcmsection)
-#     print("Curent Subsection :",qcmsubsection)
 
 
 #--------------------------------------------------
@@ -459,7 +453,9 @@ with open(yaml_file, 'w', encoding='utf-8') as out:
         if len(qcmsection)>0:
             qcmdict["qcmsection"] = qcmsection
         if len(qcmsubsection)>0:
-            qcmdict["qcmsubsection"] = qcmsubsection  
+            qcmdict["qcmsubsection"] = qcmsubsection
+        if len(qcmlink)>0:
+            qcmdict["qcmlink"] = qcmlink             
                                   
 
 
