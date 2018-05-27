@@ -172,7 +172,8 @@ def one_exo_to_yaml(text_exo,qcmdict={}):
         list_tags_tex = mytags.split(',')
         list_tags = []
         for tag in list_tags_tex:
-            tag = re.sub('\s*','',tag,flags=re.MULTILINE|re.DOTALL) # Delete potential spaces
+            # Should I remove space in keywords ?
+            # tag = re.sub('\s*','',tag,flags=re.MULTILINE|re.DOTALL) # Delete potential spaces
             if '=' in tag:
                 tagkeywd, tagval = tag.split('=')
             else:

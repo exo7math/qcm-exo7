@@ -504,16 +504,23 @@ if output_format == 'moodle':
         if 'titre' not in data.keys():
             tagkeywd,tagval = 'titre',titre
             autotags += '    <tag><text>' + tagkeywd + "=" + tagval + '</text></tag>\n'
-        if 'motcle' not in existing_tags:     
-            for mot in mots_section+mots_subsection:
-                tagkeywd,tagval = 'motcle',mot
-                autotags += '    <tag><text>' + tagkeywd + "=" + tagval + '</text></tag>\n'
+        
+        # if 'motcle' not in existing_tags:   # Comment to enable both automatic and manual keywords    
+        for mot in mots_section+mots_subsection:
+            tagkeywd,tagval = 'motcle',mot
+            autotags += '    <tag><text>' + tagkeywd + "=" + tagval + '</text></tag>\n'
 
         if 'link' in data.keys():
             thelink = data['link']
+            # For tags
             for l in thelink:
                 tagkeywd = 'lien'
                 autotags += '    <tag><text>' + tagkeywd + "=" + l['link']+'['+l['type']+']['+l['title']+']'+'</text></tag>\n'
+            # For explanations
+
+            link_explanations = '\n Liens :\n'
+            for l in thelink:
+                link_explanations += '<a href="' + l['link'] + '">' + l['title'] + ' (' + l['type'] + ')</a> \n'
 
         # print(autotags)
         # Tags depuis la clé tags
@@ -559,6 +566,8 @@ if output_format == 'moodle':
             theexplanations = replace_images(theexplanations)
             out.write('<generalfeedback format="html"><text><![CDATA[<p>\n')
             out.write(theexplanations)
+            if 'link' in data.keys():
+                out.write(link_explanations)   
             out.write('</p>]]></text></generalfeedback>\n')
 
         if 'keeporder' in data.keys() and data['keeporder']:
