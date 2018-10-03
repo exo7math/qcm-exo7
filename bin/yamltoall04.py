@@ -271,7 +271,8 @@ if output_format == 'amc':
             myid = str(data['id'])
         else:
             myid = id_generator()
-
+        if 'subsection' in data.keys():
+            out.write('\\element{'+data['subsection']+'}{')
         if 'type' in data.keys() and ( data['type'] == 'onlyone'  or data['type'] == 'truefalse' ):
             out.write('\n\n\\begin{question}{'+myid+'}\n\n')
         else:
@@ -342,8 +343,8 @@ if output_format == 'amc':
             out.write('\\end{question}\n')
         else:
             out.write('\\end{questionmult}\n')
-
-
+        if 'subsection' in data.keys():
+            out.write('}\n\n')
  
 #--------------------------------------------------
 #--------------------------------------------------
@@ -447,7 +448,7 @@ if output_format == 'moodle':
         if 'subsection' in data.keys():
             thesubsection = data['subsection']
 
-        # Complexité automatique depuuis la section/sous-section 
+        # Complexité automatique depuis la section/sous-section 
         if 'complexite' not in existing_tags:  
             if ('Facile' in thesection) or ('Facile' in thesubsection):
                 tagkeywd,tagval = 'complexite','2'
