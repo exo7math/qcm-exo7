@@ -309,7 +309,8 @@ def one_exo_to_yaml(text_exo,qcmdict={}):
         subsection = qcmdict['qcmsubsection']
     if 'qcmlink' in qcmdict:
         link = qcmdict['qcmlink']
-
+    else:
+        link = 0
 
     # Output of one exo
     text_yaml = ''
