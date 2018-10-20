@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-    Convertit un fichier moodle.xml en yaml
+    Convertit un fichier moodle.xml provenant d'un export moodle en yaml
 """
 
 
@@ -153,13 +153,21 @@ def question(out,element):
                 val="True"
             else:
                 val="False"
-            answers.append([removep(answer[0].text),val,removep(answer.find('feedback').text)])
+            try:
+                #Dans le cas où il n'y a pas de feedback
+                answers.append([removep(answer[0].text),val,removep(answer.find('feedback').text)])
+            except AttributeError:
+                answers.append([removep(answer[0].text),val,''])
     reponse(out,answers)
     #Les explications
     expls=""
-    expls += element.find('correctfeedback').text
-    expls += element.find('partiallycorrectfeedback').text
-    expls += element.find('incorrectfeedback').text
+    try:
+        #Dans le cas où il n'y a pas de feedback
+        expls += element.find('correctfeedback').text
+        expls += element.find('partiallycorrectfeedback').text
+        expls += element.find('incorrectfeedback').text
+    except AttributeError:
+        pass
     
     explanations(out,expls.strip())
         
