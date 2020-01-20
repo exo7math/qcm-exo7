@@ -1,0 +1,529 @@
+
+\qcmtitle{Ensembles, applications}
+
+\qcmauthor{Arnaud Bodin, Abdellah Hanani, Mohamed Mzari}
+
+\section{Ensembles, applications | 100, 101, 102}
+
+\qcmlink[cours]{http://exo7.emath.fr/cours/ch_ensembles.pdf}{Ensembles et applications}
+
+\qcmlink[video]{http://youtu.be/bPT6-g3B5wQ}{Ensembles}
+
+\qcmlink[video]{http://youtu.be/Y8cV0zcFijs}{Applications}
+
+\qcmlink[video]{http://youtu.be/1qax9qMxz4c}{Injection, surjection, bijection}
+
+\qcmlink[video]{http://youtu.be/NElSI5_NIsk}{Ensembles finis}
+
+\qcmlink[video]{http://youtu.be/WuJyP_7VIu8}{Relation d'équivalence}
+
+\qcmlink[exercices]{http://exo7.emath.fr/ficpdf/fic00002.pdf}{Logique, ensembles, raisonnements}
+
+\qcmlink[exercices]{http://exo7.emath.fr/ficpdf/fic00003.pdf}{Injection, surjection, bijection}
+
+\qcmlink[exercices]{http://exo7.emath.fr/ficpdf/fic00005.pdf}{Dénombrement}
+
+\subsection{Ensembles, applications | Facile | 100.02, 101.01, 102.01, 102.02}
+\begin{question}
+\qtags{motcle=ensemble}
+
+Soit $A=\{x\in \Rr\mid (x+8)^2=9^2\}$. Sous quelle forme peut-on encore écrire l'ensemble $A$ ?
+\begin{answers}  
+    \bad{$A=\{1\}$}
+    \bad{$A=\varnothing$}
+    \bad{$A=\{-17\}$}
+    \good{$A=\{1,-17\}$}
+\end{answers}
+\begin{explanations}
+Les éléments de $A$ sont les solutions de l'équation $(x+8)^2=9^2$, c'est-à-dire $1$ et $-17$.
+\end{explanations}
+\end{question}
+
+
+\begin{question}
+\qtags{motcle=ensemble}
+
+Soit $E=\{a,b,c\}$. Quelle écriture est correcte ?
+\begin{answers}  
+    \bad{$\{a\}\in E$}
+    \bad{$a\subset E$}
+    \good{$a\in E$}
+    \bad{$\{a,b\}\in E$}
+\end{answers}
+\begin{explanations}
+Le symbole "$\in$" traduit l'appartenance d'un élément à un ensemble et le symbole "$\subset$" traduit l'inclusion d'un ensemble dans un autre.
+\end{explanations}
+\end{question}
+
+
+\begin{question}
+\qtags{motcle=ensemble}
+
+Soit $A=\{1,2\}$, $B=\left\{\{1\},\{2\}\right\}$ et $C=\left\{\{1\},\{1,2\}\right\}$. Cochez la bonne réponse :
+\begin{answers}  
+    \bad{$A=B$}
+    \bad{$A\subset B$}
+    \good{$A\in C$}
+    \bad{$A\subset C$}
+\end{answers}
+\begin{explanations}
+Le symbole "$\in$" traduit l'appartenance d'un élément à un ensemble et le symbole "$\subset$" traduit l'inclusion d'un ensemble dans un autre.
+\end{explanations}
+\end{question}
+
+
+\begin{question}
+\qtags{motcle=intersection}
+
+Soit $A=[1,3]$ et $B=[2,4]$. Quelle est l'intersection de $A$ et $B$ ?
+\begin{answers}  
+    \bad{$A\cap B=\varnothing$}
+    \good{$A\cap B=[2,3]$}
+    \bad{$A\cap B=[1,4]$}
+    \bad{$A\cap B=A$}
+\end{answers}
+\begin{explanations}
+L'ensemble $A\cap B$ est formé des éléments qui sont à la fois dans $A$ et dans $B$.
+\end{explanations}
+\end{question}
+
+
+\begin{question}
+\qtags{motcle=union}
+
+Soit $A=[-1,3]$ et $B=[0,4]$. Cochez la bonne réponse :
+\begin{answers}  
+    \bad{$A\cup B=\varnothing$}
+    \bad{$A\cup B=[0,3]$}
+    \bad{$A\cup B=[-1,0]$}
+    \good{$A\cup B=[-1,4]$}
+\end{answers}
+\begin{explanations}
+L'ensemble $A\cup B$ est formé des éléments qui sont dans $A$ ou dans $B$.
+\end{explanations}
+\end{question}
+
+
+\begin{question}
+\qtags{motcle=ensemble produit}
+Soit $A=\{a,b,c\}$ et $B=\{1,2\}$. Cochez la bonne réponse :
+\begin{answers}  
+    \bad{$\{a,1\}\in A\times B$}
+    \bad{$\{(a,1)\}\in A\times B$}
+    \good{$(a,1)\in A\times B$}
+    \bad{$\{a,1\}\subset A\times B$}
+\end{answers}
+\begin{explanations}
+Les éléments de l'ensemble $A\times B$ sont les couples dont la première composante est dans $A$ et la seconde est dans $B$.
+\end{explanations}
+\end{question}
+
+
+\begin{question}
+\qtags{motcle=dénombrement}
+
+On désigne par $\mathrm{C}^k_n$ le nombre de choix de $k$ éléments parmi $n$. Combien fait $\displaystyle \sum _{k=0}^{100}(-1)^k\mathrm{C}^k_{100}$ ?
+\begin{answers}  
+    \bad{$100$}
+    \good{$0$}
+    \bad{$101$}
+    \bad{$5000$}
+\end{answers}
+\begin{explanations}
+Le binôme de Newton donne $\displaystyle 0=(1-1)^{100}=\sum _{k=0}^{100}(-1)^k\mathrm{C}^k_{100}$.
+\end{explanations}
+\end{question}
+
+\begin{question}
+\qtags{motcle=dénombrement}
+
+On désigne par $\mathrm{C}^k_n$ le nombre de choix de $k$ éléments parmi $n$. Combien fait $\displaystyle \sum _{k=0}^{10}\mathrm{C}^k_{10}$ ?
+\begin{answers}  
+    \bad{$10$}
+    \bad{$100$}
+    \good{$1024$}
+    \bad{$50$}
+\end{answers}
+\begin{explanations}
+Le binôme de Newton donne $\displaystyle \sum _{k=0}^{10}\mathrm{C}^k_{10}=(1+1)^{10}=2^{10}=1024$.
+\end{explanations}
+\end{question}
+
+
+\begin{question}
+\qtags{motcle=image réciproque}
+
+On considère l'application $f:\{1,2,3,4\}\to \{1,2,3,4\}$ définie par
+$$f(1)=2,\quad f(2)=3,\quad f(3)=4,\quad f(4)=2.$$
+Quelle est la bonne réponse ?
+\begin{answers}  
+    \bad{$f^{-1}(\{2\})=\{1\}$}
+    \bad{$f^{-1}(\{2\})=\{3\}$}
+    \bad{$f^{-1}(\{2\})=\{4\}$}
+    \good{$f^{-1}(\{2\})=\{1,4\}$}
+\end{answers}
+\begin{explanations}
+L'ensemble $f^{-1}(\{2\})$ est formé des éléments qui ont une image égale à $2$.
+\end{explanations}
+\end{question}
+
+
+\begin{question}
+\qtags{motcle=injection/surjection}
+
+On considère l'application $f:\Nn\to \Nn$ définie par
+$$\forall n\in \Nn,\; f(n)=n+1.$$
+Quelle est la bonne réponse ?
+\begin{answers}  
+    \bad{$f$ est surjective et non injective.}
+    \good{$f$ est injective et non surjective.}
+    \bad{$f$ est bijective.}
+    \bad{$f$ n'est ni injective ni surjective.}
+\end{answers}
+\begin{explanations}
+Si $f(n_1)=f(n_2)$ alors $n_1=n_2$, donc $f$ est injective. Par contre, $f(n)=0$ n'a pas de solution dans $\Nn$. Donc $f$ n'est pas surjective.
+\end{explanations}
+\end{question}
+
+
+\subsection{Ensembles, applications | Moyen | 100.02, 101.01, 102.02, 102.02}
+
+
+\begin{question}
+\qtags{motcle=ensemble}
+
+Soit $A$ et $B$ deux ensembles. L'écriture $A\varsubsetneq B$ signifie que $A$ est inclus dans $B$ et que $A\neq B$. On suppose que $A\cap B=A\cup B$. Que peut-on dire de $A$ et $B$ ?
+\begin{answers}  
+    \bad{$A\varsubsetneq B$}
+    \bad{$B\varsubsetneq A$}
+    \bad{$A\neq B$}
+    \good{$A=B$}
+\end{answers}
+\begin{explanations}
+Si $A\cap B=A\cup B$ alors $A\subset A\cup B=A \cap B\subset B$, c'est-à-dire $A\subset B$. On vérifie de même que $B\subset A$. Donc $A=B$.
+\end{explanations}
+\end{question}
+
+
+\begin{question}
+\qtags{motcle=ensemble}
+
+Soit $A$ une partie d'un ensemble $E$ telle que $A\neq E$. On note $\overline{A}$ le complémentaire de $A$ dans $E$. Quelles sont les bonnes réponses ?
+\begin{answers}  
+    \bad{$A\cap \overline{A}=E$}
+    \good{$A\cap \overline{A}=\varnothing$}
+    \good{$A\cup\overline{A}=E$}
+    \bad{$A\cup \overline{A}=A$}
+\end{answers}
+\begin{explanations}
+S'il existe $x\in E$ tel que $x\in A\cap \overline{A}$ alors $(x\in A$ et $x\notin A)$. Ceci est absurde. Donc $A\cap \overline{A}=\varnothing$. De même $x\in E\Rightarrow (x\in A$ ou $x\notin A)$. Donc que $E\subset A\cup\overline{A}\subset E$.
+\end{explanations}
+\end{question}
+
+
+\begin{question}
+\qtags{motcle=ensemble}
+
+Soient $A,B$ deux parties d'un ensemble $E$. On note $\overline{A}$ le complémentaire de $A$ dans $E$. Quelle est la bonne réponse ?
+\begin{answers}  
+    \bad{$\overline{A\cup B}=\overline{A}\cup \overline{B}$}
+    \good{$\overline{A\cup B}=\overline{A}\cap \overline{B}$}
+    \bad{$\overline{A\cup B}=A\cap B$}
+    \bad{$\overline{A\cup B}=\overline{A}\cup B$}
+\end{answers}
+\begin{explanations}
+D'abord $x\in A\cup B \Leftrightarrow (x\in A$ ou $x\in B$). Les lois de De Morgan donnent donc que $(x\notin A\cup B)\Leftrightarrow (x\notin A$ et $x\notin B$), c'est-à-dire $\overline{A\cup B}=\overline{A}\cap \overline{B}$.
+\end{explanations}
+\end{question}
+
+
+\begin{question}
+\qtags{motcle=ensemble}
+
+Soient $A,B$ deux parties d'un ensemble $E$. On note $\overline{A}$ le complémentaire de $A$ dans $E$. Quelle est la bonne réponse ?
+\begin{answers}  
+    \bad{$\overline{A\cap B}=\overline{A}\cap \overline{B}$}
+    \bad{$\overline{A\cap B}=\overline{A}\cap B$}
+    \good{$\overline{A\cap B}=\overline{A}\cup \overline{B}$}
+    \bad{$\overline{A\cap B}=\overline{A}\cap B$}
+\end{answers}
+\begin{explanations}
+D'abord $x\in A\cap B \Leftrightarrow (x\in A$ et $x\in B$). Les lois de De Morgan donnent donc que $(x\notin A\cap B)\Leftrightarrow (x\notin A$ ou $x\notin B$), c'est-à-dire $\overline{A\cap B}=\overline{A}\cup \overline{B}$.
+\end{explanations}
+\end{question}
+
+
+\begin{question}
+\qtags{motcle=ensemble}
+
+Pour tout $n\in \Nn ^*$, on pose $E_n=\{1,2,\dots ,n\}$. On note $\mathscr{P}(E_n)$ l'ensemble des parties de $E_n$. Quelles sont les bonnes réponses ?
+\begin{answers}  
+    \bad{$\mathscr{P}(E_2)=\{\{1\},\{2\}\}$}
+    \good{$\mathscr{P}(E_2)=\{\varnothing ,\{1\},\{2\},E_2\}$}
+    \bad{$\mathrm{Card}(\mathscr{P}(E_n))=n$}
+    \good{$\mathrm{Card}(\mathscr{P}(E_n))=2^n$}
+\end{answers}
+\begin{explanations}
+Le nombre de parties à $k$ éléments de $E_n$ est $\mathrm{C}^k_n$ et le nombre de toutes les parties de $E_n$ est $\displaystyle \sum _{k=0}^n\mathrm{C}^k_n=(1+1)^n=2^n$.
+\end{explanations}
+\end{question}
+
+
+\begin{question}
+\qtags{motcle=image directe}
+
+On considère l'application $f:\Rr\to \Rr$ définie par
+$$\forall x\in \Rr,\; f(x)=x^2+1.$$
+Quelle est la bonne réponse ?
+\begin{answers}  
+    \bad{$f(\Rr)=\Rr$}
+    \bad{$f(\Rr)=[0,+\infty [$}
+    \bad{$f(\Rr)=]1,+\infty [$}
+    \good{$f(\Rr)=[1,+\infty [$}
+\end{answers}
+\begin{explanations}
+Pour tout $x\in \Rr$, $f(x)\geq 1$. Donc $f(\Rr)\subset [1,+\infty[$. Réciproquement, tout $y\in [1,\infty [$ admet un antécédent. Donc $[1,+\infty[ \subset f(\Rr)$.
+\end{explanations}
+\end{question}
+
+
+\begin{question}
+\qtags{motcle=image réciproque}
+
+On considère l'application $f:\Rr\to \Rr$ définie par
+$$\forall x\in \Rr,\; f(x)=x^2+1.$$
+Quelles sont les bonnes réponses ?
+\begin{answers}  
+    \good{$f^{-1}([1,5])=[-2,2]$}
+    \good{$f^{-1}([0,5])=[-2,2]$}
+    \bad{$f^{-1}([1,5])=[0,2]$}
+    \bad{$f^{-1}([0,5])=[0,2]$}
+\end{answers}
+\begin{explanations}
+D'une part, $x\in f^{-1}([1,5])\Leftrightarrow f(x)\in [1,5]\Leftrightarrow x^2\leq 4$. D'autre part, $x\in f^{-1}([0,5])\Leftrightarrow f(x)\in [0,5]\Leftrightarrow x^2\leq 4$. Donc $f^{-1}([1,5])=f^{-1}([0,5])=[-2,2]$.
+\end{explanations}
+\end{question}
+
+
+\begin{question}
+\qtags{motcle=image directe}
+
+On considère l'application $f:\Rr\to \Rr$ définie par
+$$\forall x\in \Rr,\; f(x)=\cos (\pi x).$$
+Quelles sont les bonnes réponses ?
+\begin{answers}  
+    \good{$f(\{0,2\})=\{1\}$}
+    \bad{$f(\{0,2\})=\{0\}$}
+    \bad{$f([0,2])=[1,1]$}
+    \good{$f([0,2])=[-1,1]$}
+\end{answers}
+\begin{explanations}
+D'abord, $f(0)=f(2)=1$. Mais, $f$ est décroissante sur $[0,1]$ et est croissante sur $[1,2]$ avec $f(1)=-1$. Dessiner le graphe de $f$ !
+\end{explanations}
+\end{question}
+
+
+\begin{question}
+\qtags{motcle=image réciproque}
+
+On considère l'application $f:\Rr\times \Rr\to \Rr$ définie par
+$$f(x,y)=x^2+y^2.$$
+Quelles sont les bonnes réponses ?
+\begin{answers}  
+    \good{$f^{-1}(\{0\})=\{(0,0)\}$}
+    \bad{$f^{-1}(\{1\})=\{(1,0)\}$}
+    \bad{$f^{-1}(\{0\})=\{(0,1)\}$}
+    \good{$f^{-1}(\{1\})$ est le cercle de centre $(0,0)$ et de rayon $1$}
+\end{answers}
+\begin{explanations}
+D'abord, $x^2+y^2=0\Leftrightarrow (x,y)=(0,0)$. Par ailleurs, l'ensemble des solutions $(x,y)$ de $x^2+y^2=1$ est le cercle de centre $(0,0)$ et de rayon $1$.
+\end{explanations}
+\end{question}
+
+
+\begin{question}
+\qtags{motcle=injection/surjection}
+
+On considère l'application $f:\Rr\setminus\{2\}\to \Rr\setminus \{1\}$ définie par
+$$\forall x\in \Rr\setminus\{2\},\; f(x)=\frac{x+1}{x-2}.$$
+Quelle est la bonne réponse ?
+\begin{answers}  
+    \bad{$f$ n'est pas bijective.}
+    \bad{$f$ est bijective et $\displaystyle f^{-1}(x)=\frac{x-2}{x+1}$.}
+    \good{$f$ est bijective et $\displaystyle f^{-1}(x)=\frac{2x+1}{x-1}$.}
+    \bad{$f$ est bijective et $\displaystyle f^{-1}(x)=\frac{-x+1}{-x-2}$.}
+\end{answers}
+\begin{explanations}
+Tout $y\neq 1$ admet un unique antécédent qui s'écrit $\displaystyle x=\frac{2y+1}{y-1}\in \Rr\setminus\{2\}$. Donc $f$ est bijective et $\displaystyle f^{-1}(y)=\frac{2y+1}{y-1}$.
+\end{explanations}
+\end{question}
+
+\subsection{Ensembles, applications | Difficile | 100.02, 101.01, 102.01, 102.02}
+
+
+\begin{question}
+\qtags{motcle=ensemble produit}
+Soit $A=\{(x,y)\in \Rr^2\mid 2x-y=1\}$ et $B=\{(t+1,2t+1)\mid t\in \Rr\}$. Que peut-on dire de $A$ et $B$ ?
+\begin{answers}  
+    \bad{$A\varsubsetneq B$}
+    \bad{$B\varsubsetneq A$}
+    \bad{$A\neq B$}
+    \good{$A=B$}
+\end{answers}
+\begin{explanations}
+D'abord, $2(t+1)-(2t+1)=1$. Donc $B\subset A$. Réciproquement, pour tout $(x,y)\in A$, il existe $t\in \Rr$ tel que $x=t+1$ et donc $y=2t+1$. D'où $(x,y)\in B$.
+\end{explanations}
+\end{question}
+
+\begin{question}
+\qtags{motcle=image directe}
+
+Soient $E$ et $F$ deux ensembles non vides et $f$ une application de $E$ dans $F$. Soient $A,B$ deux sous-ensembles de $E$. Quelles sont les bonnes réponses ?
+\begin{answers}  
+    \good{$f(A\cup B)=f(A)\cup f(B)$}
+    \bad{$f(A\cup B)\varsubsetneq f(A)\cup f(B)$}
+    \bad{$f(A\cap B)=f(A)\cap f(B)$}
+    \good{$f(A\cap B)\subset f(A)\cap f(B)$}
+\end{answers}
+\begin{explanations}
+On a : $y\in f(A\cup B)\Leftrightarrow \exists x\in A\cup B,\; y=f(x)\Leftrightarrow (\exists x\in A,\; y=f(x))\mbox{ ou }(\exists x\in B,\; y=f(x))\Leftrightarrow (y\in f(A)\mbox{ ou }y\in f(B))$. Par ailleurs, si $y\in f(A\cap B)$, il existe $x\in A\cap B$ tel que $y=f(x)$. Donc $y\in f(A)$ et $y\in f(B)$, c'est-à-dire $y\in f(A)\cap f(B)$.
+\end{explanations}
+\end{question}
+
+
+\begin{question}
+\qtags{motcle=image réciproque}
+
+Soient $E$ et $F$ deux ensembles non vides et $f$ une application de $E$ dans $F$. Soit $A$ un sous-ensemble de $E$. Quelles sont les bonnes réponses ?
+\begin{answers}  
+    \bad{$A=f^{-1}(f(A))$}
+    \good{$A\subset f^{-1}(f(A))$}
+    \bad{$f^{-1}(f(A))\subset A$}
+    \bad{$f^{-1}(f(A))=E\setminus A$}
+\end{answers}
+\begin{explanations}
+Pour tout $x\in A$, on a $f(x)\in f(A)$, donc $x\in f^{-1}(f(A))$.
+\end{explanations}
+\end{question}
+
+
+\begin{question}
+\qtags{motcle=image réciproque}
+
+Soient $E$ et $F$ deux ensembles non vides et $f$ une application de $E$ dans $F$. Soit $B$ un sous-ensemble de $F$. Quelles sont les bonnes réponses ?
+\begin{answers}  
+    \bad{$B=f(f^{-1}(B))$}
+    \bad{$B\subset f(f^{-1}(B))$}
+    \good{$f(f^{-1}(B))\subset B$}
+    \bad{$f(f^{-1}(B))=F\setminus B$}
+\end{answers}
+\begin{explanations}
+Soit $y\in f(f^{-1}(B))$. Donc il existe $x\in f^{-1}(B)$ tel que $y=f(x)$. Mais, $x\in f^{-1}(B)\Leftrightarrow f(x)\in B$. Donc $y=f(x)\in B$.
+\end{explanations}
+\end{question}
+
+
+
+\begin{question}
+\qtags{motcle=ensemble}
+
+Soit $E$ un ensemble et $A\subset E$ avec $A\neq E$. Comment choisir $X\subset E$ de sorte que
+$$A\cap X=A\quad \mbox{et}\quad A\cup X=E \; ?$$
+\begin{answers}  
+    \bad{$X=A$}
+    \good{$X=E$}
+    \bad{$X=\varnothing$}
+    \bad{$X$ n'existe pas}
+\end{answers}
+\begin{explanations}
+Par définition $A\cap X=A\Rightarrow A\subset X$ et $A\cup X=E\Rightarrow \overline{A}\subset X$. C'est-à-dire $A\cup \overline{A}\subset X$.
+\end{explanations}
+\end{question}
+
+
+
+\begin{question}
+\qtags{motcle=ensemble}
+
+Soit $E$ un ensemble et $A\subset E$ avec $A\neq E$. On note $\overline{A}$ le complémentaire de $A$ dans $E$. Comment choisir $X\subset E$ de sorte que
+$$A\cap X=\varnothing \quad \mbox{et}\quad A\cup X=E \; ?$$
+\begin{answers}  
+    \bad{$X=A$}
+    \bad{$X=E$}
+    \bad{$X=\varnothing$}
+    \good{$X=\overline{A}$}
+\end{answers}
+\begin{explanations}
+$\{A,X\}$ est une partition de $E$, donc $X=\overline{A}$.
+\end{explanations}
+\end{question}
+
+
+
+\begin{question}
+\qtags{motcle=dénombrement}
+
+Soit $E$ un ensemble à $n$ éléments et $a\in E$. On note $\mathscr{P}_a(E)$ l'ensemble des parties de $E$ qui contiennent $a$. Quel est le cardinal de $\mathscr{P}_a(E)$ ?
+\begin{answers}  
+    \bad{$\mathrm{Card}(\mathscr{P}_a(E))=n-1$}
+    \bad{$\mathrm{Card}(\mathscr{P}_a(E))=n$}
+    \good{$\mathrm{Card}(\mathscr{P}_a(E))=2^{n-1}$}
+    \bad{$\mathrm{Card}(\mathscr{P}_a(E))=2^n$}
+\end{answers}
+\begin{explanations}
+Les éléments de $\mathscr{P}_a(E)$ sont de la forme $\{a\}\cup A$ où $A\subset E\setminus \{a\}$. Donc $\mathrm{Card}(\mathscr{P}_a(E))=\mathrm{Card}(\mathscr{P}(E\setminus \{a\}))=2^{n-1}$.
+\end{explanations}
+\end{question}
+
+
+\begin{question}
+\qtags{motcle=dénombrement}
+
+On note $\mathrm{C}^k_n$ le nombre de choix de $k$ éléments parmi $n$. Combien fait $\displaystyle \sum _{k=0}^{100}(-1)^k2^{-k}\mathrm{C}^k_{100}$ ?
+\begin{answers}  
+    \bad{$0$}
+    \good{$2^{-100}$}
+    \bad{$2^{100}$}
+    \bad{$100$}
+\end{answers}
+\begin{explanations}
+Utiliser le binôme de Newton, $\displaystyle \sum _{k=0}^{100}\mathrm{C}^k_{100}\left(-\frac{1}{2}\right)^k=\left(1-\frac{1}{2}\right)^{100}=\frac{1}{2^{100}}$.
+\end{explanations}
+\end{question}
+
+
+
+\begin{question}
+\qtags{motcle=dénombrement}
+
+Soit $E$ un ensemble à $n$ éléments et $A\subset E$ une partie à $p < n$ éléments. On note $\mathscr{H}(E)$ l'ensemble des parties de $E$ qui contiennent un et un seul élément de $A$. Quel est le cardinal de $\mathscr{H}(E)$ ?
+\begin{answers}  
+    \good{$\mathrm{Card}(\mathscr{H}(E))=p2^{n-p}$}
+    \bad{$\mathrm{Card}(\mathscr{H}(E))=p$}
+    \bad{$\mathrm{Card}(\mathscr{H}(E))=p2^p$}
+    \bad{$\mathrm{Card}(\mathscr{H}(E))=p2^n$}
+\end{answers}
+\begin{explanations}
+Si $A=\{a_1,\dots ,a_p\}$, les éléments de $\mathscr{H}(E)$ sont de la forme $\{a_i\}\cup B$, où $a_i\in A$ et $B\subset E\setminus A$. Donc $\mathrm{Card}(\mathscr{H}(E))=\mathrm{Card}(A)\times \mathrm{Card}(\mathscr{P}(E\setminus A))=p2^{n-p}$.
+\end{explanations}
+\end{question}
+
+
+\begin{question}
+\qtags{motcle=injection/surjection}
+
+Soit $f:[-1,1]\to [-1,1]$ l'application définie par
+$$\forall x\in [-1,1],\; f(x)=\frac{2x}{1+x^2}.$$
+Quelle sont les bonnes réponses ?
+\begin{answers}  
+    \bad{$f$ est injective mais non surjective.}
+    \bad{$f$ est surjective mais non injective.}
+    \bad{$f$ n'est ni injective ni surjective.}
+    \good{$f$ est bijective et $\displaystyle f^{-1}(x)=\frac{x}{1+\sqrt{1-x^2}}$.}
+\end{answers}
+\begin{explanations}
+Soit $y\in [-1,1]$. On a $\displaystyle f(x)=y\Leftrightarrow yx^2-2x+y=0$. On résout dans $[-1,1]$ cette équation, d'inconnue $x$. Si $y=0$, on aura $x=0$ et si $y\neq 0$, on calcule $\Delta =4(1-y^2)\geq 0$ et donc
+$$x=\frac{1-\sqrt{1-y^2}}{y}=\frac{y}{1+\sqrt{1-y^2}}\in [-1,1]\mbox{ car }\frac{1+\sqrt{1-y^2}}{y}\notin [-1,1].$$
+Ainsi tout $y\in [-1,1]$ admet un unique antécédent $\displaystyle x=\frac{y}{1+\sqrt{1-y^2}}\in [-1,1]$. Donc $f$ est bijective et $\displaystyle f^{-1}(y)=\frac{y}{1+\sqrt{1-y^2}}$.
+\end{explanations}
+\end{question}

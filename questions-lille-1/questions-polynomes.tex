@@ -1,0 +1,713 @@
+\qcmtitle{Polynômes}
+
+\qcmauthor{Arnaud Bodin, Abdellah Hanani, Mohamed Mzari}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Polynômes -- Fractions rationnelles | 105}
+
+\qcmlink[cours]{http://exo7.emath.fr/cours/ch_polynomes.pdf}{Polynômes}
+
+\qcmlink[video]{http://youtu.be/dDKI3jkMjfw}{Définitions}
+
+\qcmlink[video]{http://youtu.be/CnMrf9aW-LU}{Arithmétique des polynômes}
+
+\qcmlink[video]{http://youtu.be/qCMnvqc2t8A}{Racine d'un polynôme, factorisation}
+
+\qcmlink[video]{http://youtu.be/wf-eEQPBX0Y}{Fractions rationnelles}
+
+\qcmlink[exercices]{http://exo7.emath.fr/ficpdf/fic00007.pdf}{Polynômes}
+
+\qcmlink[exercices]{http://exo7.emath.fr/ficpdf/fic00008.pdf}{Fractions rationnelles}
+
+
+%-------------------------------
+\subsection{Polynômes | Facile | 105.05}
+
+\begin{question}
+\qtags{motcle=produit}
+
+Soit $P(X) = 2X^5+3X^2+X$ et $Q(X) = 3X^2-2X+3$.
+Quelles sont les assertions vraies concernant le polynôme produit $P(X)\times Q(X)$ ?
+\begin{answers}
+    \bad{Le coefficient dominant est $5$.}
+
+    \good{Le coefficient du monôme $X^3$ est $-3$.}
+
+    \bad{Le coefficient du terme constant est $3$.}
+
+    \good{Le produit est la somme de $7$ monômes ayant un coefficient non nuls.}    
+\end{answers}
+
+\begin{explanations}
+$P(X)\times Q(X) = 6 X^7 - 4 X^6 + 6 X^5 + 9 X^4 - 3 X^3 + 7 X^2 + 3 X$.
+\end{explanations}
+\end{question}
+
+
+\begin{question}
+\qtags{motcle=produit}
+
+Soit $P(X) = X^3-3X^2+2$ et $Q(X) = X^3-X+1$.
+Quelles sont les assertions vraies ?
+\begin{answers}
+    \bad{Le polynôme $P(X) \times Q(X)$ est de degré $9$.}
+
+    \bad{Le coefficient du monôme $X^2$ dans le produit $P(X) \times Q(X)$ est $3$.}
+
+    \good{Le polynôme $P(X) + Q(X)$ est de degré $3$.}    
+    
+    \bad{Le polynôme $P(X) - Q(X)$ est de degré $3$.}
+\end{answers}
+\begin{explanations}
+$P(X)\times Q(X) = X^6 - 3 X^5 - X^4 + 6 X^3 - 3 X^2 - 2 X + 2$, 
+$P(X) + Q(X) = 2 X^3 - 3 X^2 - X + 3$,
+$P(X) - Q(X) = -3 X^2 + X + 1$.
+\end{explanations}
+\end{question}
+
+
+\begin{question}
+\qtags{motcle=degré}
+
+Soient $P(X)$ et $Q(X)$ deux polynômes unitaires de degré $n\ge1$.
+Quelles sont les assertions vraies ?
+\begin{answers}
+    \good{$P+Q$ est un polynôme de degré $n$.}
+
+    \bad{$P-Q$ est un polynôme de degré $n$.}
+    
+    \good{$P \times Q$ est un polynôme de degré $n+n=2n$.}
+
+    \bad{$P/Q$ est un polynôme de degré $n-n=0$.}  
+\end{answers}
+\begin{explanations}
+Le quotient de deux polynômes n'est pas un polynôme.
+\end{explanations}
+\end{question}
+
+
+%-------------------------------
+\subsection{Polynômes | Moyen | 105.05}
+
+
+\begin{question}
+\qtags{motcle=degré}
+
+Soit $P$ un polynôme de degré $\ge 2$.
+Quelles sont les assertions vraies, quel que soit le polynôme $P$ ?
+\begin{answers}
+    \good{$\deg( P(X) \times (X^2-X+1) ) = \deg P(X) + 2$}
+
+    \bad{$\deg( P(X) + (X^2-X+1) ) = \deg P(X)$}
+
+    \bad{$\deg( P(X)^2 ) = (\deg P(X))^2$}
+
+    \good{$\deg( P(X^2) ) = 2\deg P(X)$}    
+\end{answers}
+\begin{explanations}
+On a la formule $\deg(P\times Q) = \deg P + \deg Q$ mais, il n'y a pas de formule pour la somme, car $\deg(P + Q)$ peut être strictement plus petit que $\deg P$ et $\deg Q$.
+\end{explanations}
+\end{question}
+
+
+\begin{question}
+\qtags{motcle=dérivée}
+
+Soit $P(X) = \sum_{k=0}^n a_k X^k$. On associe le polynôme dérivé :
+$P'(X) = \sum_{k=1}^n ka_k X^{k-1}$.
+\begin{answers}
+    \bad{Le polynôme dérivé de $P(X) = X^5-2X^2+1$ est $P'(X)=5X^4-2X$.}
+
+    \bad{Le seul polynôme qui vérifie $P'(X)=0$ est $P(X)=1$.}
+
+    \good{Si $P'(X)$ est de degré $7$, alors $P(X)$ est de degré $8$.}
+
+    \bad{Si le coefficient constant de $P$ est nul, alors c'est aussi le cas pour $P'$.}   
+\end{answers}
+\begin{explanations}
+Le polynôme dérivé s'obtient comme si on dérivait la fonction $X \mapsto P(X)$. 
+\end{explanations}
+\end{question}
+
+
+%-------------------------------
+\subsection{Polynômes | Difficile | 105.05}
+
+
+\begin{question}
+\qtags{motcle=coefficient}
+
+Soit $P(X) = X^n + a_{n-1}X^{n-1} + \cdots + a_1X+a_0$ un polynôme de $\Rr[X]$ de degré $n \ge 1$. À ce polynôme $P$ on associe un nouveau polynôme $Q$, défini par $Q(X) = P(X - \frac{a_{n-1}}{n})$.
+
+Quelles sont les assertions vraies ?
+\begin{answers}
+    \bad{Si $P(X) = X^2+3X+1$ alors $Q(X) = X^2-2X$.}
+
+    \good{Si $P(X) = X^3-3X^2+2$ alors $Q(X) = X^3-3X$.}
+
+    \bad{Le coefficient constant du polynôme $Q$ est toujours nul.}
+
+    \good{Le coefficient du monôme $X^{n-1}$ de $Q$ est toujours nul.}    
+\end{answers}
+\begin{explanations}
+Cette transformation est faite afin que le coefficient du monôme $X^{n-1}$ de $Q$ soit toujours nul.
+\end{explanations}
+\end{question}
+
+
+\begin{question}
+\qtags{motcle=dérivée}
+
+Soit $P(X) = \sum_{k=0}^n a_k X^k$. On associe le polynôme dérivé :
+$P'(X) = \sum_{k=1}^n ka_k X^{k-1}$. Quelles sont les assertions vraies ?
+\begin{answers}
+    \good{Si $P$ est de degré $n\ge1$ alors $P'$ est de degré $n-1$.}
+
+    \bad{Si $P'(X) = nX^{n-1}$ alors $P(X) = X^n$.}
+
+    \good{Si $P'=P$ alors $P=0$.}
+
+    \bad{Si $P'-Q'=0$ alors $P-Q=0$.}   
+\end{answers}
+\begin{explanations}
+C'est comme pour les primitives, il ne faut pas oublier la constante :
+Si $P'=Q'$ alors $P=Q +c$.
+\end{explanations}
+\end{question}
+
+
+
+\begin{question}
+\qtags{motcle=produit}
+
+Soit $A(X) = \sum_{i=0}^n a_i X^i$.
+Soit $B(X) = \sum_{j=0}^m b_j X^j$.
+Soit $C(X) = A(X) \times B(X) = \sum_{k=0}^{m+n} c_k X^k$.
+Quelles sont les assertions vraies ?
+\begin{answers}
+    \bad{$c_k = a_k b_k$}
+
+    \good{$c_k = \sum_{i+j=k} a_ib_j$}
+
+    \bad{$c_k = \sum_{i=0}^k a_ib_i$}
+    
+    \good{$c_k = \sum_{i=0}^k a_ib_{k-i}$}
+\end{answers}
+\begin{explanations}
+La formule (à connaître) est 
+$$c_k = \sum_{i+j=k} a_ib_j = \sum_{i=0}^k a_ib_{k-i}.$$
+\end{explanations}
+\end{question}
+
+
+%-------------------------------
+\subsection{Arithmétique des polynômes | Facile | 105.01, 105.02}
+
+
+\begin{question}
+\qtags{motcle=division euclidienne}
+
+Soient $A,B$ deux polynômes, avec $B$ non nul. 
+Soit $A = B \times Q + R$ la division euclidienne de $A$ par $B$. 
+\begin{answers}
+    \good{Un tel $Q$ existe toujours.}
+
+    \good{S'il existe, $Q$ est unique.}
+
+    \good{On a toujours $\deg Q \le \deg A$.}
+
+    \bad{On a toujours $\deg Q \le \deg B$.}    
+\end{answers}
+\begin{explanations}
+La division euclidienne $A = B \times Q + R$ existe toujours, $Q$ et $R$ sont uniques et bien sûr $\deg Q \le \deg A$.
+\end{explanations}
+\end{question}
+
+
+\begin{question}
+\qtags{motcle=division euclidienne}
+
+Soient $A,B$ deux polynômes, avec $B$ non nul. 
+Soit $A = B \times Q + R$ la division euclidienne de $A$ par $B$.
+
+\begin{answers}
+    \good{Un tel $R$ existe toujours.}
+
+    \good{S'il existe, $R$ est unique.}
+
+    \bad{On a toujours $\deg R < \deg A$ (ou bien $R$ est nul).}
+
+    \good{On a toujours $\deg R < \deg B$ (ou bien $R$ est nul).}    
+\end{answers}
+\begin{explanations}
+La division euclidienne $A = B \times Q + R$ existe toujours, $Q$ et $R$ sont uniques et par définition de la division euclidienne $R$ est nul ou bien 
+$\deg R < \deg B$.
+\end{explanations}
+\end{question}
+
+
+\begin{question}
+\qtags{motcle=division euclidienne}
+
+Soient $A(X) = 2 X^4 + 3 X^3 - 8 X^2 - 2 X + 1$ et $B(X) = X^2+3X+1$. Soit $A = BQ+R$ la division euclidienne de $A$ par $B$.
+\begin{answers}
+    \bad{Le coefficient du monôme $X^2$ de $Q$ est $1$.}
+
+    \bad{Le coefficient du monôme $X$ de $Q$ est $3$.}
+
+    \bad{Le coefficient du monôme $X$ de $R$ est $2$.}
+
+    \good{Le coefficient constant de $R$ est $2$.}   
+\end{answers}
+\begin{explanations}
+Faire le calcul !
+$Q(X) = 2X^2-3X-1$, $R(X) = 4X+2$.
+\end{explanations}
+\end{question}
+
+
+
+
+%-------------------------------
+\subsection{Arithmétique des polynômes | Moyen | 105.01, 105.02}
+
+\begin{question}
+\qtags{motcle=division euclidienne}
+
+Soient $A(X) = X^6 - 7 X^5 + 10 X^4 + 5 X^3 - 23 X^2 + 5$ et $B(X) = X^3-5X^2+1$. Soit $A = BQ+R$ la division euclidienne de $A$ par $B$.
+\begin{answers}
+    \bad{Le coefficient du monôme $X^2$ de $Q$ est $0$.}
+
+    \good{Le coefficient du monôme $X$ de $Q$ est $0$.}
+
+    \bad{Le coefficient du monôme $X$ de $R$ est $-1$.}
+
+    \good{Le coefficient constant de $R$ est $1$.}   
+\end{answers}
+\begin{explanations}
+Faire le calcul !
+$Q(X) = X^3-2X^2+4$, $R(X) = -X^2+1$.
+\end{explanations}
+\end{question}
+
+\begin{question}
+\qtags{motcle=pgcd}
+
+Soient $A(X) = X^4 - 2 X^3 - 4 X^2 + 2 X + 3$ et 
+$B(X) = X^4 - 2 X^3 - 3 X^2$ des polynômes de $\Rr[X]$.
+Notons $D$ le pgcd de $A$ et $B$.
+Quelles sont les affirmations vraies  ?
+\begin{answers}
+    \bad{$X-1$ divise $D$.}
+
+    \good{$X+1$ divise $D$.}
+
+    \good{$D(X) = (X-3)(X+1)$.}
+
+    \bad{$D(X) = (X-3)(X+1)^2$.}  
+\end{answers}
+\begin{explanations}
+$A(X) = (X-3)(X+1)^2(X-1)$, $B(X) = X^2(X-3)(X+1)$,
+le pgcd est $D = (X-3)(X+1)$. 
+\end{explanations}
+\end{question}
+
+
+\begin{question}
+\qtags{motcle=pgcd}
+
+Quelles sont les affirmations vraies pour des polynômes de $\Rr[X]$ ?
+\begin{answers}
+    \bad{Le pgcd de $(X-1)^2(X-3)^3(X^2+X+1)^3$ et
+    $(X-1)^2(X-2)(X-3)(X^2+X+1)^2$ est $(X-1)^2(X-3)(X^2+X+1)$.}
+    
+    \bad{Le ppcm de $(X-1)^2(X-3)^3(X^2+X+1)^3$ et
+    $(X-1)^2(X-2)(X-3)(X^2+X+1)^2$ est $(X-1)^2(X-2)(X-3)^3(X^2+X+1)^2$.}
+
+    \good{Le pgcd de $(X-1)^2(X^2-1)^3$ et
+    $(X-1)^4(X+1)^5$ est $(X-1)^4(X+1)^3$.}
+    
+    \good{Le ppcm de $(X-1)^2(X^2-1)^3$ et
+    $(X-1)^4(X+1)^5$ est $(X-1)^5(X+1)^5$.} 
+\end{answers}
+\begin{explanations}
+Le pgcd s'obtient en prenant le minimum entre les exposants, le ppcm en prenant le maximum. Attention $X^2-1=(X-1)(X+1)$.
+\end{explanations}
+\end{question}
+
+
+
+
+%-------------------------------
+\subsection{Arithmétique des polynômes | Difficile | 105.01, 105.02}
+
+\begin{question}
+\qtags{motcle=division euclidienne}
+
+Soit $A$ un polynôme de degré $n\ge1$. Soit $B$ un polynôme de degré $m\ge1$, avec $m \le n$.
+Soit $A = B \times Q + R$ la division euclidienne de $A$ par $B$. On note
+$q = \deg Q$ et $r = \deg R$ (avec $r=-\infty$ si $R=0$).
+Quelles sont les assertions vraies (quelque soient $A$ et $B$) ?
+\begin{answers}
+    \good{$q = n-m$}
+
+    \good{$r < m$}
+
+    \bad{$r=0 \implies A$ divise $B$.}
+
+    \bad{$n = mq + r$}    
+\end{answers}
+\begin{explanations}
+On a $\deg R < \deg B$. Il ne faut pas confondre $R=0$ et $r=0$.
+En plus $\deg(A) = \deg(B\times Q) = \deg(A) + \deg(Q)$.
+\end{explanations}
+\end{question}
+
+
+\begin{question}
+\qtags{motcle=division euclidienne}
+
+Soit $n\ge2$. Soit $A(X) = X^{2n}+X^{2n-2}$. Soit $B(X) = X^{n}+X^{n-1}$. Soit $A = BQ + R$ la division euclidienne de $A$ par $B$. 
+\begin{answers}
+    \good{Le coefficient de $X^n$ de $Q$ est $1$.}
+
+    \bad{Le coefficient de $X^{n-1}$ de $Q$ est $1$.}    
+
+    \good{Le coefficient de $X^{n-2}$ de $Q$ est $2$.}       
+
+    \good{$R$ est constitué d'un seul monôme.}
+   
+\end{answers}
+\begin{explanations}
+$Q(X) = X^n-X^{n-1}+2X^{n-2}-2X^{n-3}+\cdots$. $R(X) = \pm 2 X^{n-1}$.
+\end{explanations}
+\end{question}
+
+
+
+\begin{question}
+\qtags{motcle=pgcd}
+
+Soit $A(X) = X^4-X^2$. Soit $B(X) = X^2+X-2$.
+Soit $D$ le pgcd de $A$ et $B$ dans $\Rr[X]$.
+\begin{answers}
+    \bad{$D(X) = 1$}
+
+    \good{Il existe $U,V \in \Rr[X]$ tels que $AU+BV = X-1$.}
+
+    \good{Il existe $u \in \Rr$ et $V \in \Rr[X]$ tels que $Au+BV = X-1$.}
+
+    \bad{Il existe $U\in \Rr[X]$ et $v \in \Rr$ tels que $AU+Bv = X-1$.}
+\end{answers}
+\begin{explanations}
+$A(X)=X^2(X-1)^2$, $B(X)=(X-1)(X+2)$, $D(X)=X-1$. $U(X)= -\frac14$, $V(X)=\frac14(X^2-X+2)$ donnent $AU+BV=D$.
+\end{explanations}
+\end{question}
+
+%-------------------------------
+\subsection{Racines, factorisation | Facile | 105.03}
+
+
+\begin{question}
+\qtags{motcle=racine}
+
+Soit $P \in \Rr[X]$ un polynôme de degré $8$.
+Quelles sont les affirmations vraies ?
+\begin{answers}
+    \bad{$P$ admet exactement $8$ racines réelles (comptées avec multiplicité).}
+
+    \bad{$P$ admet au moins une racine réelle.}
+
+    \good{$P$ admet au plus $8$ racines réelles (comptées avec multiplicité).}
+
+    \bad{$P$ admet au moins $8$ racines réelles (comptées avec multiplicité).}
+    
+\end{answers}
+\begin{explanations}
+Il y a au plus $\deg P$ racines réelles (comptées avec multiplicité).
+\end{explanations}
+\end{question}
+
+
+\begin{question}
+\qtags{motcle=racine}
+
+Soit $P(X) = X^7 - 5 X^5 - 5 X^4 + 4 X^3 + 13 X^2 + 12 X + 4$.
+\begin{answers}
+
+    \good{$-1$ est une racine de $P$.}
+
+    \bad{$0$ est une racine de $P$.}
+    
+    \bad{$1$ est une racine de $P$.}
+    
+    \good{$2$ est une racine de $P$.} 
+\end{answers}
+\begin{explanations}
+Calculer $P(\alpha)$. En fait $P(X) = (X-2)^2(X+1)^3(X^2+X+1)$.
+\end{explanations}
+\end{question}
+
+
+
+\begin{question}
+\qtags{motcle=polynôme irréductible}
+
+Quelles sont les affirmations vraies ?
+\begin{answers}
+    \bad{$2X^2+3X+1$ est irréductible sur $\Qq$.}
+
+    \good{$2X^2-3X+2$ est irréductible sur $\Rr$.}
+
+    \bad{$2X^2-X+3$ est irréductible sur $\Cc$.}
+
+    \bad{$X^3+X^2+X+4$ est irréductible sur $\Rr$.}  
+\end{answers}
+\begin{explanations}
+Sur $\Cc$ les irréductibles sont de degré $1$. Sur $\Rr$ ils sont de degré 1, ou bien de degré $2$ à discriminant strictement négatif.
+\end{explanations}
+\end{question}
+
+
+
+%-------------------------------
+\subsection{Racines, factorisation | Moyen | 105.03}
+
+
+\begin{question}
+\qtags{motcle=racine}
+
+Soit $P \in \Rr[X]$ un polynôme de degré $2n+1$ ($n\in\Nn^*$).
+Quelles sont les affirmations vraies ?
+\begin{answers}
+    \good{$P$ peut admettre une racine complexe, qui ne soit pas réelle.}
+
+    \good{$P$ admet au moins une racines réelle.}
+
+    \bad{$P$ admet au moins deux racines réelles (comptées avec multiplicités).}
+
+    \good{$P$ peut avoir $2n+1$ racines réelles distinctes.}
+\end{answers}
+\begin{explanations}
+Il y a au plus $\deg P$ racines réelles (comptées avec multiplicité). Mais ici le degré est impair, donc $P$ admet au moins une racine réelle.
+\end{explanations}
+\end{question}
+
+
+\begin{question}
+\qtags{motcle=racine}
+
+Soit $P(X) = X^6 + 4 X^5 + X^4 - 10 X^3 - 4 X^2 + 8 X$.
+\begin{answers}
+    \bad{$-1$ est une racine double.}
+
+    \bad{$0$ est une racine double.}
+
+    \good{$1$ est une racine double.}
+
+    \bad{$-2$ est une racine double.}   
+\end{answers}
+\begin{explanations}
+Pour une racine double il faut $P(a)=0$, $P'(a)=0$ et $P''(a)\neq0$.
+En fait $P(X) = X(X+2)^3(X-1)^2$.
+\end{explanations}
+\end{question}
+
+
+
+
+%-------------------------------
+\subsection{Racines, factorisation | Difficile | 105.03}
+
+
+\begin{question}
+\qtags{motcle=polynôme irréductible}
+
+Soit $P \in \Qq[X]$ un polynôme de degré $n$.
+\begin{answers}
+    \good{$P$ peut avoir des racines dans $\Rr$, mais pas dans $\Qq$.}
+
+    \good{Si $z\in \Cc\setminus\Rr$ est une racine de $P$, alors $\bar z$ aussi.}
+
+    \bad{Les facteurs irréductibles de $P$ sur $\Qq$ sont de degré $1$ ou $2$.}
+
+    \bad{Les racines réelles de $P$ sont de la forme $\alpha + \beta\sqrt{\gamma}$, $\alpha,\beta,\gamma \in \Qq$.}   
+\end{answers}
+\begin{explanations}
+Sur $\Qq$ les facteurs irréductibles peuvent être de n'importe quel degré.
+\end{explanations}
+\end{question}
+
+
+
+\begin{question}
+\qtags{motcle=racine}
+
+Soit $P \in \Kk[X]$ un polynôme de degré $n\ge1$.
+Quelles sont les affirmations vraies ?
+\begin{answers}
+    \good{$a$ racine de $P$ $\iff$ $X-a$ divise $P$.}
+
+    \good{$a$ racine de $P$ de multiplicité $\ge k$ $\iff$ $(X-a)^k$ divise $P$.}
+    
+    \bad{$a$ racine de $P$ de multiplicité $\ge k$ $\iff$ 
+    $P(a) = 0$, $P'(a)=0$, ..., $P^{(k)}(a)=0$.}
+
+    \good{La somme des multiplicités des racines est $\le n$.}
+   
+\end{answers}
+\begin{explanations}
+$a$ racine de $P$ de multiplicité $\ge k$ $\iff$ $(X-a)^k$ divise $P$ $\iff$ $P(a) = 0$, $P'(a)=0$, ..., $P^{(k-1)}(a)=0$.
+\end{explanations}
+\end{question}
+
+%-------------------------------
+\subsection{Fractions rationnelles | Facile | 105.04}
+
+\begin{question}
+\qtags{motcle=éléments simples}
+
+Quelles sont les affirmations vraies ?
+\begin{answers}
+    \bad{Les éléments simples sur $\Cc$ sont de la forme $\frac{a}{X-\alpha}$, $a,\alpha \in \Cc$.}
+
+    \bad{Les éléments simples sur $\Cc$ sont de la forme $\frac{a}{(X-\alpha)^k}$, $a,\alpha \in \Rr$, $k\in\Nn^*$.}
+
+    \good{Les éléments simples sur $\Rr$ peuvent être de la forme $\frac{a}{(X-\alpha)^k}$, $a,\alpha \in \Rr$.}
+
+    \bad{Les éléments simples sur $\Rr$ peuvent être de la forme $\frac{aX+b}{X-\alpha}$, $a,b,\alpha \in \Rr$.}
+ 
+\end{answers}
+\begin{explanations}
+Sur $\Cc$ les éléments simples sont de la forme $\frac{a}{(X-\alpha)^k}$, $a,\alpha \in \Cc$, $k\in\Nn^*$.
+Sur $\Rr$ les éléments simples sont de la forme $\frac{a}{(X-\alpha)^k}$, $a,\alpha \in \Rr$, $k \in \Nn^*$ ou bien
+$\frac{aX+b}{(X^2+\alpha X+\beta)^k}$, $a,b,\alpha,\beta \in \Rr$, $k \in \Nn^*$ avec 
+$X^2+\alpha X+\beta$ sans racines réelles.
+\end{explanations}
+\end{question}
+
+
+\begin{question}
+\qtags{motcle=éléments simples}
+
+Soient $P(X)=X-1$, $Q(X)=(X+1)^2(X^2+X+1)$. On décompose la fraction $F = \frac{P}{Q}$ sur $\Rr$.
+\begin{answers}
+    \good{La partie polynomiale est nulle.}
+    
+    \bad{Il peut y avoir un élément simple $\frac{a}{X-1}$.} 
+    
+    \bad{Il peut y avoir un élément simple $\frac{a}{X+1}$ mais pas  $\frac{a}{(X+1)^2}$.}
+    
+    \good{Il peut y avoir un élément simple $\frac{aX+b}{X^2+X+1}$ mais pas  $\frac{aX+b}{(X^2+X+1)^2}$.}
+ 
+\end{answers}
+\begin{explanations}
+$\frac{P(X)}{Q(X)} = \frac{X-1}{(X+1)^2(X^2+X+1)}
+= \frac{-1}{X+1}+\frac{-2}{(X+1)^2}+\frac{X+2}{X^2+X+1}$.
+\end{explanations}
+\end{question}
+
+
+
+%-------------------------------
+\subsection{Fractions rationnelles | Moyen | 105.04}
+
+
+\begin{question}
+\qtags{motcle=division euclidienne}
+
+Soit $\frac{P(X)}{Q(X)}$ une fraction rationnelle. On note $E(X)$ sa partie polynomiale (appelée aussi partie entière).
+\begin{answers}
+    \good{Si $\deg P < \deg Q$ alors $E(X) = 0$.}
+
+    \good{Si $\deg P \ge \deg Q$ alors $\deg E(X) = \deg P - \deg Q$.}
+
+    \bad{Si $P(X) = X^3+X+2$ et $Q(X) = X^2-1$ alors $E(X) = X+1$.}
+
+    \good{Si $P(X) = X^5+X-2$ et $Q(X) = X^2-1$ alors $E(X) = X^3+X$.}   
+\end{answers}
+\begin{explanations}
+La partie entière s'obtient comme le quotient de la division euclidienne de $P$ par $Q$.
+\end{explanations}
+\end{question}
+
+
+\begin{question}
+\qtags{motcle=éléments simples}
+
+Soit $P(X)=3X$ et $Q(X) = (X-2)(X-1)^2(X^2-X+1)$.
+On écrit 
+$$\frac{P(X)}{Q(X)} = \frac{a}{X-2} + \frac{b}{X-1} +  \frac{c}{(X-1)^2}
++ \frac{dX+e}{X^2-X+1}.$$
+Quelles sont les affirmations vraies ? 
+\begin{answers}
+    \bad{En multipliant par $X-2$, puis en évaluant en $X=2$, j'obtiens $a=1$.}
+
+    \good{En multipliant par $(X-1)^2$, puis en évaluant en $X=1$, j'obtiens $c=-3$.}
+
+    \good{En multipliant par $X$, puis en faisant tendre $X \to +\infty$, j'obtiens la relation $a+b+d=0$.}
+
+    \bad{En évaluant en $X=0$, j'obtiens la relation $a+b+c+e=0$.}    
+\end{answers}
+\begin{explanations}
+$\frac{P(X)}{Q(X)} = \frac{3X}{(X-2)(X-1)^2(X^2-X+1)}
+=\frac{2}{X-2} + \frac{-3}{X-1} +  \frac{-3}{(X-1)^2}
++ \frac{X+1}{X^2-X+1}$.
+\end{explanations}
+\end{question}
+
+
+
+%-------------------------------
+\subsection{Fractions rationnelles | Difficile | 105.04}
+
+
+
+\begin{question}
+\qtags{motcle=éléments simples}
+
+Soit $F(X) = \dfrac{1}{(X^2+1)X^3}$.
+On écrit 
+$$F(X) = \frac{a}{X} + \frac{b}{X^2} +  \frac{c}{X^3}
++ \frac{dX+e}{X^2+1}.$$
+Quelles sont les affirmations vraies ?
+\begin{answers}
+    \good{$c=1$}
+
+    \bad{$b=1$}
+
+    \bad{$a=1$}
+
+    \good{$e=0$}   
+\end{answers}
+\begin{explanations}
+On profite que $F$ est impaire pour déduire $b=0$, $e=0$.
+$F(X) = \dfrac{1}{(X^2+1)X^3} = \frac{-1}{X}  +  \frac{1}{X^3}
++ \frac{X}{X^2+1}.$
+\end{explanations}
+\end{question}
+
+
+\begin{question}
+\qtags{motcle=éléments simples}
+
+Soit $F(X) = \dfrac{X-1}{X(X^2+1)^2}$.
+On écrit 
+$$F(X) = \frac{a}{X} + \frac{bX+c}{X^2+1} +  \frac{dX+e}{(X^2+1)^2}.$$
+Quelles sont les affirmations vraies ?
+\begin{answers}
+    \good{$a=-1$}
+
+    \bad{$d=0$ et $e=0$}
+
+    \bad{$b=0$ et $c=0$}
+
+    \bad{$b=0$ et $d=0$}
+    
+\end{answers}
+\begin{explanations}
+$F(X) = \dfrac{1}{X(X^2+1)^2} = \frac{-1}{X} + \frac{X}{X^2+1} +  \frac{X+1}{(X^2+1)^2}.$
+\end{explanations}
+\end{question}
+

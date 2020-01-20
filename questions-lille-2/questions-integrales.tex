@@ -1,0 +1,689 @@
+
+\qcmtitle{Calculs d'intégrales}
+\qcmauthor{Abdellah Hanani, Mohamed Mzari}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Calculs d'intégrales}
+\subsection{Calculs d'intégrales | Niveau 1}
+
+\begin{question}
+\qtags{motcle=primitives usuelles}
+Parmi les égalités suivantes, cocher celles qui sont vraies : 
+\begin{answers}  
+\bad{$\displaystyle \int _0^1\frac{\mathrm{d}x}{(x+1)^2}=\frac{1}{(1+1)^2}-\frac{1}{(0+1)^2}=-\frac{3}{4}$.}
+\bad{$\displaystyle \int _0^1\frac{\mathrm{d}x}{x+1}=\frac{1}{1+1}-\frac{1}{0+1}=-\frac{1}{2}$.}
+\good{$\displaystyle \int _0^1\frac{\mathrm{d}x}{\sqrt{x+1}}=2(\sqrt{2}-1)$.}
+\bad{$\displaystyle \int _0^1\sqrt{x+1}\,\mathrm{d}x=\frac{1}{2(\sqrt{2}-1)}$.}
+\end{answers}
+\vskip2mm
+\begin{explanations}
+Avec $u=1+x$, on a : $\mathrm{d}u=\mathrm{d}x$, $u(0)=1$, $u(1)=2$ et
+$$\int _0^1\frac{\mathrm{d}x}{(x+1)^2}=\int _1^2\frac{\mathrm{d}u}{u^2}=\left[\frac{-1}{u}\right]_1^2=\frac{1}{2}\quad \mbox{ et }\quad \int _0^1\frac{\mathrm{d}x}{x+1}=\int _1^2\frac{\mathrm{d}u}{u}=\Big[\ln u\Big]_1^2=\ln 2.$$
+De même, on vérifie que : 
+$\displaystyle \int _0^1\frac{\mathrm{d}x}{\sqrt{x+1}}=2(\sqrt{2}-1)$ et $\displaystyle \int _0^1\sqrt{x+1}\,\mathrm{d}x=\frac{2}{3}(2\sqrt{2}-1)$.
+\end{explanations}
+\end{question}
+
+\begin{question}
+\qtags{motcle=primitives usuelles}
+Parmi les égalités suivantes, cocher celles qui sont vraies : 
+\begin{answers}  
+\bad{$\displaystyle \int _0^1\mathrm{e}^{x}\,\mathrm{d}x=\mathrm{e}-1$ et $\displaystyle \int _0^1\mathrm{e}^{2x}\,\mathrm{d}x=\mathrm{e}^2-1$.}
+\good{$\displaystyle \int _0^{\pi/4}\sin (2x)\,\mathrm{d}x=\frac{1}{2}$ et $\displaystyle \int _0^{\pi/4}\cos (2x)\,\mathrm{d}x=\frac{1}{2}$.}
+\bad{$\displaystyle \int _0^1\frac{\mathrm{d}x}{x+1}=\ln 2$ et $\displaystyle \int _0^1\frac{\mathrm{d}x}{x+2}=\ln 3$.}
+\good{$\displaystyle \int _0^1\frac{\mathrm{d}x}{(1+x)^2}=\frac{1}{2}$ et $\displaystyle \int _0^1\frac{\mathrm{d}x}{1+x^2}=\frac{\pi}{4}$.}
+\end{answers}
+\vskip2mm
+\begin{explanations}
+On a : $\displaystyle \int _0^1\mathrm{e}^{x}\,\mathrm{d}x=\Big[\mathrm{e}^x\Big]_0^1=\mathrm{e}-1$ mais $\displaystyle \int _0^1\mathrm{e}^{2x}\,\mathrm{d}x=\left[\frac{\mathrm{e}^{2x}}{2}\right]_0^1=\frac{\mathrm{e}^2-1}{2}$. De même
+$$\int _0^{\pi/4}\sin (2x)\,\mathrm{d}x=\left[\frac{-\cos (2x)}{2}\right]_0^{\pi/4}=\frac{1}{2}\quad \mbox{et}\quad \int _0^{\pi/4}\cos (2x)\,\mathrm{d}x=\left[\frac{\sin (2x)}{2}\right]_0^{\pi/4}=\frac{1}{2},$$
+$$\int _0^{1}\frac{\mathrm{d}x}{x+1}=\Big[\ln (x+1)\Big]_0^1=\ln 2\quad \mbox{et}\quad \int _0^{1}\frac{\mathrm{d}x}{x+2}=\Big[\ln (x+2)\Big]_0^1=\ln 3-\ln 2.$$
+Enfin,
+$$\int _0^{1}\frac{\mathrm{d}x}{(x+1)^2}=\left[\frac{-1}{x+1}\right]_0^1=\frac{1}{2}\quad \mbox{et}\quad \int _0^{1}\frac{\mathrm{d}x}{1+x^2}=\Big[\arctan x\Big]_0^1=\pi/4.$$
+\end{explanations}
+\end{question}
+
+
+\begin{question}
+\qtags{motcle=intégration par parties}
+Parmi les égalités suivantes, cocher celles qui sont vraies :
+\begin{answers}
+\bad{$\displaystyle \int _0^{\pi}x\sin x\,\mathrm{d}x=\int _0^{\pi}\cos x\mathrm{d}x$.}  
+\good{$\displaystyle \int _0^{\pi}x\sin x\,\mathrm{d}x=\pi +\int _0^{\pi}\cos x\mathrm{d}x$.}
+\bad{$\displaystyle \int _0^{\pi}x\sin x\,\mathrm{d}x=\pi -2$.}
+\good{$\displaystyle \int _0^{\pi}x\sin x\,\mathrm{d}x=\pi$.}
+\end{answers}
+\vskip2mm
+\begin{explanations}
+Une intégration par parties, avec $u=x$ et $v=-\cos x\Rightarrow v'=\sin x$, donne
+$$\int _0^{\pi}x\sin x\,\mathrm{d}x=\Big[-x\cos x\Big]_0^{\pi}+\int _0^{\pi}\cos x\mathrm{d}x=\pi +\int _0^{\pi}\cos x\mathrm{d}x=\pi.$$
+\end{explanations}
+\end{question}
+
+\begin{question}
+\qtags{motcle=intégration par parties}
+Parmi les égalités suivantes, cocher celles qui sont vraies :
+\begin{answers}
+\good{$\displaystyle \int _0^{\pi}x\cos x\,\mathrm{d}x=-\int _0^{\pi}\sin x\,\mathrm{d}x$.}
+\bad{$\displaystyle \int _0^{\pi}x\cos x\,\mathrm{d}x=\int _0^{\pi}\sin x\,\mathrm{d}x$.}
+\bad{$\displaystyle \int _0^{\pi}x\cos x\,\mathrm{d}x=2$.}
+\good{$\displaystyle \int _0^{\pi}x\cos x\,\mathrm{d}x=-2$.}
+\end{answers}
+\begin{explanations}
+Une intégration par parties, avec $u=x$ et $v=\sin x\Rightarrow v'=\cos x$, donne
+$$\int _0^{\pi}x\cos x\,\mathrm{d}x=\Big[x\sin x\Big]_0^{\pi}-\int _0^{\pi}\sin x\mathrm{d}x=-\int _0^{\pi}\sin x\mathrm{d}x=\Big[\cos x\Big]_0^{\pi}=-2.$$
+\end{explanations}
+\end{question}
+
+
+\begin{question}
+\qtags{motcle=intégration par parties}
+Parmi les affirmations suivantes, cocher celles qui sont vraies : 
+\begin{answers}  
+\good{$\displaystyle \int _1^{\mathrm{e}}\ln t\mathrm{d}t=\Big[t\ln t\Big]_1^{\mathrm{e}}-\int _1^{\mathrm{e}}\mathrm{d}t$.}
+\good{$\displaystyle \int _1^{\mathrm{e}}\ln t\mathrm{d}t=1$.}
+\bad{$\displaystyle \int _1^{2}t\ln t\mathrm{d}t=\Big[t^2\ln t\Big]_1^{\mathrm{e}}-\int _1^{\mathrm{e}}t\mathrm{d}t$.}
+\bad{$\displaystyle \int _1^{2}t\ln t\mathrm{d}t=\frac{\mathrm{e}^2+1}{2}$.}
+\end{answers}
+\vskip2mm
+\begin{explanations}
+Une intégration par parties avec $u=\ln t$ et $v=t\Rightarrow v'=1$ donne :
+$$\displaystyle \int _1^{\mathrm{e}}\ln t\mathrm{d}t=\Big[t\ln t\Big]_1^{\mathrm{e}}-\int _1^{\mathrm{e}}\mathrm{d}t=1.$$
+Une intégration par parties, avec $u=\ln t$ et $v=t^2/2\Rightarrow v'=t$, donne :
+$$\displaystyle \int _1^{2}t\ln t\mathrm{d}t=\left[\frac{t^2}{2}\ln t\right]_1^{\mathrm{e}}-\int _1^{\mathrm{e}}\frac{t}{2}\mathrm{d}t=\frac{\mathrm{e}^2+1}{4}.$$
+\end{explanations}
+\end{question}
+
+
+\begin{question}
+\qtags{motcle=intégration par parties}
+Parmi les affirmations suivantes, cocher celles qui sont vraies : 
+\begin{answers}  
+\good{$\displaystyle \int _0^1x\mathrm{e}^x\mathrm{d}x=\Big[x\mathrm{e}^x\Big]_0^1-\int _0^1\mathrm{e}^x\mathrm{d}x$.}
+\good{$\displaystyle \int _0^1x\mathrm{e}^x\mathrm{d}x=1$.}
+\bad{$\displaystyle \int _0^1x^2\mathrm{e}^x\mathrm{d}x=\Big[x^2\mathrm{e}^x\Big]_0^1-\int _0^1x\mathrm{e}^x\mathrm{d}x$.}
+\bad{$\displaystyle \int _0^1x^2\mathrm{e}^x\mathrm{d}x=\mathrm{e}-1$.}
+\end{answers}
+\vskip2mm
+\begin{explanations}
+Une intégration par parties avec $u=x$ et $v=\mathrm{e}^x\Rightarrow v'=\mathrm{e}^x$ donne :
+$$\int _0^1x\mathrm{e}^x\, \mathrm{d}x=\Big[x\mathrm{e}^x\Big]_0^1-\int _0^1\mathrm{e}^x\, \mathrm{d}x=1.$$
+Une intégration par parties avec $u=x^2$ et $v=\mathrm{e}^x\Rightarrow v'=\mathrm{e}^x$ donne :
+$$\int _0^1x^2\mathrm{e}^x\, \mathrm{d}x=\Big[x^2\mathrm{e}^x\Big]_0^1-2\int _0^1x\mathrm{e}^x\, \mathrm{d}x=\mathrm{e}-2.$$
+\end{explanations}
+\end{question}
+
+\subsection{Calculs d'intégrales | Niveau 2}
+
+\begin{question}
+\qtags{motcle=changements de variables}
+Parmi les affirmations suivantes, cocher celles qui sont vraies : 
+\begin{answers}
+\good{Le changement de variable $t=\pi -x$ donne $\displaystyle \int _{\pi /2}^{\pi}\sin x\,\mathrm{d}x=\int _0^{\pi /2}\sin x\,\mathrm{d}x$.}
+\bad{Le changement de variable $t=2x$ donne $\displaystyle \int _0^{\pi /2}\sin (2x)\,\mathrm{d}x=\int _0^{\pi /2}\sin t\,\frac{\mathrm{d}t}{2}$.}
+\bad{Le changement de variable $t=2x$ donne $\displaystyle \int _0^{\pi /2}\sin (2x)\,\mathrm{d}x=\int _0^{\pi /4}\sin t\,\frac{\mathrm{d}t}{2}$.}
+\good{Le changement de variable $t=2x$ donne $\displaystyle \int _0^{\pi /2}\sin (2x)\,\mathrm{d}x=\int _0^{\pi /2}\sin t\,\mathrm{d}t$.}
+\end{answers}
+\begin{explanations}
+Avec $t=\pi -x$, on a : $\mathrm{d}t=-\mathrm{d}x$, $t(\pi/2)=\pi/2$, $t(\pi)=0$ et 
+$$\int _{\pi /2}^{\pi}\sin x\,\mathrm{d}x=-\int _{\pi /2}^0\sin (\pi-t)\,\mathrm{d}t=\int _0^{\pi /2}\sin t\,\mathrm{d}t.$$
+Avec le changement de variable $t=2x$, on a : $\mathrm{d}t=2\mathrm{d}x$, $t(0)=0$, $t(\pi/2)=\pi$ et 
+$$\int _0^{\pi /2}\sin (2x)\,\mathrm{d}x=\frac{1}{2}\int _0^{\pi }\sin t\,\mathrm{d}t=\int _0^{\pi /2}\sin t\,\mathrm{d}t\quad \mbox{car}\quad \int _{\pi /2}^{\pi}\sin t\,\mathrm{d}t=\int _0^{\pi /2}\sin t\,\mathrm{d}t.$$
+\end{explanations}
+\end{question}
+
+\begin{question}
+\qtags{motcle=changements de variables}
+Parmi les affirmations suivantes, cocher celles qui sont vraies : 
+\begin{answers}  
+\bad{Le changement de variable $t=\ln x$ donne $\displaystyle \int _1^{\mathrm{e}}\frac{\ln x}{x}\mathrm{d}x=\int _1^{\mathrm{e}}t\, \mathrm{d}t=\frac{\mathrm{e}^2-1}{2}$.}
+\bad{Le changement de variable $t=1-x^2$ donne $\displaystyle \int _0^{1}2x\mathrm{e}^{1-x^2}\mathrm{d}x=-\int _0^{1}\mathrm{e}^{t}\mathrm{d}t$.}
+\good{Le changement de variable $t=1+\mathrm{e}^x$ donne $\displaystyle \int _0^{\ln 3}\frac{\mathrm{e}^x}{1+\mathrm{e}^x}\mathrm{d}x=\ln 2$.}
+\good{Pour tout réel $a>0$, on a : $\displaystyle \int _{-a}^{a}\frac{\sin x\, \mathrm{d}x}{1+\cos ^2x}=0$.}
+\end{answers}
+\vskip3mm
+\begin{explanations}
+Le changement de variable $t=\ln x$ donne : $\displaystyle \int _1^{\mathrm{e}}\frac{\ln x}{x}\mathrm{d}x=\int _0^1t\, \mathrm{d}t=\frac{1}{2}$. Avec $t=1-x^2$ dans la seconde intégrale, on obtient : $\displaystyle \int _0^{1}2x\mathrm{e}^{1-x^2}\mathrm{d}x=-\int _{1}^0\mathrm{e}^{t}\mathrm{d}t=\mathrm{e}-1$. Ensuite, avec $t=1+\mathrm{e}^x$ dans la troisième intégrale, on obtient : $\displaystyle \int _0^{\ln 3}\frac{\mathrm{e}^x}{1+\mathrm{e}^x}\mathrm{d}x=\int _2^4\frac{\mathrm{d}t}{t}=\ln 2$. Enfin, la fonction $\displaystyle x\mapsto \frac{\sin x}{1+\cos ^2x}$ est impaire. Donc, pour tout $a>0$ : $\displaystyle \int _{-a}^{a}\frac{\sin x\, \mathrm{d}x}{1+\cos ^2x}=0$.
+\end{explanations}
+\end{question}
+
+
+\begin{question}
+\qtags{motcle=changements de variables}
+Parmi les affirmations suivantes, cocher celles qui sont vraies : 
+\begin{answers}  
+\bad{Le changement de variable $t=\ln x$ donne $\displaystyle \int _{\mathrm{e}}^{\mathrm{e}^2}\frac{\mathrm{d}x}{x\ln x}=\int _{\mathrm{e}}^{\mathrm{e}^2}\frac{\mathrm{d}t}{t}=1$.}
+\good{Le changement de variable $t=x^2+1$ donne $\displaystyle \int _0^2\frac{2x\,\mathrm{d}x}{(x^2+1)^2}=\frac{4}{5}$.}
+\bad{Le changement de variable $t=x^2+1$ donne $\displaystyle \int _0^1\frac{x\,\mathrm{d}x}{\sqrt{x^2+1}}=\int _0^1\frac{\mathrm{d}t}{2\sqrt{t}}=1$.}
+\good{Le changement de variable $t=\cos x$ donne $\displaystyle \int _0^{\pi/3}\frac{\sin x\,\mathrm{d}x}{\cos ^2x}=1$.}
+\end{answers}
+\vskip2mm
+\begin{explanations}
+Le changement de variable $t=\ln x$ donne : $\displaystyle \int _{\mathrm{e}}^{\mathrm{e}^2}\frac{\mathrm{d}x}{x\ln x}=\int _1^2\frac{\mathrm{d}t}{t}=\ln 2$.
+\vskip0mm
+Ensuite, avec $t=x^2+1\Rightarrow \mathrm{d}t=2x\, \mathrm{d}x$, on obtient : $\displaystyle \int _0^{2}\frac{2x\,\mathrm{d}x}{(x^2+1)^2}=\int _{1}^5\frac{\mathrm{d}t}{t^2}=\frac{4}{5}$ et
+$$\int _0^1\frac{x\,\mathrm{d}x}{\sqrt{x^2+1}}=\int _1^2\frac{\mathrm{d}t}{2\sqrt{t}}=\sqrt{2}-1.$$
+Enfin, avec $t=\cos x\Rightarrow \mathrm{d}t=-\sin x\, \mathrm{d}x$, on obtient : $\displaystyle \int _{0}^{\pi/3}\frac{\sin x\, \mathrm{d}x}{\cos ^2x}=-\int _1^{1/2}\frac{\mathrm{d}t}{t^2}=1$.
+\end{explanations}
+\end{question}
+
+
+\begin{question}
+\qtags{motcle=changements de variables}
+Parmi les affirmations suivantes, cocher celles qui sont vraies : 
+\begin{answers}  
+\bad{$\displaystyle \int _{0}^{\pi /2}\cos ^2x\sin x\,\mathrm{d}x=-\frac{1}{3}$.}
+\good{$\displaystyle \int _{0}^{\pi /2}\sin ^2x\cos x\,\mathrm{d}x=\frac{1}{3}$.}
+\bad{$\displaystyle \int _1^4\frac{\mathrm{e}^{\sqrt{x}}}{\sqrt{x}}\mathrm{d}x=\frac{\mathrm{e}^2}{2}-\mathrm{e}$.}
+\good{$\displaystyle \int _{-\pi/2}^{\pi/2}\frac{\cos x\,\mathrm{d}x}{2+\sin x}=\ln 3$.}
+\end{answers}
+\vskip2mm
+\begin{explanations}
+Avec $u=\cos x\Rightarrow \mathrm{d}u=-\sin x\,\mathrm{d}x$ : $\displaystyle \int _0^{\pi/2}\cos ^2x\sin x\,\mathrm{d}x=-\int _1^0u^2\, \mathrm{d}u=\frac{1}{3}$.
+\vskip0mm
+Avec $u=\sin x$, on a : $\mathrm{d}u=\cos x\,\mathrm{d}x$ et
+$\displaystyle \int _0^{\pi/2}\sin ^2x\cos x\,\mathrm{d}x=\int _0^1u^2\, \mathrm{d}u=\frac{1}{3}$.
+\vskip0mm
+Ensuite, avec $u=\sqrt{x}$, on a : $\displaystyle \mathrm{d}u=\frac{\mathrm{d}x}{2\sqrt{x}}$ et
+$\displaystyle \int _1^4\frac{\mathrm{e}^{\sqrt{x}}}{\sqrt{x}}\mathrm{d}x=2\int _1^2\mathrm{e}^{u}\mathrm{d}u=2(\mathrm{e}^2-\mathrm{e})$.
+\vskip0mm
+Enfin, avec $u=2+\sin x$, on obtient : $\mathrm{d}u=\cos x\, \mathrm{d}x$ et $\displaystyle \int _{-\pi/2}^{\pi/2}\frac{\cos x\,\mathrm{d}x}{2+\sin x}=\int _{1}^{3}\frac{\mathrm{d}u}{u}=\ln 3$.
+\end{explanations}
+\end{question}
+
+
+\begin{question}
+\qtags{motcle=Chasles/changements de variables}
+L'intégrale $\displaystyle \int _{-\pi/6}^{\pi/3}\tan x\, \mathrm{d}x$ est égale à :
+\begin{answers}  
+\bad{$\displaystyle \frac{4}{3}$.}
+\bad{$\displaystyle \frac{2\sqrt{3}}{3}$.}
+\good{$\displaystyle \int _{\pi/6}^{\pi/3}\tan x\, \mathrm{d}x$.}
+\good{$\displaystyle \frac{1}{2}\ln 3$.}
+\end{answers}
+\vskip3mm
+\begin{explanations} La relation de Chasles donne
+$\displaystyle \int _{-\pi/6}^{\pi/3}\tan x\, \mathrm{d}x=\int _{-\pi/6}^{\pi/6}\tan x\, \mathrm{d}x+\int _{\pi/6}^{\pi/3}\tan x\, \mathrm{d}x$ et $\displaystyle \int _{-\pi/6}^{\pi/6}\tan x\, \mathrm{d}x=0$ car $\tan $ est impaire. Ensuite, on écrit $\displaystyle \tan x=\frac{\sin x}{\cos x}$ et on pose $t=\cos x\Rightarrow \mathrm{d}t=-\sin x\, \mathrm{d}x$. D'où,
+$\displaystyle \int _{\pi/6}^{\pi/3}\tan x\, \mathrm{d}x=-\int _{\sqrt{3}/2}^{1/2}\frac{\mathrm{d}t}{t}=\ln \sqrt{3}$.
+\end{explanations}
+\end{question}
+
+\begin{question}
+\qtags{motcle=linéarité/éléments simples}
+Parmi les égalités suivantes, cocher celles qui sont vraies :
+\begin{answers}
+\good{$\displaystyle \int _{1}^{4}\left(\frac{1}{t^2}-\frac{1}{\sqrt{t}}\right)\mathrm{d}\, t=\frac{-5}{4}$.}
+\good{$\forall x\in \Rr\setminus\{1\}$, $\displaystyle\frac{x}{(x-1)^2}=\frac{1}{x-1}+\frac{1}{(x-1)^2}$, et donc $\displaystyle \int _{-1}^{0}\frac{x\, \mathrm{d}x}{(x-1)^2}=\frac{1}{2}-\ln 2$.}
+\bad{$\displaystyle \int _{0}^{1/2}\frac{\mathrm{d}x}{1-x^2}=\Big[\arctan x\Big]_0^{1/2}=\arctan (1/2)$.}
+\bad{$\displaystyle \int _{0}^{1/2}\frac{\mathrm{d}x}{1-x^2}=\Big[\arctan (-x)\Big]_0^{1/2}=\arctan (-1/2)$.}
+\end{answers}
+\vskip3mm
+\begin{explanations}
+Par linéarité, on a : $\displaystyle \int _{1}^{4}\left(\frac{1}{t^2}-\frac{1}{\sqrt{t}}\right)\mathrm{d}\, t=\left[-\frac{1}{t}-2\sqrt{t}\right]_1^4=\frac{-5}{4}$.
+\vskip0mm
+On vérifie que : $\displaystyle\frac{x}{(x-1)^2}=\frac{1}{x-1}+\frac{1}{(x-1)^2}$, donc, par linéarité,
+$$\displaystyle \int _{-1}^{0}\frac{x\, \mathrm{d}x}{(x-1)^2}=\int _{-1}^{0}\frac{\mathrm{d}x}{x-1}+\int _{-1}^{0}\frac{\mathrm{d}x}{(x-1)^2}=\left[\ln |x-1|-\frac{1}{x-1}\right]_{-1}^{0}=\frac{1}{2}-\ln 2.$$
+Enfin, $\displaystyle \frac{1}{1-x^2}=\frac{1}{2}\left(\frac{1}{1-x}+\frac{1}{1+x}\right)$. Donc, par linéarité,
+$$\displaystyle \int _0^{1/2}\frac{\mathrm{d}x}{1-x^2}=\frac{1}{2}\int _0^{1/2}\frac{\mathrm{d}x}{1-x}+\frac{1}{2}\int _0^1\frac{\mathrm{d}x}{1+x}=\frac{1}{2}\left[\ln \left|\frac{1+x}{1-x}\right|\right]_0^{1/2}=\ln \sqrt{3}.$$
+\end{explanations}
+\end{question}
+
+
+\begin{question}
+\qtags{motcle=changements de variables}
+Parmi les affirmations suivantes, cocher celles qui sont vraies :
+\begin{answers}
+\good{Le changement de variable $t=\sin x$ donne $\displaystyle \int _{\pi/6}^{\pi/4}\frac{\mathrm{d}\, x}{\sin x\tan x}=\int _{1/2}^{1/\sqrt{2}}\frac{\mathrm{d}\, t}{t^2}$.}
+\bad{$\displaystyle \int _{\pi/6}^{\pi/4}\frac{\mathrm{d}\, x}{\sin x\tan x}=\frac{1}{\sqrt{2}}-\frac{1}{2}$.}
+\bad{Le changement de variable $t=\cos x$ donne $\displaystyle \int _{0}^{\pi/3}\sin x\mathrm{e}^{\cos x}\mathrm{d}\, x=\int _1^{1/2}\mathrm{e}^t\mathrm{d}\, t$.}
+\good{$\displaystyle \int _{0}^{\pi/3}\sin x\mathrm{e}^{\cos x}\mathrm{d}\, x=\mathrm{e}-\sqrt{\mathrm{e}}$.}
+\end{answers}
+\vskip3mm
+\begin{explanations}
+Avec $t=\sin x\Rightarrow \mathrm{d}t=\cos x\, \mathrm{d}x$, on a : $t(\pi/6)=1/2$, $t(\pi/4)=1/\sqrt{2}$ et 
+$$\displaystyle \int _{\pi/6}^{\pi/4}\frac{\mathrm{d}\, x}{\sin x\tan x}=\int _{\pi/6}^{\pi/4}\frac{\cos x\mathrm{d}\, x}{\sin ^2x}=\int _{1/2}^{1/\sqrt{2}}\frac{\mathrm{d}\, t}{t^2}=\left[-\frac{1}{t}\right]_{1/2}^{1/\sqrt{2}}=2-\sqrt{2}.$$
+Avec $t=\cos x\Rightarrow \mathrm{d}t=-\sin x\, \mathrm{d}x$, on a : $t(0)=1$, $t(\pi/3)=1/2$ et 
+$$\displaystyle \int _{0}^{\pi/3}\sin x\mathrm{e}^{\cos x}\mathrm{d}\, x=\int _{1/2}^1\mathrm{e}^t\mathrm{d}\, t=\mathrm{e}-\sqrt{\mathrm{e}}.$$
+\end{explanations}
+\end{question}
+
+\begin{question}
+\qtags{motcle=changement de variable/positivité}
+Soit $\displaystyle f(x)=\frac{x}{x^2+1}$. Parmi les affirmations suivantes, cocher celles qui sont vraies :
+\begin{answers} 
+\bad{$\displaystyle \int _0^2f(x)\, \mathrm{d}x=\int _0^{4}\frac{\mathrm{d}t}{t+1}$.} 
+\good{$\displaystyle \frac{1}{5}\int _0^{2}x\, \mathrm{d}x<\int _0^2f(x)\, \mathrm{d}x<\int _0^{2}x\, \mathrm{d}x$.}
+\good{$\displaystyle \int _{-1}^1f(x)\, \mathrm{d}x=0$.} 
+\bad{$\displaystyle \int _0^2f(x)\, \mathrm{d}x=\ln 5$.}
+\end{answers}
+\begin{explanations}
+Avec $t=x^2$, on a : $\mathrm{d}t=2x\, \mathrm{d}x$, $t(0)=0$, $t(2)=4$ et
+$$\int _0^2f(x)\,\mathrm{d}x=\frac{1}{2}\int _0^{4}\frac{\mathrm{d}t}{t+1}=\frac{1}{2}\Big[\ln (t+1)\Big]^4_0=\frac{1}{2}\ln 5.$$
+Pour tout $x\in ]0,2[$, on a : $\displaystyle \frac{x}{5}<f(x)<x$. Donc $\displaystyle \frac{1}{5}\int _0^{2}x\, \mathrm{d}x<\int _0^2f(x)\, \mathrm{d}x<\int _0^{2}x\, \mathrm{d}x$. Enfin, la fonction $f$ étant impaire sur $\Rr$, pour tout $a>0$, on a : $\displaystyle \int _{-a}^af(x)\, \mathrm{d}x=0$.
+\end{explanations}
+\end{question}
+
+\subsection{Calculs d'intégrales | Niveau 3}
+
+\begin{question}
+\qtags{motcle=changement de variable}
+On note $\displaystyle I=\int _{0}^{\ln \sqrt{3}}\frac{\mathrm{e}^x\, \mathrm{d}x}{1+\mathrm{e}^{2x}}$ et $\displaystyle J=\int _{0}^{\ln 2}\frac{\mathrm{d}x}{1+\mathrm{e}^{x}}$. Le changement de variable $t=\mathrm{e}^x$ donne :
+\begin{answers}  
+\good{$\displaystyle I=\int _1^{\sqrt{3}}\frac{\mathrm{d}t}{1+t^2}=\frac{\pi}{12}$.}
+\bad{$\displaystyle I=\int _1^{\sqrt{3}}\frac{t\mathrm{d}t}{1+t^2}=\frac{1}{2}\ln 2$.}
+\bad{$\displaystyle J=\int _1^{2}\frac{\mathrm{d}t}{1+t}=\ln 3-\ln 2$.}
+\good{$\displaystyle J=\int _1^{2}\frac{\mathrm{d}t}{t(1+t)}=2\ln 2-\ln 3$.}
+\end{answers}
+\vskip3mm
+\begin{explanations}
+Avec $t=\mathrm{e}^x\Rightarrow \mathrm{d}t=\mathrm{e}^x\, \mathrm{d}x$, on a : $\displaystyle I=\int _1^{\sqrt{3}}\frac{\mathrm{d}t}{1+t^2}=\Big[\arctan t\Big]_1^{\sqrt{3}}=\frac{\pi}{12}$.
+\vskip0mm
+Avec $t=\mathrm{e}^x\Rightarrow \mathrm{d}t=\mathrm{e}^x\, \mathrm{d}x$, on a : $\displaystyle J=\int _1^{2}\frac{\mathrm{d}t}{t(1+t)}=\left[\ln \frac{t}{1+t}\right]_1^{2}=2\ln 2-\ln 3$.
+\end{explanations}
+\end{question}
+
+\begin{question}
+\qtags{motcle=intégration par parties}
+On note $\displaystyle I=\int _{0}^{2}x^2\ln (x+1)\, \mathrm{d}x$. Parmi les affirmations suivantes, cocher celles qui sont vraies :
+\begin{answers}  
+\good{$\displaystyle I\leq 4\int _{0}^{2}\ln (x+1)\, \mathrm{d}x$.}
+\bad{$\displaystyle I\geq \ln 3\int _{0}^{2}x^2\, \mathrm{d}x$.}
+\bad{$\displaystyle I=\frac{8}{3}\ln 3+\frac{1}{3}\int _{0}^{2}\frac{x^3\, \mathrm{d}x}{x+1}$.}
+\good{$\displaystyle I=3\ln 3-\frac{8}{9}$.}
+\end{answers}
+\vskip3mm
+\begin{explanations}
+Pour tout $x\in ]0,2[$, $x^2\ln (x+1)< 4\ln (x+1)$ et $x^2\ln (x+1)<x^2\ln 3$. Donc $\displaystyle I<4\int _{0}^{2}\ln (x+1)\, \mathrm{d}x$ et $\displaystyle I<\ln 3\int _{0}^{2}x^2\, \mathrm{d}x$. Enfin, une intégration par parties avec $u=\ln (x+1)$ et $v=x^3/3$ donne :
+$$I=\frac{8}{3}\ln 3-\frac{1}{3}\int _{0}^{2}\frac{x^3\, \mathrm{d}x}{x+1}=3\ln 3-\frac{8}{9}.$$
+\end{explanations}
+\end{question}
+
+\begin{question}
+\qtags{motcle=changements de variables}
+On pose $\displaystyle I=\int _{0}^{1/\sqrt{2}}\frac{x\ \mathrm{d}x}{\sqrt{1-x^2}}$. Parmi les affirmations suivantes, cocher celles qui sont vraies :
+\begin{answers}
+\bad{Le changement de variable $t=1-x^2$ donne $\displaystyle I=-\int _0^{1/\sqrt{2}}\frac{\mathrm{d}t}{2\sqrt{t}}$.}
+\good{Le changement de variable $t=1-x^2$ donne $\displaystyle I=\int _{1/2}^1\frac{\mathrm{d}t}{2\sqrt{t}}$.}
+\bad{Le changement de variable $t=x^2$ donne $\displaystyle I=\int _0^{1/\sqrt{2}}\frac{\mathrm{d}t}{2\sqrt{1-t}}$.}
+\good{Le changement de variable $x=\sin t$ donne $\displaystyle I=\int _{0}^{\pi/4}\sin t\, \mathrm{d}t$.}
+\end{answers}
+\vskip3mm
+\begin{explanations}
+Avec $t=1-x^2$, on a : $t(0)=1$, $t(1/\sqrt{2})=1/2$, $\mathrm{d}t=-2x\mathrm{d}x$ et $\displaystyle I=\int _{1/2}^1\frac{\mathrm{d}t}{2\sqrt{t}}$.
+\vskip0mm
+Avec $t=x^2$, on a : $t(0)=0$, $t(1/\sqrt{2})=1/2$, $\mathrm{d}t=2x\mathrm{d}x$ et $\displaystyle I=\int _0^{1/2}\frac{\mathrm{d}t}{2\sqrt{1-t}}$.
+\vskip0mm
+Avec $x=\sin t$, on a : $t(0)=0$, $t(1/\sqrt{2})=\pi/4$, $\sqrt{1-x^2}=\cos t$, $\mathrm{d}x=\cos t\, \mathrm{d}t$ et 
+$$\displaystyle I=\int _0^{\pi/4}\sin t\mathrm{d}t.$$
+\end{explanations}
+\end{question}
+
+\begin{question}
+\qtags{motcle=changements de variables}
+On pose $\displaystyle I=\int _{\pi/6}^{\pi/3}\frac{\cos x}{\sin x}\mathrm{d}x$ et $\displaystyle J=\int _{\pi/6}^{\pi/3}\frac{\sin x}{\cos x}\mathrm{d}x$. Parmi les affirmations suivantes, cocher celles qui sont vraies :
+\begin{answers}
+\good{$\displaystyle I=J$.}
+\bad{$\displaystyle I=\frac{1}{J}$.}
+\good{$\displaystyle I=\frac{1}{2}\ln 3$.}  
+\bad{$\displaystyle J=-\ln \sqrt{3}$.} 
+\end{answers}
+\begin{explanations}
+Avec $t=\pi/2- x\Rightarrow \mathrm{d}t=-\mathrm{d}x$, on obtient : $\displaystyle I=-\int _{\pi/3}^{\pi/6}\frac{\sin t}{\cos t}\mathrm{d}t=J$.
+\vskip0mm
+Avec $t=\sin x\Rightarrow \mathrm{d}t=\cos x\, \mathrm{d}x$, on obtient : $\displaystyle I=\int _{1/2}^{\sqrt{3}/2}\frac{\mathrm{d}t}{t}=\ln \sqrt{3}$.
+\end{explanations}
+\end{question}
+
+\begin{question}
+\qtags{motcle=changements de variables}
+On pose $\displaystyle I_1=\int _{0}^{\pi/2}\frac{\cos x\,\mathrm{d}x}{1+2\sin x}$, $\displaystyle I_2=\int _{0}^{\pi/2}\frac{\sin (2x)\,\mathrm{d}x}{1+2\sin x}$ et $I=I_1+I_2$. Parmi les affirmations suivantes, cocher celles qui sont vraies :
+\begin{answers}
+\good{$\displaystyle I=1$.}
+\bad{$\displaystyle I_1=2\ln 3$.}
+\good{$\displaystyle I_1=\frac{1}{2}\ln 3$.}  
+\bad{$\displaystyle I_2=1-2\ln 3$.} 
+\end{answers}
+\vskip2mm
+\begin{explanations}
+Dans $I_2$, on écrit $\sin (2x)=2\sin x\cos x$. D'où $\displaystyle I_1+I_2=\int _{0}^{\pi/2}\cos x\,\mathrm{d}x=1$.
+\vskip0mm
+Avec $t=1+2\sin x\Rightarrow \mathrm{d}t=2\cos x\, \mathrm{d}x$, on obtient : $\displaystyle I_1=\int _{1}^{3}\frac{\mathrm{d}t}{2t}=\frac{1}{2}\ln 3$. Enfin, $I_2=1-I_1$.
+\end{explanations}
+\end{question}
+
+\begin{question}
+\qtags{motcle=changement de variables/éléments simples}
+On note $\displaystyle I=\int _{\pi/6}^{\pi/4}\left(\tan x+\frac{1}{\tan x}\right)\mathrm{d}x$. Parmi les affirmations suivantes, cocher celles qui sont vraies :
+\begin{answers}  
+\good{En écrivant $\displaystyle \tan x=\frac{\sin x}{\cos x}$, on obtient : $\displaystyle I=\int _{\pi/6}^{\pi/4}\frac{2\, \mathrm{d}x}{\sin (2x)}$.}
+\bad{Le changement de variable $t=\cos (2x)$ donne $\displaystyle I=\int _{0}^{1/2}\frac{2\mathrm{d}t}{1-t^2}$.}
+\good{$\forall t\in \Rr\setminus \{-1,1\}$, $\displaystyle \frac{2}{1-t^2}=\frac{1}{1-t}+\frac{1}{1+t}$ et $\displaystyle \int \frac{2\, \mathrm{d}t}{1-t^2}=\ln \left|\frac{1+t}{1-t}\right|+k$, $k\in \Rr$.}
+\bad{$\displaystyle I=\ln 3$.}
+\end{answers}
+\vskip3mm
+\begin{explanations}
+Avec $\displaystyle \tan x=\frac{\sin x}{\cos x}$, on obtient : $\displaystyle I=\int _{\pi/6}^{\pi/4}\frac{\mathrm{d}x}{\sin x\cos x}=\int _{\pi/6}^{\pi/4}\frac{2\, \mathrm{d}x}{\sin (2x)}$. On écrit $\displaystyle I=\int _{\pi/6}^{\pi/4}\frac{2\sin (2x)\, \mathrm{d}x}{\sin ^2(2x)}$. Posons, $t=\cos (2x)$, on obtient : $\mathrm{d}t=-2\sin (2x)\, \mathrm{d}x$, $t(\pi/6)=1/2$, $t(\pi/4)=0$ et
+$$\displaystyle I=\int _{0}^{1/2}\frac{\mathrm{d}t}{1-t^2}=\frac{1}{2}\left[\ln \left|\frac{1+t}{1-t}\right|\right]_0^{1/2}=\frac{1}{2}\ln 3.$$
+\end{explanations}
+\end{question}
+
+
+\begin{question}
+\qtags{motcle=intégration par parties/linéarité}
+On pose $\displaystyle I=\int _0^{\pi/2}x\cos ^2x\, \mathrm{d}x$, $\displaystyle J=\int _0^{\pi/2}x\sin ^2x\, \mathrm{d}x$ et $\displaystyle K=\int _0^{\pi/2}x\cos (2x)\, \mathrm{d}x$. Parmi les affirmations suivantes, cocher celles qui sont vraies :
+\begin{answers}  
+\bad{Une intégration par parties donne : $\displaystyle K=\frac{1}{2}$.}
+\good{$\displaystyle I+J=\frac{\pi ^2}{8}$ et $I-J=K$.}  
+\bad{$\displaystyle I=\frac{\pi ^2+4}{16}$.} 
+\bad{$\displaystyle J=\frac{\pi ^2-4}{16}$.}
+\end{answers}
+\vskip2mm
+\begin{explanations}
+Une intégration par parties, avec $u=x$ et $v=1/2\sin (2x)$, donne
+$$K=\left[\frac{x}{2}\sin (2x)\right]_0^{\pi/2}-\frac{1}{2}\int _0^{\pi/2} \sin (2x)\, \mathrm{d}x=-\frac{1}{2}.$$
+A l'aide des relations $\cos ^2x+\sin ^2x=1$ et  $\cos ^2x-\sin ^2x=\cos (2x)$, on obtient :
+$$I+J=\int _0^{\pi/2}x\mathrm{d}x=\frac{\pi ^2}{8}\mbox{ et }I-J=K=-\frac{1}{2}.$$
+La somme et la différence de ces égalités donnent : $\displaystyle I=\frac{\pi ^2-4}{16}$ et $\displaystyle J=\frac{\pi ^2+4}{16}$.
+\end{explanations}
+\end{question}
+
+
+\begin{question}
+\qtags{motcle=changements de variables}
+Parmi les affirmations suivantes, cocher celles qui sont vraies :
+\begin{answers}
+\bad{Le changement de variable $t=\sin x$ donne $\displaystyle \int _{0}^{\pi/6}\frac{\mathrm{d}x}{\cos x}=\int _0^{1/2}\frac{\mathrm{d}t}{t^2-1}$.}
+\good{$\displaystyle \int _0^{\pi/6}\frac{\mathrm{d}x}{\cos x}=\ln \sqrt{3}$.}
+\bad{Le changement de variable $t=\cos x$ donne $\displaystyle \int _{0}^{\pi/3}\frac{\tan x\, \mathrm{d}x}{\cos x}=\int _1^{1/2}\frac{\mathrm{d}t}{t^2}$.}
+\good{$\displaystyle \int _{0}^{\pi/3}\frac{\tan x\, \mathrm{d}x}{\cos x}=1$.}
+\end{answers}
+\begin{explanations}
+Avec $t=\sin x\Rightarrow \mathrm{d}t=\cos x\, \mathrm{d}x$, on a : $t(0)=0$, $t(\pi/6)=1/2$ et 
+$$\displaystyle \int _0^{\pi/6}\frac{\mathrm{d}\, x}{\cos x}=\int _0^{\pi/6}\frac{\cos x\, \mathrm{d}x}{\cos ^2x}=\int _0^{\pi/6}\frac{\cos x\, \mathrm{d}x}{1-\sin ^2x}=\int _0^{1/2}\frac{\mathrm{d}t}{1-t^2}.$$
+Or, $\displaystyle \frac{1}{1-t^2}=\frac{1}{2}\left(\frac{1}{1-t}+\frac{1}{1+t}\right)$. Donc $\displaystyle \int _0^{\pi/6}\frac{\mathrm{d}x}{\cos x}=\left[\ln \sqrt{\frac{1+t}{1-t}}\right]_0^{1/2}=\ln \sqrt{3}$.
+\vskip0mm
+Avec $t=\cos x\Rightarrow \mathrm{d}t=-\sin x\, \mathrm{d}x$, on a : $t(0)=1$, $t(\pi/3)=1/2$ et 
+$$\displaystyle \int _{0}^{\pi/3}\frac{\tan x\, \mathrm{d}x}{\cos x}=\int _{0}^{\pi/3}\frac{\sin x\, \mathrm{d}x}{\cos ^2x}=-\int _1^{1/2}\frac{\mathrm{d}t}{t^2}=1.$$
+\end{explanations}
+\end{question}
+
+
+\begin{question}
+\qtags{motcle=changements de variables}
+Parmi les affirmations suivantes, cocher celles qui sont vraies :
+\begin{answers}
+\good{Le changement de variable $t=\sin x$ donne $\displaystyle \int _{\pi/6}^{\pi/4}\frac{\mathrm{d}\, x}{\sin x\cos x}=\int _{1/2}^{1/\sqrt{2}}\frac{\mathrm{d}\, t}{t(1-t^2)}$.}
+\bad{$\forall t\in \Rr\setminus \{-1,0,1\}$, $\displaystyle \frac{1}{t(1-t^2)}=\frac{1}{t}+\frac{1}{1-t}-\frac{1}{1+t}$.}
+\bad{Une primitive de $\displaystyle \frac{1}{t(1-t^2)}$ sur $]0,1[$ est $\displaystyle F(t)=\ln \frac{t}{1-t^2}$.}
+\good{$\displaystyle \int _{\pi/6}^{\pi/4}\frac{\mathrm{d}\, x}{\sin x\cos x}=\ln \sqrt{3}$.}
+\end{answers}
+\vskip3mm
+\begin{explanations}
+Avec $t=\sin x\Rightarrow \mathrm{d}t=\cos x\, \mathrm{d}x$, on a : $t(\pi/6)=1/2$, $t(\pi/4)=1/\sqrt{2}$ et 
+$$\displaystyle \int _{\pi/6}^{\pi/4}\frac{\mathrm{d}\, x}{\sin x\cos x}=\int _{\pi/6}^{\pi/4}\frac{\cos x\, \mathrm{d}x}{\sin x\cos ^2x}=\int _{\pi/6}^{\pi/4}\frac{\cos x\, \mathrm{d}x}{\sin x(1-\sin ^2x)}=\int _{1/2}^{1/\sqrt{2}}\frac{\mathrm{d}\, t}{t(1-t^2)}.$$
+Or, $\displaystyle \frac{1}{t(1-t^2)}=\frac{1}{t}+\frac{1}{2-2t}-\frac{1}{2+2t}$. Donc 
+$$\displaystyle \int _{1/2}^{1/\sqrt{2}}\frac{\mathrm{d}\, t}{t(1-t^2)}=\left[\ln \frac{t}{\sqrt{1-t^2}}\right]_{1/2}^{1/\sqrt{2}}=\ln \sqrt{3}.$$
+\end{explanations}
+\end{question}
+
+
+\begin{question}
+\qtags{motcle=changements de variables}
+Parmi les affirmations suivantes, cocher celles qui sont vraies :
+\begin{answers}
+\good{Le changement de variable $t=\cos x$ donne 
+$$\displaystyle \int _{\pi/3}^{\pi/2}\frac{\mathrm{d}x}{\sin x(1+\cos x)}=\int _0^{1/2}\frac{\mathrm{d}t}{(1-t)(1+t)^2}.$$}
+\good{$\forall t\in \Rr\setminus \{-1,1\}$, $\displaystyle \frac{4}{(1-t)(1+t)^2}=\frac{1}{1-t}+\frac{1}{1+t}+\frac{2}{(1+t)^2}$.}
+\bad{Une primitive de $\displaystyle \frac{1}{(1-t)(1+t)^2}$ sur $]-1,1[$ est $\displaystyle \ln \frac{1+t}{1-t}-\frac{2}{1+t}$.}
+\bad{$\displaystyle \int _{\pi/3}^{\pi/2}\frac{\mathrm{d}x}{\sin x(1+\cos x)}=\ln 3+\frac{2}{3}$.}
+\end{answers}
+\vskip3mm
+\begin{explanations}
+Avec $t=\cos x\Rightarrow \mathrm{d}t=-\sin x\, \mathrm{d}x$, on a : $t(\pi/3)=1/2$, $t(\pi/2)=0$ et 
+$$\displaystyle \int _{\pi/3}^{\pi/2}\frac{\mathrm{d}\, x}{\sin x(1+\cos x)}=\int _{\pi/6}^{\pi/3}\frac{\sin x\, \mathrm{d}x}{\sin ^2x(1+\cos x)}=\int _{1/2}^{0}\frac{-\mathrm{d}\, t}{(1-t^2)(1+t)}.$$
+Or, $\displaystyle \frac{4}{(1-t)(1+t)^2}=\frac{1}{1-t}+\frac{1}{1+t}+\frac{2}{(1+t)^2}$. Donc, en tenant compte de la linéarité,
+$$\int _{\pi/3}^{\pi/2}\frac{\mathrm{d}\, x}{\sin x(1+\cos x)}=\frac{1}{4}\left[\ln \frac{1+t}{1-t}-\frac{2}{1+t}\right]_0^{1/2}=\frac{1}{4}\left(\ln 3+\frac{2}{3}\right).$$
+\end{explanations}
+\end{question}
+
+
+\begin{question}
+\qtags{motcle=changements de variables}
+Parmi les affirmations suivantes, cocher celles qui sont vraies :
+\begin{answers}
+\good{La dérivée de $\tan x$ sur $\displaystyle ]-\pi/2,\pi/2[$ est $1+\tan ^2x$.}
+\bad{Le changement de variable $t=\tan x$ donne $\displaystyle \int _0^{\pi/3}\frac{\mathrm{d}x}{1+2\cos ^2x}=\int _0^{\pi/3}\frac{\mathrm{d}t}{3+t^2}$.} 
+\bad{Une primitive de $\displaystyle \frac{1}{3+t^2}$ sur $\Rr$ est $\displaystyle \frac{1}{3}\arctan \left(\frac{t}{\sqrt{3}}\right)$.}
+\good{$\displaystyle \int _0^{\pi/3}\frac{\mathrm{d}x}{1+2\cos ^2x}=\frac{\pi}{4\sqrt{3}}$.}
+\end{answers}
+\vskip2mm
+\begin{explanations}
+Avec $t=\tan x\Rightarrow \mathrm{d}t=(1+\tan ^2x)\, \mathrm{d}x$, on a : $t(0)=0$, $t(\pi/3)=\sqrt{3}$ et 
+$$\int _0^{\pi/3}\frac{\mathrm{d}x}{1+2\cos ^2x}=\int _0^{\sqrt{3}}\frac{\mathrm{d}t}{3+t^2}=\frac{1}{\sqrt{3}}\left[\arctan \left(\frac{t}{\sqrt{3}}\right)\right]_0^{\sqrt{3}}=\frac{\pi}{4\sqrt{3}}.$$
+\end{explanations}
+\end{question}
+
+\begin{question}
+\qtags{motcle=changements de variables/éléments simples}
+Parmi les affirmations suivantes, cocher celles qui sont vraies :
+\begin{answers}
+\bad{Le changement de variable $t=\cos x$ donne $\displaystyle \int _0^{\pi/3}\frac{\tan x\, \mathrm{d}x}{1+\cos ^2x}=\int _1^{1/2}\frac{\mathrm{d}t}{t(1+t^2)}$.} 
+\good{$\forall t\in \Rr^*$, $\displaystyle \frac{1}{t(1+t^2)}=\frac{1}{t}-\frac{t}{1+t^2}$.}
+\good{Une primitive de $\displaystyle \frac{1}{t(1+t^2)}$ sur $]0,+\infty[$ est $\displaystyle \ln \left(\frac{t}{\sqrt{1+t^2}}\right)$.} 
+\bad{$\displaystyle \int _0^{\pi/3}\frac{\tan x\, \mathrm{d}x}{1+\cos ^2x}=\frac{1+\ln 5}{2}$.}
+\end{answers}
+\vskip2mm
+\begin{explanations}
+Avec $t=\cos x\Rightarrow \mathrm{d}t=-\sin x\, \mathrm{d}x$, on a : $t(0)=1$, $t(\pi/3)=1/2$ et 
+$$\int _0^{\pi/3}\frac{\tan x\, \mathrm{d}x}{1+\cos ^2x}=\int _0^{\pi/3}\frac{\sin x\, \mathrm{d}x}{\cos(1+\cos ^2x)}=-\int _1^{1/2}\frac{\mathrm{d}t}{t(1+t^2)}.$$
+Or, $\forall t\in \Rr^*$, $\displaystyle \frac{1}{t(1+t^2)}=\frac{1}{t}-\frac{t}{1+t^2}$ et $\displaystyle \int \left(\frac{1}{t}-\frac{t}{1+t^2}\right)\mathrm{d}t=\ln \frac{t}{\sqrt{1+t^2}}+k$. Donc
+$$\int _0^{\pi/3}\frac{\tan x\, \mathrm{d}x}{1+\cos ^2x}=\left[\ln \frac{t}{\sqrt{1+t^2}}\right]_{1/2}^1=\frac{\ln 5-\ln 2}{2}.$$
+\end{explanations}
+\end{question}
+
+\begin{question}
+\qtags{motcle=changements de variables}
+Parmi les affirmations suivantes, cocher celles qui sont vraies :
+\begin{answers}
+\good{Le changement de variable $t=\sqrt{x+1}$ donne $\displaystyle \int _{3}^{8}\frac{\mathrm{d}\, x}{x\sqrt{x+1}}=\int _{2}^{3}\frac{2\mathrm{d}\, t}{t^2-1}$.}
+\good{$\displaystyle \int _{3}^{8}\frac{\mathrm{d}\, x}{x\sqrt{x+1}}=\ln \frac{3}{2}$.}
+\bad{Le changement de variable $t=\sqrt{x+1}$ donne $\displaystyle \int _3^8\frac{\sqrt{x+1}}{x}\mathrm{d}x=\int _2^3\frac{t^2\, \mathrm{d}t}{t^2-1}$.}
+\bad{$\displaystyle \int _3^8\frac{\sqrt{x+1}}{x}\mathrm{d}x=1+\frac{1}{2}\ln \frac{3}{2}$.}
+\end{answers}
+\vskip3mm
+\begin{explanations}
+Avec $t=\sqrt{x+1}\Rightarrow x=t^2-1$, on a : $\mathrm{d}x=2t\, \mathrm{d}t$, on a : $t(3)=2$, $t(8)=3$ et 
+$$\displaystyle \int _3^8\frac{\mathrm{d}\, x}{x\sqrt{x+1}}=\int _{2}^{3}\frac{2\mathrm{d}\, t}{t^2-1}=\left[\ln \frac{t-1}{t+1}\right]_{2}^{3}=\ln \frac{3}{2}.$$
+De même, $\displaystyle \int _3^8\frac{\sqrt{x+1}}{x}\mathrm{d}x=\int _{2}^{3}\frac{2t^2\, \mathrm{d}t}{t^2-1}$. Or $\displaystyle \frac{2t^2}{t^2-1}=2+\frac{1}{t-1}-\frac{1}{t+1}$, donc
+$$\displaystyle \int _3^8\frac{\sqrt{x+1}}{x}\mathrm{d}x=\left[2t+\ln \frac{t-1}{t+1}\right]_{2}^{3}=2+\ln \frac{3}{2}.$$
+\end{explanations}
+\end{question}
+
+\begin{question}
+\qtags{motcle=changements de variables}
+Parmi les affirmations suivantes, cocher celles qui sont vraies :
+\begin{answers}
+\good{Le changement de variable $t=\sqrt{x}$ donne $\displaystyle \int _{1}^{3}\frac{\mathrm{d}\, x}{(x+1)\sqrt{x}}=\int _{1}^{\sqrt{3}}\frac{2\mathrm{d}\, t}{t^2+1}$.}
+\good{$\displaystyle \int _1^3\frac{\mathrm{d}\, x}{(x+1)\sqrt{x}}=\frac{\pi}{6}$.}
+\bad{Le changement de variable $t=\sqrt{x}$ donne $\displaystyle \int _1^3\frac{\sqrt{x}}{x+1}\mathrm{d}x=\int _1^{\sqrt{3}}\frac{t^2\, \mathrm{d}t}{t^2+1}$.}
+\bad{$\displaystyle \int _1^3\frac{\sqrt{x}}{x+1}\mathrm{d}x=\sqrt{3}-1-\frac{\pi}{12}$.}
+\end{answers}
+\vskip3mm
+\begin{explanations}
+Avec $t=\sqrt{x}\Rightarrow x=t^2$, on a : $\mathrm{d}x=2t\, \mathrm{d}t$, $t(1)=1$, $t(3)=\sqrt{3}$ et 
+$$\displaystyle \int _1^3\frac{\mathrm{d}\, x}{(x+1)\sqrt{x}}=\int _{1}^{\sqrt{3}}\frac{2\mathrm{d}\, t}{t^2+1}=\Big[2\arctan t\Big]_{1}^{\sqrt{3}}=\frac{\pi}{6}.$$
+De même, $\displaystyle \int _1^3\frac{\sqrt{x}}{x+1}\mathrm{d}x=\int _{1}^{\sqrt{3}}\frac{2t^2\, \mathrm{d}t}{t^2+1}$. Or $\displaystyle \frac{2t^2}{t^2+1}=2-\frac{2}{t^2+1}$, donc
+$$\displaystyle \int _1^3\frac{\sqrt{x}}{x+1}\mathrm{d}x=\Big[2t-2\arctan t\Big]_{1}^{\sqrt{3}}=2\sqrt{3}-2-\frac{\pi}{6}.$$
+\end{explanations}
+\end{question}
+
+
+\begin{question}
+\qtags{motcle=changements de variables}
+Parmi les affirmations suivantes, cocher celles qui sont vraies :
+\begin{answers}
+\bad{$\forall t\in \Rr\setminus\{-1\}$, $\displaystyle \frac{2t}{t^2+2t+1}=\frac{1}{t+1}-\frac{1}{(t+1)^2}$.}
+\bad{$\displaystyle \ln (t+1)+\frac{1}{t+1}$ est une primitive de $\displaystyle \frac{2t}{t^2+2t+1}$ sur $]-1,+\infty[$.}
+\good{Le changement de variable $t=\sqrt{x}$ donne $\displaystyle \int _0^1\frac{\mathrm{d}\, x}{x+2\sqrt{x}+1}=\int _0^1\frac{2t\mathrm{d}\, t}{t^2+2t+1}$.}
+\good{$\displaystyle \int _0^1\frac{\mathrm{d}\, x}{x+2\sqrt{x}+1}=2\ln 2-1$.}
+\end{answers}
+\vskip3mm
+\begin{explanations}
+Avec $t=\sqrt{x}\Rightarrow x=t^2$, on a : $\mathrm{d}x=2t\, \mathrm{d}t$, $t(0)=0$, $t(1)=1$ et 
+$$\displaystyle \int _0^1\frac{\mathrm{d}\, x}{x+1+2\sqrt{x}}=\int _0^1\frac{2t\mathrm{d}\, t}{t^2+2t+1}=\left[2\ln (t+1)+\frac{2}{t+1}\right]_{0}^1=2\ln 2-1.$$
+\end{explanations}
+\end{question}
+
+
+\begin{question}
+\qtags{motcle=changements de variables}
+Parmi les affirmations suivantes, cocher celles qui sont vraies :
+\begin{answers}
+\good{$\forall t\in \Rr$, $\displaystyle \frac{2t}{t^2+t+1}=\frac{2t+1}{t^2+t+1}-\frac{4}{3}\frac{1}{\left(\frac{2t+1}{\sqrt{3}}\right)^2+1}$.}
+\good{$\displaystyle \ln (t^2+t+1)-\frac{2}{\sqrt{3}}\arctan \left(\frac{2t+1}{\sqrt{3}}\right)$ est une primitive de $\displaystyle \frac{2t}{t^2+t+1}$ sur $\Rr$.}
+\bad{Le changement de variable $t=\sqrt{x}$ donne $\displaystyle \int _0^1\frac{\mathrm{d}x}{x+\sqrt{x}+1}=\int _0^1\frac{t\, \mathrm{d}t}{t^2+t+1}$.}
+\bad{$\displaystyle \int _0^1\frac{\mathrm{d}x}{x+\sqrt{x}+1}=\frac{\ln 3}{2}-\frac{\pi}{6\sqrt{3}}$.}
+\end{answers}
+\vskip3mm
+\begin{explanations}
+D'abord, $\forall t\in \Rr$, $\displaystyle \frac{2t}{t^2+t+1}=\frac{2t+1}{t^2+t+1}-\frac{4}{3}\frac{1}{\left(\frac{2t+1}{\sqrt{3}}\right)^2+1}$. Donc, par linéarité,
+$$\int \frac{2t\, \mathrm{d}t}{t^2+t+1}=\ln (t^2+t+1)-\frac{2}{\sqrt{3}}\arctan \left(\frac{2t+1}{\sqrt{3}}\right)+k,\; k\in \Rr.$$
+Ensuite, avec $t=\sqrt{x}\Rightarrow x=t^2$, on a : $\mathrm{d}x=2t\, \mathrm{d}t$, $t(0)=0$, $t(1)=1$ et 
+$$\int _0^1\frac{\mathrm{d}x}{x+\sqrt{x}+1}=\left[\ln (t^2+t+1)-\frac{2}{\sqrt{3}}\arctan \left(\frac{2t+1}{\sqrt{3}}\right)\right]_0^1=\ln 3-\frac{\pi}{3\sqrt{3}}.$$
+\end{explanations}
+\end{question}
+
+\subsection{Calculs d'intégrales | Niveau 4}
+
+
+\begin{question}
+\qtags{motcle=intégration par parties/linéarité}
+On pose $\displaystyle I=\int _0^{\pi}\mathrm{e}^x\cos ^2x\mathrm{d}x$, $\displaystyle J=\int _0^{\pi}\mathrm{e}^x\sin ^2x\mathrm{d}x$ et $\displaystyle K=\int _0^{\pi}\mathrm{e}^x\cos (2x)\mathrm{d}x$. Parmi les affirmations suivantes, cocher celles qui sont vraies :
+\begin{answers}  
+\good{A l'aide de deux intégrations par parties successives, on obtient : $\displaystyle K=\mathrm{e}^{\pi}-1-4K$ et donc $\displaystyle K=\frac{\mathrm{e}^{\pi}-1}{5}$.}
+\bad{$\displaystyle I+J=\mathrm{e}^{\pi}$ et $I-J=K$.}  
+\bad{$\displaystyle I=\frac{6\mathrm{e}^{\pi}-1}{10}$.} 
+\bad{$\displaystyle J=\frac{4\mathrm{e}^{\pi}+1}{10}$.}
+\end{answers}
+\vskip2mm
+\begin{explanations}
+Deux intégrations par parties successives, avec $u=\cos (2x)$ et $v=\mathrm{e}^x$ et ensuite avec $u=\sin (2x)$ et $v=\mathrm{e}^x$, donnent
+$$K=\mathrm{e}^{\pi}-1+2\int _0^{\pi} \mathrm{e}^x\sin (2x)\mathrm{d}x=\mathrm{e}^{\pi}-1-4K\Rightarrow K=\frac{\mathrm{e}^{\pi}-1}{5}.$$
+A l'aide des relations $\cos ^2x+\sin ^2x=1$ et  $\cos ^2x-\sin ^2x=\cos (2x)$, on obtient :
+$$I+J=\mathrm{e}^{\pi}-1\mbox{ et }I-J=K\Rightarrow I=\frac{3(\mathrm{e}^{\pi}-1)}{5}\quad \mbox{et}\quad J=\frac{2(\mathrm{e}^{\pi}-1)}{5}.$$
+\end{explanations}
+\end{question}
+
+\begin{question}
+\qtags{motcle=changements de variables/linéarité}
+On pose $\displaystyle I=\int _0^{\pi}\frac{x\sin x}{1+\cos ^2x}\mathrm{d}x$ et $\displaystyle J=\int _0^{\pi}\frac{\sin x}{1+\cos ^2x}\mathrm{d}x$. Parmi les affirmations suivantes, cocher celles qui sont vraies :
+\begin{answers}
+\good{Le changement de variable $t=\cos x$ donne $\displaystyle J=\int _{-1}^1\frac{\mathrm{d}t}{1+t^2}=\frac{\pi}{2}$.}
+\good{Le changement de variable $t=\pi -x$ donne $\displaystyle I=\pi J-I$.}
+\bad{$\displaystyle I=\int _0^{\pi}x\, \mathrm{d}x.\int _0^{\pi}\frac{\sin x}{1+\cos ^2x}\mathrm{d}x=\frac{\pi ^2}{2}J$.} 
+\bad{$\displaystyle I=\frac{\pi ^3}{4}$.}
+\end{answers}
+\vskip2mm
+\begin{explanations}
+Avec $t=\cos x\Rightarrow \mathrm{d}t=-\sin x\, \mathrm{d}x$, on obtient : 
+$$J=\int _{-1}^1\frac{\mathrm{d}t}{1+t^2}=\Big[\arctan t\Big]_{-1}^1=\frac{\pi}{2}.$$
+Avec $t=\pi -x\Rightarrow \mathrm{d}t=-\mathrm{d}x$ et puisque $\sin (\pi -t)=\sin t$, on obtient : 
+$$I=-\int _{\pi}^0\frac{(\pi -t)\sin t}{1+\cos ^2t}\mathrm{d}t=\int _0^{\pi}\frac{(\pi -t)\sin t}{1+\cos ^2t}\mathrm{d}t=\pi J-I.$$
+On en déduit que : $\displaystyle I=\frac{\pi }{2}J=\frac{\pi ^2}{4}$.
+\end{explanations}
+\end{question}
+
+\begin{question}
+\qtags{motcle=changement de variable/positivité}
+Soit $\displaystyle f(x)=\frac{6x+8}{(x+3)(x^2-4)}$. Parmi les affirmations suivantes, cocher celles qui sont vraies :
+\begin{answers}
+\bad{La d\'ecomposition en éléments simples de $f$ a la forme : $\displaystyle f(x)=\frac{a}{x+3}+\frac{b}{x^2-4}$.}
+\good{Une primitive de $f$ sur $]-2,2[$ est donn\'ee par $\displaystyle F(x)=\ln \frac{(4-x^2)}{(x+3)^2}$.}
+\good{$\displaystyle \int _{0}^1f(x)\, \mathrm{d}x=3\ln \frac{3}{4}$.}
+\good{$\displaystyle \int _0^{\pi/2}\frac{(8+6\cos t)\sin t}{(3+\cos t)(\cos ^2t-4)}\, \mathrm{d}t=3\ln \frac{3}{4}$.}
+\end{answers}
+\vskip2mm
+\begin{explanations}
+On v\'erifie que : $\displaystyle f(x)=\frac{-2}{x+3}+\frac{1}{x-2}+\frac{1}{x+2}$. Donc, par linéarité,
+$$\int f(x)\, \mathrm{d}x=\ln \left|\frac{(x^2-4)}{(x+3)^2}\right|+k,\; k\in \Rr.$$
+Ainsi $\displaystyle \int _{0}^1f(x)\, \mathrm{d}x=3\ln \frac{3}{4}$. Avec $x=\cos t$, on a : $\mathrm{d}x=-\sin t\, \mathrm{d}t$, $x(0)=1$, $x(\pi/2)=0$ et
+$$\int _0^{\pi/2}\frac{(8+6\cos t)\sin t}{(3+\cos t)(\cos ^2t-4)}\, \mathrm{d}t=\int _0^1\frac{6x+8}{(x+3)(x^2-4)}\,\mathrm{d}x=3\ln \frac{3}{4}.$$
+\end{explanations}
+\end{question}
+
+\begin{question}
+\qtags{motcle=changements de variables/éléments simples}
+Parmi les affirmations suivantes, cocher celles qui sont vraies :
+\begin{answers}
+\good{Le changement de variable $\displaystyle t=\cos x$ donne 
+$$\displaystyle \int _{\pi/3}^{\pi/2}\frac{\mathrm{d}x}{\sin x(1+\cos ^2x)}=\int _0^{1/2}\frac{\mathrm{d}t}{(1-t^2)(1+t^2)}.$$}
+\good{$\forall t\in \Rr\setminus \{-1,1\}$, $\displaystyle \frac{4}{(1-t^2)(1+t^2)}=\frac{1}{1-t}+\frac{1}{1+t}+\frac{2}{1+t^2}$.}
+\bad{Une primitive de $\displaystyle \frac{1}{(1-t^2)(1+t^2)}$ sur $]-1,1[$ est $\displaystyle \ln \left(\frac{1+t}{1-t}\right)+2\arctan t$.}
+\bad{$\displaystyle \int _{\pi/3}^{\pi/2}\frac{\mathrm{d}x}{\sin x(1+\cos ^2x)}=\ln 3+2\arctan \frac{1}{2}$.}
+\end{answers}
+\vskip2mm
+\begin{explanations}
+Avec $\displaystyle t=\cos x\Rightarrow \mathrm{d}t=-\sin x\, \mathrm{d}x$, on a : $t(\pi/3)=1/2$, $t(\pi/2)=0$ et 
+$$\int _{\pi/3}^{\pi/2}\frac{\mathrm{d}x}{\sin x(1+\cos ^2x)}=\int _{\pi/3}^{\pi/2}\frac{\sin x\, \mathrm{d}x}{(1-\cos ^2x)(1+\cos ^2x)}=\int _0^{1/2}\frac{\mathrm{d}t}{(1-t^2)(1+t^2)}.$$
+Or, $\forall t\in \Rr\setminus \{-1,1\}$, $\displaystyle \frac{4}{(1-t^2)(1+t^2)}=\frac{1}{1-t}+\frac{1}{1+t}+\frac{2}{1+t^2}$. Donc
+$$\int _{\pi/3}^{\pi/2}\frac{\mathrm{d}x}{\sin x(1+\cos ^2x)}=\left[ \frac{1}{4}\ln\frac{1+t}{1-t}+\frac{1}{2}\arctan t\right]_{0}^{1/2}=\frac{1}{4}\ln 3+\frac{1}{2}\arctan \frac{1}{2}.$$
+\end{explanations}
+\end{question}
+
+\begin{question}
+\qtags{motcle=changement de variable/intégration par parties}
+Soit $f$ la fonction définie par $\displaystyle f(x)=\frac{1}{(4+x^2)^2}$. On pose $\displaystyle I=\int _0^2f(x)\,\mathrm{d}x$. Parmi les affirmations suivantes, cocher celles qui sont vraies :
+\begin{answers}  
+\bad{On a : $\displaystyle \frac{2}{8^2}\leq I$ et $\displaystyle I>\frac{2}{4^2}$.} 
+\bad{Le changement de variable $x=2t$ donne $\displaystyle I=\int _0^1\frac{\mathrm{d}t}{(1+t^2)^2}$.}  
+\good{$\displaystyle I=\frac{1}{16}\left(\left[\frac{t}{1+t^2}\right]_0^1+\int _0^1\frac{\mathrm{d}t}{1+t^2}\right)$.}
+\good{$\displaystyle I=\frac{2+\pi}{64}$.}
+\end{answers}
+\vskip2mm
+\begin{explanations}
+Pour tout $x\in [0,2]$, on a : $\displaystyle \frac{1}{8^2}\leq f(x)\leq \frac{1}{4^2}$. Donc $\displaystyle \frac{2}{8^2}\leq I\leq \frac{2}{4^2}$.
+\vskip0mm
+Le changement de variable $x=2t$ donne $\displaystyle I=\int _0^1\frac{2\mathrm{d}t}{(4+4t^2)^2}=\frac{2}{4^2}\int _0^1\frac{\mathrm{d}t}{(1+t^2)^2}$.
+\vskip0mm En intégrant $\displaystyle \int _0^1\frac{\mathrm{d}t}{1+t^2}$ par parties avec $\displaystyle u=\frac{1}{1+t^2}$ et $v=t$, on obtient :
+$$\int _0^1\frac{\mathrm{d}t}{(1+t^2)^2}=\frac{1}{2}\left(\left[\frac{t}{1+t^2}\right]_0^1+\int _0^1\frac{\mathrm{d}t}{1+t^2}\right)=\frac{2+\pi}{8} \Rightarrow I=\frac{2+\pi}{64}.$$
+\end{explanations}
+\end{question}
+
+\begin{question}
+\qtags{motcle=changements de variables/éléments simples}
+Parmi les affirmations suivantes, cocher celles qui sont vraies :
+\begin{answers}
+\good{Le changement de variable $\displaystyle t=\sqrt{\frac{1+x}{1-x}}$ donne :
+$$\displaystyle \int _0^{1/2}\sqrt{\frac{1+x}{1-x}}\mathrm{d}x=\int _1^{\sqrt{3}}\frac{4t^2\, \mathrm{d}t}{(t^2+1)^2}.$$}
+\bad{$\displaystyle \int _1^{\sqrt{3}}\frac{\mathrm{d}t}{t^2+1}=\frac{\pi}{6}$.}
+\good{$\displaystyle \int _1^{\sqrt{3}}\frac{\mathrm{d}t}{t^2+1}=\left[\frac{t}{1+t^2}\right]_1^{\sqrt{3}}+\int _1^{\sqrt{3}}\frac{2t^2\mathrm{d}t}{(t^2+1)^2}$.}
+\bad{$\displaystyle \int _0^{1/2}\sqrt{\frac{1+x}{1-x}}\mathrm{d}x=\frac{\pi}{3}-\frac{\sqrt{3}}{2}+1$.}
+\end{answers}
+\vskip2mm
+\begin{explanations}
+Avec $\displaystyle t=\sqrt{\frac{1+x}{1-x}}$, on a : $\displaystyle x=\frac{t^2-1}{t^2+1}$. D'où $\displaystyle \mathrm{d}x=\frac{4t\, \mathrm{d}t}{(t^2+1)^2}$ et 
+$$\int _0^{1/2}\sqrt{\frac{1+x}{1-x}}\mathrm{d}x=\int _1^{\sqrt{3}}\frac{4t^2\, \mathrm{d}t}{(t^2+1)^2}.$$
+Une intégration par parties avec $\displaystyle u=\frac{1}{t^2+1}$ et $v=t$ donne
+$$\int _1^{\sqrt{3}}\frac{\mathrm{d}t}{t^2+1}=\left[\frac{t}{1+t^2}\right]_1^{\sqrt{3}}+\int _1^{\sqrt{3}}\frac{2t^2\mathrm{d}t}{(t^2+1)^2}.$$
+Donc $\displaystyle \int _0^{1/2}\sqrt{\frac{1+x}{1-x}}\mathrm{d}x=2\int _1^{\sqrt{3}}\frac{\mathrm{d}t}{t^2+1}-2\left[\frac{t}{1+t^2}\right]_1^{\sqrt{3}}=\frac{\pi}{6}-\frac{\sqrt{3}}{2}+1$.
+\end{explanations}
+\end{question}
+
+\begin{question}
+\qtags{motcle=primitives des éléments simples}
+Soit $n\in \Nn^*$. On note $\displaystyle F_n(x)=\int _0^x\frac{\mathrm{d}t}{(t^2+1)^n}$ et $\displaystyle I_n=\int _1^{\mathrm{e}}\frac{\mathrm{d}x}{x\left(\ln ^2x+1\right)^n}$. Parmi les affirmations suivantes, cocher celles qui sont vraies :
+\begin{answers}  
+\good{$\displaystyle F_{n}(x)=\frac{x}{(x^2+1)^n}+2n\int _0^x\frac{t^2\,\mathrm{d}t}{(t^2+1)^{n+1}}$.}
+\bad{$\displaystyle F_1(x)=\arctan x$ et $\displaystyle F_2(x)=\left(\arctan x\right)^2$.}   
+\good{Le changement de variable $t=\ln x$ donne $\displaystyle I_n=F_n(1)$.} 
+\bad{$\displaystyle I_1=\frac{\pi}{4}$ et $\displaystyle I_2=\left(\frac{\pi }{4}\right)^2$.}
+\end{answers}
+\vskip2mm
+\begin{explanations}
+Une intégration par parties, avec $\displaystyle u=(t^2+1)^{-n}$ et $v=t$, donne
+$$F_n(x)=\frac{x}{(x^2+1)^n}+2n\int _0^x \frac{t^2}{(t^2+1)^{n+1}}\mathrm{d}t.$$
+En écrivant $t^2=(t^2+1)-1$, on obtient : $\displaystyle F_n(x)=\frac{x}{(x^2+1)^n}+2nF_n(x)-2nF_{n+1}(x)$. D'où
+$$F_{n+1}(x)=\frac{1}{2n}\left[\frac{x}{(x^2+1)^n}+(2n-1)F_n(x)\right].$$
+En particulier, $F_1(x)=\arctan x$ et $\displaystyle F_2(x)=\frac{1}{2}\left[\frac{x}{x^2+1}+\arctan x\right]$. Le changement de variable $t=\ln x$ donne $I_n=F_n(1)$. On en déduit que $\displaystyle I_1=\arctan 1=\frac{\pi}{4}$ et $\displaystyle I_2=\frac{1}{4}+\frac{\pi}{8}$
+\end{explanations}
+\end{question}

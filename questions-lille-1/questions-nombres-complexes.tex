@@ -1,0 +1,735 @@
+\qcmtitle{Nombres complexes}
+
+\qcmauthor{Arnaud Bodin, Abdellah Hanani, Mohamed Mzari}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Nombres complexes | 104}
+
+\qcmlink[cours]{http://exo7.emath.fr/cours/ch_complexes.pdf}{Nombres complexes}
+
+\qcmlink[video]{http://youtu.be/utABzdEXLuE}{Les nombres complexes, définitions et opérations}
+
+\qcmlink[video]{http://youtu.be/KmPyB3Twjio}{Racines carrées, équation du second degré}
+
+\qcmlink[video]{http://youtu.be/k9eqlVv535o}{Argument et trigonométrie}
+
+\qcmlink[video]{http://youtu.be/ej9zpQYsQs8}{Nombres complexes et géométrie}
+
+\qcmlink[exercices]{http://exo7.emath.fr/ficpdf/fic00001.pdf}{Nombres complexes}
+
+%-------------------------------
+\subsection{Écritures algébrique et géométrique | Facile | 104.01}
+
+\begin{question}
+\qtags{motcle=écriture algébrique}
+
+Soit $z=(1-2i)^2$. Quelles sont les assertions vraies ?
+\begin{answers}
+    \bad{$z=5-4i$}
+
+    \good{$z=-3-4i$}
+
+    \bad{Le conjugué de $z$ est : $\overline{z}=3+4i$.}
+
+    \good{Le module de $z$ est $5$.}
+\end{answers}
+\begin{explanations}
+On développe $(1-2i)^2$. Si $z=a+ib, a,b \in \Rr, \overline{z}=a-ib$  et $|z|^2= a^2+b^2$. 
+\end{explanations}
+
+\end{question}
+
+
+\begin{question}
+\qtags{motcle=écriture algébrique}
+ 
+Soit $z=\frac{i+1}{1-i\sqrt 3}$. Quelles sont les assertions vraies ?
+\begin{answers}
+    \good{$|z|=\frac{1}{\sqrt 2}$}
+    
+    \good{ $z\overline{z} =\frac{1}{2}$}
+
+    \good{Un argument de $z$ est : $\frac{7\pi}{12}$.}
+
+    \bad{Le conjugué de $z$ est : $\overline{z}=\frac{i-1}{1+i\sqrt 3}$.}
+
+    
+\end{answers}
+\begin{explanations}
+On applique les formules :
+$|\frac{z_1}{z_2}|= \frac{|z_1|}{|z_2|}$, $|z|^2=z\overline{z}$ et $\arg(\frac{z_1}{z_2})= \arg z_1 - \arg z_2 \, [2\pi]$. 
+\end{explanations}
+
+\end{question}
+
+
+
+\begin{question}
+\qtags{motcle=écriture algébrique}
+
+Soit $z$ un nombre complexe de module $2$ et d'argument $\frac{\pi}{4}$. L'écriture algébrique de $z$ est : 
+\begin{answers}
+    \bad{$z= \sqrt 2-i\sqrt 2$}
+
+    \good{$z= \sqrt 2+i\sqrt 2$}
+
+    \bad{$z= 2+2i$}
+
+    \bad{$z= 2-2i$}
+\end{answers}
+\begin{explanations}
+$z=2(\cos\frac{\pi}{4}+i\sin\frac{\pi}{4}) =\sqrt 2+i\sqrt 2 $.
+\end{explanations}
+
+\end{question}
+
+
+\begin{question}
+\qtags{motcle=module/argument} 
+
+Soit $\theta \in \Rr$. $e^{i\theta}\in \Rr$  si et seulement si : 
+\begin{answers}
+    \bad{ $\theta  =0$ }
+
+    \bad{ $\theta  =2\pi$}
+
+    \bad{$\theta  = 2k\pi$, $k \in \Zz$}
+
+    \good{ $\theta  =k\pi$, $k \in \Zz$}
+\end{answers}
+\begin{explanations}
+$e^{i\theta}= \cos \theta + i \sin \theta $ et $\sin \theta = 0 $ si et seulement si $\theta  =k\pi$, $k \in \Zz$.
+\end{explanations}
+
+\end{question}
+
+
+\begin{question}
+\qtags{motcle=trigonométrie} 
+
+Soit $\theta$ un réel.  Quelles sont les assertions vraies ?
+\begin{answers}
+    \good{$\cos^2\theta= \frac{1+\cos(2\theta)}{2}$}
+    \bad{ $\cos^2\theta= \frac{1-\cos(2\theta)}{2}$}
+
+    \good{$\sin^2\theta= \frac{1-\cos(2\theta)}{2}$}
+
+    \bad{$\sin^2\theta= \frac{1+\cos(2\theta)}{2}$}
+\end{answers}
+\begin{explanations}
+On peut appliquer les formules d'Euler, ou utiliser la formule d'addition du cosinus. 
+
+\end{explanations}
+
+\end{question}
+
+
+\begin{question}
+\qtags{motcle=trigonométrie}
+ 
+Soit $\theta$ un réel.  Quelles sont les assertions vraies ?
+\begin{answers}
+    \bad{$\cos(2\theta)= 2\cos\theta \sin \theta$}
+    \good{ $\cos(2\theta)= \cos^2\theta -\sin^2 \theta$}
+
+    \good{$\sin(2\theta)= 2\cos\theta \sin \theta$}
+
+    \bad{$\sin(2\theta)= \cos^2\theta -\sin^2 \theta$}
+\end{answers}
+\begin{explanations}
+On peut appliquer la formule de Moivre, ou utiliser les formules d'addition du cosinus et du sinus. 
+
+\end{explanations}
+
+\end{question}
+
+%-------------------------------
+\subsection{Écritures algébrique et géométrique | Moyen | 104.01}
+
+\begin{question}
+\qtags{motcle=module/argument}
+ 
+Soit $z=\frac{(1-i)^{10}}{(1+i\sqrt 3)^4}$. Quelles sont les assertions vraies ?
+\begin{answers}
+    \good{$|z|=2$}
+    
+    \bad{$|z|=\frac{1}{2}$}
+
+    \good{$\arg z = \frac{\pi}{6} \, [2\pi]$}
+
+    \bad{$\arg z = -\frac{\pi}{6} \, [2\pi]$}
+
+ 
+\end{answers}
+\begin{explanations}
+On applique les formules :
+$|\frac{z_1^n}{z_2^m}|= \frac{|z_1|^n}{|z_2|^m}$   et $\arg(\frac{z_1^n}{z_2^m})= n\arg z_1 - m\arg z_2 \, [2\pi]$. 
+\end{explanations}
+
+\end{question}
+
+
+
+
+
+
+\begin{question}
+\qtags{motcle=module/argument}
+
+Soit $z=\frac{\cos \theta + i \sin \theta}{\cos \phi - i \sin \phi}$, $\theta, \phi \in \Rr$. 
+Quelles sont les assertions vraies ?
+\begin{answers}
+    \bad{$|z|=2$}
+
+    \good{$\arg z = \theta + \phi \, [2\pi]$}
+    
+    \good{ $z = \cos (\theta+\phi) + i \sin (\theta + \phi)$}
+
+    \good{$|z|=1$}
+
+ 
+\end{answers}
+\begin{explanations}
+Utiliser l'écrire trigonométrique et  la formule : $\frac{e^{i\theta}}{e^{-i\phi}}= e^{i(\theta + \phi)} $.
+\end{explanations}
+
+\end{question}
+
+
+\begin{question}
+\qtags{motcle=module/argument}
+ 
+Soit $z_1$ et $z_2$ deux nombres complexes. Alors, $|z_1+z_2|^2 + |z_1-z_2|^2$ est égal à : 
+\begin{answers}
+    \bad{$|z_1|^2+|z_2|^2$}
+    
+    \bad{$|z_1|^2-|z_2|^2$}
+
+
+    \good{$ 2|z_1|^2 +2|z_2|^2$}
+    
+    \bad{$ 2|z_1|^2 -2|z_2|^2$}
+
+    
+
+ 
+\end{answers}
+\begin{explanations}
+Utiliser :  $|z|^2= z\overline{z}$.
+\end{explanations}
+
+\end{question}
+
+\begin{question}
+\qtags{motcle=trigonométrie}
+ 
+Soit $\theta$ un réel.  Quelles sont les assertions vraies ?
+\begin{answers}
+
+     \bad{$\cos^3\theta= \frac{1}{8}(\cos(3\theta) +3\cos \theta)$}
+     
+    \good{$\cos^3\theta= \frac{1}{4}(\cos(3\theta) + 3\cos \theta)$}
+    
+     \good{$\sin^3\theta= \frac{1}{4}(3\sin \theta - \sin(3\theta))$}
+  
+      \bad{$\sin^3\theta= \frac{1}{4}(3\sin \theta + \sin(3\theta))$}
+
+  
+\end{answers}
+\begin{explanations}
+On peut appliquer les formules d'Euler.
+
+\end{explanations}
+
+\end{question}
+
+\begin{question}
+\qtags{motcle=trigonométrie}
+ 
+Soit $\theta$ un réel.  Quelles sont les assertions vraies ?
+\begin{answers}
+    \good{$\cos(5\theta)= \cos^5\theta -10\cos^3\theta \sin^2\theta + 5\cos \theta\sin^4 \theta$}
+    
+    \bad{$\cos(5\theta)= \cos^5\theta +10\cos^3\theta \sin^2\theta + 5\cos \theta\sin^4 \theta$}
+
+    \bad{$\sin(5\theta)= 5\cos^4\theta \sin\theta+10\cos^2\theta \sin^3\theta + \sin^5\theta$}
+
+    \good{$\sin(5\theta)= 5\cos^4\theta \sin\theta-10\cos^2\theta \sin^3\theta + \sin^5\theta$}
+\end{answers}
+\begin{explanations}
+On peut appliquer la formule de Moivre.
+
+\end{explanations}
+
+\end{question}
+
+
+%-------------------------------
+\subsection{Écritures algébrique et géométrique | Difficile | 104.01}
+
+\begin{question}
+\qtags{motcle=module/argument}
+
+Par définition, si  $x,y \in \Rr, \, e^{x+iy} = e^x \cdot e^{iy}= e^x (\cos y +i \sin y)$.
+
+Soit $z=e^{e^{i\theta}}$, où $\theta$ est un réel. Quelles sont les assertions vraies ?
+\begin{answers}
+    \bad{$|z|=1 $}
+    
+    \good{$|z|=e^{\cos \theta} $}
+    
+    \bad{$\arg z = \theta \,  [2\pi]$}
+
+    \good{$\arg z = \sin \theta \, [2\pi]$}
+
+\end{answers}
+\begin{explanations}
+$z= e^{\cos  \theta + i \sin \theta}= e^{\cos\theta}\cdot e^{i \sin \theta}.  $ Donc $|z|=e^{\cos \theta} $ et $\arg z = \sin \theta \, [2\pi]$.
+\end{explanations}
+
+\end{question}
+
+
+\begin{question} 
+\qtags{motcle=module/argument}
+
+Soit $z=1+ e^{i\theta},\theta \in ]-\pi,\pi[$. Quelles sont les assertions vraies ?
+\begin{answers}
+    \bad{$|z|=2 $}
+    
+    \good{$|z|=2\cos(\frac{\theta}{2}) $}
+    
+    \good{$\arg z =  \frac{\theta}{2} \, [2\pi]$}
+
+    \bad{$\arg z = \theta \, [2\pi]$}
+
+\end{answers}
+\begin{explanations}
+$z=e^{i\frac{\theta}{2}} (e^{i\frac{\theta}{2}} + e^{-i\frac{\theta}{2}}) = 2 \cos (\frac{\theta}{2}) e^{i\frac{\theta}{2}}$. Comme $\theta \in ]-\pi,\pi[$ ,  $\cos (\frac{\theta}{2})>0$. On déduit que : $|z|=2\cos (\frac{\theta}{2})$ et $\arg z =  \frac{\theta}{2} \, [2\pi]$.
+\end{explanations}
+
+\end{question}
+
+
+
+
+
+
+\begin{question} 
+\qtags{motcle=module/argument}
+
+Soit $z=e^{i\theta} + e^{i\phi} ,\theta, \phi \in \Rr$ tels que $-\pi < \theta - \phi < \pi$. Quelles sont les assertions vraies ?
+\begin{answers}
+    \bad{$|z|=2 $}
+    
+    \good{$|z|=2\cos (\frac{ \theta -\phi}{2}) $}
+    
+    \bad{$\arg z = \theta +\phi  \, [2\pi]$}
+
+    \good{$\arg z = \frac{\theta+ \phi}{2} \, [2\pi]$}
+
+\end{answers}
+\begin{explanations}
+$ z=e^{i\frac{\theta+\phi}{2}} (e^{i\frac{\theta-\phi}{2}} + e^{i\frac{\phi - \theta}{2}}) = 2 \cos (\frac{\theta-\phi}{2}) e^{i\frac{\theta+\phi}{2}}$. Comme $\theta-\phi \in ]-\pi,\pi[$,   $\cos (\frac{\theta-\phi}{2})>0$. On déduit que : $|z|=2\cos (\frac{\theta-\phi}{2})$ et $\arg z =  \frac{\theta+\phi}{2} \, [2\pi]$.
+\end{explanations}
+
+\end{question}
+
+
+
+
+
+
+\begin{question} 
+\qtags{motcle=module/argument}
+
+Soit $x\in \Rr\backslash \{2k\pi, k \in \Zz\}$, $n \in \Nn^*$, 
+$S_1= \sum_{k=0}^{n} \cos(kx)$ et $S_2= \sum_{k=0}^{n} \sin(kx)$. Quelles sont les assertions vraies ?
+\begin{answers}
+    \good{$S_1= \cos (\frac{nx}{2})\cdot  \frac{\sin (\frac{n+1}{2})x}{\sin (\frac{x}{2})}$}
+    
+    \bad{$S_1= \sin (\frac{nx}{2}) \cdot  \frac{\sin (\frac{n+1}{2})x}{\sin (\frac{x}{2})}$}
+    
+    
+    \good{$S_2=\sin (\frac{nx}{2}) \cdot  \frac{\sin (\frac{n+1}{2})x}{\sin (\frac{x}{2})}$}
+    
+    
+    \bad{$S_2= \cos (\frac{nx}{2}) \cdot  \frac{\sin (\frac{n+1}{2})x}{\sin (\frac{x}{2})}$}
+    
+
+\end{answers}
+\begin{explanations}
+On calcule la somme géométrique $\sum_{k=0}^{n} e^{ikx}= \sum_{k=0}^{n} (e^{ix})^k = \frac{1-e^{i(n+1)x}}{1-e^{ix}}=\frac{e^{i\frac{(n+1)x}{2}}(e^{-i\frac{(n+1)x}{2}}-e^{i\frac{(n+1)x}{2}})}{e^{i\frac{x}{2}}(e^{-i\frac{x}{2}}-e^{i\frac{x}{2}})}= e^{i\frac{nx}{2}}\cdot  \frac{\sin (\frac{n+1}{2})x}{\sin (\frac{x}{2})}$; puis, la partie réelle
+et imaginaire de cette somme.
+\end{explanations}
+
+\end{question}
+
+%-------------------------------
+\subsection{Équations | Facile | 104.02, 104.03, 104.04}
+
+
+
+
+\begin{question}
+\qtags{motcle=équations complexes}
+
+Les racines carrées de $i$ sont : 
+\begin{answers}
+    \bad{$\frac{1+i}{2}$ et $-\frac{1+i}{2}$}
+    \good{$\frac{1+i}{\sqrt 2}$ et $-\frac{1+i}{\sqrt 2}$}
+
+    \bad{$e^{\frac{i\pi}{4}}$ et $e^{\frac{-i\pi}{4}}$ }
+
+    \good{$e^{\frac{i\pi}{4}}$ et $-e^{\frac{i\pi}{4}}$}
+\end{answers}
+\begin{explanations}
+On résoud dans $\Cc$ l'équation : $z^2=i=e^{i\frac{\pi}{2}}$. 
+\end{explanations}
+
+\end{question}
+
+
+\begin{question}
+\qtags{motcle=équations complexes}
+
+On considère l'équation : $(E) : \, z^2+z+1=0$, $z\in \Cc$.   Quelles sont les assertions vraies ?
+\begin{answers}
+    \bad{Les solutions de $(E)$ sont : $z_1= \frac{-1+\sqrt5}{2}$ et $z_2= -\frac{1+\sqrt5}{2}$.}
+    
+    \good{Les solutions de $(E)$ sont : $z_1= \frac{-1+i\sqrt3}{2}$ et $z_2= -\frac{1+i\sqrt3}{2}$.}
+
+    \good{Les solutions de $(E)$ sont : $z_1= e^{\frac{2i\pi}{3}}$ et $z_2=e^{\frac{-2i\pi}{3}}$.}
+
+    \good{Si $z$ est une solution de $(E)$, alors $|z|=1$.}
+\end{answers}
+\begin{explanations}
+Les solutions complexes d'une équation du second degré $az^2+bz+c=0$ sont $z_1=\frac{-b+\delta}{2a}$ et  
+$z_1=\frac{-b-\delta}{2a}$, où $\delta$ est une racine carrée de $\Delta=b^2-4ac$.
+\end{explanations}
+
+\end{question}
+
+
+
+
+\begin{question}
+\qtags{motcle=équations complexes}
+ 
+Les racines cubiques de $1+i$ sont : 
+\begin{answers}
+    \bad{$z_k=\sqrt[3]{2}e^{i(\frac{\pi}{12}+\frac{2k\pi}{3})}, k=0,1,2$}
+    \good{$z_k=\sqrt[6]{2}e^{i(\frac{\pi}{12}+\frac{2k\pi}{3})}, k=0,1,2$}
+
+    \good{$z_k=\sqrt[6]{2}e^{i(\frac{\pi}{12}-\frac{2k\pi}{3})}, k=0,1,2$ }
+
+    \bad{$z_k=\sqrt[3]{2}e^{i(\frac{\pi}{12}-\frac{2k\pi}{3})}, k=0,1,2$}
+\end{answers}
+\begin{explanations}
+On résoud l'équation  : $z^3=1+i= \sqrt 2e^{i\frac{\pi}{4}}$.
+
+\end{explanations}
+
+\end{question}
+
+
+
+
+
+\begin{question}
+\qtags{motcle=module/argument}
+ 
+Soit $z\in \Cc$ tel que $|z-2|=1$.  Quelles sont les assertions vraies ?
+\begin{answers}
+    \bad{$z=3$}
+    \bad{ $z=1$}
+
+    \good{$z=2+e^{i\theta}$, $\theta \in \Rr$}
+
+    \good{Le point du plan d'affixe $z$ appartient au cercle de rayon $1$ et de centre le point d'affixe $2$.}
+\end{answers}
+\begin{explanations}
+$|z-2|=1$, donc $z-2=e^{i\theta}$, $\theta \in \Rr$.
+
+\end{explanations}
+
+\end{question}
+
+
+
+
+%-------------------------------
+\subsection{Équations | Moyen | 104.02, 104.03, 104.04}
+
+
+
+
+\begin{question}
+\qtags{motcle=équations complexes}
+ 
+On considère l'équation : $(E) : \, z^2-2iz-1-i=0$, $z\in \Cc$.   Quelles sont les assertions vraies ?
+\begin{answers}
+    \bad{Le discriminant de l'équation est : $\Delta = 8+4i$.}
+    
+    \good{Le discriminant de l'équation est : $\Delta = 4i$.}
+
+    \bad{les solutions de $(E)$ sont :  $z_1=\frac{\sqrt 2+ (1+\sqrt 2)i}{2}$ et $z_2=\frac{\sqrt 2+ (1-\sqrt 2)i}{2}$.}
+    
+    \good{les solutions de $(E)$ sont : $z_1=\frac{\sqrt 2+ (2+\sqrt 2)i}{2}$ et $z_2=\frac{-\sqrt 2+ (2-\sqrt 2)i}{2}$.}
+\end{answers}
+\begin{explanations}
+Utiliser la méthode de résolution d'une équation du second degré.
+\end{explanations}
+
+\end{question}
+
+
+
+\begin{question}
+\qtags{motcle=équations complexes}
+ 
+On considère l'équation : $(E) : \, z^2 = \frac{1+i}{\sqrt 2}$, $z\in \Cc$.   Quelles sont les assertions vraies ?
+\begin{answers}
+      
+    \bad{Si $z$ est une solution de $(E)$, $\arg z = \frac{\pi}{8} [2\pi]$.}
+    
+    \good{Les solutions de $(E)$ sont :  $z=e^{i\frac{\pi}{8}}$ et $z=-e^{i\frac{\pi}{8}}$.}
+
+    \good{$\cos(\frac{\pi}{8})= \frac{1}{2}\sqrt{2+\sqrt2}$ et 
+   $\sin(\frac{\pi}{8})= \frac{1}{2}\sqrt{2-\sqrt2}$}
+    
+    \bad{$\cos(\frac{\pi}{8})= \frac{1}{2}\sqrt{2-\sqrt2}$ et 
+   $\sin(\frac{\pi}{8})= \frac{1}{2}\sqrt{2+\sqrt2}$}
+    
+\end{answers}
+\begin{explanations}
+Utiliser l'écriture géométrique et algébrique pour résoudre l'équation et identifier la partie réelle et la partie imaginaire.
+\end{explanations}
+
+\end{question}
+
+
+\begin{question}
+\qtags{motcle=équations complexes}
+ 
+Les racines cubiques de $-8$ sont : 
+\begin{answers}
+   \good{$z_k= 2e^{i\frac{(2k+1)\pi}{3}}$, $k=1,2,3$}
+   
+   \good{$z_k= 2e^{i\frac{(2k-1)\pi}{3}}$, $k=0,1,2$}
+    
+   \bad{$z_k= -2e^{i\frac{(2k+1)\pi}{3}}$, $k=0,1,2$}
+
+   \good{$z_1= -2, z_2=2e^{i\frac{\pi}{3}}$ et $z_3=2e^{-i\frac{\pi}{3}}$}
+    
+\end{answers}
+\begin{explanations}
+On résout l'équation $z^3=-8 = 2^3e^{i\pi}$, en utilisant l'écriture géométrique.
+\end{explanations}
+
+\end{question}
+
+
+
+\begin{question} 
+\qtags{motcle=équations complexes}
+
+On considère l'équation : $(E) : \, z^5= \frac{1+i}{\sqrt 3-i}$, $z\in \Cc$.   Quelles sont les assertions vraies ?
+\begin{answers}
+    \bad{Si $z$ est une solution de $(E)$, $|z|=\frac{1}{\sqrt[5]{ 2}}$.}
+    
+    \good{Si $z$ est une solution de $(E)$, $|z|=\frac{1}{\sqrt[10] 2}$.}
+
+    \bad{Si $z$ est une solution de $(E)$, $\arg z=\frac{\pi}{12} \, [2\pi]$.}
+    
+    \good{Si $z$ est une solution de $(E)$, $\arg z=\frac{\pi}{12} + \frac{2k\pi}{5} \, [2\pi], \, k \in \Zz$.}
+\end{answers}
+\begin{explanations}
+Résoudre $ z^5= \frac{1+i}{\sqrt 3-i}= \frac{1}{\sqrt 2} e^{i\frac{5\pi}{12}}$, en utilisant l'écriture géométrique.
+\end{explanations}
+
+\end{question}
+
+
+
+
+
+\begin{question} 
+\qtags{motcle=module/argument}
+
+Soit $z\in \Cc$ tel que $|z-1|=|z+1|$ .  Quelles sont les assertions vraies ?
+\begin{answers}
+    \bad{$z=0$}
+    
+    \good{$z=ia$, $a\in \Rr$}
+
+    \bad{Le point du plan d'affixe $z$ appartient au cercle de rayon $1$ et de centre le point d'affixe $0$.}
+    
+    \good{Le point du plan d'affixe $z$ appartient à la médiatrice du segment $[A,B]$, où $A$ et $B$ sont les points d'affixe $-1$ et $1$ respectivement.}
+\end{answers}
+\begin{explanations}
+Soit $z$ tel que $|z-1|=|z+1|$, $M$ le point du plan d'affixe $z$,  $A$ et $B$ les points d'affixe $-1$ et $1$
+respectivement. Alors, $M$ est équidistant de $A$ et $B$.
+
+\end{explanations}
+
+\end{question}
+
+
+
+%-------------------------------
+\subsection{Équations | Difficile | 104.02, 104.03, 104.04}
+
+\begin{question} 
+\qtags{motcle=équations complexes}
+
+On considère l'équation $(E) :  \, (z^2+1)^2+z^2=0, \, z\in \Cc$. L'ensemble des solutions de $(E)$ est : 
+\begin{answers}
+    \good{ $\{ \pm \frac{1+\sqrt5}{2}i \, ,\,  \pm \frac{1-\sqrt5}{2}i\}$}
+    
+    
+    \bad{$\{\pm \frac{1+\sqrt5}{2} \, , \,  \pm \frac{1-\sqrt5}{2}\}$}
+    
+    \bad{$\{\pm \frac{1+\sqrt3}{2}i \, , \,  \pm \frac{1-\sqrt3}{2}i\}$}
+    
+    \bad{ $\{\pm \frac{1+\sqrt3}{2} \, , \,  \pm \frac{1-\sqrt3}{2}\}$}
+      
+
+\end{answers}
+\begin{explanations}
+Remarquer que $(z^2+1)^2+z^2= (z^2+1)^2 - (iz)^2= (z^2-iz+1)(z^2+iz+1)$. On peut aussi poser $Z=z^2$ et se ramener à une équation du second degré.
+\end{explanations}
+
+\end{question}
+
+
+
+\begin{question} 
+\qtags{motcle=équations complexes}
+
+On considère l'équation $(E) : \, z^8= \overline{z}, \, z\in \Cc$. Quelles sont les assertions vraies ?
+\begin{answers}
+    \bad{Si $z$ est une solution de $(E)$, alors $z=0$.}
+        
+    \good{Si $z$ est une solution de $(E)$, alors $z=0$ ou $|z|=1$.}
+    
+    \bad{L'équation $(E)$ admet $8$ solutions distinctes.}
+    
+    \good{Les solutions non nulles de $(E)$ sont les racines $9$-ièmes de l'unité.}
+     
+
+\end{answers}
+\begin{explanations}
+Remarquer que si $z$ est une solution  de $(E)$, $|z|^8=|\overline{z}|=|z|$, donc si $z$ n'est pas nul,  $|z|=1$.
+Par conséquent, $z$ est une solution non nulle de $(E)$ si et seulement si  $z^9=z\overline{z}=1$.
+\end{explanations}
+
+\end{question}
+
+
+
+\begin{question} 
+\qtags{motcle=équations complexes}
+
+Soit $n$ un entier $\ge 2$, $z_1,z_2, \dots, z_n$ les racines $n$-ièmes de l'unité. Quelles sont les assertions vraies ?
+\begin{answers}
+    \good{$z^n-1=(z-z_1)(z-z_2)\dots (z-z_n)$}
+    
+    \good{$z_1.z_2, \dots z_n = (-1)^{n-1}$ }
+    
+    \bad{$z_1+z_2+ \dots + z_n = 1$ }
+    
+    \good{$z_1+z_2+ \dots + z_n = 0$ }
+    
+    
+     
+
+\end{answers}
+\begin{explanations}
+$z_1,z_2, \dots, z_n$ sont les racines dans $\Cc$ du polynôme $P(X) =X^n-1$, donc $P(X)=(X-z_1)(X-z_2)\dots (X-z_n)$. 
+On examine le coefficient de $X^{n-1}$ et le coefficient constant.
+\end{explanations}
+
+\end{question}
+
+
+\begin{question} 
+\qtags{motcle=module/argument}
+
+Soit $E$ l'ensemble des points $M$ d'affixe $z$ tels que : $|\frac{z-1}{1+iz}|=\sqrt 2$. Quelles sont les assertions vraies ?
+\begin{answers}
+    \bad{$E$ est une droite.}
+    
+    \good{$E$ est un cercle.}
+    
+    \bad{$E=\emptyset$}
+    
+    \good{$E$ est le  cercle de rayon $2$ et de centre le point d'affixe $-1+2i$.}
+    
+    
+     
+
+\end{answers}
+\begin{explanations}
+Soit $z \neq i$. On a :  $|\frac{z-1}{1+iz}|=\sqrt 2 \Leftrightarrow |z-1|^2=2|1+iz|^2 \Leftrightarrow
+(z-1)(\overline{z}-1)=2 (1+iz)(1-i\overline{z})$. On développe cette dernière égalité.
+\end{explanations}
+
+\end{question}
+
+
+\begin{question} 
+\qtags{motcle=géométrie}
+
+Soit $E$ l'ensemble des points $M$ d'affixe $z$ tels que : $z+\frac{1}{z} \in \Rr$. Quelles sont les assertions vraies ?
+\begin{answers}
+    \bad{$E = \Rr^*$}
+    
+    \bad{$E$ est le cercle unité.}
+    
+    \good{$ E = \Rr^* \cup \{z\in \Cc; \, |z|=1\}$}
+    
+    \good{$E$ contient le cercle unité.}
+    
+    
+     
+
+\end{answers}
+\begin{explanations}
+Soit $z \neq 0$. On a :  $z+\frac{1}{z} \in \Rr \Leftrightarrow z+\frac{1}{z}  = \overline{z}+\frac{1}{\overline{z}}$. On multiplie par $z\overline{z}$ et on simplifie cette égalité. 
+
+\end{explanations}
+
+\end{question}
+
+
+\begin{question} 
+\qtags{motcle=géométrie}
+
+Soit $E$ l'ensemble des points $M$ d'affixe $z$ tels que $M$ et les points $A$ et $B$ d'affixe $i$ et $iz$ respectivement 
+soient alignés. Quelles sont les assertions vraies ?
+\begin{answers}
+    \bad{$E$ est la droite passant par les points d'affixe $i$ et $-1+i$ respectivement.}
+    
+    \good{$E$ est le cercle de rayon $\frac{1}{\sqrt 2}$  et de centre le point d'affixe $\frac{1}{2}(1+i)$.}
+    
+    \bad{$E$ est le cercle de rayon $\frac{1}{2}$  et de centre le point d'affixe $1+i$.}
+    
+    \bad{$E$ est la droite passant par les points d'affixe $-i$ et $1-i$ respectivement.}
+    
+    
+     
+
+\end{answers}
+\begin{explanations}
+$M(z), A(i)$ et $B(iz)$ sont alignés si et seulement si les vecteurs $\overrightarrow{AM}$ et $\overrightarrow{AB}$
+sont colinéaires. On pose $z=x+iy, \, x,y\in \Rr$. Les vecteurs $\overrightarrow{AM}$ et $\overrightarrow{AB}$ sont de coordonnées $(x,y-1)$ et $(-y,x-1)$ respectivement. $M(x+iy) \in E$ si et seulement si  $\det(\overrightarrow{AM},   \overrightarrow{AB})=0$. 
+
+\end{explanations}
+
+\end{question}
+
+
+
+

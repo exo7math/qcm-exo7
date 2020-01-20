@@ -1,0 +1,645 @@
+\qcmtitle{Logique -- Raisonnement}
+
+\qcmauthor{Arnaud Bodin, Abdellah Hanani, Mohamed Mzari}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Logique -- Raisonnement | 100}
+
+\qcmlink[cours]{http://exo7.emath.fr/cours/ch_logique.pdf}{Logique et raisonnements}
+
+\qcmlink[video]{http://youtu.be/aWSe1fjJHEM}{Logique}
+
+\qcmlink[video]{http://youtu.be/B-I5yZd0Wbk}{Raisonnements}
+
+\qcmlink[exercices]{http://exo7.emath.fr/ficpdf/fic00002.pdf}{Logique, ensembles, raisonnements}
+
+%-------------------------------
+\subsection{Logique | Facile | 100.01}
+
+
+\begin{question}
+\qtags{motcle=vrai/faux}
+
+Soit $P$ une assertion vraie et $Q$ une assertion fausse. Quelles sont les assertions vraies ?
+\begin{answers}
+    \good{$P$ ou $Q$}
+
+    \bad{$P$ et $Q$}
+
+    \bad{non($P$) ou $Q$}
+
+    \good{non($P$ et $Q$)}
+\end{answers}
+\begin{explanations}
+$P$ ou $Q$ est vraie. Comme $P$ et $Q$ est fausse alors non($P$ et $Q$) est vraie.
+\end{explanations}
+
+\end{question}
+
+
+\begin{question}
+\qtags{motcle=implication/équivalence}
+
+Par quoi peut-on compléter les pointillés pour avoir les deux assertions vraies ?
+$$x\ge 2 \quad \ldots \quad x^2 \ge 4  \qquad \qquad |y| \le 3 \quad \ldots \quad 0 \le y \le 3$$
+\begin{answers}
+    \bad{$\Longleftarrow$ et $\implies$}
+
+    \bad{$\implies$ et $\implies$}
+
+    \bad{$\Longleftarrow$ et $\implies$} 
+    
+    \good{$\implies$ et $\Longleftarrow$}
+\end{answers}
+\begin{explanations}
+Si $x\ge 2$ alors $x^2 \ge 4$, la réciproque est fausse.
+Si $0 \le y \le 3$ alors $|y| \le 3$, la réciproque est fausse.
+\end{explanations}
+\end{question}
+
+
+\begin{question}
+\qtags{motcle=pour tout/il existe}
+
+Quelles sont les assertions vraies ?
+\begin{answers}    
+    \bad{$\forall x \in \Rr \quad x^2-x \ge 0$} 
+
+    \good{$\forall n \in \Nn \quad n^2-n \ge 0$}
+
+    \good{$\forall x \in \Rr \quad |x^3-x| \ge 0$}
+
+    \good{$\forall n \in \Nn \setminus \{0,1\} \quad n^2-3 \ge 0$}
+\end{answers}
+\begin{explanations}
+Attention, $x^2-x$ est négatif pour $x=\frac12$ par exemple !
+\end{explanations}
+\end{question}
+
+
+\begin{question}
+\qtags{motcle=pour tout/il existe}
+
+Quelles sont les assertions vraies ?
+\begin{answers}  
+    \good{$\exists x>0 \quad \sqrt{x} = x$} 
+
+    \bad{$\exists x <0 \quad \exp(x) < 0$}
+
+    \bad{$\exists n \in \Nn \quad n^2 = 17$}
+ 
+    \good{$\exists z \in \Cc \quad z^2 = -4$}
+\end{answers}
+\begin{explanations}
+Oui il existe $x>0$ tel que $\sqrt{x} = x$, c'est $x=1$.
+\end{explanations}
+\end{question}
+
+
+\begin{question}
+\qtags{motcle=pour tout/il existe}
+
+Un groupe de coureurs $C$ chronomètre ses temps : $t(c)$ désigne le temps (en secondes) du coureur $c$.
+Dans ce groupe Valentin et Chloé ont réalisé le meilleur temps de $47$ secondes. Tom est déçu car il est arrivé troisième, avec un temps de $55$ secondes.
+À partir de ces informations, quelles sont les assertions dont on peut déduire qu'elles sont vraies ?
+\begin{answers}
+    \good{$\forall c \in C \quad t(c) \ge 47$}
+
+    \bad{$\exists c \in C \quad 47 < t(c) < 55$}
+
+    \good{$\exists c \in C \quad t(c) > 47$}
+
+    \bad{$\forall c \in C \quad t(c) \le 55$} 
+\end{answers}
+\begin{explanations}
+Comme Tom est troisième, il n'existe pas de $c$ tel que $47 < t(c) < 55$. 
+\end{explanations}
+\end{question}
+
+
+\begin{question}
+\qtags{motcle=pour tout/il existe}
+
+Quelles sont les assertions vraies ?
+\begin{answers}
+    \bad{La négation de "$\forall x > 0 \quad \ln(x) \le x$" est "$\exists x \le 0 \quad  \ln(x) \le x$".}
+
+    \good{La négation de "$\exists x > 0 \quad \ln(x^2) \neq x$" est "$\forall x > 0 \quad \ln(x^2) = x$".}
+
+    \bad{La négation de "$\forall x \ge 0 \quad \exp(x) \ge x$" est "$\exists x \ge 0 \quad  \exp(x) \le x$".}
+
+    \bad{La négation de "$\exists x > 0 \quad \exp(x) >  x$" est "$\forall x > 0 \quad \exp(x) < x$".}
+\end{answers}
+\begin{explanations}
+La négation de "$\forall x > 0 \quad P(x)$" est "$\exists x > 0 \quad$ non($P(x)$)".
+La négation de "$\exists x > 0 \quad P(x)$" est "$\forall x > 0 \quad$ non($P(x)$)".
+\end{explanations}
+\end{question}
+
+%-------------------------------
+\subsection{Logique | Moyen | 100.01}
+
+
+\begin{question}
+\qtags{motcle=vrai/faux}
+
+Soit $P$ une assertion fausse, $Q$ une assertion vraie et $R$ une assertion fausse. Quelles sont les assertions vraies ?
+\begin{answers}
+    \bad{$Q$ et ($P$ ou $R$)}
+
+    \bad{$P$ ou ($Q$ et $R$)}
+
+    \good{non($P$ et $Q$ et $R$)}
+
+    \good{($P$ ou $Q$) et ($Q$ ou $R$)}
+\end{answers}
+\begin{explanations}
+Il y a 8 possibilités à tester à chaque fois, selon que $P,Q,R$ soient vraies ou fausses.
+\end{explanations}
+\end{question}
+
+
+\begin{question}
+\qtags{motcle=vrai/faux}
+
+Soient $P$ et $Q$ deux assertions. Quelles sont les assertions toujours vraies (que $P$ et $Q$ soient vraies ou fausses)  ?
+\begin{answers}
+    \bad{$P$ et non($P$)}
+
+    \good{non($P$) ou $P$}
+
+    \bad{non($Q$) ou $P$}
+
+    \good{($P$ ou $Q$) ou ($P$ ou non($Q$))}
+\end{answers}
+\begin{explanations}
+On appelle une tautologie une assertion toujours vraie. C'est par exemple le cas de "non($P$) ou $P$", si $P$ est vraie, l'assertion est vraie, si $P$ est fausse, l'assertion est encore vraie !
+\end{explanations}
+\end{question}
+
+
+\begin{question}
+\qtags{motcle=implication/équivalence}
+
+Par quoi peut-on compléter les pointillés pour avoir une assertion vraie ?
+$$|x^2| < 5 \quad \ldots \quad -\sqrt{5} < x < \sqrt{5}$$
+\begin{answers}
+    \good{$\Longleftarrow$}
+
+    \good{$\implies$}
+
+    \good{$\iff$}
+
+    \bad{Aucune des réponses ci-dessus ne convient.} 
+\end{answers}
+\begin{explanations}
+C'est une équivalence, donc en particulier les implications dans les deux sens sont vraies !
+\end{explanations}
+\end{question}
+
+
+\begin{question}
+\qtags{motcle=implication/équivalence}
+
+À quoi est équivalent $P \implies Q$ ?
+\begin{answers}
+    \bad{non($P$) ou non($Q$)}
+
+    \bad{non($P$) et non($Q$)}
+
+    \good{non($P$) ou $Q$}
+
+    \bad{$P$ et non($Q$)}
+\end{answers}
+\begin{explanations}
+La définition (à connaître) de "$P \implies Q$" est "non($P$) ou $Q$".
+\end{explanations}
+\end{question}
+
+
+\begin{question}
+\qtags{motcle=pour tout/il existe}
+
+Soit $f : ]0,+\infty[ \to \Rr$ la fonction définie par $f(x) = \frac{1}{x}$. Quelles sont les assertions vraies ?
+\begin{answers}
+    \good{$\forall x \in ]0,+\infty[ \quad \exists y \in \Rr \qquad y = f(x)$}
+
+    \bad{$\exists x \in ]0,+\infty[ \quad \forall y \in \Rr \qquad y = f(x)$} 
+    
+    \good{$\exists x \in ]0,+\infty[ \quad \exists y \in \Rr \qquad y = f(x)$}
+
+    \bad{$\forall x \in ]0,+\infty[ \quad \forall y \in \Rr \qquad y = f(x)$}
+\end{answers}
+\begin{explanations}
+L'ordre des "pour tout" et "il existe" est très important.
+\end{explanations}
+\end{question}
+
+
+\begin{question}
+\qtags{motcle=pour tout/il existe}
+
+Le disque centré à l'origine de rayon $1$ est défini par 
+$$D = \left\{ (x,y) \in \Rr^2 \mid x^2+y^2 \le 1\right\}.$$
+Quelles sont les assertions vraies ?
+\begin{answers}
+    \bad{$\forall x \in [-1,1] \quad \forall y \in [-1,1] \qquad (x,y) \in D$}
+    
+    \good{$\exists x \in [-1,1] \quad \exists y \in [-1,1] \qquad (x,y) \in D$}
+
+    \good{$\exists x \in [-1,1] \quad \forall y \in [-1,1] \qquad (x,y) \in D$}
+
+    \good{$\forall x \in [-1,1] \quad \exists y \in [-1,1] \qquad (x,y) \in D$} 
+\end{answers}
+\begin{explanations}
+Faire un dessin permet de mieux comprendre la situation !
+\end{explanations}
+\end{question}
+
+
+
+%-------------------------------
+\subsection{Logique | Difficile | 100.01}
+
+
+\begin{question}
+\qtags{motcle=vrai/faux}
+
+On définit l'assertion "ou exclusif", noté "xou" en disant que "$P$ xou $Q$" est vraie lorsque $P$ est vraie, ou $Q$ est vraie, mais pas lorsque les deux sont vraies en même temps. Quelles sont les assertions vraies ?
+\begin{answers}
+    \bad{Si "$P$ ou $Q$" est vraie alors "$P$ xou $Q$" aussi.}
+
+    \good{Si "$P$ ou $Q$" est fausse alors "$P$ xou $Q$" aussi.}
+    
+    \good{"$P$ xou $Q$" est équivalent à "($P$ ou $Q$) et (non($P$) ou non($Q$))"}
+
+    \bad{"$P$ xou $Q$" est équivalent à "($P$ ou $Q$) ou (non($P$) ou non($Q$))"}
+\end{answers}
+\begin{explanations}
+Commencer par faire la table de vérité de "$P$ ou $Q$".
+\end{explanations}
+\end{question}
+
+
+\begin{question}
+\qtags{motcle=vrai/faux}
+
+Soient $P$ et $Q$ deux assertions. Quelles sont les assertions toujours vraies (que $P$, $Q$ soient vraies ou fausses)  ?
+\begin{answers}
+    \good{($P \implies Q$) ou ($Q \implies P$)}
+
+    \good{($P \implies Q$) ou ($P$ et non($Q$))}
+
+    \good{$P$ ou ($P \implies Q$)}
+
+    \bad{($P \iff Q$) ou (non($P$) $\iff$ non($Q$))}
+\end{answers}
+\begin{explanations}
+Tester les quatre possibilités selon que $P,Q$ sont vraies ou fausses.
+\end{explanations}
+\end{question}
+
+
+\begin{question}
+\qtags{motcle=implication/équivalence}
+
+À quoi est équivalent $P \Longleftarrow Q$ ?
+\begin{answers}  
+    \good{non($Q$) ou $P$}
+
+    \bad{non($Q$) et $P$}
+      
+    \bad{non($P$) ou $Q$}
+
+    \bad{non($P$) et $Q$}
+\end{answers}
+\begin{explanations}
+La définition (à connaître) de "$P \implies Q$" est "non($P$) ou $Q$".
+\end{explanations}
+\end{question}
+
+
+\begin{question}
+\qtags{motcle=pour tout/il existe}
+
+Soit $f : \Rr \to \Rr$ la fonction définie par $f(x)=\exp(x)-1$.
+Quelles sont les assertions vraies ?
+\begin{answers}
+    \good{$\forall x,x' \in \Rr  \qquad x \neq x' \implies f(x) \neq f(x')$}
+    \good{$\forall x,x' \in \Rr  \qquad x \neq x' \Longleftarrow f(x) \neq f(x')$}
+    \bad{$\forall x,x' \in \Rr  \qquad x \neq x' \implies (\exists y \in \Rr \quad f(x) < y < f(x'))$}
+    \good{$\forall x,x' \in \Rr  \qquad  f(x)\times f(x') < 0 \implies x\times x' < 0$}    
+\end{answers}
+\begin{explanations}
+Dessiner le graphe de $f$ pour mieux comprendre ! 
+Même si $f(x) \neq f(x')$ cela ne veut pas dire que $f(x) < f(x')$, l'inégalité pourrait être dans l'autre sens.
+\end{explanations}
+\end{question}
+
+
+\begin{question}
+\qtags{motcle=pour tout/il existe}
+
+On considère l'ensemble 
+$$E = \left\{ (x,y) \in \Rr^2 \mid 0 \le x \le 1 \text{ et } y \ge \sqrt{x}  \right\}.$$
+Quelles sont les assertions vraies ?
+\begin{answers}
+    \good{$\forall y \ge 0 \quad \exists x \in [0,1] \qquad (x,y) \in E$}
+    
+    \good{$\exists y \ge 0 \quad \forall x \in [0,1] \qquad (x,y) \in E$}
+
+    \bad{$\forall x \in [0,1] \quad \exists y \ge 0 \qquad (x,y) \notin E$}
+
+    \bad{$\forall x \in [0,1] \quad \forall y \ge 0 \qquad (x,y) \notin E$} 
+\end{answers}
+\begin{explanations}
+Faire un dessin de l'ensemble $E$.
+\end{explanations}
+\end{question}
+
+
+\begin{question}
+\qtags{motcle=pour tout/il existe}
+
+Soit $f : ]0,+\infty[ \to ]0,+\infty[$ une fonction.
+Quelles sont les assertions vraies ?
+\begin{answers}
+    \bad{La négation de "$\forall x > 0 \quad \exists y > 0 \quad y \neq f(x)$" est "$\exists x > 0 \quad \exists y > 0 \quad y = f(x)$".}
+    
+    \bad{La négation de "$\exists x > 0 \quad \forall y > 0 \quad y \times f(x)>0$" est "$\forall x > 0 \quad \exists y > 0 \quad y\times f(x) < 0$".}
+    
+    \bad{La négation de "$\forall x,x' > 0 \quad x \neq x' \implies f(x) \neq f(x')$" est "$\exists x,x' > 0 \quad x = x'$ et $f(x) = f(x')$".}
+
+    \good{La négation de "$\forall x,x' > 0 \quad f(x) = f(x') \implies x = x'$" est "$\exists x,x' > 0 \quad x \neq x'$ et $f(x) = f(x')$".}
+\end{answers}
+\begin{explanations}
+La négation du "$\forall x > 0 \quad \exists y > 0 \ldots$" commence par "$\exists x > 0 \quad \forall y > 0$.
+La négation de "$f(x) = f(x') \implies x = x'$" est "$f(x) = f(x')$ et $x \neq x'$".
+\end{explanations}
+\end{question}
+
+
+
+%-------------------------------
+\subsection{Raisonnement | Facile | 100.03, 100.04}
+
+
+\begin{question}
+\qtags{motcle=raisonnement}
+
+Je veux montrer que $\frac{n(n+1)}{2}$ est un entier, quelque soit $n\in\Nn$.  Quelles sont les démarches possibles ?
+\begin{answers}    
+    \bad{Montrer que la fonction $x \mapsto x(x+1)$ est paire.}
+    
+    \good{Séparer le cas $n$ pair, du cas $n$ impair.}
+
+    \bad{Par l'absurde, supposer que $\frac{n(n+1)}{2}$ est un réel, puis chercher une contradiction.}
+
+    \bad{Le résultat est faux, je cherche un contre-exemple.} 
+\end{answers}
+\begin{explanations}
+Séparer le cas $n$ pair, du cas $n$ impair. Dans le premier cas, on peut écrire $n=2k$ (avec $k\in \Nn$), dans le second cas $n=2k+1$, puis calculer $\frac{n(n+1)}{2}$. 
+\end{explanations}
+\end{question}
+
+
+\begin{question}
+\qtags{motcle=récurrence}
+
+\qkeeporder
+
+Je veux montrer par récurrence l'assertion $H_n : 2^n > 2n-1$, pour tout entier $n$ assez grand. Quelle étape d'initialisation est valable ?
+\begin{answers}
+    \bad{Je commence à $n=0$.}
+
+    \bad{Je commence à $n=1$.}
+
+    \good{Je commence à $n=2$.}
+
+    \good{Je commence à $n=3$.} 
+\end{answers}
+\begin{explanations}
+L'initialisation peut commencer à n'importe quel entier $n_0 \ge 2$.
+\end{explanations}
+\end{question}
+
+
+\begin{question}
+\qtags{motcle=récurrence}
+
+Je veux montrer par récurrence l'assertion $H_n : 2^n > 2n-1$, pour tout entier $n$ assez grand. Pour l'étape d'hérédité je suppose $H_n$ vraie, quelle(s) inégalité(s) dois-je maintenant démontrer ?
+\begin{answers}
+    \good{$2^{n+1} > 2n+1$}
+    
+    \bad{$2^{n} > 2n-1$}
+
+    \bad{$2^{n} > 2(n+1)-1$}
+
+    \bad{$2^{n}+1 > 2(n+1)-1$} 
+\end{answers}
+\begin{explanations}
+$H_{n+1}$ s'écrit $2^{n+1} > 2(n+1)-1$, c'est-à-dire $2^{n+1} > 2n+1$.
+\end{explanations}
+\end{question}
+
+
+\begin{question}
+\qtags{motcle=pour tout/il existe}
+
+Chercher un contre-exemple à une assertion du type 
+"$\forall x \in E$ l'assertion $P(x)$ est vraie" revient à prouver l'assertion :
+\begin{answers}
+    \bad{$\exists! x \in E \quad$ l'assertion $P(x)$ est fausse.}
+
+    \good{$\exists x \in E \quad$ l'assertion $P(x)$ est fausse.}
+    
+    \bad{$\forall x \notin E \quad$ l'assertion $P(x)$ est fausse.}     
+    
+    \bad{$\forall x \in E \quad$ l'assertion $P(x)$ est fausse.}
+\end{answers}
+\begin{explanations}
+Un contre-exemple, c'est trouver un $x$ qui ne vérifie pas $P(x)$. (Rien ne dit qu'il est unique.)
+\end{explanations}
+\end{question}
+
+
+
+%-------------------------------
+\subsection{Raisonnement | Moyen | 100.03, 100.04}
+
+
+
+\begin{question}
+\qtags{motcle=implication/équivalence}
+
+J'effectue le raisonnement suivant avec deux fonctions $f,g : \Rr \to \Rr$.
+$$\forall x \in \Rr \quad f(x)\times g(x) = 0$$ 
+$$\implies \forall x \in \Rr \quad \big(f(x) = 0 \text{ ou } g(x) = 0\big)$$
+$$\implies \big(\forall x \in \Rr \quad f(x) = 0\big) \ \text{ ou } \ \big(\forall x \in \Rr \quad g(x) = 0\big)$$
+\begin{answers}
+    \bad{Ce raisonnement est valide.}
+
+    \bad{Ce raisonnement est faux car la première implication est fausse.}
+
+    \good{Ce raisonnement est faux car la seconde implication est fausse.}
+
+    \bad{Ce raisonnement est faux car la première et la seconde implication sont fausses.}   
+\end{answers}
+\begin{explanations}
+On ne peut pas distribuer un "pour tout" avec un "ou". 
+\end{explanations}
+\end{question}
+
+
+\begin{question}
+\qtags{motcle=récurrence}
+
+Je souhaite montrer par récurrence une certaine assertion $H_n$, pour tout entier $n\ge0$.
+Quels sont les débuts valables pour la rédaction de l'étape d'hérédité ?
+\begin{answers}
+    \bad{Je suppose $H_n$ vraie pour tout $n\ge0$, et je montre que $H_{n+1}$ est vraie.}
+
+    \bad{Je suppose $H_{n-1}$ vraie pour tout $n\ge1$, et je montre que $H_{n}$ est vraie.}
+    
+    \good{Je fixe $n\ge0$, je suppose $H_n$ vraie, et je montre que $H_{n+1}$ est vraie.} 
+    
+    \bad{Je fixe $n\ge0$ et je montre que $H_{n+1}$ est vraie.}
+\end{answers}
+\begin{explanations}
+La récurrence a une rédaction très rigide. Sinon on raconte vite n'importe quoi !
+\end{explanations}
+\end{question}
+
+
+\begin{question}
+\qtags{motcle=récurrence}
+
+Je veux montrer que $e^x > x$ pour tout $x$ réel avec $x \ge 1$.
+L'initialisation est vraie pour $x=1$, car $e^1 = 2,718\ldots >1$.
+Pour l'hérédité, je suppose $e^x>x$ et je calcule :
+$$e^{x+1} = e^x \times e > x  \times e \ge x \times 2 \ge x + 1.$$
+Je conclus par le principe de récurrence.
+Pour quelles raisons cette preuve n'est pas valide ?
+\begin{answers}
+    \bad{Car il faudrait commencer l'initialisation à $x=0$.}
+
+    \good{Car $x$ est un réel.}
+    
+    \bad{Car l'inégalité $e^x > x$ est fausse pour $x\le0$.}
+
+    \bad{Car la suite d'inégalités est fausse.} 
+\end{answers}
+\begin{explanations}
+La récurrence c'est uniquement avec des entiers !
+\end{explanations}
+\end{question}
+
+
+\begin{question}
+\qtags{motcle=récurrence}
+
+Pour montrer que l'assertion 
+"$\forall n \in \Nn \quad n^2 > 3n-1$" est fausse,
+quels sont les arguments valables ?
+\begin{answers}
+    \bad{L'assertion est fausse, car pour $n=0$ l'inégalité est fausse.}
+
+    \good{L'assertion est fausse, car pour $n=1$ l'inégalité est fausse.}
+    
+    \good{L'assertion est fausse, car pour $n=2$ l'inégalité est fausse.}     
+    
+    \good{L'assertion est fausse, car pour $n=1$ et $n=2$ l'inégalité est fausse.}
+\end{answers}
+\begin{explanations}
+C'est faux pour $n=1$ et $n=2$, mais bien sûr, un seul cas suffit pour que l'assertion soit fausse. 
+\end{explanations}
+\end{question}
+
+
+
+
+
+%-------------------------------
+\subsection{Raisonnement | Difficile | 100.03, 100.04}
+
+
+\begin{question}
+\qtags{motcle=implication/équivalence}
+
+Le raisonnement par contraposée est basé
+sur le fait que "$P \implies Q$" est équivalent à:
+\begin{answers}
+    \bad{"non($P$) $\implies$ non($Q$)".}
+
+    \good{"non($Q$) $\implies$ non($P$)".}
+
+    \bad{"non($P$) ou $Q$".}
+
+    \bad{"$P$ ou non($Q$)".} 
+\end{answers}
+\begin{explanations}
+La contraposée de "$P \implies Q$" est "non($Q$) $\implies$ non($P$)".
+\end{explanations}
+\end{question}
+
+
+\begin{question}
+\qtags{motcle=implication/équivalence}
+
+Par quelle phrase puis-je remplacer la proposition logique "$P \Longleftarrow Q$" ?
+\begin{answers}
+    \good{"$P$ si $Q$"}
+
+    \bad{"$P$ seulement si $Q$"}
+
+    \bad{"$Q$ est une condition nécessaire pour obtenir $P$"}
+
+    \good{"$Q$ est une condition suffisante pour obtenir $P$"} 
+\end{answers}
+\begin{explanations}
+C'est plus facile si on comprend que "$P \Longleftarrow Q$", c'est "$Q \implies P$", autrement dit "si $Q$ est vraie, alors $P$ est vraie".
+\end{explanations}
+\end{question}
+
+
+\begin{question}
+\qtags{motcle=implication/équivalence}
+
+Quelles sont les assertions vraies ?
+\begin{answers}
+    \bad{La négation de "$P \implies Q$" est "non($Q$) ou $P$"}
+
+    \good{La réciproque de "$P \implies Q$" est "$Q \implies P$"}
+
+    \bad{La contraposée de "$P \implies Q$" est "non($P$) $\implies$ non($Q$)"}
+
+    \bad{L'assertion "$P \implies Q$" est équivalente à "non($P$) ou non($Q$)"} 
+\end{answers}
+\begin{explanations}
+Il faut revenir à la définition de "$P \implies Q$" qui est "non($P$) ou $Q$".
+\end{explanations}
+\end{question}
+
+
+\begin{question}
+\qtags{motcle=raisonnement}
+
+Je veux montrer que $\sqrt{13} \notin \Qq$ par un raisonnement par l'absurde. Quel schéma de raisonnement est adapté ?
+\begin{answers}
+    \good{Je suppose que $\sqrt{13}$ est rationnel et je cherche une contradiction.}
+
+    \bad{Je suppose que $\sqrt{13}$ est irrationnel et je cherche une contradiction.}
+
+    \bad{J'écris $13 = \frac{p}{q}$ (avec $p,q$ entiers) et je cherche une contradiction.}
+    
+    \good{J'écris $\sqrt{13} = \frac{p}{q}$ (avec $p,q$ entiers) et je cherche une contradiction.}
+\end{answers}
+\begin{explanations}
+Par l'absurde on suppose que $\sqrt{13} \in \Qq$, c'est-à-dire que c'est un nombre rationnel, autrement dit qu'il s'écrit $\frac{p}{q}$, avec $p$, $q$ entiers. Voir la preuve que $\sqrt{2} \notin \Qq$.
+\end{explanations}
+\end{question}
+
+
+
+
