@@ -53,11 +53,9 @@ Vous trouverez toutes les explications ici :
 Ce qui n'est pas le but ici : gérer de beaux questionnaires papiers (c'est le but d'AMC), ni des questionnaires web (moodle et autres le font). De plus, aucun élément de barème n'apparaît dans l'énoncé des questions/réponses. 
 
 
-<img src="Exo7.png" height="100">
-
-![Logo Unisciel](logo-unisciel.png | height= 100 "logo Unisciel")
-
-![Logo Lille](ulnom_300.png | height= 100 "logo Lille")
+<img src="Exo7.png" height="200">
+<img src="logo-unisciel.png" height="200">
+<img src="ulnom_300.png" height="200">
 
 Les documents sont diffusés sous la licence *Creative Commons -- BY-NC-SA -- 4.0 FR*.
 
