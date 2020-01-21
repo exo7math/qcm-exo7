@@ -47,13 +47,13 @@ En résumé, vous pouvez:
   * créer des questions en LaTeX,
   * les exporter vers d'autres formats (AMC, yaml, xml, moodle, scenarii).
 
-Vous trouverez toues les explications ici :
+Vous trouverez toutes les explications ici :
 [exo7qcm-readme.pdf](https://github.com/exo7math/qcm-exo7/blob/master/exo7qcm-readme.pdf)
 
 Ce qui n'est pas le but ici : gérer de beaux questionnaires papiers (c'est le but d'AMC), ni des questionnaires web (moodle et autres le font). De plus, aucun élément de barème n'apparaît dans l'énoncé des questions/réponses. 
 
 
-![Logo Exo7](exo7.svg.png "logo Exo7")
+![Logo Exo7](Exo7.png "logo Exo7")
 
 Les documents sont diffusés sous la licence *Creative Commons -- BY-NC-SA -- 4.0 FR*.
 
