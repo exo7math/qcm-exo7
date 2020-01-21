@@ -54,6 +54,8 @@ Ce qui n'est pas le but ici : gérer de beaux questionnaires papiers (c'est le b
 
 
 ![Logo Exo7](Exo7.png "logo Exo7")
+![Logo Unisciel](logo-unisciel.png "logo Unisciel")
+![Logo Lille](ulnom_300.png "logo Lille")
 
 Les documents sont diffusés sous la licence *Creative Commons -- BY-NC-SA -- 4.0 FR*.
 
