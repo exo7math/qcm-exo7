@@ -418,8 +418,10 @@ if output_format == 'moodle':
 
 #        if 'id' in data.keys():
 #            myid = str(data['id'])
+        single = False
 
         if 'type' in data.keys() and ( data['type'] == 'onlyone'  or data['type'] == 'truefalse' ):
+            single = True
             out.write('\n\n<question type="multichoice">\n')
         else:
             out.write('\n\n<question type="multichoice">\n')
@@ -627,7 +629,11 @@ if output_format == 'moodle':
 #                out.write('    \\correctchoice{'+value+'}\n')
 #            else:    
 #                out.write('    \\wrongchoice{'+value+'}\n')
-        out.write('<single>false</single>\n')  
+        if single:
+            out.write('<single>true</single>\n')  
+        else:
+            out.write('<single>false</single>\n')  
+            
         out.write('</question>')
 
     out.write(endmoodle)
