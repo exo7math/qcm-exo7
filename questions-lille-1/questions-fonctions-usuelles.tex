@@ -622,8 +622,6 @@ Soit $f$ une fonction définie par l'équation $(E)$ : $ \arcsin f(x) + \arcsin 
     \good{$f$ est une bijection de $[0,1]$ dans $[0,1]$.}
 \end{answers}
 \begin{explanations}
-
-\end{explanations}
 la fonction $x \to \arcsin x$ est définie sur $[-1,1]$ et prend ses valeurs dans $[-\frac{\pi}{2}, \frac{\pi}{2}]$. Si $-1\le x <0$, $-\frac{\pi}{2}  \le  \arcsin x <0$ et si $0\le  x \le 1$, $0\le   \arcsin x \le  \frac{\pi}{2}$. On déduit que $f$ n'est pas définie si  $-1\le x <0$.
 
 Soit $x \in [0,1]$, on a : $(E) \Rightarrow f(x)= \sin (\frac{\pi}{2} - \arcsin x) = \cos (\arcsin x) = \pm \sqrt{1-x^2} $. Or $\arcsin x \in [-\frac{\pi}{2}, \frac{\pi}{2}] $ et la fonction cosinus est positive sur $[-\frac{\pi}{2}, \frac{\pi}{2}] $, donc $(E) \Rightarrow f(x)= \sqrt{1-x^2}$. 
@@ -631,6 +629,7 @@ Soit $x \in [0,1]$, on a : $(E) \Rightarrow f(x)= \sin (\frac{\pi}{2} - \arcsin 
 Réciproquement, on considère la fonction $g$ définie sur $[0,1]$ par : $g(x) =  \arcsin  \sqrt{1-x^2} + \arcsin x$. $g$ est dérivable sur $]0,1[$ et $g'(x)= 0$. Comme $g$ est continue sur $[0,1]$,  $g$ est constante sur cet intervalle et en identifiant en $0$, on obtient $g(x)= \frac{\pi}{2},$ pour tout $x \in [0,1]$. On déduit que $f(x) = \sqrt{1-x^2}$, pour tout $x \in [0,1]$. 
 
 Soit $x, y \in [0,1]$, on a : $y=\sqrt{1-x^2} \Leftrightarrow x = \sqrt{1-y^2}$. Donc $f$ est une bijection de $[0,1]$ dans $[0,1]$ et $f^{-1} = f$.
+\end{explanations}
 \end{question}
 
 
@@ -674,17 +673,17 @@ Soit $f(x)= \arccos (\frac{1-x^2}{1+x^2})$. On notera $D_f$ le domaine de défin
 
     \bad{$D_f=[-1,1]$}
 
-    \good{$ f(x)= 2\arctan x+2\pi, \, \forall x\le 0$}
+    \good{$ f(x)= 2\arctan x, \, \forall x\ge 0$}
 
-    \good{$f(x)  = -2\arctan |x|+2\pi, \, \forall x \in \Rr$}
+    \good{$f(x)  = 2\arctan |x|, \, \forall x \in \Rr$}
 \end{answers}
 \begin{explanations}
 $f$ est définie si $-1\le \frac{1-x^2}{1+x^2} \le 1 $, ce qui est le cas pour tout $x \in \Rr$.
-
-$f$ est dérivable sur $\Rr^*$ et $f'(x) = -\frac{2x}{|x|(1+x^2)} =\left\{\begin{array}{cc}-\frac{2}{1+x^2},& \mbox{si} \, x>0 \\ \frac{2}{1+x^2},& \mbox{si} \, x<0 \end{array}\right. $. Comme $f$ est continue sur $\Rr$, on déduit que : 
-$f(x)= \left\{\begin{array}{cc}-2\arctan x + c_1, & \mbox{si} \, x\ge 0 \\ 2\arctan x + c_2, & \mbox{si} \, x\le 0 \end{array}\right. $, où $c_1$ et $ c_2$  sont des constantes.
-En identifiant en $+\infty$ et en $-\infty$, on obtient : 
-$f(x)= \left\{\begin{array}{cc}-2\arctan x+2\pi, & \mbox{si} \, x\ge 0 \\ 2\arctan x +2\pi, & \mbox{si} \, x\le 0 \end{array}\right.$.  Donc $f(x)  = -2\arctan |x|+2\pi, \, \forall x \in \Rr$.
+$f$ est dérivable sur $\Rr^*$ et $f'(x) = \frac{2x}{|x|(1+x^2)} =\left\{\begin{array}{cc}\frac{2}{1+x^2},& \mbox{si} \, x>0 \\ -\frac{2}{1+x^2},& \mbox{si} \, x<0 \end{array}\right. $. 
+On déduit que 
+$f(x)= \left\{\begin{array}{cc}2\arctan x + c_1, & \mbox{si} \, x\ge 0 \\ -2\arctan x + c_2, & \mbox{si} \, x\le 0 \end{array}\right. $, où $c_1$ et $ c_2$  sont des constantes.
+Comme $f$ est continue en $0$ (ou par identification en $+\infty$ et en $-\infty$), on obtient $c_1=c_2=0$. Ainsi 
+$f(x)= \left\{\begin{array}{cc}2\arctan x, & \mbox{si} \, x\ge 0 \\ -2\arctan x, & \mbox{si} \, x\le 0 \end{array}\right.$.  Donc $f(x)  = 2\arctan |x|, \, \forall x \in \Rr$.
 
 \end{explanations}
 
