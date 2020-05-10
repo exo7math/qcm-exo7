@@ -3,10 +3,9 @@
 \documentclass[12pt,a4paper]{article}
 
 \usepackage[francais]{../exo7qcm}
-%\usepackage[francais,nosolutions]{exo7qcm}
+%\usepackage[francais,nosolutions]{../exo7qcm}
 
 \begin{document}
-
  
  
 %%%%%%%%%%%%%%%%%% ENTETE %%%%%%%%%%%%%%%%%%
@@ -14,11 +13,11 @@
 \LogoExoSept{2}
 
 %\kern-2em
-\hfill\textsf{Ann\'ee 2017}
+\hfill\textbf{Ann\'ee 2021}
 
 \vspace*{0.5ex}
 \hrule\vspace*{1.5ex} 
-\hfil\textsf{\textbf{\Large QCM de mathématiques}}
+\hfil\textsc{\textbf{\Large QCM de mathématiques}}
 \vspace*{1ex} \hrule 
 \vspace*{5ex} 
 
@@ -101,7 +100,7 @@ Test de question avec titre et je ne sais pas. Et avec tags. Variante de la ques
 
 Test de question avec explications et classification, type de questionnaire. [Ceci n'est pas un titre]
 
-Ceci est une equation :
+Ceci est une équation :
 $$\sum_{i=1}^n \frac{i}{n}=\int$$
 
 Une image : 
@@ -121,7 +120,7 @@ C'était pourtant pas si dur...
 
 \end{question}
 
-\section{\emph{Feedback} pour chaque question}
+\section{Feedback pour chaque question}
 
 \begin{question}
 
@@ -149,5 +148,65 @@ Et voici l'explications globale...
 \end{explanations}
 
 \end{question}
+
+\section{Réponse numérique}
+
+\begin{question}[Réponse numérique simple]
+\qtype{numerical}
+\qtolerance{0}
+
+% Voici la question :
+Combien font $6\times 7$ ?
+
+% Et voici les réponses (qui ne s'afficheront pas en même temps que la question) :
+\begin{answers}       
+\good{42}
+\end{answers}
+
+\end{question}
+
+
+
+\begin{question}[Plusieurs réponses plus ou moins vraies]
+\qtype{numerical}
+\qtolerance{0}
+
+Quelle est la plus petite solution de $x^2=9$ ?
+
+\begin{answers}       
+\good{-3
+\feedback{Bravo !}
+}
+\good{3
+\feedback{Vous vous êtes trompé de signe ! Vous aurez quand même $50\%$ des points.}
+\score{50}  % Obtient quand même 50% des points
+}
+\bad{0
+\feedback{N'importe quoi ! Zéros points.}
+}
+\end{answers}
+
+\end{question}
+
+
+
+\begin{question}[Avec marge d'erreur]
+\qtype{numerical}
+\qtolerance{1000}
+
+Quelle est la vitesse de la lumière (en km/s) ?
+
+% Et voici les réponses (qui ne s'afficheront pas en même temps que la question) :
+\begin{answers}       
+\good{300000\feedback{Bravo !}}
+\end{answers}
+
+\begin{explanations}
+C'est $299792,458$ km/s.
+\end{explanations}
+
+\end{question}
+
+
 
 \end{document}

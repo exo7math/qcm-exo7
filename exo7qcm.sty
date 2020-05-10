@@ -1,6 +1,5 @@
 \ProvidesPackage{exo7qcm}
 
-
 % Option de langage
 \newif\if@francais     \@francaisfalse
 \DeclareOption{francais}{\@francaistrue}
@@ -35,8 +34,6 @@
 \usepackage[charter]{mathdesign}
 
 
-
-
 % Language: by default English
 \def\nameQuestion{Question}
 \def\nameExplanations{Explanations}
@@ -44,7 +41,7 @@
 \def\nameBad{Bad}
 \def\nameIdontknow{I don't know.}
 \def\nameFeedback{Feedback}
-
+\def\nameScore{Score}
 
 \if@francais
   \def\nameQuestion{Question}
@@ -53,6 +50,7 @@
   \def\nameBad{Faux}
   \def\nameIdontknow{Je ne sais pas.}
   \def\nameFeedback{Réaction}
+  \def\nameScore{Score}
 \fi
 
 
@@ -114,9 +112,6 @@
 % ----------------------------------------------------------------------
 % Personnalisation pour les théorèmes,...
 
-
-
-
 \newtheoremstyle{qcmexo7}% name
 {5ex}% space above
 {5ex}% space below
@@ -166,26 +161,49 @@
 \def\myqkeeporder{0}
 \def\myqoneline{0}
 \def\myqidontknow{0}
+\def\myqtolerance{0}
 \renewcommand{\labelitemi}{\large$\square$}
 \begin{ques}
 }{
+\if@nosolutions
+\ifthenelse{\equal{\myqtype}{numerical}}{
+\medskip\emph{Votre réponse :} 
+\raisebox{-8pt}{\framebox(150,25){}}
+}{}
+\fi
 \par
 \footnotesize\texttt{\hfill%
 \ifthenelse{\equal{\myqnum}{}}{}{[\#\myqnum]\quad}
 %\ifthenelse{\equal{\myqtype}{}}{}{[type: \myqtype]\quad}
 \ifthenelse{\equal{\myqauthor}{}}{}{[author: \myqauthor]\quad}
+\ifthenelse{\equal{\myqtype}{numerical}}{[tolerance: \myqtolerance]\quad}{}
 \ifthenelse{\equal{\myqclassification}{}}{}{[class: \myqclassification]\quad}
 %\ifthenelse{\equal{\myqtags}{}}{}{[tags: \myqtags]\quad}
 }
 \end{ques}
 }
 
+
+
+
 \newenvironment{answers}{
+\if@nosolutions
+\ifthenelse{\equal{\myqtype}{numerical}}{}{\begin{itemize}}
+\else
+%\ifthenelse{\equal{\myqtype}{numerical}}{}{}
 \ifthenelse{\equal{\myqoneline}{0}}{\begin{itemize}}{\begin{center}\begin{itemize*}}
+\fi
 }
 {
+\if@nosolutions
+\ifthenelse{\equal{\myqtype}{numerical}}{}{\end{itemize}}
+\else
 \ifthenelse{\equal{\myqidontknow}{0}}{}{\item \nameIdontknow}
 \ifthenelse{\equal{\myqoneline}{0}}{\end{itemize}}{\end{itemize*}\end{center}}
+\fi
+%\if@nosolutions
+%\ifthenelse{\equal{\myqtype}{numerical}}{Fin coucou}{}
+%\fi
 }   
  
  
@@ -196,12 +214,13 @@
 \fi
 
 \if@nosolutions
-\newcommand{\good}[1]{\item #1}
-\newcommand{\bad}[1]{\item #1}
+\newcommand{\good}[1]{\ifthenelse{\equal{\myqtype}{numerical}}{}{\item #1}}
+\newcommand{\bad}[1]{\ifthenelse{\equal{\myqtype}{numerical}}{}{\item #1}}
 \else
 \newcommand{\good}[1]{\item~[\nameGood] #1}
 \newcommand{\bad}[1]{\item~[\nameBad] #1}
 \fi
+
 %\newcommand{\good}[1]{\ifthenelse{@nosolutions}{\item~[\nameGood] #1}{\item #1}}
 %\newcommand{\bad}[1]{\ifthenelse{@nosolutions}{\item~[\nameBad] #1}{\item #1}}
 %\newcommand{\good}[1]{\item~[\nameGood] #1}
@@ -211,6 +230,12 @@
 \newcommand{\feedback}[1]{}
 \else
 \newcommand{\feedback}[1]{\newline\emph{\nameFeedback: #1}}
+\fi
+
+\if@nosolutions
+\newcommand{\score}[1]{}
+\else
+\newcommand{\score}[1]{\newline\emph{\nameScore: #1}}
 \fi
 
 \newcommand{\qid}[1]{\def\myqid{#1}}
@@ -224,6 +249,7 @@
 \newcommand{\qidontknow}{\def\myqidontknow{1}}
 \newcommand{\qsection}{}    % Will be filled automatically
 \newcommand{\qsubsection}{} % Idem
+\newcommand{\qtolerance}[1]{\def\myqtolerance{#1}}
 %\newcommand{\qtitle}[1]{\def\myqtitle{#1}}
 
 %\newcommand{\qimage}[2][]{\ifthenelse{\equal{#2}{}}{\includegraphics{#2}}{\includegraphics[#1]{#2}}}

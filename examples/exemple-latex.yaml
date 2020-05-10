@@ -3,6 +3,7 @@ id: 1234
 
 author: exo7
 
+section: Questions originales
 
 question: |
         Combien font \(2^{10}\) ?
@@ -21,12 +22,13 @@ answers:
       correct: False
 
     - value: |
-        \(\int 10^{10}\)
+        \(\int_0^1 10^{t} dt\)
       correct: False
 
 ---
 author: exo8
 
+section: Questions originales
 
 question: |
         Sachant que \(2+2=2\times 2\), 
@@ -49,6 +51,7 @@ title: Ceci est le \(x^{10}\) titre
 
 author: exo7
 
+section: Questions originales
 
 question: |
         Test de question avec titre. Et une fonction \(f : \Rr \to \Cc\).
@@ -69,12 +72,16 @@ title:  Autre question très \(\int\)
 
 author: toto
 
-tags: L1, facile, test
+section: Questions originales
+
+tags:
+    - tag: L1
+    - tag:  facile
+    - tag:  test
 
 keeporder: True
 
 idontknow: True
-
 
 question: |
         Test de question avec titre et je ne sais pas. Et avec tags. Variante de la question précédente.
@@ -93,22 +100,20 @@ id: lille.L1.integrale
 
 author: zorro
 
+section: Images
+
 classification: 127.01,132.08
 
 type: onlyone
 
 oneline: True
 
-image: 
-    - file: exemple-image
-      options: height=3cm
-
 question: |
         Test de question avec explications et classification, type de questionnaire. [Ceci n'est pas un titre]
-        Ceci est une equation :
+        Ceci est une équation :
         \[\sum_{i=1}^n \frac{i}{n}=\int\]
-        Une image (toujours en fin de d'énoncé) : 
-        
+        Une image : 
+        \qimage[height=3cm]{exemple-image}
 
 answers: 
     - value: |
@@ -116,9 +121,109 @@ answers:
       correct: False
 
     - value: |
-        Coucou \(\frac{x}{y}\).
+        Coucou \(\frac{x}{y}\). \qimage[height=1cm]{exemple-image}
       correct: True
 
 explanations: |
         C'était pourtant pas si dur...
+
+---
+section: Feedback pour chaque question
+
+question: |
+        Voici une question avec un feedback pour chaque réponse.
+        Qu'est-ce qu'un kilo-octet ?
+
+answers: 
+    - value: |
+        Un octet qui a pris trop de poids.
+      correct: False
+      feedback: |
+        Vous avez le sens de l'humour !
+
+    - value: |
+        \(1000\) octets.
+      correct: True
+      feedback: |
+        Oui ! Dans le système international le préfixe "kilo" signifie \(1000\).
+
+    - value: |
+        \(1024\) octets.
+      correct: True
+      feedback: |
+        Non ! \(1024\) octets s'appelle un "kibioctet", abrégé en kio.
+
+explanations: |
+        Et voici l'explications globale...
+
+---
+title: Réponse numérique simple
+
+section: Réponse numérique
+
+type: numerical
+
+tolerance: 0
+
+question: |
+        Combien font \(6\times 7\) ?
+
+answers: 
+    - value: |
+        42
+      correct: True
+
+---
+title: Plusieurs réponses plus ou moins vraies
+
+section: Réponse numérique
+
+type: numerical
+
+tolerance: 0
+
+question: |
+        Quelle est la plus petite solution de \(x^2=9\) ?
+
+answers: 
+    - value: |
+        -3
+      correct: True
+      feedback: |
+        Bravo !
+
+    - value: |
+        3
+      correct: True
+      feedback: |
+        Vous vous êtes trompé de signe ! Vous aurez quand même \(50\%\) des points.
+      score: 50
+
+    - value: |
+        0
+      correct: False
+      feedback: |
+        N'importe quoi ! Zéros points.
+
+---
+title: Avec marge d'erreur
+
+section: Réponse numérique
+
+type: numerical
+
+tolerance: 1000
+
+question: |
+        Quelle est la vitesse de la lumière (en km/s) ?
+
+answers: 
+    - value: |
+        300000
+      correct: True
+      feedback: |
+        Bravo !
+
+explanations: |
+        C'est \(299792,458\) km/s.
 
