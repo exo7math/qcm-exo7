@@ -155,7 +155,7 @@ Soit $P$ une assertion fausse, $Q$ une assertion vraie et $R$ une assertion faus
     \good{($P$ ou $Q$) et ($Q$ ou $R$)}
 \end{answers}
 \begin{explanations}
-Il y a 8 possibilités à tester à chaque fois, selon que $P,Q,R$ soient vraies ou fausses.
+Il suffit de remplacer $P$ par "faux", $Q$ par "vrai" et $R$ par "faux". Par exemple "$Q$ et ($P$ ou $R$)" devient "vrai et (faux ou faux)", qui est la même chose que "vrai et faux", qui est donc "faux".
 \end{explanations}
 \end{question}
 
@@ -409,18 +409,18 @@ Séparer le cas $n$ pair, du cas $n$ impair. Dans le premier cas, on peut écrir
 
 \qkeeporder
 
-Je veux montrer par récurrence l'assertion $H_n : 2^n > 2n-1$, pour tout entier $n$ assez grand. Quelle étape d'initialisation est valable ?
+Je veux montrer par récurrence l'assertion $H_n : 2^n > 2n+1$, pour tout entier $n$ assez grand. Quelle étape d'initialisation est valable ?
 \begin{answers}
     \bad{Je commence à $n=0$.}
 
     \bad{Je commence à $n=1$.}
 
-    \good{Je commence à $n=2$.}
+    \bad{Je commence à $n=2$.}
 
     \good{Je commence à $n=3$.} 
 \end{answers}
 \begin{explanations}
-L'initialisation peut commencer à n'importe quel entier $n_0 \ge 2$.
+L'initialisation peut commencer à n'importe quel entier $n_0 \ge 3$.
 \end{explanations}
 \end{question}
 
@@ -428,18 +428,18 @@ L'initialisation peut commencer à n'importe quel entier $n_0 \ge 2$.
 \begin{question}
 \qtags{motcle=récurrence}
 
-Je veux montrer par récurrence l'assertion $H_n : 2^n > 2n-1$, pour tout entier $n$ assez grand. Pour l'étape d'hérédité je suppose $H_n$ vraie, quelle(s) inégalité(s) dois-je maintenant démontrer ?
+Je veux montrer par récurrence l'assertion $H_n : 2^n > 2n+1$, pour tout entier $n$ assez grand. Pour l'étape d'hérédité je suppose $H_n$ vraie, quelle(s) inégalité(s) dois-je maintenant démontrer ?
 \begin{answers}
-    \good{$2^{n+1} > 2n+1$}
+    \good{$2^{n+1} > 2n+3$}
     
-    \bad{$2^{n} > 2n-1$}
+    \bad{$2^{n} > 2n+1$}
 
-    \bad{$2^{n} > 2(n+1)-1$}
+    \bad{$2^{n} > 2(n+1)+1$}
 
-    \bad{$2^{n}+1 > 2(n+1)-1$} 
+    \bad{$2^{n}+1 > 2(n+1)+1$} 
 \end{answers}
 \begin{explanations}
-$H_{n+1}$ s'écrit $2^{n+1} > 2(n+1)-1$, c'est-à-dire $2^{n+1} > 2n+1$.
+$H_{n+1}$ s'écrit $2^{n+1} > 2(n+1)+1$, c'est-à-dire $2^{n+1} > 2n+3$.
 \end{explanations}
 \end{question}
 
