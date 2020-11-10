@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 
 # Convert a LaTeX file to yaml file
-# Usage : 'python3 latextoyaml.py toto.tex'
+# Usage : 'python latextoyaml.py toto.tex'
 # Output : create a file toto.yaml
 
 import argparse
