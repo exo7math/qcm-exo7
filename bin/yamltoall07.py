@@ -220,9 +220,9 @@ if output_format == "tex":
 # --------------------------------------------------
 
 def replace_latex_macros(text):
-    """Replace custom LaTeX macro for non-LaTeX export
-
-    :param text: 
+    """
+    Replace custom LaTeX macro for non-LaTeX export
+    :param text:
 
     """
 
@@ -399,7 +399,7 @@ if output_format == "amc":
 
                 correct = answers["correct"]
 
-                if correct == 'True':
+                if correct == True:
                     out.write("    \\correctchoice{" + value + "}\n")
                 else:
                     out.write("    \\wrongchoice{" + value + "}\n")
