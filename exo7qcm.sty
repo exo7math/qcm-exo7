@@ -15,6 +15,7 @@
 \usepackage[francais]{babel}
 \usepackage{tikz}
 \usepackage{graphicx}
+\usepackage{multicol}
 
 
 % Format de la page
@@ -160,6 +161,7 @@
 \def\myqclassification{}
 \def\myqkeeporder{0}
 \def\myqoneline{0}
+\def\mymulticols{0}
 \def\myqidontknow{0}
 \def\myqtolerance{0}
 \renewcommand{\labelitemi}{\large$\square$}
@@ -167,7 +169,7 @@
 }{
 \if@nosolutions
 \ifthenelse{\equal{\myqtype}{numerical}}{
-\medskip\emph{Votre réponse :} 
+\medskip\emph{Votre réponse :}
 \raisebox{-8pt}{\framebox(150,25){}}
 }{}
 \fi
@@ -185,13 +187,20 @@
 
 
 
-
 \newenvironment{answers}{
 \if@nosolutions
 \ifthenelse{\equal{\myqtype}{numerical}}{}{\begin{itemize}}
 \else
 %\ifthenelse{\equal{\myqtype}{numerical}}{}{}
-\ifthenelse{\equal{\myqoneline}{0}}{\begin{itemize}}{\begin{center}\begin{itemize*}}
+
+\ifthenelse{\equal{\myqoneline}{0}}{%
+    \ifthenelse{\equal{\mymulticols}{0}}{%
+                                          \begin{itemize}%
+                                        }{%
+                                          \begin{multicols}{2}\begin{itemize}%
+                                            }
+                                      }{%
+                                        \begin{center}\begin{itemize*}}
 \fi
 }
 {
@@ -199,15 +208,19 @@
 \ifthenelse{\equal{\myqtype}{numerical}}{}{\end{itemize}}
 \else
 \ifthenelse{\equal{\myqidontknow}{0}}{}{\item \nameIdontknow}
-\ifthenelse{\equal{\myqoneline}{0}}{\end{itemize}}{\end{itemize*}\end{center}}
+
+\ifthenelse{\equal{\myqoneline}{0}}{%
+                                              \ifthenelse{\equal{\mymulticols}{0}}{\end{itemize}}{\end{itemize}\end{multicols}}}%
+                                             {\end{itemize*}\end{center}}
 \fi
+
 %\if@nosolutions
 %\ifthenelse{\equal{\myqtype}{numerical}}{Fin coucou}{}
 %\fi
-}   
- 
- 
-% Explanations (if \nosolutions not called by user) 
+}
+
+
+% Explanations (if \nosolutions not called by user)
 \newenvironment{explanations}{\vspace*{-2ex}~\\\emph{\nameExplanations :}}{}
 \if@nosolutions
 \excludecomment{explanations}
@@ -258,16 +271,16 @@
 % Title and author of a list of questions
 \newcommand{\qcmtitle}[1]{
 \vspace*{0.5ex}
-\hrule\vspace*{1.5ex} 
+\hrule\vspace*{1.5ex}
 \hfil{\textbf{\Large #1}}
-\vspace*{1ex} \hrule 
+\vspace*{1ex} \hrule
 \vspace*{5ex}
 }
 \newcommand{\qcmauthor}[1]{
 \vspace*{0ex}
-\hrule\vspace*{1.5ex} 
+\hrule\vspace*{1.5ex}
 \hfil{\textbf{\large #1}}
-\vspace*{1ex} \hrule 
+\vspace*{1ex} \hrule
 \vspace*{5ex}
 }
 
