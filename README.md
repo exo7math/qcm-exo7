@@ -10,9 +10,9 @@ Vous trouverez ici deux choses :
 
 Nouvautés
 =========
-* Afficher les réponses sur deux colonnes (Vincent Ledda, janvier 2020)
-* Conversion vers le format 'latex-moodle' afin de compiler directement du code Latex vers un export moodle via le package 'moodle' (https://ctan.org/pkg/moodle) (janvier 2020)
-* Les 720 questions de Lille sont directement disponibles au format 'yaml' et 'latex-moodle' (janvier 2020).
+* Afficher les réponses sur deux colonnes (Vincent Ledda, janvier 2021)
+* Conversion vers le format 'latex-moodle' afin de compiler directement du code Latex vers un export moodle via le package 'moodle' (https://ctan.org/pkg/moodle) (janvier 2021)
+* Les 720 questions de Lille sont directement disponibles au format 'yaml' et 'latex-moodle' (janvier 2021).
 
 Questions
 =========
