@@ -83,7 +83,10 @@ stream.close()
 #             print("It's false\n")  
 
 def split_section(title):
-    """ From a title like 'section | facile | 123.0' to a list of words (without code nb) """
+    """ From a title like 'section | facile | 123.0' to a list of words (without code nb) 
+    :param title: Le titre sous la forme 'section | facile | 123.0'
+    """
+    
     title_split = title.split('|')
     title_split_bis = []
     for t in title_split:
@@ -187,9 +190,11 @@ if output_format == 'tex':
 
 #--------------------------------------------------
 #--------------------------------------------------
-# Replace custom LaTeX macro for non-LaTeX export
-def replace_latex_macros(text):
 
+def replace_latex_macros(text):
+    """Replace custom LaTeX macro for non-LaTeX export
+        :param text: 
+    """
     # Replace \Rr to \mathbf{R} ...
     text = re.sub(r"\\Nn(?=[^a-zA-Z])",r"\\mathbf{N}",text, flags=re.MULTILINE|re.DOTALL)
     text = re.sub(r"\\Zz(?=[^a-zA-Z])",r"\\mathbf{Z}",text, flags=re.MULTILINE|re.DOTALL)
@@ -233,9 +238,14 @@ def replace_latex_macros(text):
 # text = replace_latex_macros(text)
 # print(text)
 
-# Delete the code from the section title 
-# Example "My Section | Easy | 123.45" -> "My Section | Easy"
+
 def delete_exo7_category(text):
+    """Delete the code from the section title
+    
+        Example "My Section | Easy | 123.45" -> "My Section | Easy"
+    
+    :param text: 
+    """
     text = re.sub(r"\s\|\s[0-9.,\s]+","",text, flags=re.MULTILINE|re.DOTALL)
 
     return text
@@ -255,8 +265,13 @@ def delete_exo7_category(text):
 
 #--------------------------------------------------
 #--------------------------------------------------
-# Random word generator (from stackoverflow)
+
 def id_generator(size=6, chars=string.ascii_lowercase):
+    """Random word generator (from stackoverflow)
+        :param size: lenght of the id (Default value = 6)
+         :param chars: alphabet (Default value = string.ascii_lowercase)
+    """
+        
     return ''.join(random.choice(chars) for _ in range(size))
 
 #--------------------------------------------------
@@ -351,17 +366,22 @@ if output_format == 'amc':
 #                   MOODLE
 # Write data to a xml file in a moodle format 
 
-# Encode an image to be included in xml
 def encode_image(filename):
+    """
+     Encode an image to be included in xml
+     :param filename: name of the image without .png
+    """
     filename =  filename + '.png'
     with open(filename, "rb") as image_file:
         encoded = base64.b64encode(image_file.read()).decode('ascii')
     data = '</p><p>\n<img style="max-width:100%; margin: 10px auto;" src="data:image/png;base64,'+encoded+'"/>\n'
     return data
 
-# Replace all input of images by their encoding
-def replace_images(data):
 
+def replace_images(data):
+    """Replace all input of images by their encoding
+        :param data:
+    """
     # the image without options : idem
     theimage = re.search(r'\\qimage',data, flags=re.MULTILINE|re.DOTALL)
 
@@ -642,10 +662,16 @@ if output_format == 'moodle':
 #--------------------------------------------------
 #--------------------------------------------------
 #                 FAQ2SCIENCES (f2s)
-# Write data to a xml file in a Scenari / faq2sciences format
+#--------------------------------------------------
 
 
 def f2sxmlcleanup(data):
+    
+    """
+    Write data to a xml file in a Scenari / faq2sciences format
+    :param data:
+    """
+    
     data = html.escape(data)
     data = re.sub(r'\$(.*?)\$', r'<sc:textLeaf role="mathtex">\1</sc:textLeaf>', data)
     data = re.sub(r'\\\[(.*?)\\\]', r'<sc:textLeaf role="mathtex">\1</sc:textLeaf>', data)

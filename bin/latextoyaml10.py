@@ -45,9 +45,11 @@ fic.close()
 
 
 
-#--------------------------------------------------
-# Add indentation at each line
 def add_space(text):
+    """
+     Add indentation at each line
+    :param text: string
+    """
     indent = ' '*8
     #re.sub(r'^[^a]*','')
     #print('Before\n'+text)
@@ -64,9 +66,10 @@ def add_space(text):
 #print(spacetext) 
 
 
-#--------------------------------------------------
-# Convert a text with dollars to text with \( \) or \[ \]
 def dollars_to_tags(text):
+    """Convert a text with dollars to text with \( \) or \[ \]
+    :param text: texte contenant des formules de mathématiques codées en LaTeX
+    """
     # Substitute $$ to \[ \]
     text2 = re.sub("\\$\\$(.+?)\\$\\$","\\\\[\\g<1>\\\\]",text, flags=re.MULTILINE|re.DOTALL)
     # Substitute $ to \( \)
@@ -81,9 +84,12 @@ def dollars_to_tags(text):
 #print('\n\n'+newtext)
 
 
-#--------------------------------------------------
-# Convert one LaTeX exercice to a yaml block
 def one_exo_to_yaml(text_exo,qcmdict={}):
+    """Convert one LaTeX exercice to a yaml block
+    
+    :param text_exo: param qcmdict:  (Default value = {})
+    :param qcmdict: Default value = {})
+    """
 
     # delete the comments at the end of a line after a '%', except for \% !!
     text_exo = re.sub("[^\\\\]%(.*)","",text_exo,flags=re.MULTILINE)
