@@ -231,6 +231,10 @@ if output_format == 'latexmoodle':
         else:
             out.write('{Question}\n')
 
+        # Question
+        out.write(replace_special_character(data['question'])+'\n')
+
+        # Answers
         for answer in data['answers']:
             value = replace_special_character(answer['value'])
             value = value.rstrip()  #re.sub('[\s]*$','',text,flags=re.MULTILINE) # Delete potential space at the end

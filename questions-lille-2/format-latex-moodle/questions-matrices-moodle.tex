@@ -3,6 +3,8 @@
 \begin{multi}[multiple,feedback=
 {La somme de deux matrices est définie si les deux matrices admettent la même taille. Dans ce cas, on a \(A+B=B+A\). Le produit \(AB\) de deux matrices est défini si le nombre de colonnes de \(A\) est égal au nombre de lignes de \(B\). Le produit n'est pas commutatif.
 }]{Question}
+Soit \(A\) et \(B\) deux matrices. Quelles sont les assertions vraies ?
+
     \item* Si la matrice \(A+B\) est définie, alors \(B+A\) est définie
     \item Si la matrice \(A+B\) est définie, alors \(AB\) est définie
     \item Si la matrice \(AB\) est définie, alors \(BA\) est définie
@@ -13,6 +15,25 @@
 \begin{multi}[multiple,feedback=
 {On a : \(2A-B=C\), \(AB=D\) et \(BA =  \left(\begin{array}{rc}4&6\\-2&-2 \end{array}\right)\).
 }]{Question}
+On considère les matrices : 
+\[A=  
+\left(\begin{array}{rc}
+1&2\\
+3&4\end{array}\right),\; B=  
+\left(\begin{array}{rc}
+1&1\\
+1&-1\end{array}\right),\; C=  
+\left(\begin{array}{rc}
+1&3\\
+5&9\end{array}\right),\; D=  
+\left(\begin{array}{rc}
+3&-1\\
+7&-1\end{array}\right)\mbox{ et }E=  
+\left(\begin{array}{rc}
+4&6\\
+-2&2\end{array}\right).\] 
+Quelles sont les assertions vraies ?
+
     \item* \(2A-B=C\)
     \item* \(AB=D\)
     \item \(BA=E\)
@@ -23,6 +44,17 @@
 \begin{multi}[multiple,feedback=
 {Les opérations \(A+B\) et \(CA\) ne sont pas définies.
 }]{Question}
+On considère les matrices : 
+\[A=\left(\begin{array}{rcc}
+1&1&2\end{array}\right),\; B=  
+\left(\begin{array}{rc}1\\-1\\ 1
+\end{array}\right),\; C=  
+\left(\begin{array}{rcc}
+1&3&1\\ 1&1&1
+\end{array}\right),\; D= \left(\begin{array}{rc}
+0&1\\ 1&-1\\ 2&1 \end{array}\right)\mbox{ et }E=\left(\begin{array}{rc}5&-1\\3&1\end{array}\right).\]
+Quelles sont les assertions vraies ?
+
     \item \(A+B=B\)
     \item* \(AB=\left(\begin{array}{rc}2\\ \end{array}\right)\)
     \item \(CA=\left(\begin{array}{rc}6\\ 2\\\end{array}\right)\)
@@ -35,6 +67,8 @@
 \vskip0mm
 Pour \(1\le i\le n\) et \(1\le j\le m\), on note \(D_{i,j}\) la matrice dont le coefficient située à la ième ligne et jième colonne est \(1\) et les autres coefficients sont nuls. Alors, \(\{D_{i,j}\; ; \; 1\le i\le n, 1\le j\le m\}\) est une base de \(M_{n,m} (\Rr)\). Par conséquent, \(\dim M_{n,m} (\Rr) = mn \).
 }]{Question}
+On considère \(M_{n,m} (\Rr)\) l'ensemble des matrices à \(n\) lignes et \(m\) colonnes, à  coefficients dans \(\Rr\), muni de l'addition usuelle et la multiplication par un scalaire. Quelles sont les assertions vraies ?
+
     \item* \(M_{n,m} (\Rr)\) est un espace vectoriel
     \item* \(\dim M_{n,m} (\Rr) = mn \)
     \item \(\dim M_{n,m} (\Rr) = m+n \)
@@ -52,6 +86,20 @@ Pour \(1\le i\le n\) et \(1\le j\le m\), on note \(D_{i,j}\) la matrice dont le 
 0&4&2\\ -3&1&1\\
 -1&1&-4\end{array}\right).\)
 }]{Question}
+On considère les matrices : 
+\[A=  
+\left(\begin{array}{rcc}
+1&1&2\\
+-1&0&2\\
+1&-1&1\\
+\end{array}\right) \quad \mbox{et} \quad 
+B=    
+\left(\begin{array}{rcc}
+1&1&-1\\
+1&1&3\\
+-1&1&0\end{array}\right). \]
+Quelles sont les assertions vraies ?
+
     \item* \(2A+3B=
 \left(\begin{array}{rcc}
 5&5&1\\
@@ -77,6 +125,15 @@ Pour \(1\le i\le n\) et \(1\le j\le m\), on note \(D_{i,j}\) la matrice dont le 
 {On a :  \(A\,^tC=  
 \left(\begin{array}{rc}3&4\end{array}\right).\)
 }]{Question}
+On considère les matrices : 
+\[A=  \left(\begin{array}{rcc}1&2&4\\\end{array}\right) \; , \; 
+B=    \left(\begin{array}{r}0\\1\\-1\\
+\end{array}\right) \; , \;  C=\left(\begin{array}{rcc}
+1&-1&1\\0&0&1\\
+\end{array}\right) \quad  \mbox{et} \quad  D= \left(\begin{array}{rcc}1&-1&0\\2&1&1\\0&2&1\\
+\end{array}\right).\]
+On notera \(^tM\) la transposée d'une matrice \(M\). Quelles sont les assertions vraies ?
+
     \item* \(A+\, ^tB = \left(\begin{array}{rcc}
 1&3&3\end{array}\right).\)
     \item* \(B\, ^tB=\left(\begin{array}{rccc}
@@ -97,6 +154,8 @@ Pour \(1\le i\le n\) et \(1\le j\le m\), on note \(D_{i,j}\) la matrice dont le 
 \left(\begin{array}{rc}0&0\\
 1&0\end{array}\right)\) on a : \(A^2=0\). Le produit de deux matrices est associatif et distributif par rapport à l'addition. Comme le produit n'est pas commutatif, en général, \((A+B)^2=A^2+AB+BA+B^2 \neq A^2+2AB+B^2\).
 }]{Question}
+Soit \(A,B\) et \(C\) des matrices d'ordre \(n\ge 1\). Quelles sont les assertions vraies ?
+
     \item \(AB=0 \Rightarrow A=0 \, \mbox{ou} \,  B=0\)
     \item \(A(BC) =(AC)B\)
     \item* \(A(B+C)=AC+AB\)
@@ -108,6 +167,11 @@ Pour \(1\le i\le n\) et \(1\le j\le m\), on note \(D_{i,j}\) la matrice dont le 
 {On vérifie que pour tout entier \(n\ge 1\),
 \(A^n=2^{n-1}A\, , \, (A-I)^{2n}= I\) et \((A-I)^{2n+1}= A-I\).
 }]{Question}
+Soit \(A=\left(\begin{array}{rc}
+1&1\\1&1\end{array}\right) \) et \(I=  \left(\begin{array}{rc}
+1&0\\0&1\end{array}\right) \), la matrice identité. 
+Quelles sont les assertions vraies ?
+
     \item* \(A^2=2A\)
     \item \(A^n=2^nA\), pour tout entier \(n \ge 1\)
     \item* \((A-I)^{2n}= I\), pour tout entier \(n \ge 1\)
@@ -118,6 +182,18 @@ Pour \(1\le i\le n\) et \(1\le j\le m\), on note \(D_{i,j}\) la matrice dont le 
 \begin{multi}[multiple,feedback=
 {Le rang d'une matrice est le nombre maximum de vecteurs colonnes ou lignes qui sont linéairement indépendants. Le rang de \(A\) est \(1\), le rang de \(B\) est \(1\), le rang de \(C\) est \(3\) et le rang de \(D\) est \(2\).
 }]{Question}
+On considère les matrices : 
+\[A=  \left(\begin{array}{rcc}
+1&0&1\\\end{array}\right),\quad B=  
+\left(\begin{array}{rcc}2&-4\\
+1&-2\\ 0&0\\
+\end{array}\right),\quad C=  
+\left(\begin{array}{rcc}1&0&0\\1&1&1\\ 0&1&2\\ 
+\end{array}\right)\quad \mbox{et}\quad D=  
+\left(\begin{array}{rcc}1&0&1\\1&1&0\\ 0&1&-1\\ 
+\end{array}\right). \]
+Quelles sont les assertions vraies ?
+
     \item Le rang de \(A\) est \(3\)
     \item* Le rang de \(B\) est \(1\)
     \item* Le rang de \(C\) est \(3\)
@@ -130,6 +206,10 @@ Pour \(1\le i\le n\) et \(1\le j\le m\), on note \(D_{i,j}\) la matrice dont le 
 1&0\\0&1\\ \end{array}\right), \; \left(\begin{array}{rc}
 0&1\\0&0\\ \end{array}\right)\right \}\) est une base de \(E\). Donc \(\dim E = 2\).
 }]{Question}
+Soit \(E= \Big\{M=\left(\begin{array}{rc}
+a&b\\0&a\\ \end{array}\right) \mid a,b \in \Rr \Big\}\). 
+Quelles sont les assertions vraies ?
+
     \item \(E\) n'est pas un espace vectoriel
     \item \(E\) est un esapce vectoriel de dimension \(1\)
     \item \(E\) est un esapce vectoriel de dimension \( 4\)
@@ -146,6 +226,8 @@ et que \(\left \{\left(\begin{array}{rc} 1&0\\
 -1&-1\\ \end{array}\right), \;  \left(\begin{array}{rc}
 0&1\\ 1&0\\ \end{array}\right) \right \}\) est  une base de \(E\). Donc \(\dim E = 2\).
 }]{Question}
+Soit \(E=\Big\{M =\left(\begin{array}{rc}a-b&a-c\\b-c&b-a\end{array}\right)\mid a,b,c\in \Rr\Big\}\). Quelles sont les assertions vraies ?
+
     \item \(E\) n'est pas un espace vectoriel
     \item \(E\) est un espace vectoriel de dimension \(3\)
     \item* \(E\) est un espace vectoriel de dimension \(2\)
@@ -156,6 +238,14 @@ et que \(\left \{\left(\begin{array}{rc} 1&0\\
 \begin{multi}[multiple,feedback=
 {On vérifie que \(f\) est une application linéaire, \(\ker f =\{0\}\) et \(\Im f = M_2(\Rr)\). Donc \(\dim \ker f = 0\) et \( \dim \Im f = 4\).
 }]{Question}
+Soit \( M_2(\Rr)\) l'ensemble des matrices carrées d'ordre \(2\) à coefficients réels  et 
+\(f\) l'application  définie par :
+\[\begin{array}{rccc}f:&M_2(\Rr)&\to& M_2(\Rr)\\
+& M = \left(\begin{array}{rc}a&b\\ c&d\\ 
+\end{array}\right) &\to &^tM = \left(\begin{array}{rc}
+a&c\\b&d\\ \end{array}\right),  \end{array}\]
+où \(^tM\) est la transposée de \(M\). Quelles sont les assertions vraies ?
+
     \item* \(f\) est une application linéaire
     \item \(\dim \ker f = 1\)
     \item* \(\dim \ker f = 0\)
@@ -166,6 +256,8 @@ et que \(\left \{\left(\begin{array}{rc} 1&0\\
 \begin{multi}[multiple,feedback=
 {Le rang d'une matrice est le nombre maximum de vecteurs colonnes ou  lignes qui sont linéairement indépendants.
 }]{Question}
+Soit \(A\) une matrice de rang \(r\). Quelles sont les assertions vraies ?
+
     \item* \(A\) admet \(r\) vecteurs colonnes linéairement indépendants
     \item* \(A\) admet \(r\) vecteurs lignes linéairement indépendants
     \item Toute famille contenant \(r\) vecteurs colonnes de \(A\) est libre
@@ -178,6 +270,9 @@ et que \(\left \{\left(\begin{array}{rc} 1&0\\
 \vskip0mm
 Soit \(M \in \Rr_2(\Rr)\). On vérifie que si \(MM'=M'M,\) pour toute matrice \(M'\) de \( E\), alors \(M\in E\).
 }]{Question}
+Soit \(E=\Big\{M = \left(\begin{array}{rc}a&b\\
+0&a\end{array}\right)\mid a,b\in\Rr \Big\}\). Quelles sont les assertions vraies ?
+
     \item* \(E\) est stable par addition
     \item* \(E\) est stable par multiplication de matrices
     \item la multiplication de matrices de \(E\) n'est pas commutative
@@ -194,6 +289,12 @@ Donc la famille \(\left\{\left(\begin{array}{rc}
 0&1\\ 0&0\\ \end{array}\right), \; \left(\begin{array}{rc}
 0&0\\ 1&0\\ \end{array}\right) \right\}\) est une base de \(\ker f\) et \(\dim \ker f=3\). Or, d'après le théorème du rang, \(\dim \Im f=1=\dim \Rr\) et comme \(\Im f\) est un sous-espace vectoriel de \(\Rr\), donc \(\Im f=\Rr\).
 }]{Question}
+Soit \( M_2(\Rr)\) l'ensemble des matrices carrées d'ordre \(2\) à coefficients réels et \(f\) l'application  définie par :
+\[\begin{array}{rccc}f:&M_2(\Rr)&\to& \Rr\\
+& M = \left(\begin{array}{rc} a&b\\
+c&d\\  \end{array}\right) &\to &\mbox{tr}(M) = a+d, \end{array}\]
+le réel \(\mbox{tr}(M)\) est appelée la trace de \(M\). Quelles sont les assertions vraies ?
+
     \item* \(f\) est une application linéaire
     \item* \(\dim \ker f = 3\)
     \item \(\dim \Im f = 2\)
@@ -207,6 +308,15 @@ a&b\\b&d\\ \end{array}\right) \; ; \; a,b,d \in \Rr \right \}\) et
 \(\Im f = \left\{ \left(\begin{array}{rc}0&\alpha\\-\alpha&0\\ 
 \end{array}\right) \; ; \; \alpha \in \Rr  \right \}\). On  déduit que  \(\dim \ker f=3\) et \(\dim \Im f = 1\).
 }]{Question}
+Soit \( M_2(\Rr)\) l'ensemble des matrices carrées d'ordre \(2\) à coefficients réels et 
+\(f\) l'application  définie par :
+\[\begin{array}{rccc}f:&M_2(\Rr)&\to& M_2(\Rr)\\
+& M = \left(\begin{array}{rc}
+a&b\\c&d\\ \end{array}\right) &\to &M- \, ^t M = 
+\left(\begin{array}{rc}0&b-c\\c-b&0\\ 
+\end{array}\right),  \end{array}\]
+\(^tM\) est la transposée de \(M\). Quelles sont les assertions vraies ?
+
     \item* \(f\) est une application linéaire
     \item* \(\dim \ker f = 3\)
     \item \(\dim \Im f = 2\)
@@ -221,6 +331,10 @@ a&b\\b&d\\ \end{array}\right) \; ; \; a,b,d \in \Rr \right \}\) et
 \vskip0mm
 On a : \(A= N+aI\). Comme le produit des matrices \(N\) et \(aI\) est commutatif, on peut appliquer la formule du binôme pour le calcul des puissances de \(A\).
 }]{Question}
+Soit \(a,b\in \Rr\), \(A=\left(\begin{array}{rcc}a&1&b\\0&a&2\\ 0&0&a\\ 
+\end{array}\right)\) et  \(N= A-aI\), où \(I= \left(\begin{array}{rcc}
+1&0&0\\0&1&0\\ 0&0&1\\ \end{array}\right)\). Quelles sont les assertions vraies ?
+
     \item* \(N^k = 0\), pour tout entier \(k\ge 3\)
     \item On ne peut pas appliquer la formule du binôme pour le calcul de \(A^n\)
     \item* Pour tout entier \(n \ge 2,\) \(\displaystyle A^n =a^nI+na^{n-1}N+\frac{n(n-1)}{2}a^{n-2}N^2 \)
@@ -248,6 +362,16 @@ v_n&=&v_0+2nw_0\\
 w_n&=&w_0. \\
 \end{array}\right.\]
 }]{Question}
+Soit \(A= \left(\begin{array}{rcc}1&2&3\\0&1&2\\ 0&0&1\\ 
+\end{array}\right)\) et  \(N= A-I\), où \(I= \left(\begin{array}{rcc}
+1&0&0\\0&1&0\\ 0&0&1\\ \end{array}\right).\)\\
+On considère \(3\) suites récurrentes  \((u_n)_{n\ge 0}\), \((v_n)_{n\ge 0}\) et \((w_n)_{n\ge 0}\) définies par \(u_0,v_0,w_0\) des réels donnés et pour \(n\ge 1\) :
+\[(\mathtt{S})\left\{\begin{array}{rcc}
+u_n&=&u_{n-1}+2v_{n-1}+3w_{n-1}\\
+v_n&=&v_{n-1}+2w_{n-1}\\ w_n&=&w_{n-1}. \\
+\end{array}\right.\]
+Quelles sont les assertions vraies ?
+
     \item \(N^k = 0\), pour tout entier \(k\ge 2\)
     \item* Pour tout entier \(n \ge 2,\) \(A^n =I+nN+\frac{n(n-1)}{2}N^2  \)
     \item Pour tout entier \(n \ge 0,\)
@@ -277,6 +401,10 @@ Soit \(M=\left(\begin{array}{rc}a&b\\c&d\end{array}\right)\) telle que \( ^tM = 
 \vskip0mm
 On vérifie que \(E\cap F=\{0_E\}\) et en utilisant le théorème de la dimension d'une somme, on déduit que \(E\) et \(F\) sont supplémentaires dans \( M_2(\Rr)\).
 }]{Question}
+On note \( M_2(\Rr)\) l'espace des matrices carrées d'ordre \(2\) à coefficients réels. Soit 
+\[E= \{M \in M_2(\Rr)\mid ^tM = M\} \quad \mbox{et}\quad F= \{M \in M_2(\Rr) \; ; \;  ^tM = -M\},\]
+où \(^tM\)  désigne la transposée de \(M\). Quelles sont les assertions vraies ?
+
     \item* \(E\) est un espace vectoriel de dimension \(3\)
     \item \(E\) est un espace vectoriel de dimension \(2\)
     \item* \(F\) est un espace vectoriel de dimension \(1\)
@@ -288,6 +416,17 @@ On vérifie que \(E\cap F=\{0_E\}\) et en utilisant le théorème de la dimensio
 {On vérifie que \(B_1+B_3=B_2+B_4\) et que \(\{B_1,B_2,B_3\}\) est une famille libre. Donc 
 \(\dim \mbox{Vect} {\cal {B'}}=3\).
 }]{Question}
+Dans \(M_2(\Rr)\) l'espace vectoriel des matrices carrées d'ordre \(2\) à coefficients réels, on considère la famille \({\cal {B'}}= \{ B_1,B_2,B_3,B_4\}\), où 
+\[ B_1 = \left(\begin{array}{rc}1&1\\
+0&0\\ \end{array}\right) \; , \; B_2 = \left(\begin{array}{rc}
+0&1\\0&1\\ 
+\end{array}\right) \; , \; B_3 = \left(\begin{array}{rc}
+0&0\\1&1\\ 
+\end{array}\right) \; ,\; B_4 = \left(\begin{array}{rc}
+1&0\\1&0\\ 
+\end{array}\right).\]
+Quelles sont les assertions vraies ?
+
     \item \({\cal {B'}}\) est une famille libre de \(M_2(\Rr)\)
     \item \({\cal {B'}}\) est une base de \(M_2(\Rr)\)
     \item \(\mbox{Vect} {\cal {B'}}=M_2(\Rr)\)
@@ -305,6 +444,13 @@ a&b\\b&a\\ \end{array}\right) \; ; \; a,b \in \Rr \right \}\) et
 \alpha&\beta\\-\beta&-\alpha\\ 
 \end{array}\right) \; ; \; \alpha, \beta \in \Rr  \right \}\). On  déduit que \(\dim \ker f = 2\),  \(\mbox{rg} (f)=\dim \Im f = 2\) et que \(f\) n'est ni injective, ni surjective.
 }]{Question}
+On considère \(M_2(\Rr)\) l'ensemble des matrices carrées d'ordre \(2\) à coefficients réels,  \\
+\( A= \left(\begin{array}{rcc}0&1\\1&0 \end{array}\right)\) et 
+\(f\) l' application linéaire définie par : 
+\[\begin{array}{rccc}f:&M_2(\Rr)&\to&M_2(\Rr)\\
+& M&\to &AM-MA.  \end{array}\]
+Quelles sont les assertions vraies ?
+
     \item* \(\dim \ker f =2\)
     \item \(f\) est injective
     \item* \(\mbox{rg} (f) =2\)
@@ -322,6 +468,8 @@ a&b\\b&a\\ \end{array}\right) \; ; \; a,b \in \Rr \right \}\) et
 \item[(v)] Pour toute matrice \(Y\) à une colonne et \(n\) lignes, il existe une matrice \(X\) à une colonne et \(n\) lignes telle que \(AX=Y.\)
 \end{enumerate}
 }]{Question}
+Soit \(A\) une matrice carrée d'ordre \(n\)  à coefficients réels et \(I\) la matrice identité. Quelles sont les assertions vraies ?
+
     \item* \(A\) est inversible si et seulement s'il existe une matrice \(B\) telle que \(AB=I\)
     \item* \(A\) est inversible si et seulement s'il existe une matrice \(B\) telle que \(BA=I\)
     \item \(A\) est inversible si et seulement si les coefficients de \(A\) sont inversibles pour la multiplication dans \(\Rr\)
@@ -332,6 +480,14 @@ a&b\\b&a\\ \end{array}\right) \; ; \; a,b \in \Rr \right \}\) et
 \begin{multi}[multiple,feedback=
 {On vérifie que \(A\) et \(B\) sont inversibles,  que \(\displaystyle B^{-1} = \frac{1}{4}\left(\begin{array}{rcc}-1&2&1\\ 3&-2&1\\ 2&0&-2\\ \end{array}\right) \neq C\) et que \(C\) n'est pas inversible.
 }]{Question}
+On considère les matrices 
+\[A = \left(\begin{array}{rc}
+1&2\\3&5\\ \end{array}\right),\quad B = \left(\begin{array}{rcc}
+1&1&1\\2&0&1\\ 1&1&-1\\ \end{array}\right),\quad
+C = \frac{1}{4}\left(\begin{array}{rcc}
+-1&2&1\\3&-2&1\\ 2&0&2\\ \end{array}\right).\]
+Quelles sont les assertions vraies ?
+
     \item* \(A\) est inversible
     \item* \(B\) est inversible
     \item \(B\) est inversible et \(B^{-1} = C\)
@@ -345,6 +501,13 @@ a&b\\b&a\\ \end{array}\right) \; ; \; a,b \in \Rr \right \}\) et
 \end{array}\right).\]
 \(D\) n'est pas inversible, puisque les trois vecteurs colonnes sont linéairement dépendants.
 }]{Question}
+On considère les matrices :
+\[A=\left(\begin{array}{r} 5 \end{array}\right),\quad B = 
+\left(\begin{array}{rc}1&-2\\ 2&-4 \end{array}\right),\quad C = 
+\left(\begin{array}{rcc} 1&1&1\\ 1&0&-1\\  1&1&0
+\end{array}\right),\quad D =\left(\begin{array}{rcc} -1&1&-2\\ 1&1&0\\ 2&-1&3 \end{array}\right).\]
+Quelles sont les assertions vraies ?
+
     \item* \(A\) est inversible
     \item \(B\) est inversible
     \item* \(C\) est inversible
@@ -362,6 +525,8 @@ a&b\\b&a\\ \end{array}\right) \; ; \; a,b \in \Rr \right \}\) et
 \(A+^tA\) n'est pas nécessairement inversible. Contre exemple : 
 \(A=\left(\begin{array}{rc} 1&1\\ -1&0 \end{array}\right).\)
 }]{Question}
+Soit \( A\) une matrice inversible. On notera  \(^tA\) la transposée de \(A\). Quelles sont les assertions vraies ?
+
     \item* \(3A\) est inversible
     \item* \(^tA\) est inversible
     \item* \(A^tA\) est inversible
@@ -372,6 +537,8 @@ a&b\\b&a\\ \end{array}\right) \; ; \; a,b \in \Rr \right \}\) et
 \begin{multi}[multiple,feedback=
 {On a : \(A \times A^{m-1} = I\), donc \(A\) est inversible et \(A^{-1} = A^{m-1}\). Comme \(A\) est inversible, le rang de \(A\) est \(n\). Si \(m=2\), alors \(A^{-1}=A\).
 }]{Question}
+Soit \( M_n(\Rr)\) l'ensemble des matrices carrées d'ordre \(n\) à coefficients réels et \(I\) la matrice identité. Soit \(A \in M_n(\Rr)\) telle qu'il existe un entier \(m\ge 1\) vérifiant \(A^m = I\). Quelles sont les assertions vraies ?
+
     \item* \(A\) est inversible et \(A^{-1} = A^{m-1}\)
     \item* Le rang de \(A\) est \(n\)
     \item \(A\) n'est pas inversible
@@ -389,6 +556,9 @@ Si \(A^3+A^2\) est inversible, alors il existe une matrice \(B\) telle que \((A^
 \vskip0mm
 \(A+\, ^tA\) est inversible, puisque les vecteurs colonnes de cette matrice sont linéairement indépendants.
 }]{Question}
+On considère la matrice : \(A = \left(\begin{array}{rcc}
+1&-1&-2\\0&1&1\\ -1&1&2\\ \end{array}\right)\). Quelles sont les assertions vraies ?
+
     \item \(A\) est inversible
     \item \(A^2\) est inversible
     \item \(A^3+A^2\) est inversible
@@ -400,6 +570,14 @@ Si \(A^3+A^2\) est inversible, alors il existe une matrice \(B\) telle que \((A^
 {\(A\) est inversible si et seulement si les vecteurs colonnes sont linéairement indépendants. On en déduit que 
 si \(A\) est diagonale, \(A\) est inversible si et seulement si tous les coefficients \(a_{i,i}\) sont non nuls et que si \(A\) est triangulaire (inférieurement ou supérieurement), \(A\) est inversible si et seulement si tous les coefficients \(a_{i,i}\) sont non nuls. Par définition, \(A\) est symétrique si \(\, ^tA=A\).
 }]{Question}
+Soit \( A=(a_{i,j})\) une matrice carrée. On rappelle les définitions suivantes :
+\begin{enumerate}
+\item[.] \(A\) est dite diagonale si tous les coefficients \(a_{i,j}\), avec \(i\neq j\) sont nuls.
+\item[.] \(A\) est dite symétrique si pour tous \(i,j\), \(a_{i,j}=a_{j,i}\).
+\item[.] \(A\) est dite triangulaire inférieurement (resp. supérieurement) si pour tous \(i<j\), \(a_{i,j}=0\) (resp. pour tous \(i>j\), \(a_{i,j}=0\)).
+\end{enumerate}
+Quelles sont les assertions vraies ?
+
     \item Si \(A\) est diagonale, \(A\) est inversible si et seulement s'il existe un coefficient \(a_{i,i}\) non nul
     \item* Si \(A\) est diagonale, \(A\) est inversible si et seulement si tous les coefficients \(a_{i,i}\) sont non nuls
     \item* \(A\) est symétrique si \(\, ^tA=A\), où \(^tA\) est la transposée de \(A\)
@@ -419,6 +597,9 @@ on vérifie que :  \(A+B =0\), \(AC =0\) et \(CA=
 \left(\begin{array}{rc}-1&1\\
 -1&1\\ \end{array}\right)\). Donc \(\mbox{rg}(A)=\mbox{rg}(B)=1\) mais \(\mbox{rg}(A+B)=0\) et \(\mbox{rg}(AC)= 0\) est différent de \(\mbox{rg}(CA)=1\).
 }]{Question}
+Soit \(A\) et \(B\) deux matrices carrées d'ordre \(n\ge 1\). On notera \(^tA\) la transposée de \(A\) et \(\mbox{rg}\, (A)\) le rang de \(A\). 
+Quelles sont les assertions vraies ?
+
     \item* \(\mbox{rg}(A)=\mbox{rg}( \, ^tA)\)
     \item* Si \(A\) est inversible, \(\mbox{rg}(A)=\mbox{rg}(A^{-1})\)
     \item \(\mbox{rg}(A+B)=\max \big(\mbox{rg}(A), \mbox{rg}(B)\big)\)
@@ -429,6 +610,8 @@ on vérifie que :  \(A+B =0\), \(AC =0\) et \(CA=
 \begin{multi}[multiple,feedback=
 {Si \(A\) est inversible, alors il existe une matrice \(C\) telle que \(CA=I\), où \(I\) est la matrice identité. Donc  \((CA)B =B\). Or \((CA)B=C(AB)\) et \(AB=0\), donc \(B=0\), ce qui est absurde.
 }]{Question}
+On considère \( M_n(\Rr)\) l'ensemble des matrices carrées d'ordre \(n\)  à coefficients réels et \(A\) et \(B\) deux matrices non nulles telles que \(AB=0\). Quelles sont les assertions vraies ?
+
     \item \(A=0\) ou \(B=0\)
     \item \(A\) est inversible
     \item \(B\) est inversible
@@ -442,6 +625,8 @@ deux matrices soient nulles).
 \vskip0mm
 Si \(A\) est inversible, alors il existe une matrice \(D\) telle que \(DA=I\), où \(I\) est la matrice identité. Donc  \((DA)(B-C) =B-C\). Or \((DA)(B-C)=D(A(B-C))\) et \(A(B-C)=0\), donc \(B-C=0\), ce qui est absurde. On déduit que \(A\) n'est pas inversible et donc le rang de \(A\) est \(<n\).
 }]{Question}
+On considère \( M_n(\Rr)\) l'ensemble des matrices carrées d'ordre \(n\) à coefficients réels et \(A\), \(B\) et \(C\) trois matrices non nulles deux à deux distinctes telles que \(AB=AC\). Quelles sont les assertions vraies ?
+
     \item \(B=C\)
     \item \(A=0\)
     \item* \(A\) n'est pas inversible
@@ -460,6 +645,9 @@ Par récurrence sur \(n\in \Nn\), on démontre que
 \sin (nx)&\cos (nx) \end{array}\right)\quad \mbox{et}\quad (A^{-1})^n =  \left(\begin{array}{rc}\cos (nx)&\sin (nx)\\ -\sin (nx)&\cos (nx)\end{array}\right).\]
 On déduit que, pour tout \(n \in \Zz\), \(A^n=\left(\begin{array}{rc}\cos (nx)&-\sin (nx)\\\sin (nx)&\cos (nx)\end{array}\right)\).
 }]{Question}
+On considère la matrice \(A = \left(\begin{array}{rc}
+\cos x&-\sin x\\\sin x&\cos x\\ \end{array}\right) \, , \; x \in \Rr\). Quelles sont les assertions vraies ?
+
     \item Le rang de \(A\) est \(1\)
     \item* \(A\) est inversible et \(A^{-1} = \left(\begin{array}{rc}
 \cos x&\sin x\\-\sin x&\cos x\\ \end{array}\right)\), \(x\in \Rr\)
@@ -472,6 +660,9 @@ On déduit que, pour tout \(n \in \Zz\), \(A^n=\left(\begin{array}{rc}\cos (nx)&
 \begin{multi}[multiple,feedback=
 {De l'égalité : \(A \times  (A^{m-1}+A^{m-2}+ \dots + I)= -I\), on déduit que  \(A\) est inversible et que \(A^{-1}=-(A^{m-1}+ \dots + A+I)=A^m\). Puisque \(A\) est inversible, le rang de \(A\) est \(n\).
 }]{Question}
+Soit \( M_n(\Rr)\) l'ensemble des matrices carrées d'ordre \(n\)  à coefficients réels  et \(I\) la matrice identité.
+Soit \(A \in M_n(\Rr)\) telle qu'il existe un entier  \(m \ge 1\) vérifiant :  \(A^m+A^{m-1}+ \dots + A + I = 0\). Quelles sont les assertions vraies ?
+
     \item* \(A\) est inversible et \(A^{-1} = A^m\)
     \item* \(A\) est inversible et \(A^{-1} = -(A^{m-1}+ \dots + A+I)\)
     \item* Le rang de \(A\) est \(n\)
@@ -488,6 +679,8 @@ Soit \(a\in \Rr^*\), de l'égalité : \((A-aI)(a^{n-1}I+a^{n-2}A+\dots + aA^{n-2
 \(A-aId\) est inversible et que 
 \(\displaystyle (A-aId)^{-1}=-\frac{1}{a^n}\left(a^{n-1}I+a^{n-2}A+\dots + aA^{n-2}+A^{n-1}\right)\).
 }]{Question}
+Soit \(A\) une matrice nilpotente, c.à.d il existe un entier \(n\ge 1\) tel que \(A^n=0\). On notera \(I\) la matrice identité. Quelles sont les assertions vraies ?
+
     \item \(A\) est inversible
     \item \(A\) est inversible et \(A^{-1} = A^{n-1}\)
     \item* Il existe \(a\in \Rr\), tel que \(A-aI\) n'est pas inversible

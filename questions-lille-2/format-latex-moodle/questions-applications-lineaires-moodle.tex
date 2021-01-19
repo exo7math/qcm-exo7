@@ -5,6 +5,12 @@
 et \(f(\frac{\pi}{2})+ f(\frac{\pi}{2}) =2\). 
 On vérifie que \(g\) est linéaire.  
 }]{Question}
+On considère les deux applications suivantes : 
+\[\begin{array}{rccc}f:&\Rr&\to&\Rr\\
+& x&\to & \sin x \end{array} \quad \mbox{et} \quad \begin{array}{rccc}g:&\Rr^2&\to&\Rr^2\\
+& (x,y)&\to &(y,x). \end{array}\] 
+Quelles sont les assertions vraies ?
+
     \item* \(f(0)=0\)
     \item \(f\) est une application linéaire
     \item \(g(x,y) =  g(y,x)\), pour tout \((x,y) \in \Rr^2\)
@@ -15,6 +21,12 @@ On vérifie que \(g\) est linéaire.
 \begin{multi}[multiple,feedback=
 {L'application \(f\) n'est pas linéaire. Contre-exemple : \(f(2(0,1))=f(0,2)=(0,4)\) et \(2f(0,1)=(0,2)\). On vérifie que l'application \(g\) est linéaire.
 }]{Question}
+On considère les deux applications suivantes : 
+\[\begin{array}{rccc}f:&\Rr^2&\to&\Rr^2\\
+& (x,y)&\to & (x,y^2) \end{array} \quad \mbox{et} \quad \begin{array}{rccc}g:&\Rr^2&\to&\Rr^2\\
+& (x,y)&\to &(x,-x). \end{array}\] 
+Quelles sont les assertions vraies ?
+
     \item* \(f(0,2)=(0,4)\)
     \item \(f\) est une application linéaire
     \item* \(g(0,0)=(0,0)\)
@@ -26,6 +38,12 @@ On vérifie que \(g\) est linéaire.
 {\(f\) est linéaire. \(g\) ne l'est pas,
 puisque \(g((1,0,0)+ (0,1,0)) = g(1,1,0) = (1,0)\) et \( g(1,0,0)+ g(0,1,0) = (0,0)\).
 }]{Question}
+On considère les deux applications suivantes : 
+\[\begin{array}{rccc}f:&\Rr^3&\to&\Rr^2\\
+& (x,y,z)&\to &(x+y,x-z) \end{array} \quad \mbox{et} \quad \begin{array}{rccc}g:&\Rr^3&\to&\Rr^2\\
+& (x,y,z)&\to &(xy,xz). \end{array}\] 
+Quelles sont les assertions vraies ?
+
     \item* \(f(0,0,0)=(0,0)\)
     \item* \(f\) est une application linéaire
     \item \(g(1,1,0)=g(1,0,0)+ g(0,1,0)\)
@@ -36,6 +54,12 @@ puisque \(g((1,0,0)+ (0,1,0)) = g(1,1,0) = (1,0)\) et \( g(1,0,0)+ g(0,1,0) = (0
 \begin{multi}[multiple,feedback=
 {On vérifie que \(f\) est linéaire. Par contre, \(g\) ne l'est pas, puisque \(g(0)=1\neq 0\).
 }]{Question}
+On note \(\Rr_n[X]\) l'espace des polynômes à coefficients réels de degré \(\le n\),  \(n\in \Nn\). On considère les deux applications suivantes :
+\[\begin{array}{rccc}f:&\Rr_3[X]&\to&\Rr\\
+& P&\to &P(0)+P'(0)\,  \end{array}   \quad \mbox{et} \quad \begin{array}{rccc}g:&\Rr_3[X]&\to&\Rr_2[X]\\
+& P&\to &1+P'+XP'',\end{array}\] 
+où \(P'\) (resp. \(P''\)) est la dérivée première (resp. seconde) de \(P\). Quelles sont les assertions vraies ?
+
     \item \(f(0)=1\)
     \item* \(f\) est une application linéaire
     \item* \(g(0)=1\)
@@ -46,6 +70,12 @@ puisque \(g((1,0,0)+ (0,1,0)) = g(1,1,0) = (1,0)\) et \( g(1,0,0)+ g(0,1,0) = (0
 \begin{multi}[multiple,feedback=
 {On vérifie que \(f\) et \(g\) sont \(\Rr\)-linéaires. Par contre, elles ne sont pas \(\Cc\)-linéaires.
 }]{Question}
+On considère les applications suivantes : 
+\[\begin{array}{rccc}f:&\Cc&\to&\Cc\\
+& z&\to& \Re (z)\end{array}   \quad \mbox{et} \quad  \begin{array}{rccc}g:&\Cc&\to&\Cc\\
+& z&\to& \Im (z), \end{array}\]
+où \(\Re (z)\) (resp. \(\Im (z)\)) est la partie réelle (resp. imaginaire) de \(z\). Quelles sont les assertions vraies ?
+
     \item \(f\) est \(\Cc\)-linéaire
     \item* \(f\) est \(\Rr\)-linéaire
     \item* \(g\) est  \(\Rr\)-linéaire
@@ -56,6 +86,13 @@ puisque \(g((1,0,0)+ (0,1,0)) = g(1,1,0) = (1,0)\) et \( g(1,0,0)+ g(0,1,0) = (0
 \begin{multi}[multiple,feedback=
 {On vérifie que \(f\) n'est pas \(\Rr\)-linéaire (donc n'est pas \(\Cc\)-linéaire) et que \(g\) est \(\Rr\)-linéaire, mais non \(\Cc\)-linéaire.
 }]{Question}
+On considère les applications suivantes : 
+\[\begin{array}{rccc}f:&\Cc&\to&\Cc\\
+& z&\to& |z|\end{array}  \quad \mbox{et} \quad \begin{array}{rccc}g:&\Cc&\to&\Cc\\
+& z&\to& \overline{z},
+\end{array} \]
+où \(|z|\) (resp. \(\overline{z}\)) est le module (resp. le conjugué) de \(z\). Quelles sont les assertions vraies ?
+
     \item \(f\) est \(\Cc\)-linéaire
     \item \(f\) est \(\Rr\)-linéaire
     \item* \(g\) est \(\Rr\)-linéaire
@@ -69,6 +106,12 @@ puisque \(g((1,0,0)+ (0,1,0)) = g(1,1,0) = (1,0)\) et \( g(1,0,0)+ g(0,1,0) = (0
 \(g\) n'est pas linéaire. Contre-exemple :  \(g((1,0)+(-1,0))=g(0,0)=(0,0)\) 
 et \(g(1,0)+g(-1,0)=(1,0)+(0,-1)=(1,-1)\).
 }]{Question}
+On considère les deux applications suivantes : 
+\[\begin{array}{rccc}f:&\Rr^2&\to&\Rr\\
+& (x,y)&\to & |x+y| \end{array} \quad \mbox{et} \quad \begin{array}{rccc}g:&\Rr^2&\to&\Rr^2\\
+& (x,y)&\to &\big(\max (x,y)\, , \, \min (x,y)\, \big). \end{array}\] 
+Quelles sont les assertions vraies ?
+
     \item* \(f(1,-1)=0\)
     \item \(f\) est une application linéaire
     \item* \(g(0,0)=(0,0)\)
@@ -83,6 +126,12 @@ Si \(a\neq 0\), \(g(2(1,0,0))=4a+2b\) et \(2g(1,0,0)=2a+2b \neq 4a+2b\), donc \(
 \vskip0mm
 On vérifie que si \(a=0\) et \(b\) est quelconque, \(g\) est linéaire.
 }]{Question}
+On considère les applications suivantes : 
+\[\begin{array}{rccc}f:&\Rr^3&\to&\Rr^2\\
+& (x,y,z)&\to &(x-y,y+2z+a) \,  \end{array}  \quad \mbox{et} \quad  \begin{array}{rccc}g:&\Rr^3&\to&\Rr\\
+& (x,y,z)&\to &(ax+b)(x+y).\end{array} \] 
+où \(a\) et \(b\)  sont des réels. Quelles sont les assertions vraies ?
+
     \item Pour tout \(a\in \Rr\), \(f\) est une application linéaire
     \item* \(f\) est une application linéaire si et seulement si \(a=0\)
     \item \(g\) est une application linéaire si et seulement si \(a=b=0\)
@@ -94,6 +143,12 @@ On vérifie que si \(a=0\) et \(b\) est quelconque, \(g\) est linéaire.
 {On vérifie que \(f\) est linéaire si et seulement si \(a=0\) et que \(g\) n'est pas linéaire pour 
 tous réels \(a,b\) et \(c\).
 }]{Question}
+On considère les applications suivantes : 
+\[\begin{array}{rccc}f:&\Rr^3&\to&\Rr^2\\
+& (x,y,z)&\to &(z,x+ax^2) \,  \end{array}  \quad \mbox{et} \quad  \begin{array}{rccc}g:&\Rr^3&\to&\Rr^3\\
+& (x,y,z)&\to &(z+a\sin x, y+be^x, c|x|+1).\end{array} \] 
+où \(a,b\) et \(c\) sont des réels. Quelles sont les assertions vraies ?
+
     \item Pour tout \(a\in \Rr\), \(f\) est une application linéaire
     \item* \(f\) est une application linéaire si et seulement si \(a=0\)
     \item \(g\) est une application linéaire si et seulement si \(a=b=c=0\)
@@ -104,6 +159,13 @@ tous réels \(a,b\) et \(c\).
 \begin{multi}[multiple,feedback=
 {On vérifie que \(f\) et \(g\) sont linéaires.
 }]{Question}
+On note \(\Rr_n[X]\) l'espace des polynômes à coefficients réels de degré \(\le n\),  \(n\in \Nn\). On considère les deux applications suivantes : 
+\[\begin{array}{rccc}f:&\Rr_3[X]&\to&\Rr_2[X]\\
+& P&\to &R \end{array} \quad \mbox{et} \quad 
+\begin{array}{rccc}g:&\Rr_3[X]&\to& \Rr_2[X]\\
+& P&\to &Q,\end{array}\]
+où \(R\) (resp. \(Q\)) est le reste (resp. le quotient) de la division euclidienne de \(P\) par \(X^3+1\). Quelles sont les assertions vraies ?
+
     \item* \(f(0)=0\)
     \item* \(f\) est une application linéaire
     \item* \(g(0)=0\)
@@ -114,6 +176,8 @@ tous réels \(a,b\) et \(c\).
 \begin{multi}[multiple,feedback=
 {Une application \(f:\Rr^n \to \Rr^m\) est linéaire si et seulement s'il existe des réels \(a_{i,j}, 1\le i \le m, 1\le j \le n\),  tels que :\\ \(f(x_1,x_2,\dots,x_n)=(a_{1,1}x_1+a_{1,2}x_2 + \dots + a_{1,n}x_n,\dots, a_{m,1}x_1+a_{m,2}x_2 + \dots + a_{m,n}x_n)\), pour tout \((x_1,x_2,\dots,x_n) \in \Rr^n\).
 }]{Question}
+Quelles sont les assertions vraies ?
+
     \item* Une application \(f:\Rr \to \Rr\) est linéaire si et seulement s'il existe un réel \(a\) tel que \(f(x)=ax\), pour tout \(x\in \Rr\)
     \item Une application \(f:\Rr^2 \to \Rr^2\) est linéaire si et seulement s'il existe des réels \(a\) et \(b\) tels que \(f(x,y)=(ax,by)\), pour tout \((x,y) \in \Rr^2\)
     \item* Une application \(f:\Rr^2 \to \Rr^2\) est linéaire si et seulement s'il existe des réels \(a,b,c\) et \(d\) tels que \(f(x,y)=(ax+by,cx+dy)\), pour tout \((x,y)\in \Rr^2\)
@@ -126,6 +190,8 @@ tous réels \(a,b\) et \(c\).
 \vskip0mm
 \(\Im f \) est un sous-espace vectoriel de \(F\), il contient au moins \(0_F\), puisque \(f(0_E)=0_F\).
 }]{Question}
+Soit \(E\) et \(F\) deux espaces vectoriels et \(f:E\to F\) une application linéaire. Quelles sont les assertions vraies ?
+
     \item \(\ker f\) peut-être vide
     \item* \(\ker f\) est un sous-espace vectoriel de \(E\)
     \item \(0_E \in \Im f\)
@@ -140,6 +206,9 @@ tous réels \(a,b\) et \(c\).
 \vskip0mm
 \(f\) est bijective si et seulement si \(\ker f=\{0_E\}\) et \(\Im f=F\).
 }]{Question}
+Soit \(E\) et \(F\) deux espaces vectoriels et \(f:E\to F\) une application linéaire.
+Quelles sont les assertions vraies ?
+
     \item \(f\) est injective si et seulement si \(\ker f\) est vide
     \item \(f\) est injective si et seulement si \(\ker f\) est une droite vectorielle
     \item* \(f\) est surjective si et seulement si \(\Im f=F\)
@@ -150,6 +219,8 @@ tous réels \(a,b\) et \(c\).
 \begin{multi}[multiple,feedback=
 {\(f\) est injective si et seulement si \(\ker f = \{(0,0,0)\}\). \(f\) ne peut pas être surjective, puisque d'après le théorème du rang, la dimension de \(\Im f \) est au plus \(3\).
 }]{Question}
+Soit \(f\) une application linéaire de \(\Rr^3\) dans \(\Rr^5\). Quelles sont les assertions vraies ?
+
     \item Si \(\ker f = \{(0,0,0)\}\), alors \(f\) est surjective
     \item* Si \(\ker f \) est une droite vectorielle, alors \(\Im f \) est un plan vectoriel
     \item* \(f\) est injective si seulement si \(\dim \Im f =3\)
@@ -163,6 +234,11 @@ tous réels \(a,b\) et \(c\).
 D'après le théorème du rang, \(\dim \Im f = 2 \) et comme 
 \(f(e_1)=(1,0,1)\) et \( f(e_2)=(0,1,1)\) ne sont pas colinéaires, ils forment une base de  \(\Im f\). Comme \(\dim \Im f = 2 \), \(\Im f \neq \Rr^3 \), donc \(f\) n'est pas surjective.
 }]{Question}
+On considère l' application linéaire : 
+\[\begin{array}{rccc}f:&\Rr^3&\to&\Rr^3\\
+& (x,y,z)&\to &(x-z,y+z,x+y). \end{array}\]
+Quelles sont les assertions vraies ?
+
     \item* \(\{(1,-1,1)\}\) est une base de \(\ker f\)
     \item \(f\) est injective
     \item* \(\{(1,0,1), (0,1,1)\}\) est une base de \(\Im f\)
@@ -175,6 +251,11 @@ D'après le théorème du rang, \(\dim \Im f = 2 \) et comme
 \vskip0mm
 D'après le théorème du rang, \(\dim \Im f = 3=\dim \Rr^3\) et comme \(\Im f\) est un sous-espace de \(\Rr^3\), \(\Im f=\Rr^3\), donc \(f\) est surjective. Par conséquent, \(f\) est bijective.
 }]{Question}
+On considère l' application linéaire : 
+\[\begin{array}{rccc}f:&\Rr^3&\to&\Rr^3\\
+& (x,y,z)&\to &(x-y,y-z,x+z). \,  \end{array}\]
+Quelles sont les assertions vraies ?
+
     \item \(\dim \ker f = 1\)
     \item* \(f\) est injective
     \item* \(\dim \Im f = 3\)
@@ -185,6 +266,11 @@ D'après le théorème du rang, \(\dim \Im f = 3=\dim \Rr^3\) et comme \(\Im f\)
 \begin{multi}[multiple,feedback=
 {\(\ker f = \{(x,y,z) \in \Rr^3 \; ; \; (x+y+z,x+y-z)=(0,0,0)\} =\{(x,-x,0)  \; ; \; x\in \Rr\}\). Donc \( \{(1,-1,0)\}\) est une base de \(\ker f\). Comme \(\ker f \neq \{(0,0,0)\}\), \(f\) n'est pas injective, donc \(f\) n'est pas bijective. Du théorème du rang, on déduit que \(\mbox{rg} (f)= \dim \Im f = 2\).
 }]{Question}
+On considère l' application linéaire : 
+\[\begin{array}{rccc}f:&\Rr^3&\to&\Rr^2\\
+& (x,y,z)&\to &(x+y+z, x+y-z). \,  \end{array}\]
+Quelles sont les assertions vraies ?
+
     \item* \(\dim \ker f = 1\)
     \item \(f\) est injective
     \item \(\mbox{rg} (f) =1\)
@@ -197,6 +283,10 @@ D'après le théorème du rang, \(\dim \Im f = 3=\dim \Rr^3\) et comme \(\Im f\)
 \vskip0mm
 D'après le théorème du rang, \(\dim \ker f = 1 \) et comme \(f(e_1+e_2-e_3) = 0\) et  \(e_1+e_2-e_3 \neq 0\), \(\{e_1+e_2-e_3\}\) est une base de \(\ker f\).
 }]{Question}
+On considère \(\Rr^3\) muni de la base canonique \({\cal{ B}}= \{e_1,e_2,e_3\}\) et \(f\) l'endomorphisme de \(\Rr^3\) défini par 
+\(f(e_1)= e_3,\, f(e_2)= e_1+e_2,\,  f(e_3)= e_1+e_2+e_3\). 
+Quelles sont les assertions vraies ?
+
     \item \(\{e_1+e_2-e_3\}\) est une base de \(\Im f \)
     \item* \(\dim \Im f =2\)
     \item* \(\{e_1+e_2-e_3\}\) est une base de \(\ker f\)
@@ -210,6 +300,11 @@ D'après le théorème du rang, \(\dim \ker f = 1 \) et comme \(f(e_1+e_2-e_3) =
 D'après le théorème du rang, \(\dim \Im f = 2 \) et comme \(f(X)=1\) et \( f(X^2) = 2X\) ne sont pas colinéaires, \(\{1,X\}\) est une base de  \(\Im f\). Donc \(f\) n'est pas surjective, puisque \(\dim \Im f = 2 \) et 
 \(\dim \Rr_2[X] =3 \).
 }]{Question}
+On considère l' application linéaire : 
+\[\begin{array}{rccc}f:&\Rr_2[X]&\to&\Rr_2[X]\\
+& P&\to &P',  \end{array}\]
+où \(\Rr_2[X]\) est l'ensemble des polynômes à coefficients réels de degré \(\le 2\) et \(P'\) est la dérivée de \(P\). Quelles sont les assertions vraies ?
+
     \item* \(\{1\}\) est une base de \(\ker f \)
     \item* \(\{1, X\}\) est une base de \(\Im f \)
     \item \(\{0, 1, X\}\) est une base de \(\Im f \)
@@ -220,6 +315,11 @@ D'après le théorème du rang, \(\dim \Im f = 2 \) et comme \(f(X)=1\) et \( f(
 \begin{multi}[multiple,feedback=
 {\(\ker f=\{P \in \Rr_2[X] \; ; \; XP'-X^2P''=0\}=\{aX^2+b \, ; \; a,b\in \Rr\}\). Donc \(\{1,X^2\}\) est une base de \(\ker f\). Du théorème du rang, on déduit que \(\mbox{rg}(f)=\dim \Im f=1 \) et comme \(f(X)=X\neq 0\), \(\{X\}\) est une base de \(\Im f\). 
 }]{Question}
+On considère l'application linéaire : 
+\[\begin{array}{rccc}f:&\Rr_2[X]&\to&\Rr_2[X]\\
+& P&\to &XP'-X^2P'',  \end{array}\]
+où \(\Rr_2[X]\) est l'ensemble des polynômes à coefficients réels de degré \(\le 2\) et \(P'\) (resp. \(P''\)) est la dérivée première (resp. seconde) de \(P\). Quelles sont les assertions vraies ?
+
     \item \(\{1+X^2\}\) est une base de \(\ker f \)
     \item* \(\{1, X^2\}\) est une base de \(\ker f \)
     \item \(\{1+X\}\) est une base de \(\Im f \)
@@ -230,6 +330,11 @@ D'après le théorème du rang, \(\dim \Im f = 2 \) et comme \(f(X)=1\) et \( f(
 \begin{multi}[multiple,feedback=
 {\(\ker f=\{P \in \Rr_3[X] \; ; \; R=0\}=\{(X+1)^3Q \; ; \; Q\in\Rr\}\). Donc \(\{(1+X)^3\}\) est une base de \(\ker f\). D'après le théorème du rang, \(\mbox{rg}(f)=\dim \Im f=3\) et l'on vérifie que \(\{1,X,X^2\}\) est une base de \(\Im f\). 
 }]{Question}
+On note \(\Rr_n[X]\) l'espace des polynômes à coefficients réels de degré \(\le n\), \(n\in \Nn\). On considère l'application linéaire : 
+\[\begin{array}{rccc}f:&\Rr_3[X]&\to&\Rr_2[X]\\
+& P&\to & R,  \end{array}\]
+où \(R\) est le reste de la division euclidienne de \(P\) par \((X+1)^3\). Quelles sont les assertions vraies ?
+
     \item \(\{X^3\}\) est une base de \(\ker f \)
     \item* \(\dim \ker f =1\)
     \item \(\{1+X+X^2\}\) est une base de \(\Im f \)
@@ -243,6 +348,11 @@ D'après le théorème du rang, \(\dim \Im f = 2 \) et comme \(f(X)=1\) et \( f(
 \vskip0mm
 D'après le théorème du rang, \(\mbox{rg}(f)=\dim \Im f=4\) et comme \(\Im f\) est un sous-espace vectoriel de \(\Rr_3[X]\), \(\Im f=\Rr_3[X]\) et donc \(f\) est surjective.
 }]{Question}
+On considère \(\Rr_3[X]\), l'espace des polynômes à coefficients réels de degré \(\le 3\), muni de sa base canonique \({\cal{ B}}= \{1,X,X^2,X^3\} \) et \(f\) l'endomorphisme de \(\Rr_3[X]\)
+défini par :
+\[f(1)=X,\;  f(X)=1+X,\; f(X^2)= (X-1)^2,\; f(X^3)=(X-1)^3.\]
+Quelles sont les assertions vraies ?
+
     \item \(\dim \ker f =1\)
     \item* \(f\) est injective
     \item \(f\) n'est pas injective
@@ -257,6 +367,8 @@ Du théorème du rang, on déduit que si \(n>m\),  \(\dim \ker f >0\) et donc \(
 \vskip0mm
 Si \(n\le m\), alors \(f\) n'est pas nécessairement injective et si \(n \ge m\), alors \(f\) n'est pas nécessairement surjective. Exemple : L'application nulle de  \(\Rr\) dans \(\Rr\).
 }]{Question}
+Soit \(E\) et \(F\) deux \(\Rr\)-espaces vectoriels de dimensions finies et \(f\) une application linéaire de \(E\) dans \(F\). On pose \(\dim E=n \) et \(\dim F=m\). Quelles sont les assertions vraies ?
+
     \item* Si \(f\) est injective, alors \(n \le m\)
     \item Si \(n \le m\), alors \(f\) est injective
     \item* Si \(f\) est surjective, alors \(n \ge m\)
@@ -267,6 +379,8 @@ Si \(n\le m\), alors \(f\) n'est pas nécessairement injective et si \(n \ge m\)
 \begin{multi}[multiple,feedback=
 {Du théorème du rang, on déduit que \(f\) est bijective si, et seulement si, \(f\) est injective ou surjective.
 }]{Question}
+Soit \(E\) et \(F\) deux \(\Rr\)-espaces vectoriels de  dimensions finies tels que \(\dim E= \dim F=n\) et \(f\) une application linéaire de \(E\) dans \(F\). Quelles sont les assertions vraies ?
+
     \item Si \(\dim \ker f =0\), alors \(\dim \Im f <n\)
     \item* si \(f\) est injective, alors \(f\) est surjective
     \item* Si \(\dim \Im f <n\), alors \(\dim \ker f >0\)
@@ -281,6 +395,9 @@ Si \(\dim E = \dim F\), \(f\) n'est pas nécessairement bijective.
 \vskip0mm
 Par contre, si  \(f\) est bijective, comme  \(E\) et \(F\) sont deux \(\Rr\)-espaces vectoriels de  dimensions finies, du théorème du rang, on déduit que \(\dim E = \dim F\).
 }]{Question}
+Soit \(E\) et \(F\) deux \(\Rr\)-espaces vectoriels de dimensions finies   
+et \(f\) une application linéaire de \(E\) dans \(F\). Quelles sont les assertions vraies ?
+
     \item Si \(f\) est injective, alors \(f\) est surjective
     \item Si \(f\) est surjective, alors \(f\) est injective
     \item Si \(\dim E = \dim F\), alors \(f\) est bijective
@@ -299,6 +416,8 @@ Si \({\cal F}\) est génératrice de \(E\), \({\cal F}'\) n'est pas nécessairem
 \vskip0mm
 Par contre, si de plus \(f\) est surjective, alors \({\cal F}'\) est génératrice de \(F\). En effet, puisque \(f\) est surjective, \(F=f(E)\) et comme  \(E=\mbox{Vect} \, \left({\cal F}\right)\), on déduit que \(F=\mbox{Vect} \, \left({\cal F'}\right)\).
 }]{Question}
+Soit \(E\) et \(F\) deux \(\Rr\)-espaces vectoriels et \(f\) une application linéaire de \(E\) dans \(F\). Soit \(k\in \Nn^*\), \({\cal F} = \{u_1,u_2, \dots , u_k\}\) une famille de vecteurs de \(E\) et \({\cal F}' = \{f(u_1),f(u_2), \dots , f(u_k)\}\). Quelles sont les assertions vraies ?
+
     \item Si \({\cal F}\) est une famille libre, alors \({\cal F}'\) est une famille libre
     \item* Si \({\cal F}\) est une famille libre  et \(f\) est injective, alors \({\cal F}'\) est une famille libre
     \item Si \({\cal F}\) est une famille génératrice de \(E\), alors \({\cal F}'\) est  une famille génératrice de \(F\)
@@ -311,6 +430,8 @@ Par contre, si de plus \(f\) est surjective, alors \({\cal F}'\) est génératri
 \vskip0mm
 De l'égalité  \(f^2+f+Id = 0\), on déduit que \(fo(-f-Id)=Id\), donc \(f\) est bijective et \(f^{-1}=-f-Id=f^2\).
 }]{Question}
+On considère \(E\) un \(\Rr\)-espace vectoriel et \(f\) un endomorphisme de \(E\) tel que : \(f^2+f+Id = 0\), où \(Id\) est l'application identité de \(E\). Quelles sont les assertions vraies ?
+
     \item \(\dim \ker f = 1\)
     \item* \(f\) est injective
     \item* \(f\) est bijective et \(f^{-1}=f^2\)
@@ -321,6 +442,10 @@ De l'égalité  \(f^2+f+Id = 0\), on déduit que \(fo(-f-Id)=Id\), donc \(f\) es
 \begin{multi}[multiple,feedback=
 {On vérifie que \(f\) est un endomorphisme, \(f^2=f\), \(\ker f=G\) et \(\Im f=F\).
 }]{Question}
+Soit \(E\) un espace vectoriel, \(F\) et \(G\) deux sous-espaces supplémentaires dans \(E\) et \(f\) l'application de \(E\) dans \(E\) définie par : \[\begin{array}{rccc}f:&E=F\oplus G&\to&E\\
+& x=x_1+x_2, \; (x_1\in F, x_2 \in G)&\to &x_1.  \end{array}\] 
+\(f\) est appelée la projection vectorielle de \(E\) sur \(F\) parallèlement à \(G\). Quelles sont les assertions vraies ?
+
     \item* \(f\) est un endomorphisme de \(E\)
     \item \(f^2=0\)
     \item* \(f^2=f\)
@@ -331,6 +456,10 @@ De l'égalité  \(f^2+f+Id = 0\), on déduit que \(fo(-f-Id)=Id\), donc \(f\) es
 \begin{multi}[multiple,feedback=
 {On vérifie que \(f\) est un endomorphisme, \(f^2=Id\), \(F=\{x\in E \; ; \; f(x)=x\}\) et \(G=\{x\in E \; ; \; f(x)=-x\}\).
 }]{Question}
+Soit \(E\) un espace vectoriel, \(F\) et \(G\) deux sous-espaces supplémentaires dans \(E\) et \(f\) l'application de \(E\) dans \(E\) définie par : \[\begin{array}{rccc}f:&E=F\oplus G&\to&E\\
+& x=x_1+x_2, \; (x_1\in F, x_2 \in G)&\to &x_1-x_2.  \end{array}\] 
+\(f\) est appelée la symétrie vectorielle de \(E\) par rapport à \(F\) parallèlement à \(G\). Quelles sont les assertions vraies ?
+
     \item* \(f\) est un endomorphisme de \(E\)
     \item \(f^2=f\)
     \item* \(f^2=Id\), où \(Id\) est l'identité de \(E\)
@@ -349,6 +478,8 @@ Soit \(x\in E\), alors \(x= f(x) + (x-f(x))\). Comme \(f(x)\in\Im f\) et \(x-f(x
 \vskip0mm
 Soit \(y\in\Im f,\)  alors il existe \(x\in E\) tel que \(y=f(x)\), donc \((Id-f)(y)=f(x)-f^2(x)=0,\) puisque \(f^2=f\). Réciproquement, si \((Id - f)(y)=0\), alors \(y=f(y)\) et donc \(y\in \Im f\). Par conséquent,  \( \Im f =\ker (Id - f) \).
 }]{Question}
+Soit \(E\) un espace vectoriel et \(f\) un projecteur de \(E\), c.à.d. un endomorphisme de \(E\) tel que \(f^2=f\). On notera \(Id\) l'identité de \(E\). Quelles sont les assertions vraies ?
+
     \item \(f\) est injective
     \item* \(Id-f\) est un projecteur de \(E\)
     \item* \(E=\ker f\oplus \Im f \)
@@ -365,6 +496,8 @@ Soit \(x\in E\) tel que \((Id-f)(x)=0,\) alors \(f(x)=x\) et, par récurrence, \
 \vskip0mm
 De l'égalité : \((Id-f)(Id+f+f^2+\dots + f^{n-1})=Id-f^n=Id\), on déduit que \(Id-f\) est bijective et que \((Id-f)^{-1}=Id+f+f^2+\dots + f^{n-1}\).
 }]{Question}
+Soit \(E\) un espace vectoriel et \(f\) un endomorphisme nilpotent de \(E\), c.à.d. un endomorphisme non nul de \(E\) tel qu'il existe un entier \(n\ge 2\), vérifiant  \(f^n=0\). On notera \(Id\) l'identité de \(E\). Quelles sont les assertions vraies ?
+
     \item \(f\) est injective
     \item \(f\) est surjective
     \item* \(Id-f\) est injective
@@ -379,6 +512,8 @@ Soit \(y\in \Im (Id+f) \cap \Im (Id-f)\), alors il existe \(x,x'\in E\) tels que
 \vskip0mm
 Soit \(x\in E\), alors \(\displaystyle x=\frac{1}{2}(x+f(x))+\frac{1}{2}(x-f(x)) \in \Im (Id+f)+\Im (Id-f)\). On en déduit que \(E= \Im (Id+f) + \Im (Id-f)\). Par conséquent, \(\Im (Id+f)\) et \(\Im (Id-f)\) sont supplémentaires dans \(E\).
 }]{Question}
+Soit \(E\) un espace vectoriel et \(f\) un endomorphisme involutif de \(E\), c.à.d. un endomorphisme non nul de \(E\) tel que \(f^2=Id\), où \(Id\) est l'identité de \(E\). Quelles sont les assertions vraies ?
+
     \item* \(f\) est bijective
     \item \(\Im (Id+f) \cap \Im (Id-f) = E\)
     \item* \(E=\Im (Id+f) + \Im (Id-f)\)
@@ -395,6 +530,8 @@ Soit \(y\in \Im f\), alors il existe \(x\in E\) tel que \(y=f(x)\). De l'égalit
 \vskip0mm
 Soit \(x\in E\), alors \(f(x)\in \Im f\). Comme  \(\Im f \subset \ker f\), \(f^2(x)=0\).
 }]{Question}
+Soit \(E\) un espace vectoriel  et \(f\) un endomorphisme de \(E\). Quelles sont les assertions vraies ?
+
     \item Si \(f^2 =0\), alors \(f=0\)
     \item Si \(f^2 =0\), alors \(f\) est bijective
     \item* Si \(f^2 =0\), alors \(\Im f \subset \ker f\)
@@ -412,6 +549,8 @@ on déduit que \(\dim \ker f= \dim \ker f^2\). Or \(\ker f\) est un sous-espace 
 \vskip0mm
 On suppose que \(E= \ker f \oplus \Im f \). Soit \(x\in \ker f^2\), alors \(f^2(x)=f(f(x))=0\). Donc \(f(x) \in \Im f \cap \ker f\). Or \(\Im f \cap \ker f = \{0\}\), donc \(x\in \ker f\) et donc \(\ker f^2 \subset \ker f\). On déduit que \(\ker f^2 = \ker f\), puisque \(\ker f \subset \ker f^2\) pour tout endomorphisme \(f\).
 }]{Question}
+Soit \(E\) un \(\Rr\)-espace vectoriel de dimension finie et \(f\) un endomorphisme de \(E\). Quelles sont les assertions vraies ?
+
     \item \(E= \ker f \oplus \Im f\)
     \item* Si \(\ker f= \ker f^2\), alors \(E= \ker f \oplus \Im f\)
     \item* Si \(\Im f= \Im f^2\), alors \(\ker f= \ker f^2\)

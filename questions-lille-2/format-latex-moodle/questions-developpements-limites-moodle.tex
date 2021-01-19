@@ -4,6 +4,8 @@
 {On a : \(\displaystyle \lim _{x\to 0}f(x)=0=f(0)\). Donc \(f\) est continue en \(0\). L'existence du \(DL\) à l'ordre \(1\) en \(0\) implique que \(f\) est dérivable en \(0\) et si \(f\) est \(2\) fois dérivable en \(0\) alors \(f^{(2)}(0)=2\). Enfin, \(DL_2(0)f(2x)=2x+4x^2+o(x^4)\) et 
 \[DL_8(0)f(x^2)=x^2+x^4+o(x^8)\Rightarrow DL_4(0)f(x^2)=x^2+x^4+o(x^4).\]
 }]{Question}
+Soit \(f\) une fonction définie sur un intervalle ouvert contenant \(0\) telle que \(f(0)=0\) et \(DL_4(0)f(x)=x+x^2+o(x^4)\). On peut en déduire que :
+
     \item* \(f\) est continue en \(0\), dérivable en \(0\) et \(f'(0)=1\).
     \item Si \(f\) est \(2\) fois dérivable en \(0\) alors \(f^{(2)}(0)=1\).
     \item \(\displaystyle DL_4(0)f(2x)=2x+2x^2+o(x^4)\).
@@ -14,6 +16,10 @@
 \begin{multi}[multiple,feedback=
 {Découle des opérations sur les DL en remarquant que la somme ou le produit de deux DL du même ordre donne un DL du même ordre.
 }]{Question}
+Soient \(f\) et \(g\) deux fonctions telles que : 
+\[DL_3(0)f(x)=x+x^3+o(x^3)\; \mbox{ et }\; DL_3(0)g(x)=-x+x^3+o(x^3).\]
+On peut en déduire que :
+
     \item* \(DL_2(0)\left[f(x)+g(x)\right]=o(x^2)\).
     \item \(DL_2(0)\left[f(x)-g(x)\right]=o(x^2)\).
     \item* \(DL_2(0)\left[2f(x)+g(x)\right]=x+o(x^2)\).
@@ -27,6 +33,8 @@
 et
 \[\frac{1+x}{1-x}=(1+x)(1+x+x^2+x^3+o(x^3))=1+2x+2x^2+2x^3+o(x^3).\]
 }]{Question}
+Parmi les assertions suivantes, cocher celles qui sont vraies :
+
     \item* \(\displaystyle DL_3(0)\frac{1}{1-x}=1+x+x^2+x^3+o(x^3)\).
     \item \(\displaystyle DL_3(0)\frac{1}{1-x}=1-x+x^2-x^3+o(x^3)\).
     \item \(\displaystyle DL_3(0)\frac{x}{1-x}=x-x^2+x^3+o(x^3)\).
@@ -38,6 +46,8 @@ et
 {On a : \(\displaystyle \sin x=x-\frac{x^3}{6}+o(x^3)\) et \(\displaystyle \mathrm{e}^{x}=1+x+\frac{x^2}{2}+\frac{x^3}{6}+o(x^3)\). Donc
 \[DL_3(0)\left(\mathrm{e}^{x}+\sin x\right)=1+2x+\frac{x^2}{2}+o(x^3)\quad\mbox{et}\quad DL_3(0)\left(\sin x\mathrm{e}^{x}\right)=x+x^2+\frac{x^3}{3}+o(x^3).\]
 }]{Question}
+Parmi les affirmations suivantes, cocher celles qui sont vraies :
+
     \item* \(\displaystyle DL_3(0)\sin x=x-\frac{x^3}{6}+o(x^3)\).
     \item \(\displaystyle DL_3(0)\mathrm{e}^{x}=x+\frac{x^2}{2}+\frac{x^3}{6}+o(x^3)\).
     \item \(\displaystyle DL_3(0)\left(\sin x+\mathrm{e}^{x}\right)=2x+\frac{x^2}{2}+o(x^3)\).
@@ -48,6 +58,8 @@ et
 \begin{multi}[multiple,feedback=
 {On a : \(\displaystyle DL_3(0)\cos x=1-\frac{x^2}{2}+o(x^3)\) et \(\displaystyle DL_3(0)\mathrm{e}^x=1+x+\frac{x^2}{2}+\frac{x^3}{6}+o(x^3)\). Donc \(\displaystyle DL_3(0)\left(\cos x+\mathrm{e}^x\right)=2+x+\frac{x^3}{6}+o(x^3)\) et \(\displaystyle DL_3(0)\cos x\mathrm{e}^x=1+x-\frac{x^3}{3}+o(x^3)\).
 }]{Question}
+Parmi les affirmations suivantes, cocher celles qui sont vraies :
+
     \item* \(\displaystyle DL_3(0)\cos x=1-\frac{x^2}{2}+o(x^3)\).
     \item \(\displaystyle DL_3(0)\mathrm{e}^x=1+x+\frac{x^2}{2}+\frac{x^3}{3}+o(x^3)\).
     \item \(\displaystyle DL_3(0)\left(\cos x+\mathrm{e}^x\right)=2+x+\frac{x^3}{3}+o(x^3)\).
@@ -59,6 +71,8 @@ et
 {Le \(DL_3(0)\sin(t)\), avec \(t=2x\), donne : \(\displaystyle DL_3(0)\sin (2x)=2x-\frac{4x^3}{3}+o(x^3)\). Ensuite \(\displaystyle \sin \left(\frac{\pi}{2}-x\right)=\cos (x)=1-\frac{x^2}{2}+o(x^2)\). Enfin, en posant \(t=\sin x\) et puis \(t=x-x^2\) dans le \(DL_3(0)\cos (t)\), on obtient :
 \[\displaystyle DL_2(0)\cos (\sin x)=1-\frac{x^2}{2}+o(x^2)\; \mbox{ et }\; DL_3(0)\cos (x-x^2)=1-\frac{x^2}{2}+x^3+o(x^3).\]
 }]{Question}
+Parmi les affirmations suivantes, cocher celles qui sont vraies :
+
     \item \(\displaystyle DL_3(0)\sin (2x)=2x-\frac{x^3}{3}+o(x^3)\).
     \item* \(\displaystyle DL_2(0)\sin \left(\frac{\pi}{2}-x\right)=1-\frac{x^2}{2}+o(x^2)\).
     \item* \(\displaystyle DL_2(0)\cos (\sin x)=1-\frac{x^2}{2}+o(x^2)\).
@@ -69,6 +83,8 @@ et
 \begin{multi}[multiple,feedback=
 {D'abord, \(\displaystyle \sqrt{2+x}=\sqrt{2}\times \sqrt{1+\frac{x}{2}}\) et \(\displaystyle \sqrt{4+x}=\sqrt{4}\times \sqrt{1+\frac{x}{4}}\). Ensuite, on applique le développement \(\displaystyle DL_1(0)\sqrt{1+t}=1+\frac{t}{2}+o(t)\) avec \(\displaystyle t=\frac{x}{2}\), \(\displaystyle t=\frac{x}{4}\) et \(t=2x\). Enfin, on applique le développement \(\displaystyle DL_2(0)(1+t)^{\alpha}\) avec \(\displaystyle \alpha =\frac{1}{3}\) et \(t=-3x\).
 }]{Question}
+Parmi les affirmations suivantes, cocher celles qui sont vraies :
+
     \item \(\displaystyle DL_1(0)\sqrt{2+x}=1+\frac{1+x}{2}+o(1+x)\).
     \item \(\displaystyle DL_1(0)\sqrt{4+x}=2+\frac{x}{2}+o(x)\).
     \item* \(\displaystyle DL_1(0)\sqrt{1+2x}=1+x+o(x)\).
@@ -83,6 +99,8 @@ et
 \[\sqrt[3]{3+x}=\sqrt[3]{3}.\sqrt[3]{1+\frac{x}{3}}=\sqrt[3]{3}\left(1+\frac{1}{3}.\frac{x}{3}+o(x)\right)=\sqrt[3]{3}+\frac{\sqrt[3]{3}}{9}x+o(x).\]
 Enfin, applique le \(\displaystyle DL_1(0)(1+t)^{\alpha}\) avec \(\displaystyle \alpha =-\frac{1}{2}\) et \(t=-2x\), ensuite avec \(\displaystyle \alpha =\frac{1}{3}\) et \(t=3x^3\).
 }]{Question}
+Parmi les affirmations suivantes, cocher celles qui sont vraies :
+
     \item \(\displaystyle DL_1(0)(8+3x)^{2/3}=4+2x+o(x)\).
     \item* \(\displaystyle DL_1(0)1/\sqrt{1-2x}=1+x+o(x)\).
     \item* \(\displaystyle DL_3(0)\sqrt[3]{1+3x^3}=1+x^3+o(x^3)\).
@@ -93,6 +111,8 @@ Enfin, applique le \(\displaystyle DL_1(0)(1+t)^{\alpha}\) avec \(\displaystyle 
 \begin{multi}[multiple,feedback=
 {On applique le développement : \(\displaystyle DL_2(0)\ln(1+t)=t-\frac{t^2}{2}+o(t^2)\) avec \(t=2x\), \(t=-2x\), \(t=x^2\) et enfin avec \(t=-x^2\).
 }]{Question}
+Les égalités suivantes portent sur des développements limités en \(0\). Cocher celles qui sont vraies :
+
     \item \(\displaystyle \ln(1+2x)=2\left(x-\frac{x^2}{2}+o(x^2)\right)\).
     \item* \(\displaystyle \ln(1-2x)=-2x-2x^2+o(x^2)\).
     \item* \(\displaystyle \ln(1+x^2)=x^2-\frac{x^4}{2}+o(x^4)\).
@@ -105,6 +125,8 @@ Enfin, applique le \(\displaystyle DL_1(0)(1+t)^{\alpha}\) avec \(\displaystyle 
 \[\begin{array}{l}\displaystyle \ln\left(1+\mathrm{e}^x\right)=\ln \left(2+x+o(x)\right)=\ln 2+\frac{x}{2}+o(x)\\ \\ \displaystyle \ln\left(\cos x\right)=\ln \left(1-\frac{x^2}{2}+o(x^2)\right)=-\frac{x^2}{2}+o(x^2),\\ \\ \displaystyle \ln\left(1+\sin x\right)=\ln \left(1+x+o(x^2)\right)=x-x^2/2+o(x^2)\end{array}\] et enfin
 \[\displaystyle \ln(1-x^2)-\ln \left((1+x)^2\right)=\ln(1-x^2)-\ln \left(1+2x+x^2\right)=-2x+o(x).\]
 }]{Question}
+Les égalités suivantes portent sur des développements limités en \(0\). Cocher celles qui sont vraies :
+
     \item \(\displaystyle \ln\left(1+\mathrm{e}^x\right)=1+x+o(x)\).
     \item* \(\displaystyle \ln\left(\cos x\right)=-x^2/2+o(x^2)\).
     \item \(\displaystyle \ln\left(1+\sin x\right)=x+o(x^2)\).
@@ -117,6 +139,8 @@ Enfin, applique le \(\displaystyle DL_1(0)(1+t)^{\alpha}\) avec \(\displaystyle 
 \(\displaystyle DL_3(0)\frac{1}{\cos (x)}=1+\frac{x^2}{2}+o(x^3)\). Ensuite, on effectue le produit \(\displaystyle \sin (x)\times \frac{1}{\cos (x)}\) :
 \[\displaystyle DL_3(0)\tan (x)=x+\frac{x^3}{3}+o(x^3).\]
 }]{Question}
+On rappelle que \(\displaystyle \tan x=\frac{\sin (x)}{\cos (x)}\). Parmi les affirmations suivantes, cocher celles qui sont vraies :
+
     \item* \(\displaystyle DL_3(0)\frac{1}{\cos (x)}=1+\frac{x^2}{2}+o(x^3)\).
     \item \(\displaystyle DL_3(0)\frac{1}{\cos (x)}=1-\frac{x^2}{2}+o(x^3)\).
     \item* \(\displaystyle DL_3(0)\tan (x)=x+\frac{x^3}{3}+o(x^3)\).
@@ -128,6 +152,8 @@ Enfin, applique le \(\displaystyle DL_1(0)(1+t)^{\alpha}\) avec \(\displaystyle 
 {On a : \(\displaystyle f'(x)=(1-x^2)^{-1/2}=1+\frac{x^2}{2}+o(x^2)\) et \(\displaystyle g'(x)=\frac{1}{1+x^2}=1-x^2+o(x^2)\). Par intégration, et puisque \(\arcsin (0)=0\) et \(\arctan (0)=0\), on obtient :
 \[DL_3(0)f(x)=x+\frac{x^3}{6}+o(x^3)\quad \mbox{ et }\quad DL_3(0)g(x)=x-\frac{x^3}{3}+o(x^3).\]
 }]{Question}
+Soit \(\displaystyle f(x)=\arcsin (x)\) et \(\displaystyle g(x)=\arctan (x)\). Alors
+
     \item* \(\displaystyle DL_2(0)f'(x)=1+\frac{x^2}{2}+o(x^2)\).
     \item \(\displaystyle DL_2(0)g'(x)=1+x^2+o(x^2)\).
     \item* \(\displaystyle DL_3(0)f(x)=x+\frac{x^3}{6}+o(x^3)\).
@@ -144,6 +170,8 @@ On a : \(\displaystyle \frac{\ln (1+t)}{1+t}=\left(t-\frac{t^2}{2}+o(t^2)\right)
 Enfin, en posant \(t=x-1\), on obtient :
 \[\frac{\ln x}{x}=\frac{\ln (1+t)}{1+t}=t-\frac{3t^2}{2}+o(t^2)=(x-1)-\frac{3(x-1)^2}{2}+o((x-1)^2).\]
 }]{Question}
+Parmi les affirmations suivantes, cocher celles qui sont vraies :
+
     \item Pour obtenir le \(DL_2(0)\sqrt{2+t}\), on écrit :
 \[\displaystyle \sqrt{2+t}=\sqrt{1+(1+t)}=1+\frac{(1+t)}{2}-\frac{(1+t)^2}{8}+o((1+t)^2).\]
     \item Pour obtenir le \(DL_2(2)\sqrt{x}\), on écrit :
@@ -157,6 +185,8 @@ Enfin, en posant \(t=x-1\), on obtient :
 {Pour écrire un \(DL(+\infty)\) de \(f(x)\), on écrit un \(DL(0^+)\) de \(g(t)=f(1/t)\). Ainsi
 \[\begin{array}{l}\displaystyle \sin\left(t\right)=t-\frac{t^3}{6}+o(t^3)\Rightarrow DL_3(+\infty)\sin \frac{1}{x}=\frac{1}{x}-\frac{1}{6x^3}+o\left(\frac{1}{x^3}\right).\\ \\ \displaystyle \frac{1}{1+1/t^2}=\frac{t^2}{1+t^2}=t^2+o(t^2)\Rightarrow DL_2(+\infty)\frac{1}{1+x^2}=\frac{1}{x^2}+o\left(\frac{1}{x^2}\right).\\ \\ \displaystyle \ln \left(\frac{1/t+1}{1/t}\right)=\ln (1+t)=t-\frac{t^2}{2}+o(t^2)\Rightarrow DL_2(+\infty)\ln \frac{x+1}{x}=\frac{1}{x}-\frac{1}{2x^2}+o\left(\frac{1}{x^2}\right).\\ \\ \displaystyle \frac{1}{1+1/t}=\frac{t}{1+t}=t-t^2+o(t^2)\Rightarrow DL_2(+\infty)\frac{1}{1+x}=\frac{1}{x}-\frac{1}{x^2}+o\left(\frac{1}{x^2}\right).\end{array}\]
 }]{Question}
+Les égalités suivantes portent sur des développements limités au voisinage de \(+\infty\). Cocher celles qui sont vraies :
+
     \item* \(\displaystyle DL_3(+\infty)\sin \frac{1}{x}=\frac{1}{x}-\frac{1}{6x^3}+o\left(\frac{1}{x^3}\right)\).
     \item \(\displaystyle DL_2(+\infty)\frac{1}{1+x^2}=1-\frac{1}{x^2}+o\left(\frac{1}{x^2}\right)\).
     \item* \(\displaystyle DL_2(+\infty)\ln \frac{x+1}{x}=\frac{1}{x}-\frac{1}{2x^2}+o\left(\frac{1}{x^2}\right)\).
@@ -170,6 +200,8 @@ Enfin, en posant \(t=x-1\), on obtient :
 Donc
 \[\begin{array}{ll}\displaystyle \sin \left(\frac{1}{1+x}\right)=\frac{1}{x}-\frac{1}{x^2}+o\left(\frac{1}{x^2}\right),&\displaystyle \cos \left(\frac{1}{1+x}\right)=1-\frac{1}{2x^2}+\frac{1}{x^3}+o\left(\frac{1}{x^3}\right),\\ \\ \displaystyle \frac{x}{x^2-1}=\frac{1}{x}+\frac{1}{x^3}+o\left(\frac{1}{x^3}\right),&\displaystyle \ln \left(1+\frac{x}{x^2-1}\right)=\frac{1}{x}-\frac{1}{2x^2}+o\left(\frac{1}{x^2}\right).\end{array}\]
 }]{Question}
+Les égalités suivantes portent sur des développements limités au voisinage de \(+\infty\). Cocher celles qui sont vraies :
+
     \item* \(\displaystyle \sin \left(\frac{1}{1+x}\right)=\frac{1}{x}-\frac{1}{x^2}+o\left(\frac{1}{x^2}\right)\).
     \item \(\displaystyle \cos \left(\frac{1}{1+x}\right)=1-\frac{1}{2x^2}+o\left(\frac{1}{x^3}\right)\).
     \item* \(\displaystyle \frac{x}{x^2-1}=\frac{1}{x}+\frac{1}{x^3}+o\left(\frac{1}{x^3}\right)\).
@@ -182,6 +214,8 @@ Donc
 \[DL_2(0)f(x)=1+x-\frac{2x^2}{3}+o(x^2).\]
 En multipliant par \(x\), on obtient : \(\displaystyle DL_3(0)xf(x)=x+x^2-\frac{2x^3}{3}+o(x^3)\).
 }]{Question}
+Soit \(\displaystyle f(x)=\frac{\ln (1+x+x^2)}{\sqrt{1+2x}-1}\). Parmi les affirmations suivantes, cocher celles qui sont vraies :
+
     \item* \(\displaystyle DL_2(0)\ln (1+x+x^2)=x+\frac{x^2}{2}+o(x^2)\).
     \item* \(\displaystyle DL_2(0)\left(\sqrt{1+2x}-1\right)=x-\frac{x^2}{2}+o(x^2)\).
     \item \(\displaystyle DL_2(0)f(x)=1+x+\frac{x^2}{2}+o(x^2)\).
@@ -195,6 +229,8 @@ En multipliant par \(x\), on obtient : \(\displaystyle DL_3(0)xf(x)=x+x^2-\frac{
 Ensuite, on transforme \(g(x)\) : \(\displaystyle g(x)=\frac{1}{2}.\frac{1}{1+\frac{\cos x-1}{2}}\). Ainsi, avec \(\displaystyle t=\frac{\cos x-1}{2}=-\frac{x^2}{4}+o(x^2)\), on obtient : \(\displaystyle g(x)=\frac{1}{2}+\frac{x^2}{8}+o(x^2)\). On en déduit que
 \[f(x)+g(x)=\frac{3}{2}-x+\frac{9x^2}{8}+o(x^2)\mbox{ et }\frac{f(x)}{g(x)}=2-2x+\frac{3x^2}{2}+o(x^2).\]
 }]{Question}
+Soit \(\displaystyle f(x)=\frac{1}{1+\sin x}\) et \(\displaystyle g(x)=\frac{1}{1+\cos x}\). Parmi les affirmations suivantes, cocher celles qui sont vraies :
+
     \item* \(\displaystyle DL_2(0)f(x)=1-x+x^2+o(x^2)\).
     \item \(\displaystyle DL_2(0)g(x)=1-\frac{x^2}{2}+o(x^2)\).
     \item \(\displaystyle DL_2(0)\left[f(x)+g(x)\right]=2-x+\frac{x^2}{2}+o(x^2)\).
@@ -207,6 +243,8 @@ Ensuite, on transforme \(g(x)\) : \(\displaystyle g(x)=\frac{1}{2}.\frac{1}{1+\f
 \[DL_2(0)f(x)=x-\frac{x^2}{2}+o(x^2.\]
 Ensuite, on transforme \(g(x)\) : \(\displaystyle g(x)=\ln \left[2\left(1+\frac{\cos x-1}{2}\right)\right]=\ln (2)+\ln \left(1+\frac{\cos x-1}{2}\right)\). Ainsi, avec \(\displaystyle t=\frac{\cos x-1}{2}=-\frac{x^2}{4}+o(x^2)\), on obtient : \(\displaystyle g(x)=\ln (2)-\frac{x^2}{4}+o(x^2)\).
 }]{Question}
+Soit \(\displaystyle f(x)=\ln \left[1+\sin x\right]\) et \(\displaystyle g(x)=\ln \left[1+\cos x\right]\). Parmi les affirmations suivantes, cocher celles qui sont vraies :
+
     \item* \(\displaystyle DL_2(0)f(x)=x-\frac{x^2}{2}+o(x^2)\).
     \item \(\displaystyle DL_2(0)g(x)=1-\frac{x^2}{2}+o(x^2)\).
     \item \(\displaystyle DL_2(0)\left[f(x)+g(x)\right]=1+x-x^2+o(x^2)\).
@@ -220,6 +258,8 @@ Ensuite, on transforme \(g(x)\) : \(\displaystyle g(x)=\ln \left[2\left(1+\frac{
 et, par intégration, \(\displaystyle DL_3(0^+)g(t)=\frac{\pi}{2}-t+\frac{t^3}{3}+o(t^3)\) car \(\arctan 0=0\). Ainsi
 \[\displaystyle DL_3(+\infty)f(x)=\frac{\pi}{2}-\frac{1}{x}+\frac{1}{3x^3}+o\left(\frac{1}{x^3}\right).\]
 }]{Question}
+Soit \(\displaystyle f(x)=\arctan x\). Pour \(t\neq 0\), on pose \(\displaystyle g(t)=f\left(\frac{1}{t}\right)\). Parmi les affirmations suivantes, cocher celles qui sont vraies :
+
     \item Pour \(t>0\), on a : \(\displaystyle g(t)=\frac{\pi}{2}+\arctan (t)\).
     \item* Pour tout \(x>0\), \(\displaystyle g'(t)=\frac{-1}{1+t^2}\).
     \item \(\displaystyle DL_3(0^+)g(t)=-t+\frac{t^3}{3}+o(t^3)\).
@@ -232,6 +272,8 @@ et, par intégration, \(\displaystyle DL_3(0^+)g(t)=\frac{\pi}{2}-t+\frac{t^3}{3
 \[\displaystyle DL_3(0)f(x)=1+x+\frac{x^2}{2}+o(x^3).\]
 Or \(\displaystyle g(x)=\mathrm{e}.\mathrm{e}^{\cos x-1}\). Donc, avec \(\displaystyle u=\cos x-1=-\frac{x^2}{2}+o(x^2)\) et \(\mathrm{e}^u=1+u+\frac{u^2}{2}+o(u^3)\), on obtient : \(\displaystyle DL_2(0)g(x)=\mathrm{e}-\frac{\mathrm{e}.x^2}{2}+o(x^2)\).
 }]{Question}
+Soit \(\displaystyle f(x)=\mathrm{e}^{\sin x}\) et \(g(x)=\mathrm{e}^{\cos x}\). Parmi les affirmations suivantes, cocher celles qui sont vraies :
+
     \item* \(\displaystyle DL_3(0)f(x)=1+x+\frac{x^2}{2}+o(x^3)\).
     \item Pour tout \(x\in \Rr\), \(\displaystyle f'(x)=g(x)\).
     \item \(\displaystyle DL_2(0)g(x)=\left(1+x+\frac{x^2}{2}+o(x^3)\right)'=1+x+o(x^2)\).
@@ -245,6 +287,8 @@ Or \(\displaystyle g(x)=\mathrm{e}.\mathrm{e}^{\cos x-1}\). Donc, avec \(\displa
 Pour écrire le \(\displaystyle DL_2(0)\frac{x}{\mathrm{e}^x-1}\), il faut considérer le \(DL_3(0)(\mathrm{e}^x-1)\). Maintenant, avec \(\displaystyle u=\frac{x}{\mathrm{e}^x-1}-1=-\frac{x}{2}+o(x)\), on obtient 
 \[\ln\left(\frac{x}{\mathrm{e}^x-1}\right)=\ln (1+u)=u+o(u)=-\frac{x}{2}+o(x).\]
 }]{Question}
+Soit \(\displaystyle f(x)=\ln\left(\frac{x}{\mathrm{e}^x-1}\right)\). Parmi les affirmations suivantes, cocher celles qui sont vraies :
+
     \item \(\displaystyle DL_2(0)(\mathrm{e}^x-1)=x+\frac{x^2}{2}+o(x^2)\) et \(\displaystyle DL_2(0)\frac{x}{\mathrm{e}^x-1}=1-\frac{x}{2}+\frac{x^2}{4}+o(x^2)\).
     \item* \(\displaystyle DL_2(0)\ln (1+u)=u-\frac{u^2}{2}+o(u^2)\).
     \item \(\displaystyle DL_2(0)f(x)=-\frac{x}{2}+\frac{x^2}{8}+o(x^2)\).
@@ -258,6 +302,8 @@ Pour écrire le \(\displaystyle DL_2(0)\frac{x}{\mathrm{e}^x-1}\), il faut consi
 Ensuite, \(\mathrm{e}^{1+u}=\mathrm{e}.\mathrm{e}^u=\mathrm{e}.\left(1+u+\frac{u^2}{2}+o(u^2)\right)\). Ainsi, avec \(\displaystyle u=-\frac{x}{2}+\frac{x^2}{3}+o(x^2)\), on obtient :
 \[f(x)=\mathrm{e}^{1-\frac{x}{2}+\frac{x^2}{3}+o(x^2)}=\mathrm{e}-\frac{\mathrm{e}}{2}x+\frac{11\mathrm{e}}{24}x^2+o(x^2).\]
 }]{Question}
+Soit \(\displaystyle f(x)=(1+x)^{1/x}\). Parmi les affirmations suivantes, cocher celles qui sont vraies :
+
     \item* \(\displaystyle DL_2(0)\frac{\ln (1+x)}{x}=1-\frac{x}{2}+\frac{x^2}{3}+o(x^2)\).
     \item \(\displaystyle DL_2(0)\mathrm{e}^{1+u}=1+u+\frac{u^2}{2}+o(u^2)\).
     \item \(\displaystyle DL_2(0)f(x)=\frac{5}{2}-2x+\frac{3x^2}{2}+o(x^2)\).
@@ -275,6 +321,8 @@ Ensuite, avec \(\displaystyle u=x\sin x =x^2-\frac{x^4}{6}+o(x^4)\) et \(\ln (1+
 Enfin, avec \(\displaystyle u=\ln (1+x^2)=x^2-\frac{x^4}{2}+o(x^4)\) et \(\arcsin u=u+\frac{u^3}{6}+o(u^4)\), on obtient :
 \[DL_4(0)\arcsin \left(\ln (1+x^2)\right)=x^2-\frac{x^4}{2}+o(x^4).\]
 }]{Question}
+Parmi les assertions suivantes, cocher celles qui sont vraies :
+
     \item \(\displaystyle DL_2(0)\frac{\ln (1+x)}{x-x^2}=1+\frac{x}{2}+\frac{x^2}{2}+o(x^2)\).
     \item \(\displaystyle DL_2(0)\frac{\mathrm{e}^x-1}{\ln (1+x)}=1+x+\frac{x^2}{2}+o(x^2)\).
     \item* \(\displaystyle DL_4(0)\ln (1+x\sin x)=x^2-\frac{2x^4}{3}+o(x^4)\).
@@ -288,6 +336,8 @@ Enfin, avec \(\displaystyle u=\ln (1+x^2)=x^2-\frac{x^4}{2}+o(x^4)\) et \(\arcsi
 Ensuite, avec \(\displaystyle u=\cos x-1=-\frac{x^2}{2}+o(x^3)\), on aura : 
 \[g(x)=\arctan (1+u)=\frac{\pi}{4}+\frac{u}{2}-\frac{u^2}{4}+o(u^2)=\frac{\pi}{4}-\frac{x^2}{4}+o(x^3).\] 
 }]{Question}
+Soit \(\displaystyle f(x)=\arctan (1+x)\) et \(\displaystyle g(x)=\arctan (\cos x)\). Parmi les affirmations suivantes, cocher celles qui sont vraies :
+
     \item* \(\displaystyle DL_2(0)f'(x)=\frac{1}{2}-\frac{x}{2}+\frac{x^2}{4}+o(x^2)\).
     \item \(\displaystyle DL_3(0)f(x)=\frac{x}{2}-\frac{x^2}{4}+\frac{x^3}{12}+o(x^3)\).
     \item* \(\displaystyle DL_3(0)\cos x=1-\frac{x^2}{2}+o(x^3)\) et \(\displaystyle DL_3(0)\arctan u=u-\frac{u^3}{3}+o(u^3)\).
@@ -299,6 +349,8 @@ Ensuite, avec \(\displaystyle u=\cos x-1=-\frac{x^2}{2}+o(x^3)\), on aura :
 {On a : \(\displaystyle f'(x)=g(x)\) et \(DL_2(0)g(x)=x-x^2+o(x^2)\). Par intégration, et puisque \(f(0)=0\), on obtient :
 \[DL_3(0)f(x)=\frac{x^2}{2}-\frac{x^3}{3}+o(x^3).\]
 }]{Question}
+Soit \(\displaystyle f(x)=\int _0^x\frac{\ln (1+t)}{\sqrt{1+t}}\mathrm{d}t\) et \(\displaystyle g(x)=\frac{\ln (1+x)}{\sqrt{1+x}}\). Alors
+
     \item* \(\displaystyle DL_2(0)g(x)=x-x^2+o(x^2)\).
     \item \(f'(x)\) ne possède pas de \(DL(0)\).
     \item \(f(x)\) ne possède pas de \(DL(0)\).
@@ -312,6 +364,8 @@ Ensuite, avec \(\displaystyle u=\cos x-1=-\frac{x^2}{2}+o(x^3)\), on aura :
 Ensuite, avec \(\displaystyle \mathrm{e}^{1+u}=\mathrm{e}.\mathrm{e}^u=\mathrm{e}.\left(1+u+\frac{u^2}{2}+o(u^2)\right)\) où \(\displaystyle u=-x+\frac{2x^2}{3}+o(x^2)\), on obtient :
 \[f(x)=\mathrm{e}-\mathrm{e}.x+\frac{7\mathrm{e}}{6}x^2+o(x^2).\]
 }]{Question}
+Soit \(\displaystyle f(x)=(1+x)^{1/(\mathrm{e}^x-1)}\). Parmi les affirmations suivantes, cocher celles qui sont vraies :
+
     \item* \(\displaystyle DL_2(0)\ln (1+x)=x-\frac{x^2}{2}+o(x^2)\) et \(\displaystyle DL_2(0)(\mathrm{e}^x-1)=x+\frac{x^2}{2}+o(x^2)\).
     \item \(\displaystyle DL_2(0)\frac{\ln (1+x)}{\mathrm{e}^x-1}=1-x+\frac{x^2}{2}+o(x^2)\).
     \item \(\displaystyle DL_2(0)f(x)=\mathrm{e}.\mathrm{e}^{-x+x^2/2+o(x^2)}=\mathrm{e}-\mathrm{e}.x+\mathrm{e}.x^2+o(x^2)\).
@@ -326,6 +380,8 @@ Ainsi : \(\displaystyle DL_2(+\infty)f(x)=\frac{1}{2}+\frac{3}{8x}+\frac{1}{16x^
 \[\displaystyle g(t)=\frac{\sqrt{1+t}-\sqrt{1-t^2}}{-t}\Rightarrow DL_2(0^-)g(t)=-\frac{1}{2}-\frac{3t}{8}-\frac{t^2}{16}+o(t^2).\]
 D'où, \(\displaystyle DL_2(-\infty)f(x)=-\frac{1}{2}-\frac{3}{8x}-\frac{1}{16x^2}+o\left(\frac{1}{x^2}\right)\).
 }]{Question}
+Soit \(\displaystyle f(x)=\sqrt{x^2+x}-\sqrt{x^2-1}\). On considère la fonction \(g\) définie par \(\displaystyle g(t)=f\left(\frac{1}{t}\right)\). Parmi les affirmations suivantes, cocher celles qui sont vraies :
+
     \item Pour \(0<t<1\), \(\displaystyle g(t)=\frac{\sqrt{1+t}-\sqrt{1-t^2}}{t}\) et \(\displaystyle DL_2(0^+)g(t)=\frac{1}{2}+\frac{3t}{8}+o(t^2)\).
     \item \(\displaystyle DL_2(+\infty)f(x)=\frac{1}{2}+\frac{3}{8x}+o\left(\frac{1}{x^2}\right)\).
     \item* \(\displaystyle DL_2(+\infty)f(x)=\frac{1}{2}+\frac{3}{8x}+\frac{1}{16x^2}+o\left(\frac{1}{x^2}\right)\).
@@ -339,6 +395,8 @@ D'où, \(\displaystyle DL_2(-\infty)f(x)=-\frac{1}{2}-\frac{3}{8x}-\frac{1}{16x^
 Par intégration, et puisque \(\displaystyle \arctan 1=\frac{\pi}{4}\), on obtient :
 \[DL_2(0^+)g(t)=\frac{\pi}{4}-\frac{t}{2}+\frac{t^2}{4}+o(t^2)\Rightarrow DL_2(+\infty)f(x)=\frac{\pi}{4}-\frac{1}{2x}+\frac{1}{4x^2}+o\left(\frac{1}{x^2}\right).\]
 }]{Question}
+Soit \(\displaystyle f(x)=\arctan\left(\frac{x}{x+1}\right)\). On considère la fonction \(g\) définie par \(\displaystyle g(t)=f\left(\frac{1}{t}\right)\). Parmi les affirmations suivantes, cocher celles qui sont vraies :
+
     \item* Pour \(0<t\), \(\displaystyle g(t)=\frac{\pi}{2}-\arctan (1+t)\) et \(\displaystyle DL_1(0)g'(t)=-\frac{1}{2}+\frac{t}{2}+o(t)\).
     \item \(\displaystyle DL_2(0^+)g(t)=-\frac{t}{2}+\frac{t^2}{4}+o(t^2)\).
     \item \(\displaystyle DL_2(+\infty)f(x)=-\frac{1}{2x}+\frac{1}{4x^2}+o\left(\frac{1}{x^2}\right)\).
@@ -350,6 +408,8 @@ Par intégration, et puisque \(\displaystyle \arctan 1=\frac{\pi}{4}\), on obtie
 {D'abord \(\displaystyle g(t)=\frac{\ln (1+t)}{t-t^2}=1+\frac{t}{2}+\frac{5t^2}{6}+o(t^2)\). Donc
 \[DL_2(+\infty)f(x)=1+\frac{1}{x}+\frac{5}{6x^2}+o\left(\frac{1}{x^2}\right).\]
 }]{Question}
+Soient \(f\) et \(g\) telles que \(\displaystyle f(x)=\frac{x^2}{x-1}\ln\left(\frac{x+1}{x}\right)\) et \(\displaystyle g(t)=f\left(\frac{1}{t}\right)\). Parmi les affirmations suivantes, cocher celles qui sont vraies :
+
     \item* \(\displaystyle g(t)=\frac{\ln (1+t)}{t-t^2}\).
     \item \(\displaystyle DL_2(0)g(t)=1+\frac{t}{2}+\frac{t^2}{2}+o(t^2)\).
     \item \(\displaystyle DL_2(0)(+\infty)f(x)=1+\frac{1}{x}+\frac{1}{2x^2}+o\left(\frac{1}{x^2}\right)\).
@@ -364,6 +424,8 @@ De même, \(\displaystyle DL_1(0)(\mathrm{e}^{x}-\sqrt{1+2x})=o(x)\) et \(\displ
 \[\displaystyle DL_0(0)\frac{\mathrm{e}^{x}-\sqrt{1+2x}}{\ln(1+x)}=o(1)\Rightarrow \lim _{x\to 0}\frac{\mathrm{e}^{x}-\sqrt{1+2x}}{\ln(1+x)}=0.\] Ensuite, \(\displaystyle 1-\cos x=\frac{x^2}{2}+o(x^2)\) et \(\displaystyle \sin ^2x=x^2+o(x^2)\). D'où \(\displaystyle \frac{1-\cos x}{\sin ^2x}=\frac{1}{2}+o(1)\). On en déduit la limite en \(0\). Enfin, 
 \[\mathrm{e}^x-\cos x-x=x^2+o(x^2)\Rightarrow \frac{\mathrm{e}^x-\cos x-x}{x^2}=1+o(1)\Rightarrow \lim _{x\to 0}\frac{\mathrm{e}^x-\cos x-x}{x^2}=1.\]
 }]{Question}
+Parmi les égalités suivantes, cocher celles qui sont vraies :
+
     \item* \(\displaystyle\lim _{x\to 0}\frac{\mathrm{e}^{x}-1}{\sqrt{1+x}-1}=2\).
     \item \(\displaystyle \lim _{x\to 0}\frac{\mathrm{e}^{x}-\sqrt{1+2x}}{\ln(1+x)}=1\).
     \item* \(\displaystyle \lim _{x\to 0}\frac{1-\cos x}{\sin ^2x}=\frac{1}{2}\).
@@ -376,6 +438,8 @@ De même, \(\displaystyle DL_1(0)(\mathrm{e}^{x}-\sqrt{1+2x})=o(x)\) et \(\displ
 \[\displaystyle DL_1(0)g(x)=\frac{1}{2}-\frac{x}{2}+o(x) \Rightarrow DL_1(1)f(x)=\frac{1}{2}-\frac{x-1}{2}+o(x-1)\]
 car \(f(x)=g(x-1)\). Enfin, \(\displaystyle \lim _{x\to 1}f(x)=\lim _{x\to 0}g(x)=\frac{1}{2}\).
 }]{Question}
+Soit \(\displaystyle f(x)=\frac{\ln x}{x^2-1}\) et \(\displaystyle g(x)=\frac{\ln (1+x)}{2x+x^2}\). Parmi les affirmations suivantes, cocher celles qui sont vraies :
+
     \item* \(\displaystyle DL_1(0)g(x)=\frac{1}{2}-\frac{x}{2}+o(x)\).
     \item \(f(1+x)=g(x)\) et \(\displaystyle DL_1(1)f(x)=\frac{1}{2}-\frac{x}{2}+o(x)\).
     \item \(\displaystyle \lim _{x\to 1}f(x)\) n'existe pas.
@@ -395,6 +459,8 @@ Ensuite, \(\displaystyle \frac{1}{\sin ^2x}-\frac{1}{x^2}=\frac{x^2-\sin ^2x}{x^
 Enfin, \(\displaystyle \cos x=1-\frac{x^2}{2}+\frac{x^4}{24}+o(x^4)\), \(\displaystyle \sqrt{1-x^2}=1-\frac{x^2}{2}-\frac{x^4}{8}+o(x^4)\) et \(x^2\sin ^2x=x^4+o(x^4)\). Donc
 \[\frac{\cos x-\sqrt{1-x^2}}{x^2\sin ^2x}=\frac{x^4/6+o(x^4)}{x^4+o(x^4)}=\frac{1}{6}+o(1)\Rightarrow \lim _{x\to 0}\frac{\cos x-\sqrt{1-x^2}}{x^2\sin ^2x}=\frac{1}{6}.\]
 }]{Question}
+Parmi les égalités suivantes, cocher celles qui sont vraies :
+
     \item \(\displaystyle \lim _{x\to 0}\left(1+x\right)^{1/x}=1\).
     \item* \(\displaystyle\lim _{x\to 0}\left(\cos x\right)^{1/\sin ^2x}=\frac{1}{\sqrt{\mathrm{e}}}\).
     \item* \(\displaystyle \lim _{x\to 0}\left(\frac{1}{\sin ^2x}-\frac{1}{x^2}\right)=\frac{1}{3}\).
@@ -407,6 +473,8 @@ Enfin, \(\displaystyle \cos x=1-\frac{x^2}{2}+\frac{x^4}{24}+o(x^4)\), \(\displa
 \[\displaystyle DL_2(0)f(x)=1-\frac{x}{2}+\frac{2x^2}{3}+o(x^2).\]
 Ainsi \(\displaystyle \lim _{x\to 0}f(x)=1\) et \(f\) est continue en \(0\) et, puisque \(f\) admet un \(DL_1(0)\), \(f\) est dérivable en \(0\). De plus, \(T_0\) est la droite d'équation \(\displaystyle y=1-\frac{x}{2}\) et puisque \(\displaystyle f(x)-y=\frac{2x^2}{3}+o(x^2)\geq 0\) au voisinage de \(0\) : le graphe de \(f\) est au dessus de \(T_0\) au voisinage de \(0\).
 }]{Question}
+Soit \(f\) telle que \(\displaystyle f(x)=\frac{\mathrm{e}^{x}-1}{x+x^2}\) si \(x\neq 0\) et \(f(0)=1\). On note \(T_0\) la tangente au graphe de \(f\) au point d'abscisse \(0\) lorsqu'elle existe. Parmi les affirmations suivantes, cocher celles qui sont vraies :
+
     \item \(\displaystyle DL_2(0)f(x)=1-\frac{x}{2}+\frac{x^2}{2}+o(x^2)\).
     \item* \(\displaystyle \lim _{x\to 0}f(x)=1\) et \(f\) est continue en \(0\).
     \item* \(f\) est dérivable en \(0\) et \(\displaystyle f'(0)=-\frac{1}{2}\).
@@ -419,6 +487,8 @@ Ainsi \(\displaystyle \lim _{x\to 0}f(x)=1\) et \(f\) est continue en \(0\) et, 
 \[\displaystyle DL_3(-1)f(x)=1-2(x+1)+2(x+1)^3+o\left((x+1)^3\right).\]
 Donc \(T\) est la droite d'équation \(y=1-2(x+1)\) et le point d'abscisse \(-1\) est un point d'inflexion.
 }]{Question}
+Soit \(\displaystyle f(x)=\frac{x^2}{x^2+2x+2}\) et \(g(x)=f(x-1)\). On note \(T\) la tangente au graphe de \(f\) au point d'abscisse \(-1\). Parmi les affirmations suivantes, cocher celles qui sont vraies :
+
     \item* \(\displaystyle DL_3(0)g(x)=1-2x+2x^3+o(x^3)\).
     \item \(T\) est la droite d'équation \(y=1-2x\) et le graphe de \(f\) est au dessus de \(T\) au voisinage de \(-1\).
     \item \(T\) est la droite d'équation \(y=1-2x\) et le graphe de \(f\) est en dessous de \(T\) au voisinage de \(-1\).
@@ -432,6 +502,8 @@ Donc \(T\) est la droite d'équation \(y=1-2(x+1)\) et le point d'abscisse \(-1\
 Ce qui implique que le point d'abscisse \(0\) est un point d'inflexion. Enfin, 
 \[\displaystyle \lim _{x\to 0}\frac{f(x)}{x^2}=\lim _{x\to 0}\left(\frac{x}{6}+o(x)\right)=0.\]
 }]{Question}
+Soit \(\displaystyle f(x)=x-\sin x\). On note \(T_0\) la tangente au graphe de \(f\) au point d'abscisse \(0\). Parmi les affirmations suivantes, cocher celles qui sont vraies :
+
     \item* \(\displaystyle DL_3(0)f(x)=\frac{x^3}{6}+o(x^3)\).
     \item \(T_0\) est la droite d'équation \(y=0\) et \(f\) admet un extrémum en \(0\).
     \item* Le point d'abscisse \(0\) est un point d'inflexion.
@@ -444,6 +516,8 @@ Ce qui implique que le point d'abscisse \(0\) est un point d'inflexion. Enfin,
 \[f(x)=1-\frac{1}{2x}+o\left(\frac{1}{x}\right)\mbox{ car }f(x)=g\left(\frac{1}{x}\right).\]
 La droite d'équation \(y=1\) est une asymptote au voisinage de \(\pm\infty\).
 }]{Question}
+Soit \(\displaystyle f(x)=x\ln \left(\frac{x+1}{x}\right)\). On note \(\Gamma\) le graphe de \(f\) et on pose \(\displaystyle g(x)=f\left(\frac{1}{x}\right)\). Parmi les affirmations suivantes, cocher celles qui sont vraies :
+
     \item \(\displaystyle DL_1(0)g(x)=1+\frac{x}{2}+o(x)\).
     \item* Au voisinage de \(+\infty\), on a : \(\displaystyle f(x)=1-\frac{1}{2x}+o\left(\frac{1}{x}\right)\).
     \item* \(\Gamma\) admet la droite d'équation \(y=1\) comme asymptote au voisinage de \(+\infty\).
@@ -456,6 +530,8 @@ La droite d'équation \(y=1\) est une asymptote au voisinage de \(\pm\infty\).
 \[f(x)=x-\frac{1}{2}+\frac{1}{3x}+o\left(\frac{1}{x}\right)\mbox{ car }f(x)=xg\left(\frac{1}{x}\right).\]
 La droite d'équation \(\displaystyle y=x-\frac{1}{2}\) est une asymptote au voisinage de \(\pm\infty\). De plus, au voisinage de \(-\infty\), \(\displaystyle f(x)-y=\frac{1}{3x}+o\left(\frac{1}{x}\right)\leq 0\). Donc \(\Gamma\) est en dessous de cette droite au voisinage de \(-\infty\).
 }]{Question}
+Soit \(\displaystyle f(x)=x^2\ln \left(\frac{x+1}{x}\right)\). On note \(\Gamma\) le graphe de \(f\) et on pose \(\displaystyle g(x)=xf\left(\frac{1}{x}\right)\). Parmi les affirmations suivantes, cocher celles qui sont vraies :
+
     \item \(\displaystyle DL_2(0)g(x)=1-\frac{x}{2}+o(x^2)\).
     \item* Au voisinage de \(+\infty\), on a : \(\displaystyle f(x)=x-\frac{1}{2}+\frac{1}{3x}+o\left(\frac{1}{x}\right)\).
     \item* \(\Gamma\) admet la droite d'équation \(\displaystyle y=x-\frac{1}{2}\) comme asymptote au voisinage de \(+\infty\).
@@ -468,6 +544,8 @@ La droite d'équation \(\displaystyle y=x-\frac{1}{2}\) est une asymptote au voi
 \[f(x)=x+\frac{1}{x}+o\left(\frac{1}{x}\right)\mbox{ car }f(x)=xg\left(\frac{1}{x}\right).\]
 La droite d'équation \(y=x\) est une asymptote au voisinage de \(+\infty\). De plus, au voisinage de \(+\infty\), \(\displaystyle f(x)-y=\frac{1}{x}+o\left(\frac{1}{x}\right)\geq 0\). Donc \(\Gamma\) est au dessus de la droite d'équation \(y=x\) au voisinage de \(+\infty\).
 }]{Question}
+Soit \(\displaystyle f(x)=\sqrt{2+x^2}\). On note \(\Gamma\) le graphe de \(f\) et on pose \(\displaystyle g(x)=xf\left(\frac{1}{x}\right)\). Parmi les affirmations suivantes, cocher celles qui sont vraies :
+
     \item \(\displaystyle DL_2(0)g(x)=1+x+x^2+o(x^2)\).
     \item* Au voisinage de \(+\infty\), on a : \(\displaystyle f(x)=x+\frac{1}{x}+o\left(\frac{1}{x}\right)\).
     \item* \(\Gamma\) admet la droite d'équation \(y=x\) comme asymptote au voisinage de \(+\infty\).
@@ -481,6 +559,8 @@ La droite d'équation \(y=x\) est une asymptote au voisinage de \(+\infty\). De 
 Donc \(T_0\) est la droite d'équation \(y=x\) et \(\displaystyle f(x)-y=-\frac{x^2}{2}+o(x^2)\leq 0\) au voisinage de \(0\) : le graphe de \(f\) est en dessous de \(T_0\) au voisinage de \(0\). A partir des \(DL_2(0)\) de \(f\) et \(g\), on obtient 
 \[ DL_1(0)\frac{f(x)}{g(x)}=1+o(x)\Rightarrow \lim _{x\to 0}\frac{\sqrt{1+2x}-1}{\ln (1+x)}=1.\]
 }]{Question}
+Soit \(\displaystyle f(x)=\sqrt{1+2x}-1\) et \(g(x)=\ln (1+x)\). On note \(T_0\) la tangente au graphe de \(f\) au point d'abscisse \(0\). Parmi les affirmations suivantes, cocher celles qui sont vraies :
+
     \item* \(\displaystyle DL_2(0)f(x)=x-\frac{x^2}{2}+o(x^2)\) et \(\displaystyle DL_2(0)g(x)=x-\frac{x^2}{2}+o(x^2)\).
     \item \(T_0\) est la droite d'équation \(y=x\) et le graphe de \(f\) est au-dessus de \(T_0\) au voisinage de \(0\).
     \item* \(\displaystyle DL_1(0)\frac{f(x)}{g(x)}=1+o(x)\).
@@ -493,6 +573,8 @@ Donc \(T_0\) est la droite d'équation \(y=x\) et \(\displaystyle f(x)-y=-\frac{
 \[\displaystyle DL_2(0)f(x)=1+\frac{x}{2}+\frac{7x^2}{6}+o(x^2).\]
 Ainsi \(\displaystyle \lim _{x\to 0}f(x)=1\) et \(f\) est continue en \(0\) et, puisque \(f\) admet un \(DL_1(0)\), \(f\) est dérivable en \(0\). De plus, \(T_0\) est la droite d'équation \(\displaystyle y=1+\frac{x}{2}\) et puisque \(\displaystyle f(x)-y=\frac{7x^2}{6}+o(x^2)\geq 0\) au voisinage de \(0\) : le graphe de \(f\) est au dessus de \(T_0\) au voisinage de \(0\).
 }]{Question}
+Soit \(f\) telle que \(\displaystyle f(x)=\frac{\mathrm{e}^{2x}-1}{x^2+2\sin x}\) si \(x\neq 0\) et \(f(0)=1\). On note \(T_0\) la tangente au graphe de \(f\) au point d'abscisse \(0\) lorsqu'elle existe. Parmi les affirmations suivantes, cocher celles qui sont vraies :
+
     \item \(\displaystyle DL_2(0)f(x)=1+\frac{x}{2}-\frac{x^2}{2}+o(x^2)\).
     \item* \(\displaystyle \lim _{x\to 0}f(x)=1\) et \(f\) est continue en \(0\).
     \item* \(f\) est dérivable en \(0\) et \(\displaystyle f'(0)=\frac{1}{2}\).
@@ -505,6 +587,8 @@ Ainsi \(\displaystyle \lim _{x\to 0}f(x)=1\) et \(f\) est continue en \(0\) et, 
 \[\displaystyle DL_2(0)f(x)=\frac{x^2}{2}+o(x^2)\quad \mbox{et}\quad DL_2(0)g(x)=\frac{x^2}{2}+o(x^2).\]
 D'abord, \(\displaystyle \lim _{x\to 0}\frac{\sqrt{1+2x}-\sqrt[3]{1+3x}}{1-\cos x}=1\). Ensuite, \(T_0\) est la droite d'équation \(y=0\). Or, au voisinage de \(0\), on a : \(\displaystyle f(x)-y\simeq \frac{x^2}{2}\geq 0\). Donc le graphe de \(f\) est situé au dessus de \(T_0\).
 }]{Question}
+Soit \(\displaystyle f(x)=\sqrt{1+2x}-\sqrt[3]{1+3x}\) et \(g(x)=1-\cos x\). On note \(T_0\) la tangente au graphe de \(f\) au point \(0\). Parmi les affirmations suivantes, cocher celles qui sont vraies :
+
     \item \(T_0\) est horizontale et le graphe de \(f\) est en dessous de \(T_0\) au voisinage de \(0\).
     \item* \(\displaystyle DL_2(0)g(x)=\frac{x^2}{2}+o(x^2)\).
     \item \(\displaystyle DL_0(0)\frac{f(x)}{g(x)}=0+o(1)\).
@@ -517,6 +601,8 @@ D'abord, \(\displaystyle \lim _{x\to 0}\frac{\sqrt{1+2x}-\sqrt[3]{1+3x}}{1-\cos 
 \[DL_2(0)g(x)=1+2x+\frac{x^2}{2}+o(x^2)\Rightarrow DL_1(+\infty)f(x)=x+2+\frac{1}{2x}+o\left(\frac{1}{x}\right).\]
 Ainsi, au voisinage de \(+\infty\), \(\Gamma\) admet \(\Delta\) comme asymptote et \(\Gamma\) est situé au dessus de \(\Delta\) car \(\displaystyle f(x)-y=\frac{1}{2x}+o\left(\frac{1}{x}\right)\geq 0\) au voisinage de \(+\infty\). Au voisinage de \(-\infty\), \(\Gamma\) est situé en dessous de \(\Delta\) car \(\displaystyle f(x)-y=\frac{1}{2x}+o\left(\frac{1}{x}\right)\leq 0\) au voisinage de \(-\infty\).
 }]{Question}
+On considère les fonctions \(f\) et \(g\) telles que \(\displaystyle f(x)=(1+x)\mathrm{e}^{1/(x+1)}\) et \(\displaystyle g(x)=xf\left(\frac{1}{x}\right)\). On note \(\Gamma\) le graphe de \(f\) et \(\Delta\) la droite d'équation \(\displaystyle y=x+2\). Parmi les affirmations suivantes, cocher celles qui sont vraies :
+
     \item* \(\displaystyle DL_2(0^+)g(x)=1+2x+\frac{x^2}{2}+o(x^2)\).
     \item \(\displaystyle \lim _{x\to 0^+}g(x)=1\) et \(\displaystyle \lim _{x\to 0^-}g(x)=-1\).
     \item* Au voisinage de \(+\infty\), \(\Gamma\) admet la droite \(\Delta\) comme asymptote et \(\Gamma\) est situé au dessus de \(\Delta\).
@@ -529,6 +615,8 @@ Ainsi, au voisinage de \(+\infty\), \(\Gamma\) admet \(\Delta\) comme asymptote 
 \[\displaystyle DL_2(0)f(x)=1+\frac{x^2}{2}+o(x^2).\]
 Ainsi \(f\) est dérivable en \(0\), \(T_0\) est la droite d'équation \(\displaystyle y=1\) et puisque \(\displaystyle f(x)-y\simeq \frac{x^2}{2}\geq 0\) au voisinage de \(0\) : le graphe de \(f\) est au dessus de \(T_0\) au voisinage de \(0\).
 }]{Question}
+Soit \(f\) telle que \(\displaystyle f(x)=\frac{2}{\sin (x^2)}+\frac{2}{\ln (1-x^2)}\) si \(x\neq 0\) et \(f(0)=1\). La tangente au graphe de \(f\) au point d'abscisse \(0\) lorsqu'elle existe est notée \(T_0\). Parmi les affirmations suivantes, cocher celles qui sont vraies :
+
     \item \(f\) n'est pas dérivable en \(0\).
     \item \(f\) n'admet pas de développement limité d'ordre \(2\) en \(0\).
     \item* \(\displaystyle DL_2(0)f(x)=1+\frac{x^2}{2}+o(x^2)\).
@@ -543,6 +631,8 @@ et
 \[DL_3(0^-)g(x)=-\frac{\pi}{2}-x+\frac{x^3}{3}+o(x^3)\Rightarrow DL_2(-\infty)f(x)=-\frac{\pi}{2}x-1+\frac{1}{3x^2}+o\left(\frac{1}{x^2}\right).\]
 Ainsi, au voisinage de \(+\infty\), \(\Gamma\) admet \(\Delta\) comme asymptote et \(\Gamma\) est situé au dessus de \(\Delta\) car \(\displaystyle f(x)-y=\frac{1}{3x^2}+o\left(\frac{1}{x^2}\right)\geq 0\). Par contre, au voisinage de \(-\infty\), \(\Gamma\) admet la droite \(\Delta '\) d'équation \(\displaystyle y=-\frac{\pi}{2}x-1\) comme asymptote et \(\Gamma\) est situé au dessus de \(\Delta '\) car \(\displaystyle f(x)-y=\frac{1}{3x^2}+o\left(\frac{1}{x^2}\right)\geq 0\). Enfin, \(g\) n'admet pas de limite en \(0\) car \(\displaystyle \lim _{x\to 0^+}g(x)=\frac{\pi}{2}\) et \(\displaystyle \lim _{x\to 0^-}g(x)=-\frac{\pi}{2}\).
 }]{Question}
+On considère les fonctions \(f\) et \(g\) telles que \(\displaystyle f(x)=x\arctan x\) et \(\displaystyle g(x)=xf\left(\frac{1}{x}\right)\). On note \(\Gamma\) le graphe de \(f\) et \(\Delta\) la droite d'équation \(\displaystyle y=\frac{\pi}{2}x-1\). Parmi les affirmations suivantes, cocher celles qui sont vraies :
+
     \item* \(\displaystyle DL_3(0^+)g(x)=\frac{\pi}{2}-x+\frac{x^3}{3}+o(x^3)\).
     \item \(\displaystyle \lim _{x\to 0}g(x)=\frac{\pi}{2}\) et \(g\) se prolonge par continuité en \(0\).
     \item* Au voisinage de \(+\infty\), \(\Gamma\) admet la droite \(\Delta\) comme asymptote et \(\Gamma\) est situé au dessus de \(\Delta\).
@@ -555,6 +645,8 @@ Ainsi, au voisinage de \(+\infty\), \(\Gamma\) admet \(\Delta\) comme asymptote 
 \[DL_2(0)g(x)=1-x^2+o(x^2) \Rightarrow DL_2(\pm\infty)f(x)=1-\frac{1}{x^2}+o\left(\frac{1}{x^2}\right).\]
 Ainsi, au voisinage de \(\pm\infty\), \(\Gamma\) admet \(\Delta\) comme asymptote et \(\Gamma\) est situé en dessous de \(\Delta\) car \(\displaystyle f(x)-y=-\frac{1}{x^2}+o\left(\frac{1}{x^2}\right)\leq 0\). Enfin, \(\displaystyle \lim _{x\to 0^+}g(x)=\lim _{x\to 0^-}g(x)=1\).
 }]{Question}
+On considère les fonctions \(f\) et \(g\) telles que \(\displaystyle f(x)=x^2\arctan \frac{1}{1+x^2}\) et \(\displaystyle g(x)=f\left(\frac{1}{x}\right)\). On note \(\Gamma\) le graphe de \(f\) et \(\Delta\) la droite d'équation \(\displaystyle y=1\). Parmi les affirmations suivantes, cocher celles qui sont vraies :
+
     \item* \(\displaystyle DL_2(0^+)g(x)=1+2x+\frac{x^2}{2}+o(x^2)\).
     \item \(\displaystyle \lim _{x\to 0^+}g(x)=1\) et \(\displaystyle \lim _{x\to 0^-}g(x)=-1\).
     \item Au voisinage de \(+\infty\), \(\Gamma\) admet la droite \(\Delta\) comme asymptote et \(\Gamma\) est situé au dessus de \(\Delta\).
@@ -569,6 +661,8 @@ et
 \[DL_2(0^-)g(x)=-1+\frac{5x^2}{6}+o(x^2)\Rightarrow DL_2(-\infty)f(x)=-1+\frac{5}{6x^2}+o\left(\frac{1}{x^2}\right).\]
 Ainsi \(\Gamma\) admet la droite d'équation \(\displaystyle y=1\) (resp. \(y=-1\)) comme asymptote au voisinage de \(+\infty\) (resp. \(-\infty\)). Enfin, \(g\) n'admet pas de limite en \(0\) car \(\displaystyle \lim _{x\to 0^+}g(x)=1\) et \(\displaystyle \lim _{x\to 0^-}g(x)=-1\).
 }]{Question}
+Soit \(\displaystyle f(x)=x\arctan \left(\frac{1}{\sqrt{1+x^2}}\right)\). On considère la fonction \(g\) telle que \(\displaystyle g(x)=f\left(\frac{1}{x}\right)\) et on note \(\Gamma\) le graphe de \(f\). Parmi les affirmations suivantes, cocher celles qui sont vraies :
+
     \item* \(\displaystyle DL_2(0^+)g(x)=1-\frac{5x^2}{6}+o(x^2)\).
     \item \(\displaystyle \lim _{x\to 0}g(x)=1\) et \(g\) se prolonge par continuité en \(0\).
     \item* \(\Gamma\) admet la droite d'équation \(\displaystyle y=1\) comme asymptote au voisinage de \(+\infty\).
@@ -583,6 +677,8 @@ et
 \[DL_3(0^-)g(x)=-1-x-\frac{2}{3}x^3+o(x^2)\Rightarrow DL_2(-\infty)f(x)=-x-1-\frac{2}{3x^2}+o\left(\frac{1}{x^2}\right).\]
 Ainsi, au voisinage de \(+\infty\), \(\Gamma\) admet \(\Delta\) comme asymptote et \(\Gamma\) est situé au dessus de \(\Delta\) car \(\displaystyle f(x)-y=\frac{2}{3x^2}+o\left(\frac{1}{x^2}\right)\geq 0\). Mais, au voisinage de \(-\infty\), \(\Gamma\) admet la droite \(\Delta '\) d'équation \(y=-x-1\) comme asymptote, et \(\Gamma\) est situé en dessous de \(\Delta '\) car \(\displaystyle f(x)-y=-\frac{2}{3x^2}+o\left(\frac{1}{x^2}\right)\leq 0\). Enfin, \(g\) n'admet pas de limite en \(0\) car \(\displaystyle \lim _{x\to 0^+}g(x)=1\) et \(\displaystyle \lim _{x\to 0^-}g(x)=-1\).
 }]{Question}
+On considère les fonctions \(f\) et \(g\) telles que \(\displaystyle f(x)=\sqrt{x^2+1}\mathrm{e}^{1/(x+1)}\) et \(\displaystyle g(x)=xf\left(\frac{1}{x}\right)\). On note \(\Gamma\) le graphe de \(f\) et \(\Delta\) la droite d'équation \(y=x+1\). Parmi les affirmations suivantes, cocher celles qui sont vraies :
+
     \item* \(\displaystyle DL_3(0^+)g(x)=1+x+\frac{2}{3}x^3+o(x^3)\).
     \item \(\displaystyle \lim _{x\to 0}g(x)=1\) et \(g\) se prolonge par continuité en \(0\).
     \item* Au voisinage de \(+\infty\), \(\Gamma\) admet la droite \(\Delta\) comme asymptote et \(\Gamma\) est situé au dessus de \(\Delta\).
