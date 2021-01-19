@@ -3,6 +3,9 @@
 \begin{multi}[multiple,feedback=
 {\(P(X)\times Q(X) = 6 X^7 - 4 X^6 + 6 X^5 + 9 X^4 - 3 X^3 + 7 X^2 + 3 X\).
 }]{Question}
+Soit \(P(X) = 2X^5+3X^2+X\) et \(Q(X) = 3X^2-2X+3\).
+Quelles sont les assertions vraies concernant le polynôme produit \(P(X)\times Q(X)\) ?
+
     \item Le coefficient dominant est \(5\).
     \item* Le coefficient du monôme \(X^3\) est \(-3\).
     \item Le coefficient du terme constant est \(3\).
@@ -15,6 +18,9 @@
 \(P(X) + Q(X) = 2 X^3 - 3 X^2 - X + 3\),
 \(P(X) - Q(X) = -3 X^2 + X + 1\).
 }]{Question}
+Soit \(P(X) = X^3-3X^2+2\) et \(Q(X) = X^3-X+1\).
+Quelles sont les assertions vraies ?
+
     \item Le polynôme \(P(X) \times Q(X)\) est de degré \(9\).
     \item Le coefficient du monôme \(X^2\) dans le produit \(P(X) \times Q(X)\) est \(3\).
     \item* Le polynôme \(P(X) + Q(X)\) est de degré \(3\).
@@ -25,6 +31,9 @@
 \begin{multi}[multiple,feedback=
 {Le quotient de deux polynômes n'est pas un polynôme.
 }]{Question}
+Soient \(P(X)\) et \(Q(X)\) deux polynômes unitaires de degré \(n\ge1\).
+Quelles sont les assertions vraies ?
+
     \item* \(P+Q\) est un polynôme de degré \(n\).
     \item \(P-Q\) est un polynôme de degré \(n\).
     \item* \(P \times Q\) est un polynôme de degré \(n+n=2n\).
@@ -35,6 +44,9 @@
 \begin{multi}[multiple,feedback=
 {On a la formule \(\deg(P\times Q) = \deg P + \deg Q\) mais, il n'y a pas de formule pour la somme, car \(\deg(P + Q)\) peut être strictement plus petit que \(\deg P\) et \(\deg Q\).
 }]{Question}
+Soit \(P\) un polynôme de degré \(\ge 2\).
+Quelles sont les assertions vraies, quel que soit le polynôme \(P\) ?
+
     \item* \(\deg( P(X) \times (X^2-X+1) ) = \deg P(X) + 2\)
     \item \(\deg( P(X) + (X^2-X+1) ) = \deg P(X)\)
     \item \(\deg( P(X)^2 ) = (\deg P(X))^2\)
@@ -45,6 +57,9 @@
 \begin{multi}[multiple,feedback=
 {Le polynôme dérivé s'obtient comme si on dérivait la fonction \(X \mapsto P(X)\). 
 }]{Question}
+Soit \(P(X) = \sum_{k=0}^n a_k X^k\). On associe le polynôme dérivé :
+\(P'(X) = \sum_{k=1}^n ka_k X^{k-1}\).
+
     \item Le polynôme dérivé de \(P(X) = X^5-2X^2+1\) est \(P'(X)=5X^4-2X\).
     \item Le seul polynôme qui vérifie \(P'(X)=0\) est \(P(X)=1\).
     \item* Si \(P'(X)\) est de degré \(7\), alors \(P(X)\) est de degré \(8\).
@@ -55,6 +70,9 @@
 \begin{multi}[multiple,feedback=
 {Cette transformation est faite afin que le coefficient du monôme \(X^{n-1}\) de \(Q\) soit toujours nul.
 }]{Question}
+Soit \(P(X) = X^n + a_{n-1}X^{n-1} + \cdots + a_1X+a_0\) un polynôme de \(\Rr[X]\) de degré \(n \ge 1\). À ce polynôme \(P\) on associe un nouveau polynôme \(Q\), défini par \(Q(X) = P(X - \frac{a_{n-1}}{n})\).
+Quelles sont les assertions vraies ?
+
     \item Si \(P(X) = X^2+3X+1\) alors \(Q(X) = X^2-2X\).
     \item* Si \(P(X) = X^3-3X^2+2\) alors \(Q(X) = X^3-3X\).
     \item Le coefficient constant du polynôme \(Q\) est toujours nul.
@@ -66,6 +84,9 @@
 {C'est comme pour les primitives, il ne faut pas oublier la constante :
 Si \(P'=Q'\) alors \(P=Q +c\).
 }]{Question}
+Soit \(P(X) = \sum_{k=0}^n a_k X^k\). On associe le polynôme dérivé :
+\(P'(X) = \sum_{k=1}^n ka_k X^{k-1}\). Quelles sont les assertions vraies ?
+
     \item* Si \(P\) est de degré \(n\ge1\) alors \(P'\) est de degré \(n-1\).
     \item Si \(P'(X) = nX^{n-1}\) alors \(P(X) = X^n\).
     \item* Si \(P'=P\) alors \(P=0\).
@@ -77,6 +98,11 @@ Si \(P'=Q'\) alors \(P=Q +c\).
 {La formule (à connaître) est 
 \[c_k = \sum_{i+j=k} a_ib_j = \sum_{i=0}^k a_ib_{k-i}.\]
 }]{Question}
+Soit \(A(X) = \sum_{i=0}^n a_i X^i\).
+Soit \(B(X) = \sum_{j=0}^m b_j X^j\).
+Soit \(C(X) = A(X) \times B(X) = \sum_{k=0}^{m+n} c_k X^k\).
+Quelles sont les assertions vraies ?
+
     \item \(c_k = a_k b_k\)
     \item* \(c_k = \sum_{i+j=k} a_ib_j\)
     \item \(c_k = \sum_{i=0}^k a_ib_i\)
@@ -87,6 +113,9 @@ Si \(P'=Q'\) alors \(P=Q +c\).
 \begin{multi}[multiple,feedback=
 {La division euclidienne \(A = B \times Q + R\) existe toujours, \(Q\) et \(R\) sont uniques et bien sûr \(\deg Q \le \deg A\).
 }]{Question}
+Soient \(A,B\) deux polynômes, avec \(B\) non nul. 
+Soit \(A = B \times Q + R\) la division euclidienne de \(A\) par \(B\).
+
     \item* Un tel \(Q\) existe toujours.
     \item* S'il existe, \(Q\) est unique.
     \item* On a toujours \(\deg Q \le \deg A\).
@@ -98,6 +127,9 @@ Si \(P'=Q'\) alors \(P=Q +c\).
 {La division euclidienne \(A = B \times Q + R\) existe toujours, \(Q\) et \(R\) sont uniques et par définition de la division euclidienne \(R\) est nul ou bien 
 \(\deg R < \deg B\).
 }]{Question}
+Soient \(A,B\) deux polynômes, avec \(B\) non nul. 
+Soit \(A = B \times Q + R\) la division euclidienne de \(A\) par \(B\).
+
     \item* Un tel \(R\) existe toujours.
     \item* S'il existe, \(R\) est unique.
     \item On a toujours \(\deg R < \deg A\) (ou bien \(R\) est nul).
@@ -109,6 +141,8 @@ Si \(P'=Q'\) alors \(P=Q +c\).
 {Faire le calcul !
 \(Q(X) = 2X^2-3X-1\), \(R(X) = 4X+2\).
 }]{Question}
+Soient \(A(X) = 2 X^4 + 3 X^3 - 8 X^2 - 2 X + 1\) et \(B(X) = X^2+3X+1\). Soit \(A = BQ+R\) la division euclidienne de \(A\) par \(B\).
+
     \item Le coefficient du monôme \(X^2\) de \(Q\) est \(1\).
     \item Le coefficient du monôme \(X\) de \(Q\) est \(3\).
     \item Le coefficient du monôme \(X\) de \(R\) est \(2\).
@@ -120,6 +154,8 @@ Si \(P'=Q'\) alors \(P=Q +c\).
 {Faire le calcul !
 \(Q(X) = X^3-2X^2+4\), \(R(X) = -X^2+1\).
 }]{Question}
+Soient \(A(X) = X^6 - 7 X^5 + 10 X^4 + 5 X^3 - 23 X^2 + 5\) et \(B(X) = X^3-5X^2+1\). Soit \(A = BQ+R\) la division euclidienne de \(A\) par \(B\).
+
     \item Le coefficient du monôme \(X^2\) de \(Q\) est \(0\).
     \item* Le coefficient du monôme \(X\) de \(Q\) est \(0\).
     \item Le coefficient du monôme \(X\) de \(R\) est \(-1\).
@@ -131,6 +167,11 @@ Si \(P'=Q'\) alors \(P=Q +c\).
 {\(A(X) = (X-3)(X+1)^2(X-1)\), \(B(X) = X^2(X-3)(X+1)\),
 le pgcd est \(D = (X-3)(X+1)\). 
 }]{Question}
+Soient \(A(X) = X^4 - 2 X^3 - 4 X^2 + 2 X + 3\) et 
+\(B(X) = X^4 - 2 X^3 - 3 X^2\) des polynômes de \(\Rr[X]\).
+Notons \(D\) le pgcd de \(A\) et \(B\).
+Quelles sont les affirmations vraies  ?
+
     \item \(X-1\) divise \(D\).
     \item* \(X+1\) divise \(D\).
     \item* \(D(X) = (X-3)(X+1)\).
@@ -141,6 +182,8 @@ le pgcd est \(D = (X-3)(X+1)\).
 \begin{multi}[multiple,feedback=
 {Le pgcd s'obtient en prenant le minimum entre les exposants, le ppcm en prenant le maximum. Attention \(X^2-1=(X-1)(X+1)\).
 }]{Question}
+Quelles sont les affirmations vraies pour des polynômes de \(\Rr[X]\) ?
+
     \item Le pgcd de \((X-1)^2(X-3)^3(X^2+X+1)^3\) et
 \((X-1)^2(X-2)(X-3)(X^2+X+1)^2\) est \((X-1)^2(X-3)(X^2+X+1)\).
     \item Le ppcm de \((X-1)^2(X-3)^3(X^2+X+1)^3\) et
@@ -156,6 +199,11 @@ le pgcd est \(D = (X-3)(X+1)\).
 {On a \(\deg R < \deg B\). Il ne faut pas confondre \(R=0\) et \(r=0\).
 En plus \(\deg(A) = \deg(B\times Q) = \deg(A) + \deg(Q)\).
 }]{Question}
+Soit \(A\) un polynôme de degré \(n\ge1\). Soit \(B\) un polynôme de degré \(m\ge1\), avec \(m \le n\).
+Soit \(A = B \times Q + R\) la division euclidienne de \(A\) par \(B\). On note
+\(q = \deg Q\) et \(r = \deg R\) (avec \(r=-\infty\) si \(R=0\)).
+Quelles sont les assertions vraies (quelque soient \(A\) et \(B\)) ?
+
     \item* \(q = n-m\)
     \item* \(r < m\)
     \item \(r=0 \implies A\) divise \(B\).
@@ -166,6 +214,8 @@ En plus \(\deg(A) = \deg(B\times Q) = \deg(A) + \deg(Q)\).
 \begin{multi}[multiple,feedback=
 {\(Q(X) = X^n-X^{n-1}+2X^{n-2}-2X^{n-3}+\cdots\). \(R(X) = \pm 2 X^{n-1}\).
 }]{Question}
+Soit \(n\ge2\). Soit \(A(X) = X^{2n}+X^{2n-2}\). Soit \(B(X) = X^{n}+X^{n-1}\). Soit \(A = BQ + R\) la division euclidienne de \(A\) par \(B\).
+
     \item* Le coefficient de \(X^n\) de \(Q\) est \(1\).
     \item Le coefficient de \(X^{n-1}\) de \(Q\) est \(1\).
     \item* Le coefficient de \(X^{n-2}\) de \(Q\) est \(2\).
@@ -176,6 +226,9 @@ En plus \(\deg(A) = \deg(B\times Q) = \deg(A) + \deg(Q)\).
 \begin{multi}[multiple,feedback=
 {\(A(X)=X^2(X-1)^2\), \(B(X)=(X-1)(X+2)\), \(D(X)=X-1\). \(U(X)= -\frac14\), \(V(X)=\frac14(X^2-X+2)\) donnent \(AU+BV=D\).
 }]{Question}
+Soit \(A(X) = X^4-X^2\). Soit \(B(X) = X^2+X-2\).
+Soit \(D\) le pgcd de \(A\) et \(B\) dans \(\Rr[X]\).
+
     \item \(D(X) = 1\)
     \item* Il existe \(U,V \in \Rr[X]\) tels que \(AU+BV = X-1\).
     \item* Il existe \(u \in \Rr\) et \(V \in \Rr[X]\) tels que \(Au+BV = X-1\).
@@ -186,6 +239,9 @@ En plus \(\deg(A) = \deg(B\times Q) = \deg(A) + \deg(Q)\).
 \begin{multi}[multiple,feedback=
 {Il y a au plus \(\deg P\) racines réelles (comptées avec multiplicité).
 }]{Question}
+Soit \(P \in \Rr[X]\) un polynôme de degré \(8\).
+Quelles sont les affirmations vraies ?
+
     \item \(P\) admet exactement \(8\) racines réelles (comptées avec multiplicité).
     \item \(P\) admet au moins une racine réelle.
     \item* \(P\) admet au plus \(8\) racines réelles (comptées avec multiplicité).
@@ -196,6 +252,8 @@ En plus \(\deg(A) = \deg(B\times Q) = \deg(A) + \deg(Q)\).
 \begin{multi}[multiple,feedback=
 {Calculer \(P(\alpha)\). En fait \(P(X) = (X-2)^2(X+1)^3(X^2+X+1)\).
 }]{Question}
+Soit \(P(X) = X^7 - 5 X^5 - 5 X^4 + 4 X^3 + 13 X^2 + 12 X + 4\).
+
     \item* \(-1\) est une racine de \(P\).
     \item \(0\) est une racine de \(P\).
     \item \(1\) est une racine de \(P\).
@@ -206,6 +264,8 @@ En plus \(\deg(A) = \deg(B\times Q) = \deg(A) + \deg(Q)\).
 \begin{multi}[multiple,feedback=
 {Sur \(\Cc\) les irréductibles sont de degré \(1\). Sur \(\Rr\) ils sont de degré 1, ou bien de degré \(2\) à discriminant strictement négatif.
 }]{Question}
+Quelles sont les affirmations vraies ?
+
     \item \(2X^2+3X+1\) est irréductible sur \(\Qq\).
     \item* \(2X^2-3X+2\) est irréductible sur \(\Rr\).
     \item \(2X^2-X+3\) est irréductible sur \(\Cc\).
@@ -216,6 +276,9 @@ En plus \(\deg(A) = \deg(B\times Q) = \deg(A) + \deg(Q)\).
 \begin{multi}[multiple,feedback=
 {Il y a au plus \(\deg P\) racines réelles (comptées avec multiplicité). Mais ici le degré est impair, donc \(P\) admet au moins une racine réelle.
 }]{Question}
+Soit \(P \in \Rr[X]\) un polynôme de degré \(2n+1\) (\(n\in\Nn^*\)).
+Quelles sont les affirmations vraies ?
+
     \item* \(P\) peut admettre une racine complexe, qui ne soit pas réelle.
     \item* \(P\) admet au moins une racines réelle.
     \item \(P\) admet au moins deux racines réelles (comptées avec multiplicités).
@@ -227,6 +290,8 @@ En plus \(\deg(A) = \deg(B\times Q) = \deg(A) + \deg(Q)\).
 {Pour une racine double il faut \(P(a)=0\), \(P'(a)=0\) et \(P''(a)\neq0\).
 En fait \(P(X) = X(X+2)^3(X-1)^2\).
 }]{Question}
+Soit \(P(X) = X^6 + 4 X^5 + X^4 - 10 X^3 - 4 X^2 + 8 X\).
+
     \item \(-1\) est une racine double.
     \item \(0\) est une racine double.
     \item* \(1\) est une racine double.
@@ -237,6 +302,8 @@ En fait \(P(X) = X(X+2)^3(X-1)^2\).
 \begin{multi}[multiple,feedback=
 {Sur \(\Qq\) les facteurs irréductibles peuvent être de n'importe quel degré.
 }]{Question}
+Soit \(P \in \Qq[X]\) un polynôme de degré \(n\).
+
     \item* \(P\) peut avoir des racines dans \(\Rr\), mais pas dans \(\Qq\).
     \item* Si \(z\in \Cc\setminus\Rr\) est une racine de \(P\), alors \(\bar z\) aussi.
     \item Les facteurs irréductibles de \(P\) sur \(\Qq\) sont de degré \(1\) ou \(2\).
@@ -247,6 +314,9 @@ En fait \(P(X) = X(X+2)^3(X-1)^2\).
 \begin{multi}[multiple,feedback=
 {\(a\) racine de \(P\) de multiplicité \(\ge k\) \(\iff\) \((X-a)^k\) divise \(P\) \(\iff\) \(P(a) = 0\), \(P'(a)=0\), ..., \(P^{(k-1)}(a)=0\).
 }]{Question}
+Soit \(P \in \Kk[X]\) un polynôme de degré \(n\ge1\).
+Quelles sont les affirmations vraies ?
+
     \item* \(a\) racine de \(P\) \(\iff\) \(X-a\) divise \(P\).
     \item* \(a\) racine de \(P\) de multiplicité \(\ge k\) \(\iff\) \((X-a)^k\) divise \(P\).
     \item \(a\) racine de \(P\) de multiplicité \(\ge k\) \(\iff\)
@@ -261,6 +331,8 @@ Sur \(\Rr\) les éléments simples sont de la forme \(\frac{a}{(X-\alpha)^k}\), 
 \(\frac{aX+b}{(X^2+\alpha X+\beta)^k}\), \(a,b,\alpha,\beta \in \Rr\), \(k \in \Nn^*\) avec 
 \(X^2+\alpha X+\beta\) sans racines réelles.
 }]{Question}
+Quelles sont les affirmations vraies ?
+
     \item Les éléments simples sur \(\Cc\) sont de la forme \(\frac{a}{X-\alpha}\), \(a,\alpha \in \Cc\).
     \item Les éléments simples sur \(\Cc\) sont de la forme \(\frac{a}{(X-\alpha)^k}\), \(a,\alpha \in \Rr\), \(k\in\Nn^*\).
     \item* Les éléments simples sur \(\Rr\) peuvent être de la forme \(\frac{a}{(X-\alpha)^k}\), \(a,\alpha \in \Rr\).
@@ -272,6 +344,8 @@ Sur \(\Rr\) les éléments simples sont de la forme \(\frac{a}{(X-\alpha)^k}\), 
 {\(\frac{P(X)}{Q(X)} = \frac{X-1}{(X+1)^2(X^2+X+1)}
 = \frac{-1}{X+1}+\frac{-2}{(X+1)^2}+\frac{X+2}{X^2+X+1}\).
 }]{Question}
+Soient \(P(X)=X-1\), \(Q(X)=(X+1)^2(X^2+X+1)\). On décompose la fraction \(F = \frac{P}{Q}\) sur \(\Rr\).
+
     \item* La partie polynomiale est nulle.
     \item Il peut y avoir un élément simple \(\frac{a}{X-1}\).
     \item Il peut y avoir un élément simple \(\frac{a}{X+1}\) mais pas  \(\frac{a}{(X+1)^2}\).
@@ -282,6 +356,8 @@ Sur \(\Rr\) les éléments simples sont de la forme \(\frac{a}{(X-\alpha)^k}\), 
 \begin{multi}[multiple,feedback=
 {La partie entière s'obtient comme le quotient de la division euclidienne de \(P\) par \(Q\).
 }]{Question}
+Soit \(\frac{P(X)}{Q(X)}\) une fraction rationnelle. On note \(E(X)\) sa partie polynomiale (appelée aussi partie entière).
+
     \item* Si \(\deg P < \deg Q\) alors \(E(X) = 0\).
     \item* Si \(\deg P \ge \deg Q\) alors \(\deg E(X) = \deg P - \deg Q\).
     \item Si \(P(X) = X^3+X+2\) et \(Q(X) = X^2-1\) alors \(E(X) = X+1\).
@@ -294,6 +370,12 @@ Sur \(\Rr\) les éléments simples sont de la forme \(\frac{a}{(X-\alpha)^k}\), 
 =\frac{2}{X-2} + \frac{-3}{X-1} +  \frac{-3}{(X-1)^2}
 + \frac{X+1}{X^2-X+1}\).
 }]{Question}
+Soit \(P(X)=3X\) et \(Q(X) = (X-2)(X-1)^2(X^2-X+1)\).
+On écrit 
+\[\frac{P(X)}{Q(X)} = \frac{a}{X-2} + \frac{b}{X-1} +  \frac{c}{(X-1)^2}
++ \frac{dX+e}{X^2-X+1}.\]
+Quelles sont les affirmations vraies ?
+
     \item En multipliant par \(X-2\), puis en évaluant en \(X=2\), j'obtiens \(a=1\).
     \item* En multipliant par \((X-1)^2\), puis en évaluant en \(X=1\), j'obtiens \(c=-3\).
     \item* En multipliant par \(X\), puis en faisant tendre \(X \to +\infty\), j'obtiens la relation \(a+b+d=0\).
@@ -306,6 +388,12 @@ Sur \(\Rr\) les éléments simples sont de la forme \(\frac{a}{(X-\alpha)^k}\), 
 \(F(X) = \dfrac{1}{(X^2+1)X^3} = \frac{-1}{X}  +  \frac{1}{X^3}
 + \frac{X}{X^2+1}.\)
 }]{Question}
+Soit \(F(X) = \dfrac{1}{(X^2+1)X^3}\).
+On écrit 
+\[F(X) = \frac{a}{X} + \frac{b}{X^2} +  \frac{c}{X^3}
++ \frac{dX+e}{X^2+1}.\]
+Quelles sont les affirmations vraies ?
+
     \item* \(c=1\)
     \item \(b=1\)
     \item \(a=1\)
@@ -316,6 +404,11 @@ Sur \(\Rr\) les éléments simples sont de la forme \(\frac{a}{(X-\alpha)^k}\), 
 \begin{multi}[multiple,feedback=
 {\(F(X) = \dfrac{1}{X(X^2+1)^2} = \frac{-1}{X} + \frac{X}{X^2+1} +  \frac{X+1}{(X^2+1)^2}.\)
 }]{Question}
+Soit \(F(X) = \dfrac{X-1}{X(X^2+1)^2}\).
+On écrit 
+\[F(X) = \frac{a}{X} + \frac{bX+c}{X^2+1} +  \frac{dX+e}{(X^2+1)^2}.\]
+Quelles sont les affirmations vraies ?
+
     \item* \(a=-1\)
     \item \(d=0\) et \(e=0\)
     \item \(b=0\) et \(c=0\)

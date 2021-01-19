@@ -5,6 +5,8 @@
 Donc une fonction n'est pas croissante si on peut trouver \(x \le y\) mais avec
 \(f(x) > f(y)\). Le seul argument valable est donc \(\frac{3\pi}{4} < \pi\) avec \(\sin(\frac{3\pi}{4}) > \sin(\pi)\).
 }]{Question}
+Quels arguments sont valides pour justifier que la fonction \(x \mapsto \sin(x)\) n'est pas une fonction croissante sur \(\Rr\) ?
+
     \item \(\sin(\pi) = \sin(0)\) et pourtant \(\pi \neq 0\).
     \item \(\sin(\frac\pi2) > \sin(0)\) et pourtant \(0 < \frac\pi2\).
     \item* \(\sin(\frac{3\pi}{4}) > \sin(\pi)\) et pourtant \(\frac{3\pi}{4} < \pi\).
@@ -15,6 +17,8 @@ Donc une fonction n'est pas croissante si on peut trouver \(x \le y\) mais avec
 \begin{multi}[multiple,feedback=
 {La somme et le produit de fonctions est définie partout. Par contre pour le quotient il faut que le dénominateur ne s'annule pas. Pour une racine carrée, il faut que le terme sous la racine soit positif ou nul.
 }]{Question}
+Soient \(f,g\) deux fonctions définies sur \(\Rr\). Quelles sont les assertions vraies ?
+
     \item* \(f-2g\) est une fonction définie sur \(\Rr\).
     \item* \(f^2 \times g\) est une fonction définie sur \(\Rr\).
     \item \(\frac{f}{g^2}\) est une fonction définie sur \(\Rr\).
@@ -25,6 +29,8 @@ Donc une fonction n'est pas croissante si on peut trouver \(x \le y\) mais avec
 \begin{multi}[multiple,feedback=
 {\(\frac 1x\) est définie pour \(x\neq 0\), \(\sqrt{x}\) est définie pour \(x \ge 0\) ; \(\exp x\) est définie sur \(\Rr\) ; \(\ln x\) seulement pour \(x>0\).
 }]{Question}
+Quelles sont les assertions vraies concernant le domaine de définition des fonctions suivantes ? (Rappel : le domaine de définition de \(f\) est le plus grand ensemble \(D_f \subset \Rr\) sur lequel \(f\) est définie.)
+
     \item* Le domaine de définition de \(\exp(\frac{1}{x^2+1})\) est \(\Rr\).
     \item Le domaine de définition de \(\sqrt{x^2-1}\) est \([1,+\infty[\).
     \item Le domaine de définition de \(\frac{1}{\sqrt{(x-1)(x-3)}}\) est \(]1,3[\).
@@ -37,6 +43,8 @@ Donc une fonction n'est pas croissante si on peut trouver \(x \le y\) mais avec
 Ce qui peut aussi s'écrire \(x \ge y\) qui implique \(f(x) \le f(y)\). 
 Autrement dit \(f\) inverse le sens des inégalités.
 }]{Question}
+Quels arguments sont valables pour montrer que \(f : \Rr \to \Rr\) est décroissante ?
+
     \item On a \(x \le y\) qui implique \(f(x) \le f(y)\).
     \item* On a \(x \le y\) qui implique \(f(x) \ge f(y)\).
     \item* On a \(x \ge y\) qui implique \(f(x) \le f(y)\).
@@ -47,6 +55,8 @@ Autrement dit \(f\) inverse le sens des inégalités.
 \begin{multi}[multiple,feedback=
 {Par définition \(f\) est majorée si \(\exists  M > 0 \quad \forall x \in \Rr \quad f(x) \le M\).
 }]{Question}
+Soit \(f : \Rr \to \Rr\). Quelles sont les assertions vraies ?
+
     \item \(\forall  M > 0 \quad \exists x \in \Rr \quad f(x) \le M\)  implique \(f\) majorée.
     \item \(\forall  x \in \Rr \quad \exists  M > 0 \quad f(x) \ge M\)  implique \(f\) majorée.
     \item* \(\exists  M > 0 \quad \forall x \in \Rr \quad f(x) \le M\)  implique \(f\) majorée.
@@ -57,6 +67,8 @@ Autrement dit \(f\) inverse le sens des inégalités.
 \begin{multi}[multiple,feedback=
 {La fonction \(x \mapsto \frac{1}{x}\) est décroissante sur \(]0,+\infty[\) et \(]-\infty,0[\) mais pas sur \(\Rr^*\).
 }]{Question}
+Quelles sont les assertions vraies ?
+
     \item La fonction \(x \mapsto \frac{1}{x}\) est décroissante car sa dérivée \(x \mapsto -\frac{1}{x^2}\) est partout négative.
     \item* Une fonction périodique et croissante est constante.
     \item* Si \(f : \Rr \to ]0,+\infty[\) est croissante, alors \(1/f\) est décroissante.
@@ -72,6 +84,9 @@ Autrement dit \(f\) inverse le sens des inégalités.
 \(g \circ f\) n'est pas définie pour \(x\) proche de \(1\), en fait 
 \(D_{g\circ f} = [1+\frac1e,+\infty[\).
 }]{Question}
+Soit \(f(x) = \ln(x-1)\) et \(g(x) = \sqrt{x+1}\). 
+Quelles sont les assertions vraies concernant les domaines de définition ? (Rappel : le domaine de définition de \(f\) est le plus grand ensemble \(D_f \subset \Rr\) sur lequel \(f\) est définie.)
+
     \item* \(D_f \cup D_g = [-1,+\infty[\).
     \item Pour la composition \(f \circ g\), \(D_{f\circ g} = [-1,+\infty[\).
     \item Pour la composition \(g \circ f\), \(D_{g\circ f} = ]1,+\infty[\).
@@ -83,6 +98,8 @@ Autrement dit \(f\) inverse le sens des inégalités.
 {En notant \(y = x+h\) avec \(h>0\) on a \(y > x\) et donc il suffit d'avoir \(\frac{f(y)}{f(x)} \ge 1\).
 Par contre, il n'est pas suffisant de comparer \(f\) en des valeurs distantes de \(1\) ! Essayez de dessiner un contre-exemple : \(f\) vaut \(0\) partout, sauf \(1\) en chaque entier.
 }]{Question}
+Soit \(f : \Rr \to \Rr\) une fonction à valeurs strictement positives. Quels arguments sont valables pour montrer que \(f\) est croissante ?
+
     \item Pour tout \(x\in\Rr\), on a \(f(x+1) \ge f(x)\).
     \item Pour tout \(x\in\Rr\), on a \(\frac{f(x+1)}{f(x)} \ge 1\).
     \item Pour tout \(x\in\Rr\), il existe \(h>0\) tel que \(f(x+h) \ge f(x)\).
@@ -94,6 +111,8 @@ Par contre, il n'est pas suffisant de comparer \(f\) en des valeurs distantes de
 {La somme de deux fonctions majorées (resp. minorées) est majorée (resp. minorée). Ce n'est pas le cas pour le produit : par exemple
 \(f(x) = -1\) est minorée, \(g(x) = \exp(x)\) aussi, mais \(f \times g (x) = -\exp(x)\) ne l'est pas.
 }]{Question}
+Soient \(f,g : \Rr \to \Rr\). Quelles sont les assertions vraies ?
+
     \item Si \(f\) est bornée et \(g\) majorée alors \(f-g\) est bornée.
     \item* Si \(f\) bornée et \(g\) majorée alors \(f-g\) est minorée.
     \item Si \(f\) et \(g\) sont minorées, alors \(f \times g\) est minorée.
@@ -106,6 +125,9 @@ Par contre, il n'est pas suffisant de comparer \(f\) en des valeurs distantes de
 \(x \mapsto f(x+k)\) est définie sur \(]a-k,b-k[\)
 et \(x \mapsto f(\ell x)\) est définie sur \(]\frac{a}{\ell},\frac{b}{\ell}[\) (où \(\ell >0\)).
 }]{Question}
+Soient \(f : ]-\infty,0[ \to ]0,1[\) et \(g : ]-2,2[ \to ]0,+\infty[\).
+Quelles sont les assertions vraies ?
+
     \item Le domaine de définition de \(x \mapsto g\big(f(2x)\big)\) est \(]-1,1[\).
     \item Le domaine de définition de \(x \mapsto g\big( \ln (f(x)) \big)\) est \(]0,+\infty[\).
     \item* Le domaine de définition de \(x \mapsto \frac{g(x+1)}{f(x)}\) est \(]-3,0[\).
@@ -117,6 +139,8 @@ et \(x \mapsto f(\ell x)\) est définie sur \(]\frac{a}{\ell},\frac{b}{\ell}[\) 
 {La fonction inverse n'est pas définie à l'origine !
 La fonction partie entière n'est pas continue à l'origine.
 }]{Question}
+Quelles fonctions sont continues en \(x=0\) ?
+
     \item* \(x \mapsto |x|\) (valeur absolue).
     \item \(x \mapsto E(x)\) (partie entière).
     \item \(x \mapsto \frac 1x\) (inverse).
@@ -128,6 +152,8 @@ La fonction partie entière n'est pas continue à l'origine.
 {La fonction tangente n'est pas définie partout, et elle continue seulement sur son domaine de définition. 
 Comme \(\ln(\exp(3x)) = 3x\) alors cette fonction sera continue sur \(\Rr\).
 }]{Question}
+Parmi les fonctions suivantes, lesquelles sont continues sur \(\Rr\) ?
+
     \item* \(x \mapsto \cos(x)-\sin(x)\)
     \item \(x \tan(x)\)
     \item* \(x \mapsto \frac{1}{\exp(x)}\)
@@ -138,6 +164,8 @@ Comme \(\ln(\exp(3x)) = 3x\) alors cette fonction sera continue sur \(\Rr\).
 \begin{multi}[multiple,feedback=
 {Le quotient de deux fonctions continues est une fonction continue, uniquement aux points où le dénominateur ne s'annule pas.
 }]{Question}
+Quelles sont les propriétés vraies ?
+
     \item* La somme de deux fonctions continues est continue.
     \item* Le produit de deux fonctions continues est continue.
     \item Le quotient de deux fonctions continues est continue.
@@ -150,6 +178,8 @@ Comme \(\ln(\exp(3x)) = 3x\) alors cette fonction sera continue sur \(\Rr\).
 \(\forall \epsilon >0 \quad \exists \delta > 0 \qquad
 |x-x_0| < \delta \implies |f(x)-f(x_0)| < \epsilon\) (et on peut remplacer les inégalités strictes par des inégalités larges).
 }]{Question}
+Parmi les propriétés suivantes, quelles sont celles qui implique que \(f\) est continue en \(x_ 0\) ?
+
     \item* \(\lim_{x\to x_0} f(x) = f(x_0)\)
     \item* \(\forall \epsilon >0 \quad \exists \delta > 0 \qquad
 |x-x_0| \le \delta \implies |f(x)-f(x_0)| \le \epsilon\)
@@ -162,6 +192,8 @@ Comme \(\ln(\exp(3x)) = 3x\) alors cette fonction sera continue sur \(\Rr\).
 \begin{multi}[multiple,feedback=
 {La fonction \(f\) définie par \(f(x) = 0\), si \(x\in \Qq\) et par \(f(x)=1\) sinon, est une fonction qui n'est continue en aucun point \(x_0\in \Rr\) !
 }]{Question}
+Parmi les fonctions suivantes, lesquelles sont continues sur \(\Rr\) ?
+
     \item* \(x \mapsto P(x)\), où \(P\) est un polynôme.
     \item* \(x \mapsto |f(x)|\), où \(f\) est une fonction continue.
     \item* \(x \mapsto \frac{1}{f(x)}\), où \(f\) est une fonction continue ne s'annulant pas.
@@ -172,6 +204,8 @@ Comme \(\ln(\exp(3x)) = 3x\) alors cette fonction sera continue sur \(\Rr\).
 \begin{multi}[multiple,feedback=
 {Toutes les fonctions sont  continues sur \(\Rr^*\), il s'agit donc de déterminer si \(f(x) \to 0\) lorsque \(x\to0\). C'est uniquement le cas de \(x \ln( |x|)\).
 }]{Question}
+En posant \(f(0)=0\), quelles fonctions deviennent continues sur \(\Rr\) ?
+
     \item \(f(x) = \frac 1x\)
     \item \(f(x) = \frac{\sin(x)}{x}\)
     \item* \(f(x) = x \ln( |x|)\)
@@ -182,6 +216,8 @@ Comme \(\ln(\exp(3x)) = 3x\) alors cette fonction sera continue sur \(\Rr\).
 \begin{multi}[multiple,feedback=
 {Si \(f(x)^2 \to f(x_0)^2\)  alors ce n'est pas toujours vrai que \(f(x) \to f(x_0)\), prendre la fonction \(f(x)=-1\) si \(x<0\) et \(f(x)=+1\) sinon. Par contre avec le cube c'est vrai, car la fonction \(x \mapsto x^3\) est une bijection continue de \(\Rr\) dans \(\Rr\), idem avec l'exponentielle !
 }]{Question}
+Parmi les propriétés suivantes, quelles sont celles qui impliquent que \(f\) est continue en \(x_ 0\) ?
+
     \item \(f(x)^2 \to f(x_0)^2\) (lorsque \(x \to x_0\))
     \item* \(f(x)^3 \to f(x_0)^3\) (lorsque \(x \to x_0\))
     \item \(E(f(x)) \to E(f(x_0))\) (lorsque \(x \to x_0\))
@@ -193,6 +229,8 @@ Comme \(\ln(\exp(3x)) = 3x\) alors cette fonction sera continue sur \(\Rr\).
 {Une fonction \(f\) est continue en \(\ell\) si et seulement si 
 pour toute suite \((u_n)\) qui tend vers \(\ell\), on a \(f(u_n) \to f(\ell)\).
 }]{Question}
+Soit \(f : \Rr \to \Rr\) une fonction et \((u_n)_{n\in\Nn}\) une suite. Quelles sont les assertions vraies ?
+
     \item* Si \(u_n \to \ell\) et \(f\) continue en \(\ell\), alors \(f(u_n)\) admet une limite.
     \item Si \(f(u_n) \to f(\ell)\) et \(f\) est continue en \(\ell\), alors \(u_n \to \ell\).
     \item* Si \(u_n \to \ell\) et \(f(u_n)\) n'a pas de limite, alors \(f\) n'est pas continue en \(\ell\).
@@ -203,6 +241,8 @@ pour toute suite \((u_n)\) qui tend vers \(\ell\), on a \(f(u_n) \to f(\ell)\).
 \begin{multi}[multiple,feedback=
 {Pour montrer qu'une fonction continue \(f\) s'annule sur un intervalle \([a,b]\), il est suffisant de montrer que \(f(a)>0\) et \(f(b)<0\) (ou l'opposé).
 }]{Question}
+Quelles assertions peut-on déduire du théorème des valeurs intermédiaires ?
+
     \item* \(\sin(x) - x^2 + 1\) s'annule sur \([0,\pi]\).
     \item* \(x^5-37\) s'annule sur \([2,3]\).
     \item* \(\ln(x+1)-x+1\) s'annule sur \([0,+\infty[\).
@@ -215,6 +255,9 @@ pour toute suite \((u_n)\) qui tend vers \(\ell\), on a \(f(u_n) \to f(\ell)\).
 Comme \(f(2,625) < 0\) et \(f(2,75) > 0\), alors
 \(2,625 < \sqrt{7} < 2,75\).
 }]{Question}
+Soit \(f(x)=x^2-7\). On applique la méthode de dichotomie sur l'intervalle \([2 ; 3]\). 
+On calcule \(f(2,125)=-1,9375\) ; \(f(2,5) = -0,75\) ; \(f(2,625) = -0,109375\) ; \(f(2,75) = 0,5625\). Quelles sont les assertions vraies ?
+
     \item \(f\) s'annule sur \([2 ; 2,5]\) et sur \([2,5 ; 3]\).
     \item* \(f\) s'annule sur \([2,5 ; 3]\).
     \item \(f\) s'annule sur \([2,75 ; 3]\).
@@ -228,6 +271,8 @@ Comme \(f(2,625) < 0\) et \(f(2,75) > 0\), alors
 (2) si \(f(a) < k < f(b)\) alors il existe \(a < c < b\) tel que \(f(c)=k\) ;
 (3) si \(I\) est un intervalle, alors \(f(I)\) est un intervalle.
 }]{Question}
+Soit \(f : [a,b] \to \Rr\) une fonction continue (avec \(a < b\)). Quelles assertions sont une conséquence du théorème des valeurs intermédiaires ?
+
     \item Si \(f(a) \cdot f(b) > 0\) alors \(f\) s'annule sur \([a,b]\).
     \item* Si \(f(a) < k < f(b)\) alors \(f(x)-k\) s'annule sur \([a,b]\).
     \item Pour \(I \subset \Rr\), si \(f(I)\) est un intervalle alors \(I\) est un intervalle.
@@ -238,6 +283,9 @@ Comme \(f(2,625) < 0\) et \(f(2,75) > 0\), alors
 \begin{multi}[multiple,feedback=
 {Par dichotomie on construit deux suites adjacentes. \((a_n)\) est croissante, \((b_n)\) est décroissante et \(a_n \le b_n\). Ces deux suites convergent vers une valeur \(c\in]a,b[\), telle que \(f(c)=0\).
 }]{Question}
+Soit \(f : [0,1] \to \Rr\) une fonction continue avec \(f(0)<0\) et \(f(1)>0\).
+Par dichotomie on construit deux suites \((a_n)\) et \((b_n)\), avec \(a_0 = 0\) et \(b_0 = 1\). Quelles sont les assertions vraies ?
+
     \item Si \(f(\frac12)>0\) alors \(a_1 = \frac12\) et \(b_1 = \frac12\).
     \item* \(f\) s'annule sur \([a_n,b_n]\) (quel que soit \(n\ge0\)).
     \item \((a_n)\) et \((b_n)\) sont des suites croissantes.
@@ -249,6 +297,8 @@ Comme \(f(2,625) < 0\) et \(f(2,75) > 0\), alors
 {Le théorème des valeurs intermédiaires implique que si \(f : [a,b] \to \Rr\) est continue avec \(f(a) \cdot f(b) < 0\) alors
 il existe une valeur \(c \in [a,b]\) telle que \(f(c)=0\). Pour avoir l'unicité de ce zéro, il suffit que \(f\) soit strictement croissante ou bien strictement décroissante.
 }]{Question}
+Soit \(f : [a,b] \to \Rr\) une fonction continue (avec \(a < b\)). Quelles assertions sont vraies ?
+
     \item Si \(f(a) \cdot f(b) < 0\) et \(f\) croissante alors \(f\) s'annule une unique fois sur \([a,b]\).
     \item Si \(f(a) \cdot f(b) < 0\) et \(f\) n'est pas strictement monotone alors \(f\) s'annule au moins deux fois sur \([a,b]\).
     \item Si \(f(a) \cdot f(b) < 0\) alors \(f\) s'annule un nombre fini de fois sur \([a,b]\).
@@ -262,6 +312,9 @@ Le méthode implique ici que si \(f(a_n)>0\), \(f(b_n)<0\) et \(f\big(\frac{a_n+
 L'intervalle \([a_n,b_n]\) où se trouve un zéro est divisé par deux à chaque étape. Donc au bout de \(10\) étapes l'intervalle
 \([a_{10},b_{10}]\) est un sous intervalle de l'intervalle de départ \([0,1]\), et sa longueur est \(\frac{1}{2^{10}} = \frac{1}{1024} < \frac1{1000}\).
 }]{Question}
+Soit \(f : [0,1] \to \Rr\) une fonction continue avec \(f(0)>0\) et \(f(1)<0\).
+Par dichotomie on construit deux suites \((a_n)\) et \((b_n)\), avec \(a_0 = 0\) et \(b_0 = 1\). Quelles sont les assertions vraies ?
+
     \item* \((a_n)\) et \((b_n)\) sont des suites adjacentes.
     \item \((f=0)\) admet une unique solution sur \([a_n,b_n]\).
     \item* Si \(f(a_n)<0\) et \(f\big(\frac{a_n+b_n}{2}\big) >0\) alors \(a_{n+1} =\frac{a_n+b_n}{2}\) et \(b_{n+1}=b_n\).
@@ -272,6 +325,8 @@ L'intervalle \([a_n,b_n]\) où se trouve un zéro est divisé par deux à chaque
 \begin{multi}[multiple,feedback=
 {Une fonction continue sur un intervalle fermé borné, est bornée et atteint ses bornes (donc le maximum et le minimum sont atteints). Par contre ses extremums peuvent être en \(a\) ou en \(b\) ou dans \(]a,b[\).
 }]{Question}
+Soit \(f : [a,b] \to \Rr\) continue. Quelles sont les assertions vraies ?
+
     \item \(f\) admet un maximum sur \(]a,b[\).
     \item \(f\) admet un maximum en \(a\) ou en \(b\).
     \item* \(f\) est bornée sur \(]a,b[\).
@@ -282,6 +337,8 @@ L'intervalle \([a_n,b_n]\) où se trouve un zéro est divisé par deux à chaque
 \begin{multi}[multiple,feedback=
 {Le plus simple est de dessiner l'allure du graphe (ou le tableau de variation) pour se convaincre que \(f\) restreinte à \(]-\infty,0]\) définit une bijection vers \(]-\infty,2]\) ;  \(f\) restreinte à \([0,1]\) définit une bijection (décroissante) vers \([1,2]\) ;  \(f\) restreinte à \([1,+\infty[\) définit une bijection vers \([1,3[\). 
 }]{Question}
+Soit \(f : \Rr \to \Rr\) une fonction continue telle que : elle est strictement croissante sur \(]-\infty,0]\) ; strictement décroissante sur \([0,1]\) ; strictement croissante sur \([1,+\infty[\). En plus \(\lim_{x\to-\infty} f = - \infty\), \(f(0)=2\), \(f(1) = 1\) et \(\lim_{x\to+\infty} f = 3\). Quelles sont les assertions vraies ?
+
     \item* La restriction \(f_| : ]-\infty,0] \to ]-\infty,2]\) est bijective.
     \item La restriction \(f_| : [1,+\infty[ \to [1,+\infty[\) est bijective.
     \item* La restriction \(f_| : [0,1] \to [1,2]\) est bijective.
@@ -292,6 +349,9 @@ L'intervalle \([a_n,b_n]\) où se trouve un zéro est divisé par deux à chaque
 \begin{multi}[multiple,feedback=
 {Attention l'intervalle de définition n'est pas fermé borné. Par contre la limite de \(f\) en \(0\) en \(+\infty\) et \(f(1) = -1\). On en déduit que \(f\) n'est pas majorée, par contre elle est minorée, et par la théorème des valeurs intermédiaires, elle s'annule.
 }]{Question}
+Soit \(f(x) = x \sin(\pi x) - \ln(x) - 1\) définie sur \(]0,1]\).
+Quelles sont les assertions vraies ?
+
     \item \(f\) est bornée et atteint ses bornes.
     \item \(f\) est majorée.
     \item* \(f\) est minorée.
@@ -303,6 +363,8 @@ L'intervalle \([a_n,b_n]\) où se trouve un zéro est divisé par deux à chaque
 {Comme \(f(a)=c\), \(f(b)=d\), alors par le théorème des valeurs intermédiaires, toute valeur entre \(c\) et \(d\) est atteinte, autrement dit \(f\) est surjective. 
 Si en plus \(f\) est injective (ce qui est le cas si \(f\) strictement croissante) alors \(f\) sera bijective.
 }]{Question}
+Soit \(f : [a,b] \to [c,d]\) continue avec \(a < b\), \(c < d\), \(f(a)=c\), \(f(b)=d\). Quelles propriétés impliquent \(f\) bijective ?
+
     \item* \(f\) injective.
     \item \(f\) surjective.
     \item \(f\) croissante.
@@ -314,6 +376,8 @@ Si en plus \(f\) est injective (ce qui est le cas si \(f\) strictement croissant
 {Par une fonction continue, l'image d'un intervalle est un intervalle ;
 l'image d'un intervalle fermé et borné est un intervalle fermé et borné. 
 }]{Question}
+Soit \(I\) un intervalle de \(\Rr\) et soit \(f : I \to \Rr\) une fonction continue. Soit \(J=f(I)\). Quelles sont les assertions vraies ?
+
     \item* \(J\) est un intervalle.
     \item Si \(I\) est majoré, alors \(J\) est majoré.
     \item* Si \(I\) est fermé borné, alors \(J\) est fermé borné.
@@ -324,6 +388,8 @@ l'image d'un intervalle fermé et borné est un intervalle fermé et borné.
 \begin{multi}[multiple,feedback=
 {La bijection réciproque d'une fonction continue est continue. En particulier cela implique que pour \(f^{-1} : J \to I\), si \(J\) est un intervalle fermé et borné, alors \(I\) aussi.
 }]{Question}
+Soit \(f : I \to J\) une fonction continue, où \(I\) et \(J\) sont des intervalles de \(\Rr\). Quelles sont les assertions vraies ?
+
     \item* Si \(f\) surjective et strictement croissante, alors \(f\) est bijective.
     \item* Si \(f\) bijective, alors sa bijection réciproque \(f^{-1}\) est continue.
     \item Si \(f\) bijective et \(I=\Rr\), alors \(J\) n'est pas un intervalle borné.
