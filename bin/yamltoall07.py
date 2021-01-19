@@ -341,7 +341,7 @@ if output_format == 'amc':
         for answers in data['answers']:
             value = answers['value']
             value = replace_latex_macros(value.rstrip())  #re.sub('[\s]*$','',text,flags=re.MULTILINE) # Delete potential space at the end
-            value = re.sub(r"\\qimage","\\includegraphics",value, flags=re.MULTILINE|re.DOTALL)
+            value = re.sub(r"\\qimage",r"\\includegraphics",value, flags=re.MULTILINE|re.DOTALL)
 
             correct = answers['correct']
 
