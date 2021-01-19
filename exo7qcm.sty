@@ -192,6 +192,7 @@
 \ifthenelse{\equal{\myqtype}{numerical}}{}{\begin{itemize}}
 \else
 %\ifthenelse{\equal{\myqtype}{numerical}}{}{}
+
 \ifthenelse{\equal{\myqoneline}{0}}{%
     \ifthenelse{\equal{\mymulticols}{0}}{%
                                           \begin{itemize}%
@@ -207,6 +208,7 @@
 \ifthenelse{\equal{\myqtype}{numerical}}{}{\end{itemize}}
 \else
 \ifthenelse{\equal{\myqidontknow}{0}}{}{\item \nameIdontknow}
+
 \ifthenelse{\equal{\myqoneline}{0}}{%
                                               \ifthenelse{\equal{\mymulticols}{0}}{\end{itemize}}{\end{itemize}\end{multicols}}}%
                                              {\end{itemize*}\end{center}}
@@ -257,7 +259,6 @@
 \newcommand{\qclassification}[1]{\def\myqclassification{#1}}
 \newcommand{\qkeeporder}{\def\myqkeeporder{1}}
 \newcommand{\qoneline}{\def\myqoneline{1}}
-\newcommand{\qmulticols}{\def\mymulticols{1}}
 \newcommand{\qidontknow}{\def\myqidontknow{1}}
 \newcommand{\qsection}{}    % Will be filled automatically
 \newcommand{\qsubsection}{} % Idem
