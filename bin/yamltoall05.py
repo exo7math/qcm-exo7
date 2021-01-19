@@ -110,7 +110,6 @@ def split_section(title):
             title_split_bis.append(ttt)
     return title_split_bis
 
-
 # Test
 # print(split_section('Section, Section | Facile | 123.0, 123.5'))
 
@@ -168,6 +167,7 @@ if output_format == "tex":
                 if data["idontknow"]:
                     out.write("\\qidontknow\n")
 
+
             out.write("\n" + data["question"] + "\n")
 
             # if 'image' in data.keys():
@@ -177,6 +177,7 @@ if output_format == "tex":
             #         out.write('\\qimage['+dataimage['options']+']{'+dataimage['file']+'}\n\n')
             #     else:
             #         out.write('\\qimage{'+dataimage['file']+'}\n\n')
+
 
             out.write("\\begin{answers}\n")
 
@@ -268,7 +269,6 @@ def replace_latex_macros(text):
 
     return text
 
-
 # Test
 # text = "Une question avec une balise html <a>lien</a>. Et ici des maths \(b<a\) et \(a<b<c>b>a\), ici (a<b<c) la une formule :\[a<b<i>a'\]"
 # print(text)
@@ -287,7 +287,6 @@ def delete_exo7_category(text):
 
     return text
 
-
 # Test
 # text = "Logique | Facile | 100.01, 100.02"
 # print(text)
@@ -298,6 +297,7 @@ def delete_exo7_category(text):
 # print(text)
 # text = delete_exo7_category(text)
 # print(text)
+
 
 
 # --------------------------------------------------
@@ -356,6 +356,8 @@ if output_format == "amc":
                 flags=re.MULTILINE | re.DOTALL,
             )
             out.write(thequestion + "\n")
+
+
 
             # if 'image' in data.keys():
             #     dataimage = data['image'][0]
@@ -493,6 +495,8 @@ def replace_images(data):
     return data
 
 
+
+
 beginmoodle = '<?xml version="1.0" encoding="UTF-8"?>\n<quiz>\n'
 endmoodle = "\n\n</quiz>\n"
 
@@ -520,6 +524,8 @@ if output_format == "moodle":
                     + thesubsection
                     + "</text>\n</category>\n</question>\n\n"
                 )
+
+
 
             #        if 'id' in data.keys():
             #            myid = str(data['id'])

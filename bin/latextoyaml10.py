@@ -220,6 +220,7 @@ def one_exo_to_yaml(text_exo, qcmdict={}):
     else:
         subsection = None
 
+
     # the classification : idem
     theclassification = re.search(
         "(?<=\\\\qclassification\\{)(.*?)(?=\\})",
@@ -277,6 +278,7 @@ def one_exo_to_yaml(text_exo, qcmdict={}):
     else:
         mytype = None
 
+
     # the tolerance : idem
     thetolerance = re.search(
         "(?<=\\\\qtolerance\\{)(.*?)(?=\\})",
@@ -291,6 +293,8 @@ def one_exo_to_yaml(text_exo, qcmdict={}):
         )
     else:
         mytolerance = None
+
+
 
     # the oneline flag : idem
     theoneline = re.search("\\\\qoneline", allquestion, flags=re.MULTILINE | re.DOTALL)
@@ -355,6 +359,7 @@ def one_exo_to_yaml(text_exo, qcmdict={}):
     #     #print('\n\n---image options---\n'+imageoptions+'\n\n')
     #     allquestion = re.sub("\\\\qimage\[(.*?)\}","",allquestion, flags=re.MULTILINE|re.DOTALL)
 
+
     # print('\n\n---New question---\n'+allquestion+'\n\n')
 
     # only the question
@@ -369,6 +374,7 @@ def one_exo_to_yaml(text_exo, qcmdict={}):
     answers = theanswers.group(0)
     answers = answers.lstrip()
     # print('\n\n'+answers+'\n\n')
+
 
     eachanswer = re.split("\\\\(bad|good)", answers, flags=re.MULTILINE | re.DOTALL)
 
@@ -438,6 +444,7 @@ def one_exo_to_yaml(text_exo, qcmdict={}):
         # print('\n\n'+explanations+'\n\n')
     else:
         explanations = None
+
 
     # Data from outside the exercises
     if "qcmauthor" in qcmdict:
