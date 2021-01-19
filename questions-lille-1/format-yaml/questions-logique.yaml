@@ -1,0 +1,1529 @@
+---
+author: Arnaud Bodin, Abdellah Hanani, Mohamed Mzari
+
+section: Logique -- Raisonnement | 100
+
+subsection: Logique | Facile | 100.01
+
+link:
+    - type: cours
+      link: http://exo7.emath.fr/cours/ch_logique.pdf
+      title: Logique et raisonnements
+
+    - type: video
+      link: http://youtu.be/aWSe1fjJHEM
+      title: Logique
+
+    - type: video
+      link: http://youtu.be/B-I5yZd0Wbk
+      title: Raisonnements
+
+    - type: exercices
+      link: http://exo7.emath.fr/ficpdf/fic00002.pdf
+      title: Logique, ensembles, raisonnements
+
+tags:
+    - motcle: vrai/faux
+
+question: |
+        Soit \(P\) une assertion vraie et \(Q\) une assertion fausse. Quelles sont les assertions vraies ?
+
+answers: 
+    - value: |
+        \(P\) ou \(Q\)
+      correct: True
+
+    - value: |
+        \(P\) et \(Q\)
+      correct: False
+
+    - value: |
+        non(\(P\)) ou \(Q\)
+      correct: False
+
+    - value: |
+        non(\(P\) et \(Q\))
+      correct: True
+
+explanations: |
+        \(P\) ou \(Q\) est vraie. Comme \(P\) et \(Q\) est fausse alors non(\(P\) et \(Q\)) est vraie.
+
+---
+author: Arnaud Bodin, Abdellah Hanani, Mohamed Mzari
+
+section: Logique -- Raisonnement | 100
+
+subsection: Logique | Facile | 100.01
+
+link:
+    - type: cours
+      link: http://exo7.emath.fr/cours/ch_logique.pdf
+      title: Logique et raisonnements
+
+    - type: video
+      link: http://youtu.be/aWSe1fjJHEM
+      title: Logique
+
+    - type: video
+      link: http://youtu.be/B-I5yZd0Wbk
+      title: Raisonnements
+
+    - type: exercices
+      link: http://exo7.emath.fr/ficpdf/fic00002.pdf
+      title: Logique, ensembles, raisonnements
+
+tags:
+    - motcle: implication/équivalence
+
+question: |
+        Par quoi peut-on compléter les pointillés pour avoir les deux assertions vraies ?
+        \[x\ge 2 \quad \ldots \quad x^2 \ge 4  \qquad \qquad |y| \le 3 \quad \ldots \quad 0 \le y \le 3\]
+
+answers: 
+    - value: |
+        \(\Longleftarrow\) et \(\implies\)
+      correct: False
+
+    - value: |
+        \(\implies\) et \(\implies\)
+      correct: False
+
+    - value: |
+        \(\Longleftarrow\) et \(\implies\)
+      correct: False
+
+    - value: |
+        \(\implies\) et \(\Longleftarrow\)
+      correct: True
+
+explanations: |
+        Si \(x\ge 2\) alors \(x^2 \ge 4\), la réciproque est fausse.
+        Si \(0 \le y \le 3\) alors \(|y| \le 3\), la réciproque est fausse.
+
+---
+author: Arnaud Bodin, Abdellah Hanani, Mohamed Mzari
+
+section: Logique -- Raisonnement | 100
+
+subsection: Logique | Facile | 100.01
+
+link:
+    - type: cours
+      link: http://exo7.emath.fr/cours/ch_logique.pdf
+      title: Logique et raisonnements
+
+    - type: video
+      link: http://youtu.be/aWSe1fjJHEM
+      title: Logique
+
+    - type: video
+      link: http://youtu.be/B-I5yZd0Wbk
+      title: Raisonnements
+
+    - type: exercices
+      link: http://exo7.emath.fr/ficpdf/fic00002.pdf
+      title: Logique, ensembles, raisonnements
+
+tags:
+    - motcle: pour tout/il existe
+
+question: |
+        Quelles sont les assertions vraies ?
+
+answers: 
+    - value: |
+        \(\forall x \in \Rr \quad x^2-x \ge 0\)
+      correct: False
+
+    - value: |
+        \(\forall n \in \Nn \quad n^2-n \ge 0\)
+      correct: True
+
+    - value: |
+        \(\forall x \in \Rr \quad |x^3-x| \ge 0\)
+      correct: True
+
+    - value: |
+        \(\forall n \in \Nn \setminus \{0,1\} \quad n^2-3 \ge 0\)
+      correct: True
+
+explanations: |
+        Attention, \(x^2-x\) est négatif pour \(x=\frac12\) par exemple !
+
+---
+author: Arnaud Bodin, Abdellah Hanani, Mohamed Mzari
+
+section: Logique -- Raisonnement | 100
+
+subsection: Logique | Facile | 100.01
+
+link:
+    - type: cours
+      link: http://exo7.emath.fr/cours/ch_logique.pdf
+      title: Logique et raisonnements
+
+    - type: video
+      link: http://youtu.be/aWSe1fjJHEM
+      title: Logique
+
+    - type: video
+      link: http://youtu.be/B-I5yZd0Wbk
+      title: Raisonnements
+
+    - type: exercices
+      link: http://exo7.emath.fr/ficpdf/fic00002.pdf
+      title: Logique, ensembles, raisonnements
+
+tags:
+    - motcle: pour tout/il existe
+
+question: |
+        Quelles sont les assertions vraies ?
+
+answers: 
+    - value: |
+        \(\exists x>0 \quad \sqrt{x} = x\)
+      correct: True
+
+    - value: |
+        \(\exists x <0 \quad \exp(x) < 0\)
+      correct: False
+
+    - value: |
+        \(\exists n \in \Nn \quad n^2 = 17\)
+      correct: False
+
+    - value: |
+        \(\exists z \in \Cc \quad z^2 = -4\)
+      correct: True
+
+explanations: |
+        Oui il existe \(x>0\) tel que \(\sqrt{x} = x\), c'est \(x=1\).
+
+---
+author: Arnaud Bodin, Abdellah Hanani, Mohamed Mzari
+
+section: Logique -- Raisonnement | 100
+
+subsection: Logique | Facile | 100.01
+
+link:
+    - type: cours
+      link: http://exo7.emath.fr/cours/ch_logique.pdf
+      title: Logique et raisonnements
+
+    - type: video
+      link: http://youtu.be/aWSe1fjJHEM
+      title: Logique
+
+    - type: video
+      link: http://youtu.be/B-I5yZd0Wbk
+      title: Raisonnements
+
+    - type: exercices
+      link: http://exo7.emath.fr/ficpdf/fic00002.pdf
+      title: Logique, ensembles, raisonnements
+
+tags:
+    - motcle: pour tout/il existe
+
+question: |
+        Un groupe de coureurs \(C\) chronomètre ses temps : \(t(c)\) désigne le temps (en secondes) du coureur \(c\).
+        Dans ce groupe Valentin et Chloé ont réalisé le meilleur temps de \(47\) secondes. Tom est déçu car il est arrivé troisième, avec un temps de \(55\) secondes.
+        À partir de ces informations, quelles sont les assertions dont on peut déduire qu'elles sont vraies ?
+
+answers: 
+    - value: |
+        \(\forall c \in C \quad t(c) \ge 47\)
+      correct: True
+
+    - value: |
+        \(\exists c \in C \quad 47 < t(c) < 55\)
+      correct: False
+
+    - value: |
+        \(\exists c \in C \quad t(c) > 47\)
+      correct: True
+
+    - value: |
+        \(\forall c \in C \quad t(c) \le 55\)
+      correct: False
+
+explanations: |
+        Comme Tom est troisième, il n'existe pas de \(c\) tel que \(47 < t(c) < 55\). 
+
+---
+author: Arnaud Bodin, Abdellah Hanani, Mohamed Mzari
+
+section: Logique -- Raisonnement | 100
+
+subsection: Logique | Facile | 100.01
+
+link:
+    - type: cours
+      link: http://exo7.emath.fr/cours/ch_logique.pdf
+      title: Logique et raisonnements
+
+    - type: video
+      link: http://youtu.be/aWSe1fjJHEM
+      title: Logique
+
+    - type: video
+      link: http://youtu.be/B-I5yZd0Wbk
+      title: Raisonnements
+
+    - type: exercices
+      link: http://exo7.emath.fr/ficpdf/fic00002.pdf
+      title: Logique, ensembles, raisonnements
+
+tags:
+    - motcle: pour tout/il existe
+
+question: |
+        Quelles sont les assertions vraies ?
+
+answers: 
+    - value: |
+        La négation de "\(\forall x > 0 \quad \ln(x) \le x\)" est "\(\exists x \le 0 \quad  \ln(x) \le x\)".
+      correct: False
+
+    - value: |
+        La négation de "\(\exists x > 0 \quad \ln(x^2) \neq x\)" est "\(\forall x > 0 \quad \ln(x^2) = x\)".
+      correct: True
+
+    - value: |
+        La négation de "\(\forall x \ge 0 \quad \exp(x) \ge x\)" est "\(\exists x \ge 0 \quad  \exp(x) \le x\)".
+      correct: False
+
+    - value: |
+        La négation de "\(\exists x > 0 \quad \exp(x) >  x\)" est "\(\forall x > 0 \quad \exp(x) < x\)".
+      correct: False
+
+explanations: |
+        La négation de "\(\forall x > 0 \quad P(x)\)" est "\(\exists x > 0 \quad\) non(\(P(x)\))".
+        La négation de "\(\exists x > 0 \quad P(x)\)" est "\(\forall x > 0 \quad\) non(\(P(x)\))".
+
+---
+author: Arnaud Bodin, Abdellah Hanani, Mohamed Mzari
+
+section: Logique -- Raisonnement | 100
+
+subsection: Logique | Moyen | 100.01
+
+link:
+    - type: cours
+      link: http://exo7.emath.fr/cours/ch_logique.pdf
+      title: Logique et raisonnements
+
+    - type: video
+      link: http://youtu.be/aWSe1fjJHEM
+      title: Logique
+
+    - type: video
+      link: http://youtu.be/B-I5yZd0Wbk
+      title: Raisonnements
+
+    - type: exercices
+      link: http://exo7.emath.fr/ficpdf/fic00002.pdf
+      title: Logique, ensembles, raisonnements
+
+tags:
+    - motcle: vrai/faux
+
+question: |
+        Soit \(P\) une assertion fausse, \(Q\) une assertion vraie et \(R\) une assertion fausse. Quelles sont les assertions vraies ?
+
+answers: 
+    - value: |
+        \(Q\) et (\(P\) ou \(R\))
+      correct: False
+
+    - value: |
+        \(P\) ou (\(Q\) et \(R\))
+      correct: False
+
+    - value: |
+        non(\(P\) et \(Q\) et \(R\))
+      correct: True
+
+    - value: |
+        (\(P\) ou \(Q\)) et (\(Q\) ou \(R\))
+      correct: True
+
+explanations: |
+        Il suffit de remplacer \(P\) par "faux", \(Q\) par "vrai" et \(R\) par "faux". Par exemple "\(Q\) et (\(P\) ou \(R\))" devient "vrai et (faux ou faux)", qui est la même chose que "vrai et faux", qui est donc "faux".
+
+---
+author: Arnaud Bodin, Abdellah Hanani, Mohamed Mzari
+
+section: Logique -- Raisonnement | 100
+
+subsection: Logique | Moyen | 100.01
+
+link:
+    - type: cours
+      link: http://exo7.emath.fr/cours/ch_logique.pdf
+      title: Logique et raisonnements
+
+    - type: video
+      link: http://youtu.be/aWSe1fjJHEM
+      title: Logique
+
+    - type: video
+      link: http://youtu.be/B-I5yZd0Wbk
+      title: Raisonnements
+
+    - type: exercices
+      link: http://exo7.emath.fr/ficpdf/fic00002.pdf
+      title: Logique, ensembles, raisonnements
+
+tags:
+    - motcle: vrai/faux
+
+question: |
+        Soient \(P\) et \(Q\) deux assertions. Quelles sont les assertions toujours vraies (que \(P\) et \(Q\) soient vraies ou fausses)  ?
+
+answers: 
+    - value: |
+        \(P\) et non(\(P\))
+      correct: False
+
+    - value: |
+        non(\(P\)) ou \(P\)
+      correct: True
+
+    - value: |
+        non(\(Q\)) ou \(P\)
+      correct: False
+
+    - value: |
+        (\(P\) ou \(Q\)) ou (\(P\) ou non(\(Q\)))
+      correct: True
+
+explanations: |
+        On appelle une tautologie une assertion toujours vraie. C'est par exemple le cas de "non(\(P\)) ou \(P\)", si \(P\) est vraie, l'assertion est vraie, si \(P\) est fausse, l'assertion est encore vraie !
+
+---
+author: Arnaud Bodin, Abdellah Hanani, Mohamed Mzari
+
+section: Logique -- Raisonnement | 100
+
+subsection: Logique | Moyen | 100.01
+
+link:
+    - type: cours
+      link: http://exo7.emath.fr/cours/ch_logique.pdf
+      title: Logique et raisonnements
+
+    - type: video
+      link: http://youtu.be/aWSe1fjJHEM
+      title: Logique
+
+    - type: video
+      link: http://youtu.be/B-I5yZd0Wbk
+      title: Raisonnements
+
+    - type: exercices
+      link: http://exo7.emath.fr/ficpdf/fic00002.pdf
+      title: Logique, ensembles, raisonnements
+
+tags:
+    - motcle: implication/équivalence
+
+question: |
+        Par quoi peut-on compléter les pointillés pour avoir une assertion vraie ?
+        \[|x^2| < 5 \quad \ldots \quad -\sqrt{5} < x < \sqrt{5}\]
+
+answers: 
+    - value: |
+        \(\Longleftarrow\)
+      correct: True
+
+    - value: |
+        \(\implies\)
+      correct: True
+
+    - value: |
+        \(\iff\)
+      correct: True
+
+    - value: |
+        Aucune des réponses ci-dessus ne convient.
+      correct: False
+
+explanations: |
+        C'est une équivalence, donc en particulier les implications dans les deux sens sont vraies !
+
+---
+author: Arnaud Bodin, Abdellah Hanani, Mohamed Mzari
+
+section: Logique -- Raisonnement | 100
+
+subsection: Logique | Moyen | 100.01
+
+link:
+    - type: cours
+      link: http://exo7.emath.fr/cours/ch_logique.pdf
+      title: Logique et raisonnements
+
+    - type: video
+      link: http://youtu.be/aWSe1fjJHEM
+      title: Logique
+
+    - type: video
+      link: http://youtu.be/B-I5yZd0Wbk
+      title: Raisonnements
+
+    - type: exercices
+      link: http://exo7.emath.fr/ficpdf/fic00002.pdf
+      title: Logique, ensembles, raisonnements
+
+tags:
+    - motcle: implication/équivalence
+
+question: |
+        À quoi est équivalent \(P \implies Q\) ?
+
+answers: 
+    - value: |
+        non(\(P\)) ou non(\(Q\))
+      correct: False
+
+    - value: |
+        non(\(P\)) et non(\(Q\))
+      correct: False
+
+    - value: |
+        non(\(P\)) ou \(Q\)
+      correct: True
+
+    - value: |
+        \(P\) et non(\(Q\))
+      correct: False
+
+explanations: |
+        La définition (à connaître) de "\(P \implies Q\)" est "non(\(P\)) ou \(Q\)".
+
+---
+author: Arnaud Bodin, Abdellah Hanani, Mohamed Mzari
+
+section: Logique -- Raisonnement | 100
+
+subsection: Logique | Moyen | 100.01
+
+link:
+    - type: cours
+      link: http://exo7.emath.fr/cours/ch_logique.pdf
+      title: Logique et raisonnements
+
+    - type: video
+      link: http://youtu.be/aWSe1fjJHEM
+      title: Logique
+
+    - type: video
+      link: http://youtu.be/B-I5yZd0Wbk
+      title: Raisonnements
+
+    - type: exercices
+      link: http://exo7.emath.fr/ficpdf/fic00002.pdf
+      title: Logique, ensembles, raisonnements
+
+tags:
+    - motcle: pour tout/il existe
+
+question: |
+        Soit \(f : ]0,+\infty[ \to \Rr\) la fonction définie par \(f(x) = \frac{1}{x}\). Quelles sont les assertions vraies ?
+
+answers: 
+    - value: |
+        \(\forall x \in ]0,+\infty[ \quad \exists y \in \Rr \qquad y = f(x)\)
+      correct: True
+
+    - value: |
+        \(\exists x \in ]0,+\infty[ \quad \forall y \in \Rr \qquad y = f(x)\)
+      correct: False
+
+    - value: |
+        \(\exists x \in ]0,+\infty[ \quad \exists y \in \Rr \qquad y = f(x)\)
+      correct: True
+
+    - value: |
+        \(\forall x \in ]0,+\infty[ \quad \forall y \in \Rr \qquad y = f(x)\)
+      correct: False
+
+explanations: |
+        L'ordre des "pour tout" et "il existe" est très important.
+
+---
+author: Arnaud Bodin, Abdellah Hanani, Mohamed Mzari
+
+section: Logique -- Raisonnement | 100
+
+subsection: Logique | Moyen | 100.01
+
+link:
+    - type: cours
+      link: http://exo7.emath.fr/cours/ch_logique.pdf
+      title: Logique et raisonnements
+
+    - type: video
+      link: http://youtu.be/aWSe1fjJHEM
+      title: Logique
+
+    - type: video
+      link: http://youtu.be/B-I5yZd0Wbk
+      title: Raisonnements
+
+    - type: exercices
+      link: http://exo7.emath.fr/ficpdf/fic00002.pdf
+      title: Logique, ensembles, raisonnements
+
+tags:
+    - motcle: pour tout/il existe
+
+question: |
+        Le disque centré à l'origine de rayon \(1\) est défini par 
+        \[D = \left\{ (x,y) \in \Rr^2 \mid x^2+y^2 \le 1\right\}.\]
+        Quelles sont les assertions vraies ?
+
+answers: 
+    - value: |
+        \(\forall x \in [-1,1] \quad \forall y \in [-1,1] \qquad (x,y) \in D\)
+      correct: False
+
+    - value: |
+        \(\exists x \in [-1,1] \quad \exists y \in [-1,1] \qquad (x,y) \in D\)
+      correct: True
+
+    - value: |
+        \(\exists x \in [-1,1] \quad \forall y \in [-1,1] \qquad (x,y) \in D\)
+      correct: True
+
+    - value: |
+        \(\forall x \in [-1,1] \quad \exists y \in [-1,1] \qquad (x,y) \in D\)
+      correct: True
+
+explanations: |
+        Faire un dessin permet de mieux comprendre la situation !
+
+---
+author: Arnaud Bodin, Abdellah Hanani, Mohamed Mzari
+
+section: Logique -- Raisonnement | 100
+
+subsection: Logique | Difficile | 100.01
+
+link:
+    - type: cours
+      link: http://exo7.emath.fr/cours/ch_logique.pdf
+      title: Logique et raisonnements
+
+    - type: video
+      link: http://youtu.be/aWSe1fjJHEM
+      title: Logique
+
+    - type: video
+      link: http://youtu.be/B-I5yZd0Wbk
+      title: Raisonnements
+
+    - type: exercices
+      link: http://exo7.emath.fr/ficpdf/fic00002.pdf
+      title: Logique, ensembles, raisonnements
+
+tags:
+    - motcle: vrai/faux
+
+question: |
+        On définit l'assertion "ou exclusif", noté "xou" en disant que "\(P\) xou \(Q\)" est vraie lorsque \(P\) est vraie, ou \(Q\) est vraie, mais pas lorsque les deux sont vraies en même temps. Quelles sont les assertions vraies ?
+
+answers: 
+    - value: |
+        Si "\(P\) ou \(Q\)" est vraie alors "\(P\) xou \(Q\)" aussi.
+      correct: False
+
+    - value: |
+        Si "\(P\) ou \(Q\)" est fausse alors "\(P\) xou \(Q\)" aussi.
+      correct: True
+
+    - value: |
+        "\(P\) xou \(Q\)" est équivalent à "(\(P\) ou \(Q\)) et (non(\(P\)) ou non(\(Q\)))"
+      correct: True
+
+    - value: |
+        "\(P\) xou \(Q\)" est équivalent à "(\(P\) ou \(Q\)) ou (non(\(P\)) ou non(\(Q\)))"
+      correct: False
+
+explanations: |
+        Commencer par faire la table de vérité de "\(P\) ou \(Q\)".
+
+---
+author: Arnaud Bodin, Abdellah Hanani, Mohamed Mzari
+
+section: Logique -- Raisonnement | 100
+
+subsection: Logique | Difficile | 100.01
+
+link:
+    - type: cours
+      link: http://exo7.emath.fr/cours/ch_logique.pdf
+      title: Logique et raisonnements
+
+    - type: video
+      link: http://youtu.be/aWSe1fjJHEM
+      title: Logique
+
+    - type: video
+      link: http://youtu.be/B-I5yZd0Wbk
+      title: Raisonnements
+
+    - type: exercices
+      link: http://exo7.emath.fr/ficpdf/fic00002.pdf
+      title: Logique, ensembles, raisonnements
+
+tags:
+    - motcle: vrai/faux
+
+question: |
+        Soient \(P\) et \(Q\) deux assertions. Quelles sont les assertions toujours vraies (que \(P\), \(Q\) soient vraies ou fausses)  ?
+
+answers: 
+    - value: |
+        (\(P \implies Q\)) ou (\(Q \implies P\))
+      correct: True
+
+    - value: |
+        (\(P \implies Q\)) ou (\(P\) et non(\(Q\)))
+      correct: True
+
+    - value: |
+        \(P\) ou (\(P \implies Q\))
+      correct: True
+
+    - value: |
+        (\(P \iff Q\)) ou (non(\(P\)) \(\iff\) non(\(Q\)))
+      correct: False
+
+explanations: |
+        Tester les quatre possibilités selon que \(P,Q\) sont vraies ou fausses.
+
+---
+author: Arnaud Bodin, Abdellah Hanani, Mohamed Mzari
+
+section: Logique -- Raisonnement | 100
+
+subsection: Logique | Difficile | 100.01
+
+link:
+    - type: cours
+      link: http://exo7.emath.fr/cours/ch_logique.pdf
+      title: Logique et raisonnements
+
+    - type: video
+      link: http://youtu.be/aWSe1fjJHEM
+      title: Logique
+
+    - type: video
+      link: http://youtu.be/B-I5yZd0Wbk
+      title: Raisonnements
+
+    - type: exercices
+      link: http://exo7.emath.fr/ficpdf/fic00002.pdf
+      title: Logique, ensembles, raisonnements
+
+tags:
+    - motcle: implication/équivalence
+
+question: |
+        À quoi est équivalent \(P \Longleftarrow Q\) ?
+
+answers: 
+    - value: |
+        non(\(Q\)) ou \(P\)
+      correct: True
+
+    - value: |
+        non(\(Q\)) et \(P\)
+      correct: False
+
+    - value: |
+        non(\(P\)) ou \(Q\)
+      correct: False
+
+    - value: |
+        non(\(P\)) et \(Q\)
+      correct: False
+
+explanations: |
+        La définition (à connaître) de "\(P \implies Q\)" est "non(\(P\)) ou \(Q\)".
+
+---
+author: Arnaud Bodin, Abdellah Hanani, Mohamed Mzari
+
+section: Logique -- Raisonnement | 100
+
+subsection: Logique | Difficile | 100.01
+
+link:
+    - type: cours
+      link: http://exo7.emath.fr/cours/ch_logique.pdf
+      title: Logique et raisonnements
+
+    - type: video
+      link: http://youtu.be/aWSe1fjJHEM
+      title: Logique
+
+    - type: video
+      link: http://youtu.be/B-I5yZd0Wbk
+      title: Raisonnements
+
+    - type: exercices
+      link: http://exo7.emath.fr/ficpdf/fic00002.pdf
+      title: Logique, ensembles, raisonnements
+
+tags:
+    - motcle: pour tout/il existe
+
+question: |
+        Soit \(f : \Rr \to \Rr\) la fonction définie par \(f(x)=\exp(x)-1\).
+        Quelles sont les assertions vraies ?
+
+answers: 
+    - value: |
+        \(\forall x,x' \in \Rr  \qquad x \neq x' \implies f(x) \neq f(x')\)
+      correct: True
+
+    - value: |
+        \(\forall x,x' \in \Rr  \qquad x \neq x' \Longleftarrow f(x) \neq f(x')\)
+      correct: True
+
+    - value: |
+        \(\forall x,x' \in \Rr  \qquad x \neq x' \implies (\exists y \in \Rr \quad f(x) < y < f(x'))\)
+      correct: False
+
+    - value: |
+        \(\forall x,x' \in \Rr  \qquad  f(x)\times f(x') < 0 \implies x\times x' < 0\)
+      correct: True
+
+explanations: |
+        Dessiner le graphe de \(f\) pour mieux comprendre ! 
+        Même si \(f(x) \neq f(x')\) cela ne veut pas dire que \(f(x) < f(x')\), l'inégalité pourrait être dans l'autre sens.
+
+---
+author: Arnaud Bodin, Abdellah Hanani, Mohamed Mzari
+
+section: Logique -- Raisonnement | 100
+
+subsection: Logique | Difficile | 100.01
+
+link:
+    - type: cours
+      link: http://exo7.emath.fr/cours/ch_logique.pdf
+      title: Logique et raisonnements
+
+    - type: video
+      link: http://youtu.be/aWSe1fjJHEM
+      title: Logique
+
+    - type: video
+      link: http://youtu.be/B-I5yZd0Wbk
+      title: Raisonnements
+
+    - type: exercices
+      link: http://exo7.emath.fr/ficpdf/fic00002.pdf
+      title: Logique, ensembles, raisonnements
+
+tags:
+    - motcle: pour tout/il existe
+
+question: |
+        On considère l'ensemble 
+        \[E = \left\{ (x,y) \in \Rr^2 \mid 0 \le x \le 1 \text{ et } y \ge \sqrt{x}  \right\}.\]
+        Quelles sont les assertions vraies ?
+
+answers: 
+    - value: |
+        \(\forall y \ge 0 \quad \exists x \in [0,1] \qquad (x,y) \in E\)
+      correct: True
+
+    - value: |
+        \(\exists y \ge 0 \quad \forall x \in [0,1] \qquad (x,y) \in E\)
+      correct: True
+
+    - value: |
+        \(\forall x \in [0,1] \quad \exists y \ge 0 \qquad (x,y) \notin E\)
+      correct: False
+
+    - value: |
+        \(\forall x \in [0,1] \quad \forall y \ge 0 \qquad (x,y) \notin E\)
+      correct: False
+
+explanations: |
+        Faire un dessin de l'ensemble \(E\).
+
+---
+author: Arnaud Bodin, Abdellah Hanani, Mohamed Mzari
+
+section: Logique -- Raisonnement | 100
+
+subsection: Logique | Difficile | 100.01
+
+link:
+    - type: cours
+      link: http://exo7.emath.fr/cours/ch_logique.pdf
+      title: Logique et raisonnements
+
+    - type: video
+      link: http://youtu.be/aWSe1fjJHEM
+      title: Logique
+
+    - type: video
+      link: http://youtu.be/B-I5yZd0Wbk
+      title: Raisonnements
+
+    - type: exercices
+      link: http://exo7.emath.fr/ficpdf/fic00002.pdf
+      title: Logique, ensembles, raisonnements
+
+tags:
+    - motcle: pour tout/il existe
+
+question: |
+        Soit \(f : ]0,+\infty[ \to ]0,+\infty[\) une fonction.
+        Quelles sont les assertions vraies ?
+
+answers: 
+    - value: |
+        La négation de "\(\forall x > 0 \quad \exists y > 0 \quad y \neq f(x)\)" est "\(\exists x > 0 \quad \exists y > 0 \quad y = f(x)\)".
+      correct: False
+
+    - value: |
+        La négation de "\(\exists x > 0 \quad \forall y > 0 \quad y \times f(x)>0\)" est "\(\forall x > 0 \quad \exists y > 0 \quad y\times f(x) < 0\)".
+      correct: False
+
+    - value: |
+        La négation de "\(\forall x,x' > 0 \quad x \neq x' \implies f(x) \neq f(x')\)" est "\(\exists x,x' > 0 \quad x = x'\) et \(f(x) = f(x')\)".
+      correct: False
+
+    - value: |
+        La négation de "\(\forall x,x' > 0 \quad f(x) = f(x') \implies x = x'\)" est "\(\exists x,x' > 0 \quad x \neq x'\) et \(f(x) = f(x')\)".
+      correct: True
+
+explanations: |
+        La négation du "\(\forall x > 0 \quad \exists y > 0 \ldots\)" commence par "\(\exists x > 0 \quad \forall y > 0\).
+        La négation de "\(f(x) = f(x') \implies x = x'\)" est "\(f(x) = f(x')\) et \(x \neq x'\)".
+
+---
+author: Arnaud Bodin, Abdellah Hanani, Mohamed Mzari
+
+section: Logique -- Raisonnement | 100
+
+subsection: Raisonnement | Facile | 100.03, 100.04
+
+link:
+    - type: cours
+      link: http://exo7.emath.fr/cours/ch_logique.pdf
+      title: Logique et raisonnements
+
+    - type: video
+      link: http://youtu.be/aWSe1fjJHEM
+      title: Logique
+
+    - type: video
+      link: http://youtu.be/B-I5yZd0Wbk
+      title: Raisonnements
+
+    - type: exercices
+      link: http://exo7.emath.fr/ficpdf/fic00002.pdf
+      title: Logique, ensembles, raisonnements
+
+tags:
+    - motcle: raisonnement
+
+question: |
+        Je veux montrer que \(\frac{n(n+1)}{2}\) est un entier, quelque soit \(n\in\Nn\).  Quelles sont les démarches possibles ?
+
+answers: 
+    - value: |
+        Montrer que la fonction \(x \mapsto x(x+1)\) est paire.
+      correct: False
+
+    - value: |
+        Séparer le cas \(n\) pair, du cas \(n\) impair.
+      correct: True
+
+    - value: |
+        Par l'absurde, supposer que \(\frac{n(n+1)}{2}\) est un réel, puis chercher une contradiction.
+      correct: False
+
+    - value: |
+        Le résultat est faux, je cherche un contre-exemple.
+      correct: False
+
+explanations: |
+        Séparer le cas \(n\) pair, du cas \(n\) impair. Dans le premier cas, on peut écrire \(n=2k\) (avec \(k\in \Nn\)), dans le second cas \(n=2k+1\), puis calculer \(\frac{n(n+1)}{2}\). 
+
+---
+author: Arnaud Bodin, Abdellah Hanani, Mohamed Mzari
+
+section: Logique -- Raisonnement | 100
+
+subsection: Raisonnement | Facile | 100.03, 100.04
+
+link:
+    - type: cours
+      link: http://exo7.emath.fr/cours/ch_logique.pdf
+      title: Logique et raisonnements
+
+    - type: video
+      link: http://youtu.be/aWSe1fjJHEM
+      title: Logique
+
+    - type: video
+      link: http://youtu.be/B-I5yZd0Wbk
+      title: Raisonnements
+
+    - type: exercices
+      link: http://exo7.emath.fr/ficpdf/fic00002.pdf
+      title: Logique, ensembles, raisonnements
+
+tags:
+    - motcle: récurrence
+
+keeporder: True
+
+question: |
+        Je veux montrer par récurrence l'assertion \(H_n : 2^n > 2n+1\), pour tout entier \(n\) assez grand. Quelle étape d'initialisation est valable ?
+
+answers: 
+    - value: |
+        Je commence à \(n=0\).
+      correct: False
+
+    - value: |
+        Je commence à \(n=1\).
+      correct: False
+
+    - value: |
+        Je commence à \(n=2\).
+      correct: False
+
+    - value: |
+        Je commence à \(n=3\).
+      correct: True
+
+explanations: |
+        L'initialisation peut commencer à n'importe quel entier \(n_0 \ge 3\).
+
+---
+author: Arnaud Bodin, Abdellah Hanani, Mohamed Mzari
+
+section: Logique -- Raisonnement | 100
+
+subsection: Raisonnement | Facile | 100.03, 100.04
+
+link:
+    - type: cours
+      link: http://exo7.emath.fr/cours/ch_logique.pdf
+      title: Logique et raisonnements
+
+    - type: video
+      link: http://youtu.be/aWSe1fjJHEM
+      title: Logique
+
+    - type: video
+      link: http://youtu.be/B-I5yZd0Wbk
+      title: Raisonnements
+
+    - type: exercices
+      link: http://exo7.emath.fr/ficpdf/fic00002.pdf
+      title: Logique, ensembles, raisonnements
+
+tags:
+    - motcle: récurrence
+
+question: |
+        Je veux montrer par récurrence l'assertion \(H_n : 2^n > 2n+1\), pour tout entier \(n\) assez grand. Pour l'étape d'hérédité je suppose \(H_n\) vraie, quelle(s) inégalité(s) dois-je maintenant démontrer ?
+
+answers: 
+    - value: |
+        \(2^{n+1} > 2n+3\)
+      correct: True
+
+    - value: |
+        \(2^{n} > 2n+1\)
+      correct: False
+
+    - value: |
+        \(2^{n} > 2(n+1)+1\)
+      correct: False
+
+    - value: |
+        \(2^{n}+1 > 2(n+1)+1\)
+      correct: False
+
+explanations: |
+        \(H_{n+1}\) s'écrit \(2^{n+1} > 2(n+1)+1\), c'est-à-dire \(2^{n+1} > 2n+3\).
+
+---
+author: Arnaud Bodin, Abdellah Hanani, Mohamed Mzari
+
+section: Logique -- Raisonnement | 100
+
+subsection: Raisonnement | Facile | 100.03, 100.04
+
+link:
+    - type: cours
+      link: http://exo7.emath.fr/cours/ch_logique.pdf
+      title: Logique et raisonnements
+
+    - type: video
+      link: http://youtu.be/aWSe1fjJHEM
+      title: Logique
+
+    - type: video
+      link: http://youtu.be/B-I5yZd0Wbk
+      title: Raisonnements
+
+    - type: exercices
+      link: http://exo7.emath.fr/ficpdf/fic00002.pdf
+      title: Logique, ensembles, raisonnements
+
+tags:
+    - motcle: pour tout/il existe
+
+question: |
+        Chercher un contre-exemple à une assertion du type 
+        "\(\forall x \in E\) l'assertion \(P(x)\) est vraie" revient à prouver l'assertion :
+
+answers: 
+    - value: |
+        \(\exists! x \in E \quad\) l'assertion \(P(x)\) est fausse.
+      correct: False
+
+    - value: |
+        \(\exists x \in E \quad\) l'assertion \(P(x)\) est fausse.
+      correct: True
+
+    - value: |
+        \(\forall x \notin E \quad\) l'assertion \(P(x)\) est fausse.
+      correct: False
+
+    - value: |
+        \(\forall x \in E \quad\) l'assertion \(P(x)\) est fausse.
+      correct: False
+
+explanations: |
+        Un contre-exemple, c'est trouver un \(x\) qui ne vérifie pas \(P(x)\). (Rien ne dit qu'il est unique.)
+
+---
+author: Arnaud Bodin, Abdellah Hanani, Mohamed Mzari
+
+section: Logique -- Raisonnement | 100
+
+subsection: Raisonnement | Moyen | 100.03, 100.04
+
+link:
+    - type: cours
+      link: http://exo7.emath.fr/cours/ch_logique.pdf
+      title: Logique et raisonnements
+
+    - type: video
+      link: http://youtu.be/aWSe1fjJHEM
+      title: Logique
+
+    - type: video
+      link: http://youtu.be/B-I5yZd0Wbk
+      title: Raisonnements
+
+    - type: exercices
+      link: http://exo7.emath.fr/ficpdf/fic00002.pdf
+      title: Logique, ensembles, raisonnements
+
+tags:
+    - motcle: implication/équivalence
+
+question: |
+        J'effectue le raisonnement suivant avec deux fonctions \(f,g : \Rr \to \Rr\).
+        \[\forall x \in \Rr \quad f(x)\times g(x) = 0\] 
+        \[\implies \forall x \in \Rr \quad \big(f(x) = 0 \text{ ou } g(x) = 0\big)\]
+        \[\implies \big(\forall x \in \Rr \quad f(x) = 0\big) \ \text{ ou } \ \big(\forall x \in \Rr \quad g(x) = 0\big)\]
+
+answers: 
+    - value: |
+        Ce raisonnement est valide.
+      correct: False
+
+    - value: |
+        Ce raisonnement est faux car la première implication est fausse.
+      correct: False
+
+    - value: |
+        Ce raisonnement est faux car la seconde implication est fausse.
+      correct: True
+
+    - value: |
+        Ce raisonnement est faux car la première et la seconde implication sont fausses.
+      correct: False
+
+explanations: |
+        On ne peut pas distribuer un "pour tout" avec un "ou". 
+
+---
+author: Arnaud Bodin, Abdellah Hanani, Mohamed Mzari
+
+section: Logique -- Raisonnement | 100
+
+subsection: Raisonnement | Moyen | 100.03, 100.04
+
+link:
+    - type: cours
+      link: http://exo7.emath.fr/cours/ch_logique.pdf
+      title: Logique et raisonnements
+
+    - type: video
+      link: http://youtu.be/aWSe1fjJHEM
+      title: Logique
+
+    - type: video
+      link: http://youtu.be/B-I5yZd0Wbk
+      title: Raisonnements
+
+    - type: exercices
+      link: http://exo7.emath.fr/ficpdf/fic00002.pdf
+      title: Logique, ensembles, raisonnements
+
+tags:
+    - motcle: récurrence
+
+question: |
+        Je souhaite montrer par récurrence une certaine assertion \(H_n\), pour tout entier \(n\ge0\).
+        Quels sont les débuts valables pour la rédaction de l'étape d'hérédité ?
+
+answers: 
+    - value: |
+        Je suppose \(H_n\) vraie pour tout \(n\ge0\), et je montre que \(H_{n+1}\) est vraie.
+      correct: False
+
+    - value: |
+        Je suppose \(H_{n-1}\) vraie pour tout \(n\ge1\), et je montre que \(H_{n}\) est vraie.
+      correct: False
+
+    - value: |
+        Je fixe \(n\ge0\), je suppose \(H_n\) vraie, et je montre que \(H_{n+1}\) est vraie.
+      correct: True
+
+    - value: |
+        Je fixe \(n\ge0\) et je montre que \(H_{n+1}\) est vraie.
+      correct: False
+
+explanations: |
+        La récurrence a une rédaction très rigide. Sinon on raconte vite n'importe quoi !
+
+---
+author: Arnaud Bodin, Abdellah Hanani, Mohamed Mzari
+
+section: Logique -- Raisonnement | 100
+
+subsection: Raisonnement | Moyen | 100.03, 100.04
+
+link:
+    - type: cours
+      link: http://exo7.emath.fr/cours/ch_logique.pdf
+      title: Logique et raisonnements
+
+    - type: video
+      link: http://youtu.be/aWSe1fjJHEM
+      title: Logique
+
+    - type: video
+      link: http://youtu.be/B-I5yZd0Wbk
+      title: Raisonnements
+
+    - type: exercices
+      link: http://exo7.emath.fr/ficpdf/fic00002.pdf
+      title: Logique, ensembles, raisonnements
+
+tags:
+    - motcle: récurrence
+
+question: |
+        Je veux montrer que \(e^x > x\) pour tout \(x\) réel avec \(x \ge 1\).
+        L'initialisation est vraie pour \(x=1\), car \(e^1 = 2,718\ldots >1\).
+        Pour l'hérédité, je suppose \(e^x>x\) et je calcule :
+        \[e^{x+1} = e^x \times e > x  \times e \ge x \times 2 \ge x + 1.\]
+        Je conclus par le principe de récurrence.
+        Pour quelles raisons cette preuve n'est pas valide ?
+
+answers: 
+    - value: |
+        Car il faudrait commencer l'initialisation à \(x=0\).
+      correct: False
+
+    - value: |
+        Car \(x\) est un réel.
+      correct: True
+
+    - value: |
+        Car l'inégalité \(e^x > x\) est fausse pour \(x\le0\).
+      correct: False
+
+    - value: |
+        Car la suite d'inégalités est fausse.
+      correct: False
+
+explanations: |
+        La récurrence c'est uniquement avec des entiers !
+
+---
+author: Arnaud Bodin, Abdellah Hanani, Mohamed Mzari
+
+section: Logique -- Raisonnement | 100
+
+subsection: Raisonnement | Moyen | 100.03, 100.04
+
+link:
+    - type: cours
+      link: http://exo7.emath.fr/cours/ch_logique.pdf
+      title: Logique et raisonnements
+
+    - type: video
+      link: http://youtu.be/aWSe1fjJHEM
+      title: Logique
+
+    - type: video
+      link: http://youtu.be/B-I5yZd0Wbk
+      title: Raisonnements
+
+    - type: exercices
+      link: http://exo7.emath.fr/ficpdf/fic00002.pdf
+      title: Logique, ensembles, raisonnements
+
+tags:
+    - motcle: récurrence
+
+question: |
+        Pour montrer que l'assertion 
+        "\(\forall n \in \Nn \quad n^2 > 3n-1\)" est fausse,
+        quels sont les arguments valables ?
+
+answers: 
+    - value: |
+        L'assertion est fausse, car pour \(n=0\) l'inégalité est fausse.
+      correct: False
+
+    - value: |
+        L'assertion est fausse, car pour \(n=1\) l'inégalité est fausse.
+      correct: True
+
+    - value: |
+        L'assertion est fausse, car pour \(n=2\) l'inégalité est fausse.
+      correct: True
+
+    - value: |
+        L'assertion est fausse, car pour \(n=1\) et \(n=2\) l'inégalité est fausse.
+      correct: True
+
+explanations: |
+        C'est faux pour \(n=1\) et \(n=2\), mais bien sûr, un seul cas suffit pour que l'assertion soit fausse. 
+
+---
+author: Arnaud Bodin, Abdellah Hanani, Mohamed Mzari
+
+section: Logique -- Raisonnement | 100
+
+subsection: Raisonnement | Difficile | 100.03, 100.04
+
+link:
+    - type: cours
+      link: http://exo7.emath.fr/cours/ch_logique.pdf
+      title: Logique et raisonnements
+
+    - type: video
+      link: http://youtu.be/aWSe1fjJHEM
+      title: Logique
+
+    - type: video
+      link: http://youtu.be/B-I5yZd0Wbk
+      title: Raisonnements
+
+    - type: exercices
+      link: http://exo7.emath.fr/ficpdf/fic00002.pdf
+      title: Logique, ensembles, raisonnements
+
+tags:
+    - motcle: implication/équivalence
+
+question: |
+        Le raisonnement par contraposée est basé
+        sur le fait que "\(P \implies Q\)" est équivalent à:
+
+answers: 
+    - value: |
+        "non(\(P\)) \(\implies\) non(\(Q\))".
+      correct: False
+
+    - value: |
+        "non(\(Q\)) \(\implies\) non(\(P\))".
+      correct: True
+
+    - value: |
+        "non(\(P\)) ou \(Q\)".
+      correct: False
+
+    - value: |
+        "\(P\) ou non(\(Q\))".
+      correct: False
+
+explanations: |
+        La contraposée de "\(P \implies Q\)" est "non(\(Q\)) \(\implies\) non(\(P\))".
+
+---
+author: Arnaud Bodin, Abdellah Hanani, Mohamed Mzari
+
+section: Logique -- Raisonnement | 100
+
+subsection: Raisonnement | Difficile | 100.03, 100.04
+
+link:
+    - type: cours
+      link: http://exo7.emath.fr/cours/ch_logique.pdf
+      title: Logique et raisonnements
+
+    - type: video
+      link: http://youtu.be/aWSe1fjJHEM
+      title: Logique
+
+    - type: video
+      link: http://youtu.be/B-I5yZd0Wbk
+      title: Raisonnements
+
+    - type: exercices
+      link: http://exo7.emath.fr/ficpdf/fic00002.pdf
+      title: Logique, ensembles, raisonnements
+
+tags:
+    - motcle: implication/équivalence
+
+question: |
+        Par quelle phrase puis-je remplacer la proposition logique "\(P \Longleftarrow Q\)" ?
+
+answers: 
+    - value: |
+        "\(P\) si \(Q\)"
+      correct: True
+
+    - value: |
+        "\(P\) seulement si \(Q\)"
+      correct: False
+
+    - value: |
+        "\(Q\) est une condition nécessaire pour obtenir \(P\)"
+      correct: False
+
+    - value: |
+        "\(Q\) est une condition suffisante pour obtenir \(P\)"
+      correct: True
+
+explanations: |
+        C'est plus facile si on comprend que "\(P \Longleftarrow Q\)", c'est "\(Q \implies P\)", autrement dit "si \(Q\) est vraie, alors \(P\) est vraie".
+
+---
+author: Arnaud Bodin, Abdellah Hanani, Mohamed Mzari
+
+section: Logique -- Raisonnement | 100
+
+subsection: Raisonnement | Difficile | 100.03, 100.04
+
+link:
+    - type: cours
+      link: http://exo7.emath.fr/cours/ch_logique.pdf
+      title: Logique et raisonnements
+
+    - type: video
+      link: http://youtu.be/aWSe1fjJHEM
+      title: Logique
+
+    - type: video
+      link: http://youtu.be/B-I5yZd0Wbk
+      title: Raisonnements
+
+    - type: exercices
+      link: http://exo7.emath.fr/ficpdf/fic00002.pdf
+      title: Logique, ensembles, raisonnements
+
+tags:
+    - motcle: implication/équivalence
+
+question: |
+        Quelles sont les assertions vraies ?
+
+answers: 
+    - value: |
+        La négation de "\(P \implies Q\)" est "non(\(Q\)) ou \(P\)"
+      correct: False
+
+    - value: |
+        La réciproque de "\(P \implies Q\)" est "\(Q \implies P\)"
+      correct: True
+
+    - value: |
+        La contraposée de "\(P \implies Q\)" est "non(\(P\)) \(\implies\) non(\(Q\))"
+      correct: False
+
+    - value: |
+        L'assertion "\(P \implies Q\)" est équivalente à "non(\(P\)) ou non(\(Q\))"
+      correct: False
+
+explanations: |
+        Il faut revenir à la définition de "\(P \implies Q\)" qui est "non(\(P\)) ou \(Q\)".
+
+---
+author: Arnaud Bodin, Abdellah Hanani, Mohamed Mzari
+
+section: Logique -- Raisonnement | 100
+
+subsection: Raisonnement | Difficile | 100.03, 100.04
+
+link:
+    - type: cours
+      link: http://exo7.emath.fr/cours/ch_logique.pdf
+      title: Logique et raisonnements
+
+    - type: video
+      link: http://youtu.be/aWSe1fjJHEM
+      title: Logique
+
+    - type: video
+      link: http://youtu.be/B-I5yZd0Wbk
+      title: Raisonnements
+
+    - type: exercices
+      link: http://exo7.emath.fr/ficpdf/fic00002.pdf
+      title: Logique, ensembles, raisonnements
+
+tags:
+    - motcle: raisonnement
+
+question: |
+        Je veux montrer que \(\sqrt{13} \notin \Qq\) par un raisonnement par l'absurde. Quel schéma de raisonnement est adapté ?
+
+answers: 
+    - value: |
+        Je suppose que \(\sqrt{13}\) est rationnel et je cherche une contradiction.
+      correct: True
+
+    - value: |
+        Je suppose que \(\sqrt{13}\) est irrationnel et je cherche une contradiction.
+      correct: False
+
+    - value: |
+        J'écris \(13 = \frac{p}{q}\) (avec \(p,q\) entiers) et je cherche une contradiction.
+      correct: False
+
+    - value: |
+        J'écris \(\sqrt{13} = \frac{p}{q}\) (avec \(p,q\) entiers) et je cherche une contradiction.
+      correct: True
+
+explanations: |
+        Par l'absurde on suppose que \(\sqrt{13} \in \Qq\), c'est-à-dire que c'est un nombre rationnel, autrement dit qu'il s'écrit \(\frac{p}{q}\), avec \(p\), \(q\) entiers. Voir la preuve que \(\sqrt{2} \notin \Qq\).
+

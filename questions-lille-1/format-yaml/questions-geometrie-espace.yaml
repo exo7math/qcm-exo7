@@ -1,0 +1,1191 @@
+---
+author: Arnaud Bodin, Abdellah Hanani, Mohamed Mzari
+
+section: Géométrie dans l'espace | 141
+
+subsection: Produit scalaire -- Produit vectoriel -- Déterminant | Facile | 141.01
+
+link:
+    - type: exercices
+      link: http://exo7.emath.fr/ficpdf/fic00159.pdf
+      title: Droites du plan ; droites et plans de l'espace
+
+tags:
+    - motcle: vecteurs
+
+question: |
+        Soit \(\vec{u}(1,1,1), \vec{v}(1,-1,0)\) et \(\vec{w}(0,1,1)\) trois vecteurs. Quelles sont les assertions vraies ?
+
+answers: 
+    - value: |
+        \(\vec{u}\) et \(\vec{v}\) sont orthogonaux.
+      correct: True
+
+    - value: |
+        \(\vec{v}\) et \(\vec{w}\) sont colinéaires.
+      correct: False
+
+    - value: |
+        \((O,\vec{u},\vec{v},\vec{w})\) est un repère de l'espace.
+      correct: True
+
+    - value: |
+        \((O,\vec{u},\vec{v},\vec{w})\) est un repère orthonormé de l'espace.
+      correct: False
+
+explanations: |
+        Deux vecteurs \(\vec{u}\) et \(\vec{v}\) sont orthogonaux si et seulement si \( \vec{u} \cdot \vec{v}=0\).
+        \((O,\vec{u},\vec{v},\vec{w})\) est un repère si et seulement si \(\det (\vec{u},\vec{v},\vec{w}) \neq 0\).
+
+---
+author: Arnaud Bodin, Abdellah Hanani, Mohamed Mzari
+
+section: Géométrie dans l'espace | 141
+
+subsection: Produit scalaire -- Produit vectoriel -- Déterminant | Facile | 141.01
+
+link:
+    - type: exercices
+      link: http://exo7.emath.fr/ficpdf/fic00159.pdf
+      title: Droites du plan ; droites et plans de l'espace
+
+tags:
+    - motcle: vecteurs
+
+question: |
+        Soit \(A(1,1,1), B(0,1,1)\) et \(C(1,0,1)\) trois points. Quelles sont les assertions vraies ?
+
+answers: 
+    - value: |
+        \(A\), \(B\) et \(C\) sont alignés.
+      correct: False
+
+    - value: |
+        \(A,B\) et \(C\) forment un triangle d'aire \(\frac{1}{3}\).
+      correct: False
+
+    - value: |
+        \(A,B\) et \(C\) forment un triangle d'aire \(\frac{1}{2}\).
+      correct: True
+
+    - value: |
+        Les vecteurs \(\overrightarrow{AB}\) et  \(\overrightarrow{AC}\) sont colinéaires.
+      correct: False
+
+explanations: |
+        L'aire du triangle \(ABC\) est donnée par : \(\frac{1}{2} \Vert \overrightarrow{AB} \wedge \overrightarrow{AC} \Vert\). 
+
+---
+author: Arnaud Bodin, Abdellah Hanani, Mohamed Mzari
+
+section: Géométrie dans l'espace | 141
+
+subsection: Aire -- Volume | Moyen | 141.02
+
+link:
+    - type: exercices
+      link: http://exo7.emath.fr/ficpdf/fic00159.pdf
+      title: Droites du plan ; droites et plans de l'espace
+
+tags:
+    - motcle: aire/volume
+
+question: |
+        Soit \(\vec{u}(-1,1,1), \vec{v}(0,1,2)\) et \(\vec{w}(1,0,-1)\) trois vecteurs. Quelles sont les assertions vraies ?
+
+answers: 
+    - value: |
+        L'aire du parallélogramme engendré par \(\vec{u}\) et  \(\vec{v}\) est : \(\sqrt 3\).
+      correct: False
+
+    - value: |
+        L'aire du parallélogramme engendré par \(\vec{u}\) et  \(\vec{v}\) est : \( \sqrt 6\).
+      correct: True
+
+    - value: |
+        Le volume du parallélépipède engendré par \(\vec{u}\), \(\vec{v}\) et  \(\vec{w}\) est \(1\).
+      correct: False
+
+    - value: |
+        Le volume du parallélépipède engendré par \(\vec{u}\), \(\vec{v}\) et  \(\vec{w}\) est \(2\).
+      correct: True
+
+explanations: |
+        L'aire du parallélogramme engendré par deux vecteurs \(\vec{u}\) et \(\vec{v}\) est donnée par : \( \Vert \vec{u} \wedge \vec{v} \Vert\).
+        Le volume du parallélépipède engendré par trois vecteurs \(\vec{u}\), \(\vec{v}\) et  \(\vec{w}\) est donné par : \(|\det (\vec{u}, \vec{v},\vec{w})|\).
+
+---
+author: Arnaud Bodin, Abdellah Hanani, Mohamed Mzari
+
+section: Géométrie dans l'espace | 141
+
+subsection: Plans | Facile | 141.03
+
+link:
+    - type: exercices
+      link: http://exo7.emath.fr/ficpdf/fic00159.pdf
+      title: Droites du plan ; droites et plans de l'espace
+
+tags:
+    - motcle: équation droite/plan
+
+question: |
+        Soit \(P\) le plan passant par \(A(1,1,0)\) et  de vecteur normal \(\vec{n}(1,-1,1)\). Quelles sont les assertions vraies ?
+
+answers: 
+    - value: |
+        Une équation cartésienne de \(P\) est \(x-y+z=1\).
+      correct: False
+
+    - value: |
+        Une équation cartésienne de \(P\) est \(x-y+z=0\).
+      correct: True
+
+    - value: |
+        Une représentation paramétrique de \(P\) est :
+        \[\left\{\begin{array}{ccl}x&=&t-s\\y&=&t\\ z&=&s,\quad (t,s\in \Rr) \end{array}\right.\]
+      correct: True
+
+    - value: |
+        Une représentation paramétrique de \(P\) est :
+        \[\left\{\begin{array}{ccl}x&=&t\\y&=&s\\ z&=&s-t,\quad (t,s \in \Rr)\end{array}\right.\]
+      correct: True
+
+explanations: |
+        Une équation de \(P\) est de la forme : \(x-y+z+a=0\) et on cherche \(a\) pour que \(A\) appartienne à \(P\). On résout cette équation pour trouver une représentation paramétrique. 
+
+---
+author: Arnaud Bodin, Abdellah Hanani, Mohamed Mzari
+
+section: Géométrie dans l'espace | 141
+
+subsection: Plans | Facile | 141.03
+
+link:
+    - type: exercices
+      link: http://exo7.emath.fr/ficpdf/fic00159.pdf
+      title: Droites du plan ; droites et plans de l'espace
+
+tags:
+    - motcle: équation droite/plan
+
+question: |
+        Soit \(P\) le plan passant par \(A(-1,1,1)\) et dirigé par les vecteurs
+        \(\vec{u}(0,1,1)\) et \(\vec{v}(1,0,1)\). Quelles sont les assertions vraies ?
+
+answers: 
+    - value: |
+        Une représentation paramétrique de \(P\) est :
+        \[\left\{\begin{array}{ccl}x&=&-1+s\\y&=&1+t\\ z&=&1+t+s,\quad (t,s\in \Rr) \end{array}\right.\]
+      correct: True
+
+    - value: |
+        Une représentation paramétrique de \(P\) est :
+        \[\left\{\begin{array}{ccl}x&=&-1+t\\y&=&1+s\\ z&=&-1+t+s,\quad (t,s\in \Rr)\end{array}\right.\]
+      correct: False
+
+    - value: |
+        Une équation cartésienne de \(P\) est \(x+y+z=-1\).
+      correct: False
+
+    - value: |
+        Une équation cartésienne de \(P\) est \(x+y-z=-1\).
+      correct: True
+
+explanations: |
+        On peut trouver une équation cartésienne, à partir d'une représentation paramétrique,  en éliminant les paramètres.
+
+---
+author: Arnaud Bodin, Abdellah Hanani, Mohamed Mzari
+
+section: Géométrie dans l'espace | 141
+
+subsection: Plans | Facile | 141.03
+
+link:
+    - type: exercices
+      link: http://exo7.emath.fr/ficpdf/fic00159.pdf
+      title: Droites du plan ; droites et plans de l'espace
+
+tags:
+    - motcle: équation droite/plan
+
+question: |
+        Soit \(P\) le plan passant par les points \(A(0,1,0)\), \(B(1,-1,0)\) et \(C(0,1,1)\). Quelles sont les assertions vraies ?
+
+answers: 
+    - value: |
+        Une représentation paramétrique de \(P\) est :
+        \[\left\{\begin{array}{ccl}x&=&s\\y&=&1-2s\\ z&=&t,\quad (t,s\in \Rr)\end{array}\right.\]
+      correct: True
+
+    - value: |
+        Une représentation paramétrique de \(P\) est :
+        \[\left\{\begin{array}{ccl}x&=&t\\y&=&s\\ z&=&1+2s,\quad (t,s\in \Rr)\end{array}\right.\]
+      correct: False
+
+    - value: |
+        Une équation cartésienne de \(P\) est \(2x+z=1\).
+      correct: False
+
+    - value: |
+        Une équation cartésienne de \(P\) est \(2x+y=1\).
+      correct: True
+
+explanations: |
+        \(P\) est le plan passant par \(A\) et dirigé par les vecteurs \(\overrightarrow{AB}\) et \(\overrightarrow{AC}\).
+
+---
+author: Arnaud Bodin, Abdellah Hanani, Mohamed Mzari
+
+section: Géométrie dans l'espace | 141
+
+subsection: Droites de l'espace | Facile | 141.04
+
+link:
+    - type: exercices
+      link: http://exo7.emath.fr/ficpdf/fic00159.pdf
+      title: Droites du plan ; droites et plans de l'espace
+
+tags:
+    - motcle: équation droite/plan
+
+question: |
+        Soit \(D\) la droite passant par le point \(A(2,-1,1)\) et dirigée par le vecteur \(\vec{u}(-1,1,0)\). Quelles sont les assertions vraies ?
+
+answers: 
+    - value: |
+        Une représentation paramétrique de \(D\) est :
+        \[\left\{\begin{array}{ccl}x&=&2-t\\y&=&-1+t\\ z&=&1,\quad (t\in \Rr) \end{array}\right.\]
+      correct: True
+
+    - value: |
+        Une représentation paramétrique de \(D\) est :
+        \[\left\{\begin{array}{ccl}x&=&2-t\\y&=&-1+t\\ z&=&-t,\quad (t\in \Rr)\end{array}\right.\]
+      correct: False
+
+    - value: |
+        Une représentation cartésienne de \(D\) est :
+        \[\left\{\begin{array}{ccl}x+y&=&1\\z&=&1 \end{array}\right.\]
+      correct: True
+
+    - value: |
+        Une représentation cartésienne de \(D\) est :
+        \[\left\{\begin{array}{ccl}x+y&=&0\\z&=&1 \end{array}\right.\]
+      correct: False
+
+explanations: |
+        On peut trouver une représentation cartésienne, à partir d'une représentation   paramétrique en éliminant le paramètre.
+
+---
+author: Arnaud Bodin, Abdellah Hanani, Mohamed Mzari
+
+section: Géométrie dans l'espace | 141
+
+subsection: Droites de l'espace | Facile | 141.04
+
+link:
+    - type: exercices
+      link: http://exo7.emath.fr/ficpdf/fic00159.pdf
+      title: Droites du plan ; droites et plans de l'espace
+
+tags:
+    - motcle: équation droite/plan
+
+question: |
+        Soit \(D\) la droite passant par le point \(A(-1,1,2)\) et perpendiculaire au plan d'équation cartésienne : \(x+y+z=1\). Quelles sont les assertions vraies ?
+
+answers: 
+    - value: |
+        Une représentation paramétrique de \(D\) est :
+        \[\left\{\begin{array}{ccl}x&=&-1+t\\y&=&1+t\\ z&=&2+t,\quad (t\in \Rr) \end{array}\right.\]
+      correct: True
+
+    - value: |
+        Une représentation paramétrique de \(D\) est :
+        \[\left\{\begin{array}{ccl}x&=&-1-t\\y&=&1-t\\ z&=&2-t,\quad (t\in \Rr) \end{array}\right.\]
+      correct: True
+
+    - value: |
+        Une représentation cartésienne de \(D\) est :
+        \[\left\{\begin{array}{ccl}x-y&=&-2\\y-z&=&-1 \end{array}\right.\]
+      correct: True
+
+    - value: |
+        Une représentation cartésienne de \(D\) est :
+        \[\left\{\begin{array}{ccl}x+y&=&2\\x+z&=&1 \end{array}\right.\]
+      correct: False
+
+explanations: |
+        \(D\) est dirigée par le vecteur \(\vec{u}(1,1,1)\).
+
+---
+author: Arnaud Bodin, Abdellah Hanani, Mohamed Mzari
+
+section: Géométrie dans l'espace | 141
+
+subsection: Plans -- Droites | Moyen | 141.03, 141.04
+
+link:
+    - type: exercices
+      link: http://exo7.emath.fr/ficpdf/fic00159.pdf
+      title: Droites du plan ; droites et plans de l'espace
+
+tags:
+    - motcle: équation droite/plan
+
+question: |
+        Soit \(a\) et \(b\) deux réels, \(D\) et \(D'\) deux droites de représentations paramétriques :
+        \[D: \left\{\begin{array}{ccl}x&=&1+2t\\y&=&t\\ z&=&-1+at,\quad (t\in \Rr) \end{array}\right. D': \left\{\begin{array}{ccl}x&=&-3+bt\\y&=&-t\\ z&=&1+t,\quad (t\in \Rr) \end{array}\right. 
+        \] Quelles sont les assertions vraies ?
+
+answers: 
+    - value: |
+        \(D\) et \(D'\) sont parallèles si et seulement si \(a=2\) et \(b=3\).
+      correct: False
+
+    - value: |
+        \(D\) et \(D'\) sont parallèles si et seulement si \(a=-1\) et \(b=-2\).
+      correct: True
+
+    - value: |
+        \(D\) et \(D'\) sont orthogonales  si et seulement si \(a=1\) et \(b=0\).
+      correct: False
+
+    - value: |
+        \(D\) et \(D'\) sont orthogonales  si et seulement si \(a=1-2b, \, b \in \Rr\).
+      correct: True
+
+explanations: |
+        Si \(D\) est dirigée par un vecteur \(\vec{u}\) et \(D'\) est dirigée par un vecteur \(\vec{v}\), \(D\) et \(D'\) sont parallèles si et seulement si \(\vec{u} \wedge \vec{v} = \overrightarrow 0\). \(D\) et \(D'\) sont othogonales si et seulement si \(\vec{u} \cdot  \vec{v}=0\).
+
+---
+author: Arnaud Bodin, Abdellah Hanani, Mohamed Mzari
+
+section: Géométrie dans l'espace | 141
+
+subsection: Plans -- Droites | Moyen | 141.03, 141.04
+
+link:
+    - type: exercices
+      link: http://exo7.emath.fr/ficpdf/fic00159.pdf
+      title: Droites du plan ; droites et plans de l'espace
+
+tags:
+    - motcle: équation droite/plan
+
+question: |
+        Soit \(P : x+y-z=0\),  \(P' : x-y=2\) et \(P'' : y-z=3\) trois plans. L'intersection de ces trois plans est :
+
+answers: 
+    - value: |
+        Vide.
+      correct: False
+
+    - value: |
+        Une droite.
+      correct: False
+
+    - value: |
+        Un point.
+      correct: True
+
+    - value: |
+        Le point de coordonnées \((-3,-5,-8)\).
+      correct: True
+
+explanations: |
+        On résout le système constitué des équations des trois plans.
+
+---
+author: Arnaud Bodin, Abdellah Hanani, Mohamed Mzari
+
+section: Géométrie dans l'espace | 141
+
+subsection: Plans -- Droites | Moyen | 141.03, 141.04
+
+link:
+    - type: exercices
+      link: http://exo7.emath.fr/ficpdf/fic00159.pdf
+      title: Droites du plan ; droites et plans de l'espace
+
+tags:
+    - motcle: équation droite/plan
+
+question: |
+        Soit \(P : x-y-z=-2\),  \(P' : x+z=2\) deux plans et \(D\) la droite :
+        \(\left\{\begin{array}{ccl}x&=&1+t\\y&=&2+2t\\ z&=&1-t,\quad (t\in \Rr)\end{array}\right.\) Quelles sont les assertions vraies ?
+
+answers: 
+    - value: |
+        \(D\subset P'\)
+      correct: True
+
+    - value: |
+        \(D=P\cap P'\)
+      correct: True
+
+    - value: |
+        \(D\cap P=\emptyset\)
+      correct: False
+
+    - value: |
+        \(D\cap P'=\emptyset\)
+      correct: False
+
+explanations: |
+        On vérifie que  \(D=P\cap P'\).
+
+---
+author: Arnaud Bodin, Abdellah Hanani, Mohamed Mzari
+
+section: Géométrie dans l'espace | 141
+
+subsection: Plans -- Droites | Moyen | 141.03, 141.04
+
+link:
+    - type: exercices
+      link: http://exo7.emath.fr/ficpdf/fic00159.pdf
+      title: Droites du plan ; droites et plans de l'espace
+
+tags:
+    - motcle: équation droite/plan
+
+question: |
+        Soit \(P : x+y-z=1\),  \(P' : x+z=-1\) deux plans et \(Q\) le plan passant par \(A(1,1,1)\) et perpendiculaire à \(P\) et à \(P'\). Quelles sont les assertions vraies ?
+
+answers: 
+    - value: |
+        Une équation cartésienne de \(Q\) est \(x+2y-z+2=0\).
+      correct: False
+
+    - value: |
+        Une équation cartésienne de \(Q\) est \(x-2y-z+2=0\).
+      correct: True
+
+    - value: |
+        Une représentation paramétrique de \(Q\) est :
+        \[\left\{\begin{array}{ccl}x&=&1-t\\y&=&1+t-s\\ z&=&1+t+s,\quad (t,s \in \Rr) \end{array}\right.\]
+      correct: False
+
+    - value: |
+        Une représentation paramétrique de \(Q\) est :
+        \[\left\{\begin{array}{ccl}x&=&1+t+s\\y&=&1+t\\ z&=&1-t+s,\quad (t,s \in \Rr) \end{array}\right.\]
+      correct: True
+
+explanations: |
+        \(Q\) passe par \(A\) et est dirigé par \(\vec{n}\) et \(\vec{n'}\), où \(\vec{n}\) et \(\vec{n'}\) sont des vecteurs normaux à \(P\) et à \(P'\) respectivement.
+
+---
+author: Arnaud Bodin, Abdellah Hanani, Mohamed Mzari
+
+section: Géométrie dans l'espace | 141
+
+subsection: Plans -- Droites | Moyen | 141.03, 141.04
+
+link:
+    - type: exercices
+      link: http://exo7.emath.fr/ficpdf/fic00159.pdf
+      title: Droites du plan ; droites et plans de l'espace
+
+tags:
+    - motcle: équation droite/plan
+
+question: |
+        On considère la droite \(D : \left\{\begin{array}{ccl}x&=&1-t\\y&=&t\\ z&=&-1+2t,\quad (t \in \Rr) \end{array}\right.\) et le plan \(P\)  passant par \(A(0,1,1)\) et perpendiculaire à \(D\).  Quelles sont les assertions vraies ?
+
+answers: 
+    - value: |
+        Une équation cartésienne de \(P\) est \(x-y-2z+3=0\).
+      correct: True
+
+    - value: |
+        Une équation cartésienne de \(P\) est \(x-2y-2z+2=0\).
+      correct: False
+
+    - value: |
+        Une représentation paramétrique de \(P\) est :
+        \[\left\{\begin{array}{ccl}x&=&t\\y&=&3+t-2s\\ z&=&s,\quad (t,s \in \Rr) \end{array}\right.\]
+      correct: True
+
+    - value: |
+        Une représentation paramétrique de \(P\) est :
+        \[\left\{\begin{array}{ccl}x&=&t\\y&=&2+t-2s\\ z&=&s,\quad (t,s \in \Rr) \end{array}\right.\]
+      correct: False
+
+explanations: |
+        Un vecteur directeur de \(D\) est un vecteur normal à \(P\).
+
+---
+author: Arnaud Bodin, Abdellah Hanani, Mohamed Mzari
+
+section: Géométrie dans l'espace | 141
+
+subsection: Plans -- Droites | Moyen | 141.03, 141.04
+
+link:
+    - type: exercices
+      link: http://exo7.emath.fr/ficpdf/fic00159.pdf
+      title: Droites du plan ; droites et plans de l'espace
+
+tags:
+    - motcle: équation droite/plan
+
+question: |
+        On considère les deux plans  \(P : \left\{\begin{array}{ccl}x&=&1+t+s\\y&=&-1+t\\ z&=&2+t-s,\quad (t,s  \in \Rr)  \end{array}\right.\) et 
+        \(P': \left\{\begin{array}{ccl}x&=&3+2t\\y&=&t+s\\ z&=&2+2s,\quad (t,s  \in \Rr) \end{array}\right.\)  Quelles sont les assertions vraies ?
+
+answers: 
+    - value: |
+        \(P\cap P'\) est une droite.
+      correct: False
+
+    - value: |
+        \(P\) et \(P'\) sont perpendiculaires.
+      correct: False
+
+    - value: |
+        \(P=P'\)
+      correct: True
+
+    - value: |
+        \(P\cap P' = \emptyset\)
+      correct: False
+
+explanations: |
+        On vérifie que \(P=P'\).
+
+---
+author: Arnaud Bodin, Abdellah Hanani, Mohamed Mzari
+
+section: Géométrie dans l'espace | 141
+
+subsection: Plans -- Droites | Difficile | 141.03, 141.04
+
+link:
+    - type: exercices
+      link: http://exo7.emath.fr/ficpdf/fic00159.pdf
+      title: Droites du plan ; droites et plans de l'espace
+
+tags:
+    - motcle: équation droite/plan
+
+question: |
+        Soit \(P\) et \(P'\) deux plans non parallèles d'équations :  \(ax+by+cz+d =0\) et \(a'x+b'y+c'z+d' =0\) respectivement. Soit \(D=P\cap P'\) et \(Q\) un plan contenant \(D\). Quelles sont les assertions vraies ?
+
+answers: 
+    - value: |
+        Une équation cartésienne de \(Q\) est \(ax+by+cz+d =0\).
+      correct: False
+
+    - value: |
+        Une équation cartésienne de \(Q\) est \(a'x+b'y+c'z+d' =0\).
+      correct: False
+
+    - value: |
+        Une équation cartésienne de \(Q\) est  de la forme : \(\alpha(ax+by+cz+d)+\beta(a'x+b'y+c'z+d')=0,\)  où \( \alpha, \beta \in \Rr\)  tels que  \((\alpha a+ \beta a', \alpha b+ \beta b', \alpha c+ \beta c', \alpha d+ \beta d') \neq (0,0,0,0)\).
+      correct: True
+
+    - value: |
+        Si \(Q\neq P'\), une équation cartésienne de \(Q\) est de la forme :
+        \((ax+by+cz+d)+\alpha(a'x+b'y+c'z+d')=0, \) où \( \alpha \in \Rr\)  tel que \( (a+ \alpha a',  b+ \alpha b', c+ \alpha c',  d+ \alpha d') \neq (0,0,0,0)\).
+      correct: True
+
+explanations: |
+        \(\vec{n}(a,b,c)\) est un vecteur normal à \(P\) et \(\vec{n'}(a',b',c')\) est un vecteur normal à \(P'\), donc un vecteur normal à \(Q\) est une combinaison linéaire de \(\vec{n}\) et \(\vec{n'}\). Par conséquent, une équation cartésienne de \(Q\) est de la forme :  \(\alpha(ax+by+cz)+\beta(a'x+b'y+c'z) + \gamma =0.\) D'autre part, si \(A(x_0,y_0,z_0) \in D\), \(A \in Q\). On déduit que \(\gamma = \alpha d + \beta d'\).
+
+---
+author: Arnaud Bodin, Abdellah Hanani, Mohamed Mzari
+
+section: Géométrie dans l'espace | 141
+
+subsection: Plans -- Droites | Difficile | 141.03, 141.04
+
+link:
+    - type: exercices
+      link: http://exo7.emath.fr/ficpdf/fic00159.pdf
+      title: Droites du plan ; droites et plans de l'espace
+
+tags:
+    - motcle: équation droite/plan
+
+question: |
+        Soit \(D\) la droite d'équations :  \( \left\{\begin{array}{ccl}x+z&=&1\\x-y&=&-1 \end{array}\right.\) et \(P\) le plan contenant \(D\) et perpendiculaire au plan \(Q\) d'équation : \(x-z+3=0\).  Une équation cartésienne de \(P\) est :
+
+answers: 
+    - value: |
+        \(x+z=1\)
+      correct: True
+
+    - value: |
+        \(x+y=0\)
+      correct: False
+
+    - value: |
+        \(y+z=1\)
+      correct: False
+
+    - value: |
+        \(x-y=-1\)
+      correct: False
+
+explanations: |
+        \(\vec{u}(1,0,-1)\) est un vecteur normal à \( Q\) qui n'appartient pas au  plan vectoriel \(x-y=0\). Donc \(P\) est différent du plan d'équation : \(x-y=-1\) et donc  une équation cartésienne de \(P\) est  de la forme : \((x+z-1) + \alpha(x-y+1)=0, \, \alpha \in \Rr\). On calcule \(\alpha\) de sorte que \(\vec{u}(1,0,-1)\) soit un vecteur de  \(P\).
+
+---
+author: Arnaud Bodin, Abdellah Hanani, Mohamed Mzari
+
+section: Géométrie dans l'espace | 141
+
+subsection: Plans -- Droites | Difficile | 141.03, 141.04
+
+link:
+    - type: exercices
+      link: http://exo7.emath.fr/ficpdf/fic00159.pdf
+      title: Droites du plan ; droites et plans de l'espace
+
+tags:
+    - motcle: équation droite/plan
+
+question: |
+        Soit \(D\) la droite d'équations :  \( \left\{\begin{array}{ccl}x-y&=&-1\\y-z&=&0 \end{array}\right.\) et \(P\) le plan contenant \(D\) et parallèle à la droite d'équations  \(D' : \left\{\begin{array}{ccl}x+z&=&0\\x-y&=&2 \end{array}\right.\). 
+        Une équation cartésienne de \(P\) est :
+
+answers: 
+    - value: |
+        \(x-z=1\)
+      correct: False
+
+    - value: |
+        \(x-y=0\)
+      correct: False
+
+    - value: |
+        \(y-z=0\)
+      correct: False
+
+    - value: |
+        \(x-y=-1\)
+      correct: True
+
+explanations: |
+        \(\vec{u}(1,1,-1)\) est un vecteur directeur de la droite \(D'\) qui  n'appartient pas au  plan  \(y-z=0\) .   Donc \(P\) est différent du plan d'équation :  \(y-z=0\) et donc une équation cartésienne de \(P\) est  de la forme : \((x-y+1) + \alpha(y-z)=0, \, \alpha \in \Rr\). On calcule \(\alpha\) de sorte que \(\vec{u}(1,1,-1)\) soit un vecteur de  \(P\).
+
+---
+author: Arnaud Bodin, Abdellah Hanani, Mohamed Mzari
+
+section: Géométrie dans l'espace | 141
+
+subsection: Plans -- Droites | Difficile | 141.03, 141.04
+
+link:
+    - type: exercices
+      link: http://exo7.emath.fr/ficpdf/fic00159.pdf
+      title: Droites du plan ; droites et plans de l'espace
+
+tags:
+    - motcle: équation droite/plan
+
+question: |
+        Soit \((P_n), n\in \Nn\), la famille de plans d'équations : \(n^2x+(2n-1)y+nz=3\). On note \(E\) l'intersection de ces plans, c'est-à-dire \(E= \{M(x,y,z) \in \Rr^3; \, M\in P_n, \forall n\in \Nn \}\). Quelles sont les assertions vraies ?
+
+answers: 
+    - value: |
+        \(E=\emptyset\)
+      correct: False
+
+    - value: |
+        \(E\) est un plan d'équation \(x+y+z=3\).
+      correct: False
+
+    - value: |
+        \(E\) est une droite d'équation \( \left\{\begin{array}{ccl}x+y+z&=&3\\y&=&-3 \end{array}\right.\).
+      correct: False
+
+    - value: |
+        \(E\) est le point de coordonnées \((0,-3,6)\).
+      correct: True
+
+explanations: |
+        Soit \(M(x,y,z) \in E\), alors   \(n^2x+(2n-1)y+nz=3, \, \forall n \in \Nn  \Leftrightarrow  xn^2+ (2y+z)n-y-3=0, \, \forall n \in \Nn  \Leftrightarrow  x=0, 2y+z=0\) et \(y+3=0\).
+
+---
+author: Arnaud Bodin, Abdellah Hanani, Mohamed Mzari
+
+section: Géométrie dans l'espace | 141
+
+subsection: Plans -- Droites | Difficile | 141.03, 141.04
+
+link:
+    - type: exercices
+      link: http://exo7.emath.fr/ficpdf/fic00159.pdf
+      title: Droites du plan ; droites et plans de l'espace
+
+tags:
+    - motcle: équation droite/plan
+
+question: |
+        On considère les droites \(D_1 : \left\{\begin{array}{ccl}x&=&z-1\\y&=&2z+1 \end{array}\right.\) et  
+        \(D_2 : \left\{\begin{array}{ccl}y&=&3x\\z&=&1 \end{array}\right.\). Soit \(P_1\) et \(P_2\) des plans parallèles contenant \(D_1\) et \(D_2\) respectivement.    Quelles sont les assertions vraies ?
+
+answers: 
+    - value: |
+        Une équation cartésienne de \(P_1\) est \( 3x-y-z+4=0\).
+      correct: True
+
+    - value: |
+        Une équation cartésienne de \(P_1\) est \( 4x-y-z+5=0\).
+      correct: False
+
+    - value: |
+        Une équation cartésienne de \(P_2\) est \( 4x-y-z+1=0\).
+      correct: False
+
+    - value: |
+        Une équation cartésienne de \(P_2\) est \( 3x-y-z+1=0\).
+      correct: True
+
+explanations: |
+        \(D_1\) passe par le point \(A_1(-1,1,0)\) et est dirigée par le vecteur \(\vec{u_1}(1,2,1)\). 
+        \(D_2\) passe par le point \(A_2(0,0,1)\) et est dirigée par le vecteur \(\vec{u_2}(1,3,0)\). \(P_1\) passe donc par \(A_1\) est de vecteur normal  \(\vec{n}=\vec{u_1} \wedge \vec{u_2}\) et \(P_2\) passe donc par \(A_2\) est de vecteur normal  \(\vec{n}\).
+
+---
+author: Arnaud Bodin, Abdellah Hanani, Mohamed Mzari
+
+section: Géométrie dans l'espace | 141
+
+subsection: Plans -- Droites | Difficile | 141.03, 141.04
+
+link:
+    - type: exercices
+      link: http://exo7.emath.fr/ficpdf/fic00159.pdf
+      title: Droites du plan ; droites et plans de l'espace
+
+tags:
+    - motcle: équation droite/plan
+
+question: |
+        Soit  \(D_1 : \left\{\begin{array}{ccl}y&=&x+2\\z&=&x \end{array}\right.\),   
+        \(D_2 : \left\{\begin{array}{ccl}y&=&2x+1\\z&=&2x-1 \end{array}\right.\) et \(\Delta\) une droite parallèle au plan \((xOy)\) et rencontrant les droites \(D_1\), \(D_2\) et l'axe \((Oz)\). 
+        Quelles sont les assertions vraies ?
+
+answers: 
+    - value: |
+        Une équation cartésienne de \(\Delta\) est :
+        \( \left\{\begin{array}{ccl}y&=&1\\z&=&-1 \end{array}\right.\) ou
+        \( \left\{\begin{array}{ccl}x+y+z&=&0\\z&=&1 \end{array}\right.\).
+      correct: False
+
+    - value: |
+        \(\Delta\) est contenu dans le plan \(z=-1\) ou \(z=1\).
+      correct: False
+
+    - value: |
+        Une équation cartésienne de \(\Delta\) est :
+        \( \left\{\begin{array}{ccl}y&=&0\\z&=&-2 \end{array}\right.\) ou
+        \( \left\{\begin{array}{ccl}y&=&3x\\z&=&1 \end{array}\right.\).
+      correct: True
+
+    - value: |
+        \(\Delta\) est contenu dans le plan \(z=-2\) ou \(z=1\).
+      correct: True
+
+explanations: |
+        \(\Delta\) est parallèle au plan \((xOy)\) et rencontre l'axe  \((Oz)\), une représentation cartésienne de \(\Delta\) est donc  de la forme : 
+        \( \left\{\begin{array}{ccl}ax+by&=&0\\z&=&c, \quad a,b,c \in \Rr \end{array}\right.\). 
+        On peut supposer que \(b\) est non nul, sinon, \(\Delta\) ne rencontre pas \(D_1\) ou \(D_2\). Par conséquent, une représentation cartésienne de \(\Delta\) est donc  de la forme : 
+        \( \left\{\begin{array}{ccl}ax+y&=&0\\z&=&b, \quad a,b \in \Rr \end{array}\right.\).
+        On calcule \(a\) et \(b\) pour que \(\Delta\) rencontre \(D_1\) et \(D_2\).
+
+---
+author: Arnaud Bodin, Abdellah Hanani, Mohamed Mzari
+
+section: Géométrie dans l'espace | 141
+
+subsection: Distance | Facile | 141.05
+
+link:
+    - type: exercices
+      link: http://exo7.emath.fr/ficpdf/fic00159.pdf
+      title: Droites du plan ; droites et plans de l'espace
+
+tags:
+    - motcle: distance
+
+question: |
+        Soit \(A(1,1,1)\) et \(P\) le plan d'équation cartésienne : \(x+y+z+1=0\). La distance de \(A\) à \(P\) est :
+
+answers: 
+    - value: |
+        \(\frac{1}{\sqrt 3}\)
+      correct: False
+
+    - value: |
+        \(\frac{2}{\sqrt 3}\)
+      correct: False
+
+    - value: |
+        \(\sqrt 3\)
+      correct: False
+
+    - value: |
+        \(\frac{4}{\sqrt 3}\)
+      correct: True
+
+explanations: |
+        Si \(P\) est d'équation  \(ax+by+cz+d=0\) et \(A(x_0,y_0,z_0)\), la distance de \(A\) à \(P\) est donnée par : \(\frac{|ax_0+by_0+cz_0+d|}{\sqrt{a^2+b^2+c^2}}\).
+
+---
+author: Arnaud Bodin, Abdellah Hanani, Mohamed Mzari
+
+section: Géométrie dans l'espace | 141
+
+subsection: Distance | Facile | 141.05
+
+link:
+    - type: exercices
+      link: http://exo7.emath.fr/ficpdf/fic00159.pdf
+      title: Droites du plan ; droites et plans de l'espace
+
+tags:
+    - motcle: distance
+
+question: |
+        Soit \(A(-1,1,0)\) et \(P\) le plan passant par \(B(1,0,1)\) et dirigé par les vecteurs \(\vec{u}(1,1,1)\) et \(\vec{v}(1,0,-1)\). La distance de \(A\) à \(P\) est :
+
+answers: 
+    - value: |
+        \(\frac{1}{\sqrt 6}\)
+      correct: False
+
+    - value: |
+        \(\frac{5}{\sqrt 6}\)
+      correct: True
+
+    - value: |
+        \(\sqrt 6\)
+      correct: False
+
+    - value: |
+        \(\frac{4}{\sqrt 6}\)
+      correct: False
+
+explanations: |
+        Si \(P\) passe par un point \(B\) et est dirigé par des vecteurs \(\vec{u}\) et \(\vec{v}\) et \(A\) un point, la distance de \(A\) à \(P\) est donnée par : \(\frac{ \vert \det (\overrightarrow{BA}, \vec{u},\vec{v})\vert}{\Vert \vec{u} \wedge \vec{v}\Vert}\).
+
+---
+author: Arnaud Bodin, Abdellah Hanani, Mohamed Mzari
+
+section: Géométrie dans l'espace | 141
+
+subsection: Distance | Facile | 141.05
+
+link:
+    - type: exercices
+      link: http://exo7.emath.fr/ficpdf/fic00159.pdf
+      title: Droites du plan ; droites et plans de l'espace
+
+tags:
+    - motcle: distance
+
+question: |
+        Soit \(A(2,0,1)\) et \(D\) la droite d'équations :
+        \[\left\{\begin{array}{ccl}x+y-z&=&1\\x-y&=&-1 \end{array}\right.\]
+        La distance de \(A\) à \(D\) est :
+
+answers: 
+    - value: |
+        \(\frac{3}{\sqrt 2}\)
+      correct: True
+
+    - value: |
+        \(\frac{1}{\sqrt 2}\)
+      correct: False
+
+    - value: |
+        \(\sqrt 3\)
+      correct: False
+
+    - value: |
+        \(\sqrt 2\)
+      correct: False
+
+explanations: |
+        Si \(D\) est une droite qui passe par un point \(B\) et dirigée par un vecteur \(\vec{u}\)  et \(A\) un point, la distance de \(A\) à \(D\) est donnée par : \(\frac{ \Vert \overrightarrow{BA} \wedge \vec{u} \Vert}{\Vert \vec{u}  \Vert}\).
+
+---
+author: Arnaud Bodin, Abdellah Hanani, Mohamed Mzari
+
+section: Géométrie dans l'espace | 141
+
+subsection: Distance | Moyen | 141.05
+
+link:
+    - type: exercices
+      link: http://exo7.emath.fr/ficpdf/fic00159.pdf
+      title: Droites du plan ; droites et plans de l'espace
+
+tags:
+    - motcle: distance
+
+question: |
+        On considère les droites \(D_1 : \left\{\begin{array}{ccl}x&=&1+t\\y&=&-t\\ z&=&1+t,\quad (t \in \Rr)  \end{array}\right.\) et 
+        \(D_2 : \left\{\begin{array}{ccl}y&=&2\\x-z&=&2 \end{array}\right.\)
+        La distance entre \(D_1\) et \(D_2\) est :
+
+answers: 
+    - value: |
+        \(0\)
+      correct: False
+
+    - value: |
+        \(\frac{1}{\sqrt 2}\)
+      correct: False
+
+    - value: |
+        \(\sqrt 2\)
+      correct: True
+
+    - value: |
+        Les droites se rapprochent autant que l'on veut sans se toucher.
+      correct: False
+
+explanations: |
+        Si \(D_1\) passe par un point \(A_1\) et est dirigée par un vecteur \(\vec{u_1}\) et 
+        \(D_2\) passe par un point \(A_2\) et est dirigée par un vecteur \(\vec{u_2}\), la distance entre \(D_1\) et \(D_2\) est donnée par : \(\frac{|\det(\overrightarrow{A_1A_2},\vec{u_1}, \vec{u_2})|}{\Vert \vec{u_1} \wedge \vec{u_2} \Vert }\).
+
+---
+author: Arnaud Bodin, Abdellah Hanani, Mohamed Mzari
+
+section: Géométrie dans l'espace | 141
+
+subsection: Distance | Moyen | 141.05
+
+link:
+    - type: exercices
+      link: http://exo7.emath.fr/ficpdf/fic00159.pdf
+      title: Droites du plan ; droites et plans de l'espace
+
+tags:
+    - motcle: distance
+
+question: |
+        Soit \(D\) la droite passant par le point \(A(1,-1,0)\) et dirigée par le vecteur \(\vec{u}(1,1,-1)\). Soit \(M(1,-1,3)\) un point et \(H\) le projeté orthogonal de \(M\) sur \(D\). Les coordonnées de \(H\) sont :
+
+answers: 
+    - value: |
+        \(H(0,1,1)\)
+      correct: False
+
+    - value: |
+        \(H(1,2,1)\)
+      correct: False
+
+    - value: |
+        \(H(0,-2,1)\)
+      correct: True
+
+    - value: |
+        \(H(1,-2,1)\)
+      correct: False
+
+explanations: |
+        \(H\in D\), donc il existe \(t \in \Rr\) tel que \(H(1+t,-1+t,-t)\). On calcule \(t\) en utilisant l'égalité : \(\overrightarrow{HM} \cdot \vec{u} = 0\).
+
+---
+author: Arnaud Bodin, Abdellah Hanani, Mohamed Mzari
+
+section: Géométrie dans l'espace | 141
+
+subsection: Distance | Moyen | 141.05
+
+link:
+    - type: exercices
+      link: http://exo7.emath.fr/ficpdf/fic00159.pdf
+      title: Droites du plan ; droites et plans de l'espace
+
+tags:
+    - motcle: équation droite/plan
+
+question: |
+        On considère les droites \(D_1 : \left\{\begin{array}{ccl}x+y-z&=&1\\x-y&=&-1 \end{array}\right.\),  
+        \(D_2 : \left\{\begin{array}{ccl}x-y+z&=&-1\\x-z&=&1 \end{array}\right.\)
+        et \(\Delta\) la perpendiculaire commune à \(D_1\) et \(D_2\). Quelles sont les assertions vraies ?
+
+answers: 
+    - value: |
+        Une représentation cartésienne de \(\Delta\) est :
+        \[\left\{\begin{array}{ccl}x+5y-4z-5&=&0\\x-4y+5z+5&=&0 \end{array}\right.\]
+      correct: False
+
+    - value: |
+        Une représentation cartésienne de \(\Delta\) est :
+        \[\left\{\begin{array}{ccl}x+7y-4z-7&=&0\\x-4y+7z+7&=&0 \end{array}\right.\]
+      correct: True
+
+    - value: |
+        \(\Delta\) est contenu dans le plan d'équation \( x+5y-4z-5=0\).
+      correct: False
+
+    - value: |
+        \(\Delta\) est contenu dans le plan d'équation \(x-4y+7z+7=0\).
+      correct: True
+
+explanations: |
+        Soit \(D_1\) une droite passant par un point \(A_1\) et dirigée par un vecteur \(\vec{u_1}\) et 
+        \(D_2\) une droite passant par un point \(A_2\) et dirigée par un vecteur \(\vec{u_2}\), telles que \(D_1\) et \(D_2\) ne soient pas parallèles. Soit \(P_1\) le plan passant par \(A_1\) et dirigé par les vecteurs \(\vec{u_1}\) et \(\vec{u_1} \wedge \vec{u_2}\) et 
+        \(P_2\) le plan passant par \(A_2\) et dirigé par les vecteurs \(\vec{u_2}\) et \(\vec{u_1} \wedge \vec{u_2}\). Alors, la perpendiculaire commune à \(D_1\) et \(D_2\) est l'intersection de \(P_1\) et \(P_2\).
+
+---
+author: Arnaud Bodin, Abdellah Hanani, Mohamed Mzari
+
+section: Géométrie dans l'espace | 141
+
+subsection: Distance | Difficile | 141.05
+
+link:
+    - type: exercices
+      link: http://exo7.emath.fr/ficpdf/fic00159.pdf
+      title: Droites du plan ; droites et plans de l'espace
+
+tags:
+    - motcle: distance
+
+question: |
+        Soit  \(A(1,1,1)\) un point,  \(D\) la droite  \( : \left\{\begin{array}{ccl}x&=&1+z\\y&=&z \end{array}\right.\) et \(P\) un plan contenant \(D\) et tel que la distance de \(A\) à \(P\) soit égale à   \(\frac{1}{\sqrt 2}\). Une équation cartésienne de \(P\) est :
+
+answers: 
+    - value: |
+        \(x+z+1=0\) ou \(x+y+1=0\)
+      correct: False
+
+    - value: |
+        \(x-z+1=0\) ou \(x-y=0\)
+      correct: False
+
+    - value: |
+        \(z=1\) ou \(x=1\)
+      correct: False
+
+    - value: |
+        \(x-z=1\) ou \(x-y=1\)
+      correct: True
+
+explanations: |
+        \(P\) est différent du plan d'équation  \(y-z=0\) et \(D \subset P\), une équation cartésienne de \(P\) est donc de la forme : \((x-z-1)+ \alpha (y-z)=0\). On calcule \(\alpha\) pour que la distance de \(A\) à \(P\) soit égal à \(\frac{1}{\sqrt 2}\).
+
+---
+author: Arnaud Bodin, Abdellah Hanani, Mohamed Mzari
+
+section: Géométrie dans l'espace | 141
+
+subsection: Distance | Difficile | 141.05
+
+link:
+    - type: exercices
+      link: http://exo7.emath.fr/ficpdf/fic00159.pdf
+      title: Droites du plan ; droites et plans de l'espace
+
+tags:
+    - motcle: distance
+
+question: |
+        Soit  \(P_1 : z+3=0\) et \(P_2 : 2x+y+2z-1=0\) des plans et \(\pi\)  un plan bissecteur de \(P_1\) et \(P_2\), c'est-à-dire :   \(M \in \pi\)  si et seulement si \(M\) est  à la même distance de \(P_1\) et de  \(P_2\). Une équation cartésienne de \(\pi\) est :
+
+answers: 
+    - value: |
+        \(2x+y-z-10=0\) ou \(2x+y+5z+8=0\)
+      correct: True
+
+    - value: |
+        \(x+y-z-1=0\) ou \(x+y+z+1=0\)
+      correct: False
+
+    - value: |
+        \(2x+y+z+8=0\) ou \(2x-y+5z+7=0\)
+      correct: False
+
+    - value: |
+        \(x+y-z-4=0\) ou \(x+y+3z-8=0\)
+      correct: False
+
+explanations: |
+        \(M(x,y,z) \in \pi \Leftrightarrow |z+3|=\frac{|2x+y+2z-1|}{3}\).
+
+---
+author: Arnaud Bodin, Abdellah Hanani, Mohamed Mzari
+
+section: Géométrie dans l'espace | 141
+
+subsection: Distance | Difficile | 141.05
+
+link:
+    - type: exercices
+      link: http://exo7.emath.fr/ficpdf/fic00159.pdf
+      title: Droites du plan ; droites et plans de l'espace
+
+tags:
+    - motcle: distance
+
+question: |
+        Soit  \(E\) l'ensemble des points situés à la même distance  des axes de coordonnées. Quelles sont les assertions vraies ?
+
+answers: 
+    - value: |
+        \(E\) est une droite.
+      correct: False
+
+    - value: |
+        \(E\) est une réunion de droites.
+      correct: True
+
+    - value: |
+        \(M(x,y,z) \in E \Leftrightarrow x=y=z\)
+      correct: False
+
+    - value: |
+        \(M(x,y,z) \in E \Leftrightarrow |x|=|y|=|z|\)
+      correct: True
+
+explanations: |
+        \(M(x,y,z) \in E \Leftrightarrow   \Vert \overrightarrow {OM} \wedge \vec{i} \Vert
+        =  \Vert \overrightarrow {OM} \wedge \vec{j} \Vert =  \Vert \overrightarrow {OM} \wedge \vec{k} \Vert\).
+
+---
+author: Arnaud Bodin, Abdellah Hanani, Mohamed Mzari
+
+section: Géométrie dans l'espace | 141
+
+subsection: Distance | Difficile | 141.05
+
+link:
+    - type: exercices
+      link: http://exo7.emath.fr/ficpdf/fic00159.pdf
+      title: Droites du plan ; droites et plans de l'espace
+
+tags:
+    - motcle: distance
+
+question: |
+        Soit  \(D\) la droite : \(\left\{\begin{array}{ccl}x&=&-1+3t\\y&=&1\\z&=&-1-t, \quad t\in \Rr  \end{array}\right.\) et \(P\) un plan contenant \(D\) à une distance de \(1\) de l'origine. Une équation cartésienne de \(P\) est :
+
+answers: 
+    - value: |
+        \(y=1\)
+      correct: False
+
+    - value: |
+        \(y=1\) ou \(4x+3y+12z+13=0\)
+      correct: True
+
+    - value: |
+        \(y=1\) ou \(x=1\)
+      correct: False
+
+    - value: |
+        \(x=1\) ou \(y=1\) ou \(z=1\)
+      correct: False
+
+explanations: |
+        Une représentation cartésienne de \(D\) est : \(\left\{\begin{array}{ccl}y&=&1\\x+3z+4&=&0  \end{array}\right.\). \(P\) est différent du plan \(x+3z+4=0\) et \(P\) contient \(D\), une équation cartésienne de \(P\) est donc de la forme : \((y-1)+\alpha(x+3z+4)=0\). On calcule \(\alpha\) de sorte que la distance de \(P\) à l'origine soit égale à \(1\).
+

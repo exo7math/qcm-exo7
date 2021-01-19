@@ -1,0 +1,1272 @@
+---
+author: Abdellah Hanani, Mohamed Mzari
+
+section: Applications linéaires 
+
+subsection: Applications linéaires | Niveau 1
+
+tags:
+    - motcle: Application linéaire
+
+question: |
+        On considère les deux applications suivantes : 
+        \[\begin{array}{rccc}f:&\Rr&\to&\Rr\\
+        & x&\to & \sin x \end{array} \quad \mbox{et} \quad \begin{array}{rccc}g:&\Rr^2&\to&\Rr^2\\
+        & (x,y)&\to &(y,x). \end{array}\] 
+        Quelles sont les assertions vraies ?
+
+answers: 
+    - value: |
+        \(f(0)=0\)
+      correct: True
+
+    - value: |
+        \(f\) est une application linéaire
+      correct: False
+
+    - value: |
+        \(g(x,y) =  g(y,x)\), pour tout \((x,y) \in \Rr^2\)
+      correct: False
+
+    - value: |
+        \(g\) est une application linéaire
+      correct: True
+
+explanations: |
+        \(f\) n'est pas linéaire car \(f(\pi)=f(\frac{\pi}{2}+ \frac{\pi}{2})=0\) 
+        et \(f(\frac{\pi}{2})+ f(\frac{\pi}{2}) =2\). 
+        On vérifie que \(g\) est linéaire.  
+
+---
+author: Abdellah Hanani, Mohamed Mzari
+
+section: Applications linéaires 
+
+subsection: Applications linéaires | Niveau 1
+
+tags:
+    - motcle: Application linéaire
+
+question: |
+        On considère les deux applications suivantes : 
+        \[\begin{array}{rccc}f:&\Rr^2&\to&\Rr^2\\
+        & (x,y)&\to & (x,y^2) \end{array} \quad \mbox{et} \quad \begin{array}{rccc}g:&\Rr^2&\to&\Rr^2\\
+        & (x,y)&\to &(x,-x). \end{array}\] 
+        Quelles sont les assertions vraies ?
+
+answers: 
+    - value: |
+        \(f(0,2)=(0,4)\)
+      correct: True
+
+    - value: |
+        \(f\) est une application linéaire
+      correct: False
+
+    - value: |
+        \(g(0,0)=(0,0)\)
+      correct: True
+
+    - value: |
+        \(g\) est une application linéaire
+      correct: True
+
+explanations: |
+        L'application \(f\) n'est pas linéaire. Contre-exemple : \(f(2(0,1))=f(0,2)=(0,4)\) et \(2f(0,1)=(0,2)\). On vérifie que l'application \(g\) est linéaire.
+
+---
+author: Abdellah Hanani, Mohamed Mzari
+
+section: Applications linéaires 
+
+subsection: Applications linéaires | Niveau 1
+
+tags:
+    - motcle: Application linéaire
+
+question: |
+        On considère les deux applications suivantes : 
+        \[\begin{array}{rccc}f:&\Rr^3&\to&\Rr^2\\
+        & (x,y,z)&\to &(x+y,x-z) \end{array} \quad \mbox{et} \quad \begin{array}{rccc}g:&\Rr^3&\to&\Rr^2\\
+        & (x,y,z)&\to &(xy,xz). \end{array}\] 
+        Quelles sont les assertions vraies ?
+
+answers: 
+    - value: |
+        \(f(0,0,0)=(0,0)\)
+      correct: True
+
+    - value: |
+        \(f\) est une application linéaire
+      correct: True
+
+    - value: |
+        \(g(1,1,0)=g(1,0,0)+ g(0,1,0)\)
+      correct: False
+
+    - value: |
+        \(g\) est une application linéaire
+      correct: False
+
+explanations: |
+        \(f\) est linéaire. \(g\) ne l'est pas,
+        puisque \(g((1,0,0)+ (0,1,0)) = g(1,1,0) = (1,0)\) et \( g(1,0,0)+ g(0,1,0) = (0,0)\).
+
+---
+author: Abdellah Hanani, Mohamed Mzari
+
+section: Applications linéaires 
+
+subsection: Applications linéaires | Niveau 2
+
+tags:
+    - motcle: Application linéaire/Polynômes
+
+question: |
+        On note \(\Rr_n[X]\) l'espace des polynômes à coefficients réels de degré \(\le n\),  \(n\in \Nn\). On considère les deux applications suivantes :
+        \[\begin{array}{rccc}f:&\Rr_3[X]&\to&\Rr\\
+        & P&\to &P(0)+P'(0)\,  \end{array}   \quad \mbox{et} \quad \begin{array}{rccc}g:&\Rr_3[X]&\to&\Rr_2[X]\\
+        & P&\to &1+P'+XP'',\end{array}\] 
+        où \(P'\) (resp. \(P''\)) est la dérivée première (resp. seconde) de \(P\). Quelles sont les assertions vraies ?
+
+answers: 
+    - value: |
+        \(f(0)=1\)
+      correct: False
+
+    - value: |
+        \(f\) est une application linéaire
+      correct: True
+
+    - value: |
+        \(g(0)=1\)
+      correct: True
+
+    - value: |
+        \(g\) est une application linéaire
+      correct: False
+
+explanations: |
+        On vérifie que \(f\) est linéaire. Par contre, \(g\) ne l'est pas, puisque \(g(0)=1\neq 0\).
+
+---
+author: Abdellah Hanani, Mohamed Mzari
+
+section: Applications linéaires 
+
+subsection: Applications linéaires | Niveau 2
+
+tags:
+    - motcle: Application linéaire/Nombres complexes
+
+question: |
+        On considère les applications suivantes : 
+        \[\begin{array}{rccc}f:&\Cc&\to&\Cc\\
+        & z&\to& \Re (z)\end{array}   \quad \mbox{et} \quad  \begin{array}{rccc}g:&\Cc&\to&\Cc\\
+        & z&\to& \Im (z), \end{array}\]
+        où \(\Re (z)\) (resp. \(\Im (z)\)) est la partie réelle (resp. imaginaire) de \(z\). Quelles sont les assertions vraies ?
+
+answers: 
+    - value: |
+        \(f\) est \(\Cc\)-linéaire
+      correct: False
+
+    - value: |
+        \(f\) est \(\Rr\)-linéaire
+      correct: True
+
+    - value: |
+        \(g\) est  \(\Rr\)-linéaire
+      correct: True
+
+    - value: |
+        \(g\) est \(\Cc\)-linéaire
+      correct: False
+
+explanations: |
+        On vérifie que \(f\) et \(g\) sont \(\Rr\)-linéaires. Par contre, elles ne sont pas \(\Cc\)-linéaires.
+
+---
+author: Abdellah Hanani, Mohamed Mzari
+
+section: Applications linéaires 
+
+subsection: Applications linéaires | Niveau 2
+
+tags:
+    - motcle: Application linéaire/Nombres complexes
+
+question: |
+        On considère les applications suivantes : 
+        \[\begin{array}{rccc}f:&\Cc&\to&\Cc\\
+        & z&\to& |z|\end{array}  \quad \mbox{et} \quad \begin{array}{rccc}g:&\Cc&\to&\Cc\\
+        & z&\to& \overline{z},
+        \end{array} \]
+        où \(|z|\) (resp. \(\overline{z}\)) est le module (resp. le conjugué) de \(z\). Quelles sont les assertions vraies ?
+
+answers: 
+    - value: |
+        \(f\) est \(\Cc\)-linéaire
+      correct: False
+
+    - value: |
+        \(f\) est \(\Rr\)-linéaire
+      correct: False
+
+    - value: |
+        \(g\) est \(\Rr\)-linéaire
+      correct: True
+
+    - value: |
+        \(g\) est \(\Cc\)-linéaire
+      correct: False
+
+explanations: |
+        On vérifie que \(f\) n'est pas \(\Rr\)-linéaire (donc n'est pas \(\Cc\)-linéaire) et que \(g\) est \(\Rr\)-linéaire, mais non \(\Cc\)-linéaire.
+
+---
+author: Abdellah Hanani, Mohamed Mzari
+
+section: Applications linéaires 
+
+subsection: Applications linéaires | Niveau 3
+
+tags:
+    - motcle: Application linéaire
+
+question: |
+        On considère les deux applications suivantes : 
+        \[\begin{array}{rccc}f:&\Rr^2&\to&\Rr\\
+        & (x,y)&\to & |x+y| \end{array} \quad \mbox{et} \quad \begin{array}{rccc}g:&\Rr^2&\to&\Rr^2\\
+        & (x,y)&\to &\big(\max (x,y)\, , \, \min (x,y)\, \big). \end{array}\] 
+        Quelles sont les assertions vraies ?
+
+answers: 
+    - value: |
+        \(f(1,-1)=0\)
+      correct: True
+
+    - value: |
+        \(f\) est une application linéaire
+      correct: False
+
+    - value: |
+        \(g(0,0)=(0,0)\)
+      correct: True
+
+    - value: |
+        \(g\) est une application linéaire
+      correct: False
+
+explanations: |
+        \(f\) n'est pas linéaire. Contre-exemple : \(f((1,0)+(-1,0))=f(0,0)=0\) et \(f(1,0)+f(-1,0)=|1|+|-1|=2\).
+        \vskip0mm
+        \(g\) n'est pas linéaire. Contre-exemple :  \(g((1,0)+(-1,0))=g(0,0)=(0,0)\) 
+        et \(g(1,0)+g(-1,0)=(1,0)+(0,-1)=(1,-1)\).
+
+---
+author: Abdellah Hanani, Mohamed Mzari
+
+section: Applications linéaires 
+
+subsection: Applications linéaires | Niveau 3
+
+tags:
+    - motcle: Application linéaire
+
+question: |
+        On considère les applications suivantes : 
+        \[\begin{array}{rccc}f:&\Rr^3&\to&\Rr^2\\
+        & (x,y,z)&\to &(x-y,y+2z+a) \,  \end{array}  \quad \mbox{et} \quad  \begin{array}{rccc}g:&\Rr^3&\to&\Rr\\
+        & (x,y,z)&\to &(ax+b)(x+y).\end{array} \] 
+        où \(a\) et \(b\)  sont des réels. Quelles sont les assertions vraies ?
+
+answers: 
+    - value: |
+        Pour tout \(a\in \Rr\), \(f\) est une application linéaire
+      correct: False
+
+    - value: |
+        \(f\) est une application linéaire si et seulement si \(a=0\)
+      correct: True
+
+    - value: |
+        \(g\) est une application linéaire si et seulement si \(a=b=0\)
+      correct: False
+
+    - value: |
+        \(g\) est une application linéaire si et seulement si \(a=0\)
+      correct: True
+
+explanations: |
+        Si \(a\neq 0\), alors \(f(0,0,0)=(0,a)\neq(0,0)\), donc \(f\) n'est pas linéaire. On vérifie aussi que, si \(a=0\), alors \(f\) est linéaire.
+        \vskip0mm
+        Si \(a\neq 0\), \(g(2(1,0,0))=4a+2b\) et \(2g(1,0,0)=2a+2b \neq 4a+2b\), donc \(g\) n'est pas linéaire.
+        \vskip0mm
+        On vérifie que si \(a=0\) et \(b\) est quelconque, \(g\) est linéaire.
+
+---
+author: Abdellah Hanani, Mohamed Mzari
+
+section: Applications linéaires 
+
+subsection: Applications linéaires | Niveau 3
+
+tags:
+    - motcle: Application linéaire
+
+question: |
+        On considère les applications suivantes : 
+        \[\begin{array}{rccc}f:&\Rr^3&\to&\Rr^2\\
+        & (x,y,z)&\to &(z,x+ax^2) \,  \end{array}  \quad \mbox{et} \quad  \begin{array}{rccc}g:&\Rr^3&\to&\Rr^3\\
+        & (x,y,z)&\to &(z+a\sin x, y+be^x, c|x|+1).\end{array} \] 
+        où \(a,b\) et \(c\) sont des réels. Quelles sont les assertions vraies ?
+
+answers: 
+    - value: |
+        Pour tout \(a\in \Rr\), \(f\) est une application linéaire
+      correct: False
+
+    - value: |
+        \(f\) est une application linéaire si et seulement si \(a=0\)
+      correct: True
+
+    - value: |
+        \(g\) est une application linéaire si et seulement si \(a=b=c=0\)
+      correct: False
+
+    - value: |
+        Pour tous \(a,b, c \in \Rr\), \(g\) n'est pas une application linéaire
+      correct: True
+
+explanations: |
+        On vérifie que \(f\) est linéaire si et seulement si \(a=0\) et que \(g\) n'est pas linéaire pour 
+        tous réels \(a,b\) et \(c\).
+
+---
+author: Abdellah Hanani, Mohamed Mzari
+
+section: Applications linéaires 
+
+subsection: Applications linéaires | Niveau 3
+
+tags:
+    - motcle: Application linéaire/Polynôme
+
+question: |
+        On note \(\Rr_n[X]\) l'espace des polynômes à coefficients réels de degré \(\le n\),  \(n\in \Nn\). On considère les deux applications suivantes : 
+        \[\begin{array}{rccc}f:&\Rr_3[X]&\to&\Rr_2[X]\\
+        & P&\to &R \end{array} \quad \mbox{et} \quad 
+        \begin{array}{rccc}g:&\Rr_3[X]&\to& \Rr_2[X]\\
+        & P&\to &Q,\end{array}\]
+        où \(R\) (resp. \(Q\)) est le reste (resp. le quotient) de la division euclidienne de \(P\) par \(X^3+1\). Quelles sont les assertions vraies ?
+
+answers: 
+    - value: |
+        \(f(0)=0\)
+      correct: True
+
+    - value: |
+        \(f\) est une application linéaire
+      correct: True
+
+    - value: |
+        \(g(0)=0\)
+      correct: True
+
+    - value: |
+        \(g\) n'est pas une application linéaire
+      correct: False
+
+explanations: |
+        On vérifie que \(f\) et \(g\) sont linéaires.
+
+---
+author: Abdellah Hanani, Mohamed Mzari
+
+section: Applications linéaires 
+
+subsection: Applications linéaires | Niveau 4
+
+tags:
+    - motcle: Application linéaire
+
+question: |
+        Quelles sont les assertions vraies ?
+
+answers: 
+    - value: |
+        Une application \(f:\Rr \to \Rr\) est linéaire si et seulement s'il existe un réel \(a\) tel que \(f(x)=ax\), pour tout \(x\in \Rr\)
+      correct: True
+
+    - value: |
+        Une application \(f:\Rr^2 \to \Rr^2\) est linéaire si et seulement s'il existe des réels \(a\) et \(b\) tels que \(f(x,y)=(ax,by)\), pour tout \((x,y) \in \Rr^2\)
+      correct: False
+
+    - value: |
+        Une application \(f:\Rr^2 \to \Rr^2\) est linéaire si et seulement s'il existe des réels \(a,b,c\) et \(d\) tels que \(f(x,y)=(ax+by,cx+dy)\), pour tout \((x,y)\in \Rr^2\)
+      correct: True
+
+    - value: |
+        Une application \(f:\Rr^3 \to \Rr^3\) est linéaire si et seulement s'il existe des réels \(a,b\) et \(c\) tels que \(f(x,y,z)=(ax,by,cz)\), pour tout \((x,y,z)\in \Rr^3\)
+      correct: False
+
+explanations: |
+        Une application \(f:\Rr^n \to \Rr^m\) est linéaire si et seulement s'il existe des réels \(a_{i,j}, 1\le i \le m, 1\le j \le n\),  tels que :\\ \(f(x_1,x_2,\dots,x_n)=(a_{1,1}x_1+a_{1,2}x_2 + \dots + a_{1,n}x_n,\dots, a_{m,1}x_1+a_{m,2}x_2 + \dots + a_{m,n}x_n)\), pour tout \((x_1,x_2,\dots,x_n) \in \Rr^n\).
+
+---
+author: Abdellah Hanani, Mohamed Mzari
+
+section: Applications linéaires 
+
+subsection: Noyau et image  | Niveau 1
+
+tags:
+    - motcle: Noyau/Image
+
+question: |
+        Soit \(E\) et \(F\) deux espaces vectoriels et \(f:E\to F\) une application linéaire. Quelles sont les assertions vraies ?
+
+answers: 
+    - value: |
+        \(\ker f\) peut-être vide
+      correct: False
+
+    - value: |
+        \(\ker f\) est un sous-espace vectoriel de \(E\)
+      correct: True
+
+    - value: |
+        \(0_E \in \Im f\)
+      correct: False
+
+    - value: |
+        \(\Im f\) est un sous-espace vectoriel de \(F\)
+      correct: True
+
+explanations: |
+        \(\ker f\) est un sous-espace vectoriel de \(E\), il contient au moins \(0_E\).
+        \vskip0mm
+        \(\Im f \) est un sous-espace vectoriel de \(F\), il contient au moins \(0_F\), puisque \(f(0_E)=0_F\).
+
+---
+author: Abdellah Hanani, Mohamed Mzari
+
+section: Applications linéaires 
+
+subsection: Noyau et image  | Niveau 1
+
+tags:
+    - motcle: Noyau/Image/Injection/Surjection/Bijection
+
+question: |
+        Soit \(E\) et \(F\) deux espaces vectoriels et \(f:E\to F\) une application linéaire.
+        Quelles sont les assertions vraies ?
+
+answers: 
+    - value: |
+        \(f\) est injective si et seulement si \(\ker f\) est vide
+      correct: False
+
+    - value: |
+        \(f\) est injective si et seulement si \(\ker f\) est une droite vectorielle
+      correct: False
+
+    - value: |
+        \(f\) est surjective si et seulement si \(\Im f=F\)
+      correct: True
+
+    - value: |
+        \(f\) est bijective si et seulement si \(\Im f=F\)
+      correct: False
+
+explanations: |
+        \(f\) est injective si et seulement si \(\ker f=\{0_E\}\).
+        \vskip0mm
+        \(f\) est surjective si et seulement si \(\Im f=F\).
+        \vskip0mm
+        \(f\) est bijective si et seulement si \(\ker f=\{0_E\}\) et \(\Im f=F\).
+
+---
+author: Abdellah Hanani, Mohamed Mzari
+
+section: Applications linéaires 
+
+subsection: Noyau et image  | Niveau 2
+
+tags:
+    - motcle: Noyau/Image/Injection/Surjection/Bijection/Théorème du rang
+
+question: |
+        Soit \(f\) une application linéaire de \(\Rr^3\) dans \(\Rr^5\). Quelles sont les assertions vraies ?
+
+answers: 
+    - value: |
+        Si \(\ker f = \{(0,0,0)\}\), alors \(f\) est surjective
+      correct: False
+
+    - value: |
+        Si \(\ker f \) est une droite vectorielle, alors \(\Im f \) est un plan vectoriel
+      correct: True
+
+    - value: |
+        \(f\) est injective si seulement si \(\dim \Im f =3\)
+      correct: True
+
+    - value: |
+        \(f\) est  bijective si et seulement si \(\ker f=\{(0,0,0)\}\)
+      correct: False
+
+explanations: |
+        \(f\) est injective si et seulement si \(\ker f = \{(0,0,0)\}\). \(f\) ne peut pas être surjective, puisque d'après le théorème du rang, la dimension de \(\Im f \) est au plus \(3\).
+
+---
+author: Abdellah Hanani, Mohamed Mzari
+
+section: Applications linéaires 
+
+subsection: Noyau et image  | Niveau 2
+
+tags:
+    - motcle: Noyau/Image/Injection/Surjection/Théorème du rang
+
+question: |
+        On considère l' application linéaire : 
+        \[\begin{array}{rccc}f:&\Rr^3&\to&\Rr^3\\
+        & (x,y,z)&\to &(x-z,y+z,x+y). \end{array}\]
+        Quelles sont les assertions vraies ?
+
+answers: 
+    - value: |
+        \(\{(1,-1,1)\}\) est une base de \(\ker f\)
+      correct: True
+
+    - value: |
+        \(f\) est injective
+      correct: False
+
+    - value: |
+        \(\{(1,0,1), (0,1,1)\}\) est une base de \(\Im f\)
+      correct: True
+
+    - value: |
+        \(f\) est surjective
+      correct: False
+
+explanations: |
+        \(\ker f = \{(x,y,z) \in \Rr^3 \; ; \; (x-z,y+z,x+y)=(0,0,0)\} = \{(x,-x,x)  \; ; \; x\in \Rr\}\). Donc \( \{(1,-1,1)\}\) est une base de \(\ker f\). Comme \(\ker f \neq \{(0,0,0)\}\), \(f\) n'est pas injective.
+        \vskip0mm
+        D'après le théorème du rang, \(\dim \Im f = 2 \) et comme 
+        \(f(e_1)=(1,0,1)\) et \( f(e_2)=(0,1,1)\) ne sont pas colinéaires, ils forment une base de  \(\Im f\). Comme \(\dim \Im f = 2 \), \(\Im f \neq \Rr^3 \), donc \(f\) n'est pas surjective.
+
+---
+author: Abdellah Hanani, Mohamed Mzari
+
+section: Applications linéaires 
+
+subsection: Noyau et image  | Niveau 2
+
+tags:
+    - motcle: Noyau/Image/Injection/Surjection/Bijection/Théorème du rang
+
+question: |
+        On considère l' application linéaire : 
+        \[\begin{array}{rccc}f:&\Rr^3&\to&\Rr^3\\
+        & (x,y,z)&\to &(x-y,y-z,x+z). \,  \end{array}\]
+        Quelles sont les assertions vraies ?
+
+answers: 
+    - value: |
+        \(\dim \ker f = 1\)
+      correct: False
+
+    - value: |
+        \(f\) est injective
+      correct: True
+
+    - value: |
+        \(\dim \Im f = 3\)
+      correct: True
+
+    - value: |
+        \(f\) n'est pas bijective
+      correct: False
+
+explanations: |
+        \(\ker f = \{(x,y,z) \in \Rr^3 \; ; \; (x-y,y-z,x+z)=(0,0,0)\} = \{(0,0,0)\}\). Donc \(\dim \ker f = 0\) et  \(f\) est injective.
+        \vskip0mm
+        D'après le théorème du rang, \(\dim \Im f = 3=\dim \Rr^3\) et comme \(\Im f\) est un sous-espace de \(\Rr^3\), \(\Im f=\Rr^3\), donc \(f\) est surjective. Par conséquent, \(f\) est bijective.
+
+---
+author: Abdellah Hanani, Mohamed Mzari
+
+section: Applications linéaires 
+
+subsection: Noyau et image  | Niveau 2
+
+tags:
+    - motcle: Noyau/Image/Injection/Surjection/Bijection/Théorème du rang
+
+question: |
+        On considère l' application linéaire : 
+        \[\begin{array}{rccc}f:&\Rr^3&\to&\Rr^2\\
+        & (x,y,z)&\to &(x+y+z, x+y-z). \,  \end{array}\]
+        Quelles sont les assertions vraies ?
+
+answers: 
+    - value: |
+        \(\dim \ker f = 1\)
+      correct: True
+
+    - value: |
+        \(f\) est injective
+      correct: False
+
+    - value: |
+        \(\mbox{rg} (f) =1\)
+      correct: False
+
+    - value: |
+        \(f\) n'est pas bijective
+      correct: True
+
+explanations: |
+        \(\ker f = \{(x,y,z) \in \Rr^3 \; ; \; (x+y+z,x+y-z)=(0,0,0)\} =\{(x,-x,0)  \; ; \; x\in \Rr\}\). Donc \( \{(1,-1,0)\}\) est une base de \(\ker f\). Comme \(\ker f \neq \{(0,0,0)\}\), \(f\) n'est pas injective, donc \(f\) n'est pas bijective. Du théorème du rang, on déduit que \(\mbox{rg} (f)= \dim \Im f = 2\).
+
+---
+author: Abdellah Hanani, Mohamed Mzari
+
+section: Applications linéaires 
+
+subsection: Noyau et image  | Niveau 2
+
+tags:
+    - motcle: Noyau/Image/Théorème du rang
+
+question: |
+        On considère \(\Rr^3\) muni de la base canonique \({\cal{ B}}= \{e_1,e_2,e_3\}\) et \(f\) l'endomorphisme de \(\Rr^3\) défini par 
+        \(f(e_1)= e_3,\, f(e_2)= e_1+e_2,\,  f(e_3)= e_1+e_2+e_3\). 
+        Quelles sont les assertions vraies ?
+
+answers: 
+    - value: |
+        \(\{e_1+e_2-e_3\}\) est une base de \(\Im f \)
+      correct: False
+
+    - value: |
+        \(\dim \Im f =2\)
+      correct: True
+
+    - value: |
+        \(\{e_1+e_2-e_3\}\) est une base de \(\ker f\)
+      correct: True
+
+    - value: |
+        \(\dim \ker f=2 \)
+      correct: False
+
+explanations: |
+        On remarque que \(f(e_3)= f(e_1)+f(e_2) \) et que \(f(e_1)\) et \(f(e_2)\) ne sont pas colinéaires, donc \(\{e_1+e_2,e_3\}\) est une base de \(\Im f\) et donc \(\dim \Im f =2\).
+        \vskip0mm
+        D'après le théorème du rang, \(\dim \ker f = 1 \) et comme \(f(e_1+e_2-e_3) = 0\) et  \(e_1+e_2-e_3 \neq 0\), \(\{e_1+e_2-e_3\}\) est une base de \(\ker f\).
+
+---
+author: Abdellah Hanani, Mohamed Mzari
+
+section: Applications linéaires 
+
+subsection: Noyau et image  | Niveau 3
+
+tags:
+    - motcle: Noyau/Image/Injection/Surjection/Bijection/Théorème du rang/Polynôme
+
+question: |
+        On considère l' application linéaire : 
+        \[\begin{array}{rccc}f:&\Rr_2[X]&\to&\Rr_2[X]\\
+        & P&\to &P',  \end{array}\]
+        où \(\Rr_2[X]\) est l'ensemble des polynômes à coefficients réels de degré \(\le 2\) et \(P'\) est la dérivée de \(P\). Quelles sont les assertions vraies ?
+
+answers: 
+    - value: |
+        \(\{1\}\) est une base de \(\ker f \)
+      correct: True
+
+    - value: |
+        \(\{1, X\}\) est une base de \(\Im f \)
+      correct: True
+
+    - value: |
+        \(\{0, 1, X\}\) est une base de \(\Im f \)
+      correct: False
+
+    - value: |
+        \(f\) est  surjective
+      correct: False
+
+explanations: |
+        \(\ker f = \{P \in \Rr_2[X] \; ; \; P'=0\} = \Rr\). Donc \( \{1\}\) est une base de \(\ker f\). Comme \(\ker f \neq \{0\}\), \(f\) n'est pas injective.
+        \vskip0mm
+        D'après le théorème du rang, \(\dim \Im f = 2 \) et comme \(f(X)=1\) et \( f(X^2) = 2X\) ne sont pas colinéaires, \(\{1,X\}\) est une base de  \(\Im f\). Donc \(f\) n'est pas surjective, puisque \(\dim \Im f = 2 \) et 
+        \(\dim \Rr_2[X] =3 \).
+
+---
+author: Abdellah Hanani, Mohamed Mzari
+
+section: Applications linéaires 
+
+subsection: Noyau et image  | Niveau 3
+
+tags:
+    - motcle: Noyau/Image/Théorème du rang/Polynôme
+
+question: |
+        On considère l'application linéaire : 
+        \[\begin{array}{rccc}f:&\Rr_2[X]&\to&\Rr_2[X]\\
+        & P&\to &XP'-X^2P'',  \end{array}\]
+        où \(\Rr_2[X]\) est l'ensemble des polynômes à coefficients réels de degré \(\le 2\) et \(P'\) (resp. \(P''\)) est la dérivée première (resp. seconde) de \(P\). Quelles sont les assertions vraies ?
+
+answers: 
+    - value: |
+        \(\{1+X^2\}\) est une base de \(\ker f \)
+      correct: False
+
+    - value: |
+        \(\{1, X^2\}\) est une base de \(\ker f \)
+      correct: True
+
+    - value: |
+        \(\{1+X\}\) est une base de \(\Im f \)
+      correct: False
+
+    - value: |
+        \(\mbox{rg} (f) =1\)
+      correct: True
+
+explanations: |
+        \(\ker f=\{P \in \Rr_2[X] \; ; \; XP'-X^2P''=0\}=\{aX^2+b \, ; \; a,b\in \Rr\}\). Donc \(\{1,X^2\}\) est une base de \(\ker f\). Du théorème du rang, on déduit que \(\mbox{rg}(f)=\dim \Im f=1 \) et comme \(f(X)=X\neq 0\), \(\{X\}\) est une base de \(\Im f\). 
+
+---
+author: Abdellah Hanani, Mohamed Mzari
+
+section: Applications linéaires 
+
+subsection: Noyau et image  | Niveau 3
+
+tags:
+    - motcle: Noyau/Image/Théorème du rang/Polynôme
+
+question: |
+        On note \(\Rr_n[X]\) l'espace des polynômes à coefficients réels de degré \(\le n\), \(n\in \Nn\). On considère l'application linéaire : 
+        \[\begin{array}{rccc}f:&\Rr_3[X]&\to&\Rr_2[X]\\
+        & P&\to & R,  \end{array}\]
+        où \(R\) est le reste de la division euclidienne de \(P\) par \((X+1)^3\). Quelles sont les assertions vraies ?
+
+answers: 
+    - value: |
+        \(\{X^3\}\) est une base de \(\ker f \)
+      correct: False
+
+    - value: |
+        \(\dim \ker f =1\)
+      correct: True
+
+    - value: |
+        \(\{1+X+X^2\}\) est une base de \(\Im f \)
+      correct: False
+
+    - value: |
+        \(\mbox{rg} (f) =3\)
+      correct: False
+
+explanations: |
+        \(\ker f=\{P \in \Rr_3[X] \; ; \; R=0\}=\{(X+1)^3Q \; ; \; Q\in\Rr\}\). Donc \(\{(1+X)^3\}\) est une base de \(\ker f\). D'après le théorème du rang, \(\mbox{rg}(f)=\dim \Im f=3\) et l'on vérifie que \(\{1,X,X^2\}\) est une base de \(\Im f\). 
+
+---
+author: Abdellah Hanani, Mohamed Mzari
+
+section: Applications linéaires 
+
+subsection: Noyau et image  | Niveau 3
+
+tags:
+    - motcle: Noyau/Image/Injection/Surjection/Théorème du rang/Polynôôme
+
+question: |
+        On considère \(\Rr_3[X]\), l'espace des polynômes à coefficients réels de degré \(\le 3\), muni de sa base canonique \({\cal{ B}}= \{1,X,X^2,X^3\} \) et \(f\) l'endomorphisme de \(\Rr_3[X]\)
+        défini par :
+        \[f(1)=X,\;  f(X)=1+X,\; f(X^2)= (X-1)^2,\; f(X^3)=(X-1)^3.\]
+        Quelles sont les assertions vraies ?
+
+answers: 
+    - value: |
+        \(\dim \ker f =1\)
+      correct: False
+
+    - value: |
+        \(f\) est injective
+      correct: True
+
+    - value: |
+        \(f\) n'est pas injective
+      correct: False
+
+    - value: |
+        \(\mbox{rg} (f)=4\)
+      correct: True
+
+explanations: |
+        Soit \(P= aX^3+bX^2+cX+d,\, a,b,c,d \in \Rr \). On a :
+        \[P\in \ker f\Leftrightarrow a(X-1)^3+b(X-1)^2+(c+d)(X-1)+2c+d=0.\] Comme \(\{1,X-1,(X-1)^2,(X-1)^3\}\) est une famille libre, on déduit que \(P=0\). Donc \(\dim \ker f=0\) et \(f\) est injective.
+        \vskip0mm
+        D'après le théorème du rang, \(\mbox{rg}(f)=\dim \Im f=4\) et comme \(\Im f\) est un sous-espace vectoriel de \(\Rr_3[X]\), \(\Im f=\Rr_3[X]\) et donc \(f\) est surjective.
+
+---
+author: Abdellah Hanani, Mohamed Mzari
+
+section: Applications linéaires 
+
+subsection: Noyau et image  | Niveau 3
+
+tags:
+    - motcle: Noyau/Image/Injection/Surjection/Théorème du rang
+
+question: |
+        Soit \(E\) et \(F\) deux \(\Rr\)-espaces vectoriels de dimensions finies et \(f\) une application linéaire de \(E\) dans \(F\). On pose \(\dim E=n \) et \(\dim F=m\). Quelles sont les assertions vraies ?
+
+answers: 
+    - value: |
+        Si \(f\) est injective, alors \(n \le m\)
+      correct: True
+
+    - value: |
+        Si \(n \le m\), alors \(f\) est injective
+      correct: False
+
+    - value: |
+        Si \(f\) est surjective, alors \(n \ge m\)
+      correct: True
+
+    - value: |
+        Si \(n \ge m\), alors \(f\) est surjective
+      correct: False
+
+explanations: |
+        On a : \(\dim Im f \le \dim F=m\).
+        \vskip0mm
+        Du théorème du rang, on déduit que si \(n>m\),  \(\dim \ker f >0\) et donc \(f\) n'est pas injective et que si \(n<m\),  \(\dim \Im f <m\) et donc \(f\) n'est pas surjective.
+        \vskip0mm
+        Si \(n\le m\), alors \(f\) n'est pas nécessairement injective et si \(n \ge m\), alors \(f\) n'est pas nécessairement surjective. Exemple : L'application nulle de  \(\Rr\) dans \(\Rr\).
+
+---
+author: Abdellah Hanani, Mohamed Mzari
+
+section: Applications linéaires 
+
+subsection: Noyau et image  | Niveau 3
+
+tags:
+    - motcle: Noyau/Image/Injection/Surjection/Théorème du rang
+
+question: |
+        Soit \(E\) et \(F\) deux \(\Rr\)-espaces vectoriels de  dimensions finies tels que \(\dim E= \dim F=n\) et \(f\) une application linéaire de \(E\) dans \(F\). Quelles sont les assertions vraies ?
+
+answers: 
+    - value: |
+        Si \(\dim \ker f =0\), alors \(\dim \Im f <n\)
+      correct: False
+
+    - value: |
+        si \(f\) est injective, alors \(f\) est surjective
+      correct: True
+
+    - value: |
+        Si \(\dim \Im f <n\), alors \(\dim \ker f >0\)
+      correct: True
+
+    - value: |
+        si \(f\) est surjective, alors \(f\) est injective
+      correct: True
+
+explanations: |
+        Du théorème du rang, on déduit que \(f\) est bijective si, et seulement si, \(f\) est injective ou surjective.
+
+---
+author: Abdellah Hanani, Mohamed Mzari
+
+section: Applications linéaires 
+
+subsection: Noyau et image  | Niveau 3
+
+tags:
+    - motcle: Noyau/Image/Injection/Surjection/Théorème du rang
+
+question: |
+        Soit \(E\) et \(F\) deux \(\Rr\)-espaces vectoriels de dimensions finies   
+        et \(f\) une application linéaire de \(E\) dans \(F\). Quelles sont les assertions vraies ?
+
+answers: 
+    - value: |
+        Si \(f\) est injective, alors \(f\) est surjective
+      correct: False
+
+    - value: |
+        Si \(f\) est surjective, alors \(f\) est injective
+      correct: False
+
+    - value: |
+        Si \(\dim E = \dim F\), alors \(f\) est bijective
+      correct: False
+
+    - value: |
+        Si \(f\) est bijective, alors \(\dim E = \dim F\)
+      correct: True
+
+explanations: |
+        Si \(\dim E \neq \dim F\), alors \(f\) peut-être injective (resp. surjective) sans qu'elle soit surjective (resp. injective).
+        \vskip0mm
+        Si \(\dim E = \dim F\), \(f\) n'est pas nécessairement bijective.
+        \vskip0mm
+        Par contre, si  \(f\) est bijective, comme  \(E\) et \(F\) sont deux \(\Rr\)-espaces vectoriels de  dimensions finies, du théorème du rang, on déduit que \(\dim E = \dim F\).
+
+---
+author: Abdellah Hanani, Mohamed Mzari
+
+section: Applications linéaires 
+
+subsection: Noyau et image  | Niveau 3
+
+tags:
+    - motcle: Famille libre/Génératrice/Noyau/Image/Injection/Surjection
+
+question: |
+        Soit \(E\) et \(F\) deux \(\Rr\)-espaces vectoriels et \(f\) une application linéaire de \(E\) dans \(F\). Soit \(k\in \Nn^*\), \({\cal F} = \{u_1,u_2, \dots , u_k\}\) une famille de vecteurs de \(E\) et \({\cal F}' = \{f(u_1),f(u_2), \dots , f(u_k)\}\). Quelles sont les assertions vraies ?
+
+answers: 
+    - value: |
+        Si \({\cal F}\) est une famille libre, alors \({\cal F}'\) est une famille libre
+      correct: False
+
+    - value: |
+        Si \({\cal F}\) est une famille libre  et \(f\) est injective, alors \({\cal F}'\) est une famille libre
+      correct: True
+
+    - value: |
+        Si \({\cal F}\) est une famille génératrice de \(E\), alors \({\cal F}'\) est  une famille génératrice de \(F\)
+      correct: False
+
+    - value: |
+        Si \({\cal F}\) est une famille génératrice de \(E\) et \(f\) est surjective, alors \({\cal F}'\) est une famille génératrice de \(F\)
+      correct: True
+
+explanations: |
+        Si \({\cal F}\) est libre, \({\cal F}'\) n'est pas nécessairement libre. Exemple : l'application nulle de \(\Rr^2\) dans \(\Rr^2\) et \({\cal F}\) la base canonique de \(\Rr^2\).
+        \vskip0mm
+        Par contre, si de plus \(f\) est injective, alors \({\cal F}'\) est injective. En effet, soit \(\lambda_1, \dots ,\lambda_k \) des réels tels que \(\lambda_1f(u_1)+ \dots \lambda_kf(u_k)=0 \), alors 
+        \(\lambda_1u_1+ \dots \lambda_ku_k \in \ker f\) et comme \(f\) est injective, \(\lambda_1u_1+ \dots \lambda_ku_k=0\). Puisque \({\cal F}\) est libre, on déduit que  \(\lambda_1= \dots= \lambda_k=0 \).
+        \vskip0mm
+        Si \({\cal F}\) est génératrice de \(E\), \({\cal F}'\) n'est pas nécessairement génératrice de \(F\). Exemple : l'application nulle de 
+        \(\Rr^2\) dans \(\Rr^2\) et \({\cal F}\) la base canonique de \(\Rr^2\).
+        \vskip0mm
+        Par contre, si de plus \(f\) est surjective, alors \({\cal F}'\) est génératrice de \(F\). En effet, puisque \(f\) est surjective, \(F=f(E)\) et comme  \(E=\mbox{Vect} \, \left({\cal F}\right)\), on déduit que \(F=\mbox{Vect} \, \left({\cal F'}\right)\).
+
+---
+author: Abdellah Hanani, Mohamed Mzari
+
+section: Applications linéaires 
+
+subsection: Noyau et image  | Niveau 4
+
+tags:
+    - motcle: Noyau/Image/injection/Surjection
+
+question: |
+        On considère \(E\) un \(\Rr\)-espace vectoriel et \(f\) un endomorphisme de \(E\) tel que : \(f^2+f+Id = 0\), où \(Id\) est l'application identité de \(E\). Quelles sont les assertions vraies ?
+
+answers: 
+    - value: |
+        \(\dim \ker f = 1\)
+      correct: False
+
+    - value: |
+        \(f\) est injective
+      correct: True
+
+    - value: |
+        \(f\) est bijective et \(f^{-1}=f^2\)
+      correct: True
+
+    - value: |
+        \(f\) est  bijective et \(f^{-1}=-f-Id\)
+      correct: True
+
+explanations: |
+        Soit \(x\in E\) tel que \(f(x)=0\). De l'égalité  \(f^2(x)+f(x)+x = 0\), on déduit que \(x=0\), donc \(\dim \ker f = 0\) et donc \(f\) est injective.
+        \vskip0mm
+        De l'égalité  \(f^2+f+Id = 0\), on déduit que \(fo(-f-Id)=Id\), donc \(f\) est bijective et \(f^{-1}=-f-Id=f^2\).
+
+---
+author: Abdellah Hanani, Mohamed Mzari
+
+section: Applications linéaires 
+
+subsection: Noyau et image  | Niveau 4
+
+tags:
+    - motcle: Espaces supplémentaires/Noyau/Image
+
+question: |
+        Soit \(E\) un espace vectoriel, \(F\) et \(G\) deux sous-espaces supplémentaires dans \(E\) et \(f\) l'application de \(E\) dans \(E\) définie par : \[\begin{array}{rccc}f:&E=F\oplus G&\to&E\\
+        & x=x_1+x_2, \; (x_1\in F, x_2 \in G)&\to &x_1.  \end{array}\] 
+        \(f\) est appelée la projection vectorielle de \(E\) sur \(F\) parallèlement à \(G\). Quelles sont les assertions vraies ?
+
+answers: 
+    - value: |
+        \(f\) est un endomorphisme de \(E\)
+      correct: True
+
+    - value: |
+        \(f^2=0\)
+      correct: False
+
+    - value: |
+        \(f^2=f\)
+      correct: True
+
+    - value: |
+        \(F=\Im f\) et \(G=\ker f\)
+      correct: True
+
+explanations: |
+        On vérifie que \(f\) est un endomorphisme, \(f^2=f\), \(\ker f=G\) et \(\Im f=F\).
+
+---
+author: Abdellah Hanani, Mohamed Mzari
+
+section: Applications linéaires 
+
+subsection: Noyau et image  | Niveau 4
+
+tags:
+    - motcle: Espaces supplémentaires/Symétrie vectorielle
+
+question: |
+        Soit \(E\) un espace vectoriel, \(F\) et \(G\) deux sous-espaces supplémentaires dans \(E\) et \(f\) l'application de \(E\) dans \(E\) définie par : \[\begin{array}{rccc}f:&E=F\oplus G&\to&E\\
+        & x=x_1+x_2, \; (x_1\in F, x_2 \in G)&\to &x_1-x_2.  \end{array}\] 
+        \(f\) est appelée la symétrie vectorielle de \(E\) par rapport à \(F\) parallèlement à \(G\). Quelles sont les assertions vraies ?
+
+answers: 
+    - value: |
+        \(f\) est un endomorphisme de \(E\)
+      correct: True
+
+    - value: |
+        \(f^2=f\)
+      correct: False
+
+    - value: |
+        \(f^2=Id\), où \(Id\) est l'identité de \(E\)
+      correct: True
+
+    - value: |
+        \(F=\{x\in E\; ;\; f(x)=x\}\) et \(G=\{x\in E\; ;\; f(x)=-x\}\)
+      correct: True
+
+explanations: |
+        On vérifie que \(f\) est un endomorphisme, \(f^2=Id\), \(F=\{x\in E \; ; \; f(x)=x\}\) et \(G=\{x\in E \; ; \; f(x)=-x\}\).
+
+---
+author: Abdellah Hanani, Mohamed Mzari
+
+section: Applications linéaires 
+
+subsection: Noyau et image  | Niveau 4
+
+tags:
+    - motcle: Noyau/Image/Espaces supplémentaires
+
+question: |
+        Soit \(E\) un espace vectoriel et \(f\) un projecteur de \(E\), c.à.d. un endomorphisme de \(E\) tel que \(f^2=f\). On notera \(Id\) l'identité de \(E\). Quelles sont les assertions vraies ?
+
+answers: 
+    - value: |
+        \(f\) est injective
+      correct: False
+
+    - value: |
+        \(Id-f\) est un projecteur de \(E\)
+      correct: True
+
+    - value: |
+        \(E=\ker f\oplus \Im f \)
+      correct: True
+
+    - value: |
+        \(\Im f =\ker (Id- f) \)
+      correct: True
+
+explanations: |
+        \(f\) n'est pas nécessairement injective. Contre exemple : l'application nulle de \(\Rr \) dans \( \Rr\).
+        \vskip0mm
+        Comme \(f^2=f\), \((Id - f)o(Id - f)=Id - 2f+f^2= Id - f\), donc \(Id - f\) est un projecteur.
+        \vskip0mm
+        Soit \(y\in  \Im f \cap \ker f\), alors il existe \(x\in E\) tel que \(y=f(x)\) et \(f(y)=0\), donc \(f^2(x)=0\). Or \(f^2=f\), on déduit que \(y=0\).
+        \vskip0mm
+        Soit \(x\in E\), alors \(x= f(x) + (x-f(x))\). Comme \(f(x)\in\Im f\) et \(x-f(x)\in\ker f\), on déduit que \(E=\ker f+\Im f \). Par conséquent,   \(E=\ker f \oplus \Im f\).
+        \vskip0mm
+        Soit \(y\in\Im f,\)  alors il existe \(x\in E\) tel que \(y=f(x)\), donc \((Id-f)(y)=f(x)-f^2(x)=0,\) puisque \(f^2=f\). Réciproquement, si \((Id - f)(y)=0\), alors \(y=f(y)\) et donc \(y\in \Im f\). Par conséquent,  \( \Im f =\ker (Id - f) \).
+
+---
+author: Abdellah Hanani, Mohamed Mzari
+
+section: Applications linéaires 
+
+subsection: Noyau et image  | Niveau 4
+
+tags:
+    - motcle: Endomorphisme/Injectif/Surjectif/Bijectif
+
+question: |
+        Soit \(E\) un espace vectoriel et \(f\) un endomorphisme nilpotent de \(E\), c.à.d. un endomorphisme non nul de \(E\) tel qu'il existe un entier \(n\ge 2\), vérifiant  \(f^n=0\). On notera \(Id\) l'identité de \(E\). Quelles sont les assertions vraies ?
+
+answers: 
+    - value: |
+        \(f\) est injective
+      correct: False
+
+    - value: |
+        \(f\) est surjective
+      correct: False
+
+    - value: |
+        \(Id-f\) est injective
+      correct: True
+
+    - value: |
+        \(Id-f\) est bijective
+      correct: True
+
+explanations: |
+        Soit \(f\) l'endomorphisme de \(\Rr^2\) défini par \(f(x,y)=(x-y,x-y)\). Alors, \(f^2=0\) et \(f\) n'est ni injective, ni surjective.
+        \vskip0mm
+        D'une manière générale, si \(f\) est nilpotent, \(f\) n'est pas bijectif. En effet, supposons qu'il existe une application \(g\) telle que \(gof=Id\) et considérons un élément \(x\in E\) tel que \(f(x)\neq 0\) et \(k\) le plus petit entier \(\ge 2\) tel que \(f^k(x)=0\). Alors, \(g(f^k(x))=0=gof(f^{k-1}(x)) = f^{k-1}(x)\), ce qui est absurde.
+        \vskip0mm
+        Soit \(x\in E\) tel que \((Id-f)(x)=0,\) alors \(f(x)=x\) et, par récurrence, \(f^n(x)=x\). Or \(f^n=0\), donc \(x=0\). On en déduit que  \(Id-f\) est injective.
+        \vskip0mm
+        De l'égalité : \((Id-f)(Id+f+f^2+\dots + f^{n-1})=Id-f^n=Id\), on déduit que \(Id-f\) est bijective et que \((Id-f)^{-1}=Id+f+f^2+\dots + f^{n-1}\).
+
+---
+author: Abdellah Hanani, Mohamed Mzari
+
+section: Applications linéaires 
+
+subsection: Noyau et image  | Niveau 4
+
+tags:
+    - motcle: Noyau/Image/Bijection/Espaces supplémentaires
+
+question: |
+        Soit \(E\) un espace vectoriel et \(f\) un endomorphisme involutif de \(E\), c.à.d. un endomorphisme non nul de \(E\) tel que \(f^2=Id\), où \(Id\) est l'identité de \(E\). Quelles sont les assertions vraies ?
+
+answers: 
+    - value: |
+        \(f\) est bijective
+      correct: True
+
+    - value: |
+        \(\Im (Id+f) \cap \Im (Id-f) = E\)
+      correct: False
+
+    - value: |
+        \(E=\Im (Id+f) + \Im (Id-f)\)
+      correct: True
+
+    - value: |
+        \(\Im (Id+f)\) et \(\Im (Id-f)\) ne sont pas supplémentaires dans \(E\)
+      correct: False
+
+explanations: |
+        De l'égalité \(f^2=Id\), on déduit que \(f\) est bijective et \(f^{-1}=f\).
+        \vskip0mm
+        Soit \(y\in \Im (Id+f) \cap \Im (Id-f)\), alors il existe \(x,x'\in E\) tels que \(y=x+f(x)=x'-f(x')\). De l'égalité \(f^2=Id\), on déduit que  \(f(y)=f(x)+x=f(x')-x'=y=-y\), donc \(y=0\).
+        \vskip0mm
+        Soit \(x\in E\), alors \(\displaystyle x=\frac{1}{2}(x+f(x))+\frac{1}{2}(x-f(x)) \in \Im (Id+f)+\Im (Id-f)\). On en déduit que \(E= \Im (Id+f) + \Im (Id-f)\). Par conséquent, \(\Im (Id+f)\) et \(\Im (Id-f)\) sont supplémentaires dans \(E\).
+
+---
+author: Abdellah Hanani, Mohamed Mzari
+
+section: Applications linéaires 
+
+subsection: Noyau et image  | Niveau 4
+
+tags:
+    - motcle: Noyau/Image/Bijection
+
+question: |
+        Soit \(E\) un espace vectoriel  et \(f\) un endomorphisme de \(E\). Quelles sont les assertions vraies ?
+
+answers: 
+    - value: |
+        Si \(f^2 =0\), alors \(f=0\)
+      correct: False
+
+    - value: |
+        Si \(f^2 =0\), alors \(f\) est bijective
+      correct: False
+
+    - value: |
+        Si \(f^2 =0\), alors \(\Im f \subset \ker f\)
+      correct: True
+
+    - value: |
+        Si \(\Im f \subset \ker f\), alors  \(f^2 =0\)
+      correct: True
+
+explanations: |
+        Si \(f^2 =0\), \(f\) n'est pas forcément nulle. Exemple : \(f:\Rr^2 \to \Rr^2\) définie par : \(f(x,y)=(x-y,x-y)\).
+        \vskip0mm
+        Supposons que \(f^2 =0\) et que \(f\neq 0\). Alors, il existe \(x_0\in E\) tel que \(f(x_0) \neq 0\) et \(f(x_0) \in \ker f\), puisque \(f^2(x_0) =0\). Donc \(f\) est non injective et donc non bijective.
+        \vskip0mm
+        Soit \(y\in \Im f\), alors il existe \(x\in E\) tel que \(y=f(x)\). De l'égalité \(f^2 =0\), on déduit que \(f(y)=0\).
+        \vskip0mm
+        Soit \(x\in E\), alors \(f(x)\in \Im f\). Comme  \(\Im f \subset \ker f\), \(f^2(x)=0\).
+
+---
+author: Abdellah Hanani, Mohamed Mzari
+
+section: Applications linéaires 
+
+subsection: Noyau et image  | Niveau 4
+
+tags:
+    - motcle: Noyau/Image/Espaces supplémentaires
+
+question: |
+        Soit \(E\) un \(\Rr\)-espace vectoriel de dimension finie et \(f\) un endomorphisme de \(E\). Quelles sont les assertions vraies ?
+
+answers: 
+    - value: |
+        \(E= \ker f \oplus \Im f\)
+      correct: False
+
+    - value: |
+        Si \(\ker f= \ker f^2\), alors \(E= \ker f \oplus \Im f\)
+      correct: True
+
+    - value: |
+        Si \(\Im f= \Im f^2\), alors \(\ker f= \ker f^2\)
+      correct: True
+
+    - value: |
+        Si \(E= \ker f \oplus \Im f \), alors \(\ker f= \ker f^2\)
+      correct: True
+
+explanations: |
+        Le noyau et l'image d'un endomorphisme ne sont pas nécessairement supplémentaires.
+        \vskip0mm
+        Soit \(y\in \ker f \cap \Im f\). Donc \(f(y)=0\) et il existe \(x\in E\) tel que \(y=f(x)\), donc  \(f^2(x)=0\). Or \(\ker f^2 \subset ker f\), donc \(f(x)=0\) et donc \(y=0\). En utilisant le théorème du rang, on déduit que \(E= \ker f \oplus \Im f \).
+        \vskip0mm
+        D'après le théorème du rang, \(\dim \ker f+ \dim \Im f = \dim \ker f^2+ \dim \Im f^2=\dim E\). Si  \(\Im f= \Im f^2\), 
+        on déduit que \(\dim \ker f= \dim \ker f^2\). Or \(\ker f\) est un sous-espace de \(\ker f^2\), donc \(\ker f= \ker f^2\).
+        \vskip0mm
+        On suppose que \(E= \ker f \oplus \Im f \). Soit \(x\in \ker f^2\), alors \(f^2(x)=f(f(x))=0\). Donc \(f(x) \in \Im f \cap \ker f\). Or \(\Im f \cap \ker f = \{0\}\), donc \(x\in \ker f\) et donc \(\ker f^2 \subset \ker f\). On déduit que \(\ker f^2 = \ker f\), puisque \(\ker f \subset \ker f^2\) pour tout endomorphisme \(f\).
+

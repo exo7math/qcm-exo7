@@ -1,0 +1,368 @@
+
+
+\begin{multi}[multiple,feedback=
+{Une équation de la tangente à \(\mathcal{C}_f\) au point \((a,f(a))\) est : 
+\[y=f'(a)(x-a)+f(a).\]
+Ici, \(\displaystyle f'(x)=-\frac{2}{x^2}\) et \(\displaystyle g'(x)=\frac{1}{\sqrt{x}}\).
+}]{Question}
+    \item* Une équation de la tangente à \(\mathcal{C}_f\) au point \((1,2)\) est \(y=-2x+4\).
+    \item Une équation de la tangente à \(\mathcal{C}_f\) au point \((1,2)\) est \(y=-2x+2\).
+    \item Une équation de la tangente à \(\mathcal{C}_g\) au point \((1,2)\) est \(y=x+2\).
+    \item* Une équation de la tangente à \(\mathcal{C}_g\) au point \((1,2)\) est \(y=x+1\).
+\end{multi}
+
+
+\begin{multi}[multiple,feedback=
+{On applique la formule du cours \(\displaystyle y=f'(3)(x-3)+f(3)=5(x-3)+1\).
+}]{Question}
+    \item \(y=1(x-3)+5=x+2\)
+    \item \(y=1(x-3)-5=x-8\)
+    \item \(y=5(x-3)-1=5x-16\)
+    \item* \(y=5(x-3)+1=5x-14\)
+\end{multi}
+
+
+\begin{multi}[multiple,feedback=
+{Par définition, on a :
+\[f(x)=\left\{ \begin{array}{ll}x-1&\mbox{si }x\geq 1\\ 1-x&\mbox{si }x\leq 1.
+\end{array}\right.\]
+Donc, \(f\) est dérivable sur \(\Rr\setminus\{1\}\), et
+\[f'(x)=\left\{ \begin{array}{ll}1&\mbox{si }x> 1\\ -1&\mbox{si }x< 1.
+\end{array}\right.\]
+En particulier, \(f'(0)=-1\). Par contre \(f\) n'est pas dérivable en \(1\) car
+\[\lim _{x\to 1^+}\frac{f(x)-f(1)}{x-1}=1 \mbox{ et }\lim _{x\to 1^-}\frac{f(x)-f(1)}{x-1}=-1.\]
+}]{Question}
+    \item \(f'_d(1)=1\) et \(f'_g(1)=1\)
+    \item \(f\) est dérivable en \(1\) et \(f'(1)=1\).
+    \item* \(f\) est dérivable en \(0\) et \(f'(0)=-1\).
+    \item* \(f\) n'est pas dérivable en \(1\) car \(f'_d(1)=1\) et \(f'_g(1)=-1\).
+\end{multi}
+
+
+\begin{multi}[multiple,feedback=
+{Les théorèmes généraux impliquent que \(f\) est continue sur \(\Rr\) et est dérivable sur \(\Rr\setminus\{2\}\). Mais
+\[\lim_{x\to 2^{\pm}}\frac{f(x)-f(2)}{x-2}=\lim_{x\to 2^{\pm}}\frac{1}{\sqrt[3]{x-2}}={\pm}\infty \]
+Donc, \(f\) n'est pas dérivable en \(2\) et la tangente à \(\mathcal{C}_f\) en \(2\) est une droite verticale.
+}]{Question}
+    \item \(f\) est continue et dérivable en \(2\).
+    \item* \(f\) est continue et non dérivable en \(2\).
+    \item* La tangente à \(\mathcal{C}_f\) en \(2\) est une droite verticale.
+    \item La tangente à \(\mathcal{C}_f\) en \(2\) est une droite horizontale.
+\end{multi}
+
+
+\begin{multi}[multiple,feedback=
+{De manière plus générale, \((u^n)'=nu^{n-1}u'\) et \((\mathrm{e}^v)'=v'\mathrm{e}^v\). Il suffit de prendre \(u=2x+1\), \(n=2\) et \(v=x^2-2x\).
+}]{Question}
+    \item* La dérivée de \(f(x)=(2x+1)^2\) est \(f'(x)=4(2x+1)\).
+    \item La dérivée de \(f(x)=(2x+1)^2\) est \(f'(x)=2(2x+1)\).
+    \item La dérivée de \(f(x)=\mathrm{e}^{x^2-2x}\) est \(f'(x)=2\mathrm{e}^{x^2-2x}\).
+    \item* La dérivée de \(f(x)=\mathrm{e}^{x^2-2x}\) est \(f'(x)=2(x-1)\mathrm{e}^{x^2-2x}\).
+\end{multi}
+
+
+\begin{multi}[multiple,feedback=
+{De manière plus générale, \((\sin u)'=u'\cos u\) et 
+\[(\tan v)'=\frac{v'}{\cos ^2v}=v'(1+\tan ^2v).\]
+Il suffit de prendre \(u=(2x+1)^2\), \(v=1+x^2\Rightarrow u'=4(2x+1)\) et \(v'=2x\).
+}]{Question}
+    \item La dérivée de \(f(x)=\sin [(2x+1)^2]\) est \(f'(x)=2\cos [(2x+1)^2]\).
+    \item* La dérivée de \(f(x)=\sin [(2x+1)^2]\) est \(f'(x)=4(2x+1)\cos [(2x+1)^2]\).
+    \item* La dérivée de \(f(x)=\tan (1+x^2)\) est \(\displaystyle f'(x)=\frac{2x}{\cos ^2(1+x^2)}\).
+    \item La dérivée de \(f(x)=\tan (1+x^2)\) est \(\displaystyle f'(x)=1+\tan ^2(1+x^2)\).
+\end{multi}
+
+
+\begin{multi}[multiple,feedback=
+{On applique les règles
+\[(\arcsin u)'=\frac{u'}{\sqrt{1-u^2}}\mbox{ et }(\arccos v)'=\frac{-v'}{\sqrt{1-v^2}}.\]
+Avec \(u=1-2x^2\) et \(v=x^2-1\), on obtient :
+\[(\arcsin (1-2x^2))'=\frac{-2x}{|x|\sqrt{1-x^2}}\mbox{ et }(\arccos (x^2-1))'=\frac{-2x}{|x|\sqrt{2-x^2}}.\]
+}]{Question}
+    \item* La dérivée de \(f(x)=\arcsin (1-2x^2)\) est \(\displaystyle f'(x)=\frac{-2x}{|x|\sqrt{1-x^2}}\).
+    \item La dérivée de \(f(x)=\arcsin (1-2x^2)\) est \(\displaystyle f'(x)=\frac{1}{\sqrt{1-2x^2}}\).
+    \item La dérivée de \(f(x)=\arccos (x^2-1)\) est \(\displaystyle f'(x)=\frac{2x}{\sqrt{x^2-1}}\).
+    \item* La dérivée de \(f(x)=\arccos (x^2-1)\) est \(\displaystyle f'(x)=\frac{-2x}{|x|\sqrt{2-x^2}}\).
+\end{multi}
+
+
+\begin{multi}[multiple,feedback=
+{On calcule \(f'(x)=2x-2x\mathrm{e}^{x^2-1}\) et \(f''(x)=2-2(1+2x^2)\mathrm{e}^{x^2-1}\). Ensuite, on vérifie que
+\[f'(x)=0\mbox{ et }f''(0)=2-2\mathrm{e}^{-1}>0.\]
+Donc \(f\) admet un minimum local en \(0\) et la tangente à \(\mathcal{C}_f\) en \(0\) est une droite horizontale.
+}]{Question}
+    \item* \(f\) admet un minimum local en \(0\).
+    \item \(f\) admet un maximum local en \(0\).
+    \item \(f\) admet un point d'inflexion en \(0\).
+    \item la tangente à \(\mathcal{C}_f\) en \(0\) est une droite verticale.
+\end{multi}
+
+
+\begin{multi}[multiple,feedback=
+{On a \(f'\left(\frac{3}{4}\right)=0\) et \(f''\left(\frac{3}{4}\right)>0\). Donc \(f\) admet un minimum au point \(\displaystyle \frac{3}{4}\). On vérifie aussi que \(f''\) s'annule en \(0\) en changeant de signe. Donc \(f\) admet un point d'inflexion au point \(0\).
+}]{Question}
+    \item* \(f\) admet un minimum local au point \(\displaystyle \frac{3}{4}\).
+    \item \(f\) admet un maximum local au point \(0\).
+    \item \(f\) admet un minimum local au point \(0\).
+    \item* \(f\) admet un point d'inflexion au point \(0\).
+\end{multi}
+
+
+\begin{multi}[multiple,feedback=
+{On a \(\displaystyle f'(x)=\frac{-1}{(1+x)^2}\), \(\displaystyle f''(x)=\frac{2}{(1+x)^3}\) et l'on vérifie, par récurrence, que
+\[\forall n\in \Nn^*,\; f^{(n)}(x)=\frac{(-1)^nn!}{(1+x)^{n+1}}.\]
+}]{Question}
+    \item* \(\displaystyle f''(x)=\frac{2}{(1+x)^3}\)
+    \item \(\displaystyle f''(x)=\frac{-2}{(1+x)^3}\)
+    \item pour \(n\in \Nn^*\), \(\displaystyle f^{(n)}(x)=\frac{n}{(1+x)^{n+1}}\)
+    \item* pour \(n\in \Nn^*\), \(\displaystyle f^{(n)}(x)=\frac{(-1)^nn!}{(1+x)^{n+1}}\)
+\end{multi}
+
+
+\begin{multi}[multiple,feedback=
+{On applique la formule de Leibniz 
+\[\displaystyle f^{(n)}(x)=\sum _{k=0}^n\mathrm{C}_n^k(x^2)^{(k)}(\mathrm{e}^x)^{(n-k)}=[x^2+2nx+n(n-1)]\mathrm{e}^x.\]
+}]{Question}
+    \item* \(\displaystyle f''(x)=(x^2+4x+2)\mathrm{e}^x\)
+    \item \(\displaystyle f''(x)=2\mathrm{e}^x\)
+    \item* Pour \(n\in \Nn^*\), \(\displaystyle f^{(n)}(x)=(x^2+2nx+n^2-n)\mathrm{e}^x\).
+    \item Pour \(n\in \Nn^*\), \(\displaystyle f^{(n)}(x)=(x^2+2nx+n)\mathrm{e}^x\).
+\end{multi}
+
+
+\begin{multi}[multiple,feedback=
+{On applique la formule de Leibniz 
+\[\displaystyle f^{(n)}(x)=\sum _{k=0}^n\mathrm{C}_n^k(x)^{(k)}(\ln (1+x))^{(n-k)}.\]
+Mais \(\displaystyle \left[\ln (1+x)\right]^{(k)}=\frac{(-1)^{k-1}(k-1)!}{(1+x)^k}\). Ce qui donne
+\[f^{(n)}(x)=\frac{(-1)^{n}(n-2)!}{(1+x)^n}\left(x+n\right).\]
+}]{Question}
+    \item \(\displaystyle f'(x)=(x)'[\ln (1+x)]'=1\times \frac{1}{1+x}\)
+    \item* \(\displaystyle f'(x)=\ln (1+x)+\frac{x}{1+x}\)
+    \item Pour \(n\geq 2\), \(\displaystyle f^{(n)}(x)=n\times \frac{1}{(1+x)^n}\).
+    \item* Pour \(n\geq 2\), \(\displaystyle f^{(n)}(x)=\frac{(-1)^{n}(n-2)!}{(1+x)^n}\left(x+n\right)\).
+\end{multi}
+
+
+\begin{multi}[multiple,feedback=
+{La fonction \(f\) est dérivable sur \(\Rr\). En particulier, la tangente à \(\mathcal{C}_f\) en un point \(a\in \Rr\) ne peut être une droite verticale. Par ailleurs, \(f(0)=f(1)=0\). Donc le théorème de Rolle implique l'existence de \(a\in ]0,1[\) tel que \(f'(a)=0\) et la tangente à \(\mathcal{C}_f\) en ce point est une droite horizontale.
+}]{Question}
+    \item* Il existe \(a\in ]0,1[\) tel que \(f'(a)=0\).
+    \item* Il existe \(a\in ]0,1[\) où la tangente à \(\mathcal{C}_f\) en \(a\) est une droite horizontale.
+    \item Il existe \(a\in ]0,1[\) où la tangente à \(\mathcal{C}_f\) en \(a\) est une droite verticale.
+    \item \(\mathcal{C}_f\) admet un point d'inflexion en \(0\).
+\end{multi}
+
+
+\begin{multi}[multiple,feedback=
+{La fonction \(f\) est continue sur \(\Rr^*\) et pour qu'elle soit continue en \(0\), il faut que
+\[\lim _{x\to 0^-}f(x)=\lim _{x\to 0^+}f(x)\Rightarrow 1=b.\] 
+De plus, \(f\) est dérivable sur \(\Rr^*\) avec
+\[f'(x)=\left\{\begin{array}{cl}\displaystyle (2x+1)\mathrm{e}^{x^2+x}&\mbox{si }x<0\\ \\ \displaystyle \frac{a}{1+x^2} &\mbox{si }x>0\end{array}\right.\]
+et \(f'_g(0)=1\) et \(f'_d(0)=a\). Donc, pour que \(f\) soit dérivable en \(0\), on doit avoir \(f'_g(0)=f'_d(0)\). D'où \(a=1\).
+}]{Question}
+    \item \(a=1\) et \(b=0\)
+    \item \(a=0\) et \(b=1\)
+    \item \(a=0\) et \(b=0\)
+    \item* \(a=1\) et \(b=1\)
+\end{multi}
+
+
+\begin{multi}[multiple,feedback=
+{On a
+\[\lim_{x\to 0}\frac{f(x)-f(0)}{x-0}=\lim_{x\to 0}\left(1+x\sin \frac{1}{x}\right)=1.\]
+Donc, \(f\) est dérivable en \(0\) et \(f'(0)=1\). Par ailleurs, les règles de calcul donnent, pour \(x\neq 0\),
+\[f'(x)=(x)'+(x^2)'\sin \frac{1}{x}+x^2\left(\sin \frac{1}{x}\right)'=1+2x\sin \frac{1}{x}-\cos \frac{1}{x}.\]
+}]{Question}
+    \item \(f\) n'est pas dérivable en \(0\).
+    \item \(f\) est dérivable en \(0\) est \(f'(0)=0\).
+    \item* \(f\) est dérivable en \(0\) est \(f'(0)=1\).
+    \item* Pour \(x\neq 0\), \(\displaystyle f'(x)=1+2x\sin \frac{1}{x}-\cos \frac{1}{x}\).
+\end{multi}
+
+
+\begin{multi}[multiple,feedback=
+{On a \(f'(x)=(12x^3-12x^2)\mathrm{e}^{3x^4-4x^3}=12x^2(x-1)\mathrm{e}^{3x^4-4x^3}\). On en déduit que \(f'(1)=0\) et \(f'(x)<0\) pour \(x<1\) et \(f'(x)>0\) pour \(x>1\). Donc \(f\) admet un minimum en \(1\).
+Par ailleurs, \(f'(0)=f'(1)=0\) et, puisque \(f'\) est continue sur \([0,1]\) et est dérivable sur \(]0,1[\), le théorème de Rolle implique qu'il existe \(a\in ]0,1[\) tel que \(f''(a)=0\).
+}]{Question}
+    \item \(\forall x\in \Rr\), \(f''(x)>0\)
+    \item* \(f\) admet un minimum en \(1\).
+    \item \(f\) admet un maximum en \(1\).
+    \item* Il existe \(a\in ]0,1[\) tel que \(f''(a)=0\).
+\end{multi}
+
+
+\begin{multi}[multiple,feedback=
+{La pente de la droite \(y=x\) est \(1\), donc la tangente à \(\mathcal{C}_f\) en \(x_0\) est parallèle à cette droite si, et seulement si, \(f'(x_0)=1\). Une telle équation n'admet pas de solution.
+}]{Question}
+    \item \(S=\{-1\}\)
+    \item \(S=\{0\}\)
+    \item \(S=\{0,1\}\)
+    \item* \(S=\varnothing\)
+\end{multi}
+
+
+\begin{multi}[multiple,feedback=
+{La pente de la droite \(y=x\) est \(1\), donc la tangente à \(\mathcal{C}_f\) en \(x_0\) est perpendiculaire à cette droite si, et seulement si, \(f'(x_0)=-1\). C'est-à-dire \(x_0=-1\) ou \(x_0=-3\).
+}]{Question}
+    \item \(S=\{-2\}\)
+    \item \(S=\{-3\}\)
+    \item* \(S=\{-1,-3\}\)
+    \item \(S=\varnothing\)
+\end{multi}
+
+
+\begin{multi}[multiple,feedback=
+{La fonction \(f\) est continue sur \([0,1]\) et est dérivable sur \(]0,1[\). Donc elle vérifie les hypothèses du théorème des accroissements finis, et, comme en plus \(f(0)=0=f(1)\), elle vérifie aussi les hypothèses du théorème de Rolle. Les deux théorèmes impliquent l'existence de \(c\in ]0,1[\) tel que \(f'(c)=0\). Soit \(\displaystyle c=\frac{1}{2}\).
+}]{Question}
+    \item* \(f\) vérifie les hypothèses du théorème de Rolle et une valeur vérifiant la conclusion de ce théorème est \(\displaystyle \frac{1}{2}\).
+    \item \(f\) ne vérifie pas les hypothèses du théorème de Rolle.
+    \item \(f\) ne vérifie pas les hypothèses du théorème des accroissements finis.
+    \item* \(f\) vérifie les hypothèses du théorème des accroissements finis et une valeur vérifiant la conclusion de ce théorème est \(\displaystyle \frac{1}{2}\).
+\end{multi}
+
+
+\begin{multi}[multiple,feedback=
+{Les théorèmes généraux assurent que \(f\) est de classe \(\mathcal{C}^2\) sur \(\Rr^*\) avec
+\[f'(x)=2x\ln (x^2)+2x\mbox{ et }f''(x)=2\ln x^2+6\mbox{ si }x\neq 0\]
+et \(\displaystyle \lim _{x\to 0}\frac{f(x)-f(0)}{x-0}=0=f'(0)\). On a aussi
+\[\lim _{x\to 0}f'(x)=0=f'(0) \Rightarrow f'\mbox{ est continue en }0.\]
+Ainsi \(f\) de classe \(\mathcal{C}^1\) sur \(\Rr\) et est deux fois dérivable sur \(\Rr^*\). Elle n'est pas deux fois dérivables en \(0\) car
+\[\lim _{x\to 0}\frac{f'(x)-f'(0)}{x-0}=\lim _{x\to 0}[2\ln (x^2)+2]=-\infty.\]
+}]{Question}
+    \item* \(f\) est de classe \(\mathcal{C}^1\) sur \(\Rr\).
+    \item* \(\forall x\in \Rr^*\), \(\displaystyle f''(x)=2\ln x^2+6\)
+    \item \(f\) est deux fois dérivables sur \(\Rr\).
+    \item \(f\) est de classe \(\mathcal{C}^2\) sur \(\Rr\).
+\end{multi}
+
+
+\begin{multi}[multiple,feedback=
+{La fonction \(f\), tout comme la fonction \(\arctan\), est impaire. On calcule \(f'(x)\) pour \(x\neq 0\) : 
+\[f'(x)=\frac{1}{1+x^2}+\frac{\left(\frac{1}{x}\right)'}{1+\left(\frac{1}{x}\right)^2}=0\]
+Donc \(f\) est constante sur chaque intervalle de son domaine de définition :
+\[f(x)=\left\{\begin{array}{ll}\displaystyle f(1)=\frac{\pi}{2}&\mbox{si }x>0\\ \\ f(-1)=-\frac{\pi}{2}&\mbox{si }x<0.\end{array}
+\right.\]
+}]{Question}
+    \item* \(\forall x\in \Rr^*\), \(f'(x)=0\)
+    \item \(\forall x\in \Rr^*\), \(\displaystyle f(x)=\frac{\pi}{2}\)
+    \item La fonction \(f\) est paire.
+    \item* \(\displaystyle f(x)=\frac{\pi}{2}\) si \(x>0\) et \(\displaystyle f(x)=-\frac{\pi}{2}\) si \(x<0\)
+\end{multi}
+
+
+\begin{multi}[multiple,feedback=
+{On remarque que \(f'(x)=(\arcsin x)'=(-\arccos x)'\). Donc, par continuité, 
+\[\forall x\in [-1,1],\; f(x)=\arcsin x+C_1=-\arccos x+C_2.\]
+Mais \(f(0)=\pi \Rightarrow C_1=\pi\) et \(\displaystyle C_2=\frac{3\pi}{2}\).
+}]{Question}
+    \item \(f(x)=\sqrt{1-x^2}-1+\pi\)
+    \item* \(f(x)=\arcsin (x)+\pi\)
+    \item* \(\displaystyle f(x)=-\arccos x+\frac{3\pi}{2}\)
+    \item Une telle fonction \(f\) n'existe pas.
+\end{multi}
+
+
+\begin{multi}[multiple,feedback=
+{Le théorème de Rolle ne s'applique pas à \(f\) sur \([0,1]\) car \(\displaystyle f(0)\neq f(1)\). Mais on peut l'appliquer à 
+\[\displaystyle F(x)=\frac{x^4}{4}+\frac{x^3}{3}+\frac{x^2}{2}-\frac{13}{12}x.\]
+Cette fonction vérifie toutes les hypothèses du théorème, donc
+\[\exists c\in ]0,1[,\; F'(c)=0\Leftrightarrow f(c)=0.\]
+}]{Question}
+    \item \(\displaystyle f(0)=-\frac{13}{12}<0\) et \(\displaystyle f(1)=-\frac{1}{12}<0\), donc \(f(x)=0\)  n'a pas de solution dans \(]0,1[\).
+    \item* L'équation \(f(x)=0\) admet une solution dans \(]0,1[\).
+    \item* Le théorème de Rolle s'applique à une primitive de \(f\) sur \([0,1]\).
+    \item Le théorème de Rolle s'applique à \(f\) sur \([0,1]\).
+\end{multi}
+
+
+\begin{multi}[multiple,feedback=
+{On a bien \(f(0)=0=f(\pi)\). Mais, pour tout \(\displaystyle x\neq \frac{\pi}{2}+k\pi\), \(k\in \Zz\), on a \(f'(x)=1+\tan ^2x>0\). On ne peut appliquer le théorème de Rolle à \(f\) sur \([0,\pi]\) car \(f\) n'est pas définie au point \(\displaystyle \frac{\pi}{2}\).
+}]{Question}
+    \item \(f(0)=0=f(\pi)\) et donc il existe \(c\in ]0,\pi[\) tel que \(f'(c)=0\).
+    \item* \(f(0)=0=f(\pi)\) mais il n'existe pas de \(c\in ]0,\pi[\) tel que \(f'(c)=0\).
+    \item Le théorème de Rolle ne s'applique pas à \(f\) sur \([0,\pi]\) car \(f(0)\neq f(\pi)\).
+    \item* Le théorème de Rolle ne s'applique pas à \(f\) sur \([0,\pi]\).
+\end{multi}
+
+
+\begin{multi}[multiple,feedback=
+{On a \(f'(x)=3x^2+3>0\) pour tout \(x\in \Rr\). Ainsi \(f\) est continue et est strictement croissante sur \(\Rr\). Donc, d'après le théorème de la bijection, \(f\) est une bijection et
+\[\forall x\in \Rr,\; (f^{-1})'(x)=\frac{1}{f'\left(f^{-1}(x)\right)}.\]
+En particulier, et puisque \(f(0)=1\), \(\displaystyle (f^{-1})'(1)=\frac{1}{f'(f^{-1}(1))}=\frac{1}{f'(0)}=\frac{1}{3}\).
+}]{Question}
+    \item* \(\forall x\in \Rr\), \(f'(x)>0\)
+    \item* \(f\) est une bijection et \(\displaystyle (f^{-1})'(1)=\frac{1}{3}\).
+    \item \(f\) est une bijection et \(\displaystyle (f^{-1})'(1)=\frac{1}{f'(1)}=\frac{1}{6}\).
+    \item \(f\) est une bijection et \(\displaystyle (f^{-1})'(x)=\frac{1}{f'(x)}\).
+\end{multi}
+
+
+\begin{multi}[multiple,feedback=
+{La fonction \(g\) est continue sur \([a,b]\) et elle est dérivable sur \(]a,b[\) avec
+\[g'(x)=\frac{f'(x)(x-\alpha)-f(x)}{(x-\alpha)^2}.\]
+De plus \(g(a)=g(b)=0\). On peut donc appliquer le théorème de Rolle. Il existe alors \(c\in ]a,b[\) tel que \[g'(c)=0\Leftrightarrow f'(c)(c-\alpha)-f(c)\Leftrightarrow f'(c)=\frac{f(c)}{c-\alpha}.\]
+La tangente à \(\mathcal{C}_f\) en \(c\) passe par le point \((\alpha ,0)\).
+}]{Question}
+    \item* On peut appliquer le théorème de Rolle à \(g\) sur \([a,b]\).
+    \item* Il existe \(c\in ]a,b[\) tel que \(\displaystyle f'(c)=\frac{f(c)}{c-\alpha}\).
+    \item* Il existe \(c\in ]a,b[\) tel que la tangente à \(\mathcal{C}_f\) en \(c\) passe par \((\alpha ,0)\).
+    \item La dérivée de \(g\) est \(\displaystyle g'(x)=\frac{f'(x)}{(x-\alpha )^2}\).
+\end{multi}
+
+
+\begin{multi}[multiple,feedback=
+{La dérivée de \(f(x)\) est \(\displaystyle f'(x)=\frac{n(x^{n-1}-1)}{(1+x)^{n+1}}\) et \(f\) admet bien un minimum en \(1\) (dresser le tableau de variations de \(f\)). En particulier,
+\[\forall x\geq 0,\; f(1)\leq f(x)\Leftrightarrow (1+x)^n\leq 2^{n-1}(1+x^n).\]
+}]{Question}
+    \item* \(\displaystyle f'(x)=\frac{n(x^{n-1}-1)}{(1+x)^{n+1}}\) et \(f\) admet un minimum en \(1\).
+    \item \(f'(1)\neq 0\) et donc \(f\) n'admet pas d'extremum en \(1\).
+    \item Le théorème de Rolle s'applique à \(f\) sur \([-1,1]\) car \(f(-1)=f(1)\).
+    \item* \(\forall x\geq 0,\; (1+x)^n\leq 2^{n-1}(1+x^n)\).
+\end{multi}
+
+
+\begin{multi}[multiple,feedback=
+{On a \(f''(x)=\mathrm{e}^x>0\). Donc \(f\) est convexe sur \(\Rr\). Ainsi, par définition,
+\[\forall t\in [0,1]\; \forall a,b\in \Rr,\; f\left[ta+(1-t)b\right]\leq tf(a)+(1-t)f(b).\]
+En prenant \(a=\ln x\) et \(b=\ln y\), avec \(x,y>0\), on aura
+\[\mathrm{e}^{t\ln x+(1-t)\ln y}\leq tx+(1-t)y.\]
+Il suffit de composer par ln, qui est strictement croissante, pour avoir
+\[t\ln x+(1-t)\ln y\leq \ln \left[tx+(1-t)y\right].\]
+}]{Question}
+    \item \(f''(x)\) s'annule au moins une fois sur \(\Rr\).
+    \item* \(f\) est convexe sur \(\Rr\).
+    \item \(f\) est concave sur \(\Rr\).
+    \item* \(\forall t\in [0,1]\) et \(\forall x,y\in \Rr^{+*}\), on a : \(t\ln x+(1-t)\ln y\leq \ln \left[tx+(1-t)y\right]\).
+\end{multi}
+
+
+\begin{multi}[multiple,feedback=
+{On a \(\displaystyle f''(x)=-\frac{1}{x^2}<0\). Donc \(f\) est concave sur \(\Rr^{+*}\). Ainsi, par définition,
+\[\forall t\in [0,1]\; \forall a,b\in \Rr^{+*},\; f\left[ta+(1-t)b\right]\geq tf(a)+(1-t)f(b).\]
+En prenant \(a=\mathrm{e}^x\) et \(b=\mathrm{e}^x\), où \(x,y\in \Rr\), on aura
+\[\ln\left[t\mathrm{e}^x+(1-t)\mathrm{e}^y\right]\geq tx+(1-t)y.\]
+Il suffit de composer par la fonction exponentielle, qui est strictement croissante, pour avoir
+\[t\mathrm{e}^x+(1-t)\mathrm{e}^y\geq \mathrm{e}^{tx+(1-t)y}.\]
+}]{Question}
+    \item \(f''(x)\) s'annule au moins une fois sur \(\Rr^{+*}\).
+    \item \(f\) est convexe sur \(\Rr^{+*}\).
+    \item* \(f\) est concave sur \(\Rr^{+*}\).
+    \item* \(\forall t\in [0,1]\) et \(\forall x,y\in \Rr\), on a : \(\mathrm{e}^{tx+(1-t)y}\leq t\mathrm{e}^x+(1-t)\mathrm{e}^y\).
+\end{multi}
+
+
+\begin{multi}[multiple,feedback=
+{La fonction \(f\) est clairement paire. On calcule \(f'(x)\) pour \(x\in ]0,1[\) : 
+\[f'(x)=\frac{(1-2x^2)'}{\sqrt{1-(1-2x^2)^2}}=\frac{-2x}{|x|\sqrt{1-x^2}}.\]
+Donc, pour \(x\in ]0,1[\), \(\displaystyle f'(x)=\frac{-2}{\sqrt{1-x^2}}=(-2\arcsin x)'\). Ainsi, par continuité,
+\[\forall x\in [0,1],\; f(x)=-2\arcsin x+C.\]
+Or \(\displaystyle f(0)=\arcsin 1=\frac{\pi}{2}=-2\arcsin 0+C\), donc \(\displaystyle C=\frac{\pi}{2}\). Par ailleurs,
+\[\left\{\begin{array}{l}f\mbox{ est continue sur }[0,1]\\ f\mbox{ est dérivable sur }]0,1[\\ \displaystyle \lim _{x\to 0^+}f'(x)=-2
+\end{array}\right\}\Rightarrow f'_d(0)=-2.\]
+On vérifie, de même, que \(f'_g(0)=2\).
+}]{Question}
+    \item \(\forall x\in [-1,1]\), \(\displaystyle f'(x)=\frac{-2}{\sqrt{1-x^2}}\)
+    \item \(\forall x\in [-1,1]\), \(\displaystyle f(x)=-2\arcsin x+\frac{\pi}{2}\)
+    \item* \(f'_d(0)=-2\) et \(f'_g(0)=2\)
+    \item* La fonction \(f\) est paire avec \(\displaystyle f(x)=-2\arcsin x+\frac{\pi}{2}\) si \(x\in [0,1]\).
+\end{multi}

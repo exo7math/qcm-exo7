@@ -1,0 +1,1948 @@
+---
+author: Abdellah Hanani, Mohamed Mzari
+
+section: Espaces vectoriels
+
+subsection: Espaces vectoriels | Niveau 1
+
+tags:
+    - motcle: Strucutre de sous-espace vectoriel
+
+question: |
+        Soit \(E=\{(x,y)\in \Rr^2 \, ; \;  x+y=1\}\), muni des opérations usuelles. Quelles sont les assertions vraies ?
+
+answers: 
+    - value: |
+        \(E\) est un espace vectoriel, car  \(E\) est un sous-ensemble de l'espace vectoriel \(\Rr^2\).
+      correct: False
+
+    - value: |
+        \(E\) n'est pas un espace vectoriel, car \((0,0)\notin E\).
+      correct: True
+
+    - value: |
+        \(E\) n'est pas un espace vectoriel, car \((1,0)\in E\), mais \((-1,0)\notin E\).
+      correct: True
+
+    - value: |
+        \(E\) n'est pas un espace vectoriel, car \((1,0)\in E\) et \((0,1)\in E\), mais \((1,1)\notin E\).
+      correct: True
+
+explanations: |
+        \(E\) n'est pas un sous-espace vectoriel de \(\Rr^2\), puisque \((0,0) \notin E\).\\
+        \(E\) n'est pas stable par multiplication par un scalaire : \((1,0) \in E\) , mais,  \(-(1,0)=(-1,0) \notin E\).\\
+        \(E\) n'est pas stable par addition : \((1,0)  \in E \) et \((0,1)  \in E \), mais \((1,0)+(0,1)=(1,1) \notin E\).
+
+---
+author: Abdellah Hanani, Mohamed Mzari
+
+section: Espaces vectoriels
+
+subsection: Espaces vectoriels | Niveau 1
+
+tags:
+    - motcle: Strucutre de sous-espace vectoriel
+
+question: |
+        Soit \(E=\{(x,y,z) \in \Rr^3 \,  ; \; x-y+z=0\}\), muni des opérations usuelles. Quelles sont les assertions vraies ?
+
+answers: 
+    - value: |
+        \((0,0,0)\in E\).
+      correct: True
+
+    - value: |
+        \(E\) n'est pas stable par addition.
+      correct: False
+
+    - value: |
+        \(E\) est stable par multiplication par un scalaire.
+      correct: True
+
+    - value: |
+        \(E\) est un espace vectoriel.
+      correct: True
+
+explanations: |
+        \(E\) est un sous-espace vectoriel de \(\Rr^3\), puisque \((0,0,0) \in E\), \(E\) est stable par addition 
+        et multiplication par un scalaire.
+
+---
+author: Abdellah Hanani, Mohamed Mzari
+
+section: Espaces vectoriels
+
+subsection: Espaces vectoriels | Niveau 1
+
+tags:
+    - motcle: Strucutre de sous-espace vectoriel
+
+question: |
+        Soit \(E=\{(x,y)\in \Rr^2  \, ; \; x-y\ge 0\}\), muni des opérations usuelles. Quelles sont les assertions vraies ?
+
+answers: 
+    - value: |
+        \(E\) est non vide.
+      correct: True
+
+    - value: |
+        \(E\) est stable par addition.
+      correct: True
+
+    - value: |
+        \(E\) est stable par multiplication par un scalaire.
+      correct: False
+
+    - value: |
+        \(E\) est un sous-espace vectoriel de \(\Rr^2\).
+      correct: False
+
+explanations: |
+        \(E\) n'est pas un sous-espace vectoriel de \(\Rr^2\), puisque \(E\) n'est pas stable par multiplication par un scalaire : 
+        \((1,0) \in E\), mais,  \(-(1,0)=(-1,0) \notin E \). Cependant, \(E\) est stable par addition.
+
+---
+author: Abdellah Hanani, Mohamed Mzari
+
+section: Espaces vectoriels
+
+subsection: Espaces vectoriels | Niveau 1
+
+tags:
+    - motcle: Strucutre de sous-espace vectoriel
+
+question: |
+        Soit \(E=\{(x,y,z) \in \Rr^3 \, ; \;  x-y+z = x+y-3z=0\}\), muni des opérations usuelles. Quelles sont les assertions vraies ?
+
+answers: 
+    - value: |
+        \(E\) est non vide.
+      correct: True
+
+    - value: |
+        \(E\) n'est pas stable par addition.
+      correct: False
+
+    - value: |
+        \(E\) est un espace vectoriel.
+      correct: True
+
+    - value: |
+        \(E=\{(x,2x,x)  \, ; \,  x\in \Rr \}\).
+      correct: True
+
+explanations: |
+        \(E\) est un sous-espace vectoriel de \(\Rr^3\), puisque \((0,0,0)\in E\), \(E\) est stable par addition et multiplication par un scalaire.\\
+        En résolvant le système  : \(\left\{\begin{array}{rcc}
+        x-y+z&=&0\\
+        x+y-3z&=&0\end{array}\right.\), on obtient : \(E=\{(x,2x,x)  \, ; \,  x\in \Rr \}\).
+
+---
+author: Abdellah Hanani, Mohamed Mzari
+
+section: Espaces vectoriels
+
+subsection: Espaces vectoriels | Niveau 2
+
+tags:
+    - motcle: Strucutre de sous-espace vectoriel
+
+question: |
+        Soit \(E=\{(x,y,z) \in \Rr^3 \, ; \;  xy+xz+yz = 0\}\), muni des opérations usuelles. Quelles sont les assertions vraies ?
+
+answers: 
+    - value: |
+        \((0,0,0)\in E\).
+      correct: True
+
+    - value: |
+        \(E\) n'est pas stable par addition.
+      correct: True
+
+    - value: |
+        \(E\) est stable par multiplication par un scalaire.
+      correct: True
+
+    - value: |
+        \(E\) est un sous-espace vectoriel de \(\Rr^3\).
+      correct: False
+
+explanations: |
+        \(E\) n'est pas un sous-espace vectoriel de \(\Rr^3\), puisque \(E\) n'est pas stable par addition : 
+        \((1,0,0), (0,1,0) \in E\), mais \((1,1,0) \notin E\). Cependant, \(E\) est stable par multipliction par un scalaire.
+
+---
+author: Abdellah Hanani, Mohamed Mzari
+
+section: Espaces vectoriels
+
+subsection: Espaces vectoriels | Niveau 2
+
+tags:
+    - motcle: Sous-espace vectoriel de \(\Rr^n\)
+
+question: |
+        Soit \(E=\{(x,y,z) \in \Rr^3 \,  ; \; (x+y)(x+z)=0\}\), muni des opérations usuelles. Quelles sont les assertions vraies ?
+
+answers: 
+    - value: |
+        \(E=\{(x,y,z) \in \Rr^3 \, ; \; x+y=x+z=0\}\).
+      correct: False
+
+    - value: |
+        \(E=\{(x,y,z) \in \Rr^3 \, ; \;  x+y=0\} \cap   \{(x,y,z) \in \Rr^3 ; \; x+z=0\}\).
+      correct: False
+
+    - value: |
+        \(E=\{(x,y,z) \in \Rr^3 \, ; \;  x+y=0\} \cup   \{(x,y,z) \in \Rr^3 ; \; x+z=0\}\).
+      correct: True
+
+    - value: |
+        \(E\) n'est pas un espace vectoriel, car \(E\) n'est pas stable par addition.
+      correct: True
+
+explanations: |
+        \(E= \{(x,y,z) \in \Rr^3 \,  ;\;  x+y=0 \; \mbox{ou} \;  x+z=0  \} =\{(x,y,z) \in \Rr^3 \,  ;\;  x+y=0\} \cup   
+        \{(x,y,z) \in \Rr^3 \,  ; \;  x+z=0\}\).
+        \(E\) n'est pas un espace vectoriel, car \(E\) n'est pas stable par addition : \((1,-1,0), (1,0,-1) \in E\), mais,  
+        \((2,-1,-1) \notin E\).
+
+---
+author: Abdellah Hanani, Mohamed Mzari
+
+section: Espaces vectoriels
+
+subsection: Espaces vectoriels | Niveau 2
+
+tags:
+    - motcle: Strucutre de sous-espace vectoriel de \(\Rr^n\)
+
+question: |
+        Soit \(E=\{(x,y) \in \Rr^2 \, ; \;  e^xe^y=0\}\), muni des opérations usuelles. Quelles sont les assertions vraies ?
+
+answers: 
+    - value: |
+        \(E=\{(x,y) \in \Rr^2 \,  ; \;  x=y \}\).
+      correct: False
+
+    - value: |
+        \(E=\{(x,y) \in \Rr^2 \,  ; \;  x=-y \}\).
+      correct: False
+
+    - value: |
+        \(E=\{(0,0)\}\).
+      correct: False
+
+    - value: |
+        \(E\) n'est pas un espace vectoriel.
+      correct: True
+
+explanations: |
+        \(E\) est vide, donc \(E\) n'est pas un espace vectoriel.
+
+---
+author: Abdellah Hanani, Mohamed Mzari
+
+section: Espaces vectoriels
+
+subsection: Espaces vectoriels | Niveau 2
+
+tags:
+    - motcle: Strucutre de sous-espace vectoriel de \(\Rr^n\)
+
+question: |
+        Soit \(E=\{(x,y) \in \Rr^2 \,  ; \;  e^xe^y=1\}\), muni des opérations usuelles. Quelles sont les assertions vraies ?
+
+answers: 
+    - value: |
+        \(E=\{(x,y) \in \Rr^2 \,  ; \;  x=y \}\).
+      correct: False
+
+    - value: |
+        \(E=\{(x,y) \in \Rr^2 \,  ; \;  x=-y \}\).
+      correct: True
+
+    - value: |
+        \(E\) est vide.
+      correct: False
+
+    - value: |
+        \(E\) est un espace vectoriel.
+      correct: True
+
+explanations: |
+        \(E=\{(x,y) \in \Rr^2 \, ; \;  x+y=0\}\) est un sous-espace vectoriel de \(\Rr^2\).
+
+---
+author: Abdellah Hanani, Mohamed Mzari
+
+section: Espaces vectoriels
+
+subsection: Espaces vectoriels | Niveau 2
+
+tags:
+    - motcle: Strucutre de sous-espace vectoriel de \(\Rr^n\)
+
+question: |
+        Soit \(E=\{(x,y) \in \Rr^2 \,  ;\;  e^x-e^y=0\}\), muni des opérations usuelles. Quelles sont les assertions vraies ?
+
+answers: 
+    - value: |
+        \(E=\{(0,0)\}\).
+      correct: False
+
+    - value: |
+        \(E=\{(x,y) \in \Rr^2 \, ; \;  x=y \ge 0\}\).
+      correct: False
+
+    - value: |
+        \(E=\{(x,x) \,   ; \;  x \in \Rr \}\).
+      correct: True
+
+    - value: |
+        \(E\) est un espace vectoriel.
+      correct: True
+
+explanations: |
+        \(E=\{(x,y) \in \Rr^2 \, ; \;  x=y \} =\{(x,x) \;   ; \;  x \in \Rr \} \) est 
+        un sous-espace vectoriel de \(\Rr^2\).
+
+---
+author: Abdellah Hanani, Mohamed Mzari
+
+section: Espaces vectoriels
+
+subsection: Espaces vectoriels | Niveau 2
+
+tags:
+    - motcle: Structure de  sous-espace vectoriel
+
+question: |
+        Soit \(E\) un espace vectoriel. Quelles sont les assertions vraies ?
+
+answers: 
+    - value: |
+        L'intersection de deux sous-espaces vectoriels de \(E\) peut être vide.
+      correct: False
+
+    - value: |
+        Si \(F\) est un sous-espace vectoriel de \(E\), alors \(F\) contient toute combinaison linéaire d'éléments de \(E\).
+      correct: False
+
+    - value: |
+        Il existe un sous-espace vectoriel de \(E\) qui contient un seul élément.
+      correct: True
+
+    - value: |
+        Si \(F\) est un sous-ensemble non vide de \(E\) qui contient  toute combinaison linéaire de deux vecteurs de \(F\), alors \(F\) est un sous-espace vectoriel de \(E\).
+      correct: True
+
+explanations: |
+        L'intersection de deux sous-espaces vectoriels de \(E\) contient au moins le vecteur nul. 
+        Le seul sous-espace vectoriel de \(E\) qui contient un seul élément est \(\{0_E\}\), où \(0_E\) est le zéro de \(E\).\\
+        Un sous-ensemble non vide de \(E\) est un sous-espace vectoriel de \(E\) si et seulement
+        s'il contient toute combinaison linéaire d'éléments de \(F\). Ceci revient à dire que \(F\) contient 
+        toute combinaison linéaire de deux éléments de \(F\).
+
+---
+author: Abdellah Hanani, Mohamed Mzari
+
+section: Espaces vectoriels
+
+subsection: Espaces vectoriels | Niveau 2
+
+tags:
+    - motcle: Opérations sur des sous-espaces vectoriels
+
+question: |
+        Soit \(E\) un \(\Rr\)-espace vectoriel non nul et \(F\) et \(G\) deux sous-espaces vectoriels de \(E\) tels que \(F\nsubseteq G\) et  \(G\nsubseteq F\). Quelles sont les assertions vraies ?
+
+answers: 
+    - value: |
+        \(F+G =\{x+y\, ; \, x\in F \,\mbox {et}\,  y \in G \}\) est un sous-espace vectoriel de \(E\).
+      correct: True
+
+    - value: |
+        \(F\cap G \) est sous-espace vectoriel de \(E\).
+      correct: True
+
+    - value: |
+        \(F\cup G \) est sous-espace vectoriel de \(E\).
+      correct: False
+
+    - value: |
+        \(F\times G = \{(x,y) \, ; \, x \in F\,\mbox {et}\, y \in G \}\) est un sous-espace vectoriel de \(E\times E\).
+      correct: True
+
+explanations: |
+        La somme, l'intersection et le produit cartésien de sous-espaces vectoriels est un espace vectoriel. Par contre, la réunion de deux sous-espaces vectoriels n'est un espace vectoriel que si l'un des deux est inclus dans l'autre.
+
+---
+author: Abdellah Hanani, Mohamed Mzari
+
+section: Espaces vectoriels
+
+subsection: Espaces vectoriels | Niveau 2
+
+tags:
+    - motcle: Sous-espaces vectoriels de \(\Rr^n\)
+
+question: |
+        Quelles sont les assertions vraies ?
+
+answers: 
+    - value: |
+        Les sous-espaces vectoriels de \(\Rr^2\) sont les droites vectorielles.
+      correct: False
+
+    - value: |
+        Les sous-espaces vectoriels non nuls de \(\Rr^2\) sont les droites vectorielles et \(\Rr^2\).
+      correct: True
+
+    - value: |
+        Les sous-espaces vectoriels de \(\Rr^3\) sont les plans vectoriels.
+      correct: False
+
+    - value: |
+        Les sous-espaces vectoriels non nuls de \(\Rr^3\)  qui sont strictement inclus dans \(\Rr^3\) sont les droites vectorielles et les plans vectoriels.
+      correct: True
+
+explanations: |
+        Les sous-espaces vectoriels de \(\Rr^2\) sont : \(\{(0,0)\}\), les droites vectorielles et \(\Rr^2\). Les sous-espaces vectoriels de \(\Rr^3\) sont : \(\{(0,0,0)\}\), les droites vectorielles, les plans vectoriels et \(\Rr^3\).
+
+---
+author: Abdellah Hanani, Mohamed Mzari
+
+section: Espaces vectoriels
+
+subsection: Espaces vectoriels | Niveau 3
+
+tags:
+    - motcle: Espace des polyômes
+
+question: |
+        Soit \(\Rr_2[X]\) l'espace des polynômes à coefficients réels, de degré inférieur ou égal à \(2\), muni des opérations usuelles et 
+        \(E=\{P \in \Rr_2[X] \, ; \; P(1)=1\}\). Quelles sont les assertions vraies ?
+
+answers: 
+    - value: |
+        \(E\) est vide.
+      correct: False
+
+    - value: |
+        \(E\) est stable par addition.
+      correct: False
+
+    - value: |
+        \(E\) n'est pas stable par multiplication par un scalaire.
+      correct: True
+
+    - value: |
+        \(E\) n'est pas un espace vectoriel.
+      correct: True
+
+explanations: |
+        \(E\) n'est pas un sous-espace vectoriel de \(\Rr_2[X]\), puisque le polynôme nul n'appartient pas à \( E\).  
+        \(E\) n'est stable ni par addition ni par multiplication par un scalaire.
+
+---
+author: Abdellah Hanani, Mohamed Mzari
+
+section: Espaces vectoriels
+
+subsection: Espaces vectoriels | Niveau 3
+
+tags:
+    - motcle: Espace des polyômes
+
+question: |
+        Soit \(n\) un entier \(\ge 1\) et  \(E=\{P \in \Rr[X] \, ; \, \deg P=n\}\), muni des opérations usuelles. Quelles sont les assertions vraies ?
+
+answers: 
+    - value: |
+        \(0\in E\).
+      correct: False
+
+    - value: |
+        \(E\) est stable par addition.
+      correct: False
+
+    - value: |
+        \(E\) est stable par multiplication par un scalaire.
+      correct: False
+
+    - value: |
+        \(E\) n'est pas un espace vectoriel.
+      correct: True
+
+explanations: |
+        L'ensemble \(E\) n'est pas un sous-espace vectoriel de \(\Rr[X]\) car le polynôme nul n'appartient pas à \(E\) (\(\deg 0=-\infty)\). L'ensemble \(E\) n'est stable ni par addition ni par multiplication par le scalaire zéro.
+
+---
+author: Abdellah Hanani, Mohamed Mzari
+
+section: Espaces vectoriels
+
+subsection: Espaces vectoriels | Niveau 3
+
+tags:
+    - motcle: Espace des polyômes
+
+question: |
+        Soit \(n\) un entier \(\ge 1\) et  \(E=\{P \in \Rr[X] \, ; \, \deg P< n\}\), muni des opérations usuelles. Quelles sont les assertions vraies ?
+
+answers: 
+    - value: |
+        \(0\notin E\).
+      correct: False
+
+    - value: |
+        \(E\) est stable par addition.
+      correct: True
+
+    - value: |
+        \(E\) est stable par multiplication par un scalaire.
+      correct: True
+
+    - value: |
+        \(E\) n'est pas un espace vectoriel.
+      correct: False
+
+explanations: |
+        On a : \(0\in E\) et on vérifie que \(E\) est stable par addition et multiplication par un scalaire. Donc \(E\) est un sous-espace vectoriel de \(\Rr[X]\).
+
+---
+author: Abdellah Hanani, Mohamed Mzari
+
+section: Espaces vectoriels
+
+subsection: Espaces vectoriels | Niveau 4
+
+tags:
+    - motcle: Espace des fonctions
+
+question: |
+        Soit \(E=\{f:\Rr \to \Rr \, ; \; f\mbox{ est croissante sur }\Rr\}\). 
+        Quelles sont les assertions vraies ?
+
+answers: 
+    - value: |
+        La fonction nulle appartient à \(E\).
+      correct: True
+
+    - value: |
+        \(E\) est stable par addition.
+      correct: True
+
+    - value: |
+        \(E\) est stable par multiplication par un scalaire.
+      correct: False
+
+    - value: |
+        \(E\) est un espace vectoriel.
+      correct: False
+
+explanations: |
+        La fonction nulle appartient à \(E\), puisqu'elle est constante.\\
+        On vérifie que \(E\) est stable par addition. Par contre, \(E\) ne l'est pas par multiplication par un scalaire \(<0\). Donc 
+        \(E\) n'est pas un espace vectoriel.
+
+---
+author: Abdellah Hanani, Mohamed Mzari
+
+section: Espaces vectoriels
+
+subsection: Espaces vectoriels | Niveau 4
+
+tags:
+    - motcle: Espace des fonctions
+
+question: |
+        Soit \(E =\{f :\Rr \to \Rr \, ; \; f\mbox{ est bornée sur }\Rr\}\). 
+        Quelles sont les assertions vraies ?
+
+answers: 
+    - value: |
+        La fonction nulle n'appartient pas à \(E\).
+      correct: False
+
+    - value: |
+        \(E\) est stable par addition.
+      correct: True
+
+    - value: |
+        \(E\) est stable par multiplication par un scalaire.
+      correct: True
+
+    - value: |
+        \(E\) n'est pas un espace vectoriel.
+      correct: False
+
+explanations: |
+        La fonction nulle appartient à \(E\), et \(E\) est stable par addition et par multiplication par un scalaire. Donc \(E\) est un espace vectoriel.
+
+---
+author: Abdellah Hanani, Mohamed Mzari
+
+section: Espaces vectoriels
+
+subsection: Espaces vectoriels | Niveau 4
+
+tags:
+    - motcle: Espace des fonctions
+
+question: |
+        Soit \(E=\{f :\Rr\to \Rr\, ;\, f\mbox{ est dérivable sur }\Rr   \mbox{ et }f'(1)=1\}\). Quelles sont les assertions vraies ?
+
+answers: 
+    - value: |
+        La fonction nulle n'appartient pas à \(E\).
+      correct: True
+
+    - value: |
+        \(E\) est stable par addition.
+      correct: False
+
+    - value: |
+        \(E\) est stable par multiplication par un scalaire.
+      correct: False
+
+    - value: |
+        \(E\) n'est pas un espace vectoriel.
+      correct: True
+
+explanations: |
+        La fonction nulle n'appartient pas à \(E\), donc \(E\) n'est pas  un espace vectoriel. On vérifie que \(E\) est n'est stable ni par addition ni par  multiplication par un scalaire. 
+
+---
+author: Abdellah Hanani, Mohamed Mzari
+
+section: Espaces vectoriels
+
+subsection: Espaces vectoriels | Niveau 4
+
+tags:
+    - motcle: Espace des fonctions
+
+question: |
+        Soit \(F=\{f:\Rr \to \Rr \, ; \, f\mbox{ est dérivable sur }\Rr \mbox{ et }f'(1)=0\}\). Quelles sont les assertions vraies ?
+
+answers: 
+    - value: |
+        La fonction nulle appartient à \(E\).
+      correct: True
+
+    - value: |
+        \(E\) est stable par addition.
+      correct: True
+
+    - value: |
+        \(E\) est stable par multiplication par un scalaire.
+      correct: True
+
+    - value: |
+        \(E\) n'est pas un espace vectoriel.
+      correct: False
+
+explanations: |
+        La fonction nulle appartient à \(E\), et \(E\) est stable par addition et par multiplication par un scalaire. Donc \(E\) est un espace vectoriel.
+
+---
+author: Abdellah Hanani, Mohamed Mzari
+
+section: Espaces vectoriels
+
+subsection: Espaces vectoriels | Niveau 4
+
+tags:
+    - motcle: Espace des fonctions
+
+question: |
+        Soit \(\displaystyle E =\left\{f :[0,1] \to \Rr \, ; \, f\mbox{ est continue sur } [0,1]\mbox{ et }\int_0^1 f(t) \; dt =1\right\}\). Quelles sont les assertions vraies ?
+
+answers: 
+    - value: |
+        La fonction nulle appartient à \(E\).
+      correct: False
+
+    - value: |
+        \(E\) est stable par addition.
+      correct: False
+
+    - value: |
+        \(E\) est stable par multiplication par un scalaire.
+      correct: False
+
+    - value: |
+        \(E\) n'est pas un espace vectoriel.
+      correct: True
+
+explanations: |
+        La fonction nulle n'appartient pas à \(E\), donc \(E\) n'est pas un espace vectoriel. Par ailleurs, \(E\) n'est sable ni par addition ni par multiplication par un scalaire.
+
+---
+author: Abdellah Hanani, Mohamed Mzari
+
+section: Espaces vectoriels
+
+subsection: Espaces vectoriels | Niveau 4
+
+tags:
+    - motcle: Espace des fonctions
+
+question: |
+        Soit \(\displaystyle E=\left\{f :[0,1]\to \Rr \, ; \, f\mbox{ est continue sur }[0,1]   \mbox{ et } \int_0^1 f(t)\; dt =0\right\}\). Quelles sont les assertions vraies ?
+
+answers: 
+    - value: |
+        La fonction nulle appartient à \(E\).
+      correct: True
+
+    - value: |
+        \(E\) est stable par addition.
+      correct: True
+
+    - value: |
+        \(E\) n'est pas stable par multiplication par un scalaire.
+      correct: False
+
+    - value: |
+        \(E\) est un espace vectoriel.
+      correct: True
+
+explanations: |
+        La fonction nulle appartient à \(E\), et \(E\) est stable par addition et par multiplication par un scalaire. Donc \(E\) est un espace vectoriel.
+
+---
+author: Abdellah Hanani, Mohamed Mzari
+
+section: Espaces vectoriels
+
+subsection: Espaces vectoriels | Niveau 4
+
+tags:
+    - motcle: Structures non usuelles
+
+question: |
+        On considère \(E= (\Rr^*)^2\) muni de l'addition et la multiplication par un réel suivantes :
+        \[(x,y)+(x',y')=(xx',yy')\quad \mbox{et}\quad \lambda .(x,y)= (\lambda x,\lambda y).\]
+        Quelles sont les assertions vraies ?
+
+answers: 
+    - value: |
+        \(E\) est stable par multiplication par un scalaire.
+      correct: False
+
+    - value: |
+        L'élément neutre pour l'addition est \((0,0)\).
+      correct: False
+
+    - value: |
+        L'inverse, pour l'addition, de \((x,y)\) est \(\displaystyle \left(\frac{1}{x}, \frac{1}{y}\right)\).
+      correct: True
+
+    - value: |
+        \(E\) est un \(\Rr\)-espace vectoriel.
+      correct: False
+
+explanations: |
+        On vérifie que l'élément neutre pour l'addition est \((1,1)\), que l'inverse pour l'addition d'un couple \((x,y) \in (\Rr^*)^2\) est \(\displaystyle\left(\frac{1}{x}, \frac{1}{y}\right)\) et que \(E\) n'est pas stable par multiplication par le scalaire zéro. Par conséquent, \(E\) n'est pas un espace vectoriel.
+
+---
+author: Abdellah Hanani, Mohamed Mzari
+
+section: Espaces vectoriels
+
+subsection: Espaces vectoriels | Niveau 4
+
+tags:
+    - motcle: Structures non usuelles
+
+question: |
+        On considère \(\Rr^2\) muni de l'addition et la multiplication par un réel suivantes :
+        \[(x,y)+(x',y')=(x+y',x'+y)\quad \mbox{et}\quad \lambda . (x,y) = (\lambda x, \lambda y).\]
+        Quelles sont les assertions vraies ?
+
+answers: 
+    - value: |
+        \(E\) est stable par addition et par multiplication par un scalaire.
+      correct: True
+
+    - value: |
+        L'addition est commutative.
+      correct: False
+
+    - value: |
+        L'élément neutre pour l'addition est \((0,0)\).
+      correct: False
+
+    - value: |
+        \(E\) est un \(\Rr\)-espace vectoriel.
+      correct: False
+
+explanations: |
+        \(E\) est stable par addition et multiplication par un scalaire. On voit que
+        \[(1,0)+(0,0)=(1,0)\quad \mbox{et}\quad (0,0)+(1,0)=(0,1)\neq (1,0).\] 
+        On en déduit que l'addition n'est pas commutative et que \((0,0)\) n'est pas un élément neutre pour cette addition. En particulier, \(E\) n'est pas un espace vectoriel.
+
+---
+author: Abdellah Hanani, Mohamed Mzari
+
+section: Espaces vectoriels
+
+subsection: Espaces vectoriels | Niveau 4
+
+tags:
+    - motcle: Structures non usuelles
+
+question: |
+        On considère \(\Rr^2\) muni de l'addition et la multiplication par un réel suivantes :
+        \[(x,y) +  (x',y') = (x+x',y+y')\quad \mbox{et}\quad \lambda .(x,y) = (\lambda x, y).\]
+        Quelles sont les assertions vraies ?
+
+answers: 
+    - value: |
+        \(E\) est stable par addition et multiplication par un scalaire.
+      correct: True
+
+    - value: |
+        L'élément neutre pour l'addition est \((0,0)\).
+      correct: True
+
+    - value: |
+        La multiplication par un scalaire est distributive par rapport à l'addition.
+      correct: True
+
+    - value: |
+        \(E\) est un \(\Rr\)-espace vectoriel.
+      correct: False
+
+explanations: |
+        On vérifie que \(E\) est stable par addition et multiplication par un scalaire, que l'élément neutre 
+        pour l'addition est \((0,0)\) et que la multiplication par un scalaire est distributive par rapport à l'addition. Par contre, \(E\) n'est pas un espace vectoriel, puisque  \(0.(0,1) = (0,1) \neq (0,0)\).
+
+---
+author: Abdellah Hanani, Mohamed Mzari
+
+section: Espaces vectoriels
+
+subsection: Espaces vectoriels | Niveau 4
+
+tags:
+    - motcle: Structures non usuelles
+
+question: |
+        On considère \(\Rr^2\) muni de l'addition et la multiplication par un réel suivantes :
+        \[(x,y) +  (x',y') = (x+x',y+y')\quad \mbox{et}\quad \lambda .(x,y) = (\lambda^2 x, \lambda^2 y).\]
+        Quelles sont les assertions vraies ?
+
+answers: 
+    - value: |
+        L'élément neutre pour l'addition est \((0,0)\).
+      correct: True
+
+    - value: |
+        La multiplication par un scalaire est distributive par rapport à l'addition.
+      correct: True
+
+    - value: |
+        L'addition dans \(\Rr\) est distributive par rapport à la multiplication définie ci-dessus.
+      correct: False
+
+    - value: |
+        \(E\) est un \(\Rr\)-espace vectoriel.
+      correct: False
+
+explanations: |
+        On vérifie que \(E\) est stable par addition et multiplication par un scalaire, que l'élément neutre 
+        pour l'addition est \((0,0)\) et que la multiplication par un scalaire est distributive par rapport à l'addition. Par contre, \(E\) n'est pas un espace vectoriel, puisque l'addition dans \(\Rr\) n'est pas distributive par rapport à la multiplication par un élément de \(E\) : 
+        \((1+1).(0,1) = 2.(0,1) = (0,4),\) mais, \(1.(0,1)+1.(0,1) = (0,1)+(0,1) = (0,2)\).
+
+---
+author: Abdellah Hanani, Mohamed Mzari
+
+section: Espaces vectoriels
+
+subsection: Base et dimension | Niveau 1
+
+tags:
+    - motcle: Famille libre/Génératrice/Base
+
+question: |
+        Dans \(\Rr^3\), on considère les vecteurs \(u_1=(1,1,0), u_2=(0,1,-1)\) et \( u_3=(-1,0,-1)\). Quelles sont les assertions vraies ?
+
+answers: 
+    - value: |
+        \(\{u_1,u_2,u_3\}\) est une famille libre.
+      correct: False
+
+    - value: |
+        \(\{u_1,u_2,u_3\}\) est une famille génératrice de \(\Rr^3\).
+      correct: False
+
+    - value: |
+        \(u_3\) est une combinaison linéaire de \(u_1\) et \(u_2\).
+      correct: True
+
+    - value: |
+        \(\{u_1,u_2,u_3\}\) est une base de \(\Rr^3\).
+      correct: False
+
+explanations: |
+        On vérifie que \(u_3= u_2-u_1\), donc \(\{u_1,u_2,u_3\}\) n'est pas libre. Par conséquent, \(\{u_1,u_2,u_3\}\) 
+        n'est pas génératrice de \(\Rr^3\), sinon, \(\{u_1,u_2\}\) serait aussi génératrice de \(\Rr^3\), ce qui contredirait 
+        le fait que toute famille génératrice de \(\Rr^3\) doit contenir au moins \(3\) vecteurs non nuls.
+
+---
+author: Abdellah Hanani, Mohamed Mzari
+
+section: Espaces vectoriels
+
+subsection: Base et dimension | Niveau 1
+
+tags:
+    - motcle: Famille libre/Génératrice/Base
+
+question: |
+        Dans \(\Rr^3\), on considère les vecteurs \(u_1=(1,1,1), u_2=(0,1,1)\) et \( u_3=(-1,1,0)\). 
+        Quelles sont les assertions vraies ?
+
+answers: 
+    - value: |
+        \(\{u_1,u_2,u_3\}\) est une famille libre
+      correct: True
+
+    - value: |
+        \(\{u_1,u_2,u_3\}\) est une famille génératrice de \(\Rr^3\)
+      correct: True
+
+    - value: |
+        \(u_2\) est une combinaison linéaire de \(u_1\) et \(u_3\)
+      correct: False
+
+    - value: |
+        \(\{u_1,u_2,u_3\}\) n'est pas une base de \(\Rr^3\)
+      correct: False
+
+explanations: |
+        On vérifie que \(\{u_1,u_2,u_3\}\) est une famille libre. Comme cette famille contient \(3\)  vecteurs 
+        linéairement indépendants de \(\Rr^3\) et la dimension de \(\Rr^3\) est \(3\), elle est génératrice de   \(\Rr^3\) et donc c'est une base de \(\Rr^3\).
+
+---
+author: Abdellah Hanani, Mohamed Mzari
+
+section: Espaces vectoriels
+
+subsection: Base et dimension | Niveau 1
+
+tags:
+    - motcle: Base/Dimension
+
+question: |
+        Soit \(E=\{(x,y,z) \in \Rr^3 ; x-y-z=0\}\). Quelles sont les assertions vraies ?
+
+answers: 
+    - value: |
+        \(\dim E = 3\)
+      correct: False
+
+    - value: |
+        \(\dim E = 2\)
+      correct: True
+
+    - value: |
+        \(\dim E = 1\)
+      correct: False
+
+    - value: |
+        \(\{(1,0,1),(1,1,0)\} \) est une base de \(E\)
+      correct: True
+
+explanations: |
+        \(E\) est un sous-espace vectoriel de \(\Rr^3\) défini par une équation linéaire homogène, donc \(\dim E=3-1=2\). On vérifie que \(\{(1,0,1),(1,1,0)\}\) est une base de \(E\).
+
+---
+author: Abdellah Hanani, Mohamed Mzari
+
+section: Espaces vectoriels
+
+subsection: Base et dimension | Niveau 2
+
+tags:
+    - motcle: Rang d'une famille de vecteurs
+
+question: |
+        Dans \(\Rr^3\), on considère les vecteurs
+        \[u_1=(-1,1,2),\quad u_2=(0,1,1),\quad  u_3=(-1,0,1),\quad u_4=(0,2,1).\]
+        Quelles sont les assertions vraies ?
+
+answers: 
+    - value: |
+        Le rang de la famille \(\{u_1,u_2\}\) est \(2\)
+      correct: True
+
+    - value: |
+        Le rang de la famille \(\{u_1,u_2,u_3\}\) est \(3\)
+      correct: False
+
+    - value: |
+        Le rang de la famille \(\{u_1,u_2,u_3,u_4\}\) est \(4\)
+      correct: False
+
+    - value: |
+        Le rang de la famille \(\{u_1,u_2,u_4\}\) est \(3\)
+      correct: True
+
+explanations: |
+        Le rang d'une famille de vecteurs est la dimension du sous-espace vectoriel
+        engendré par ces vecteurs. Autrement dit, c'est le nombre maximum de vecteurs de cette famille qui sont linéairement indépendants. On vérifie que \(u_1=u_2+u_3 \) et que \(\{u_1,u_2,u_4\}\) est libre.
+
+---
+author: Abdellah Hanani, Mohamed Mzari
+
+section: Espaces vectoriels
+
+subsection: Base et dimension | Niveau 2
+
+tags:
+    - motcle: Espace engendré par une famille de vecteurs/Famille libre
+
+question: |
+        Dans \(\Rr^4\), on considère les vecteurs \(u_1=(1,1,-1,0)\), \(u_2=(0,1,1,1)\) et \(u_3=(1,-1,a,b)\), où \(a\) et \(b\) sont des réels. Quelles sont les assertions vraies ?
+
+answers: 
+    - value: |
+        \(\forall \, a,b \in \Rr, u_3 \notin \mbox{Vect}\{u_1,u_2\}\)
+      correct: False
+
+    - value: |
+        \(\exists \,  a,b \in \Rr, u_3 \in {\mbox{Vect}} \{u_1,u_2\}\)
+      correct: True
+
+    - value: |
+        \(u_3\in \mbox{Vect}\{u_1,u_2\}\) si et seulement si \(a=-3\) et \(b=-2\)
+      correct: True
+
+    - value: |
+        \(\forall \, a,b \in \Rr, \; \{u_1,u_2,u_3\}\) est libre
+      correct: False
+
+explanations: |
+        \(u_3 \in {\mbox{Vect}} \{u_1,u_2\}\) si, et seulement si, il existe \(\alpha, \beta \in \Rr\) tels que 
+        \(u_3=\alpha u_1+ \beta u_2\). En résolvant ce système, on obtient \(b=-2\) et \(a=-3\). Pour \(a=-3\) et \(b=-2\), la famille \(\{u_1,u_2,u_3\}\) n'est pas libre.
+
+---
+author: Abdellah Hanani, Mohamed Mzari
+
+section: Espaces vectoriels
+
+subsection: Base et dimension | Niveau 2
+
+tags:
+    - motcle: Famille libre/Génératrice/Polynômes
+
+question: |
+        Dans \(\Rr_1[X]\), l'ensemble des polynômes à coefficients réels de degré \(\le 1\), on considère les polynômes \(P_1= X+1, P_2= X-1, P_3 = 1\). Quelles sont les assertions vraies ?
+
+answers: 
+    - value: |
+        \(\{P_1,P_2,P_3\}\) est une famille libre
+      correct: False
+
+    - value: |
+        \(\{P_1,P_2,P_3\}\) est une famille génératrice de \(\Rr_1[X]\)
+      correct: True
+
+    - value: |
+        \(\{P_1,P_2,P_3\}\) est une base de \(\Rr_1[X]\)
+      correct: False
+
+    - value: |
+        \(\{P_2,P_3\}\) est une base de \(\Rr_1[X]\)
+      correct: True
+
+explanations: |
+        On a : \(P_1-P_2-2P_3=0\), donc \(\{P_1,P_2,P_3 \}\) n'est pas libre. Par contre, \(\{P_1,P_2,P_3 \}\) est une famille génératrice de \(\Rr_1[X]\) puisqu'elle contient \(2\) polynômes non colinéaires. Toute famille extraite de \(\{P_1,P_2,P_3 \}\), contenant \(2\) vecteurs, est une base de \(\Rr_1[X]\).
+
+---
+author: Abdellah Hanani, Mohamed Mzari
+
+section: Espaces vectoriels
+
+subsection: Base et dimension | Niveau 2
+
+tags:
+    - motcle: Famille libre/Génératrice/Base/Polynômes
+
+question: |
+        Dans \(\Rr_2[X]\), l'ensemble des polynômes à coefficients réels de degré \(\le 2\), on considère les polynômes \(P_1= X, P_2= X(X+1), P_3 = (X+1)^2\). Quelles sont les assertions vraies ?
+
+answers: 
+    - value: |
+        \(\{P_1,P_2,P_3 \}\) est une famille libre
+      correct: True
+
+    - value: |
+        \(\{P_1+P_2,P_3 \}\) est une famille génératrice de \(\Rr_2[X]\)
+      correct: False
+
+    - value: |
+        \(\{P_1,P_2,P_3 \}\) est une base de \(\Rr_2[X]\)
+      correct: True
+
+    - value: |
+        \(\{P_2,P_3 \}\) est une base de \(\Rr_2[X]\)
+      correct: False
+
+explanations: |
+        On vérifie que \(\{P_1,P_2,P_3 \}\) est une famille libre de \(\Rr_2[X]\). De plus, cette famille contient 
+        \(3\) polynômes  et la dimension de \(\Rr_2[X]\) est \(3\), donc c'est une base de \(\Rr_2[X]\).
+
+---
+author: Abdellah Hanani, Mohamed Mzari
+
+section: Espaces vectoriels
+
+subsection: Base et dimension | Niveau 2
+
+tags:
+    - motcle: Rang d'une famille de vecteurs/Polynômes
+
+question: |
+        Dans  \(\Rr_2[X]\), l'ensemble des polynômes à coefficients réels de degré \(\le 2\), on considère les polynômes \(P_1= 1-X, P_2= 1+X, P_3 = X^2\) et \(P_4=1+X^2\). Quelles sont les assertions vraies ?
+
+answers: 
+    - value: |
+        Le rang de la famille \(\{P_4\}\) est \(4\)
+      correct: False
+
+    - value: |
+        Le rang de la famille \(\{P_3,P_4\}\) est \(2\)
+      correct: True
+
+    - value: |
+        Le rang de la famille \(\{P_2,P_3,P_4\}\) est \(2\)
+      correct: False
+
+    - value: |
+        Le rang de la famille \(\{P_1,P_2,P_3,P_4\}\) est \(3\)
+      correct: True
+
+explanations: |
+        Le rang d'une famille de vecteurs est la dimension du sous-espace vectoriel
+        engendré par ces vecteurs. Autrement dit, c'est le nombre maximum de vecteurs de cette famille qui sont linéairement indépendants.
+
+---
+author: Abdellah Hanani, Mohamed Mzari
+
+section: Espaces vectoriels
+
+subsection: Base et dimension | Niveau 2
+
+tags:
+    - motcle: Dimension
+
+question: |
+        Soit \(E \{(x,y,z,t) \in \Rr^4 \, ; \, x^2+y^2 +z^2+t^2=0\}\). Quelles sont les assertions vraies ?
+
+answers: 
+    - value: |
+        \(E\) est un espace vectoriel de dimension \(0\)
+      correct: True
+
+    - value: |
+        \(E\) est un espace vectoriel de dimension \(1\)
+      correct: False
+
+    - value: |
+        \(E\) est un espace vectoriel de dimension \(2\)
+      correct: False
+
+    - value: |
+        \(E\) n'est pas un espace vectoriel
+      correct: False
+
+explanations: |
+        \(E=\{(0,0,0,0)\}\) est un espace vectoriel de dimension \(0\).
+
+---
+author: Abdellah Hanani, Mohamed Mzari
+
+section: Espaces vectoriels
+
+subsection: Base et dimension | Niveau 2
+
+tags:
+    - motcle: Base/Dimension
+
+question: |
+        Soit \(E=\{(x,y,z,t) \in \Rr^4 \, ; \, |x+y|e^{z+t}=0\}\). Quelles sont les assertions vraies ?
+
+answers: 
+    - value: |
+        \(E\) est un espace vectoriel de dimension \(1\)
+      correct: False
+
+    - value: |
+        \(E\) est un espace vectoriel de dimension \(2\)
+      correct: False
+
+    - value: |
+        \(E\) est un espace vectoriel de dimension \(3\)
+      correct: True
+
+    - value: |
+        \(E\) n'est pas un espace vectoriel
+      correct: False
+
+explanations: |
+        On vérifie que : \(E=\{(x,y,z,t) \in \Rr^4 \, ; \, x+y=0\}=\mbox {Vect} \{v_1,v_2,v_3\}\), où \(v_1=(1,-1,0,0)\), \(v_2=(0,0,1,0)\) et \(v_3=(0,0,0,1)\). On vérifie que cette famille est libre et donc c'est une base de \(E\). Par conséquent, la dimension de \(E\) est \(3\).
+
+---
+author: Abdellah Hanani, Mohamed Mzari
+
+section: Espaces vectoriels
+
+subsection: Base et dimension | Niveau 2
+
+tags:
+    - motcle: Base/Dimension
+
+question: |
+        Soit \(E=\{(x,y,z) \in \Rr^3\; ;\; y-x+z=0\mbox{ et }x=2y\}\). 
+        Quelles sont les assertions vraies ?
+
+answers: 
+    - value: |
+        \(\{(2,1,1)\}\) est une base de \(E\)
+      correct: True
+
+    - value: |
+        \(\dim E = 3\)
+      correct: False
+
+    - value: |
+        \(E\) est un plan
+      correct: False
+
+    - value: |
+        \(E=\mbox {Vect}\{(2,1,1)\}\)
+      correct: True
+
+explanations: |
+        \(E\) est un sous-espace vectoriel de \(  \Rr^3\) défini par  un système d'équations linéaires homogènes de rang \(2\), donc \(\dim E= 3-2=1\). Comme \((2,1,1)\) est un vecteur non nul de \(E\) et \(\dim E=1\), \(\{(2,1,1)\}\) est une base de \(E\).
+
+---
+author: Abdellah Hanani, Mohamed Mzari
+
+section: Espaces vectoriels
+
+subsection: Base et dimension | Niveau 2
+
+tags:
+    - motcle: Base/Dimension
+
+question: |
+        Soit \(E=\{(x+z,z,z) \,  ; \, x,z \in \Rr\}\). 
+        Quelles sont les assertions vraies ?
+
+answers: 
+    - value: |
+        \(\{(1,1,1), (1,0,0),(0,1,1) \} \) est une base de \(E\)
+      correct: False
+
+    - value: |
+        \(\{(1,1,1),(1,0,0)\} \) est une base de \(E\)
+      correct: True
+
+    - value: |
+        \(\{(1,0,0),(0,1,1)\} \) est une base de \(E\)
+      correct: True
+
+    - value: |
+        \(\dim E = 3\)
+      correct: False
+
+explanations: |
+        On vérifie que : \(E= \mbox {Vect}\{(1,0,0), (1,1,1)\}\). Comme ces deux vecteurs ne sont pas colinéaires, ils forment une base de \(E\) et donc \(\dim E = 2\).
+
+---
+author: Abdellah Hanani, Mohamed Mzari
+
+section: Espaces vectoriels
+
+subsection: Base et dimension | Niveau 3
+
+tags:
+    - motcle: Rang d'une famille de vecteurs/Polynômes
+
+question: |
+        Dans \(\Rr_3[X]\), l'ensemble des polynômes à coefficients réels de degré \(\le 3\), on considère les polynômes \(P_1= X^3+1, P_2= P'_1 \) (la dérivée de \(P_1\)) et  \( P_3 = P''_1\) (la dérivée seconde  de \(P_1\)). Quelles sont les assertions vraies ?
+
+answers: 
+    - value: |
+        Le rang de la famille \(\{P_1, P_3 \}\) est \(3\)
+      correct: False
+
+    - value: |
+        \(\{P_1,P_2,P_3 \}\) est une famille génératrice de \(\Rr_3[X]\)
+      correct: False
+
+    - value: |
+        \(\{P_1,P_2,P_3 \}\) est une famille libre de \(\Rr_3[X]\)
+      correct: True
+
+    - value: |
+        Le rang de la famille  \(\{P_1, P_2,P_3 \}\) est \(3\)
+      correct: True
+
+explanations: |
+        On vérifie que \(\{P_1,P_2,P_3 \}\) est une famille libre de \(\Rr_3[X]\) (ce sont des polynômes de degrés 
+        distincts). Par contre, elle n'est pas génératrice de \(\Rr_3[X]\), puisque la dimension de cet espace est \(4\).
+        \vskip2mm
+        Le rang d'une famille de vecteurs est la dimension du sous-espace vectoriel engendré par ces vecteurs. Autrement dit, c'est le nombre maximum de vecteurs linéairement indépendants de cette famille.
+
+---
+author: Abdellah Hanani, Mohamed Mzari
+
+section: Espaces vectoriels
+
+subsection: Base et dimension | Niveau 3
+
+tags:
+    - motcle: Famille libre/Génératrice/Base
+
+question: |
+        Soit \(E\) un espace vectoriel sur \(\Rr\) de dimension \(3\) et\(v_1,v_2,v_3\) des vecteurs linéairement indépendants de \(E\).
+        Quelles sont les assertions vraies ?
+
+answers: 
+    - value: |
+        \(\{v_1,v_2,v_3\}\) est une famille génératrice de \(E\)
+      correct: True
+
+    - value: |
+        \(\{v_1,v_2,v_1+v_3\}\) est une base de \(E\)
+      correct: True
+
+    - value: |
+        \(\{v_1-v_2,v_1+v_3\}\) est une base de \(E\)
+      correct: False
+
+    - value: |
+        \(\{v_1-v_2,v_1+v_3\}\) est famille libre de \(E\)
+      correct: True
+
+explanations: |
+        Puisque \(\{v_1,v_2,v_3\}\)  est une famille libre qui contient \(3\) vecteurs et la dimension de \(E\) est \(3\), 
+        elle est génératrice et donc c'est une base de \(E\).
+        \vskip2mm
+        On vérifie aussi que \(\{v_1,v_2,v_1+v_3\}\) est une famille libre, 
+        et donc pour les mêmes raisons que précédemment, c'est une base de \(E\).
+
+---
+author: Abdellah Hanani, Mohamed Mzari
+
+section: Espaces vectoriels
+
+subsection: Base et dimension | Niveau 3
+
+tags:
+    - motcle: Structure de sous-espace vectoriel/Dimension
+
+question: |
+        Soit \(E \{(x,y,z,t) \in \Rr^4 \, ; \, (x^2+y^2)(z^2+t^2)=0\}\). Quelles sont les assertions vraies ?
+
+answers: 
+    - value: |
+        \(E\) est un espace vectoriel de dimension \(0\)
+      correct: False
+
+    - value: |
+        \(E\) est un espace vectoriel de dimension \(1\)
+      correct: False
+
+    - value: |
+        \(E\) est un espace vectoriel de dimension \(2\)
+      correct: False
+
+    - value: |
+        \(E\) n'est pas un espace vectoriel
+      correct: True
+
+explanations: |
+        \(E =\{(0,0,z,t)  \, ; \, z,t \in \Rr\} \cup \{(x,y,0,0)  \, ; \, x,y \in \Rr\}\) n'est pas un espace vectoriel.
+
+---
+author: Abdellah Hanani, Mohamed Mzari
+
+section: Espaces vectoriels
+
+subsection: Base et dimension | Niveau 3
+
+tags:
+    - motcle: Base/Dimension
+
+question: |
+        Soit \(n\) un entier \(\ge 3\) et \(E=\{(x_1,x_2, \dots , x_n) \in \Rr^n \, ; \, x_1=x_2=\dots =x_n\}\). Quelles sont les assertions vraies ?
+
+answers: 
+    - value: |
+        \(\dim E = n-1\)
+      correct: False
+
+    - value: |
+        \(\dim E = n\)
+      correct: False
+
+    - value: |
+        \(\dim E = 1\)
+      correct: True
+
+    - value: |
+        \(E=\Rr\)
+      correct: False
+
+explanations: |
+        On a : \(E=\mbox{Vect}\{v\}\), où \( v=(1,1, \dots ,1)\). Par conséquent, \(E\) est un espace vectoriel de dimension \(1\).
+
+---
+author: Abdellah Hanani, Mohamed Mzari
+
+section: Espaces vectoriels
+
+subsection: Base et dimension | Niveau 3
+
+tags:
+    - motcle: Sous-espace vectoriel/Représentation cartésienne
+
+question: |
+        Dans l'espace vectoriel \(\Rr^3\), on pose \(u_1=(1,0,1), u_2=(-1,1,1)\), \(u_3=(1,-1,0)\) et on considère les sous-espaces vectoriels \(E=\mbox {Vect}\{u_1,u_2\}\) et \(F=\mbox {Vect}\{u_3\}\). Quelles sont les assertions vraies ?
+
+answers: 
+    - value: |
+        \(E\) est un plan vectoriel
+      correct: True
+
+    - value: |
+        Une équation cartésienne de \(E\) est \(x+2y+z=0\)
+      correct: False
+
+    - value: |
+        \(F\) est une droite vectorielle
+      correct: True
+
+    - value: |
+        Une équation cartésienne de \(F\) est \(z=0\)
+      correct: False
+
+explanations: |
+        \(E\) est un plan vectoriel.  
+        Soit \(M(x,y,z)\) un vecteur de \(\Rr^3\). \(M \in E\) si et seulement s'il existe \(a,b \in \Rr\) tels que \(M=au_1+bu_2\). En résolvant ce système, on obtient une équation cartésienne de \(E\) : \(x+2y-z=0\).
+        \vskip2mm
+        \(F\) est une droite vectorielle ; c'est donc l'intersection de deux plans de \(\Rr^3\). Soit \(M(x,y,z)\) un vecteur de \(\Rr^3\). \(M \in F\) si et seulement s'il existe un réel \(a\) tels que \(M=au_3\). En 
+        résolvant ce système, on obtient une représentation cartésienne de \(F\) : \((\mathtt{S}) 
+        \left\{\begin{array}{rcc}x+y&=&0\\
+        z&=&0.\end{array}\right.\)
+
+---
+author: Abdellah Hanani, Mohamed Mzari
+
+section: Espaces vectoriels
+
+subsection: Base et dimension | Niveau 3
+
+tags:
+    - motcle: Base/Dimension/Polynômes
+
+question: |
+        On note \(\Rr_2[X]\) l'ensemble des polynômes à coefficients réels de degré \(\le 2\). Soit 
+        \[E=\{P \in \Rr_2[X] \, ; \, P(1)=P'(1)=0\},\]
+        où \(P'\) est la dérivée de \(P\). Quelles sont les assertions vraies ?
+
+answers: 
+    - value: |
+        \(\{X-1 \} \) est une base de \(E\)
+      correct: False
+
+    - value: |
+        \(\{(X-1)^2\} \) est une base de \(E\)
+      correct: True
+
+    - value: |
+        \(\dim E = 2\)
+      correct: False
+
+    - value: |
+        \(\dim E = 1\)
+      correct: True
+
+explanations: |
+        \(E=\{aX^2+bX+c \; , \, a,b \in \Rr \; ; \; a+b+c=2a+b=0\} =\mbox {Vect}\{X^2-2X+1\}\). Donc \(\{(X-1)^2\} \) est une base de \(E\) et \(\dim E = 1\).
+
+---
+author: Abdellah Hanani, Mohamed Mzari
+
+section: Espaces vectoriels
+
+subsection: Base et dimension | Niveau 3
+
+tags:
+    - motcle: Base/Dimension/Polynômes
+
+question: |
+        Soit \(E=\{P= aX^3+b(X^3-1)  \, ; \, a,b \in \Rr\}\). Quelles sont les assertions vraies ?
+
+answers: 
+    - value: |
+        \(\dim E = 3\)
+      correct: False
+
+    - value: |
+        \(\{1,X^3\} \) est une base de \(E\)
+      correct: True
+
+    - value: |
+        \(\{X^3-1\}\) est une base de \(E\)
+      correct: False
+
+    - value: |
+        \(\dim E = 1\)
+      correct: False
+
+explanations: |
+        \(E=\mbox{Vect}\{ X^3,\,  X^3-1\}=\mbox {Vect}\{1,X^3\}\). Comme \(1\) et \(X^3\) ne sont pas colinéaires, on déduit que \(\{1,X^3\}\) est une base de \(E\) et que \(\dim E=2\).
+
+---
+author: Abdellah Hanani, Mohamed Mzari
+
+section: Espaces vectoriels
+
+subsection: Base et dimension | Niveau 3
+
+tags:
+    - motcle: Bases de \(\Rr\)
+
+question: |
+        Quelles sont les assertions vraies ?
+
+answers: 
+    - value: |
+        \(\{1\}\) est une base de \(\Rr\) comme \(\Rr\)-espace vectoriel
+      correct: True
+
+    - value: |
+        \(\{\sqrt 2\}\) est une base de \(\Rr\) comme \(\Rr\)-espace vectoriel
+      correct: True
+
+    - value: |
+        \(\{1,\sqrt 2\}\) est une base de \(\Rr\) comme \(\Rr\)-espace vectoriel
+      correct: False
+
+    - value: |
+        \(\{1, \sqrt 2\}\) est une base de \(\Rr\) comme \(\Qq\)-espace vectoriel
+      correct: False
+
+explanations: |
+        \(\Rr\) est un  \(\Rr\)-espace vectoriel de dimension 1, donc pour tout \(\alpha \in \Rr^*\), \(\{\alpha\}\) 
+        est une base de \(\Rr\).
+        \vskip2mm
+        \(\{1, \sqrt 2\}\) n'est pas une base de \(\Rr\) comme  \(\Qq\)-espace vectoriel. En effet, sinon, il existe \(\alpha, \beta \in \Qq\) tels que \(\sqrt 3= \alpha+ \beta \sqrt 2\). En considérant le carré de cette égalité, on déduit que \(\sqrt 2\) est un rationnel, ce qui est absurde.
+
+---
+author: Abdellah Hanani, Mohamed Mzari
+
+section: Espaces vectoriels
+
+subsection: Base et dimension | Niveau 3
+
+tags:
+    - motcle: Bases de \(\Cc\)
+
+question: |
+        Quelles sont les assertions vraies ?
+
+answers: 
+    - value: |
+        \(\{1\}\) est une base de \(\Cc\) comme \(\Rr\)-espace vectoriel
+      correct: False
+
+    - value: |
+        \(\{i\}\) est une base de \(\Cc\) comme \(\Cc\)-espace vectoriel
+      correct: True
+
+    - value: |
+        \(\{i, 1+i\}\) est une base de \(\Cc\) comme \(\Rr\)-espace vectoriel
+      correct: True
+
+    - value: |
+        \(1\) et \(i\) sont \(\Cc\) linéairement indépendants
+      correct: False
+
+explanations: |
+        \(\Cc\) est un \(\Cc\)-espace vectoriel de dimension \(1\) et c'est un \(\Rr\)-espace vectoriel de dimension \(2\). Par conséquent, pour tout \(\alpha \in \Cc^*\), \(\{\alpha\}\) est une base de \(\Cc\) comme \(\Cc\)-espace vectoriel et  pour tous \(\alpha, \beta \in \Cc^*\) tels que \(\frac{\alpha}{\beta} \notin \Rr\),  \(\{\alpha, \beta\}\) est une base de \(\Cc\) comme \(\Rr\)-espace vectoriel. 
+
+---
+author: Abdellah Hanani, Mohamed Mzari
+
+section: Espaces vectoriels
+
+subsection: Base et dimension | Niveau 3
+
+tags:
+    - motcle: Bases de \(\Cc^2\)
+
+question: |
+        Quelles sont les assertions vraies ?
+
+answers: 
+    - value: |
+        \(\{(1,0),(1,1)\}\) est une base de \(\Cc^2\) comme \(\Cc\)-espace vectoriel
+      correct: True
+
+    - value: |
+        La dimension de \(\Cc^2\) comme \(\Rr\)-espace vectoriel est \(4\)
+      correct: True
+
+    - value: |
+        \(\{(1,0),(0,i),(i,0),(0,1)\}\) est une base de \(\Cc^2\) comme \(\Rr\)-espace vectoriel
+      correct: True
+
+    - value: |
+        La dimension de \(\Cc^2\) comme \(\Rr\)-espace vectoriel est \(2\)
+      correct: False
+
+explanations: |
+        L'espace \(\Cc^2\) est un \(\Cc\)-espace vectoriel de dimension \(2\). Par conséquent, pour tous \((a,b), (c,d) \in \Cc^2\), non colinéaires sur \(\Cc\), \(\{(a,b), (c,d)\}\) est une \(\Cc\)-base de \(\Cc^2\).
+        \vskip2mm
+        D'autre part \(\Cc^2\) est un  \(\Rr\)-espace vectoriel de dimension \(4\). Par conséquent, toute famille \(\{(a,b), (a',b'), (c,d), (c',d')\}\), de vecteurs de \(\Cc^2\) linéairement indépendants sur \(\Rr\), est une \(\Rr\)-base de \(\Cc^2\).
+
+---
+author: Abdellah Hanani, Mohamed Mzari
+
+section: Espaces vectoriels
+
+subsection: Base et dimension | Niveau 4
+
+tags:
+    - motcle: Base/Théorème de la base incomplète
+
+question: |
+        Soit \(n\) et \(p\) deux entiers  tels que \(n >p \ge 1\), \(E\) un espace vectoriel sur \(\Rr\) de dimension \(n\), et \(v_1,v_2, \dots, v_p\) des vecteurs linéairement indépendants de \(E\). Quelles sont les assertions vraies ?
+
+answers: 
+    - value: |
+        \(\{v_1,v_2, \dots, v_p\}\) est une base de \(E\)
+      correct: False
+
+    - value: |
+        Il existe des vecteurs \(u_1, \dots , u_k\) de \(E\) tels que \(\{v_1,v_2, \dots, v_p, u_1, \dots , u_k\}\) soit une base de \(E\)
+      correct: True
+
+    - value: |
+        \(\{v_1,v_2, \dots, v_{p-1}\}\) est une famille libre de \(E\)
+      correct: True
+
+    - value: |
+        \(\{v_1,v_2, \dots, v_{p}\}\) est une famille génératrice de \(E\)
+      correct: False
+
+explanations: |
+        Comme \(\dim E=n\) et \(n>p\), \(\{v_1,v_2, \dots, v_p\}\) n'est pas une famille génératrice de \(E\). Puisque cette famille est libre, d'après le théorème de la base incomplète, on peut la compléter pour avoir une base de \(E\).
+        \vskip2mm
+        D'autre part, \(\{v_1,v_2, \dots, v_{p-1}\}\) est libre, puisque toute famille extraite d'une famille libre est libre.
+
+---
+author: Abdellah Hanani, Mohamed Mzari
+
+section: Espaces vectoriels
+
+subsection: Base et dimension | Niveau 4
+
+tags:
+    - motcle: Base/Dimension/Espace des fonctions
+
+question: |
+        On considère les fonctions réelles \(f_1, f_2\) et \(f_3\) définies par : 
+        \[f_1(x)=\sin x,\quad f_2(x)= \cos x,\quad f_3(x)= \sin x \cos x\]
+        et \(E\) l'espace engendré par ces fonctions. Quelles sont les assertions vraies ?
+
+answers: 
+    - value: |
+        \(\{f_1,f_2\}\) est une base de \(E\)
+      correct: False
+
+    - value: |
+        \(\{f_1,f_3\}\) est une base de \(E\)
+      correct: False
+
+    - value: |
+        \(\dim E=2\)
+      correct: False
+
+    - value: |
+        \(\dim E=3\)
+      correct: True
+
+explanations: |
+        Soit \(a,b,c \in \Rr\) tels que  \(af_1+bf_2+cf_3=0\). Alors, 
+        \[a\sin x +b\cos x+c\sin x \cos x = 0,\mbox{ pour tout }x\in \Rr.\] 
+        En prenant \(x=0\), puis, \(x=\frac{\pi}{2}\), on démontre que \(b=a=c=0\). Par conséquent, \(\{f_1, f_2, f_3\}\) est une base de \(E\) et donc \(\dim E =3\). 
+
+---
+author: Abdellah Hanani, Mohamed Mzari
+
+section: Espaces vectoriels
+
+subsection: Base et dimension | Niveau 4
+
+tags:
+    - motcle: Base/Dimension/Espace des fonctions
+
+question: |
+        Soit \(n\) un entier \(\geq 2\). On considère les fonctions réelles \(f_1, f_2, \dots , f_n\), définies par :
+        \[f_1(x)=e^x,\quad f_2(x)= e^{2x},\quad \dots ,\quad f_n(x) = e^{nx}\]
+        et \(E\) l'espace vectoriel engendré par ces fonctions. Quelles sont les assertions vraies ?
+
+answers: 
+    - value: |
+        \(E\) est un espace vectoriel de dimension \(n-2\)
+      correct: False
+
+    - value: |
+        \(E\) est un espace vectoriel de dimension \(n-1\)
+      correct: False
+
+    - value: |
+        \(E\) est un espace vectoriel de dimension \(n\)
+      correct: True
+
+    - value: |
+        \(E\) est un espace vectoriel de dimension infinie
+      correct: False
+
+explanations: |
+        Soit \(\lambda_1, \dots, \lambda_n\) des réels tels que \(\lambda_1e^x+ \dots+ \lambda_ne^{2x}=0,\)
+        pour tout réel \(x\). En divisant par \(e^x\) et en faisant tendre \(x\) vers \(-\infty\), on obtient \(\lambda_1=0\). Puis, en divisant par \(e^{2x}\) et en faisant tendre \(x\) vers \(-\infty\), on obtient \(\lambda_2=0\). En appliquant ce raisonnement \(n\) fois, on démontre que tous les \(\lambda_i\) sont nuls. Par conséquent,  
+        \(\{f_1, f_2,  \dots , f_n\}\) est une base de \(E\) et donc \(\dim E =n\).
+
+---
+author: Abdellah Hanani, Mohamed Mzari
+
+section: Espaces vectoriels
+
+subsection: Espaces vectoriels supplémentaires | Niveau 1
+
+tags:
+    - motcle: Espaces supplémentaires/Base/Dimension
+
+question: |
+        On considère les deux sous-espaces vectoriels de \(\Rr^4\) : 
+        \[E= \mbox {vect} \{u_1,u_2,u_3\},\mbox{  où }u_1=(1,-1,0,1), \; u_2=(1,0,1,0),\; u_3=(3,-1,1,2)\]
+        et
+        \[F=\{(x,y,z,t)\in \Rr^4\, ;\, x+y-z=0\; \mbox{et}\; y+z=0\}.\] 
+        Quelles sont les assertions vraies ?
+
+answers: 
+    - value: |
+        \(\dim E = 3\)
+      correct: True
+
+    - value: |
+        \(\dim E\cap F = 1\)
+      correct: True
+
+    - value: |
+        \(E+F= \Rr^4\)
+      correct: True
+
+    - value: |
+        \(E\) et \(F\) sont supplémentaires dans \(\Rr^4\)
+      correct: False
+
+explanations: |
+        On vérifie que \(\{u_1,u_2,u_3\}\) est libre  et 
+        que \(F=\mbox {vect} \{v_1,v_2\}\), où \(v_1=(2,-1,1,0)\) et \( v_2=(0,0,0,1)\). Par conséquent, \(\dim E=3\) et \(\dim F=2\).
+        \vskip1mm
+        Il y a une seule relation de dépendance entre \(u_1,u_2,u_3,v_1\) et \(v_2\). Soit : \(u_1+u_2-v_1-v_2=0\). On déduit que \(\{u_1,u_2,u_3, v_1\}\) est une base de \(E+F\), donc \(\dim (E+F)=4\) et comme \(E+F\) est un sous-espace de \(\Rr^4\) et \(\dim \Rr^4=4\), \(E+F= \Rr^4\). Du théorème de la dimension d'une somme, on déduit que \(\dim E\cap F=1\), donc \(E\) et \(F\) ne sont pas supplémentaires dans \(\Rr^4\). 
+
+---
+author: Abdellah Hanani, Mohamed Mzari
+
+section: Espaces vectoriels
+
+subsection: Espaces vectoriels supplémentaires | Niveau 1
+
+tags:
+    - motcle: Espaces supplémentaires/Base/Dimension
+
+question: |
+        On considère les deux sous-espaces vectoriels de \(\Rr^4\) :
+        \[E=\{(x,y,z,t)\in \Rr^4\, ; \, x+y = y+z=0\}\; \mbox{ et }\; F=\{(x,y,z,t)\in \Rr^4\, ;\, x+y+z+t=0\}.\]
+        Quelles sont les assertions vraies ?
+
+answers: 
+    - value: |
+        \(\dim E= 1\)
+      correct: False
+
+    - value: |
+        \(\dim F = 3\)
+      correct: True
+
+    - value: |
+        \(\dim E\cap F = 1\)
+      correct: True
+
+    - value: |
+        \(E\) et \(F\) sont supplémentaires dans \(\Rr^4\)
+      correct: False
+
+explanations: |
+        Une base de \(E\) est \(\{u_1,u_2\}\), où \(u_1= (1,-1,1,0)\) et \(u_2= (0,0,0,1)\),  donc \(\dim E=2\).
+        Une base de \(F\) est \(\{v_1,v_2,v_3\}\), où \(v_1= (1,0,0,-1), v_2= (0,1,0,-1)\) et \(v_3= (0,0,1,-1)\), donc \(\dim F=3\).
+        \(E\cap F =\{(x,y,z,t) \in \Rr^4 \, ; \, x+y = y+z=z+t=0\}\). Une base de \(E\cap F\) est \(\{w\}\), où \(w=(1,-1,1,-1)\), donc 
+        \(\dim E\cap F =1\) et donc \(E\) et \(F\) ne sont pas supplémentaires dans \(\Rr^4\).
+
+---
+author: Abdellah Hanani, Mohamed Mzari
+
+section: Espaces vectoriels
+
+subsection: Espaces vectoriels supplémentaires | Niveau 1
+
+tags:
+    - motcle: Espaces supplémentaires/Base/Dimension
+
+question: |
+        On considère les deux sous-espaces vectoriels de \(\Rr^4\) :
+        \[E= \{(x,y,z,t) \in \Rr^4 \, ; \; x-y=y-z=t=0\}\; \mbox{ et }\; F= \{(x,y,z,t) \in \Rr^4 \, ; \; z=x+y \}.\]
+        Quelles sont les assertions vraies ?
+
+answers: 
+    - value: |
+        \(\dim E= 1\)
+      correct: True
+
+    - value: |
+        \(\dim F = 2\)
+      correct: False
+
+    - value: |
+        \(\dim E\cap F = 1\)
+      correct: False
+
+    - value: |
+        \(E\) et \(F\) sont supplémentaires dans \(\Rr^4\)
+      correct: True
+
+explanations: |
+        Une base de \(E\) est \(\{u\}\), où \(u= (1,1,1,0)\), donc \(\dim E=1\). Une base de \(F\) est \(\{v_1,v_2,v_3\}\), où \(v_1= (1,0,1,0), v_2= (0,1,1,0)\) et \(v_3= (0,0,0,1)\), donc \(\dim F=3\). On vérifie que \(E\cap F =\{(0,0,0,0)\}\). Donc, d'après le théorème de la dimension d'une somme, \(\dim (E+F)=4=\dim \Rr^4\) et comme, en plus, \(E+F\) est un sous-espace de \(\Rr^4\), \(E+F=\Rr^4\). Par conséquent, \(E\) et \(F\) sont supplémentaires dans \(\Rr^4\).
+
+---
+author: Abdellah Hanani, Mohamed Mzari
+
+section: Espaces vectoriels
+
+subsection: Espaces vectoriels supplémentaires | Niveau 2
+
+tags:
+    - motcle: Espaces supplémentaires/Base/Dimension/Polynômes
+
+question: |
+        Dans \(\Rr_3[X]\), l'espace des polynômes à coefficients réels  de degré \(\le 3\), on considère les deux sous-espaces vectoriels : 
+        \[E= \{P \in \Rr_3[X] \, ; \; P(0)=P(1)=0\}\; \mbox{ et }\; F= \{(P\in \Rr_3[X] \, ; \; P'(0)=P''(0)=0 \},\]
+        où \(P'\) (resp. \(P''\)) est la dérivée première (resp. seconde) de \(P\). Quelles sont les assertions vraies ?
+
+answers: 
+    - value: |
+        \(\dim E= 3\)
+      correct: False
+
+    - value: |
+        \(\dim F = 1\)
+      correct: False
+
+    - value: |
+        \(E+F=\Rr_3[X]\)
+      correct: True
+
+    - value: |
+        \(E\) et \(F\) sont supplémentaires dans \(\Rr_3[X]\)
+      correct: True
+
+explanations: |
+        Une base de \(E\) est \(\{P_1,P_2\}\),  où \(P_1=X^3-X\) et \(P_2=X^2-X\), donc \(\dim E=2\). Une base de \(F\) est \(\{Q_1,Q_2\}\), où \(Q_1=1\) et \(Q_2=X^3\), donc \(\dim F=2\). On vérifie que \(E\cap F =\{0\}\). Donc, d'après le théorème de la dimension d'une somme, \(\dim (E+F) = 4\) et comme \(E+F\) est un sous-espace de \(\Rr_3[X]\) et \(\dim \Rr_3[X]=4\), \(E+F= \Rr_3[X]\). Par conséquent, \(E\) et \(F\) sont  supplémentaires dans \(\Rr_3[X]\).
+
+---
+author: Abdellah Hanani, Mohamed Mzari
+
+section: Espaces vectoriels
+
+subsection: Espaces vectoriels supplémentaires | Niveau 2
+
+tags:
+    - motcle: Espaces supplémentaires/Base/Dimension/Polynômes
+
+question: |
+        Dans \(\Rr_3[X]\), l'espace des polynômes  à coefficients réels  de degré \(\le 3\), on considère les deux sous-espaces vectoriels  : 
+        \[E=\{P = a(X-1)^2 +b(X-1)+c\; ;\; a,b,c\in \Rr\}\;\mbox{ et }\; F= \{P= aX^3 +bX^2\; ; \; a,b \in \Rr\}.\]
+        Quelles sont les assertions vraies ?
+
+answers: 
+    - value: |
+        \(\dim E= 2\)
+      correct: False
+
+    - value: |
+        \(\dim E\cap F = 1\)
+      correct: True
+
+    - value: |
+        \(E\) et \(F\) sont supplémentaires dans \(\Rr_3[X]\)
+      correct: False
+
+    - value: |
+        \(E+F=\Rr_3[X]\)
+      correct: True
+
+explanations: |
+        Une base de \(E\) est \(\{P_1,P_2,P_3\}\), où \(P_1=1, P_2=X-1\), \(P_3=(X-1)^2\) donc \(\dim E=3\).
+        Une base de \(F\) est \(\{Q_1,Q_2\}\), où \(Q_1=X^2\) et \(Q_2=X^3\), donc \(\dim F=2\). En cherchant les relations de dépendance 
+        entre les polynômes \(P_1,P_2,P_3, Q_1\) et \(Q_2\), on trouve : \(P_1+2P_2+P_3= Q_1\). Par conséquent, \(E\cap F = \mbox{Vect} \{Q_1\}\), donc  \(E\) et \(F\) ne sont pas supplémentaires dans \(\Rr_3[X]\). Du théorème de la dimension d'une somme, on déduit que \(\dim (E+F) = 4\) et comme \(E+F\) est un sous-espace de \(\Rr_3[X]\) et \(\dim \Rr_3[X]=4\), \(E+F= \Rr_3[X]\). 
+
+---
+author: Abdellah Hanani, Mohamed Mzari
+
+section: Espaces vectoriels
+
+subsection: Espaces vectoriels supplémentaires | Niveau  3
+
+tags:
+    - motcle: Espaces supplémentaires/Base/Dimension/Polynômes
+
+question: |
+        Dans \(\Rr_3[X]\), l'espace des polynômes à coefficients réels de degré \(\le 3\), on considère les deux sous-espaces vectoriels : 
+        \[E=\{P\in \Rr_3[X]\; ; \; P(-X)=P(X)\}\; \mbox{ et }\; F=\{P\in \Rr_3[X]\; ; \; P(-X)=-P(X)\}.\]
+        Quelles sont les assertions vraies ?
+
+answers: 
+    - value: |
+        \(\dim E= 2\)
+      correct: True
+
+    - value: |
+        \(\dim F = 3\)
+      correct: False
+
+    - value: |
+        \(\dim E\cap F = 1\)
+      correct: False
+
+    - value: |
+        \(E\) et \(F\) sont supplémentaires dans \(\Rr_3[X]\)
+      correct: True
+
+explanations: |
+        Une base de \(E\) est \(\{1,X^2\}\),  donc \(\dim E=2\). Une base de \(F\) est \(\{X,X^3\}\), donc \(\dim F=2\). On vérifie que \(E\cap F  =\{0\}\). Donc, d'après le théorème de la dimension d'une somme, \(\dim (E+F) = 4\) et comme \(E+F\) est un sous-espace de \(\Rr_3[X]\) et \(\dim \Rr_3[X]=4\), \(E+F= \Rr_3[X]\). Ainsi, \(E\) et \(F\) sont supplémentaires dans \(\Rr_3[X]\).
+

@@ -1,0 +1,1307 @@
+---
+author: Abdellah Hanani, Mohamed Mzari
+
+section: Systèmes d'équations linéaires
+
+subsection: Systèmes d'équations linéaires | Niveau 1 
+
+tags:
+    - motcle: Système linéaire homogène/Méthode du Pivot de Gauss
+
+question: |
+        On considère le système d'équations, d'inconnue \((x,y,z)\in \Rr^3\) : 
+        \[(\mathtt{S})\; \left\{\begin{array}{rcc}x-y+z&=&0\\
+        x-y-z&=&0\\ 3x+2y+z&=&0. \end{array}\right.\]
+        Quelles sont les assertions vraies ?
+
+answers: 
+    - value: |
+        \((\mathtt{S}) \Leftrightarrow  \left\{\begin{array}{rcc}
+        x-y+z&=&0\\
+        5y-2z&=&0\\
+        z&=&0.\\
+        \end{array}\right.\)
+      correct: True
+
+    - value: |
+        \((\mathtt{S})\) admet une infinité de solutions
+      correct: False
+
+    - value: |
+        \((\mathtt{S})\) n'admet pas de solution
+      correct: False
+
+    - value: |
+        \((\mathtt{S})\) admet une unique solution
+      correct: True
+
+explanations: |
+        L'algorithme de Gauss donne :
+        \[ (\mathtt{S})  \Leftrightarrow  \left\{\begin{array}{rcc}
+        x-y+z&=&0\\
+        5y-2z&=&0\\ 
+        z&=&0.\end{array}\right.\]
+        Donc \((\mathtt{S})\) admet une unique solution : \((0,0,0)\).
+
+---
+author: Abdellah Hanani, Mohamed Mzari
+
+section: Systèmes d'équations linéaires
+
+subsection: Systèmes d'équations linéaires | Niveau 1 
+
+tags:
+    - motcle: Système linéaire homogène/Méthode du Pivot de Gauss
+
+question: |
+        On considère le système d'équations, d'inconnue \((x,y,z)\in \Rr^3\) :  
+        \[(\mathtt{S}) \; \left\{\begin{array}{rcc}
+        x+2y+z&=&0\\
+        -x+z&=&0\\
+        x+y&=&0.\end{array}\right.\]
+        Quelles sont les assertions vraies ?
+
+answers: 
+    - value: |
+        \((\mathtt{S}) \Leftrightarrow  \left\{\begin{array}{rcc}
+        y&=&-x\\
+        z&=&x.\end{array}\right.\)
+      correct: True
+
+    - value: |
+        L'ensemble des solutions de \((\mathtt{S})\) est une droite
+      correct: True
+
+    - value: |
+        \((\mathtt{S})\) n'admet pas de solution
+      correct: False
+
+    - value: |
+        \((\mathtt{S})\) admet une unique solution
+      correct: False
+
+explanations: |
+        \[(\mathtt{S}) \Leftrightarrow  \left\{\begin{array}{rcc}
+        y&=&-x\\
+        z&=&x.\end{array}\right.\]
+        L'ensemble des solutions de \((\mathtt{S})\) est la droite : \(\{(x,-x,x)\, ; \; x \in \Rr\}\).
+
+---
+author: Abdellah Hanani, Mohamed Mzari
+
+section: Systèmes d'équations linéaires
+
+subsection: Systèmes d'équations linéaires | Niveau 1 
+
+tags:
+    - motcle: Système linéaire/Méthode du Pivot de Gauss
+
+question: |
+        On considère le système d'équations, d'inconnue \((x,y,z)\in \Rr^3\) : 
+        \[(\mathtt{S})  \; \left\{\begin{array}{rcc}
+        x-y+2z&=&1\\
+        -2x+2y-4z&=&-2\\
+        3x-3y+6z&=&3.\end{array}\right.\]
+        Quelles sont les assertions vraies ?
+
+answers: 
+    - value: |
+        \((\mathtt{S}) \Leftrightarrow
+        x-y+2z=1.\)
+      correct: True
+
+    - value: |
+        L'ensemble des solutions de \((\mathtt{S})\) est un plan
+      correct: True
+
+    - value: |
+        \((\mathtt{S})\) n'admet pas de solution
+      correct: False
+
+    - value: |
+        \((\mathtt{S})\) admet une unique solution
+      correct: False
+
+explanations: |
+        \( (\mathtt{S}) \Leftrightarrow  
+        x-y+2z=0\).
+        L'ensemble des solutions de \((\mathtt{S})\) est un plan.
+
+---
+author: Abdellah Hanani, Mohamed Mzari
+
+section: Systèmes d'équations linéaires
+
+subsection: Systèmes d'équations linéaires | Niveau 1 
+
+tags:
+    - motcle: Système linéaire/Méthode du Pivot de Gauss
+
+question: |
+        On considère le système d'équations, d'inconnue \((x,y,z)\in \Rr^3\) :  
+        \[(\mathtt{S}) \; \left\{\begin{array}{rcc}
+        x+y-z&=&2\\
+        -x+y+z&=&0\\
+        2x+z&=&-1.\end{array}\right.\]
+        Quelles sont les assertions vraies ?
+
+answers: 
+    - value: |
+        \((\mathtt{S}) \Leftrightarrow  \left\{\begin{array}{rcc}
+        x+y-z&=&2\\
+        y&=&1\\
+        z&=&-1.\\
+        \end{array}\right.\)
+      correct: True
+
+    - value: |
+        \((\mathtt{S})\) admet une infinité de solutions
+      correct: False
+
+    - value: |
+        \((\mathtt{S})\) n'admet pas de solution
+      correct: False
+
+    - value: |
+        \((\mathtt{S})\) admet une unique solution
+      correct: True
+
+explanations: |
+        \[(\mathtt{S}) \Leftrightarrow  \left\{\begin{array}{rcc}
+        x+y-z&=&2\\
+        y&=&1\\ 
+        z&=&-1.\end{array}\right.\] 
+        Donc \((\mathtt{S})\) admet une unique solution : \((0,1,-1)\).
+
+---
+author: Abdellah Hanani, Mohamed Mzari
+
+section: Systèmes d'équations linéaires
+
+subsection: Systèmes d'équations linéaires | Niveau 1 
+
+tags:
+    - motcle: Système linéaire/Méthode du Pivot de Gauss
+
+question: |
+        On considère le système d'équations, d'inconnue \((x,y,z)\in \Rr^3\) :  
+        \[(\mathtt{S}) \; \left\{\begin{array}{rcc}
+        x-y+z&=&1\\
+        2x-3y+4z&=&1\\ 
+        y+z&=&1.\\
+        \end{array}\right.\]
+        Quelles sont les assertions vraies ?
+
+answers: 
+    - value: |
+        \((\mathtt{S}) \Leftrightarrow  \left\{\begin{array}{rcc}
+        x-y+z&=&1\\
+        y-2z&=&1\\
+        z&=&0.\end{array}\right.\)
+      correct: True
+
+    - value: |
+        Les équations de \((\mathtt{S})\) sont celles de trois plans
+      correct: True
+
+    - value: |
+        \((\mathtt{S})\) admet une unique solution
+      correct: True
+
+    - value: |
+        \((\mathtt{S})\) n'admet pas de solution
+      correct: False
+
+explanations: |
+        \[(\mathtt{S}) \Leftrightarrow  \left\{\begin{array}{rcc}
+        x-y+z&=&1\\
+        y-2z&=&1\\ 
+        z&=&0.\\ 
+        \end{array}\right.\]
+        Donc \((\mathtt{S})\) admet une unique solution : \((2,1,0)\).
+
+---
+author: Abdellah Hanani, Mohamed Mzari
+
+section: Systèmes d'équations linéaires
+
+subsection: Systèmes d'équations linéaires | Niveau 1 
+
+tags:
+    - motcle: Système linéaire/Méthode du Pivot de Gauss
+
+question: |
+        On considère le système d'équations, d'inconnue \((x,y,z)\in \Rr^3\) :  
+        \[(\mathtt{S}) \; \left\{\begin{array}{rcc}
+        x-y+z&=&1\\
+        2x-3y+4z&=&1\\ 
+        x-2y+3z&=&1.\\
+        \end{array}\right.\]
+        Quelles sont les assertions vraies ?
+
+answers: 
+    - value: |
+        \((\mathtt{S}) \Leftrightarrow  \left\{\begin{array}{rcc}
+        x-y+z&=&1\\
+        y-2z&=&1.\\
+        \end{array}\right.\)
+      correct: False
+
+    - value: |
+        \((\mathtt{S})\) admet une infinité de solutions
+      correct: False
+
+    - value: |
+        \((\mathtt{S})\) admet une unique solution
+      correct: False
+
+    - value: |
+        \((\mathtt{S})\) n'admet pas de solution
+      correct: True
+
+explanations: |
+        \[(\mathtt{S}) \Leftrightarrow  \left\{\begin{array}{rcc}
+        x-y+z&=&1\\
+        y-2z&=&1\\ 
+        y-2z&=&0\\
+        \end{array}\right.  \Leftrightarrow  \left\{\begin{array}{rcc}
+        x-y+z&=&1\\
+        y-2z&=&1\\ 
+        0&=&-1.\\
+        \end{array}\right.\]
+        Donc \((\mathtt{S})\) n'admet pas de solution.
+
+---
+author: Abdellah Hanani, Mohamed Mzari
+
+section: Systèmes d'équations linéaires
+
+subsection: Systèmes d'équations linéaires | Niveau 2
+
+tags:
+    - motcle: Système non linéaire
+
+question: |
+        On considère le système d'équations, d'inconnue \((x,y,z)\in \Rr^3\) :  
+        \[(\mathtt{S}) \; \left\{\begin{array}{rcc}
+        x+y+z&=&1\\
+        xy+z&=&0\\
+        x-y&=&-1.\end{array}\right.\]
+        Quelles sont les assertions vraies ?
+
+answers: 
+    - value: |
+        \((\mathtt{S})\) est un système d'équations linéaires.
+      correct: False
+
+    - value: |
+        \((\mathtt{S}) \Leftrightarrow  \left\{\begin{array}{rcc}
+        z&=&-2x\\
+        y&=&1+x\\
+        xy+z&=&0.\end{array}\right.\)
+      correct: True
+
+    - value: |
+        \((\mathtt{S})\) admet une unique solution.
+      correct: False
+
+    - value: |
+        \((\mathtt{S})\) admet deux solutions distinctes.
+      correct: True
+
+explanations: |
+        \((\mathtt{S})\) n'est pas un système d'équations linéaires.
+        \[(\mathtt{S}) \Leftrightarrow  \left\{\begin{array}{rcc}
+        z&=&1-x-y\\
+        y&=&1+x\\ 
+        xy+z&=&0\\ 
+        \end{array}\right. \Leftrightarrow  \left\{\begin{array}{rcc}
+        z&=&-2x\\
+        y&=&1+x\\ 
+        x(x-1)&=&0.\\ 
+        \end{array}\right. \]
+        Donc \((\mathtt{S})\) admet deux solutions : \((0,1,0)\) et \((1,2,-2)\).
+
+---
+author: Abdellah Hanani, Mohamed Mzari
+
+section: Systèmes d'équations linéaires
+
+subsection: Systèmes d'équations linéaires | Niveau 2
+
+tags:
+    - motcle: Système linéaire/Méthode du Pivot de Gauss
+
+question: |
+        On considère le système d'équations, d'inconnue \((x,y,z)\in \Rr^3\) :  
+        \[(\mathtt{S}) \; \left\{\begin{array}{rcc}
+        x+y+z&=&1\\
+        2x+y-z&=&-1\\ 
+        3x+y-3z&=&-3\\
+        x-2z&=&-2.\end{array}\right.\]
+        Quelles sont les assertions vraies ?
+
+answers: 
+    - value: |
+        \((\mathtt{S}) \Leftrightarrow  \left\{\begin{array}{rcc}
+        x+y+z&=&1\\
+        y+3z&=&3.\\
+        \end{array}\right.\)
+      correct: True
+
+    - value: |
+        L'ensemble des solutions de \((\mathtt{S})\) est une droite.
+      correct: True
+
+    - value: |
+        \((\mathtt{S})\) n'admet pas de solution.
+      correct: False
+
+    - value: |
+        \((\mathtt{S})\) admet une unique solution.
+      correct: False
+
+explanations: |
+        \[(\mathtt{S}) \Leftrightarrow  \left\{\begin{array}{rcc}
+        x+y+z&=&1\\
+        y+3z&=&3.\\
+        \end{array}\right.\]
+        L'ensemble des solutions de \((\mathtt{S})\) est la droite : \(\{(-2+2z,3-3z,z)\, ; \; z \in \Rr\}\).
+
+---
+author: Abdellah Hanani, Mohamed Mzari
+
+section: Systèmes d'équations linéaires
+
+subsection: Systèmes d'équations linéaires | Niveau 3
+
+tags:
+    - motcle: Système linéaire à paramètres/Méthode du Pivot de Gauss
+
+question: |
+        On considère le système d'équations, d'inconnue \((x,y,z,t)\in \Rr^4\) et de paramètres des réels 
+        \(a,b,c\) et \(d\) :
+        \[(\mathtt{S}) \; \left\{\begin{array}{rcc}
+        x+y&=&a\\
+        y+z&=&b\\ 
+        z+t&=&c\\
+        t+x&=&d.\end{array}\right.\]
+        Quelles sont les assertions vraies ?
+
+answers: 
+    - value: |
+        \((\mathtt{S}) \Leftrightarrow
+        \left\{\begin{array}{rcc}
+        x+y&=&a\\
+        y+z&=&b\\
+        z+t&=&c.\end{array}\right.\)
+      correct: False
+
+    - value: |
+        \((\mathtt{S})\) admet une  solution si et seulement si \(a+c=b+d\).
+      correct: True
+
+    - value: |
+        \((\mathtt{S})\) admet une  solution si et seulement si \(a+b=c+d\).
+      correct: False
+
+    - value: |
+        Le rang de \((\mathtt{S})\) est \(3\).
+      correct: True
+
+explanations: |
+        \[(\mathtt{S}) \Leftrightarrow  
+        \left\{\begin{array}{rcc}
+        x+y&=&a\\
+        y+z&=&b\\ 
+        z+t&=&c\\ 
+        0&=&b+d-a-c.\end{array}\right.\]
+        On en déduit que si \(a+c\neq b+d\), \((\mathtt{S})\) n'admet pas de solution et que si \(a+c= b+d\), 
+        \((\mathtt{S})\) en admet une infinité.
+
+---
+author: Abdellah Hanani, Mohamed Mzari
+
+section: Systèmes d'équations linéaires
+
+subsection: Systèmes d'équations linéaires | Niveau 3
+
+tags:
+    - motcle: Système linéaire à paramètres/Méthode du Pivot de Gauss
+
+question: |
+        On considère le système d'équations, d'inconnue \((x,y,z)\in \Rr^3\) et de paramètres des réels non nuls et distincts \(a,b\) et \(c\) :
+        \[(\mathtt{S}) \; \left\{\begin{array}{rcc}
+        ax+ay+bz&=&b\\
+        bx+by+cz&=&c\\ 
+        cx+cy+az&=&a.\end{array}\right.\]
+        Quelles sont les assertions vraies ?
+
+answers: 
+    - value: |
+        \((\mathtt{S}) \Leftrightarrow
+        \left\{\begin{array}{rcc}
+        ax+ay+bz&=&b\\
+        (ac-b^2)z&=&ac-b^2\\
+        (a^2-bc)z&=&a^2-bc.\end{array}\right.\)
+      correct: True
+
+    - value: |
+        \((\mathtt{S})\) n'admet pas de solution.
+      correct: False
+
+    - value: |
+        \((\mathtt{S})\) admet une solution si et seulement si \(a^2\neq bc\).
+      correct: False
+
+    - value: |
+        \((\mathtt{S})\) admet une infinité de solutions.
+      correct: True
+
+explanations: |
+        Comme \(a,b\) et \(c\) sont des réels non nuls, 
+        \[(\mathtt{S}) \Leftrightarrow  
+        \left\{\begin{array}{rcc}
+        ax+ay+bz&=&b\\
+        (ac-b^2)z&=&ac-b^2\\ 
+        (a^2-bc)z&=&a^2-bc.\\ 
+        \end{array}\right.\]
+        D'autre part, \(a,b,c\) sont des réels distincts, on vérifie que \(a^2\neq bc\) ou \(b^2 \neq ac\). Par conséquent, 
+        \((\mathtt{S})\) admet une infinité de solutions :
+        \(\{(x,-x,1); \; x \in \Rr\}\).
+
+---
+author: Abdellah Hanani, Mohamed Mzari
+
+section: Systèmes d'équations linéaires
+
+subsection: Systèmes d'équations linéaires | Niveau 3
+
+tags:
+    - motcle: Système linéaire à un paramètre/Méthode du Pivot de Gauss
+
+question: |
+        On considère le système d'équations, d'inconnue \((x,y,z)\in \Rr^3\) et de paramètre un réel \(m\) :
+        \[(\mathtt{S}) \; \left\{\begin{array}{rcc}
+        x+y+z&=&-1\\
+        x+2y+3z&=&1\\
+        2x+3y+4z&=&m.\end{array}\right.\]
+        Quelles sont les assertions vraies ?
+
+answers: 
+    - value: |
+        \((\mathtt{S}) \Leftrightarrow
+        \left\{\begin{array}{rcc}
+        x+y+z&=&-1\\
+        y+2z&=&m.\\
+        \end{array}\right.\)
+      correct: False
+
+    - value: |
+        Pour tout réel \(m\), \((\mathtt{S})\) admet une solution.
+      correct: False
+
+    - value: |
+        Si \(m=1\), \((\mathtt{S})\) n'admet pas de solution.
+      correct: True
+
+    - value: |
+        Si \(m=0\), l'ensemble des solutions de \((\mathtt{S})\) est une droite.
+      correct: True
+
+explanations: |
+        \[(\mathtt{S}) \Leftrightarrow  
+        \left\{\begin{array}{rcc}
+        x+y+z&=&-1\\
+        y+2z&=&2\\ 
+        y+2z&=&m+2\\ 
+        \end{array}\right. \Leftrightarrow  
+        \left\{\begin{array}{rcc}
+        x+y+z&=&-1\\
+        y+2z&=&2\\ 
+        0&=&m.\\ 
+        \end{array}\right.\]
+        On en déduit que si \(m\neq 0\), \((\mathtt{S})\) n'admet pas de solution et que si \(m=0\), l'ensemble des solutions de 
+        \((\mathtt{S})\) est la droite :
+        \(\{(-3+z,2-2z,z); \; z\in \Rr\}\).
+
+---
+author: Abdellah Hanani, Mohamed Mzari
+
+section: Systèmes d'équations linéaires
+
+subsection: Systèmes d'équations linéaires | Niveau 3
+
+tags:
+    - motcle: Système linéaire à un paramètre/Méthode du Pivot de Gauss
+
+question: |
+        On considère le système d'équations, d'inconnue \((x,y,z)\in \Rr^3\) et de paramètre un réel \(m\) :
+        \[(\mathtt{S})\left\{\begin{array}{rcc}
+        x-y-z&=&1\\ -x+2y-mz&=&-3\\ 2x-y+(m-1)z&=&2m+2.\end{array}\right.\]
+        Quelles sont les assertions vraies ?
+
+answers: 
+    - value: |
+        \((\mathtt{S}) \Leftrightarrow
+        \left\{\begin{array}{rcc}x-y-z&=&1\\y-(m+1)z&=&-2\\
+        (m+1)z&=&m+1.\end{array}\right.\)
+      correct: True
+
+    - value: |
+        Pour tout réel \(m\), \((\mathtt{S})\) admet une infinité de solutions.
+      correct: False
+
+    - value: |
+        Si \(m=-1\), \((\mathtt{S})\) n'admet pas de solution.
+      correct: False
+
+    - value: |
+        Si \(m \neq -1\), \((\mathtt{S})\) admet une unique solution.
+      correct: True
+
+explanations: |
+        \[(\mathtt{S}) \Leftrightarrow  
+        \left\{\begin{array}{rcc}
+        x-y-z&=&1\\
+        y-(m+1)z&=&-2\\ 
+        y+(m+1)z&=&2m\\ 
+        \end{array}\right.  \Leftrightarrow  
+        \left\{\begin{array}{rcc}
+        x-y-z&=&1\\
+        y-(m+1)z&=&-2\\ 
+        (m+1)z&=&m+1.\\ 
+        \end{array}\right.\]
+        Si \(m=-1\), \((\mathtt{S})\) admet une infinité de solutions : \(\{(-1+z,-2,z) \, ; \, z \in \Rr\}\).\\
+        Si \(m \neq -1\), \((\mathtt{S})\) admet une unique solution : \((1+m,-1+m,1)\).
+
+---
+author: Abdellah Hanani, Mohamed Mzari
+
+section: Systèmes d'équations linéaires
+
+subsection: Systèmes d'équations linéaires | Niveau 3
+
+tags:
+    - motcle: Système linéaire à paramètres/Méthode du Pivot de Gauss
+
+question: |
+        On considère le système d'équations, d'inconnue \((x,y,z,t) \in \Rr^4\) et  de paramètres des réels  \(a\) et \(m\) : 
+        \[(\mathtt{S})  
+        \left\{\begin{array}{rcc}
+        x-z-t&=&0\\
+        -x+y+z&=&a\\ 
+        2x+y-z&=&m \\
+        x-mz-t&=&a \\
+        x+y+t&=&m.\end{array}\right.\]
+        Quelles sont les assertions vraies ?
+
+answers: 
+    - value: |
+        \((\mathtt{S}) \Leftrightarrow
+        \left\{\begin{array}{rcc}
+        x-z-t&=&0\\
+        y-t&=&a\\
+        z+3t&=&m-a \\
+        (1-m)z&=&a.\end{array}\right.\)
+      correct: True
+
+    - value: |
+        Si \(m=1\) et \(a=0\),  \((\mathtt{S})\) admet une unique solution.
+      correct: False
+
+    - value: |
+        Si \(m \neq 1\) et \(a\) un réel quelconque,  \((\mathtt{S})\) admet une unique solution.
+      correct: True
+
+    - value: |
+        Si \(m \neq 1\) et \(a\neq 0\), \((\mathtt{S})\) admet une infinité de solutions.
+      correct: False
+
+explanations: |
+        \[(\mathtt{S}) \Leftrightarrow  
+        \left\{\begin{array}{rcc}
+        x-z-t&=&0\\
+        y-t&=&a\\ 
+        y+z+2t&=&m \\
+        (1-m)z&=&a \end{array}\right.
+        \Leftrightarrow  
+        \left\{\begin{array}{rcc}
+        x-z-t&=&0\\
+        y-t&=&a\\ 
+        z+3t&=&m-a \\
+        (1-m)z&=&a.\end{array}\right.\]
+        \begin{enumerate}
+        \item[-]Si \(m=1\) et \(a\neq 0\), \((\mathtt{S})\) n'admet pas  de solution.
+        \item[-]Si \(m=1\) et \(a= 0\), \((\mathtt{S})\) admet une infinité de solutions.
+        \item[-]Si \(m\neq1\), \((\mathtt{S})\) admet une unique solution.
+        \end{enumerate}
+
+---
+author: Abdellah Hanani, Mohamed Mzari
+
+section: Systèmes d'équations linéaires
+
+subsection: Systèmes d'équations linéaires | Niveau 3
+
+tags:
+    - motcle: Système linéaire à un paramètre/Méthode du Pivot de Gauss
+
+question: |
+        On considère le système d'équations, d'inconnue \((x,y,z)\in \Rr^3\) et de paramètre un réel  \(m\) : 
+        \[(\mathtt{S})  
+        \left\{\begin{array}{rcc}
+        x+y+mz&=&1\\
+        x+my+z&=&1\\ 
+        mx+y+z&=&1.\\
+        \end{array}\right.\]
+        Quelles sont les assertions vraies ?
+
+answers: 
+    - value: |
+        \((\mathtt{S})  \Leftrightarrow
+        \left\{\begin{array}{rcc}
+        x+y+mz&=&1\\
+        (m-1)y+(1-m)z&=&0\\
+        (1-m)z&=&1-m.\\
+        \end{array}\right.\)
+      correct: False
+
+    - value: |
+        Si \(m =1\),  \((\mathtt{S})\) admet une infinité de solutions.
+      correct: True
+
+    - value: |
+        Si \(m=-2\), \((\mathtt{S})\) n'admet pas de solution.
+      correct: True
+
+    - value: |
+        Si \(m\neq 1\),  \((\mathtt{S})\) admet une unique solution.
+      correct: False
+
+explanations: |
+        \[(\mathtt{S}) \Leftrightarrow  
+        \left\{\begin{array}{rcc}
+        x+y+mz&=&1\\
+        (m-1)y+(1-m)z&=&0\\ 
+        (1-m)y+(1-m^2)z&=&1-m\\
+        \end{array}\right. \Leftrightarrow  
+        \left\{\begin{array}{rcc}
+        x+y+mz&=&1\\
+        (m-1)y+(1-m)z&=&0\\ 
+        (1-m)(2+m)z&=&1-m.\\
+        \end{array}\right. \]
+        \begin{enumerate}
+        \item[-]Si \(m=1\), \((\mathtt{S}) \Leftrightarrow  x+y+z=1 \) admet une infinité de solutions.
+        \item[-]Si \(m=-2\), \((\mathtt{S})\) n'admet pas de solution.
+        \item[-]Si \(m\neq 1\) et \(m\neq -2\),  \((\mathtt{S})\) admet une unique solution.
+        \end{enumerate}
+
+---
+author: Abdellah Hanani, Mohamed Mzari
+
+section: Systèmes d'équations linéaires
+
+subsection: Systèmes d'équations linéaires | Niveau 3
+
+tags:
+    - motcle: Système linéaire à un paramètre/Méthode du Pivot de Gauss
+
+question: |
+        On considère le système d'équations, d'inconnue \((x,y,z,t)\in \Rr^4\)  et de paramètre un réel  \(m\) : 
+        \[(\mathtt{S})  
+        \left\{\begin{array}{rcc}
+        x+y+z+mt&=&1 \\
+        x+y+mz+t&=&1\\
+        x+my+z+t&=&1\\ 
+        mx+y+z+t&=&1.\end{array}\right.\]
+        Quelles sont les assertions vraies ?
+
+answers: 
+    - value: |
+        \((\mathtt{S}) \Leftrightarrow
+        \left\{\begin{array}{rcc}
+        x+y+z+mt&=&1\\
+        (m-1)y+(1-m)t&=&0\\
+        (m-1)z+(1-m)t&=&0\\
+        (1-m)(3+m)t&=&1-m. \\
+        \end{array}\right.\)
+      correct: True
+
+    - value: |
+        Si \(m=1\), \((\mathtt{S})\) admet une infinité de solutions.
+      correct: True
+
+    - value: |
+        Si \(m =-3\), \((\mathtt{S})\) admet une unique solution.
+      correct: False
+
+    - value: |
+        Si \(m\neq 1\), \((\mathtt{S})\) admet une unique solution.
+      correct: False
+
+explanations: |
+        \[(\mathtt{S}) \Leftrightarrow  
+        \left\{\begin{array}{rcc}
+        x+y+z+mt&=&1\\
+        (m-1)y+(1-m)t&=&0\\ 
+        (m-1)z+(1-m)t&=&0 \\
+        (1-m)y+(1-m)z+(1-m^2)t&=&1-m\\
+        \end{array}\right.
+        \]
+        \[\Leftrightarrow  
+        \left\{\begin{array}{rcc}
+        x+y+z+mt&=&1\\
+        (m-1)y+(1-m)t&=&0\\ 
+        (m-1)z+(1-m)t&=&0 \\
+        (1-m)(3+m)t&=&1-m. \\
+        \end{array}\right. \]
+        \begin{enumerate}
+        \item[-]Si \(m=1\), \((\mathtt{S}) \Leftrightarrow  x+y+z+t=1 \) admet une infinité de solutions.
+        \item[-]Si \(m=-3\), \((\mathtt{S})\) n'admet pas de solution.
+        \item[-]Si \(m\neq 1\) et \(m\neq -3\) \((\mathtt{S})\) admet une unique solution.
+        \end{enumerate}
+
+---
+author: Abdellah Hanani, Mohamed Mzari
+
+section: Systèmes d'équations linéaires
+
+subsection: Systèmes d'équations linéaires | Niveau 3
+
+tags:
+    - motcle: Système linéaire à paramètres/Méthode du Pivot de Gauss
+
+question: |
+        On considère le système d'équations, d'inconnue \((x,y,z)\in \Rr^3\) et de paramètres des réels  \(a,b\) et \(c\) : 
+        \[(\mathtt{S})  
+        \left\{\begin{array}{rcc}
+        x+ay+a^2z&=&0\\
+        x+by+b^2z&=&0\\ 
+        x+cy+c^2z&=&0.\end{array}\right.\]
+        Quelles sont les assertions vraies ?
+
+answers: 
+    - value: |
+        \((\mathtt{S}) \Leftrightarrow
+        \left\{\begin{array}{rcc}
+        x+ay+a^2z&=&0\\
+        (b-a)y+(b^2-a^2)z&=&0\\
+        (c-a)y+(c^2-a^2)z&=&0.\\
+        \end{array}\right.\)
+      correct: True
+
+    - value: |
+        Si \(a,b\) et \(c\) sont des réels deux à deux distincts,  \((\mathtt{S})\) admet une infinité de solutions.
+      correct: False
+
+    - value: |
+        Si \(a=b\) et \(a\neq c\),  \((\mathtt{S})\) admet une unique  solution.
+      correct: False
+
+    - value: |
+        \(b=c\) et \(a\neq c\), \((\mathtt{S})\) n'admet pas de solution.
+      correct: False
+
+explanations: |
+        \[(\mathtt{S}) \Leftrightarrow  
+        \left\{\begin{array}{rcc}
+        x+ay+a^2z&=&0\\
+        (b-a)y+(b^2-a^2)z&=&0\\ 
+        (c-a)y+(c^2-a^2)z&=&0.\\ 
+        \end{array}\right.\]
+        \begin{enumerate}
+        \item[-]Si \(a=b=c\), \((\mathtt{S})\Leftrightarrow  x+ay+a^2z=0 \), \((\mathtt{S})\) admet donc une infinité de solutions.
+        \item[-]Si \(a=b\) et \(a\neq c\), ou \(a=c\) et \(a\neq b\), ou  \(b=c\) et \(b\neq a\), \((\mathtt{S})\) admet  une infinité de solutions.
+        \item[-]Si \(a,b,c\) sont deux à deux distincts, \((\mathtt{S})\) admet donc une unique solution : \((0,0,0)\).
+        \end{enumerate}
+
+---
+author: Abdellah Hanani, Mohamed Mzari
+
+section: Systèmes d'équations linéaires
+
+subsection: Systèmes d'équations linéaires | Niveau 3
+
+tags:
+    - motcle: Système linéaire à paramètres/Méthode du Pivot de Gauss
+
+question: |
+        On considère le système d'équations, d'inconnue \((x,y,z,t)\in \Rr^4\)  et de paramètres des réels \(m\) et \(a\) : 
+        \[(\mathtt{S})  
+        \left\{\begin{array}{rcc}
+        x+y+z+mt&=&1\\
+        x+y+mz+t&=&a\\ 
+        x+my+z+t&=&a^2\\
+        mx+y+z+t&=&a^3.\end{array}\right.\]
+        Quelles sont les assertions vraies ?
+
+answers: 
+    - value: |
+        \((\mathtt{S}) \Leftrightarrow
+        \left\{\begin{array}{rcc}
+        x+y+z+mt&=&1\\
+        (m-1)y+(1-m)t&=&a^2-1\\
+        (m-1)z+(1-m)t&=&a-1\\
+        (1-m)(3+m)t&=&a^3+a^2+a-m-2. \\
+        \end{array}\right. \)
+      correct: True
+
+    - value: |
+        Si \(m =1\),  \((\mathtt{S})\) admet une infinité de solutions.
+      correct: False
+
+    - value: |
+        Si \(m\neq 1\), \((\mathtt{S})\) admet une unique solution.
+      correct: False
+
+    - value: |
+        Si \(m=-3\) et \(a\neq -1\), \((\mathtt{S})\) n'admet pas de solution.
+      correct: True
+
+explanations: |
+        \[(\mathtt{S}) \Leftrightarrow  
+        \left\{\begin{array}{rcc}
+        x+y+z+mt&=&1\\
+        (m-1)y+(1-m)t&=&a^2-1\\ 
+        (m-1)z+(1-m)t&=&a-1 \\
+        (1-m)y+(1-m)z+(1-m^2)t&=&a^3-m\\
+        \end{array}\right.\]
+        \[ \Leftrightarrow  
+        \left\{\begin{array}{rcc}
+        x+y+z+mt&=&1\\
+        (m-1)y+(1-m)t&=&a^2-1\\ 
+        (m-1)z+(1-m)t&=&a-1 \\
+        (1-m)(3+m)t&=&a^3+a^2+a-m-2.\\
+        \end{array}\right. \]
+        \begin{enumerate}
+        \item[-]Si \(m=1\) et \(a=1\),  \((\mathtt{S})  \Leftrightarrow  x+y+z+t=1 \) admet une infinité de solutions.
+        \item[-]Si \(m=1\) et \(a\neq 1\),  \((\mathtt{S})\) n'admet pas de solution.
+        \item[-]Si \(m=-3\) et \(a=-1\),  \((\mathtt{S})\) admet une infinité de solutions.
+        \item[-]Si \(m=-3\) et \(a\neq -1\),  \((\mathtt{S})\) n'admet pas de solution.
+        \item[-]Si \(m\neq 1\) et \(m\neq -3\), \((\mathtt{S})\) admet une unique solution.
+        \end{enumerate}
+
+---
+author: Abdellah Hanani, Mohamed Mzari
+
+section: Systèmes d'équations linéaires
+
+subsection: Systèmes d'équations linéaires | Niveau 3
+
+tags:
+    - motcle: Système linéaire à paramètres/Méthode du Pivot de Gauss
+
+question: |
+        On considère le système d'équations, d'inconnue \((x,y,z)\in \Rr^3\) et de paramètres des réels \(a\) et \(m\) : 
+        \[(\mathtt{S})  
+        \left\{\begin{array}{rcc}
+        2x+y-z&=&2\\
+        x-y+z&=&4\\ 
+        3x+3y-z&=&4m \\
+        mx-y+z&=&2a+2. \end{array}\right.\]
+        Quelles sont les assertions vraies ?
+
+answers: 
+    - value: |
+        \((\mathtt{S})\Leftrightarrow
+        \left\{\begin{array}{rcc}
+        x-y+z&=&4\\
+        y-z&=&-2\\
+        z&=&2m \\
+        0&=&m-a. \\
+        \end{array}\right.\)
+      correct: True
+
+    - value: |
+        Si \(m=1\) et \(a=-1\), \((\mathtt{S})\) admet une unique solution.
+      correct: False
+
+    - value: |
+        Si \(m =a\), \((\mathtt{S})\) admet une infinité de solutions.
+      correct: False
+
+    - value: |
+        Si \(m\neq a\), \((\mathtt{S})\) n'admet pas de solution.
+      correct: True
+
+explanations: |
+        \[(\mathtt{S}) \Leftrightarrow 
+        \left\{\begin{array}{rcc}
+        x-y+z&=&4\\
+        y-z&=&-2\\ 
+        3y-2z&=&2m-6 \\
+        (m-1)y+(1-m)z&=&2a-4m+2 \\
+        \end{array}\right. \Leftrightarrow 
+        \left\{\begin{array}{rcc}
+        x-y+z&=&4\\
+        y-z&=&-2\\ 
+        z&=&2m \\
+        0&=&m-a. \\
+        \end{array}\right.\]
+        Si \(m=a\), \((\mathtt{S})\) admet une unique solution et si \(m\neq a\), \((\mathtt{S})\) n'admet pas de solution.
+
+---
+author: Abdellah Hanani, Mohamed Mzari
+
+section: Systèmes d'équations linéaires
+
+subsection: Systèmes d'équations linéaires | Niveau 3
+
+tags:
+    - motcle: Système linéaire/Système homogène
+
+question: |
+        Soit \((\mathtt{S})\) un système à \(3\) équations linéaires et \(2\) inconnues et \((\mathtt{S}_H)\) le système homogène associé. Quelles sont les assertions vraies ?
+
+answers: 
+    - value: |
+        \((\mathtt{S}_H)\) admet au moins une solution.
+      correct: True
+
+    - value: |
+        \((\mathtt{S})\) admet au moins une solution.
+      correct: False
+
+    - value: |
+        Si \(X_1\) et \(X_2\) sont des solutions de \((\mathtt{S})\), alors \(X_1+X_2\) est une solution de \((\mathtt{S})\).
+      correct: False
+
+    - value: |
+        \((\mathtt{S})\) admet une infinité de solutions si et seulement si les équations de \((\mathtt{S})\) sont celles de trois droites confondues.
+      correct: True
+
+explanations: |
+        \((\mathtt{S}_H)\) admet au moins le zéro de l'espace comme solution. Les équations de \((\mathtt{S})\) étant celles de \(3\) droites, \(3\) cas sont possibles :
+        \begin{enumerate}
+        \item[-] Les \(3\) droites sont confondues, dans ce cas, \((\mathtt{S})\) admet une infinité de solutions.
+        \item[-] Les \(3\) droites se coupent en un point, dans ce cas, \((\mathtt{S})\) admet une unique solution.
+        \item[-] L'intersection des \(3\) droites est vide, dans ce cas, \((\mathtt{S})\) n'admet pas de solution.
+        \end{enumerate}
+
+---
+author: Abdellah Hanani, Mohamed Mzari
+
+section: Systèmes d'équations linéaires
+
+subsection: Systèmes d'équations linéaires | Niveau 3
+
+tags:
+    - motcle: Système linéaire/Système homogène
+
+question: |
+        Soit \((\mathtt{S})\) un système à \(3\) équations linéaires et \(3\) inconnues et \((\mathtt{S}_H)\) le système homogène associé. Quelles sont les assertions vraies ?
+
+answers: 
+    - value: |
+        \((\mathtt{S}_H)\) admet une infinité de solutions.
+      correct: False
+
+    - value: |
+        \((\mathtt{S})\) admet une unique solution.
+      correct: False
+
+    - value: |
+        Si \(X_1\) et \(X_2\) sont des solutions de \((\mathtt{S})\), alors \(X_1-X_2\) est une solution de \((\mathtt{S}_H)\).
+      correct: True
+
+    - value: |
+        \((\mathtt{S})\) admet une infinité de solutions si et seulement si les équations de \((\mathtt{S})\) sont celles de \(3\) plans confondus.
+      correct: False
+
+explanations: |
+        \((\mathtt{S}_H)\) admet au moins le zéro de l'espace comme solution, mais n'admet pas nécessairement une infinité de solutions. Les équations de \((\mathtt{S})\) étant celles de \(3\) plans, \(4\) cas sont possibles :
+        \begin{enumerate}
+        \item[-] Les \(3\) plans sont confondus, dans ce cas, \((\mathtt{S})\) admet une infinité de solutions.
+        \item[-] Les \(3\) plans se coupent en une droite, dans ce cas, \((\mathtt{S})\) admet une infinité de solutions.
+        \item[-] Les \(3\) plans se coupent en un point, dans ce cas, \((\mathtt{S})\) admet une unique solution.
+        \item[-] L'intersection des  \(3\) plans est vide, dans ce cas, \((\mathtt{S})\) n'admet pas de solution.
+        \end{enumerate}
+
+---
+author: Abdellah Hanani, Mohamed Mzari
+
+section: Systèmes d'équations linéaires
+
+subsection: Systèmes d'équations linéaires | Niveau 3
+
+tags:
+    - motcle: Système linéaire/ Système échelonné
+
+question: |
+        Soit \((\mathtt{S})\) un système d'équations linéaires et \((\mathtt{S}_E)\) un système échelonné obtenu par la méthode de résolution du pivot de Gauss. Quelles sont les assertions vraies ?
+
+answers: 
+    - value: |
+        \((\mathtt{S})\) admet une infinité de solutions si et seulement si toute équation de \((\mathtt{S}_E)\) dont le premier membre est nul a aussi son second membre nul.
+      correct: False
+
+    - value: |
+        \((\mathtt{S})\) n'admet pas de solution si et seulement s'il existe une équation de \((\mathtt{S}_E)\) ayant un premier membre nul et un second membre non nul.
+      correct: True
+
+    - value: |
+        \((\mathtt{S})\) admet une unique solution si et seulement si le nombre d'équations de \((\mathtt{S}_E)\) dont le premier membre est non nul est égal au nombre d'inconnues.
+      correct: False
+
+    - value: |
+        Si le nombre d'équations de \((\mathtt{S}_E)\) dont le premier membre est non nul est strictement inférieur au nombre d'inconnues et les équations ayant un premier membre nul admettent aussi le second membre nul, alors \((\mathtt{S})\) admet une infinité de solutions.
+      correct: True
+
+explanations: |
+        D'après la méthode du pivot de Gauss, \((\mathtt{S})\) admet une solution si et seulement si toute équation de \((\mathtt{S}_E)\) dont le premier membre est nul a aussi son second membre nul.
+
+---
+author: Abdellah Hanani, Mohamed Mzari
+
+section: Systèmes d'équations linéaires
+
+subsection: Systèmes d'équations linéaires | Niveau 3
+
+tags:
+    - motcle: Système linéaire/Système échelonné/Rang d'un système
+
+question: |
+        Soit \((\mathtt{S})\) un système à \(4\) équations et \(3\) inconnues, \((\mathtt{S}_E)\) un système échelonné obtenu par la méthode de résolution du pivot de Gauss et \(r\) le rang du système \((\mathtt{S})\), c.à.d le nombre d'équations de \((\mathtt{S}_E)\) ayant un premier membre non nul. Quelles sont les assertions vraies ?
+
+answers: 
+    - value: |
+        Si \(r=1\), alors \((\mathtt{S})\) admet une infinité de solutions.
+      correct: False
+
+    - value: |
+        Si \(r=2\) et les équations ayant un premier membre nul admettent aussi le second membre nul, alors \((\mathtt{S})\) admet une infinité de solutions.
+      correct: True
+
+    - value: |
+        Si \(r=3\) et l'équation ayant un premier membre nul admet aussi le second membre nul, alors \((\mathtt{S})\) admet une unique solution.
+      correct: True
+
+    - value: |
+        Si \(r=3\), alors \((\mathtt{S})\) admet une unique solution.
+      correct: False
+
+explanations: |
+        D'après la méthode du pivot de Gauss, \((\mathtt{S})\) admet une solution si et seulement si toute équation de \((\mathtt{S}_E)\) dont le premier membre est nul a aussi son second membre nul.
+
+---
+author: Abdellah Hanani, Mohamed Mzari
+
+section: Systèmes d'équations linéaires
+
+subsection: Systèmes d'équations linéaires | Niveau 3
+
+tags:
+    - motcle: Polynômes/Système linéaire
+
+question: |
+        Soit \(P\) un polynôme à coefficients réels de degré \(\le 3\) vérifiant les conditions :
+        \[P(1)=1,\quad P(0)=1,\quad P(-1)=-1\quad \mbox{et}\quad P'(1)= 3.\]
+        Quelles sont les assertions vraies ?
+
+answers: 
+    - value: |
+        Un tel polynôme \(P\) n'existe pas.
+      correct: False
+
+    - value: |
+        Il existe une infinité de polynômes \(P\) vérifiant ces conditions.
+      correct: False
+
+    - value: |
+        Il existe un unique polynôme \(P\)  vérifiant ces conditions.
+      correct: True
+
+    - value: |
+        Si \(P\) est un polynôme qui vérifie ces conditions, alors \(P(2)=2\).
+      correct: False
+
+explanations: |
+        On pose : \(P(X)=aX^3+bX^2+cX+d\), où \(a,b,c\) et \(d\) sont des réels à déterminer. En résolvant le système :
+        \[(\mathtt{S})  
+        \left\{\begin{array}{rcc}
+        P(1)&=&1\\
+        P(0)&=&1\\ 
+        P(-1)&=&-1\\
+        P'(1)&=&3 \\
+        \end{array}\right.
+        \Leftrightarrow  
+        \left\{\begin{array}{rcc}
+        a+b+c+d&=&1\\
+        d&=&1\\ 
+        -a+b-c+d&=&-1\\
+        3a+2b+c&=&3. \\
+        \end{array}\right. \]
+        On obtient : \(P(X)=2X^3-X^2-X+1\). Par conséquent il existe un unique polynôme vérifiant les conditions ci-dessus et \(P(2)=11\).
+
+---
+author: Abdellah Hanani, Mohamed Mzari
+
+section: Systèmes d'équations linéaires
+
+subsection: Systèmes d'équations linéaires | Niveau 4
+
+tags:
+    - motcle: Système linéaire à \(n\) inconnus et à un paramètre
+
+question: |
+        On considère le système d'équations, d'inconnue \((x_1,x_2,\dots,x_n) \in \Rr^n\), \(n \ge 2\) :
+        \[(\mathtt{S})  
+        \left\{\begin{array}{ccc}
+        x_1+x_2+\dots+ x_{n-2}+x_{n-1}+ax_n&=&1\\
+        x_1+x_2+\dots+ x_{n-2}+ax_{n-1}+x_n&=&1\\
+        x_1+x_2+\dots+ ax_{n-2}+x_{n-1}+x_n&=&1\\
+        \vdots  &\vdots&\vdots\\
+        ax_1+x_2+\dots+ x_{n-2}+x_{n-1}+x_n&=&1,
+        \end{array}\right.\]
+        où \(a\) est un paramètre réel. Quelles sont les assertions vraies ?
+
+answers: 
+    - value: |
+        \((\mathtt{S})\Leftrightarrow
+        \left\{\begin{array}{rcc}
+        x_1+x_2+\dots+ x_{n-2}+x_{n-1}+ax_n \qquad  \qquad  &=&1\\
+        (a-1)[x_{n-1}-x_n]\qquad \qquad&=&0\\
+        (a-1)[x_{n-2}-x_n]\qquad \qquad&=&0\\
+        \vdots \qquad \qquad&\vdots&\vdots\\
+        (a-1)[x_2-x_n]\qquad \qquad&=&0\\
+        (1-a)[x_2+\dots+x_{n-2}+x_{n-1}+(1+a)x_n]&=&1-a.\end{array}\right.\)
+      correct: True
+
+    - value: |
+        Si \(a=1\), \((\mathtt{S})\) admet une infinité de solutions.
+      correct: True
+
+    - value: |
+        Si \(a \neq 1\), \((\mathtt{S})\) admet une unique solution.
+      correct: False
+
+    - value: |
+        \(a=1-n\), \((\mathtt{S})\) n'admet pas de solution.
+      correct: True
+
+explanations: |
+        \[(\mathtt{S})  \Leftrightarrow 
+        \left\{\begin{array}{rcc}
+        x_1+x_2+\dots+ x_{n-2}+x_{n-1}+ax_n \qquad  \qquad  &=&1\\
+        (a-1)[x_{n-1}-x_n]\qquad \qquad&=&0\\
+        (a-1)[x_{n-2}-x_n]\qquad \qquad&=&0\\
+        \vdots \qquad \qquad&\vdots&\vdots\\
+        (a-1)[x_2-x_n]\qquad \qquad&=&0\\
+        (1-a)[x_2+\dots+x_{n-2}+x_{n-1}+(1+a)x_n]&=&1-a.\\
+        \end{array}\right.\]
+        \begin{enumerate}
+        \item[-]Si \(a=1\), \((\mathtt{S}) \Leftrightarrow x_1+x_2+\dots+ x_n =1\), donc \((\mathtt{S})\) admet une infinité de solutions.
+        \item[-]Si \(a\neq 1\), \[(\mathtt{S})  \Leftrightarrow \left\{\begin{array}{rcc}
+        x_1+x_2+\dots+ x_{n-2}+x_{n-1}+ax_n   &=&1\\
+        x_{n-1}&=&x_n\\
+        x_{n-2}&=&x_n\\
+        \vdots &\vdots&\vdots\\
+        x_2&=&x_n\\
+        (n-1+a)x_n&=&1.\\
+        \end{array}\right.\]
+        \item[-]Si \(a=1-n\), \((\mathtt{S})\) n'admet pas de solution.
+        \item[-]Si \(a\neq 1-n\), \((\mathtt{S})\) admet une unique solution.
+        \end{enumerate}
+
+---
+author: Abdellah Hanani, Mohamed Mzari
+
+section: Systèmes d'équations linéaires
+
+subsection: Systèmes d'équations linéaires | Niveau 4
+
+tags:
+    - motcle: Système linéaire à \(n\) inconnus et à paramètres
+
+question: |
+        On considère le système d'équations, d'inconnue \((x_1,x_2,\dots,x_n) \in \Rr^n\), \(n \ge 2\) : et de paramètre des réels  \(a,b\) :
+        \[(\mathtt{S})  
+        \left\{\begin{array}{ccc}
+        x_1+x_2 + x_3+\dots \quad \dots+ x_n&=&1\\
+        ax_1+bx_2 + bx_3 +  \dots   +bx_n&=&1\\
+        ax_1+ax_2+bx_3 + \dots +bx_n&=&1\\ \vdots &\vdots&\vdots\\
+        ax_1+\dots + ax_{n-1}+bx_n&=&1,\end{array}\right.\]
+        où \(a\) et \(b\) sont des paramètre réels. Quelles sont les assertions vraies ?
+
+answers: 
+    - value: |
+        \((\mathtt{S}) \Leftrightarrow
+        \left\{\begin{array}{rcc}
+        x_1+x_2+x_3+\dots+ x_n&=&1\\
+        (b-a)[x_2+x_3+\dots+ x_n]&=&1-a\\
+        (b-a)[x_3+\dots +x_n]&=&1-a\\
+        \vdots &\vdots&\vdots\\
+        (b-a)x_n&=&1-a.\\
+        \end{array}\right.\)
+      correct: True
+
+    - value: |
+        Si \(a=b\), \((\mathtt{S})\) admet une infinité de solutions.
+      correct: False
+
+    - value: |
+        Si \(a\neq b\), \((\mathtt{S})\) n'admet pas de solution.
+      correct: False
+
+    - value: |
+        \((\mathtt{S})\) admet une infinité de solutions si et seulement si \(a=b=1\).
+      correct: True
+
+explanations: |
+        L'algorithme de Gauss donne :
+        \[(\mathtt{S}) \Leftrightarrow  
+        \left\{\begin{array}{rcc}
+        x_1+x_2+x_3+\dots+ x_n&=&1\\
+        (b-a)[x_2+x_3+\dots+ x_n]&=&1-a\\
+        (b-a)[x_3+\dots +x_n]&=&1-a\\
+        \vdots &\vdots&\vdots\\
+        (b-a)x_n&=&1-a.
+        \end{array}\right.\]
+        \begin{enumerate}
+        \item[-] Si \(a=b=1\), le système \((\mathtt{S})\Leftrightarrow x_1+x_2+\dots+ x_n=1\). Donc \((\mathtt{S})\) admet une infinité de solutions.
+        \item[-] Si \(a=b \neq 1\), \((\mathtt{S})\) n'admet pas de solution.
+        \item[-] Si \(a\neq b\), \((\mathtt{S})\) admet une unique  solution.
+        \end{enumerate}
+
+---
+author: Abdellah Hanani, Mohamed Mzari
+
+section: Systèmes d'équations linéaires
+
+subsection: Systèmes d'équations linéaires | Niveau 4
+
+tags:
+    - motcle: Polynôme/Formule de Taylor
+
+question: |
+        Soit \(P\) un polynôme à coefficients réels de degré \(\le 11\) vérifiant les conditions : 
+        \[P(1)=1!,\quad P'(1)=2!,\quad P''(1)=3!, \dots , \quad
+        P^{(10)}(1)= 11!.\]
+        Quelles sont les assertions vraies ?
+
+answers: 
+    - value: |
+        Un tel polynôme \(P\) n'existe pas
+      correct: False
+
+    - value: |
+        Il existe une infnité de polynômes \(P\) vérifiant ces conditions
+      correct: True
+
+    - value: |
+        Il existe un unique polynôme \(P\) vérifiant ces conditions
+      correct: False
+
+    - value: |
+        Si \(P\) est un polynôme qui vérifie ces conditions, alors
+        \(P(X)=1+2(X-1)+ 3(X-1)^2+ \dots + 11(X-1)^{10} +  12(X-1)^{11}\)
+      correct: False
+
+explanations: |
+        On peut résoudre un système dont les inconnues (\(12\) inconnues) sont les coefficients du polynôme, mais cela est long ! Par contre, en appliquant la formule de Taylor à \(P\), au voisinage de \(1\),  on a :
+        \[P(X)=P(1)+(X-1)\frac{P'(1)}{1!} + (X-1)^2\frac{P''(1)}{2!}+ \dots + (X-1)^{11}\frac{P^{(11)}(1)}{11!}.\]
+        En utilisant les conditions que doit vérifier \(P\), on obtient :
+        \[P(X)=1+2(X-1)+ 3(X-1)^2+ \dots + 11(X-1)^{10} +  a(X-1)^{11},\]
+        où \(a\) est un réel. Par conséquent, il existe une infinité de polynômes vérifiant les conditions ci-dessus.
+

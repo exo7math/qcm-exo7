@@ -1,0 +1,1755 @@
+---
+author: Arnaud Bodin, Abdellah Hanani, Mohamed Mzari
+
+section: Réels | 120
+
+subsection: Rationnels | Facile | 120.01
+
+link:
+    - type: cours
+      link: http://exo7.emath.fr/cours/ch_reels.pdf
+      title: Les nombres réels
+
+    - type: video
+      link: http://youtu.be/NCWWVven9Cs
+      title: L'ensemble des nombres rationnels
+
+    - type: video
+      link: http://youtu.be/83z7Bpz7Fzo
+      title: Propriétés des réels
+
+    - type: video
+      link: http://youtu.be/rYOyqI9YLgA
+      title: Densité des rationnels
+
+    - type: video
+      link: http://youtu.be/sBnmcj3jTFY
+      title: Borne supérieure
+
+    - type: exercices
+      link: http://exo7.emath.fr/ficpdf/fic00009.pdf
+      title: Propriétés des réels
+
+tags:
+    - motcle: fraction
+
+question: |
+        Quelles sont les assertions vraies ?
+
+answers: 
+    - value: |
+        \(\frac{4}{16}+\frac{4}{20} = \frac{9}{16}\)
+      correct: False
+
+    - value: |
+        \(\frac{14}{12}+\frac{12}{14} = \frac{85}{42}\)
+      correct: True
+
+    - value: |
+        \(\frac{36}{5} - 3 = \frac{21}{5}\)
+      correct: True
+
+    - value: |
+        \(\frac{14}{15}/\frac{21}{35} = \frac{14}{9}\)
+      correct: True
+
+explanations: |
+        Pour additionner deux fractions rationnels, il faut d'abord les réduire au même dénominateur.
+
+---
+author: Arnaud Bodin, Abdellah Hanani, Mohamed Mzari
+
+section: Réels | 120
+
+subsection: Rationnels | Facile | 120.01
+
+link:
+    - type: cours
+      link: http://exo7.emath.fr/cours/ch_reels.pdf
+      title: Les nombres réels
+
+    - type: video
+      link: http://youtu.be/NCWWVven9Cs
+      title: L'ensemble des nombres rationnels
+
+    - type: video
+      link: http://youtu.be/83z7Bpz7Fzo
+      title: Propriétés des réels
+
+    - type: video
+      link: http://youtu.be/rYOyqI9YLgA
+      title: Densité des rationnels
+
+    - type: video
+      link: http://youtu.be/sBnmcj3jTFY
+      title: Borne supérieure
+
+    - type: exercices
+      link: http://exo7.emath.fr/ficpdf/fic00009.pdf
+      title: Propriétés des réels
+
+tags:
+    - motcle: fraction
+
+question: |
+        Quelles sont les assertions vraies ?
+
+answers: 
+    - value: |
+        \(\frac{1}{7} = 0,142142142\ldots\)
+      correct: False
+
+    - value: |
+        Le nombre dont l'écriture décimale est \(0,090909\ldots\) est un nombre rationnel.
+      correct: True
+
+    - value: |
+        \(9,99999\ldots = 10\)
+      correct: True
+
+    - value: |
+        \(\frac{1}{5} = 0,202020\ldots\)
+      correct: False
+
+explanations: |
+        On trouve l'écriture décimale d'un rationnel en calculant la division !
+        Si on a une écriture décimale finie ou périodique alors c'est un nombre rationnel.
+
+---
+author: Arnaud Bodin, Abdellah Hanani, Mohamed Mzari
+
+section: Réels | 120
+
+subsection: Rationnels | Moyen | 120.01
+
+link:
+    - type: cours
+      link: http://exo7.emath.fr/cours/ch_reels.pdf
+      title: Les nombres réels
+
+    - type: video
+      link: http://youtu.be/NCWWVven9Cs
+      title: L'ensemble des nombres rationnels
+
+    - type: video
+      link: http://youtu.be/83z7Bpz7Fzo
+      title: Propriétés des réels
+
+    - type: video
+      link: http://youtu.be/rYOyqI9YLgA
+      title: Densité des rationnels
+
+    - type: video
+      link: http://youtu.be/sBnmcj3jTFY
+      title: Borne supérieure
+
+    - type: exercices
+      link: http://exo7.emath.fr/ficpdf/fic00009.pdf
+      title: Propriétés des réels
+
+tags:
+    - motcle: fraction
+
+question: |
+        Soient \(x\) et \(y\) deux nombres rationnels strictement positifs.
+        Parmi les nombres réels suivants, lesquels sont aussi des nombres rationnels ?
+
+answers: 
+    - value: |
+        \(\frac{x-y}{x+y}\)
+      correct: True
+
+    - value: |
+        \(\frac{\sqrt{x}}{\sqrt{y}}\)
+      correct: False
+
+    - value: |
+        \(x-y^2\)
+      correct: True
+
+    - value: |
+        \((\sqrt{x}-\sqrt{y})(\sqrt{x}+\sqrt{y})\)
+      correct: True
+
+explanations: |
+        La somme, le produit, le quotient de deux nombres rationnels reste un nombre rationnel. La racine carrée d'un nombre rationnel n'est pas toujours un nombre rationnel (par exemple la racine carrée de \(2\)). Par contre, par identité remarquable, on a \((\sqrt{x}-\sqrt{y})(\sqrt{x}+\sqrt{y}) = x^2-y^2\) qui est un nombre rationnel.
+
+---
+author: Arnaud Bodin, Abdellah Hanani, Mohamed Mzari
+
+section: Réels | 120
+
+subsection: Rationnels | Moyen | 120.01
+
+link:
+    - type: cours
+      link: http://exo7.emath.fr/cours/ch_reels.pdf
+      title: Les nombres réels
+
+    - type: video
+      link: http://youtu.be/NCWWVven9Cs
+      title: L'ensemble des nombres rationnels
+
+    - type: video
+      link: http://youtu.be/83z7Bpz7Fzo
+      title: Propriétés des réels
+
+    - type: video
+      link: http://youtu.be/rYOyqI9YLgA
+      title: Densité des rationnels
+
+    - type: video
+      link: http://youtu.be/sBnmcj3jTFY
+      title: Borne supérieure
+
+    - type: exercices
+      link: http://exo7.emath.fr/ficpdf/fic00009.pdf
+      title: Propriétés des réels
+
+tags:
+    - motcle: fraction
+
+question: |
+        Quelles sont les assertions vraies ?
+
+answers: 
+    - value: |
+        La somme de deux nombres rationnels est un nombre rationnel.
+      correct: True
+
+    - value: |
+        Le produit de deux nombres rationnels est un nombre rationnel.
+      correct: True
+
+    - value: |
+        La somme de deux nombres irrationnels est un nombre irrationnel.
+      correct: False
+
+    - value: |
+        Le produit de deux nombres irrationnels est un nombre irrationnel.
+      correct: False
+
+explanations: |
+        La somme de deux nombres rationnels est un nombre rationnel. Le produit aussi.
+        C'est en général faux pour les nombres irrationnels !
+
+---
+author: Arnaud Bodin, Abdellah Hanani, Mohamed Mzari
+
+section: Réels | 120
+
+subsection: Rationnels | Difficile | 120.01
+
+link:
+    - type: cours
+      link: http://exo7.emath.fr/cours/ch_reels.pdf
+      title: Les nombres réels
+
+    - type: video
+      link: http://youtu.be/NCWWVven9Cs
+      title: L'ensemble des nombres rationnels
+
+    - type: video
+      link: http://youtu.be/83z7Bpz7Fzo
+      title: Propriétés des réels
+
+    - type: video
+      link: http://youtu.be/rYOyqI9YLgA
+      title: Densité des rationnels
+
+    - type: video
+      link: http://youtu.be/sBnmcj3jTFY
+      title: Borne supérieure
+
+    - type: exercices
+      link: http://exo7.emath.fr/ficpdf/fic00009.pdf
+      title: Propriétés des réels
+
+tags:
+    - motcle: écriture décimale
+
+question: |
+        Quelles sont les assertions vraies ?
+
+answers: 
+    - value: |
+        L'écriture décimale de \(\sqrt{3}\) est finie ou périodique.
+      correct: False
+
+    - value: |
+        L'écriture décimale de \(\frac{n}{n+1}\) est finie ou périodique (quelque soit \(n\in\Nn\)).
+      correct: True
+
+    - value: |
+        Un nombre réel qui admet une écriture décimale infinie est un nombre irrationnel.
+      correct: False
+
+    - value: |
+        Un nombre réel qui admet une écriture décimale finie est un nombre rationnel.
+      correct: True
+
+explanations: |
+        Les nombre rationnels sont exactement les nombres qui admettent une écriture décimale finie ou périodique.
+
+---
+author: Arnaud Bodin, Abdellah Hanani, Mohamed Mzari
+
+section: Réels | 120
+
+subsection: Rationnels | Difficile | 120.01
+
+link:
+    - type: cours
+      link: http://exo7.emath.fr/cours/ch_reels.pdf
+      title: Les nombres réels
+
+    - type: video
+      link: http://youtu.be/NCWWVven9Cs
+      title: L'ensemble des nombres rationnels
+
+    - type: video
+      link: http://youtu.be/83z7Bpz7Fzo
+      title: Propriétés des réels
+
+    - type: video
+      link: http://youtu.be/rYOyqI9YLgA
+      title: Densité des rationnels
+
+    - type: video
+      link: http://youtu.be/sBnmcj3jTFY
+      title: Borne supérieure
+
+    - type: exercices
+      link: http://exo7.emath.fr/ficpdf/fic00009.pdf
+      title: Propriétés des réels
+
+tags:
+    - motcle: irrationnel
+
+question: |
+        Je veux montrer que \(\log 13\), est un nombre irrationnel. On rappelle que \(\log 13\) est le réel tel que \(10^{\log 13} = 13\). Quelle démarche puis-je adopter ?
+
+answers: 
+    - value: |
+        Par division je calcule l'écriture décimale de \(\log 13\) et je montre qu'elle est périodique.
+      correct: False
+
+    - value: |
+        Je prouve par récurrence que \(\log n\) est irrationnel pour \(n\ge2\).
+      correct: False
+
+    - value: |
+        Je suppose par l'absurde que \(\log 13 = \frac pq\), avec \(p,q \in \Nn^*\) et je cherche une contradiction après avoir écrit \(13^q = 10^p\).
+      correct: True
+
+    - value: |
+        Il est faux que \(\log 3\) soit un nombre irrationnel.
+      correct: False
+
+explanations: |
+        On raisonne par l'absurde en écrivant \(\log 13 = \frac pq\), où \(p,q\) sont des entiers strictement positifs. On en déduit que \(13^q = 10^p\). Comme \(13\) et \(10\) sont premiers entre eux, alors on obtient \(p=q=0\) et donc une contradiction.
+
+---
+author: Arnaud Bodin, Abdellah Hanani, Mohamed Mzari
+
+section: Réels | 120
+
+subsection: Propriétés de nombres réels | Facile | 120.03
+
+link:
+    - type: cours
+      link: http://exo7.emath.fr/cours/ch_reels.pdf
+      title: Les nombres réels
+
+    - type: video
+      link: http://youtu.be/NCWWVven9Cs
+      title: L'ensemble des nombres rationnels
+
+    - type: video
+      link: http://youtu.be/83z7Bpz7Fzo
+      title: Propriétés des réels
+
+    - type: video
+      link: http://youtu.be/rYOyqI9YLgA
+      title: Densité des rationnels
+
+    - type: video
+      link: http://youtu.be/sBnmcj3jTFY
+      title: Borne supérieure
+
+    - type: exercices
+      link: http://exo7.emath.fr/ficpdf/fic00009.pdf
+      title: Propriétés des réels
+
+tags:
+    - motcle: addition/multiplication
+
+question: |
+        Comment s'appelle les propriétés suivantes de \(\Rr\) ?
+
+answers: 
+    - value: |
+        \((a+b)+c=a+(b+c)\) est l'associativité de l'addition.
+      correct: True
+
+    - value: |
+        \((a \times b) \times c=a \times (b \times c)\) est la distributivité de la multiplication.
+      correct: False
+
+    - value: |
+        \(a \times b = b\times a\) est la commutativité de la multiplication.
+      correct: True
+
+    - value: |
+        \(a \times (b+c) = a\times b + a \times c\) est l'intégrité.
+      correct: False
+
+explanations: |
+        \((a+b)+c=a+(b+c)\) est l'associativité de l'addition.
+        \((a \times b)\times c=a \times (b \times c)\) est l'associativité de la multiplication.
+        \(a \times b = b\times a\) est la commutativité de la multiplication.
+        \(a \times (b+c) = a\times b + a \times c\) est la distributivité de la multiplication  par rapport à l'addition.
+
+---
+author: Arnaud Bodin, Abdellah Hanani, Mohamed Mzari
+
+section: Réels | 120
+
+subsection: Propriétés de nombres réels | Facile | 120.03
+
+link:
+    - type: cours
+      link: http://exo7.emath.fr/cours/ch_reels.pdf
+      title: Les nombres réels
+
+    - type: video
+      link: http://youtu.be/NCWWVven9Cs
+      title: L'ensemble des nombres rationnels
+
+    - type: video
+      link: http://youtu.be/83z7Bpz7Fzo
+      title: Propriétés des réels
+
+    - type: video
+      link: http://youtu.be/rYOyqI9YLgA
+      title: Densité des rationnels
+
+    - type: video
+      link: http://youtu.be/sBnmcj3jTFY
+      title: Borne supérieure
+
+    - type: exercices
+      link: http://exo7.emath.fr/ficpdf/fic00009.pdf
+      title: Propriétés des réels
+
+tags:
+    - motcle: inégalité
+
+question: |
+        Soient \(x,y \in \Rr\) tels que \(x \le 2y\).
+        Quelles sont les assertions vraies ?
+
+answers: 
+    - value: |
+        \(x^2 \le 2xy\)
+      correct: False
+
+    - value: |
+        \(y\le \frac{x}{2}\)
+      correct: False
+
+    - value: |
+        \(2x \le x+2y\)
+      correct: True
+
+    - value: |
+        \(-2y \le -x\)
+      correct: True
+
+explanations: |
+        Lorsque l'on multiplie par un nombre négatif alors le sens de l'inégalité change. Il faut faire attention lorsque l'on multiplie par \(x\), car le sens de l'inégalité est changé ou pas selon que \(x\) soit négatif ou positif !
+
+---
+author: Arnaud Bodin, Abdellah Hanani, Mohamed Mzari
+
+section: Réels | 120
+
+subsection: Propriétés de nombres réels | Facile | 120.03
+
+link:
+    - type: cours
+      link: http://exo7.emath.fr/cours/ch_reels.pdf
+      title: Les nombres réels
+
+    - type: video
+      link: http://youtu.be/NCWWVven9Cs
+      title: L'ensemble des nombres rationnels
+
+    - type: video
+      link: http://youtu.be/83z7Bpz7Fzo
+      title: Propriétés des réels
+
+    - type: video
+      link: http://youtu.be/rYOyqI9YLgA
+      title: Densité des rationnels
+
+    - type: video
+      link: http://youtu.be/sBnmcj3jTFY
+      title: Borne supérieure
+
+    - type: exercices
+      link: http://exo7.emath.fr/ficpdf/fic00009.pdf
+      title: Propriétés des réels
+
+tags:
+    - motcle: partie entière
+
+question: |
+        Notation : \(E(x)\) désigne la partie entière du réel \(x\).
+        Quelles sont les assertions vraies ?
+
+answers: 
+    - value: |
+        \(E(7,9) = 8\)
+      correct: False
+
+    - value: |
+        \(E(-3,33) = -4\)
+      correct: True
+
+    - value: |
+        \(E(\frac{5}{3}) = 5\)
+      correct: False
+
+    - value: |
+        \(E(x)=0 \implies x=0\)
+      correct: False
+
+explanations: |
+        La partie entière de \(x\) est le plus grand entier, inférieur ou égal à \(x\).
+
+---
+author: Arnaud Bodin, Abdellah Hanani, Mohamed Mzari
+
+section: Réels | 120
+
+subsection: Propriétés de nombres réels | Moyen | 120.03
+
+link:
+    - type: cours
+      link: http://exo7.emath.fr/cours/ch_reels.pdf
+      title: Les nombres réels
+
+    - type: video
+      link: http://youtu.be/NCWWVven9Cs
+      title: L'ensemble des nombres rationnels
+
+    - type: video
+      link: http://youtu.be/83z7Bpz7Fzo
+      title: Propriétés des réels
+
+    - type: video
+      link: http://youtu.be/rYOyqI9YLgA
+      title: Densité des rationnels
+
+    - type: video
+      link: http://youtu.be/sBnmcj3jTFY
+      title: Borne supérieure
+
+    - type: exercices
+      link: http://exo7.emath.fr/ficpdf/fic00009.pdf
+      title: Propriétés des réels
+
+tags:
+    - motcle: valeur absolue
+
+question: |
+        Pour \(x\in\Rr\), on définit \(f(x)= x - |x|\).
+        Quelles sont les assertions vraies ?
+
+answers: 
+    - value: |
+        \(\forall x \in \Rr \quad f(x)\ge0\)
+      correct: False
+
+    - value: |
+        \(\forall x \in \Rr \quad f(x)\le0\)
+      correct: True
+
+    - value: |
+        \(\forall x >0 \quad f(x) =  0\)
+      correct: True
+
+    - value: |
+        \(\forall x < 0 \quad f(x) =  -2x\)
+      correct: False
+
+explanations: |
+        Si \(x \ge 0\), alors \(f(x)=0\). Si \(x<0\) alors \(-|x|=x\) et donc \(f(x)=2x<0\).
+
+---
+author: Arnaud Bodin, Abdellah Hanani, Mohamed Mzari
+
+section: Réels | 120
+
+subsection: Propriétés de nombres réels | Moyen | 120.03
+
+link:
+    - type: cours
+      link: http://exo7.emath.fr/cours/ch_reels.pdf
+      title: Les nombres réels
+
+    - type: video
+      link: http://youtu.be/NCWWVven9Cs
+      title: L'ensemble des nombres rationnels
+
+    - type: video
+      link: http://youtu.be/83z7Bpz7Fzo
+      title: Propriétés des réels
+
+    - type: video
+      link: http://youtu.be/rYOyqI9YLgA
+      title: Densité des rationnels
+
+    - type: video
+      link: http://youtu.be/sBnmcj3jTFY
+      title: Borne supérieure
+
+    - type: exercices
+      link: http://exo7.emath.fr/ficpdf/fic00009.pdf
+      title: Propriétés des réels
+
+tags:
+    - motcle: maximum
+
+question: |
+        Quelles sont les assertions vraies concernant le maximum de nombres réels ?
+
+answers: 
+    - value: |
+        \(\max(a,b) \ge a\) et \(\max(a,b) \ge b\)
+      correct: True
+
+    - value: |
+        \(\max(a,b) > a\) ou \(\max(a,b) > b\)
+      correct: False
+
+    - value: |
+        \(\max( \max(a,b), c ) = \max(a,b,c)\)
+      correct: True
+
+    - value: |
+        \(\min(a, \max(a,b)) = a\)
+      correct: True
+
+explanations: |
+        \(\max(a,b) \ge a\) et \(\max(a,b) \ge b\) et \(\max( \max(a,b), c ) = \max(a,b,c)\). L'assertion "\(\max(a,b) > a\) ou \(\max(a,b) > b\)" est fausse (prendre \(a=b\)). Cherchez une preuve pour l'assertion restante !
+
+---
+author: Arnaud Bodin, Abdellah Hanani, Mohamed Mzari
+
+section: Réels | 120
+
+subsection: Propriétés de nombres réels | Moyen | 120.03
+
+link:
+    - type: cours
+      link: http://exo7.emath.fr/cours/ch_reels.pdf
+      title: Les nombres réels
+
+    - type: video
+      link: http://youtu.be/NCWWVven9Cs
+      title: L'ensemble des nombres rationnels
+
+    - type: video
+      link: http://youtu.be/83z7Bpz7Fzo
+      title: Propriétés des réels
+
+    - type: video
+      link: http://youtu.be/rYOyqI9YLgA
+      title: Densité des rationnels
+
+    - type: video
+      link: http://youtu.be/sBnmcj3jTFY
+      title: Borne supérieure
+
+    - type: exercices
+      link: http://exo7.emath.fr/ficpdf/fic00009.pdf
+      title: Propriétés des réels
+
+tags:
+    - motcle: partie entière
+
+question: |
+        Notation : \(E(x)\) désigne la partie entière du réel \(x\).
+        Quelles sont les assertions qui caractérisent la partie entière ?
+
+answers: 
+    - value: |
+        \(E(x)\) est le plus petit entier supérieur ou égal à \(x\).
+      correct: False
+
+    - value: |
+        \(E(x)\) est le plus grand entier inférieur ou égal à \(x\).
+      correct: True
+
+    - value: |
+        \(E(x)\) est l'entier tel que \(x \le E(x) < x+1\)
+      correct: False
+
+    - value: |
+        \(E(x)\) est l'entier tel que \(E(x) \le x < E(x)+1\)
+      correct: True
+
+explanations: |
+        \(E(x)\) est le plus grand entier inférieur ou égal à \(x\), ce qui se caractérise aussi par \(E(x) \le x < E(x)+1\).
+
+---
+author: Arnaud Bodin, Abdellah Hanani, Mohamed Mzari
+
+section: Réels | 120
+
+subsection: Propriétés de nombres réels | Moyen | 120.03
+
+link:
+    - type: cours
+      link: http://exo7.emath.fr/cours/ch_reels.pdf
+      title: Les nombres réels
+
+    - type: video
+      link: http://youtu.be/NCWWVven9Cs
+      title: L'ensemble des nombres rationnels
+
+    - type: video
+      link: http://youtu.be/83z7Bpz7Fzo
+      title: Propriétés des réels
+
+    - type: video
+      link: http://youtu.be/rYOyqI9YLgA
+      title: Densité des rationnels
+
+    - type: video
+      link: http://youtu.be/sBnmcj3jTFY
+      title: Borne supérieure
+
+    - type: exercices
+      link: http://exo7.emath.fr/ficpdf/fic00009.pdf
+      title: Propriétés des réels
+
+tags:
+    - motcle: partie entière
+
+question: |
+        Pour \(x\in \Rr\), on définit \(G(x) = E(10x)\).
+
+answers: 
+    - value: |
+        \(G(\frac23) = 66\)
+      correct: False
+
+    - value: |
+        \(\forall x>0 \quad G(x) \ge 1\)
+      correct: False
+
+    - value: |
+        \(G(x)=10 \iff x \in\{10,11,12,\ldots,19\}\)
+      correct: False
+
+    - value: |
+        \(G(x)=G(y) \implies |x-y| \le \frac{1}{10}\)
+      correct: True
+
+explanations: |
+        La fonction \(G\) est très similaire à la fonction partie entière.
+
+---
+author: Arnaud Bodin, Abdellah Hanani, Mohamed Mzari
+
+section: Réels | 120
+
+subsection: Propriétés de nombres réels | Moyen | 120.03
+
+link:
+    - type: cours
+      link: http://exo7.emath.fr/cours/ch_reels.pdf
+      title: Les nombres réels
+
+    - type: video
+      link: http://youtu.be/NCWWVven9Cs
+      title: L'ensemble des nombres rationnels
+
+    - type: video
+      link: http://youtu.be/83z7Bpz7Fzo
+      title: Propriétés des réels
+
+    - type: video
+      link: http://youtu.be/rYOyqI9YLgA
+      title: Densité des rationnels
+
+    - type: video
+      link: http://youtu.be/sBnmcj3jTFY
+      title: Borne supérieure
+
+    - type: exercices
+      link: http://exo7.emath.fr/ficpdf/fic00009.pdf
+      title: Propriétés des réels
+
+tags:
+    - motcle: valeur absolue
+
+question: |
+        Quelles sont les assertions vraies pour \(x\in\Rr\) ?
+
+answers: 
+    - value: |
+        \(x\neq 0 \iff |x|>0\)
+      correct: True
+
+    - value: |
+        \(|x|>1 \iff x \ge 1\)
+      correct: False
+
+    - value: |
+        \(\sqrt{x^2} = |x|\)
+      correct: True
+
+    - value: |
+        \(x+|x|=0 \iff x \le 0\)
+      correct: True
+
+explanations: |
+        L'assertion \(|x|>1 \iff x \ge 1\) est fausse, car  "\(|x| >1\)" est en fait équivalent à "\(x>1\) ou \(x<-1\)".
+
+---
+author: Arnaud Bodin, Abdellah Hanani, Mohamed Mzari
+
+section: Réels | 120
+
+subsection: Propriétés de nombres réels | Difficile | 120.03
+
+link:
+    - type: cours
+      link: http://exo7.emath.fr/cours/ch_reels.pdf
+      title: Les nombres réels
+
+    - type: video
+      link: http://youtu.be/NCWWVven9Cs
+      title: L'ensemble des nombres rationnels
+
+    - type: video
+      link: http://youtu.be/83z7Bpz7Fzo
+      title: Propriétés des réels
+
+    - type: video
+      link: http://youtu.be/rYOyqI9YLgA
+      title: Densité des rationnels
+
+    - type: video
+      link: http://youtu.be/sBnmcj3jTFY
+      title: Borne supérieure
+
+    - type: exercices
+      link: http://exo7.emath.fr/ficpdf/fic00009.pdf
+      title: Propriétés des réels
+
+tags:
+    - motcle: propriété d’Archimède
+
+question: |
+        Quelles propriétés découlent de la propriété d’Archimède des réels (c'est-à-dire \(\Rr\) est archimédien) ?
+
+answers: 
+    - value: |
+        \(\exists x>0 \quad \forall n \in\Nn \quad x>n\)
+      correct: False
+
+    - value: |
+        \(\forall x>0 \quad \exists n \in\Nn \quad n>x\)
+      correct: True
+
+    - value: |
+        \(\forall \epsilon >0 \quad \exists n \in \Nn \quad 0 < \frac 1n < \epsilon\)
+      correct: True
+
+    - value: |
+        \(\forall x>0 \quad \forall y>0 \quad \exists n \in \Nn \quad nx >y\)
+      correct: True
+
+explanations: |
+        La définition de la propriété d'Archimède est \(\forall x>0 \quad \exists n \in\Nn \quad n>x\). Cela implique les deux autres assertions vraies.
+
+---
+author: Arnaud Bodin, Abdellah Hanani, Mohamed Mzari
+
+section: Réels | 120
+
+subsection: Propriétés de nombres réels | Difficile | 120.03
+
+link:
+    - type: cours
+      link: http://exo7.emath.fr/cours/ch_reels.pdf
+      title: Les nombres réels
+
+    - type: video
+      link: http://youtu.be/NCWWVven9Cs
+      title: L'ensemble des nombres rationnels
+
+    - type: video
+      link: http://youtu.be/83z7Bpz7Fzo
+      title: Propriétés des réels
+
+    - type: video
+      link: http://youtu.be/rYOyqI9YLgA
+      title: Densité des rationnels
+
+    - type: video
+      link: http://youtu.be/sBnmcj3jTFY
+      title: Borne supérieure
+
+    - type: exercices
+      link: http://exo7.emath.fr/ficpdf/fic00009.pdf
+      title: Propriétés des réels
+
+tags:
+    - motcle: maximum
+
+question: |
+        Quelles sont les assertions vraies ?
+
+answers: 
+    - value: |
+        \(\max(x,y) = \frac{x+y-|x|-|y|}{2}\)
+      correct: False
+
+    - value: |
+        \(\max(x,y) = \frac{x+y-|x+y|}{2}\)
+      correct: False
+
+    - value: |
+        \(\max(x,y) = \frac{|x+y|-x-y}{2}\)
+      correct: False
+
+    - value: |
+        \(\max(x,y) = \frac{x+y + |x-y|}{2}\)
+      correct: True
+
+explanations: |
+        On prouve la formule \(\max(x,y) = \frac{x+y + |x-y|}{2}\) en distinguant le cas \(x-y \ge0\) puis \(x-y<0\).
+
+---
+author: Arnaud Bodin, Abdellah Hanani, Mohamed Mzari
+
+section: Réels | 120
+
+subsection: Propriétés de nombres réels | Difficile | 120.03
+
+link:
+    - type: cours
+      link: http://exo7.emath.fr/cours/ch_reels.pdf
+      title: Les nombres réels
+
+    - type: video
+      link: http://youtu.be/NCWWVven9Cs
+      title: L'ensemble des nombres rationnels
+
+    - type: video
+      link: http://youtu.be/83z7Bpz7Fzo
+      title: Propriétés des réels
+
+    - type: video
+      link: http://youtu.be/rYOyqI9YLgA
+      title: Densité des rationnels
+
+    - type: video
+      link: http://youtu.be/sBnmcj3jTFY
+      title: Borne supérieure
+
+    - type: exercices
+      link: http://exo7.emath.fr/ficpdf/fic00009.pdf
+      title: Propriétés des réels
+
+tags:
+    - motcle: valeur absolue
+
+question: |
+        Quelles sont les assertions vraies, pour tout \(x,y\in\Rr\) ?
+
+answers: 
+    - value: |
+        \(|x-y| \le |x|-|y|\)
+      correct: False
+
+    - value: |
+        \(|x| \le |x-y|+|y|\)
+      correct: True
+
+    - value: |
+        \(|x+y| \ge |x| + |y|\)
+      correct: False
+
+    - value: |
+        \(|x-y| \le |x| + |y|\)
+      correct: True
+
+explanations: |
+        L'inégalité triangulaire est \(|x+y| \le |x| + |y|\). Les assertions vraies en découlent.
+
+---
+author: Arnaud Bodin, Abdellah Hanani, Mohamed Mzari
+
+section: Réels | 120
+
+subsection: Propriétés de nombres réels | Difficile | 120.03
+
+link:
+    - type: cours
+      link: http://exo7.emath.fr/cours/ch_reels.pdf
+      title: Les nombres réels
+
+    - type: video
+      link: http://youtu.be/NCWWVven9Cs
+      title: L'ensemble des nombres rationnels
+
+    - type: video
+      link: http://youtu.be/83z7Bpz7Fzo
+      title: Propriétés des réels
+
+    - type: video
+      link: http://youtu.be/rYOyqI9YLgA
+      title: Densité des rationnels
+
+    - type: video
+      link: http://youtu.be/sBnmcj3jTFY
+      title: Borne supérieure
+
+    - type: exercices
+      link: http://exo7.emath.fr/ficpdf/fic00009.pdf
+      title: Propriétés des réels
+
+tags:
+    - motcle: partie entière
+
+question: |
+        On définit la partie fractionnaire d'un réel \(x\), par \(F(x) = x -E(x)\).
+
+answers: 
+    - value: |
+        \(F(x) = 0 \iff 0 \le x <1\)
+      correct: False
+
+    - value: |
+        Si \(7 \le x <8\) alors \(F(x) = 7\).
+      correct: False
+
+    - value: |
+        Si \(x=-0,2\) alors \(F(x) = -0,2\).
+      correct: False
+
+    - value: |
+        Si \(F(x)=F(y)\) alors \(x-y \in \Zz\).
+      correct: True
+
+explanations: |
+        La partie fractionnaire est égale à la partie "après la virgule".
+        Par exemple \(F(12,3456) = 0,3456\).
+
+---
+author: Arnaud Bodin, Abdellah Hanani, Mohamed Mzari
+
+section: Réels | 120
+
+subsection: Intervalle, densité | Facile | 120.04
+
+link:
+    - type: cours
+      link: http://exo7.emath.fr/cours/ch_reels.pdf
+      title: Les nombres réels
+
+    - type: video
+      link: http://youtu.be/NCWWVven9Cs
+      title: L'ensemble des nombres rationnels
+
+    - type: video
+      link: http://youtu.be/83z7Bpz7Fzo
+      title: Propriétés des réels
+
+    - type: video
+      link: http://youtu.be/rYOyqI9YLgA
+      title: Densité des rationnels
+
+    - type: video
+      link: http://youtu.be/sBnmcj3jTFY
+      title: Borne supérieure
+
+    - type: exercices
+      link: http://exo7.emath.fr/ficpdf/fic00009.pdf
+      title: Propriétés des réels
+
+tags:
+    - motcle: intervalle
+
+question: |
+        Quelles sont les assertions vraies ?
+
+answers: 
+    - value: |
+        \(x \in ]5;7[ \iff |x-6|<1\)
+      correct: True
+
+    - value: |
+        \(x \in ]5;7[ \iff |x-1|<6\)
+      correct: False
+
+    - value: |
+        \(x \in [0,999 \, ; \, 1,001] \iff |x+1|<0,001\)
+      correct: False
+
+    - value: |
+        \(x \in [0,999 \, ; \, 1,001] \iff |x+1|\le 0,001\)
+      correct: False
+
+explanations: |
+        \(|x-a| \le \epsilon \iff x \in [a-\epsilon,a+\epsilon]\)
+
+---
+author: Arnaud Bodin, Abdellah Hanani, Mohamed Mzari
+
+section: Réels | 120
+
+subsection: Intervalle, densité | Facile | 120.04
+
+link:
+    - type: cours
+      link: http://exo7.emath.fr/cours/ch_reels.pdf
+      title: Les nombres réels
+
+    - type: video
+      link: http://youtu.be/NCWWVven9Cs
+      title: L'ensemble des nombres rationnels
+
+    - type: video
+      link: http://youtu.be/83z7Bpz7Fzo
+      title: Propriétés des réels
+
+    - type: video
+      link: http://youtu.be/rYOyqI9YLgA
+      title: Densité des rationnels
+
+    - type: video
+      link: http://youtu.be/sBnmcj3jTFY
+      title: Borne supérieure
+
+    - type: exercices
+      link: http://exo7.emath.fr/ficpdf/fic00009.pdf
+      title: Propriétés des réels
+
+tags:
+    - motcle: intervalle
+
+question: |
+        Quelles sont les assertions vraies ?
+
+answers: 
+    - value: |
+        \([3,7] \cup [8,10] = [3,10]\)
+      correct: False
+
+    - value: |
+        \([-3,5] \cap [2,7] = [-3,7]\)
+      correct: False
+
+    - value: |
+        \([a,b[\cup ]a,b] = ]a,b[\)
+      correct: False
+
+    - value: |
+        \([a,b[\cap ]a,b] = ]a,b[\)
+      correct: True
+
+explanations: |
+        Tracer les intervalles sur la droite réelle pour mieux comprendre.
+
+---
+author: Arnaud Bodin, Abdellah Hanani, Mohamed Mzari
+
+section: Réels | 120
+
+subsection: Intervalle, densité | Moyen | 120.04
+
+link:
+    - type: cours
+      link: http://exo7.emath.fr/cours/ch_reels.pdf
+      title: Les nombres réels
+
+    - type: video
+      link: http://youtu.be/NCWWVven9Cs
+      title: L'ensemble des nombres rationnels
+
+    - type: video
+      link: http://youtu.be/83z7Bpz7Fzo
+      title: Propriétés des réels
+
+    - type: video
+      link: http://youtu.be/rYOyqI9YLgA
+      title: Densité des rationnels
+
+    - type: video
+      link: http://youtu.be/sBnmcj3jTFY
+      title: Borne supérieure
+
+    - type: exercices
+      link: http://exo7.emath.fr/ficpdf/fic00009.pdf
+      title: Propriétés des réels
+
+tags:
+    - motcle: intervalle
+
+question: |
+        Quelles sont les assertions vraies ?
+
+answers: 
+    - value: |
+        \(x \in [x_0,x_0+\epsilon] \implies |x-x_0| \le \epsilon\)
+      correct: True
+
+    - value: |
+        \(x-x_0 \le \epsilon \implies x \in [x_0,x_0+\epsilon]\)
+      correct: False
+
+    - value: |
+        \(|x-y|=1 \iff y=x+1\) ou \(y=x-1\)
+      correct: True
+
+    - value: |
+        \(|x| > A \iff x > A\) ou  \(x < A\)
+      correct: False
+
+explanations: |
+        \(|x-a| \le \epsilon \iff x \in [a-\epsilon,a+\epsilon]\)
+
+---
+author: Arnaud Bodin, Abdellah Hanani, Mohamed Mzari
+
+section: Réels | 120
+
+subsection: Intervalle, densité | Moyen | 120.04
+
+link:
+    - type: cours
+      link: http://exo7.emath.fr/cours/ch_reels.pdf
+      title: Les nombres réels
+
+    - type: video
+      link: http://youtu.be/NCWWVven9Cs
+      title: L'ensemble des nombres rationnels
+
+    - type: video
+      link: http://youtu.be/83z7Bpz7Fzo
+      title: Propriétés des réels
+
+    - type: video
+      link: http://youtu.be/rYOyqI9YLgA
+      title: Densité des rationnels
+
+    - type: video
+      link: http://youtu.be/sBnmcj3jTFY
+      title: Borne supérieure
+
+    - type: exercices
+      link: http://exo7.emath.fr/ficpdf/fic00009.pdf
+      title: Propriétés des réels
+
+tags:
+    - motcle: densité
+
+question: |
+        Soient \(x,y \in \Rr\) avec \(x<y\).
+
+answers: 
+    - value: |
+        Il existe \(c\in\Zz\) tel que \(x < c < y\).
+      correct: False
+
+    - value: |
+        Il existe \(c\in\Qq\) tel que \(x < c < y\).
+      correct: True
+
+    - value: |
+        Il existe \(c\in\Rr\setminus\Qq\) tel que \(x < c <y\).
+      correct: True
+
+    - value: |
+        Il existe une infinité de \(c\in\Qq\) tels que \(x < c < y\).
+      correct: True
+
+explanations: |
+        Entre deux nombres réels, il existe une infinité de rationnels et aussi une infinité de nombres irrationnels.
+
+---
+author: Arnaud Bodin, Abdellah Hanani, Mohamed Mzari
+
+section: Réels | 120
+
+subsection: Intervalle, densité | Moyen | 120.04
+
+link:
+    - type: cours
+      link: http://exo7.emath.fr/cours/ch_reels.pdf
+      title: Les nombres réels
+
+    - type: video
+      link: http://youtu.be/NCWWVven9Cs
+      title: L'ensemble des nombres rationnels
+
+    - type: video
+      link: http://youtu.be/83z7Bpz7Fzo
+      title: Propriétés des réels
+
+    - type: video
+      link: http://youtu.be/rYOyqI9YLgA
+      title: Densité des rationnels
+
+    - type: video
+      link: http://youtu.be/sBnmcj3jTFY
+      title: Borne supérieure
+
+    - type: exercices
+      link: http://exo7.emath.fr/ficpdf/fic00009.pdf
+      title: Propriétés des réels
+
+tags:
+    - motcle: densité
+
+question: |
+        Quelles sont les assertions vraies ?
+
+answers: 
+    - value: |
+        Il existe \(x\in\Qq\) tel que \(x-\sqrt2 < 10^{-10}\).
+      correct: True
+
+    - value: |
+        Il existe \(x\in\Rr\setminus\Qq\) tel que \(x-\frac43 < 10^{-10}\).
+      correct: True
+
+    - value: |
+        Il existe une suite de nombres rationnels dont la limite est \(\sqrt 2\).
+      correct: True
+
+    - value: |
+        Il existe une suite de nombres irrationnels dont la limite est \(\frac43\).
+      correct: True
+
+explanations: |
+        Tout est vrai ! Ce sont des conséquences de la densité de \(\Qq\) dans \(\Rr\) et de la densité de \(\Rr \setminus \Qq\) dans \(\Rr\).
+
+---
+author: Arnaud Bodin, Abdellah Hanani, Mohamed Mzari
+
+section: Réels | 120
+
+subsection: Intervalle, densité | Moyen | 120.04
+
+link:
+    - type: cours
+      link: http://exo7.emath.fr/cours/ch_reels.pdf
+      title: Les nombres réels
+
+    - type: video
+      link: http://youtu.be/NCWWVven9Cs
+      title: L'ensemble des nombres rationnels
+
+    - type: video
+      link: http://youtu.be/83z7Bpz7Fzo
+      title: Propriétés des réels
+
+    - type: video
+      link: http://youtu.be/rYOyqI9YLgA
+      title: Densité des rationnels
+
+    - type: video
+      link: http://youtu.be/sBnmcj3jTFY
+      title: Borne supérieure
+
+    - type: exercices
+      link: http://exo7.emath.fr/ficpdf/fic00009.pdf
+      title: Propriétés des réels
+
+tags:
+    - motcle: intervalle
+
+question: |
+        Pour \(n\ge 1\) on définit l'intervalle \(I_n = [0,\frac1n]\). 
+        Quelles sont les assertions vraies ?
+
+answers: 
+    - value: |
+        Pour tout \(n\ge 1\), \(I_n \subset I_{n+1}\).
+      correct: False
+
+    - value: |
+        Si \(x \in I_n\) pour tout \(n\ge1\), alors \(x=0\).
+      correct: True
+
+    - value: |
+        L'union de tous les \(I_n\) (pour \(n\) parcourant \(\Nn^*\)) est \([0,+\infty[\).
+      correct: False
+
+    - value: |
+        Pour \(n < m\) alors \(I_n \cap I_{n+1} \cap \ldots \cap I_m = I_n\).
+      correct: False
+
+explanations: |
+        On a \([0,1] = I_1 \supset I_2 \supset I_3 \supset \cdots\).
+
+---
+author: Arnaud Bodin, Abdellah Hanani, Mohamed Mzari
+
+section: Réels | 120
+
+subsection: Intervalle, densité | Moyen | 120.04
+
+link:
+    - type: cours
+      link: http://exo7.emath.fr/cours/ch_reels.pdf
+      title: Les nombres réels
+
+    - type: video
+      link: http://youtu.be/NCWWVven9Cs
+      title: L'ensemble des nombres rationnels
+
+    - type: video
+      link: http://youtu.be/83z7Bpz7Fzo
+      title: Propriétés des réels
+
+    - type: video
+      link: http://youtu.be/rYOyqI9YLgA
+      title: Densité des rationnels
+
+    - type: video
+      link: http://youtu.be/sBnmcj3jTFY
+      title: Borne supérieure
+
+    - type: exercices
+      link: http://exo7.emath.fr/ficpdf/fic00009.pdf
+      title: Propriétés des réels
+
+tags:
+    - motcle: intervalle
+
+question: |
+        Pour \(n\ge 1\) on définit l'intervalle \(I_n = [0,n]\). 
+        Quelles sont les assertions vraies ?
+
+answers: 
+    - value: |
+        Pour tout \(n\ge 1\), \(I_n \subset I_{n+1}\).
+      correct: True
+
+    - value: |
+        Si \(x \in I_n\) pour tout \(n\ge1\), alors \(x=0\).
+      correct: False
+
+    - value: |
+        L'union de tous les \(I_n\) (pour \(n\) parcourant \(\Nn^*\)) est \([0,+\infty[\).
+      correct: True
+
+    - value: |
+        Pour \(n < m\) alors \(I_n \cap I_{n+1} \cap \ldots \cap I_m = I_n\).
+      correct: True
+
+explanations: |
+        On a \([0,1] = I_1 \subset I_2 \subset I_3 \subset \cdots\).
+
+---
+author: Arnaud Bodin, Abdellah Hanani, Mohamed Mzari
+
+section: Réels | 120
+
+subsection: Intervalle, densité | Difficile | 120.04
+
+link:
+    - type: cours
+      link: http://exo7.emath.fr/cours/ch_reels.pdf
+      title: Les nombres réels
+
+    - type: video
+      link: http://youtu.be/NCWWVven9Cs
+      title: L'ensemble des nombres rationnels
+
+    - type: video
+      link: http://youtu.be/83z7Bpz7Fzo
+      title: Propriétés des réels
+
+    - type: video
+      link: http://youtu.be/rYOyqI9YLgA
+      title: Densité des rationnels
+
+    - type: video
+      link: http://youtu.be/sBnmcj3jTFY
+      title: Borne supérieure
+
+    - type: exercices
+      link: http://exo7.emath.fr/ficpdf/fic00009.pdf
+      title: Propriétés des réels
+
+tags:
+    - motcle: intervalle
+
+question: |
+        Soient \(I\) et \(J\) deux intervalles de \(\Rr\). Quelles sont les assertions vraies ?
+
+answers: 
+    - value: |
+        \(I \cup J\) est un intervalle.
+      correct: False
+
+    - value: |
+        \(I \cap J\) est un intervalle (éventuellement réduit à un point ou vide).
+      correct: True
+
+    - value: |
+        Si \(I \cap J \neq \varnothing\) alors \(I \cup J\) est un intervalle.
+      correct: True
+
+    - value: |
+        Si \(I \subset J\) alors \(I \cup J\) est un intervalle.
+      correct: True
+
+explanations: |
+        Tracer les intervalles sur la droite réelle pour mieux comprendre.
+        Une union d'intervalles n'est en général pas un intervalle !
+
+---
+author: Arnaud Bodin, Abdellah Hanani, Mohamed Mzari
+
+section: Réels | 120
+
+subsection: Intervalle, densité | Difficile | 120.04
+
+link:
+    - type: cours
+      link: http://exo7.emath.fr/cours/ch_reels.pdf
+      title: Les nombres réels
+
+    - type: video
+      link: http://youtu.be/NCWWVven9Cs
+      title: L'ensemble des nombres rationnels
+
+    - type: video
+      link: http://youtu.be/83z7Bpz7Fzo
+      title: Propriétés des réels
+
+    - type: video
+      link: http://youtu.be/rYOyqI9YLgA
+      title: Densité des rationnels
+
+    - type: video
+      link: http://youtu.be/sBnmcj3jTFY
+      title: Borne supérieure
+
+    - type: exercices
+      link: http://exo7.emath.fr/ficpdf/fic00009.pdf
+      title: Propriétés des réels
+
+tags:
+    - motcle: intervalle
+
+question: |
+        Soit \(I\) un intervalle ouvert de \(\Rr\). Soient \(x,y \in\Rr\) avec \(x < y\).
+        Quelles sont les assertions vraies ?
+
+answers: 
+    - value: |
+        Si \(x,y\in I\), il existe \(c\in I\) tel que \(x < c < y\).
+      correct: True
+
+    - value: |
+        Si \(x,y\in I\), alors pour tout \(c\) tel que \(x < c < y\), on a \(c \in I\).
+      correct: True
+
+    - value: |
+        Si \(x \notin I\) et \(y\in I\), il existe \(c\in I\) tel que \(x < c < y\).
+      correct: True
+
+    - value: |
+        Si \(x \notin I\) et \(y\in I\), il existe \(c\notin I\) tel que \(x < c < y\).
+      correct: False
+
+explanations: |
+        Si \(x\) et \(y\) sont deux éléments de l'intervalle \(I\) alors toute valeur entre \(x\) et \(y\) est aussi dans l'intervalle.
+
+---
+author: Arnaud Bodin, Abdellah Hanani, Mohamed Mzari
+
+section: Réels | 120
+
+subsection: Maximum, majorant | Facile | 120.02
+
+link:
+    - type: cours
+      link: http://exo7.emath.fr/cours/ch_reels.pdf
+      title: Les nombres réels
+
+    - type: video
+      link: http://youtu.be/NCWWVven9Cs
+      title: L'ensemble des nombres rationnels
+
+    - type: video
+      link: http://youtu.be/83z7Bpz7Fzo
+      title: Propriétés des réels
+
+    - type: video
+      link: http://youtu.be/rYOyqI9YLgA
+      title: Densité des rationnels
+
+    - type: video
+      link: http://youtu.be/sBnmcj3jTFY
+      title: Borne supérieure
+
+    - type: exercices
+      link: http://exo7.emath.fr/ficpdf/fic00009.pdf
+      title: Propriétés des réels
+
+tags:
+    - motcle: maximum
+
+question: |
+        Le maximum d'un ensemble \(E\), s'il existe, est le réel \(m \in E\) tel que pour tout \(x\in E\), on a \(x \le m\).
+
+answers: 
+    - value: |
+        Si \(E = [3,7]\) alors \(8\) est un maximum de \(E\).
+      correct: False
+
+    - value: |
+        Si \(E = [-3,-1]\) alors \(-1\) est le maximum de \(E\).
+      correct: True
+
+    - value: |
+        L'ensemble \(E = [-3,-1[\) n'admet pas de maximum.
+      correct: True
+
+    - value: |
+        L'ensemble \(E = [-3,2[ \  \cap \  ]-1,1]\) n'admet pas de maximum.
+      correct: False
+
+explanations: |
+        Attention, le maximum de \(E\) doit être un élément de \(E\) !
+
+---
+author: Arnaud Bodin, Abdellah Hanani, Mohamed Mzari
+
+section: Réels | 120
+
+subsection: Maximum, majorant | Moyen | 120.02
+
+link:
+    - type: cours
+      link: http://exo7.emath.fr/cours/ch_reels.pdf
+      title: Les nombres réels
+
+    - type: video
+      link: http://youtu.be/NCWWVven9Cs
+      title: L'ensemble des nombres rationnels
+
+    - type: video
+      link: http://youtu.be/83z7Bpz7Fzo
+      title: Propriétés des réels
+
+    - type: video
+      link: http://youtu.be/rYOyqI9YLgA
+      title: Densité des rationnels
+
+    - type: video
+      link: http://youtu.be/sBnmcj3jTFY
+      title: Borne supérieure
+
+    - type: exercices
+      link: http://exo7.emath.fr/ficpdf/fic00009.pdf
+      title: Propriétés des réels
+
+tags:
+    - motcle: majorant
+
+question: |
+        On dit que \(M \in \Rr\) est un majorant d'un ensemble \(E \subset \Rr\) si pour tout \(x\in E\), on a \(x \le M\).
+
+answers: 
+    - value: |
+        Si \(E = [3,7]\) alors \(8\) est un majorant de \(E\).
+      correct: True
+
+    - value: |
+        Si \(E = [-3,-1[\) alors tout \(M \ge -1\) est un majorant de \(E\).
+      correct: True
+
+    - value: |
+        Si \(E = ]0,+\infty[\) alors tout \(M \ge 0\) est un majorant de \(E\).
+      correct: False
+
+    - value: |
+        Si \(E = [2,3] \cup [5,10]\) alors tout \(M \ge 3\) est un majorant de \(E\).
+      correct: False
+
+explanations: |
+        Tracer les intervalles sur la droite réelle pour mieux comprendre. Les majorants d'un ensemble sont alors tous les réels "à droite" de l'ensemble.
+
+---
+author: Arnaud Bodin, Abdellah Hanani, Mohamed Mzari
+
+section: Réels | 120
+
+subsection: Maximum, majorant | Difficile | 120.02
+
+link:
+    - type: cours
+      link: http://exo7.emath.fr/cours/ch_reels.pdf
+      title: Les nombres réels
+
+    - type: video
+      link: http://youtu.be/NCWWVven9Cs
+      title: L'ensemble des nombres rationnels
+
+    - type: video
+      link: http://youtu.be/83z7Bpz7Fzo
+      title: Propriétés des réels
+
+    - type: video
+      link: http://youtu.be/rYOyqI9YLgA
+      title: Densité des rationnels
+
+    - type: video
+      link: http://youtu.be/sBnmcj3jTFY
+      title: Borne supérieure
+
+    - type: exercices
+      link: http://exo7.emath.fr/ficpdf/fic00009.pdf
+      title: Propriétés des réels
+
+tags:
+    - motcle: majorant
+
+question: |
+        On dit que \(M \in \Rr\) est un majorant d'un ensemble \(E \subset \Rr\) si pour tout \(x\in E\), on a \(x \le M\).
+
+answers: 
+    - value: |
+        Un intervalle non vide et différent de \(\Rr\) admet toujours un majorant.
+      correct: False
+
+    - value: |
+        Un intervalle non vide et borné admet au moins deux majorants.
+      correct: True
+
+    - value: |
+        Un ensemble qui admet un majorant, en admet une infinité.
+      correct: True
+
+    - value: |
+        L'ensemble \(\Nn\) admet une infinité de majorants.
+      correct: False
+
+explanations: |
+        L'ensemble des majorants (s'il est non vide) est du type \([M,+\infty[\).
+

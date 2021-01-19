@@ -1,0 +1,323 @@
+
+
+\begin{multi}[multiple,feedback=
+{\(P(X)\times Q(X) = 6 X^7 - 4 X^6 + 6 X^5 + 9 X^4 - 3 X^3 + 7 X^2 + 3 X\).
+}]{Question}
+    \item Le coefficient dominant est \(5\).
+    \item* Le coefficient du monôme \(X^3\) est \(-3\).
+    \item Le coefficient du terme constant est \(3\).
+    \item* Le produit est la somme de \(7\) monômes ayant un coefficient non nuls.
+\end{multi}
+
+
+\begin{multi}[multiple,feedback=
+{\(P(X)\times Q(X) = X^6 - 3 X^5 - X^4 + 6 X^3 - 3 X^2 - 2 X + 2\), 
+\(P(X) + Q(X) = 2 X^3 - 3 X^2 - X + 3\),
+\(P(X) - Q(X) = -3 X^2 + X + 1\).
+}]{Question}
+    \item Le polynôme \(P(X) \times Q(X)\) est de degré \(9\).
+    \item Le coefficient du monôme \(X^2\) dans le produit \(P(X) \times Q(X)\) est \(3\).
+    \item* Le polynôme \(P(X) + Q(X)\) est de degré \(3\).
+    \item Le polynôme \(P(X) - Q(X)\) est de degré \(3\).
+\end{multi}
+
+
+\begin{multi}[multiple,feedback=
+{Le quotient de deux polynômes n'est pas un polynôme.
+}]{Question}
+    \item* \(P+Q\) est un polynôme de degré \(n\).
+    \item \(P-Q\) est un polynôme de degré \(n\).
+    \item* \(P \times Q\) est un polynôme de degré \(n+n=2n\).
+    \item \(P/Q\) est un polynôme de degré \(n-n=0\).
+\end{multi}
+
+
+\begin{multi}[multiple,feedback=
+{On a la formule \(\deg(P\times Q) = \deg P + \deg Q\) mais, il n'y a pas de formule pour la somme, car \(\deg(P + Q)\) peut être strictement plus petit que \(\deg P\) et \(\deg Q\).
+}]{Question}
+    \item* \(\deg( P(X) \times (X^2-X+1) ) = \deg P(X) + 2\)
+    \item \(\deg( P(X) + (X^2-X+1) ) = \deg P(X)\)
+    \item \(\deg( P(X)^2 ) = (\deg P(X))^2\)
+    \item* \(\deg( P(X^2) ) = 2\deg P(X)\)
+\end{multi}
+
+
+\begin{multi}[multiple,feedback=
+{Le polynôme dérivé s'obtient comme si on dérivait la fonction \(X \mapsto P(X)\). 
+}]{Question}
+    \item Le polynôme dérivé de \(P(X) = X^5-2X^2+1\) est \(P'(X)=5X^4-2X\).
+    \item Le seul polynôme qui vérifie \(P'(X)=0\) est \(P(X)=1\).
+    \item* Si \(P'(X)\) est de degré \(7\), alors \(P(X)\) est de degré \(8\).
+    \item Si le coefficient constant de \(P\) est nul, alors c'est aussi le cas pour \(P'\).
+\end{multi}
+
+
+\begin{multi}[multiple,feedback=
+{Cette transformation est faite afin que le coefficient du monôme \(X^{n-1}\) de \(Q\) soit toujours nul.
+}]{Question}
+    \item Si \(P(X) = X^2+3X+1\) alors \(Q(X) = X^2-2X\).
+    \item* Si \(P(X) = X^3-3X^2+2\) alors \(Q(X) = X^3-3X\).
+    \item Le coefficient constant du polynôme \(Q\) est toujours nul.
+    \item* Le coefficient du monôme \(X^{n-1}\) de \(Q\) est toujours nul.
+\end{multi}
+
+
+\begin{multi}[multiple,feedback=
+{C'est comme pour les primitives, il ne faut pas oublier la constante :
+Si \(P'=Q'\) alors \(P=Q +c\).
+}]{Question}
+    \item* Si \(P\) est de degré \(n\ge1\) alors \(P'\) est de degré \(n-1\).
+    \item Si \(P'(X) = nX^{n-1}\) alors \(P(X) = X^n\).
+    \item* Si \(P'=P\) alors \(P=0\).
+    \item Si \(P'-Q'=0\) alors \(P-Q=0\).
+\end{multi}
+
+
+\begin{multi}[multiple,feedback=
+{La formule (à connaître) est 
+\[c_k = \sum_{i+j=k} a_ib_j = \sum_{i=0}^k a_ib_{k-i}.\]
+}]{Question}
+    \item \(c_k = a_k b_k\)
+    \item* \(c_k = \sum_{i+j=k} a_ib_j\)
+    \item \(c_k = \sum_{i=0}^k a_ib_i\)
+    \item* \(c_k = \sum_{i=0}^k a_ib_{k-i}\)
+\end{multi}
+
+
+\begin{multi}[multiple,feedback=
+{La division euclidienne \(A = B \times Q + R\) existe toujours, \(Q\) et \(R\) sont uniques et bien sûr \(\deg Q \le \deg A\).
+}]{Question}
+    \item* Un tel \(Q\) existe toujours.
+    \item* S'il existe, \(Q\) est unique.
+    \item* On a toujours \(\deg Q \le \deg A\).
+    \item On a toujours \(\deg Q \le \deg B\).
+\end{multi}
+
+
+\begin{multi}[multiple,feedback=
+{La division euclidienne \(A = B \times Q + R\) existe toujours, \(Q\) et \(R\) sont uniques et par définition de la division euclidienne \(R\) est nul ou bien 
+\(\deg R < \deg B\).
+}]{Question}
+    \item* Un tel \(R\) existe toujours.
+    \item* S'il existe, \(R\) est unique.
+    \item On a toujours \(\deg R < \deg A\) (ou bien \(R\) est nul).
+    \item* On a toujours \(\deg R < \deg B\) (ou bien \(R\) est nul).
+\end{multi}
+
+
+\begin{multi}[multiple,feedback=
+{Faire le calcul !
+\(Q(X) = 2X^2-3X-1\), \(R(X) = 4X+2\).
+}]{Question}
+    \item Le coefficient du monôme \(X^2\) de \(Q\) est \(1\).
+    \item Le coefficient du monôme \(X\) de \(Q\) est \(3\).
+    \item Le coefficient du monôme \(X\) de \(R\) est \(2\).
+    \item* Le coefficient constant de \(R\) est \(2\).
+\end{multi}
+
+
+\begin{multi}[multiple,feedback=
+{Faire le calcul !
+\(Q(X) = X^3-2X^2+4\), \(R(X) = -X^2+1\).
+}]{Question}
+    \item Le coefficient du monôme \(X^2\) de \(Q\) est \(0\).
+    \item* Le coefficient du monôme \(X\) de \(Q\) est \(0\).
+    \item Le coefficient du monôme \(X\) de \(R\) est \(-1\).
+    \item* Le coefficient constant de \(R\) est \(1\).
+\end{multi}
+
+
+\begin{multi}[multiple,feedback=
+{\(A(X) = (X-3)(X+1)^2(X-1)\), \(B(X) = X^2(X-3)(X+1)\),
+le pgcd est \(D = (X-3)(X+1)\). 
+}]{Question}
+    \item \(X-1\) divise \(D\).
+    \item* \(X+1\) divise \(D\).
+    \item* \(D(X) = (X-3)(X+1)\).
+    \item \(D(X) = (X-3)(X+1)^2\).
+\end{multi}
+
+
+\begin{multi}[multiple,feedback=
+{Le pgcd s'obtient en prenant le minimum entre les exposants, le ppcm en prenant le maximum. Attention \(X^2-1=(X-1)(X+1)\).
+}]{Question}
+    \item Le pgcd de \((X-1)^2(X-3)^3(X^2+X+1)^3\) et
+\((X-1)^2(X-2)(X-3)(X^2+X+1)^2\) est \((X-1)^2(X-3)(X^2+X+1)\).
+    \item Le ppcm de \((X-1)^2(X-3)^3(X^2+X+1)^3\) et
+\((X-1)^2(X-2)(X-3)(X^2+X+1)^2\) est \((X-1)^2(X-2)(X-3)^3(X^2+X+1)^2\).
+    \item* Le pgcd de \((X-1)^2(X^2-1)^3\) et
+\((X-1)^4(X+1)^5\) est \((X-1)^4(X+1)^3\).
+    \item* Le ppcm de \((X-1)^2(X^2-1)^3\) et
+\((X-1)^4(X+1)^5\) est \((X-1)^5(X+1)^5\).
+\end{multi}
+
+
+\begin{multi}[multiple,feedback=
+{On a \(\deg R < \deg B\). Il ne faut pas confondre \(R=0\) et \(r=0\).
+En plus \(\deg(A) = \deg(B\times Q) = \deg(A) + \deg(Q)\).
+}]{Question}
+    \item* \(q = n-m\)
+    \item* \(r < m\)
+    \item \(r=0 \implies A\) divise \(B\).
+    \item \(n = mq + r\)
+\end{multi}
+
+
+\begin{multi}[multiple,feedback=
+{\(Q(X) = X^n-X^{n-1}+2X^{n-2}-2X^{n-3}+\cdots\). \(R(X) = \pm 2 X^{n-1}\).
+}]{Question}
+    \item* Le coefficient de \(X^n\) de \(Q\) est \(1\).
+    \item Le coefficient de \(X^{n-1}\) de \(Q\) est \(1\).
+    \item* Le coefficient de \(X^{n-2}\) de \(Q\) est \(2\).
+    \item* \(R\) est constitué d'un seul monôme.
+\end{multi}
+
+
+\begin{multi}[multiple,feedback=
+{\(A(X)=X^2(X-1)^2\), \(B(X)=(X-1)(X+2)\), \(D(X)=X-1\). \(U(X)= -\frac14\), \(V(X)=\frac14(X^2-X+2)\) donnent \(AU+BV=D\).
+}]{Question}
+    \item \(D(X) = 1\)
+    \item* Il existe \(U,V \in \Rr[X]\) tels que \(AU+BV = X-1\).
+    \item* Il existe \(u \in \Rr\) et \(V \in \Rr[X]\) tels que \(Au+BV = X-1\).
+    \item Il existe \(U\in \Rr[X]\) et \(v \in \Rr\) tels que \(AU+Bv = X-1\).
+\end{multi}
+
+
+\begin{multi}[multiple,feedback=
+{Il y a au plus \(\deg P\) racines réelles (comptées avec multiplicité).
+}]{Question}
+    \item \(P\) admet exactement \(8\) racines réelles (comptées avec multiplicité).
+    \item \(P\) admet au moins une racine réelle.
+    \item* \(P\) admet au plus \(8\) racines réelles (comptées avec multiplicité).
+    \item \(P\) admet au moins \(8\) racines réelles (comptées avec multiplicité).
+\end{multi}
+
+
+\begin{multi}[multiple,feedback=
+{Calculer \(P(\alpha)\). En fait \(P(X) = (X-2)^2(X+1)^3(X^2+X+1)\).
+}]{Question}
+    \item* \(-1\) est une racine de \(P\).
+    \item \(0\) est une racine de \(P\).
+    \item \(1\) est une racine de \(P\).
+    \item* \(2\) est une racine de \(P\).
+\end{multi}
+
+
+\begin{multi}[multiple,feedback=
+{Sur \(\Cc\) les irréductibles sont de degré \(1\). Sur \(\Rr\) ils sont de degré 1, ou bien de degré \(2\) à discriminant strictement négatif.
+}]{Question}
+    \item \(2X^2+3X+1\) est irréductible sur \(\Qq\).
+    \item* \(2X^2-3X+2\) est irréductible sur \(\Rr\).
+    \item \(2X^2-X+3\) est irréductible sur \(\Cc\).
+    \item \(X^3+X^2+X+4\) est irréductible sur \(\Rr\).
+\end{multi}
+
+
+\begin{multi}[multiple,feedback=
+{Il y a au plus \(\deg P\) racines réelles (comptées avec multiplicité). Mais ici le degré est impair, donc \(P\) admet au moins une racine réelle.
+}]{Question}
+    \item* \(P\) peut admettre une racine complexe, qui ne soit pas réelle.
+    \item* \(P\) admet au moins une racines réelle.
+    \item \(P\) admet au moins deux racines réelles (comptées avec multiplicités).
+    \item* \(P\) peut avoir \(2n+1\) racines réelles distinctes.
+\end{multi}
+
+
+\begin{multi}[multiple,feedback=
+{Pour une racine double il faut \(P(a)=0\), \(P'(a)=0\) et \(P''(a)\neq0\).
+En fait \(P(X) = X(X+2)^3(X-1)^2\).
+}]{Question}
+    \item \(-1\) est une racine double.
+    \item \(0\) est une racine double.
+    \item* \(1\) est une racine double.
+    \item \(-2\) est une racine double.
+\end{multi}
+
+
+\begin{multi}[multiple,feedback=
+{Sur \(\Qq\) les facteurs irréductibles peuvent être de n'importe quel degré.
+}]{Question}
+    \item* \(P\) peut avoir des racines dans \(\Rr\), mais pas dans \(\Qq\).
+    \item* Si \(z\in \Cc\setminus\Rr\) est une racine de \(P\), alors \(\bar z\) aussi.
+    \item Les facteurs irréductibles de \(P\) sur \(\Qq\) sont de degré \(1\) ou \(2\).
+    \item Les racines réelles de \(P\) sont de la forme \(\alpha + \beta\sqrt{\gamma}\), \(\alpha,\beta,\gamma \in \Qq\).
+\end{multi}
+
+
+\begin{multi}[multiple,feedback=
+{\(a\) racine de \(P\) de multiplicité \(\ge k\) \(\iff\) \((X-a)^k\) divise \(P\) \(\iff\) \(P(a) = 0\), \(P'(a)=0\), ..., \(P^{(k-1)}(a)=0\).
+}]{Question}
+    \item* \(a\) racine de \(P\) \(\iff\) \(X-a\) divise \(P\).
+    \item* \(a\) racine de \(P\) de multiplicité \(\ge k\) \(\iff\) \((X-a)^k\) divise \(P\).
+    \item \(a\) racine de \(P\) de multiplicité \(\ge k\) \(\iff\)
+\(P(a) = 0\), \(P'(a)=0\), ..., \(P^{(k)}(a)=0\).
+    \item* La somme des multiplicités des racines est \(\le n\).
+\end{multi}
+
+
+\begin{multi}[multiple,feedback=
+{Sur \(\Cc\) les éléments simples sont de la forme \(\frac{a}{(X-\alpha)^k}\), \(a,\alpha \in \Cc\), \(k\in\Nn^*\).
+Sur \(\Rr\) les éléments simples sont de la forme \(\frac{a}{(X-\alpha)^k}\), \(a,\alpha \in \Rr\), \(k \in \Nn^*\) ou bien
+\(\frac{aX+b}{(X^2+\alpha X+\beta)^k}\), \(a,b,\alpha,\beta \in \Rr\), \(k \in \Nn^*\) avec 
+\(X^2+\alpha X+\beta\) sans racines réelles.
+}]{Question}
+    \item Les éléments simples sur \(\Cc\) sont de la forme \(\frac{a}{X-\alpha}\), \(a,\alpha \in \Cc\).
+    \item Les éléments simples sur \(\Cc\) sont de la forme \(\frac{a}{(X-\alpha)^k}\), \(a,\alpha \in \Rr\), \(k\in\Nn^*\).
+    \item* Les éléments simples sur \(\Rr\) peuvent être de la forme \(\frac{a}{(X-\alpha)^k}\), \(a,\alpha \in \Rr\).
+    \item Les éléments simples sur \(\Rr\) peuvent être de la forme \(\frac{aX+b}{X-\alpha}\), \(a,b,\alpha \in \Rr\).
+\end{multi}
+
+
+\begin{multi}[multiple,feedback=
+{\(\frac{P(X)}{Q(X)} = \frac{X-1}{(X+1)^2(X^2+X+1)}
+= \frac{-1}{X+1}+\frac{-2}{(X+1)^2}+\frac{X+2}{X^2+X+1}\).
+}]{Question}
+    \item* La partie polynomiale est nulle.
+    \item Il peut y avoir un élément simple \(\frac{a}{X-1}\).
+    \item Il peut y avoir un élément simple \(\frac{a}{X+1}\) mais pas  \(\frac{a}{(X+1)^2}\).
+    \item* Il peut y avoir un élément simple \(\frac{aX+b}{X^2+X+1}\) mais pas  \(\frac{aX+b}{(X^2+X+1)^2}\).
+\end{multi}
+
+
+\begin{multi}[multiple,feedback=
+{La partie entière s'obtient comme le quotient de la division euclidienne de \(P\) par \(Q\).
+}]{Question}
+    \item* Si \(\deg P < \deg Q\) alors \(E(X) = 0\).
+    \item* Si \(\deg P \ge \deg Q\) alors \(\deg E(X) = \deg P - \deg Q\).
+    \item Si \(P(X) = X^3+X+2\) et \(Q(X) = X^2-1\) alors \(E(X) = X+1\).
+    \item* Si \(P(X) = X^5+X-2\) et \(Q(X) = X^2-1\) alors \(E(X) = X^3+X\).
+\end{multi}
+
+
+\begin{multi}[multiple,feedback=
+{\(\frac{P(X)}{Q(X)} = \frac{3X}{(X-2)(X-1)^2(X^2-X+1)}
+=\frac{2}{X-2} + \frac{-3}{X-1} +  \frac{-3}{(X-1)^2}
++ \frac{X+1}{X^2-X+1}\).
+}]{Question}
+    \item En multipliant par \(X-2\), puis en évaluant en \(X=2\), j'obtiens \(a=1\).
+    \item* En multipliant par \((X-1)^2\), puis en évaluant en \(X=1\), j'obtiens \(c=-3\).
+    \item* En multipliant par \(X\), puis en faisant tendre \(X \to +\infty\), j'obtiens la relation \(a+b+d=0\).
+    \item En évaluant en \(X=0\), j'obtiens la relation \(a+b+c+e=0\).
+\end{multi}
+
+
+\begin{multi}[multiple,feedback=
+{On profite que \(F\) est impaire pour déduire \(b=0\), \(e=0\).
+\(F(X) = \dfrac{1}{(X^2+1)X^3} = \frac{-1}{X}  +  \frac{1}{X^3}
++ \frac{X}{X^2+1}.\)
+}]{Question}
+    \item* \(c=1\)
+    \item \(b=1\)
+    \item \(a=1\)
+    \item* \(e=0\)
+\end{multi}
+
+
+\begin{multi}[multiple,feedback=
+{\(F(X) = \dfrac{1}{X(X^2+1)^2} = \frac{-1}{X} + \frac{X}{X^2+1} +  \frac{X+1}{(X^2+1)^2}.\)
+}]{Question}
+    \item* \(a=-1\)
+    \item \(d=0\) et \(e=0\)
+    \item \(b=0\) et \(c=0\)
+    \item \(b=0\) et \(d=0\)
+\end{multi}

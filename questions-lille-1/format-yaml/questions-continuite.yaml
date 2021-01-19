@@ -1,0 +1,1658 @@
+---
+author: Arnaud Bodin, Abdellah Hanani, Mohamed Mzari
+
+section: Continuité | 123
+
+subsection: Notion de fonctions | Facile | 123.00
+
+link:
+    - type: cours
+      link: http://exo7.emath.fr/cours/ch_fonctions.pdf
+      title: Limites et fonctions continues
+
+    - type: video
+      link: http://youtu.be/TJLpXWXPsFs
+      title: Continuité en un point
+
+    - type: video
+      link: http://youtu.be/_cA6CkKYZxU
+      title: Continuité sur un intervalle
+
+    - type: video
+      link: http://youtu.be/TAUg4HL5fHs
+      title: Fonctions monotones et bijections
+
+    - type: exercices
+      link: http://exo7.emath.fr/ficpdf/fic00012.pdf
+      title: Fonctions continues
+
+tags:
+    - motcle: fonction croissante/décroissante
+
+question: |
+        Quels arguments sont valides pour justifier que la fonction \(x \mapsto \sin(x)\) n'est pas une fonction croissante sur \(\Rr\) ?
+
+answers: 
+    - value: |
+        \(\sin(\pi) = \sin(0)\) et pourtant \(\pi \neq 0\).
+      correct: False
+
+    - value: |
+        \(\sin(\frac\pi2) > \sin(0)\) et pourtant \(0 < \frac\pi2\).
+      correct: False
+
+    - value: |
+        \(\sin(\frac{3\pi}{4}) > \sin(\pi)\) et pourtant \(\frac{3\pi}{4} < \pi\).
+      correct: True
+
+    - value: |
+        On a \(|\sin x| \le |x|\) pour tout \(x\in\Rr\).
+      correct: False
+
+explanations: |
+        Une fonction \(f\) est croissante si \(x \le y\) implique \(f(x) \le f(y)\).
+        Donc une fonction n'est pas croissante si on peut trouver \(x \le y\) mais avec
+        \(f(x) > f(y)\). Le seul argument valable est donc \(\frac{3\pi}{4} < \pi\) avec \(\sin(\frac{3\pi}{4}) > \sin(\pi)\).
+
+---
+author: Arnaud Bodin, Abdellah Hanani, Mohamed Mzari
+
+section: Continuité | 123
+
+subsection: Notion de fonctions | Facile | 123.00
+
+link:
+    - type: cours
+      link: http://exo7.emath.fr/cours/ch_fonctions.pdf
+      title: Limites et fonctions continues
+
+    - type: video
+      link: http://youtu.be/TJLpXWXPsFs
+      title: Continuité en un point
+
+    - type: video
+      link: http://youtu.be/_cA6CkKYZxU
+      title: Continuité sur un intervalle
+
+    - type: video
+      link: http://youtu.be/TAUg4HL5fHs
+      title: Fonctions monotones et bijections
+
+    - type: exercices
+      link: http://exo7.emath.fr/ficpdf/fic00012.pdf
+      title: Fonctions continues
+
+tags:
+    - motcle: domaine de définition
+
+question: |
+        Soient \(f,g\) deux fonctions définies sur \(\Rr\). Quelles sont les assertions vraies ?
+
+answers: 
+    - value: |
+        \(f-2g\) est une fonction définie sur \(\Rr\).
+      correct: True
+
+    - value: |
+        \(f^2 \times g\) est une fonction définie sur \(\Rr\).
+      correct: True
+
+    - value: |
+        \(\frac{f}{g^2}\) est une fonction définie sur \(\Rr\).
+      correct: False
+
+    - value: |
+        \(\sqrt{f+g}\) est une fonction définie sur \(\Rr\).
+      correct: False
+
+explanations: |
+        La somme et le produit de fonctions est définie partout. Par contre pour le quotient il faut que le dénominateur ne s'annule pas. Pour une racine carrée, il faut que le terme sous la racine soit positif ou nul.
+
+---
+author: Arnaud Bodin, Abdellah Hanani, Mohamed Mzari
+
+section: Continuité | 123
+
+subsection: Notion de fonctions | Facile | 123.00
+
+link:
+    - type: cours
+      link: http://exo7.emath.fr/cours/ch_fonctions.pdf
+      title: Limites et fonctions continues
+
+    - type: video
+      link: http://youtu.be/TJLpXWXPsFs
+      title: Continuité en un point
+
+    - type: video
+      link: http://youtu.be/_cA6CkKYZxU
+      title: Continuité sur un intervalle
+
+    - type: video
+      link: http://youtu.be/TAUg4HL5fHs
+      title: Fonctions monotones et bijections
+
+    - type: exercices
+      link: http://exo7.emath.fr/ficpdf/fic00012.pdf
+      title: Fonctions continues
+
+tags:
+    - motcle: domaine de définition
+
+question: |
+        Quelles sont les assertions vraies concernant le domaine de définition des fonctions suivantes ? (Rappel : le domaine de définition de \(f\) est le plus grand ensemble \(D_f \subset \Rr\) sur lequel \(f\) est définie.)
+
+answers: 
+    - value: |
+        Le domaine de définition de \(\exp(\frac{1}{x^2+1})\) est \(\Rr\).
+      correct: True
+
+    - value: |
+        Le domaine de définition de \(\sqrt{x^2-1}\) est \([1,+\infty[\).
+      correct: False
+
+    - value: |
+        Le domaine de définition de \(\frac{1}{\sqrt{(x-1)(x-3)}}\) est \(]1,3[\).
+      correct: False
+
+    - value: |
+        Le domaine de définition de \(\ln(x^3-8)\) est \([2,+\infty[\).
+      correct: False
+
+explanations: |
+        \(\frac 1x\) est définie pour \(x\neq 0\), \(\sqrt{x}\) est définie pour \(x \ge 0\) ; \(\exp x\) est définie sur \(\Rr\) ; \(\ln x\) seulement pour \(x>0\).
+
+---
+author: Arnaud Bodin, Abdellah Hanani, Mohamed Mzari
+
+section: Continuité | 123
+
+subsection: Notion de fonctions | Moyen | 123.00
+
+link:
+    - type: cours
+      link: http://exo7.emath.fr/cours/ch_fonctions.pdf
+      title: Limites et fonctions continues
+
+    - type: video
+      link: http://youtu.be/TJLpXWXPsFs
+      title: Continuité en un point
+
+    - type: video
+      link: http://youtu.be/_cA6CkKYZxU
+      title: Continuité sur un intervalle
+
+    - type: video
+      link: http://youtu.be/TAUg4HL5fHs
+      title: Fonctions monotones et bijections
+
+    - type: exercices
+      link: http://exo7.emath.fr/ficpdf/fic00012.pdf
+      title: Fonctions continues
+
+tags:
+    - motcle: fonction croissante/décroissante
+
+question: |
+        Quels arguments sont valables pour montrer que \(f : \Rr \to \Rr\) est décroissante ?
+
+answers: 
+    - value: |
+        On a \(x \le y\) qui implique \(f(x) \le f(y)\).
+      correct: False
+
+    - value: |
+        On a \(x \le y\) qui implique \(f(x) \ge f(y)\).
+      correct: True
+
+    - value: |
+        On a \(x \ge y\) qui implique \(f(x) \le f(y)\).
+      correct: True
+
+    - value: |
+        On a \(x \ge y\) qui implique \(f(x) \ge f(y)\).
+      correct: False
+
+explanations: |
+        Une fonction \(f\) est décroissante si \(x \le y\) implique \(f(x) \ge f(y)\).
+        Ce qui peut aussi s'écrire \(x \ge y\) qui implique \(f(x) \le f(y)\). 
+        Autrement dit \(f\) inverse le sens des inégalités.
+
+---
+author: Arnaud Bodin, Abdellah Hanani, Mohamed Mzari
+
+section: Continuité | 123
+
+subsection: Notion de fonctions | Moyen | 123.00
+
+link:
+    - type: cours
+      link: http://exo7.emath.fr/cours/ch_fonctions.pdf
+      title: Limites et fonctions continues
+
+    - type: video
+      link: http://youtu.be/TJLpXWXPsFs
+      title: Continuité en un point
+
+    - type: video
+      link: http://youtu.be/_cA6CkKYZxU
+      title: Continuité sur un intervalle
+
+    - type: video
+      link: http://youtu.be/TAUg4HL5fHs
+      title: Fonctions monotones et bijections
+
+    - type: exercices
+      link: http://exo7.emath.fr/ficpdf/fic00012.pdf
+      title: Fonctions continues
+
+tags:
+    - motcle: fonction majorée/minorée
+
+question: |
+        Soit \(f : \Rr \to \Rr\). Quelles sont les assertions vraies ?
+
+answers: 
+    - value: |
+        \(\forall  M > 0 \quad \exists x \in \Rr \quad f(x) \le M\)  implique \(f\) majorée.
+      correct: False
+
+    - value: |
+        \(\forall  x \in \Rr \quad \exists  M > 0 \quad f(x) \ge M\)  implique \(f\) majorée.
+      correct: False
+
+    - value: |
+        \(\exists  M > 0 \quad \forall x \in \Rr \quad f(x) \le M\)  implique \(f\) majorée.
+      correct: True
+
+    - value: |
+        \(\exists  M > 0 \quad \exists x \in \Rr \quad f(x) \ge M\)  implique \(f\) majorée.
+      correct: False
+
+explanations: |
+        Par définition \(f\) est majorée si \(\exists  M > 0 \quad \forall x \in \Rr \quad f(x) \le M\).
+
+---
+author: Arnaud Bodin, Abdellah Hanani, Mohamed Mzari
+
+section: Continuité | 123
+
+subsection: Notion de fonctions | Moyen | 123.00
+
+link:
+    - type: cours
+      link: http://exo7.emath.fr/cours/ch_fonctions.pdf
+      title: Limites et fonctions continues
+
+    - type: video
+      link: http://youtu.be/TJLpXWXPsFs
+      title: Continuité en un point
+
+    - type: video
+      link: http://youtu.be/_cA6CkKYZxU
+      title: Continuité sur un intervalle
+
+    - type: video
+      link: http://youtu.be/TAUg4HL5fHs
+      title: Fonctions monotones et bijections
+
+    - type: exercices
+      link: http://exo7.emath.fr/ficpdf/fic00012.pdf
+      title: Fonctions continues
+
+tags:
+    - motcle: fonction croissante/décroissante
+
+question: |
+        Quelles sont les assertions vraies ?
+
+answers: 
+    - value: |
+        La fonction \(x \mapsto \frac{1}{x}\) est décroissante car sa dérivée \(x \mapsto -\frac{1}{x^2}\) est partout négative.
+      correct: False
+
+    - value: |
+        Une fonction périodique et croissante est constante.
+      correct: True
+
+    - value: |
+        Si \(f : \Rr \to ]0,+\infty[\) est croissante, alors \(1/f\) est décroissante.
+      correct: True
+
+    - value: |
+        Si \(f\) et \(g\) sont croissantes, alors \(f-g\) est croissante.
+      correct: False
+
+explanations: |
+        La fonction \(x \mapsto \frac{1}{x}\) est décroissante sur \(]0,+\infty[\) et \(]-\infty,0[\) mais pas sur \(\Rr^*\).
+
+---
+author: Arnaud Bodin, Abdellah Hanani, Mohamed Mzari
+
+section: Continuité | 123
+
+subsection: Notion de fonctions | Moyen | 123.00
+
+link:
+    - type: cours
+      link: http://exo7.emath.fr/cours/ch_fonctions.pdf
+      title: Limites et fonctions continues
+
+    - type: video
+      link: http://youtu.be/TJLpXWXPsFs
+      title: Continuité en un point
+
+    - type: video
+      link: http://youtu.be/_cA6CkKYZxU
+      title: Continuité sur un intervalle
+
+    - type: video
+      link: http://youtu.be/TAUg4HL5fHs
+      title: Fonctions monotones et bijections
+
+    - type: exercices
+      link: http://exo7.emath.fr/ficpdf/fic00012.pdf
+      title: Fonctions continues
+
+tags:
+    - motcle: domaine de définition
+
+question: |
+        Soit \(f(x) = \ln(x-1)\) et \(g(x) = \sqrt{x+1}\). 
+        Quelles sont les assertions vraies concernant les domaines de définition ? (Rappel : le domaine de définition de \(f\) est le plus grand ensemble \(D_f \subset \Rr\) sur lequel \(f\) est définie.)
+
+answers: 
+    - value: |
+        \(D_f \cup D_g = [-1,+\infty[\).
+      correct: True
+
+    - value: |
+        Pour la composition \(f \circ g\), \(D_{f\circ g} = [-1,+\infty[\).
+      correct: False
+
+    - value: |
+        Pour la composition \(g \circ f\), \(D_{g\circ f} = ]1,+\infty[\).
+      correct: False
+
+    - value: |
+        Pour la fonction \(f \times g\), \(D_{f\times g} = ]1,+\infty[\).
+      correct: True
+
+explanations: |
+        \(D_f = ]1,+\infty[\) ; \(D_g = [-1,+\infty[\) ; 
+        \(D_f \cup D_g = [-1,+\infty[\) ;
+        \(D_{f \times g} = D_f \cap D_g = ]1,+\infty[\) ;
+        \(D_{f \circ g} = ]1,+\infty[\).
+        \(g \circ f\) n'est pas définie pour \(x\) proche de \(1\), en fait 
+        \(D_{g\circ f} = [1+\frac1e,+\infty[\).
+
+---
+author: Arnaud Bodin, Abdellah Hanani, Mohamed Mzari
+
+section: Continuité | 123
+
+subsection: Notion de fonctions | Difficile | 123.00
+
+link:
+    - type: cours
+      link: http://exo7.emath.fr/cours/ch_fonctions.pdf
+      title: Limites et fonctions continues
+
+    - type: video
+      link: http://youtu.be/TJLpXWXPsFs
+      title: Continuité en un point
+
+    - type: video
+      link: http://youtu.be/_cA6CkKYZxU
+      title: Continuité sur un intervalle
+
+    - type: video
+      link: http://youtu.be/TAUg4HL5fHs
+      title: Fonctions monotones et bijections
+
+    - type: exercices
+      link: http://exo7.emath.fr/ficpdf/fic00012.pdf
+      title: Fonctions continues
+
+tags:
+    - motcle: fonction croissante/décroissante
+
+question: |
+        Soit \(f : \Rr \to \Rr\) une fonction à valeurs strictement positives. Quels arguments sont valables pour montrer que \(f\) est croissante ?
+
+answers: 
+    - value: |
+        Pour tout \(x\in\Rr\), on a \(f(x+1) \ge f(x)\).
+      correct: False
+
+    - value: |
+        Pour tout \(x\in\Rr\), on a \(\frac{f(x+1)}{f(x)} \ge 1\).
+      correct: False
+
+    - value: |
+        Pour tout \(x\in\Rr\), il existe \(h>0\) tel que \(f(x+h) \ge f(x)\).
+      correct: False
+
+    - value: |
+        Pour tout \(x\in\Rr\), pour tout \(h>0\), on a \(\frac{f(x+h)}{f(x)} \ge 1\).
+      correct: True
+
+explanations: |
+        En notant \(y = x+h\) avec \(h>0\) on a \(y > x\) et donc il suffit d'avoir \(\frac{f(y)}{f(x)} \ge 1\).
+        Par contre, il n'est pas suffisant de comparer \(f\) en des valeurs distantes de \(1\) ! Essayez de dessiner un contre-exemple : \(f\) vaut \(0\) partout, sauf \(1\) en chaque entier.
+        
+
+---
+author: Arnaud Bodin, Abdellah Hanani, Mohamed Mzari
+
+section: Continuité | 123
+
+subsection: Notion de fonctions | Difficile | 123.00
+
+link:
+    - type: cours
+      link: http://exo7.emath.fr/cours/ch_fonctions.pdf
+      title: Limites et fonctions continues
+
+    - type: video
+      link: http://youtu.be/TJLpXWXPsFs
+      title: Continuité en un point
+
+    - type: video
+      link: http://youtu.be/_cA6CkKYZxU
+      title: Continuité sur un intervalle
+
+    - type: video
+      link: http://youtu.be/TAUg4HL5fHs
+      title: Fonctions monotones et bijections
+
+    - type: exercices
+      link: http://exo7.emath.fr/ficpdf/fic00012.pdf
+      title: Fonctions continues
+
+tags:
+    - motcle: fonction majorée/minorée
+
+question: |
+        Soient \(f,g : \Rr \to \Rr\). Quelles sont les assertions vraies ?
+
+answers: 
+    - value: |
+        Si \(f\) est bornée et \(g\) majorée alors \(f-g\) est bornée.
+      correct: False
+
+    - value: |
+        Si \(f\) bornée et \(g\) majorée alors \(f-g\) est minorée.
+      correct: True
+
+    - value: |
+        Si \(f\) et \(g\) sont minorées, alors \(f \times g\) est minorée.
+      correct: False
+
+    - value: |
+        Si \(f\) et \(g\) sont minorées, alors \(|f \times g|\) est bornée.
+      correct: False
+
+explanations: |
+        La somme de deux fonctions majorées (resp. minorées) est majorée (resp. minorée). Ce n'est pas le cas pour le produit : par exemple
+        \(f(x) = -1\) est minorée, \(g(x) = \exp(x)\) aussi, mais \(f \times g (x) = -\exp(x)\) ne l'est pas.
+
+---
+author: Arnaud Bodin, Abdellah Hanani, Mohamed Mzari
+
+section: Continuité | 123
+
+subsection: Notion de fonctions | Difficile | 123.00
+
+link:
+    - type: cours
+      link: http://exo7.emath.fr/cours/ch_fonctions.pdf
+      title: Limites et fonctions continues
+
+    - type: video
+      link: http://youtu.be/TJLpXWXPsFs
+      title: Continuité en un point
+
+    - type: video
+      link: http://youtu.be/_cA6CkKYZxU
+      title: Continuité sur un intervalle
+
+    - type: video
+      link: http://youtu.be/TAUg4HL5fHs
+      title: Fonctions monotones et bijections
+
+    - type: exercices
+      link: http://exo7.emath.fr/ficpdf/fic00012.pdf
+      title: Fonctions continues
+
+tags:
+    - motcle: domaine de définition
+
+question: |
+        Soient \(f : ]-\infty,0[ \to ]0,1[\) et \(g : ]-2,2[ \to ]0,+\infty[\).
+        Quelles sont les assertions vraies ?
+
+answers: 
+    - value: |
+        Le domaine de définition de \(x \mapsto g\big(f(2x)\big)\) est \(]-1,1[\).
+      correct: False
+
+    - value: |
+        Le domaine de définition de \(x \mapsto g\big( \ln (f(x)) \big)\) est \(]0,+\infty[\).
+      correct: False
+
+    - value: |
+        Le domaine de définition de \(x \mapsto \frac{g(x+1)}{f(x)}\) est \(]-3,0[\).
+      correct: True
+
+    - value: |
+        Le domaine de définition de \(x \mapsto \frac{f(x) \times g(x)}{f(x)+g(x)}\) est \(]-2,0[\).
+      correct: True
+
+explanations: |
+        Si \(x \mapsto f(x)\) est définie sur \(]a,b[\) alors
+        \(x \mapsto f(x+k)\) est définie sur \(]a-k,b-k[\)
+        et \(x \mapsto f(\ell x)\) est définie sur \(]\frac{a}{\ell},\frac{b}{\ell}[\) (où \(\ell >0\)).
+
+---
+author: Arnaud Bodin, Abdellah Hanani, Mohamed Mzari
+
+section: Continuité | 123
+
+subsection: Fonctions continues | Facile | 123.01, 123.02
+
+link:
+    - type: cours
+      link: http://exo7.emath.fr/cours/ch_fonctions.pdf
+      title: Limites et fonctions continues
+
+    - type: video
+      link: http://youtu.be/TJLpXWXPsFs
+      title: Continuité en un point
+
+    - type: video
+      link: http://youtu.be/_cA6CkKYZxU
+      title: Continuité sur un intervalle
+
+    - type: video
+      link: http://youtu.be/TAUg4HL5fHs
+      title: Fonctions monotones et bijections
+
+    - type: exercices
+      link: http://exo7.emath.fr/ficpdf/fic00012.pdf
+      title: Fonctions continues
+
+tags:
+    - motcle: continuité en un point
+
+question: |
+        Quelles fonctions sont continues en \(x=0\) ?
+
+answers: 
+    - value: |
+        \(x \mapsto |x|\) (valeur absolue).
+      correct: True
+
+    - value: |
+        \(x \mapsto E(x)\) (partie entière).
+      correct: False
+
+    - value: |
+        \(x \mapsto \frac 1x\) (inverse).
+      correct: False
+
+    - value: |
+        \(x \mapsto \sqrt{x}\) (racine carrée).
+      correct: True
+
+explanations: |
+        La fonction inverse n'est pas définie à l'origine !
+        La fonction partie entière n'est pas continue à l'origine.
+
+---
+author: Arnaud Bodin, Abdellah Hanani, Mohamed Mzari
+
+section: Continuité | 123
+
+subsection: Fonctions continues | Facile | 123.01, 123.02
+
+link:
+    - type: cours
+      link: http://exo7.emath.fr/cours/ch_fonctions.pdf
+      title: Limites et fonctions continues
+
+    - type: video
+      link: http://youtu.be/TJLpXWXPsFs
+      title: Continuité en un point
+
+    - type: video
+      link: http://youtu.be/_cA6CkKYZxU
+      title: Continuité sur un intervalle
+
+    - type: video
+      link: http://youtu.be/TAUg4HL5fHs
+      title: Fonctions monotones et bijections
+
+    - type: exercices
+      link: http://exo7.emath.fr/ficpdf/fic00012.pdf
+      title: Fonctions continues
+
+tags:
+    - motcle: continuité sur un intervalle
+
+question: |
+        Parmi les fonctions suivantes, lesquelles sont continues sur \(\Rr\) ?
+
+answers: 
+    - value: |
+        \(x \mapsto \cos(x)-\sin(x)\)
+      correct: True
+
+    - value: |
+        \(x \tan(x)\)
+      correct: False
+
+    - value: |
+        \(x \mapsto \frac{1}{\exp(x)}\)
+      correct: True
+
+    - value: |
+        \(x \mapsto \ln(\exp(3x))\)
+      correct: True
+
+explanations: |
+        La fonction tangente n'est pas définie partout, et elle continue seulement sur son domaine de définition. 
+        Comme \(\ln(\exp(3x)) = 3x\) alors cette fonction sera continue sur \(\Rr\).
+
+---
+author: Arnaud Bodin, Abdellah Hanani, Mohamed Mzari
+
+section: Continuité | 123
+
+subsection: Fonctions continues | Facile | 123.01, 123.02
+
+link:
+    - type: cours
+      link: http://exo7.emath.fr/cours/ch_fonctions.pdf
+      title: Limites et fonctions continues
+
+    - type: video
+      link: http://youtu.be/TJLpXWXPsFs
+      title: Continuité en un point
+
+    - type: video
+      link: http://youtu.be/_cA6CkKYZxU
+      title: Continuité sur un intervalle
+
+    - type: video
+      link: http://youtu.be/TAUg4HL5fHs
+      title: Fonctions monotones et bijections
+
+    - type: exercices
+      link: http://exo7.emath.fr/ficpdf/fic00012.pdf
+      title: Fonctions continues
+
+tags:
+    - motcle: continuité sur un intervalle
+
+question: |
+        Quelles sont les propriétés vraies ?
+
+answers: 
+    - value: |
+        La somme de deux fonctions continues est continue.
+      correct: True
+
+    - value: |
+        Le produit de deux fonctions continues est continue.
+      correct: True
+
+    - value: |
+        Le quotient de deux fonctions continues est continue.
+      correct: False
+
+    - value: |
+        L'inverse d'une fonction continue ne s'annulant pas est continue.
+      correct: True
+
+explanations: |
+        Le quotient de deux fonctions continues est une fonction continue, uniquement aux points où le dénominateur ne s'annule pas.
+
+---
+author: Arnaud Bodin, Abdellah Hanani, Mohamed Mzari
+
+section: Continuité | 123
+
+subsection: Fonctions continues | Moyen | 123.01, 123.02
+
+link:
+    - type: cours
+      link: http://exo7.emath.fr/cours/ch_fonctions.pdf
+      title: Limites et fonctions continues
+
+    - type: video
+      link: http://youtu.be/TJLpXWXPsFs
+      title: Continuité en un point
+
+    - type: video
+      link: http://youtu.be/_cA6CkKYZxU
+      title: Continuité sur un intervalle
+
+    - type: video
+      link: http://youtu.be/TAUg4HL5fHs
+      title: Fonctions monotones et bijections
+
+    - type: exercices
+      link: http://exo7.emath.fr/ficpdf/fic00012.pdf
+      title: Fonctions continues
+
+tags:
+    - motcle: continuité en un point
+
+question: |
+        Parmi les propriétés suivantes, quelles sont celles qui implique que \(f\) est continue en \(x_ 0\) ?
+
+answers: 
+    - value: |
+        \(\lim_{x\to x_0} f(x) = f(x_0)\)
+      correct: True
+
+    - value: |
+        \(\forall \epsilon >0 \quad \exists \delta > 0 \qquad
+        |x-x_0| \le \delta \implies |f(x)-f(x_0)| \le \epsilon\)
+      correct: True
+
+    - value: |
+        \(\exists \delta > 0 \quad \forall \epsilon >0 \qquad
+        |x-x_0| < \delta \implies |f(x)-f(x_0)| < \epsilon\)
+      correct: False
+
+    - value: |
+        \(\big| f(x) - f(x_0) \big| \to 0\) lorsque \(x \to x_0\)
+      correct: True
+
+explanations: |
+        \(f\) est continue en \(x_0\) si \(\lim_{x\to x_0} f(x) = f(x_0)\), ce qui s'écrit aussi \(\big| f(x) - f(x_0) \big| \to 0\), ou encore :
+        \(\forall \epsilon >0 \quad \exists \delta > 0 \qquad
+        |x-x_0| < \delta \implies |f(x)-f(x_0)| < \epsilon\) (et on peut remplacer les inégalités strictes par des inégalités larges).
+
+---
+author: Arnaud Bodin, Abdellah Hanani, Mohamed Mzari
+
+section: Continuité | 123
+
+subsection: Fonctions continues | Moyen | 123.01, 123.02
+
+link:
+    - type: cours
+      link: http://exo7.emath.fr/cours/ch_fonctions.pdf
+      title: Limites et fonctions continues
+
+    - type: video
+      link: http://youtu.be/TJLpXWXPsFs
+      title: Continuité en un point
+
+    - type: video
+      link: http://youtu.be/_cA6CkKYZxU
+      title: Continuité sur un intervalle
+
+    - type: video
+      link: http://youtu.be/TAUg4HL5fHs
+      title: Fonctions monotones et bijections
+
+    - type: exercices
+      link: http://exo7.emath.fr/ficpdf/fic00012.pdf
+      title: Fonctions continues
+
+tags:
+    - motcle: continuité sur un intervalle
+
+question: |
+        Parmi les fonctions suivantes, lesquelles sont continues sur \(\Rr\) ?
+
+answers: 
+    - value: |
+        \(x \mapsto P(x)\), où \(P\) est un polynôme.
+      correct: True
+
+    - value: |
+        \(x \mapsto |f(x)|\), où \(f\) est une fonction continue.
+      correct: True
+
+    - value: |
+        \(x \mapsto \frac{1}{f(x)}\), où \(f\) est une fonction continue ne s'annulant pas.
+      correct: True
+
+    - value: |
+        La fonction \(f\) définie par \(f(x) = 0\), si \(x\in \Qq\) et par \(f(x)=1\) sinon.
+      correct: False
+
+explanations: |
+        La fonction \(f\) définie par \(f(x) = 0\), si \(x\in \Qq\) et par \(f(x)=1\) sinon, est une fonction qui n'est continue en aucun point \(x_0\in \Rr\) !
+
+---
+author: Arnaud Bodin, Abdellah Hanani, Mohamed Mzari
+
+section: Continuité | 123
+
+subsection: Fonctions continues | Moyen | 123.01, 123.02
+
+link:
+    - type: cours
+      link: http://exo7.emath.fr/cours/ch_fonctions.pdf
+      title: Limites et fonctions continues
+
+    - type: video
+      link: http://youtu.be/TJLpXWXPsFs
+      title: Continuité en un point
+
+    - type: video
+      link: http://youtu.be/_cA6CkKYZxU
+      title: Continuité sur un intervalle
+
+    - type: video
+      link: http://youtu.be/TAUg4HL5fHs
+      title: Fonctions monotones et bijections
+
+    - type: exercices
+      link: http://exo7.emath.fr/ficpdf/fic00012.pdf
+      title: Fonctions continues
+
+tags:
+    - motcle: continuité sur un intervalle
+
+question: |
+        En posant \(f(0)=0\), quelles fonctions deviennent continues sur \(\Rr\) ?
+
+answers: 
+    - value: |
+        \(f(x) = \frac 1x\)
+      correct: False
+
+    - value: |
+        \(f(x) = \frac{\sin(x)}{x}\)
+      correct: False
+
+    - value: |
+        \(f(x) = x \ln( |x|)\)
+      correct: True
+
+    - value: |
+        \(f(x) = e^{1/x}\)
+      correct: False
+
+explanations: |
+        Toutes les fonctions sont  continues sur \(\Rr^*\), il s'agit donc de déterminer si \(f(x) \to 0\) lorsque \(x\to0\). C'est uniquement le cas de \(x \ln( |x|)\).
+
+---
+author: Arnaud Bodin, Abdellah Hanani, Mohamed Mzari
+
+section: Continuité | 123
+
+subsection: Fonctions continues | Difficile | 123.01, 123.02
+
+link:
+    - type: cours
+      link: http://exo7.emath.fr/cours/ch_fonctions.pdf
+      title: Limites et fonctions continues
+
+    - type: video
+      link: http://youtu.be/TJLpXWXPsFs
+      title: Continuité en un point
+
+    - type: video
+      link: http://youtu.be/_cA6CkKYZxU
+      title: Continuité sur un intervalle
+
+    - type: video
+      link: http://youtu.be/TAUg4HL5fHs
+      title: Fonctions monotones et bijections
+
+    - type: exercices
+      link: http://exo7.emath.fr/ficpdf/fic00012.pdf
+      title: Fonctions continues
+
+tags:
+    - motcle: continuité en un point
+
+question: |
+        Parmi les propriétés suivantes, quelles sont celles qui impliquent que \(f\) est continue en \(x_ 0\) ?
+
+answers: 
+    - value: |
+        \(f(x)^2 \to f(x_0)^2\) (lorsque \(x \to x_0\))
+      correct: False
+
+    - value: |
+        \(f(x)^3 \to f(x_0)^3\) (lorsque \(x \to x_0\))
+      correct: True
+
+    - value: |
+        \(E(f(x)) \to E(f(x_0))\) (lorsque \(x \to x_0\))
+      correct: False
+
+    - value: |
+        \(\exp(f(x)) \to \exp(f(x_0))\) (lorsque \(x \to x_0\))
+      correct: True
+
+explanations: |
+        Si \(f(x)^2 \to f(x_0)^2\)  alors ce n'est pas toujours vrai que \(f(x) \to f(x_0)\), prendre la fonction \(f(x)=-1\) si \(x<0\) et \(f(x)=+1\) sinon. Par contre avec le cube c'est vrai, car la fonction \(x \mapsto x^3\) est une bijection continue de \(\Rr\) dans \(\Rr\), idem avec l'exponentielle !
+
+---
+author: Arnaud Bodin, Abdellah Hanani, Mohamed Mzari
+
+section: Continuité | 123
+
+subsection: Fonctions continues | Difficile | 123.01, 123.02
+
+link:
+    - type: cours
+      link: http://exo7.emath.fr/cours/ch_fonctions.pdf
+      title: Limites et fonctions continues
+
+    - type: video
+      link: http://youtu.be/TJLpXWXPsFs
+      title: Continuité en un point
+
+    - type: video
+      link: http://youtu.be/_cA6CkKYZxU
+      title: Continuité sur un intervalle
+
+    - type: video
+      link: http://youtu.be/TAUg4HL5fHs
+      title: Fonctions monotones et bijections
+
+    - type: exercices
+      link: http://exo7.emath.fr/ficpdf/fic00012.pdf
+      title: Fonctions continues
+
+tags:
+    - motcle: continuité en un point
+
+question: |
+        Soit \(f : \Rr \to \Rr\) une fonction et \((u_n)_{n\in\Nn}\) une suite. Quelles sont les assertions vraies ?
+
+answers: 
+    - value: |
+        Si \(u_n \to \ell\) et \(f\) continue en \(\ell\), alors \(f(u_n)\) admet une limite.
+      correct: True
+
+    - value: |
+        Si \(f(u_n) \to f(\ell)\) et \(f\) est continue en \(\ell\), alors \(u_n \to \ell\).
+      correct: False
+
+    - value: |
+        Si \(u_n \to \ell\) et \(f(u_n)\) n'a pas de limite, alors \(f\) n'est pas continue en \(\ell\).
+      correct: True
+
+    - value: |
+        Si pour toute suite qui vérifie \(u_n \to \ell\), on a \(f(u_n) \to f(\ell)\), alors \(f\) est continue en \(\ell\).
+      correct: True
+
+explanations: |
+        Une fonction \(f\) est continue en \(\ell\) si et seulement si 
+        pour toute suite \((u_n)\) qui tend vers \(\ell\), on a \(f(u_n) \to f(\ell)\).
+
+---
+author: Arnaud Bodin, Abdellah Hanani, Mohamed Mzari
+
+section: Continuité | 123
+
+subsection: Théorèmes des valeurs intermédiaires | Facile | 123.01, 123.02
+
+link:
+    - type: cours
+      link: http://exo7.emath.fr/cours/ch_fonctions.pdf
+      title: Limites et fonctions continues
+
+    - type: video
+      link: http://youtu.be/TJLpXWXPsFs
+      title: Continuité en un point
+
+    - type: video
+      link: http://youtu.be/_cA6CkKYZxU
+      title: Continuité sur un intervalle
+
+    - type: video
+      link: http://youtu.be/TAUg4HL5fHs
+      title: Fonctions monotones et bijections
+
+    - type: exercices
+      link: http://exo7.emath.fr/ficpdf/fic00012.pdf
+      title: Fonctions continues
+
+tags:
+    - motcle: zéros de fonction
+
+question: |
+        Quelles assertions peut-on déduire du théorème des valeurs intermédiaires ?
+
+answers: 
+    - value: |
+        \(\sin(x) - x^2 + 1\) s'annule sur \([0,\pi]\).
+      correct: True
+
+    - value: |
+        \(x^5-37\) s'annule sur \([2,3]\).
+      correct: True
+
+    - value: |
+        \(\ln(x+1)-x+1\) s'annule sur \([0,+\infty[\).
+      correct: True
+
+    - value: |
+        \(e^x+e^{-x}\) s'annule sur \([-1,1]\).
+      correct: False
+
+explanations: |
+        Pour montrer qu'une fonction continue \(f\) s'annule sur un intervalle \([a,b]\), il est suffisant de montrer que \(f(a)>0\) et \(f(b)<0\) (ou l'opposé).
+
+---
+author: Arnaud Bodin, Abdellah Hanani, Mohamed Mzari
+
+section: Continuité | 123
+
+subsection: Théorèmes des valeurs intermédiaires | Facile | 123.01, 123.02
+
+link:
+    - type: cours
+      link: http://exo7.emath.fr/cours/ch_fonctions.pdf
+      title: Limites et fonctions continues
+
+    - type: video
+      link: http://youtu.be/TJLpXWXPsFs
+      title: Continuité en un point
+
+    - type: video
+      link: http://youtu.be/_cA6CkKYZxU
+      title: Continuité sur un intervalle
+
+    - type: video
+      link: http://youtu.be/TAUg4HL5fHs
+      title: Fonctions monotones et bijections
+
+    - type: exercices
+      link: http://exo7.emath.fr/ficpdf/fic00012.pdf
+      title: Fonctions continues
+
+tags:
+    - motcle: zéros de fonction
+
+question: |
+        Soit \(f(x)=x^2-7\). On applique la méthode de dichotomie sur l'intervalle \([2 ; 3]\). 
+        On calcule \(f(2,125)=-1,9375\) ; \(f(2,5) = -0,75\) ; \(f(2,625) = -0,109375\) ; \(f(2,75) = 0,5625\). Quelles sont les assertions vraies ?
+
+answers: 
+    - value: |
+        \(f\) s'annule sur \([2 ; 2,5]\) et sur \([2,5 ; 3]\).
+      correct: False
+
+    - value: |
+        \(f\) s'annule sur \([2,5 ; 3]\).
+      correct: True
+
+    - value: |
+        \(f\) s'annule sur \([2,75 ; 3]\).
+      correct: False
+
+    - value: |
+        \(2,6 \le \sqrt{7} \le 2,8\)
+      correct: True
+
+explanations: |
+        La fonctions \(f\) est continue, strictement croissante et s'annule en \(\sqrt{7}\). 
+        Comme \(f(2,625) < 0\) et \(f(2,75) > 0\), alors
+        \(2,625 < \sqrt{7} < 2,75\).
+
+---
+author: Arnaud Bodin, Abdellah Hanani, Mohamed Mzari
+
+section: Continuité | 123
+
+subsection: Théorèmes des valeurs intermédiaires | Moyen | 123.01, 123.02
+
+link:
+    - type: cours
+      link: http://exo7.emath.fr/cours/ch_fonctions.pdf
+      title: Limites et fonctions continues
+
+    - type: video
+      link: http://youtu.be/TJLpXWXPsFs
+      title: Continuité en un point
+
+    - type: video
+      link: http://youtu.be/_cA6CkKYZxU
+      title: Continuité sur un intervalle
+
+    - type: video
+      link: http://youtu.be/TAUg4HL5fHs
+      title: Fonctions monotones et bijections
+
+    - type: exercices
+      link: http://exo7.emath.fr/ficpdf/fic00012.pdf
+      title: Fonctions continues
+
+tags:
+    - motcle: zéros de fonction
+
+question: |
+        Soit \(f : [a,b] \to \Rr\) une fonction continue (avec \(a < b\)). Quelles assertions sont une conséquence du théorème des valeurs intermédiaires ?
+
+answers: 
+    - value: |
+        Si \(f(a) \cdot f(b) > 0\) alors \(f\) s'annule sur \([a,b]\).
+      correct: False
+
+    - value: |
+        Si \(f(a) < k < f(b)\) alors \(f(x)-k\) s'annule sur \([a,b]\).
+      correct: True
+
+    - value: |
+        Pour \(I \subset \Rr\), si \(f(I)\) est un intervalle alors \(I\) est un intervalle.
+      correct: False
+
+    - value: |
+        Si \(c \in ]a,b[\) alors \(f(c) \in ]f(a),f(b)[\).
+      correct: False
+
+explanations: |
+        Les trois façons d'énoncer le théorème des valeurs intermédiaires, pour \(f : [a,b] \to \Rr\) continue :
+        (1) si \(f(a) \cdot f(b) \le 0\) alors \(f\) s'annule sur \([a,b]\) ;
+        (2) si \(f(a) < k < f(b)\) alors il existe \(a < c < b\) tel que \(f(c)=k\) ;
+        (3) si \(I\) est un intervalle, alors \(f(I)\) est un intervalle.
+
+---
+author: Arnaud Bodin, Abdellah Hanani, Mohamed Mzari
+
+section: Continuité | 123
+
+subsection: Théorèmes des valeurs intermédiaires | Moyen | 123.01, 123.02
+
+link:
+    - type: cours
+      link: http://exo7.emath.fr/cours/ch_fonctions.pdf
+      title: Limites et fonctions continues
+
+    - type: video
+      link: http://youtu.be/TJLpXWXPsFs
+      title: Continuité en un point
+
+    - type: video
+      link: http://youtu.be/_cA6CkKYZxU
+      title: Continuité sur un intervalle
+
+    - type: video
+      link: http://youtu.be/TAUg4HL5fHs
+      title: Fonctions monotones et bijections
+
+    - type: exercices
+      link: http://exo7.emath.fr/ficpdf/fic00012.pdf
+      title: Fonctions continues
+
+tags:
+    - motcle: zéros de fonction
+
+question: |
+        Soit \(f : [0,1] \to \Rr\) une fonction continue avec \(f(0)<0\) et \(f(1)>0\).
+        Par dichotomie on construit deux suites \((a_n)\) et \((b_n)\), avec \(a_0 = 0\) et \(b_0 = 1\). Quelles sont les assertions vraies ?
+
+answers: 
+    - value: |
+        Si \(f(\frac12)>0\) alors \(a_1 = \frac12\) et \(b_1 = \frac12\).
+      correct: False
+
+    - value: |
+        \(f\) s'annule sur \([a_n,b_n]\) (quel que soit \(n\ge0\)).
+      correct: True
+
+    - value: |
+        \((a_n)\) et \((b_n)\) sont des suites croissantes.
+      correct: False
+
+    - value: |
+        \(a_n \to 0\) ou \(b_n \to 0\).
+      correct: False
+
+explanations: |
+        Par dichotomie on construit deux suites adjacentes. \((a_n)\) est croissante, \((b_n)\) est décroissante et \(a_n \le b_n\). Ces deux suites convergent vers une valeur \(c\in]a,b[\), telle que \(f(c)=0\).
+
+---
+author: Arnaud Bodin, Abdellah Hanani, Mohamed Mzari
+
+section: Continuité | 123
+
+subsection: Théorèmes des valeurs intermédiaires | Difficile | 123.01, 123.02
+
+link:
+    - type: cours
+      link: http://exo7.emath.fr/cours/ch_fonctions.pdf
+      title: Limites et fonctions continues
+
+    - type: video
+      link: http://youtu.be/TJLpXWXPsFs
+      title: Continuité en un point
+
+    - type: video
+      link: http://youtu.be/_cA6CkKYZxU
+      title: Continuité sur un intervalle
+
+    - type: video
+      link: http://youtu.be/TAUg4HL5fHs
+      title: Fonctions monotones et bijections
+
+    - type: exercices
+      link: http://exo7.emath.fr/ficpdf/fic00012.pdf
+      title: Fonctions continues
+
+tags:
+    - motcle: zéros de fonction
+
+question: |
+        Soit \(f : [a,b] \to \Rr\) une fonction continue (avec \(a < b\)). Quelles assertions sont vraies ?
+
+answers: 
+    - value: |
+        Si \(f(a) \cdot f(b) < 0\) et \(f\) croissante alors \(f\) s'annule une unique fois sur \([a,b]\).
+      correct: False
+
+    - value: |
+        Si \(f(a) \cdot f(b) < 0\) et \(f\) n'est pas strictement monotone alors \(f\) s'annule au moins deux fois sur \([a,b]\).
+      correct: False
+
+    - value: |
+        Si \(f(a) \cdot f(b) < 0\) alors \(f\) s'annule un nombre fini de fois sur \([a,b]\).
+      correct: False
+
+    - value: |
+        Si \(f(a) \cdot f(b) < 0\) et \(f\) strictement décroissante, alors \(f\) s'annule une unique fois sur \([a,b]\).
+      correct: True
+
+explanations: |
+        Le théorème des valeurs intermédiaires implique que si \(f : [a,b] \to \Rr\) est continue avec \(f(a) \cdot f(b) < 0\) alors
+        il existe une valeur \(c \in [a,b]\) telle que \(f(c)=0\). Pour avoir l'unicité de ce zéro, il suffit que \(f\) soit strictement croissante ou bien strictement décroissante.
+
+---
+author: Arnaud Bodin, Abdellah Hanani, Mohamed Mzari
+
+section: Continuité | 123
+
+subsection: Théorèmes des valeurs intermédiaires | Difficile | 123.01, 123.02
+
+link:
+    - type: cours
+      link: http://exo7.emath.fr/cours/ch_fonctions.pdf
+      title: Limites et fonctions continues
+
+    - type: video
+      link: http://youtu.be/TJLpXWXPsFs
+      title: Continuité en un point
+
+    - type: video
+      link: http://youtu.be/_cA6CkKYZxU
+      title: Continuité sur un intervalle
+
+    - type: video
+      link: http://youtu.be/TAUg4HL5fHs
+      title: Fonctions monotones et bijections
+
+    - type: exercices
+      link: http://exo7.emath.fr/ficpdf/fic00012.pdf
+      title: Fonctions continues
+
+tags:
+    - motcle: zéros de fonction
+
+question: |
+        Soit \(f : [0,1] \to \Rr\) une fonction continue avec \(f(0)>0\) et \(f(1)<0\).
+        Par dichotomie on construit deux suites \((a_n)\) et \((b_n)\), avec \(a_0 = 0\) et \(b_0 = 1\). Quelles sont les assertions vraies ?
+
+answers: 
+    - value: |
+        \((a_n)\) et \((b_n)\) sont des suites adjacentes.
+      correct: True
+
+    - value: |
+        \((f=0)\) admet une unique solution sur \([a_n,b_n]\).
+      correct: False
+
+    - value: |
+        Si \(f(a_n)<0\) et \(f\big(\frac{a_n+b_n}{2}\big) >0\) alors \(a_{n+1} =\frac{a_n+b_n}{2}\) et \(b_{n+1}=b_n\).
+      correct: True
+
+    - value: |
+        Pour \(n=10\), \(a_{10}\) approche une solution de \((f=0)\) à moins de \(\frac{1}{1000}\).
+      correct: True
+
+explanations: |
+        Par dichotomie les suites construites vérifient : \((a_n)\) est croissante, \((b_n)\) est décroissante et \(a_n \le b_n\), et \(b_n-a_n \to 0\). Ce sont donc des suites adjacentes. En plus la limite de ces deux suites est une solution de l'équation \((f=0)\).
+        Le méthode implique ici que si \(f(a_n)>0\), \(f(b_n)<0\) et \(f\big(\frac{a_n+b_n}{2}\big) >0\) alors \(a_{n+1} =\frac{a_n+b_n}{2}\) et \(b_{n+1}=b_n\).
+        L'intervalle \([a_n,b_n]\) où se trouve un zéro est divisé par deux à chaque étape. Donc au bout de \(10\) étapes l'intervalle
+        \([a_{10},b_{10}]\) est un sous intervalle de l'intervalle de départ \([0,1]\), et sa longueur est \(\frac{1}{2^{10}} = \frac{1}{1024} < \frac1{1000}\).
+
+---
+author: Arnaud Bodin, Abdellah Hanani, Mohamed Mzari
+
+section: Continuité | 123
+
+subsection: Maximum, bijection | Facile | 123.04
+
+link:
+    - type: cours
+      link: http://exo7.emath.fr/cours/ch_fonctions.pdf
+      title: Limites et fonctions continues
+
+    - type: video
+      link: http://youtu.be/TJLpXWXPsFs
+      title: Continuité en un point
+
+    - type: video
+      link: http://youtu.be/_cA6CkKYZxU
+      title: Continuité sur un intervalle
+
+    - type: video
+      link: http://youtu.be/TAUg4HL5fHs
+      title: Fonctions monotones et bijections
+
+    - type: exercices
+      link: http://exo7.emath.fr/ficpdf/fic00012.pdf
+      title: Fonctions continues
+
+tags:
+    - motcle: maximum/minimum
+
+question: |
+        Soit \(f : [a,b] \to \Rr\) continue. Quelles sont les assertions vraies ?
+
+answers: 
+    - value: |
+        \(f\) admet un maximum sur \(]a,b[\).
+      correct: False
+
+    - value: |
+        \(f\) admet un maximum en \(a\) ou en \(b\).
+      correct: False
+
+    - value: |
+        \(f\) est bornée sur \(]a,b[\).
+      correct: True
+
+    - value: |
+        \(f\) admet un maximum ou un minimum sur \([a,b]\) mais pas les deux.
+      correct: False
+
+explanations: |
+        Une fonction continue sur un intervalle fermé borné, est bornée et atteint ses bornes (donc le maximum et le minimum sont atteints). Par contre ses extremums peuvent être en \(a\) ou en \(b\) ou dans \(]a,b[\).
+
+---
+author: Arnaud Bodin, Abdellah Hanani, Mohamed Mzari
+
+section: Continuité | 123
+
+subsection: Maximum, bijection | Facile | 123.04
+
+link:
+    - type: cours
+      link: http://exo7.emath.fr/cours/ch_fonctions.pdf
+      title: Limites et fonctions continues
+
+    - type: video
+      link: http://youtu.be/TJLpXWXPsFs
+      title: Continuité en un point
+
+    - type: video
+      link: http://youtu.be/_cA6CkKYZxU
+      title: Continuité sur un intervalle
+
+    - type: video
+      link: http://youtu.be/TAUg4HL5fHs
+      title: Fonctions monotones et bijections
+
+    - type: exercices
+      link: http://exo7.emath.fr/ficpdf/fic00012.pdf
+      title: Fonctions continues
+
+tags:
+    - motcle: bijection
+
+question: |
+        Soit \(f : \Rr \to \Rr\) une fonction continue telle que : elle est strictement croissante sur \(]-\infty,0]\) ; strictement décroissante sur \([0,1]\) ; strictement croissante sur \([1,+\infty[\). En plus \(\lim_{x\to-\infty} f = - \infty\), \(f(0)=2\), \(f(1) = 1\) et \(\lim_{x\to+\infty} f = 3\). Quelles sont les assertions vraies ?
+
+answers: 
+    - value: |
+        La restriction \(f_| : ]-\infty,0] \to ]-\infty,2]\) est bijective.
+      correct: True
+
+    - value: |
+        La restriction \(f_| : [1,+\infty[ \to [1,+\infty[\) est bijective.
+      correct: False
+
+    - value: |
+        La restriction \(f_| : [0,1] \to [1,2]\) est bijective.
+      correct: True
+
+    - value: |
+        La restriction \(f_| : ]0,+\infty] \to [1,3[\) est bijective.
+      correct: False
+
+explanations: |
+        Le plus simple est de dessiner l'allure du graphe (ou le tableau de variation) pour se convaincre que \(f\) restreinte à \(]-\infty,0]\) définit une bijection vers \(]-\infty,2]\) ;  \(f\) restreinte à \([0,1]\) définit une bijection (décroissante) vers \([1,2]\) ;  \(f\) restreinte à \([1,+\infty[\) définit une bijection vers \([1,3[\). 
+
+---
+author: Arnaud Bodin, Abdellah Hanani, Mohamed Mzari
+
+section: Continuité | 123
+
+subsection: Maximum, bijection | Moyen | 123.04
+
+link:
+    - type: cours
+      link: http://exo7.emath.fr/cours/ch_fonctions.pdf
+      title: Limites et fonctions continues
+
+    - type: video
+      link: http://youtu.be/TJLpXWXPsFs
+      title: Continuité en un point
+
+    - type: video
+      link: http://youtu.be/_cA6CkKYZxU
+      title: Continuité sur un intervalle
+
+    - type: video
+      link: http://youtu.be/TAUg4HL5fHs
+      title: Fonctions monotones et bijections
+
+    - type: exercices
+      link: http://exo7.emath.fr/ficpdf/fic00012.pdf
+      title: Fonctions continues
+
+tags:
+    - motcle: maximum/minimum
+
+question: |
+        Soit \(f(x) = x \sin(\pi x) - \ln(x) - 1\) définie sur \(]0,1]\).
+        Quelles sont les assertions vraies ?
+
+answers: 
+    - value: |
+        \(f\) est bornée et atteint ses bornes.
+      correct: False
+
+    - value: |
+        \(f\) est majorée.
+      correct: False
+
+    - value: |
+        \(f\) est minorée.
+      correct: True
+
+    - value: |
+        Il existe \(c \in ]0,1]\) tel que \(f(c)=0\).
+      correct: True
+
+explanations: |
+        Attention l'intervalle de définition n'est pas fermé borné. Par contre la limite de \(f\) en \(0\) en \(+\infty\) et \(f(1) = -1\). On en déduit que \(f\) n'est pas majorée, par contre elle est minorée, et par la théorème des valeurs intermédiaires, elle s'annule.
+
+---
+author: Arnaud Bodin, Abdellah Hanani, Mohamed Mzari
+
+section: Continuité | 123
+
+subsection: Maximum, bijection | Moyen | 123.04
+
+link:
+    - type: cours
+      link: http://exo7.emath.fr/cours/ch_fonctions.pdf
+      title: Limites et fonctions continues
+
+    - type: video
+      link: http://youtu.be/TJLpXWXPsFs
+      title: Continuité en un point
+
+    - type: video
+      link: http://youtu.be/_cA6CkKYZxU
+      title: Continuité sur un intervalle
+
+    - type: video
+      link: http://youtu.be/TAUg4HL5fHs
+      title: Fonctions monotones et bijections
+
+    - type: exercices
+      link: http://exo7.emath.fr/ficpdf/fic00012.pdf
+      title: Fonctions continues
+
+tags:
+    - motcle: bijection
+
+question: |
+        Soit \(f : [a,b] \to [c,d]\) continue avec \(a < b\), \(c < d\), \(f(a)=c\), \(f(b)=d\). Quelles propriétés impliquent \(f\) bijective ?
+
+answers: 
+    - value: |
+        \(f\) injective.
+      correct: True
+
+    - value: |
+        \(f\) surjective.
+      correct: False
+
+    - value: |
+        \(f\) croissante.
+      correct: False
+
+    - value: |
+        \(f\) strictement croissante.
+      correct: True
+
+explanations: |
+        Comme \(f(a)=c\), \(f(b)=d\), alors par le théorème des valeurs intermédiaires, toute valeur entre \(c\) et \(d\) est atteinte, autrement dit \(f\) est surjective. 
+        Si en plus \(f\) est injective (ce qui est le cas si \(f\) strictement croissante) alors \(f\) sera bijective.
+
+---
+author: Arnaud Bodin, Abdellah Hanani, Mohamed Mzari
+
+section: Continuité | 123
+
+subsection: Maximum, bijection | Difficile | 123.04
+
+link:
+    - type: cours
+      link: http://exo7.emath.fr/cours/ch_fonctions.pdf
+      title: Limites et fonctions continues
+
+    - type: video
+      link: http://youtu.be/TJLpXWXPsFs
+      title: Continuité en un point
+
+    - type: video
+      link: http://youtu.be/_cA6CkKYZxU
+      title: Continuité sur un intervalle
+
+    - type: video
+      link: http://youtu.be/TAUg4HL5fHs
+      title: Fonctions monotones et bijections
+
+    - type: exercices
+      link: http://exo7.emath.fr/ficpdf/fic00012.pdf
+      title: Fonctions continues
+
+tags:
+    - motcle: maximum/minimum
+
+question: |
+        Soit \(I\) un intervalle de \(\Rr\) et soit \(f : I \to \Rr\) une fonction continue. Soit \(J=f(I)\). Quelles sont les assertions vraies ?
+
+answers: 
+    - value: |
+        \(J\) est un intervalle.
+      correct: True
+
+    - value: |
+        Si \(I\) est majoré, alors \(J\) est majoré.
+      correct: False
+
+    - value: |
+        Si \(I\) est fermé borné, alors \(J\) est fermé borné.
+      correct: True
+
+    - value: |
+        Si \(I\) est borné, alors \(J\) est borné.
+      correct: False
+
+explanations: |
+        Par une fonction continue, l'image d'un intervalle est un intervalle ;
+        l'image d'un intervalle fermé et borné est un intervalle fermé et borné. 
+
+---
+author: Arnaud Bodin, Abdellah Hanani, Mohamed Mzari
+
+section: Continuité | 123
+
+subsection: Maximum, bijection | Difficile | 123.04
+
+link:
+    - type: cours
+      link: http://exo7.emath.fr/cours/ch_fonctions.pdf
+      title: Limites et fonctions continues
+
+    - type: video
+      link: http://youtu.be/TJLpXWXPsFs
+      title: Continuité en un point
+
+    - type: video
+      link: http://youtu.be/_cA6CkKYZxU
+      title: Continuité sur un intervalle
+
+    - type: video
+      link: http://youtu.be/TAUg4HL5fHs
+      title: Fonctions monotones et bijections
+
+    - type: exercices
+      link: http://exo7.emath.fr/ficpdf/fic00012.pdf
+      title: Fonctions continues
+
+tags:
+    - motcle: bijection
+
+question: |
+        Soit \(f : I \to J\) une fonction continue, où \(I\) et \(J\) sont des intervalles de \(\Rr\). Quelles sont les assertions vraies ?
+
+answers: 
+    - value: |
+        Si \(f\) surjective et strictement croissante, alors \(f\) est bijective.
+      correct: True
+
+    - value: |
+        Si \(f\) bijective, alors sa bijection réciproque \(f^{-1}\) est continue.
+      correct: True
+
+    - value: |
+        Si \(f\) bijective et \(I=\Rr\), alors \(J\) n'est pas un intervalle borné.
+      correct: False
+
+    - value: |
+        Si \(f\) bijective et \(J\) est un intervalle fermé et borné, alors \(I\) est un intervalle fermé et borné.
+      correct: True
+
+explanations: |
+        La bijection réciproque d'une fonction continue est continue. En particulier cela implique que pour \(f^{-1} : J \to I\), si \(J\) est un intervalle fermé et borné, alors \(I\) aussi.
+

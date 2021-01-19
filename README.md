@@ -8,6 +8,11 @@ Vous trouverez ici deux choses :
 * des qcm (questions à choix multiples) de mathématiques pour l'université,
 * des outils pour créer, gérer et transformer des qcm.
 
+Nouvautés
+=========
+* Afficher les réponses sur deux colonnes (Vincent Ledda, janvier 2020)
+* Conversion vers le format 'latex-moodle' afin de compiler directement du code Latex vers un export moodle via le package 'moodle' (https://ctan.org/pkg/moodle) (janvier 2020)
+* Les 720 questions de Lille sont directement disponibles au format 'yaml' et 'latex-moodle' (janvier 2020).
 
 Questions
 =========
@@ -26,7 +31,6 @@ Questions
   - [Questions](https://github.com/exo7math/qcm-exo7/blob/master/questions-probabilites-worms/qcm-worms.pdf)
   - [Questions corrigées](https://github.com/exo7math/qcm-exo7/blob/master/questions-probabilites-worms/qcm-worms-correc.pdf)
   - par Julien Worms de l'université de Versailles
-
 
 * 30 questions de révisions niveau L1
   - [Questions](https://github.com/exo7math/qcm-exo7/blob/master/questions-arnaud/qcm-arnaud.pdf)

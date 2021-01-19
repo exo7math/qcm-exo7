@@ -256,12 +256,12 @@ D'abord $x\in A\cap B \Leftrightarrow (x\in A$ et $x\in B$). Les lois de De Morg
 \begin{question}
 \qtags{motcle=ensemble}
 
-Pour tout $n\in \Nn ^*$, on pose $E_n=\{1,2,\dots ,n\}$. On note $\mathscr{P}(E_n)$ l'ensemble des parties de $E_n$. Quelles sont les bonnes réponses ?
+Pour tout $n\in \Nn ^*$, on pose $E_n=\{1,2,\dots ,n\}$. On note $\mathcal{P}(E_n)$ l'ensemble des parties de $E_n$. Quelles sont les bonnes réponses ?
 \begin{answers}  
-    \bad{$\mathscr{P}(E_2)=\{\{1\},\{2\}\}$}
-    \good{$\mathscr{P}(E_2)=\{\varnothing ,\{1\},\{2\},E_2\}$}
-    \bad{$\mathrm{Card}(\mathscr{P}(E_n))=n$}
-    \good{$\mathrm{Card}(\mathscr{P}(E_n))=2^n$}
+    \bad{$\mathcal{P}(E_2)=\{\{1\},\{2\}\}$}
+    \good{$\mathcal{P}(E_2)=\{\varnothing ,\{1\},\{2\},E_2\}$}
+    \bad{$\mathrm{Card}(\mathcal{P}(E_n))=n$}
+    \good{$\mathrm{Card}(\mathcal{P}(E_n))=2^n$}
 \end{answers}
 \begin{explanations}
 Le nombre de parties à $k$ éléments de $E_n$ est $\mathrm{C}^k_n$ et le nombre de toutes les parties de $E_n$ est $\displaystyle \sum _{k=0}^n\mathrm{C}^k_n=(1+1)^n=2^n$.
@@ -463,15 +463,15 @@ $\{A,X\}$ est une partition de $E$, donc $X=\overline{A}$.
 \begin{question}
 \qtags{motcle=dénombrement}
 
-Soit $E$ un ensemble à $n$ éléments et $a\in E$. On note $\mathscr{P}_a(E)$ l'ensemble des parties de $E$ qui contiennent $a$. Quel est le cardinal de $\mathscr{P}_a(E)$ ?
+Soit $E$ un ensemble à $n$ éléments et $a\in E$. On note $\mathcal{P}_a(E)$ l'ensemble des parties de $E$ qui contiennent $a$. Quel est le cardinal de $\mathcal{P}_a(E)$ ?
 \begin{answers}  
-    \bad{$\mathrm{Card}(\mathscr{P}_a(E))=n-1$}
-    \bad{$\mathrm{Card}(\mathscr{P}_a(E))=n$}
-    \good{$\mathrm{Card}(\mathscr{P}_a(E))=2^{n-1}$}
-    \bad{$\mathrm{Card}(\mathscr{P}_a(E))=2^n$}
+    \bad{$\mathrm{Card}(\mathcal{P}_a(E))=n-1$}
+    \bad{$\mathrm{Card}(\mathcal{P}_a(E))=n$}
+    \good{$\mathrm{Card}(\mathcal{P}_a(E))=2^{n-1}$}
+    \bad{$\mathrm{Card}(\mathcal{P}_a(E))=2^n$}
 \end{answers}
 \begin{explanations}
-Les éléments de $\mathscr{P}_a(E)$ sont de la forme $\{a\}\cup A$ où $A\subset E\setminus \{a\}$. Donc $\mathrm{Card}(\mathscr{P}_a(E))=\mathrm{Card}(\mathscr{P}(E\setminus \{a\}))=2^{n-1}$.
+Les éléments de $\mathcal{P}_a(E)$ sont de la forme $\{a\}\cup A$ où $A\subset E\setminus \{a\}$. Donc $\mathrm{Card}(\mathcal{P}_a(E))=\mathrm{Card}(\mathcal{P}(E\setminus \{a\}))=2^{n-1}$.
 \end{explanations}
 \end{question}
 
@@ -496,15 +496,15 @@ Utiliser le binôme de Newton, $\displaystyle \sum _{k=0}^{100}\mathrm{C}^k_{100
 \begin{question}
 \qtags{motcle=dénombrement}
 
-Soit $E$ un ensemble à $n$ éléments et $A\subset E$ une partie à $p < n$ éléments. On note $\mathscr{H}(E)$ l'ensemble des parties de $E$ qui contiennent un et un seul élément de $A$. Quel est le cardinal de $\mathscr{H}(E)$ ?
+Soit $E$ un ensemble à $n$ éléments et $A\subset E$ une partie à $p < n$ éléments. On note $\mathcal{H}(E)$ l'ensemble des parties de $E$ qui contiennent un et un seul élément de $A$. Quel est le cardinal de $\mathcal{H}(E)$ ?
 \begin{answers}  
-    \good{$\mathrm{Card}(\mathscr{H}(E))=p2^{n-p}$}
-    \bad{$\mathrm{Card}(\mathscr{H}(E))=p$}
-    \bad{$\mathrm{Card}(\mathscr{H}(E))=p2^p$}
-    \bad{$\mathrm{Card}(\mathscr{H}(E))=p2^n$}
+    \good{$\mathrm{Card}(\mathcal{H}(E))=p2^{n-p}$}
+    \bad{$\mathrm{Card}(\mathcal{H}(E))=p$}
+    \bad{$\mathrm{Card}(\mathcal{H}(E))=p2^p$}
+    \bad{$\mathrm{Card}(\mathcal{H}(E))=p2^n$}
 \end{answers}
 \begin{explanations}
-Si $A=\{a_1,\dots ,a_p\}$, les éléments de $\mathscr{H}(E)$ sont de la forme $\{a_i\}\cup B$, où $a_i\in A$ et $B\subset E\setminus A$. Donc $\mathrm{Card}(\mathscr{H}(E))=\mathrm{Card}(A)\times \mathrm{Card}(\mathscr{P}(E\setminus A))=p2^{n-p}$.
+Si $A=\{a_1,\dots ,a_p\}$, les éléments de $\mathcal{H}(E)$ sont de la forme $\{a_i\}\cup B$, où $a_i\in A$ et $B\subset E\setminus A$. Donc $\mathrm{Card}(\mathcal{H}(E))=\mathrm{Card}(A)\times \mathrm{Card}(\mathcal{P}(E\setminus A))=p2^{n-p}$.
 \end{explanations}
 \end{question}
 

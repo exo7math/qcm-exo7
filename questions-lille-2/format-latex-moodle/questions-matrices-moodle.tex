@@ -1,0 +1,495 @@
+
+
+\begin{multi}[multiple,feedback=
+{La somme de deux matrices est définie si les deux matrices admettent la même taille. Dans ce cas, on a \(A+B=B+A\). Le produit \(AB\) de deux matrices est défini si le nombre de colonnes de \(A\) est égal au nombre de lignes de \(B\). Le produit n'est pas commutatif.
+}]{Question}
+    \item* Si la matrice \(A+B\) est définie, alors \(B+A\) est définie
+    \item Si la matrice \(A+B\) est définie, alors \(AB\) est définie
+    \item Si la matrice \(AB\) est définie, alors \(BA\) est définie
+    \item* Si la matrice \(A+B\) est définie, alors \(A^tB\) est définie, où \(^tB\) est la transposée de la matrice \(B\)
+\end{multi}
+
+
+\begin{multi}[multiple,feedback=
+{On a : \(2A-B=C\), \(AB=D\) et \(BA =  \left(\begin{array}{rc}4&6\\-2&-2 \end{array}\right)\).
+}]{Question}
+    \item* \(2A-B=C\)
+    \item* \(AB=D\)
+    \item \(BA=E\)
+    \item \(AB=BA\)
+\end{multi}
+
+
+\begin{multi}[multiple,feedback=
+{Les opérations \(A+B\) et \(CA\) ne sont pas définies.
+}]{Question}
+    \item \(A+B=B\)
+    \item* \(AB=\left(\begin{array}{rc}2\\ \end{array}\right)\)
+    \item \(CA=\left(\begin{array}{rc}6\\ 2\\\end{array}\right)\)
+    \item* \(CD=E\)
+\end{multi}
+
+
+\begin{multi}[multiple,feedback=
+{On vérifie que \(M_{n,m} (\Rr)\), muni des opérations usuelles est un \(\Rr\)- espace vectoriel.
+\vskip0mm
+Pour \(1\le i\le n\) et \(1\le j\le m\), on note \(D_{i,j}\) la matrice dont le coefficient située à la ième ligne et jième colonne est \(1\) et les autres coefficients sont nuls. Alors, \(\{D_{i,j}\; ; \; 1\le i\le n, 1\le j\le m\}\) est une base de \(M_{n,m} (\Rr)\). Par conséquent, \(\dim M_{n,m} (\Rr) = mn \).
+}]{Question}
+    \item* \(M_{n,m} (\Rr)\) est un espace vectoriel
+    \item* \(\dim M_{n,m} (\Rr) = mn \)
+    \item \(\dim M_{n,m} (\Rr) = m+n \)
+    \item \(M_{n,m} (\Rr)\) est un espace vectoriel de dimension infinie
+\end{multi}
+
+
+\begin{multi}[multiple,feedback=
+{On a : 
+\(A-B= \left(\begin{array}{rcc}
+0&0&3\\
+-2&-1&-1\\
+2&-2&1\end{array}\right) \quad \) et 
+\( \quad AB=  \left(\begin{array}{rcc}
+0&4&2\\ -3&1&1\\
+-1&1&-4\end{array}\right).\)
+}]{Question}
+    \item* \(2A+3B=
+\left(\begin{array}{rcc}
+5&5&1\\
+1&3&13\\
+-1&1&2\end{array}\right).\)
+    \item \(A-B=
+\left(\begin{array}{rcc}
+0&0&3\\
+-2&-1&1\\
+2&-2&1\end{array}\right).\)
+    \item \(AB=
+\left(\begin{array}{rcc}
+0&4&2\\
+-3&1&1\\-1&1&4\end{array}\right).\)
+    \item* \(BA=
+\left(\begin{array}{rcc}
+-1&2&3\\
+3&-2&7\\-2&-1&0\end{array}\right).\)
+\end{multi}
+
+
+\begin{multi}[multiple,feedback=
+{On a :  \(A\,^tC=  
+\left(\begin{array}{rc}3&4\end{array}\right).\)
+}]{Question}
+    \item* \(A+\, ^tB = \left(\begin{array}{rcc}
+1&3&3\end{array}\right).\)
+    \item* \(B\, ^tB=\left(\begin{array}{rccc}
+0&0&0\\
+0&1&-1\\
+0&-1&1\end{array}\right).\)
+    \item \(A\, ^tC= \left(\begin{array}{rcc}
+3&4&0\end{array}\right).\)
+    \item* \(C\, ^tD=
+\left(\begin{array}{rcc}
+2&2&-1\\
+0&1&1\end{array}\right).\)
+\end{multi}
+
+
+\begin{multi}[multiple,feedback=
+{Le produit de deux matrices peut \^etre nul sans que l'une des deux matrices soit nul. Contre-exemple : avec \(A=  
+\left(\begin{array}{rc}0&0\\
+1&0\end{array}\right)\) on a : \(A^2=0\). Le produit de deux matrices est associatif et distributif par rapport à l'addition. Comme le produit n'est pas commutatif, en général, \((A+B)^2=A^2+AB+BA+B^2 \neq A^2+2AB+B^2\).
+}]{Question}
+    \item \(AB=0 \Rightarrow A=0 \, \mbox{ou} \,  B=0\)
+    \item \(A(BC) =(AC)B\)
+    \item* \(A(B+C)=AC+AB\)
+    \item \((A+B)^2=A^2+2AB+B^2\)
+\end{multi}
+
+
+\begin{multi}[multiple,feedback=
+{On vérifie que pour tout entier \(n\ge 1\),
+\(A^n=2^{n-1}A\, , \, (A-I)^{2n}= I\) et \((A-I)^{2n+1}= A-I\).
+}]{Question}
+    \item* \(A^2=2A\)
+    \item \(A^n=2^nA\), pour tout entier \(n \ge 1\)
+    \item* \((A-I)^{2n}= I\), pour tout entier \(n \ge 1\)
+    \item \((A-I)^{2n+1}= A+I\), pour tout entier \(n \ge 1\)
+\end{multi}
+
+
+\begin{multi}[multiple,feedback=
+{Le rang d'une matrice est le nombre maximum de vecteurs colonnes ou lignes qui sont linéairement indépendants. Le rang de \(A\) est \(1\), le rang de \(B\) est \(1\), le rang de \(C\) est \(3\) et le rang de \(D\) est \(2\).
+}]{Question}
+    \item Le rang de \(A\) est \(3\)
+    \item* Le rang de \(B\) est \(1\)
+    \item* Le rang de \(C\) est \(3\)
+    \item Le rang de \(D\) est \(3\)
+\end{multi}
+
+
+\begin{multi}[multiple,feedback=
+{On vérifie que \(E\) est un espace vectoriel et que \(\left\{\left(\begin{array}{rc}
+1&0\\0&1\\ \end{array}\right), \; \left(\begin{array}{rc}
+0&1\\0&0\\ \end{array}\right)\right \}\) est une base de \(E\). Donc \(\dim E = 2\).
+}]{Question}
+    \item \(E\) n'est pas un espace vectoriel
+    \item \(E\) est un esapce vectoriel de dimension \(1\)
+    \item \(E\) est un esapce vectoriel de dimension \( 4\)
+    \item* \(E\) est un esapce vectoriel de dimension \( 2\)
+\end{multi}
+
+
+\begin{multi}[multiple,feedback=
+{On vérifie que \(E\) est un espace vectoriel, que
+\[E=\Big\{M =\left(\begin{array}{rc}
+\alpha&\beta\\ \beta - \alpha&-\alpha\\ 
+\end{array}\right)\mid \alpha, \beta \in \Rr \Big\}\] 
+et que \(\left \{\left(\begin{array}{rc} 1&0\\
+-1&-1\\ \end{array}\right), \;  \left(\begin{array}{rc}
+0&1\\ 1&0\\ \end{array}\right) \right \}\) est  une base de \(E\). Donc \(\dim E = 2\).
+}]{Question}
+    \item \(E\) n'est pas un espace vectoriel
+    \item \(E\) est un espace vectoriel de dimension \(3\)
+    \item* \(E\) est un espace vectoriel de dimension \(2\)
+    \item \(E\) est un espace vectoriel de dimension \(4\)
+\end{multi}
+
+
+\begin{multi}[multiple,feedback=
+{On vérifie que \(f\) est une application linéaire, \(\ker f =\{0\}\) et \(\Im f = M_2(\Rr)\). Donc \(\dim \ker f = 0\) et \( \dim \Im f = 4\).
+}]{Question}
+    \item* \(f\) est une application linéaire
+    \item \(\dim \ker f = 1\)
+    \item* \(\dim \ker f = 0\)
+    \item \(\dim \Im f = 3\)
+\end{multi}
+
+
+\begin{multi}[multiple,feedback=
+{Le rang d'une matrice est le nombre maximum de vecteurs colonnes ou  lignes qui sont linéairement indépendants.
+}]{Question}
+    \item* \(A\) admet \(r\) vecteurs colonnes linéairement indépendants
+    \item* \(A\) admet \(r\) vecteurs lignes linéairement indépendants
+    \item Toute famille contenant \(r\) vecteurs colonnes de \(A\) est libre
+    \item Toute famille contenant \(r\) vecteurs lignes de \(A\) est libre
+\end{multi}
+
+
+\begin{multi}[multiple,feedback=
+{On vérifie que \(E\) est stable par addition et par multiplication de matrices et que la multiplication de matrices de \(E\) est commutative.
+\vskip0mm
+Soit \(M \in \Rr_2(\Rr)\). On vérifie que si \(MM'=M'M,\) pour toute matrice \(M'\) de \( E\), alors \(M\in E\).
+}]{Question}
+    \item* \(E\) est stable par addition
+    \item* \(E\) est stable par multiplication de matrices
+    \item la multiplication de matrices de \(E\) n'est pas commutative
+    \item* Soit \(M \in \Rr_2(\Rr)\). Si \(MM'=M'M, \; \forall M' \in E\), alors \(M\in E\)
+\end{multi}
+
+
+\begin{multi}[multiple,feedback=
+{On vérifie que \(f\) est une application linéaire et que
+\[\ker f= \left\{\left(\begin{array}{rc}
+a&b\\c&-a\\ \end{array}\right)\; ;\; a,b,c \in \Rr \right\}.\]
+Donc la famille \(\left\{\left(\begin{array}{rc}
+1&0\\ 0&-1\\ \end{array}\right), \;  \left(\begin{array}{rc}
+0&1\\ 0&0\\ \end{array}\right), \; \left(\begin{array}{rc}
+0&0\\ 1&0\\ \end{array}\right) \right\}\) est une base de \(\ker f\) et \(\dim \ker f=3\). Or, d'après le théorème du rang, \(\dim \Im f=1=\dim \Rr\) et comme \(\Im f\) est un sous-espace vectoriel de \(\Rr\), donc \(\Im f=\Rr\).
+}]{Question}
+    \item* \(f\) est une application linéaire
+    \item* \(\dim \ker f = 3\)
+    \item \(\dim \Im f = 2\)
+    \item* \(\Im f = \Rr\)
+\end{multi}
+
+
+\begin{multi}[multiple,feedback=
+{On vérifie que \(f\) est une application linéaire, \(\ker f=\left\{ \left(\begin{array}{rc}
+a&b\\b&d\\ \end{array}\right) \; ; \; a,b,d \in \Rr \right \}\) et  
+\(\Im f = \left\{ \left(\begin{array}{rc}0&\alpha\\-\alpha&0\\ 
+\end{array}\right) \; ; \; \alpha \in \Rr  \right \}\). On  déduit que  \(\dim \ker f=3\) et \(\dim \Im f = 1\).
+}]{Question}
+    \item* \(f\) est une application linéaire
+    \item* \(\dim \ker f = 3\)
+    \item \(\dim \Im f = 2\)
+    \item \(\dim \Im f = 3\)
+\end{multi}
+
+
+\begin{multi}[multiple,feedback=
+{On a : \(N=\left(\begin{array}{rcc}
+0&1&b\\0&0&2\\ 0&0&0\\ \end{array}\right)\),  \(N^2=\left(\begin{array}{rcc}0&0&2\\0&0&0\\ 0&0&0\\ 
+\end{array}\right)\) et \(N^k=0, \) pour tout \(k\ge 3\).
+\vskip0mm
+On a : \(A= N+aI\). Comme le produit des matrices \(N\) et \(aI\) est commutatif, on peut appliquer la formule du binôme pour le calcul des puissances de \(A\).
+}]{Question}
+    \item* \(N^k = 0\), pour tout entier \(k\ge 3\)
+    \item On ne peut pas appliquer la formule du binôme pour le calcul de \(A^n\)
+    \item* Pour tout entier \(n \ge 2,\) \(\displaystyle A^n =a^nI+na^{n-1}N+\frac{n(n-1)}{2}a^{n-2}N^2 \)
+    \item* Pour tout entier \(n \ge 2,\) \(A^n=\left(\begin{array}{rcc}
+a^n&na^{n-1}&na^{n-1}b+n(n-1)a^{n-2}\\0&a^n&2na^{n-1}\\ 0&0&a^n\\ \end{array}\right)\)
+\end{multi}
+
+
+\begin{multi}[multiple,feedback=
+{On a : \(N=\left(\begin{array}{rcc}
+0&2&3\\0&0&2\\ 0&0&0\\ 
+\end{array}\right)\), \(N^2=\left(\begin{array}{rcc}
+0&0&4\\0&0&0\\ 
+0&0&0\\ \end{array}\right)\) et \(N^k=0, \) pour tout \(k\ge 3\).\\
+Comme \(A= N+I\) et le produit des matrices \(N\) et \(I\) est commutatif, on peut appliquer la formule du binôme pour le calcul des 
+puissances de \(A\).
+\vskip0mm
+En calculant \(A^n\) et  utilisant l'égalité : \(\left(\begin{array}{r}
+u_n\\v_n\\ w_n\\ 
+\end{array}\right) = A^n \left(\begin{array}{r}
+u_0\\v_0\\ w_0\\ 
+\end{array}\right)\), on déduit que : \[\left\{\begin{array}{rcc}
+u_n&=&u_0+2nv_0+n(2n+1)w_0\\
+v_n&=&v_0+2nw_0\\ 
+w_n&=&w_0. \\
+\end{array}\right.\]
+}]{Question}
+    \item \(N^k = 0\), pour tout entier \(k\ge 2\)
+    \item* Pour tout entier \(n \ge 2,\) \(A^n =I+nN+\frac{n(n-1)}{2}N^2  \)
+    \item Pour tout entier \(n \ge 0,\)
+\[(\mathtt{S}) \left\{\begin{array}{rcc}
+u_n&=&u_0+2nv_0+3nw_0\\v_n&=&v_0+2nw_0\\ w_n&=&w_0. \\
+\end{array}\right.\]
+    \item* Pour tout entier \(n \ge 0,\)
+\[(\mathtt{S})  \left\{\begin{array}{rcc}
+u_n&=&u_0+2nv_0+n(2n+1)w_0\\v_n&=&v_0+2nw_0\\ w_n&=&w_0. \\
+\end{array}\right.\]
+\end{multi}
+
+
+\begin{multi}[multiple,feedback=
+{Soit \(M=\left(\begin{array}{rc}
+a&b\\ c&d\\ \end{array}\right)\) telle que \(^tM = M\), alors \(b=c\). Donc la famille
+\[\left\{\left(\begin{array}{rc}
+1&0\\0&0\\ 
+\end{array}\right),\left(\begin{array}{rc}
+0&1\\1&0\\ 
+\end{array}\right),\left(\begin{array}{rc}
+0&0\\0&1\\ \end{array}\right)\right\}\]
+forme une base de \(E\). D'où \(\dim E = 3\).
+\vskip0mm
+Soit \(M=\left(\begin{array}{rc}a&b\\c&d\end{array}\right)\) telle que \( ^tM = -M\), alors \(a=d=0\) et \(c=-b\). Donc \(\left\{\left(\begin{array}{rc}
+0&1\\-1&0\\ \end{array}\right)\right\}\) est une base de \(F\) et donc \(\dim F=1\).
+\vskip0mm
+On vérifie que \(E\cap F=\{0_E\}\) et en utilisant le théorème de la dimension d'une somme, on déduit que \(E\) et \(F\) sont supplémentaires dans \( M_2(\Rr)\).
+}]{Question}
+    \item* \(E\) est un espace vectoriel de dimension \(3\)
+    \item \(E\) est un espace vectoriel de dimension \(2\)
+    \item* \(F\) est un espace vectoriel de dimension \(1\)
+    \item* \(E\) et \(F\) sont supplémentaires dans \( M_2(\Rr)\)
+\end{multi}
+
+
+\begin{multi}[multiple,feedback=
+{On vérifie que \(B_1+B_3=B_2+B_4\) et que \(\{B_1,B_2,B_3\}\) est une famille libre. Donc 
+\(\dim \mbox{Vect} {\cal {B'}}=3\).
+}]{Question}
+    \item \({\cal {B'}}\) est une famille libre de \(M_2(\Rr)\)
+    \item \({\cal {B'}}\) est une base de \(M_2(\Rr)\)
+    \item \(\mbox{Vect} {\cal {B'}}=M_2(\Rr)\)
+    \item* \(\dim \mbox{Vect} {\cal {B'}}=3\)
+\end{multi}
+
+
+\begin{multi}[multiple,feedback=
+{On vérifie que pour \(M=\left(\begin{array}{rc}
+a&b\\c&d\\ \end{array}\right) \), \(f(M)=\left(\begin{array}{rc}
+c-b&d-a\\a-d&b-c\\ \end{array}\right)\). Par conséquent,
+\(\ker f = \left\{ \left(\begin{array}{rc}
+a&b\\b&a\\ \end{array}\right) \; ; \; a,b \in \Rr \right \}\) et 
+\(\Im f = \left\{ \left(\begin{array}{rc}
+\alpha&\beta\\-\beta&-\alpha\\ 
+\end{array}\right) \; ; \; \alpha, \beta \in \Rr  \right \}\). On  déduit que \(\dim \ker f = 2\),  \(\mbox{rg} (f)=\dim \Im f = 2\) et que \(f\) n'est ni injective, ni surjective.
+}]{Question}
+    \item* \(\dim \ker f =2\)
+    \item \(f\) est injective
+    \item* \(\mbox{rg} (f) =2\)
+    \item \(f\) est surjective
+\end{multi}
+
+
+\begin{multi}[multiple,feedback=
+{Les propositions suivantes sont équivalentes :
+\begin{enumerate}
+\item[(i)] \(A\) est inversible.
+\item[(ii)] Il existe une matrice \(B\) telle que \(AB=BA=I\).
+\item[(iii)] Il existe une matrice \(B\) telle que \(AB=I\).
+\item[(iv)] Il existe une matrice \(B\) telle que \(BA=I\).
+\item[(v)] Pour toute matrice \(Y\) à une colonne et \(n\) lignes, il existe une matrice \(X\) à une colonne et \(n\) lignes telle que \(AX=Y.\)
+\end{enumerate}
+}]{Question}
+    \item* \(A\) est inversible si et seulement s'il existe une matrice \(B\) telle que \(AB=I\)
+    \item* \(A\) est inversible si et seulement s'il existe une matrice \(B\) telle que \(BA=I\)
+    \item \(A\) est inversible si et seulement si les coefficients de \(A\) sont inversibles pour la multiplication dans \(\Rr\)
+    \item* \(A\) est inversible si et seulement si pour toute matrice \(Y\) à une colonne et \(n\) lignes, il existe une matrice \(X\) à une colonne et \(n\) lignes telle que \(AX=Y\)
+\end{multi}
+
+
+\begin{multi}[multiple,feedback=
+{On vérifie que \(A\) et \(B\) sont inversibles,  que \(\displaystyle B^{-1} = \frac{1}{4}\left(\begin{array}{rcc}-1&2&1\\ 3&-2&1\\ 2&0&-2\\ \end{array}\right) \neq C\) et que \(C\) n'est pas inversible.
+}]{Question}
+    \item* \(A\) est inversible
+    \item* \(B\) est inversible
+    \item \(B\) est inversible et \(B^{-1} = C\)
+    \item \(C\) est inversible
+\end{multi}
+
+
+\begin{multi}[multiple,feedback=
+{\(A\) est inversible et \(A^{-1}=\left(\begin{array}{r}\displaystyle \frac{1}{5}\end{array}\right)\). \(B\) n'est pas inversible, puisque les deux vecteurs colonnes sont proportionnels. \(C\) est inversible et 
+\[C^{-1} = \left(\begin{array}{rcc} 1&1&-1\\-1&-1&2\\ 1&0&-1
+\end{array}\right).\]
+\(D\) n'est pas inversible, puisque les trois vecteurs colonnes sont linéairement dépendants.
+}]{Question}
+    \item* \(A\) est inversible
+    \item \(B\) est inversible
+    \item* \(C\) est inversible
+    \item \(D\) est inversible
+\end{multi}
+
+
+\begin{multi}[multiple,feedback=
+{Comme \(A\) est inversible, il existe une matrice \(B\) telle que \(AB= BA=I\), où \(I\) est la matrice identité. On en déduit : \(3A\) est inversible et son inverse est \(\displaystyle \frac{1}{3}B\).
+\vskip0mm
+\(^tA\) est inversible et son inverse est \( ^tB\). En effet, \(I=\, ^t (AB)=\, ^tB\, ^tA\).
+\vskip0mm
+\(A^tA\) est inversible et son inverse est \(^tBB\). En effet,  \((^tBB)A^tA=\, ^tB(BA)^tA= \, ^tB^tA=\, ^t (AB)=I\).
+\vskip0mm
+\(A+^tA\) n'est pas nécessairement inversible. Contre exemple : 
+\(A=\left(\begin{array}{rc} 1&1\\ -1&0 \end{array}\right).\)
+}]{Question}
+    \item* \(3A\) est inversible
+    \item* \(^tA\) est inversible
+    \item* \(A^tA\) est inversible
+    \item \(A+^tA\) est inversible
+\end{multi}
+
+
+\begin{multi}[multiple,feedback=
+{On a : \(A \times A^{m-1} = I\), donc \(A\) est inversible et \(A^{-1} = A^{m-1}\). Comme \(A\) est inversible, le rang de \(A\) est \(n\). Si \(m=2\), alors \(A^{-1}=A\).
+}]{Question}
+    \item* \(A\) est inversible et \(A^{-1} = A^{m-1}\)
+    \item* Le rang de \(A\) est \(n\)
+    \item \(A\) n'est pas inversible
+    \item* Si \(m=2\), \(A\) est inversible et \(A^{-1} = A\)
+\end{multi}
+
+
+\begin{multi}[multiple,feedback=
+{\(A\) n'est pas inversible, puisque les trois vesteurs colonnes sont linéairement dépendants.
+\vskip0mm
+Si \(A^2\) est inversible, alors il existe une matrice  \(B\) telle que \(A^2B=I\), donc \(A(AB)=I\) et donc \(A\) est inversible,
+ce qui est absurde.
+\vskip0mm
+Si \(A^3+A^2\) est inversible, alors il existe une matrice \(B\) telle que \((A^3+A^2)B=I\). On en déduit que \(A[(A^2+A)B]=I\) et donc \(A\) est inversible, ce qui est absurde.
+\vskip0mm
+\(A+\, ^tA\) est inversible, puisque les vecteurs colonnes de cette matrice sont linéairement indépendants.
+}]{Question}
+    \item \(A\) est inversible
+    \item \(A^2\) est inversible
+    \item \(A^3+A^2\) est inversible
+    \item* \(A+\,^tA\) est inversible, où \(^tA\) est la transposée de \(A\)
+\end{multi}
+
+
+\begin{multi}[multiple,feedback=
+{\(A\) est inversible si et seulement si les vecteurs colonnes sont linéairement indépendants. On en déduit que 
+si \(A\) est diagonale, \(A\) est inversible si et seulement si tous les coefficients \(a_{i,i}\) sont non nuls et que si \(A\) est triangulaire (inférieurement ou supérieurement), \(A\) est inversible si et seulement si tous les coefficients \(a_{i,i}\) sont non nuls. Par définition, \(A\) est symétrique si \(\, ^tA=A\).
+}]{Question}
+    \item Si \(A\) est diagonale, \(A\) est inversible si et seulement s'il existe un coefficient \(a_{i,i}\) non nul
+    \item* Si \(A\) est diagonale, \(A\) est inversible si et seulement si tous les coefficients \(a_{i,i}\) sont non nuls
+    \item* \(A\) est symétrique si \(\, ^tA=A\), où \(^tA\) est la transposée de \(A\)
+    \item Si \(A\) est triangulaire inférieurement, \(A\) est inversible
+\end{multi}
+
+
+\begin{multi}[multiple,feedback=
+{Le rang d'une matrice est le nombre maximum de vecteurs colonnes ou lignes qui sont linéairement indépendants. On en déduit que \(\mbox{rg}(A)=\mbox{rg}(\, ^tA)\) et que, si \(A\) est inversible, \(\mbox{rg}(A)=\mbox{rg}(A^{-1})=n\).
+\vskip0mm
+En général, \(\mbox{rg}(A+B)\neq \max \big(\mbox{rg}(A), \mbox{rg}(B)\big)\) et \(\mbox{rg}(AB)\neq \mbox{rg}(BA)\). Contre-exemple : avec 
+\[A = \left(\begin{array}{rc}
+1&-1\\-1&1\\ \end{array}\right),\quad B = \left(\begin{array}{rc}
+-1&1\\ 1&-1\\ \end{array}\right),\quad C = 
+\left(\begin{array}{rc} 1&2\\1&2\\ \end{array}\right),\]
+on vérifie que :  \(A+B =0\), \(AC =0\) et \(CA=
+\left(\begin{array}{rc}-1&1\\
+-1&1\\ \end{array}\right)\). Donc \(\mbox{rg}(A)=\mbox{rg}(B)=1\) mais \(\mbox{rg}(A+B)=0\) et \(\mbox{rg}(AC)= 0\) est différent de \(\mbox{rg}(CA)=1\).
+}]{Question}
+    \item* \(\mbox{rg}(A)=\mbox{rg}( \, ^tA)\)
+    \item* Si \(A\) est inversible, \(\mbox{rg}(A)=\mbox{rg}(A^{-1})\)
+    \item \(\mbox{rg}(A+B)=\max \big(\mbox{rg}(A), \mbox{rg}(B)\big)\)
+    \item \(\mbox{rg}(AB)= \mbox{rg}(BA)\)
+\end{multi}
+
+
+\begin{multi}[multiple,feedback=
+{Si \(A\) est inversible, alors il existe une matrice \(C\) telle que \(CA=I\), où \(I\) est la matrice identité. Donc  \((CA)B =B\). Or \((CA)B=C(AB)\) et \(AB=0\), donc \(B=0\), ce qui est absurde.
+}]{Question}
+    \item \(A=0\) ou \(B=0\)
+    \item \(A\) est inversible
+    \item \(B\) est inversible
+    \item* \(A\) n'est pas inversible
+\end{multi}
+
+
+\begin{multi}[multiple,feedback=
+{On a : \(A(B-C)=0\), \(A \neq 0\) et \(B-C\neq 0\) (le produit de deux matrices peut être nul sans que les 
+deux matrices soient nulles).
+\vskip0mm
+Si \(A\) est inversible, alors il existe une matrice \(D\) telle que \(DA=I\), où \(I\) est la matrice identité. Donc  \((DA)(B-C) =B-C\). Or \((DA)(B-C)=D(A(B-C))\) et \(A(B-C)=0\), donc \(B-C=0\), ce qui est absurde. On déduit que \(A\) n'est pas inversible et donc le rang de \(A\) est \(<n\).
+}]{Question}
+    \item \(B=C\)
+    \item \(A=0\)
+    \item* \(A\) n'est pas inversible
+    \item Le rang de \(A\) est \(n\)
+\end{multi}
+
+
+\begin{multi}[multiple,feedback=
+{On vérifie que \(A\) est inversible et que \(A^{-1} = \left(\begin{array}{rc}\cos x&\sin x\\-\sin x&\cos x\\ 
+\end{array}\right)\). le rang de \(A\) est donc \(2\).
+\vskip0mm
+De l'égalité \(A+A^{-1}=(2\cos x) I\), on déduit que \((A+A^{-1})^n = (2^n\cos^n x) I\), pour tout entier \(n\).
+\vskip0mm
+Par récurrence sur \(n\in \Nn\), on démontre que 
+\[A^n =  \left(\begin{array}{rc}\cos (nx)&-\sin (nx)\\
+\sin (nx)&\cos (nx) \end{array}\right)\quad \mbox{et}\quad (A^{-1})^n =  \left(\begin{array}{rc}\cos (nx)&\sin (nx)\\ -\sin (nx)&\cos (nx)\end{array}\right).\]
+On déduit que, pour tout \(n \in \Zz\), \(A^n=\left(\begin{array}{rc}\cos (nx)&-\sin (nx)\\\sin (nx)&\cos (nx)\end{array}\right)\).
+}]{Question}
+    \item Le rang de \(A\) est \(1\)
+    \item* \(A\) est inversible et \(A^{-1} = \left(\begin{array}{rc}
+\cos x&\sin x\\-\sin x&\cos x\\ \end{array}\right)\), \(x\in \Rr\)
+    \item* Pour tout \(n \in \Nn\), \((A+A^{-1})^n = (2^n\cos^n x) I\), où \(I\) est la matrice identité
+    \item* Pour tout \(n \in \Zz, \) \(A^n =  \left(\begin{array}{rc}
+\cos (nx)&-\sin (nx)\\\sin (nx)&\cos (nx)\\ \end{array}\right)\)
+\end{multi}
+
+
+\begin{multi}[multiple,feedback=
+{De l'égalité : \(A \times  (A^{m-1}+A^{m-2}+ \dots + I)= -I\), on déduit que  \(A\) est inversible et que \(A^{-1}=-(A^{m-1}+ \dots + A+I)=A^m\). Puisque \(A\) est inversible, le rang de \(A\) est \(n\).
+}]{Question}
+    \item* \(A\) est inversible et \(A^{-1} = A^m\)
+    \item* \(A\) est inversible et \(A^{-1} = -(A^{m-1}+ \dots + A+I)\)
+    \item* Le rang de \(A\) est \(n\)
+    \item \(A\) n'est pas inversible
+\end{multi}
+
+
+\begin{multi}[multiple,feedback=
+{On suppose que \(A\) est inversible, alors \(A\) est non nul et il existe une matrice \(C\) telle que \(AC=I\). 
+Soit \(m\) le plus petit entier \(\ge 1\) tel que \(A^m=0\). Alors, \(0=A^mC=A^{m-1}(AC)=A^{m-1}\), ce qui est absurde.
+Par conséquent, \(A\) n'est pas inversible.\\
+Comme \(A\) n'est pas inversible, pour \(a=0\), \(A-aI\) n'est pas inversible.\\
+Soit \(a\in \Rr^*\), de l'égalité : \((A-aI)(a^{n-1}I+a^{n-2}A+\dots + aA^{n-2}+A^{n-1})=A^n-a^nI=-a^nI\), on déduit que 
+\(A-aId\) est inversible et que 
+\(\displaystyle (A-aId)^{-1}=-\frac{1}{a^n}\left(a^{n-1}I+a^{n-2}A+\dots + aA^{n-2}+A^{n-1}\right)\).
+}]{Question}
+    \item \(A\) est inversible
+    \item \(A\) est inversible et \(A^{-1} = A^{n-1}\)
+    \item* Il existe \(a\in \Rr\), tel que \(A-aI\) n'est pas inversible
+    \item* Pour tout \(a\in \Rr^*\), \(A-aI\) est inversible
+\end{multi}

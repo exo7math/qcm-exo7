@@ -1,0 +1,1916 @@
+---
+author: Arnaud Bodin, Abdellah Hanani, Mohamed Mzari
+
+section: Polynômes -- Fractions rationnelles | 105
+
+subsection: Polynômes | Facile | 105.05
+
+link:
+    - type: cours
+      link: http://exo7.emath.fr/cours/ch_polynomes.pdf
+      title: Polynômes
+
+    - type: video
+      link: http://youtu.be/dDKI3jkMjfw
+      title: Définitions
+
+    - type: video
+      link: http://youtu.be/CnMrf9aW-LU
+      title: Arithmétique des polynômes
+
+    - type: video
+      link: http://youtu.be/qCMnvqc2t8A
+      title: Racine d'un polynôme, factorisation
+
+    - type: video
+      link: http://youtu.be/wf-eEQPBX0Y
+      title: Fractions rationnelles
+
+    - type: exercices
+      link: http://exo7.emath.fr/ficpdf/fic00007.pdf
+      title: Polynômes
+
+    - type: exercices
+      link: http://exo7.emath.fr/ficpdf/fic00008.pdf
+      title: Fractions rationnelles
+
+tags:
+    - motcle: produit
+
+question: |
+        Soit \(P(X) = 2X^5+3X^2+X\) et \(Q(X) = 3X^2-2X+3\).
+        Quelles sont les assertions vraies concernant le polynôme produit \(P(X)\times Q(X)\) ?
+
+answers: 
+    - value: |
+        Le coefficient dominant est \(5\).
+      correct: False
+
+    - value: |
+        Le coefficient du monôme \(X^3\) est \(-3\).
+      correct: True
+
+    - value: |
+        Le coefficient du terme constant est \(3\).
+      correct: False
+
+    - value: |
+        Le produit est la somme de \(7\) monômes ayant un coefficient non nuls.
+      correct: True
+
+explanations: |
+        \(P(X)\times Q(X) = 6 X^7 - 4 X^6 + 6 X^5 + 9 X^4 - 3 X^3 + 7 X^2 + 3 X\).
+
+---
+author: Arnaud Bodin, Abdellah Hanani, Mohamed Mzari
+
+section: Polynômes -- Fractions rationnelles | 105
+
+subsection: Polynômes | Facile | 105.05
+
+link:
+    - type: cours
+      link: http://exo7.emath.fr/cours/ch_polynomes.pdf
+      title: Polynômes
+
+    - type: video
+      link: http://youtu.be/dDKI3jkMjfw
+      title: Définitions
+
+    - type: video
+      link: http://youtu.be/CnMrf9aW-LU
+      title: Arithmétique des polynômes
+
+    - type: video
+      link: http://youtu.be/qCMnvqc2t8A
+      title: Racine d'un polynôme, factorisation
+
+    - type: video
+      link: http://youtu.be/wf-eEQPBX0Y
+      title: Fractions rationnelles
+
+    - type: exercices
+      link: http://exo7.emath.fr/ficpdf/fic00007.pdf
+      title: Polynômes
+
+    - type: exercices
+      link: http://exo7.emath.fr/ficpdf/fic00008.pdf
+      title: Fractions rationnelles
+
+tags:
+    - motcle: produit
+
+question: |
+        Soit \(P(X) = X^3-3X^2+2\) et \(Q(X) = X^3-X+1\).
+        Quelles sont les assertions vraies ?
+
+answers: 
+    - value: |
+        Le polynôme \(P(X) \times Q(X)\) est de degré \(9\).
+      correct: False
+
+    - value: |
+        Le coefficient du monôme \(X^2\) dans le produit \(P(X) \times Q(X)\) est \(3\).
+      correct: False
+
+    - value: |
+        Le polynôme \(P(X) + Q(X)\) est de degré \(3\).
+      correct: True
+
+    - value: |
+        Le polynôme \(P(X) - Q(X)\) est de degré \(3\).
+      correct: False
+
+explanations: |
+        \(P(X)\times Q(X) = X^6 - 3 X^5 - X^4 + 6 X^3 - 3 X^2 - 2 X + 2\), 
+        \(P(X) + Q(X) = 2 X^3 - 3 X^2 - X + 3\),
+        \(P(X) - Q(X) = -3 X^2 + X + 1\).
+
+---
+author: Arnaud Bodin, Abdellah Hanani, Mohamed Mzari
+
+section: Polynômes -- Fractions rationnelles | 105
+
+subsection: Polynômes | Facile | 105.05
+
+link:
+    - type: cours
+      link: http://exo7.emath.fr/cours/ch_polynomes.pdf
+      title: Polynômes
+
+    - type: video
+      link: http://youtu.be/dDKI3jkMjfw
+      title: Définitions
+
+    - type: video
+      link: http://youtu.be/CnMrf9aW-LU
+      title: Arithmétique des polynômes
+
+    - type: video
+      link: http://youtu.be/qCMnvqc2t8A
+      title: Racine d'un polynôme, factorisation
+
+    - type: video
+      link: http://youtu.be/wf-eEQPBX0Y
+      title: Fractions rationnelles
+
+    - type: exercices
+      link: http://exo7.emath.fr/ficpdf/fic00007.pdf
+      title: Polynômes
+
+    - type: exercices
+      link: http://exo7.emath.fr/ficpdf/fic00008.pdf
+      title: Fractions rationnelles
+
+tags:
+    - motcle: degré
+
+question: |
+        Soient \(P(X)\) et \(Q(X)\) deux polynômes unitaires de degré \(n\ge1\).
+        Quelles sont les assertions vraies ?
+
+answers: 
+    - value: |
+        \(P+Q\) est un polynôme de degré \(n\).
+      correct: True
+
+    - value: |
+        \(P-Q\) est un polynôme de degré \(n\).
+      correct: False
+
+    - value: |
+        \(P \times Q\) est un polynôme de degré \(n+n=2n\).
+      correct: True
+
+    - value: |
+        \(P/Q\) est un polynôme de degré \(n-n=0\).
+      correct: False
+
+explanations: |
+        Le quotient de deux polynômes n'est pas un polynôme.
+
+---
+author: Arnaud Bodin, Abdellah Hanani, Mohamed Mzari
+
+section: Polynômes -- Fractions rationnelles | 105
+
+subsection: Polynômes | Moyen | 105.05
+
+link:
+    - type: cours
+      link: http://exo7.emath.fr/cours/ch_polynomes.pdf
+      title: Polynômes
+
+    - type: video
+      link: http://youtu.be/dDKI3jkMjfw
+      title: Définitions
+
+    - type: video
+      link: http://youtu.be/CnMrf9aW-LU
+      title: Arithmétique des polynômes
+
+    - type: video
+      link: http://youtu.be/qCMnvqc2t8A
+      title: Racine d'un polynôme, factorisation
+
+    - type: video
+      link: http://youtu.be/wf-eEQPBX0Y
+      title: Fractions rationnelles
+
+    - type: exercices
+      link: http://exo7.emath.fr/ficpdf/fic00007.pdf
+      title: Polynômes
+
+    - type: exercices
+      link: http://exo7.emath.fr/ficpdf/fic00008.pdf
+      title: Fractions rationnelles
+
+tags:
+    - motcle: degré
+
+question: |
+        Soit \(P\) un polynôme de degré \(\ge 2\).
+        Quelles sont les assertions vraies, quel que soit le polynôme \(P\) ?
+
+answers: 
+    - value: |
+        \(\deg( P(X) \times (X^2-X+1) ) = \deg P(X) + 2\)
+      correct: True
+
+    - value: |
+        \(\deg( P(X) + (X^2-X+1) ) = \deg P(X)\)
+      correct: False
+
+    - value: |
+        \(\deg( P(X)^2 ) = (\deg P(X))^2\)
+      correct: False
+
+    - value: |
+        \(\deg( P(X^2) ) = 2\deg P(X)\)
+      correct: True
+
+explanations: |
+        On a la formule \(\deg(P\times Q) = \deg P + \deg Q\) mais, il n'y a pas de formule pour la somme, car \(\deg(P + Q)\) peut être strictement plus petit que \(\deg P\) et \(\deg Q\).
+
+---
+author: Arnaud Bodin, Abdellah Hanani, Mohamed Mzari
+
+section: Polynômes -- Fractions rationnelles | 105
+
+subsection: Polynômes | Moyen | 105.05
+
+link:
+    - type: cours
+      link: http://exo7.emath.fr/cours/ch_polynomes.pdf
+      title: Polynômes
+
+    - type: video
+      link: http://youtu.be/dDKI3jkMjfw
+      title: Définitions
+
+    - type: video
+      link: http://youtu.be/CnMrf9aW-LU
+      title: Arithmétique des polynômes
+
+    - type: video
+      link: http://youtu.be/qCMnvqc2t8A
+      title: Racine d'un polynôme, factorisation
+
+    - type: video
+      link: http://youtu.be/wf-eEQPBX0Y
+      title: Fractions rationnelles
+
+    - type: exercices
+      link: http://exo7.emath.fr/ficpdf/fic00007.pdf
+      title: Polynômes
+
+    - type: exercices
+      link: http://exo7.emath.fr/ficpdf/fic00008.pdf
+      title: Fractions rationnelles
+
+tags:
+    - motcle: dérivée
+
+question: |
+        Soit \(P(X) = \sum_{k=0}^n a_k X^k\). On associe le polynôme dérivé :
+        \(P'(X) = \sum_{k=1}^n ka_k X^{k-1}\).
+
+answers: 
+    - value: |
+        Le polynôme dérivé de \(P(X) = X^5-2X^2+1\) est \(P'(X)=5X^4-2X\).
+      correct: False
+
+    - value: |
+        Le seul polynôme qui vérifie \(P'(X)=0\) est \(P(X)=1\).
+      correct: False
+
+    - value: |
+        Si \(P'(X)\) est de degré \(7\), alors \(P(X)\) est de degré \(8\).
+      correct: True
+
+    - value: |
+        Si le coefficient constant de \(P\) est nul, alors c'est aussi le cas pour \(P'\).
+      correct: False
+
+explanations: |
+        Le polynôme dérivé s'obtient comme si on dérivait la fonction \(X \mapsto P(X)\). 
+
+---
+author: Arnaud Bodin, Abdellah Hanani, Mohamed Mzari
+
+section: Polynômes -- Fractions rationnelles | 105
+
+subsection: Polynômes | Difficile | 105.05
+
+link:
+    - type: cours
+      link: http://exo7.emath.fr/cours/ch_polynomes.pdf
+      title: Polynômes
+
+    - type: video
+      link: http://youtu.be/dDKI3jkMjfw
+      title: Définitions
+
+    - type: video
+      link: http://youtu.be/CnMrf9aW-LU
+      title: Arithmétique des polynômes
+
+    - type: video
+      link: http://youtu.be/qCMnvqc2t8A
+      title: Racine d'un polynôme, factorisation
+
+    - type: video
+      link: http://youtu.be/wf-eEQPBX0Y
+      title: Fractions rationnelles
+
+    - type: exercices
+      link: http://exo7.emath.fr/ficpdf/fic00007.pdf
+      title: Polynômes
+
+    - type: exercices
+      link: http://exo7.emath.fr/ficpdf/fic00008.pdf
+      title: Fractions rationnelles
+
+tags:
+    - motcle: coefficient
+
+question: |
+        Soit \(P(X) = X^n + a_{n-1}X^{n-1} + \cdots + a_1X+a_0\) un polynôme de \(\Rr[X]\) de degré \(n \ge 1\). À ce polynôme \(P\) on associe un nouveau polynôme \(Q\), défini par \(Q(X) = P(X - \frac{a_{n-1}}{n})\).
+        Quelles sont les assertions vraies ?
+
+answers: 
+    - value: |
+        Si \(P(X) = X^2+3X+1\) alors \(Q(X) = X^2-2X\).
+      correct: False
+
+    - value: |
+        Si \(P(X) = X^3-3X^2+2\) alors \(Q(X) = X^3-3X\).
+      correct: True
+
+    - value: |
+        Le coefficient constant du polynôme \(Q\) est toujours nul.
+      correct: False
+
+    - value: |
+        Le coefficient du monôme \(X^{n-1}\) de \(Q\) est toujours nul.
+      correct: True
+
+explanations: |
+        Cette transformation est faite afin que le coefficient du monôme \(X^{n-1}\) de \(Q\) soit toujours nul.
+
+---
+author: Arnaud Bodin, Abdellah Hanani, Mohamed Mzari
+
+section: Polynômes -- Fractions rationnelles | 105
+
+subsection: Polynômes | Difficile | 105.05
+
+link:
+    - type: cours
+      link: http://exo7.emath.fr/cours/ch_polynomes.pdf
+      title: Polynômes
+
+    - type: video
+      link: http://youtu.be/dDKI3jkMjfw
+      title: Définitions
+
+    - type: video
+      link: http://youtu.be/CnMrf9aW-LU
+      title: Arithmétique des polynômes
+
+    - type: video
+      link: http://youtu.be/qCMnvqc2t8A
+      title: Racine d'un polynôme, factorisation
+
+    - type: video
+      link: http://youtu.be/wf-eEQPBX0Y
+      title: Fractions rationnelles
+
+    - type: exercices
+      link: http://exo7.emath.fr/ficpdf/fic00007.pdf
+      title: Polynômes
+
+    - type: exercices
+      link: http://exo7.emath.fr/ficpdf/fic00008.pdf
+      title: Fractions rationnelles
+
+tags:
+    - motcle: dérivée
+
+question: |
+        Soit \(P(X) = \sum_{k=0}^n a_k X^k\). On associe le polynôme dérivé :
+        \(P'(X) = \sum_{k=1}^n ka_k X^{k-1}\). Quelles sont les assertions vraies ?
+
+answers: 
+    - value: |
+        Si \(P\) est de degré \(n\ge1\) alors \(P'\) est de degré \(n-1\).
+      correct: True
+
+    - value: |
+        Si \(P'(X) = nX^{n-1}\) alors \(P(X) = X^n\).
+      correct: False
+
+    - value: |
+        Si \(P'=P\) alors \(P=0\).
+      correct: True
+
+    - value: |
+        Si \(P'-Q'=0\) alors \(P-Q=0\).
+      correct: False
+
+explanations: |
+        C'est comme pour les primitives, il ne faut pas oublier la constante :
+        Si \(P'=Q'\) alors \(P=Q +c\).
+
+---
+author: Arnaud Bodin, Abdellah Hanani, Mohamed Mzari
+
+section: Polynômes -- Fractions rationnelles | 105
+
+subsection: Polynômes | Difficile | 105.05
+
+link:
+    - type: cours
+      link: http://exo7.emath.fr/cours/ch_polynomes.pdf
+      title: Polynômes
+
+    - type: video
+      link: http://youtu.be/dDKI3jkMjfw
+      title: Définitions
+
+    - type: video
+      link: http://youtu.be/CnMrf9aW-LU
+      title: Arithmétique des polynômes
+
+    - type: video
+      link: http://youtu.be/qCMnvqc2t8A
+      title: Racine d'un polynôme, factorisation
+
+    - type: video
+      link: http://youtu.be/wf-eEQPBX0Y
+      title: Fractions rationnelles
+
+    - type: exercices
+      link: http://exo7.emath.fr/ficpdf/fic00007.pdf
+      title: Polynômes
+
+    - type: exercices
+      link: http://exo7.emath.fr/ficpdf/fic00008.pdf
+      title: Fractions rationnelles
+
+tags:
+    - motcle: produit
+
+question: |
+        Soit \(A(X) = \sum_{i=0}^n a_i X^i\).
+        Soit \(B(X) = \sum_{j=0}^m b_j X^j\).
+        Soit \(C(X) = A(X) \times B(X) = \sum_{k=0}^{m+n} c_k X^k\).
+        Quelles sont les assertions vraies ?
+
+answers: 
+    - value: |
+        \(c_k = a_k b_k\)
+      correct: False
+
+    - value: |
+        \(c_k = \sum_{i+j=k} a_ib_j\)
+      correct: True
+
+    - value: |
+        \(c_k = \sum_{i=0}^k a_ib_i\)
+      correct: False
+
+    - value: |
+        \(c_k = \sum_{i=0}^k a_ib_{k-i}\)
+      correct: True
+
+explanations: |
+        La formule (à connaître) est 
+        \[c_k = \sum_{i+j=k} a_ib_j = \sum_{i=0}^k a_ib_{k-i}.\]
+
+---
+author: Arnaud Bodin, Abdellah Hanani, Mohamed Mzari
+
+section: Polynômes -- Fractions rationnelles | 105
+
+subsection: Arithmétique des polynômes | Facile | 105.01, 105.02
+
+link:
+    - type: cours
+      link: http://exo7.emath.fr/cours/ch_polynomes.pdf
+      title: Polynômes
+
+    - type: video
+      link: http://youtu.be/dDKI3jkMjfw
+      title: Définitions
+
+    - type: video
+      link: http://youtu.be/CnMrf9aW-LU
+      title: Arithmétique des polynômes
+
+    - type: video
+      link: http://youtu.be/qCMnvqc2t8A
+      title: Racine d'un polynôme, factorisation
+
+    - type: video
+      link: http://youtu.be/wf-eEQPBX0Y
+      title: Fractions rationnelles
+
+    - type: exercices
+      link: http://exo7.emath.fr/ficpdf/fic00007.pdf
+      title: Polynômes
+
+    - type: exercices
+      link: http://exo7.emath.fr/ficpdf/fic00008.pdf
+      title: Fractions rationnelles
+
+tags:
+    - motcle: division euclidienne
+
+question: |
+        Soient \(A,B\) deux polynômes, avec \(B\) non nul. 
+        Soit \(A = B \times Q + R\) la division euclidienne de \(A\) par \(B\).
+
+answers: 
+    - value: |
+        Un tel \(Q\) existe toujours.
+      correct: True
+
+    - value: |
+        S'il existe, \(Q\) est unique.
+      correct: True
+
+    - value: |
+        On a toujours \(\deg Q \le \deg A\).
+      correct: True
+
+    - value: |
+        On a toujours \(\deg Q \le \deg B\).
+      correct: False
+
+explanations: |
+        La division euclidienne \(A = B \times Q + R\) existe toujours, \(Q\) et \(R\) sont uniques et bien sûr \(\deg Q \le \deg A\).
+
+---
+author: Arnaud Bodin, Abdellah Hanani, Mohamed Mzari
+
+section: Polynômes -- Fractions rationnelles | 105
+
+subsection: Arithmétique des polynômes | Facile | 105.01, 105.02
+
+link:
+    - type: cours
+      link: http://exo7.emath.fr/cours/ch_polynomes.pdf
+      title: Polynômes
+
+    - type: video
+      link: http://youtu.be/dDKI3jkMjfw
+      title: Définitions
+
+    - type: video
+      link: http://youtu.be/CnMrf9aW-LU
+      title: Arithmétique des polynômes
+
+    - type: video
+      link: http://youtu.be/qCMnvqc2t8A
+      title: Racine d'un polynôme, factorisation
+
+    - type: video
+      link: http://youtu.be/wf-eEQPBX0Y
+      title: Fractions rationnelles
+
+    - type: exercices
+      link: http://exo7.emath.fr/ficpdf/fic00007.pdf
+      title: Polynômes
+
+    - type: exercices
+      link: http://exo7.emath.fr/ficpdf/fic00008.pdf
+      title: Fractions rationnelles
+
+tags:
+    - motcle: division euclidienne
+
+question: |
+        Soient \(A,B\) deux polynômes, avec \(B\) non nul. 
+        Soit \(A = B \times Q + R\) la division euclidienne de \(A\) par \(B\).
+
+answers: 
+    - value: |
+        Un tel \(R\) existe toujours.
+      correct: True
+
+    - value: |
+        S'il existe, \(R\) est unique.
+      correct: True
+
+    - value: |
+        On a toujours \(\deg R < \deg A\) (ou bien \(R\) est nul).
+      correct: False
+
+    - value: |
+        On a toujours \(\deg R < \deg B\) (ou bien \(R\) est nul).
+      correct: True
+
+explanations: |
+        La division euclidienne \(A = B \times Q + R\) existe toujours, \(Q\) et \(R\) sont uniques et par définition de la division euclidienne \(R\) est nul ou bien 
+        \(\deg R < \deg B\).
+
+---
+author: Arnaud Bodin, Abdellah Hanani, Mohamed Mzari
+
+section: Polynômes -- Fractions rationnelles | 105
+
+subsection: Arithmétique des polynômes | Facile | 105.01, 105.02
+
+link:
+    - type: cours
+      link: http://exo7.emath.fr/cours/ch_polynomes.pdf
+      title: Polynômes
+
+    - type: video
+      link: http://youtu.be/dDKI3jkMjfw
+      title: Définitions
+
+    - type: video
+      link: http://youtu.be/CnMrf9aW-LU
+      title: Arithmétique des polynômes
+
+    - type: video
+      link: http://youtu.be/qCMnvqc2t8A
+      title: Racine d'un polynôme, factorisation
+
+    - type: video
+      link: http://youtu.be/wf-eEQPBX0Y
+      title: Fractions rationnelles
+
+    - type: exercices
+      link: http://exo7.emath.fr/ficpdf/fic00007.pdf
+      title: Polynômes
+
+    - type: exercices
+      link: http://exo7.emath.fr/ficpdf/fic00008.pdf
+      title: Fractions rationnelles
+
+tags:
+    - motcle: division euclidienne
+
+question: |
+        Soient \(A(X) = 2 X^4 + 3 X^3 - 8 X^2 - 2 X + 1\) et \(B(X) = X^2+3X+1\). Soit \(A = BQ+R\) la division euclidienne de \(A\) par \(B\).
+
+answers: 
+    - value: |
+        Le coefficient du monôme \(X^2\) de \(Q\) est \(1\).
+      correct: False
+
+    - value: |
+        Le coefficient du monôme \(X\) de \(Q\) est \(3\).
+      correct: False
+
+    - value: |
+        Le coefficient du monôme \(X\) de \(R\) est \(2\).
+      correct: False
+
+    - value: |
+        Le coefficient constant de \(R\) est \(2\).
+      correct: True
+
+explanations: |
+        Faire le calcul !
+        \(Q(X) = 2X^2-3X-1\), \(R(X) = 4X+2\).
+
+---
+author: Arnaud Bodin, Abdellah Hanani, Mohamed Mzari
+
+section: Polynômes -- Fractions rationnelles | 105
+
+subsection: Arithmétique des polynômes | Moyen | 105.01, 105.02
+
+link:
+    - type: cours
+      link: http://exo7.emath.fr/cours/ch_polynomes.pdf
+      title: Polynômes
+
+    - type: video
+      link: http://youtu.be/dDKI3jkMjfw
+      title: Définitions
+
+    - type: video
+      link: http://youtu.be/CnMrf9aW-LU
+      title: Arithmétique des polynômes
+
+    - type: video
+      link: http://youtu.be/qCMnvqc2t8A
+      title: Racine d'un polynôme, factorisation
+
+    - type: video
+      link: http://youtu.be/wf-eEQPBX0Y
+      title: Fractions rationnelles
+
+    - type: exercices
+      link: http://exo7.emath.fr/ficpdf/fic00007.pdf
+      title: Polynômes
+
+    - type: exercices
+      link: http://exo7.emath.fr/ficpdf/fic00008.pdf
+      title: Fractions rationnelles
+
+tags:
+    - motcle: division euclidienne
+
+question: |
+        Soient \(A(X) = X^6 - 7 X^5 + 10 X^4 + 5 X^3 - 23 X^2 + 5\) et \(B(X) = X^3-5X^2+1\). Soit \(A = BQ+R\) la division euclidienne de \(A\) par \(B\).
+
+answers: 
+    - value: |
+        Le coefficient du monôme \(X^2\) de \(Q\) est \(0\).
+      correct: False
+
+    - value: |
+        Le coefficient du monôme \(X\) de \(Q\) est \(0\).
+      correct: True
+
+    - value: |
+        Le coefficient du monôme \(X\) de \(R\) est \(-1\).
+      correct: False
+
+    - value: |
+        Le coefficient constant de \(R\) est \(1\).
+      correct: True
+
+explanations: |
+        Faire le calcul !
+        \(Q(X) = X^3-2X^2+4\), \(R(X) = -X^2+1\).
+
+---
+author: Arnaud Bodin, Abdellah Hanani, Mohamed Mzari
+
+section: Polynômes -- Fractions rationnelles | 105
+
+subsection: Arithmétique des polynômes | Moyen | 105.01, 105.02
+
+link:
+    - type: cours
+      link: http://exo7.emath.fr/cours/ch_polynomes.pdf
+      title: Polynômes
+
+    - type: video
+      link: http://youtu.be/dDKI3jkMjfw
+      title: Définitions
+
+    - type: video
+      link: http://youtu.be/CnMrf9aW-LU
+      title: Arithmétique des polynômes
+
+    - type: video
+      link: http://youtu.be/qCMnvqc2t8A
+      title: Racine d'un polynôme, factorisation
+
+    - type: video
+      link: http://youtu.be/wf-eEQPBX0Y
+      title: Fractions rationnelles
+
+    - type: exercices
+      link: http://exo7.emath.fr/ficpdf/fic00007.pdf
+      title: Polynômes
+
+    - type: exercices
+      link: http://exo7.emath.fr/ficpdf/fic00008.pdf
+      title: Fractions rationnelles
+
+tags:
+    - motcle: pgcd
+
+question: |
+        Soient \(A(X) = X^4 - 2 X^3 - 4 X^2 + 2 X + 3\) et 
+        \(B(X) = X^4 - 2 X^3 - 3 X^2\) des polynômes de \(\Rr[X]\).
+        Notons \(D\) le pgcd de \(A\) et \(B\).
+        Quelles sont les affirmations vraies  ?
+
+answers: 
+    - value: |
+        \(X-1\) divise \(D\).
+      correct: False
+
+    - value: |
+        \(X+1\) divise \(D\).
+      correct: True
+
+    - value: |
+        \(D(X) = (X-3)(X+1)\).
+      correct: True
+
+    - value: |
+        \(D(X) = (X-3)(X+1)^2\).
+      correct: False
+
+explanations: |
+        \(A(X) = (X-3)(X+1)^2(X-1)\), \(B(X) = X^2(X-3)(X+1)\),
+        le pgcd est \(D = (X-3)(X+1)\). 
+
+---
+author: Arnaud Bodin, Abdellah Hanani, Mohamed Mzari
+
+section: Polynômes -- Fractions rationnelles | 105
+
+subsection: Arithmétique des polynômes | Moyen | 105.01, 105.02
+
+link:
+    - type: cours
+      link: http://exo7.emath.fr/cours/ch_polynomes.pdf
+      title: Polynômes
+
+    - type: video
+      link: http://youtu.be/dDKI3jkMjfw
+      title: Définitions
+
+    - type: video
+      link: http://youtu.be/CnMrf9aW-LU
+      title: Arithmétique des polynômes
+
+    - type: video
+      link: http://youtu.be/qCMnvqc2t8A
+      title: Racine d'un polynôme, factorisation
+
+    - type: video
+      link: http://youtu.be/wf-eEQPBX0Y
+      title: Fractions rationnelles
+
+    - type: exercices
+      link: http://exo7.emath.fr/ficpdf/fic00007.pdf
+      title: Polynômes
+
+    - type: exercices
+      link: http://exo7.emath.fr/ficpdf/fic00008.pdf
+      title: Fractions rationnelles
+
+tags:
+    - motcle: pgcd
+
+question: |
+        Quelles sont les affirmations vraies pour des polynômes de \(\Rr[X]\) ?
+
+answers: 
+    - value: |
+        Le pgcd de \((X-1)^2(X-3)^3(X^2+X+1)^3\) et
+        \((X-1)^2(X-2)(X-3)(X^2+X+1)^2\) est \((X-1)^2(X-3)(X^2+X+1)\).
+      correct: False
+
+    - value: |
+        Le ppcm de \((X-1)^2(X-3)^3(X^2+X+1)^3\) et
+        \((X-1)^2(X-2)(X-3)(X^2+X+1)^2\) est \((X-1)^2(X-2)(X-3)^3(X^2+X+1)^2\).
+      correct: False
+
+    - value: |
+        Le pgcd de \((X-1)^2(X^2-1)^3\) et
+        \((X-1)^4(X+1)^5\) est \((X-1)^4(X+1)^3\).
+      correct: True
+
+    - value: |
+        Le ppcm de \((X-1)^2(X^2-1)^3\) et
+        \((X-1)^4(X+1)^5\) est \((X-1)^5(X+1)^5\).
+      correct: True
+
+explanations: |
+        Le pgcd s'obtient en prenant le minimum entre les exposants, le ppcm en prenant le maximum. Attention \(X^2-1=(X-1)(X+1)\).
+
+---
+author: Arnaud Bodin, Abdellah Hanani, Mohamed Mzari
+
+section: Polynômes -- Fractions rationnelles | 105
+
+subsection: Arithmétique des polynômes | Difficile | 105.01, 105.02
+
+link:
+    - type: cours
+      link: http://exo7.emath.fr/cours/ch_polynomes.pdf
+      title: Polynômes
+
+    - type: video
+      link: http://youtu.be/dDKI3jkMjfw
+      title: Définitions
+
+    - type: video
+      link: http://youtu.be/CnMrf9aW-LU
+      title: Arithmétique des polynômes
+
+    - type: video
+      link: http://youtu.be/qCMnvqc2t8A
+      title: Racine d'un polynôme, factorisation
+
+    - type: video
+      link: http://youtu.be/wf-eEQPBX0Y
+      title: Fractions rationnelles
+
+    - type: exercices
+      link: http://exo7.emath.fr/ficpdf/fic00007.pdf
+      title: Polynômes
+
+    - type: exercices
+      link: http://exo7.emath.fr/ficpdf/fic00008.pdf
+      title: Fractions rationnelles
+
+tags:
+    - motcle: division euclidienne
+
+question: |
+        Soit \(A\) un polynôme de degré \(n\ge1\). Soit \(B\) un polynôme de degré \(m\ge1\), avec \(m \le n\).
+        Soit \(A = B \times Q + R\) la division euclidienne de \(A\) par \(B\). On note
+        \(q = \deg Q\) et \(r = \deg R\) (avec \(r=-\infty\) si \(R=0\)).
+        Quelles sont les assertions vraies (quelque soient \(A\) et \(B\)) ?
+
+answers: 
+    - value: |
+        \(q = n-m\)
+      correct: True
+
+    - value: |
+        \(r < m\)
+      correct: True
+
+    - value: |
+        \(r=0 \implies A\) divise \(B\).
+      correct: False
+
+    - value: |
+        \(n = mq + r\)
+      correct: False
+
+explanations: |
+        On a \(\deg R < \deg B\). Il ne faut pas confondre \(R=0\) et \(r=0\).
+        En plus \(\deg(A) = \deg(B\times Q) = \deg(A) + \deg(Q)\).
+
+---
+author: Arnaud Bodin, Abdellah Hanani, Mohamed Mzari
+
+section: Polynômes -- Fractions rationnelles | 105
+
+subsection: Arithmétique des polynômes | Difficile | 105.01, 105.02
+
+link:
+    - type: cours
+      link: http://exo7.emath.fr/cours/ch_polynomes.pdf
+      title: Polynômes
+
+    - type: video
+      link: http://youtu.be/dDKI3jkMjfw
+      title: Définitions
+
+    - type: video
+      link: http://youtu.be/CnMrf9aW-LU
+      title: Arithmétique des polynômes
+
+    - type: video
+      link: http://youtu.be/qCMnvqc2t8A
+      title: Racine d'un polynôme, factorisation
+
+    - type: video
+      link: http://youtu.be/wf-eEQPBX0Y
+      title: Fractions rationnelles
+
+    - type: exercices
+      link: http://exo7.emath.fr/ficpdf/fic00007.pdf
+      title: Polynômes
+
+    - type: exercices
+      link: http://exo7.emath.fr/ficpdf/fic00008.pdf
+      title: Fractions rationnelles
+
+tags:
+    - motcle: division euclidienne
+
+question: |
+        Soit \(n\ge2\). Soit \(A(X) = X^{2n}+X^{2n-2}\). Soit \(B(X) = X^{n}+X^{n-1}\). Soit \(A = BQ + R\) la division euclidienne de \(A\) par \(B\).
+
+answers: 
+    - value: |
+        Le coefficient de \(X^n\) de \(Q\) est \(1\).
+      correct: True
+
+    - value: |
+        Le coefficient de \(X^{n-1}\) de \(Q\) est \(1\).
+      correct: False
+
+    - value: |
+        Le coefficient de \(X^{n-2}\) de \(Q\) est \(2\).
+      correct: True
+
+    - value: |
+        \(R\) est constitué d'un seul monôme.
+      correct: True
+
+explanations: |
+        \(Q(X) = X^n-X^{n-1}+2X^{n-2}-2X^{n-3}+\cdots\). \(R(X) = \pm 2 X^{n-1}\).
+
+---
+author: Arnaud Bodin, Abdellah Hanani, Mohamed Mzari
+
+section: Polynômes -- Fractions rationnelles | 105
+
+subsection: Arithmétique des polynômes | Difficile | 105.01, 105.02
+
+link:
+    - type: cours
+      link: http://exo7.emath.fr/cours/ch_polynomes.pdf
+      title: Polynômes
+
+    - type: video
+      link: http://youtu.be/dDKI3jkMjfw
+      title: Définitions
+
+    - type: video
+      link: http://youtu.be/CnMrf9aW-LU
+      title: Arithmétique des polynômes
+
+    - type: video
+      link: http://youtu.be/qCMnvqc2t8A
+      title: Racine d'un polynôme, factorisation
+
+    - type: video
+      link: http://youtu.be/wf-eEQPBX0Y
+      title: Fractions rationnelles
+
+    - type: exercices
+      link: http://exo7.emath.fr/ficpdf/fic00007.pdf
+      title: Polynômes
+
+    - type: exercices
+      link: http://exo7.emath.fr/ficpdf/fic00008.pdf
+      title: Fractions rationnelles
+
+tags:
+    - motcle: pgcd
+
+question: |
+        Soit \(A(X) = X^4-X^2\). Soit \(B(X) = X^2+X-2\).
+        Soit \(D\) le pgcd de \(A\) et \(B\) dans \(\Rr[X]\).
+
+answers: 
+    - value: |
+        \(D(X) = 1\)
+      correct: False
+
+    - value: |
+        Il existe \(U,V \in \Rr[X]\) tels que \(AU+BV = X-1\).
+      correct: True
+
+    - value: |
+        Il existe \(u \in \Rr\) et \(V \in \Rr[X]\) tels que \(Au+BV = X-1\).
+      correct: True
+
+    - value: |
+        Il existe \(U\in \Rr[X]\) et \(v \in \Rr\) tels que \(AU+Bv = X-1\).
+      correct: False
+
+explanations: |
+        \(A(X)=X^2(X-1)^2\), \(B(X)=(X-1)(X+2)\), \(D(X)=X-1\). \(U(X)= -\frac14\), \(V(X)=\frac14(X^2-X+2)\) donnent \(AU+BV=D\).
+
+---
+author: Arnaud Bodin, Abdellah Hanani, Mohamed Mzari
+
+section: Polynômes -- Fractions rationnelles | 105
+
+subsection: Racines, factorisation | Facile | 105.03
+
+link:
+    - type: cours
+      link: http://exo7.emath.fr/cours/ch_polynomes.pdf
+      title: Polynômes
+
+    - type: video
+      link: http://youtu.be/dDKI3jkMjfw
+      title: Définitions
+
+    - type: video
+      link: http://youtu.be/CnMrf9aW-LU
+      title: Arithmétique des polynômes
+
+    - type: video
+      link: http://youtu.be/qCMnvqc2t8A
+      title: Racine d'un polynôme, factorisation
+
+    - type: video
+      link: http://youtu.be/wf-eEQPBX0Y
+      title: Fractions rationnelles
+
+    - type: exercices
+      link: http://exo7.emath.fr/ficpdf/fic00007.pdf
+      title: Polynômes
+
+    - type: exercices
+      link: http://exo7.emath.fr/ficpdf/fic00008.pdf
+      title: Fractions rationnelles
+
+tags:
+    - motcle: racine
+
+question: |
+        Soit \(P \in \Rr[X]\) un polynôme de degré \(8\).
+        Quelles sont les affirmations vraies ?
+
+answers: 
+    - value: |
+        \(P\) admet exactement \(8\) racines réelles (comptées avec multiplicité).
+      correct: False
+
+    - value: |
+        \(P\) admet au moins une racine réelle.
+      correct: False
+
+    - value: |
+        \(P\) admet au plus \(8\) racines réelles (comptées avec multiplicité).
+      correct: True
+
+    - value: |
+        \(P\) admet au moins \(8\) racines réelles (comptées avec multiplicité).
+      correct: False
+
+explanations: |
+        Il y a au plus \(\deg P\) racines réelles (comptées avec multiplicité).
+
+---
+author: Arnaud Bodin, Abdellah Hanani, Mohamed Mzari
+
+section: Polynômes -- Fractions rationnelles | 105
+
+subsection: Racines, factorisation | Facile | 105.03
+
+link:
+    - type: cours
+      link: http://exo7.emath.fr/cours/ch_polynomes.pdf
+      title: Polynômes
+
+    - type: video
+      link: http://youtu.be/dDKI3jkMjfw
+      title: Définitions
+
+    - type: video
+      link: http://youtu.be/CnMrf9aW-LU
+      title: Arithmétique des polynômes
+
+    - type: video
+      link: http://youtu.be/qCMnvqc2t8A
+      title: Racine d'un polynôme, factorisation
+
+    - type: video
+      link: http://youtu.be/wf-eEQPBX0Y
+      title: Fractions rationnelles
+
+    - type: exercices
+      link: http://exo7.emath.fr/ficpdf/fic00007.pdf
+      title: Polynômes
+
+    - type: exercices
+      link: http://exo7.emath.fr/ficpdf/fic00008.pdf
+      title: Fractions rationnelles
+
+tags:
+    - motcle: racine
+
+question: |
+        Soit \(P(X) = X^7 - 5 X^5 - 5 X^4 + 4 X^3 + 13 X^2 + 12 X + 4\).
+
+answers: 
+    - value: |
+        \(-1\) est une racine de \(P\).
+      correct: True
+
+    - value: |
+        \(0\) est une racine de \(P\).
+      correct: False
+
+    - value: |
+        \(1\) est une racine de \(P\).
+      correct: False
+
+    - value: |
+        \(2\) est une racine de \(P\).
+      correct: True
+
+explanations: |
+        Calculer \(P(\alpha)\). En fait \(P(X) = (X-2)^2(X+1)^3(X^2+X+1)\).
+
+---
+author: Arnaud Bodin, Abdellah Hanani, Mohamed Mzari
+
+section: Polynômes -- Fractions rationnelles | 105
+
+subsection: Racines, factorisation | Facile | 105.03
+
+link:
+    - type: cours
+      link: http://exo7.emath.fr/cours/ch_polynomes.pdf
+      title: Polynômes
+
+    - type: video
+      link: http://youtu.be/dDKI3jkMjfw
+      title: Définitions
+
+    - type: video
+      link: http://youtu.be/CnMrf9aW-LU
+      title: Arithmétique des polynômes
+
+    - type: video
+      link: http://youtu.be/qCMnvqc2t8A
+      title: Racine d'un polynôme, factorisation
+
+    - type: video
+      link: http://youtu.be/wf-eEQPBX0Y
+      title: Fractions rationnelles
+
+    - type: exercices
+      link: http://exo7.emath.fr/ficpdf/fic00007.pdf
+      title: Polynômes
+
+    - type: exercices
+      link: http://exo7.emath.fr/ficpdf/fic00008.pdf
+      title: Fractions rationnelles
+
+tags:
+    - motcle: polynôme irréductible
+
+question: |
+        Quelles sont les affirmations vraies ?
+
+answers: 
+    - value: |
+        \(2X^2+3X+1\) est irréductible sur \(\Qq\).
+      correct: False
+
+    - value: |
+        \(2X^2-3X+2\) est irréductible sur \(\Rr\).
+      correct: True
+
+    - value: |
+        \(2X^2-X+3\) est irréductible sur \(\Cc\).
+      correct: False
+
+    - value: |
+        \(X^3+X^2+X+4\) est irréductible sur \(\Rr\).
+      correct: False
+
+explanations: |
+        Sur \(\Cc\) les irréductibles sont de degré \(1\). Sur \(\Rr\) ils sont de degré 1, ou bien de degré \(2\) à discriminant strictement négatif.
+
+---
+author: Arnaud Bodin, Abdellah Hanani, Mohamed Mzari
+
+section: Polynômes -- Fractions rationnelles | 105
+
+subsection: Racines, factorisation | Moyen | 105.03
+
+link:
+    - type: cours
+      link: http://exo7.emath.fr/cours/ch_polynomes.pdf
+      title: Polynômes
+
+    - type: video
+      link: http://youtu.be/dDKI3jkMjfw
+      title: Définitions
+
+    - type: video
+      link: http://youtu.be/CnMrf9aW-LU
+      title: Arithmétique des polynômes
+
+    - type: video
+      link: http://youtu.be/qCMnvqc2t8A
+      title: Racine d'un polynôme, factorisation
+
+    - type: video
+      link: http://youtu.be/wf-eEQPBX0Y
+      title: Fractions rationnelles
+
+    - type: exercices
+      link: http://exo7.emath.fr/ficpdf/fic00007.pdf
+      title: Polynômes
+
+    - type: exercices
+      link: http://exo7.emath.fr/ficpdf/fic00008.pdf
+      title: Fractions rationnelles
+
+tags:
+    - motcle: racine
+
+question: |
+        Soit \(P \in \Rr[X]\) un polynôme de degré \(2n+1\) (\(n\in\Nn^*\)).
+        Quelles sont les affirmations vraies ?
+
+answers: 
+    - value: |
+        \(P\) peut admettre une racine complexe, qui ne soit pas réelle.
+      correct: True
+
+    - value: |
+        \(P\) admet au moins une racines réelle.
+      correct: True
+
+    - value: |
+        \(P\) admet au moins deux racines réelles (comptées avec multiplicités).
+      correct: False
+
+    - value: |
+        \(P\) peut avoir \(2n+1\) racines réelles distinctes.
+      correct: True
+
+explanations: |
+        Il y a au plus \(\deg P\) racines réelles (comptées avec multiplicité). Mais ici le degré est impair, donc \(P\) admet au moins une racine réelle.
+
+---
+author: Arnaud Bodin, Abdellah Hanani, Mohamed Mzari
+
+section: Polynômes -- Fractions rationnelles | 105
+
+subsection: Racines, factorisation | Moyen | 105.03
+
+link:
+    - type: cours
+      link: http://exo7.emath.fr/cours/ch_polynomes.pdf
+      title: Polynômes
+
+    - type: video
+      link: http://youtu.be/dDKI3jkMjfw
+      title: Définitions
+
+    - type: video
+      link: http://youtu.be/CnMrf9aW-LU
+      title: Arithmétique des polynômes
+
+    - type: video
+      link: http://youtu.be/qCMnvqc2t8A
+      title: Racine d'un polynôme, factorisation
+
+    - type: video
+      link: http://youtu.be/wf-eEQPBX0Y
+      title: Fractions rationnelles
+
+    - type: exercices
+      link: http://exo7.emath.fr/ficpdf/fic00007.pdf
+      title: Polynômes
+
+    - type: exercices
+      link: http://exo7.emath.fr/ficpdf/fic00008.pdf
+      title: Fractions rationnelles
+
+tags:
+    - motcle: racine
+
+question: |
+        Soit \(P(X) = X^6 + 4 X^5 + X^4 - 10 X^3 - 4 X^2 + 8 X\).
+
+answers: 
+    - value: |
+        \(-1\) est une racine double.
+      correct: False
+
+    - value: |
+        \(0\) est une racine double.
+      correct: False
+
+    - value: |
+        \(1\) est une racine double.
+      correct: True
+
+    - value: |
+        \(-2\) est une racine double.
+      correct: False
+
+explanations: |
+        Pour une racine double il faut \(P(a)=0\), \(P'(a)=0\) et \(P''(a)\neq0\).
+        En fait \(P(X) = X(X+2)^3(X-1)^2\).
+
+---
+author: Arnaud Bodin, Abdellah Hanani, Mohamed Mzari
+
+section: Polynômes -- Fractions rationnelles | 105
+
+subsection: Racines, factorisation | Difficile | 105.03
+
+link:
+    - type: cours
+      link: http://exo7.emath.fr/cours/ch_polynomes.pdf
+      title: Polynômes
+
+    - type: video
+      link: http://youtu.be/dDKI3jkMjfw
+      title: Définitions
+
+    - type: video
+      link: http://youtu.be/CnMrf9aW-LU
+      title: Arithmétique des polynômes
+
+    - type: video
+      link: http://youtu.be/qCMnvqc2t8A
+      title: Racine d'un polynôme, factorisation
+
+    - type: video
+      link: http://youtu.be/wf-eEQPBX0Y
+      title: Fractions rationnelles
+
+    - type: exercices
+      link: http://exo7.emath.fr/ficpdf/fic00007.pdf
+      title: Polynômes
+
+    - type: exercices
+      link: http://exo7.emath.fr/ficpdf/fic00008.pdf
+      title: Fractions rationnelles
+
+tags:
+    - motcle: polynôme irréductible
+
+question: |
+        Soit \(P \in \Qq[X]\) un polynôme de degré \(n\).
+
+answers: 
+    - value: |
+        \(P\) peut avoir des racines dans \(\Rr\), mais pas dans \(\Qq\).
+      correct: True
+
+    - value: |
+        Si \(z\in \Cc\setminus\Rr\) est une racine de \(P\), alors \(\bar z\) aussi.
+      correct: True
+
+    - value: |
+        Les facteurs irréductibles de \(P\) sur \(\Qq\) sont de degré \(1\) ou \(2\).
+      correct: False
+
+    - value: |
+        Les racines réelles de \(P\) sont de la forme \(\alpha + \beta\sqrt{\gamma}\), \(\alpha,\beta,\gamma \in \Qq\).
+      correct: False
+
+explanations: |
+        Sur \(\Qq\) les facteurs irréductibles peuvent être de n'importe quel degré.
+
+---
+author: Arnaud Bodin, Abdellah Hanani, Mohamed Mzari
+
+section: Polynômes -- Fractions rationnelles | 105
+
+subsection: Racines, factorisation | Difficile | 105.03
+
+link:
+    - type: cours
+      link: http://exo7.emath.fr/cours/ch_polynomes.pdf
+      title: Polynômes
+
+    - type: video
+      link: http://youtu.be/dDKI3jkMjfw
+      title: Définitions
+
+    - type: video
+      link: http://youtu.be/CnMrf9aW-LU
+      title: Arithmétique des polynômes
+
+    - type: video
+      link: http://youtu.be/qCMnvqc2t8A
+      title: Racine d'un polynôme, factorisation
+
+    - type: video
+      link: http://youtu.be/wf-eEQPBX0Y
+      title: Fractions rationnelles
+
+    - type: exercices
+      link: http://exo7.emath.fr/ficpdf/fic00007.pdf
+      title: Polynômes
+
+    - type: exercices
+      link: http://exo7.emath.fr/ficpdf/fic00008.pdf
+      title: Fractions rationnelles
+
+tags:
+    - motcle: racine
+
+question: |
+        Soit \(P \in \Kk[X]\) un polynôme de degré \(n\ge1\).
+        Quelles sont les affirmations vraies ?
+
+answers: 
+    - value: |
+        \(a\) racine de \(P\) \(\iff\) \(X-a\) divise \(P\).
+      correct: True
+
+    - value: |
+        \(a\) racine de \(P\) de multiplicité \(\ge k\) \(\iff\) \((X-a)^k\) divise \(P\).
+      correct: True
+
+    - value: |
+        \(a\) racine de \(P\) de multiplicité \(\ge k\) \(\iff\)
+        \(P(a) = 0\), \(P'(a)=0\), ..., \(P^{(k)}(a)=0\).
+      correct: False
+
+    - value: |
+        La somme des multiplicités des racines est \(\le n\).
+      correct: True
+
+explanations: |
+        \(a\) racine de \(P\) de multiplicité \(\ge k\) \(\iff\) \((X-a)^k\) divise \(P\) \(\iff\) \(P(a) = 0\), \(P'(a)=0\), ..., \(P^{(k-1)}(a)=0\).
+
+---
+author: Arnaud Bodin, Abdellah Hanani, Mohamed Mzari
+
+section: Polynômes -- Fractions rationnelles | 105
+
+subsection: Fractions rationnelles | Facile | 105.04
+
+link:
+    - type: cours
+      link: http://exo7.emath.fr/cours/ch_polynomes.pdf
+      title: Polynômes
+
+    - type: video
+      link: http://youtu.be/dDKI3jkMjfw
+      title: Définitions
+
+    - type: video
+      link: http://youtu.be/CnMrf9aW-LU
+      title: Arithmétique des polynômes
+
+    - type: video
+      link: http://youtu.be/qCMnvqc2t8A
+      title: Racine d'un polynôme, factorisation
+
+    - type: video
+      link: http://youtu.be/wf-eEQPBX0Y
+      title: Fractions rationnelles
+
+    - type: exercices
+      link: http://exo7.emath.fr/ficpdf/fic00007.pdf
+      title: Polynômes
+
+    - type: exercices
+      link: http://exo7.emath.fr/ficpdf/fic00008.pdf
+      title: Fractions rationnelles
+
+tags:
+    - motcle: éléments simples
+
+question: |
+        Quelles sont les affirmations vraies ?
+
+answers: 
+    - value: |
+        Les éléments simples sur \(\Cc\) sont de la forme \(\frac{a}{X-\alpha}\), \(a,\alpha \in \Cc\).
+      correct: False
+
+    - value: |
+        Les éléments simples sur \(\Cc\) sont de la forme \(\frac{a}{(X-\alpha)^k}\), \(a,\alpha \in \Rr\), \(k\in\Nn^*\).
+      correct: False
+
+    - value: |
+        Les éléments simples sur \(\Rr\) peuvent être de la forme \(\frac{a}{(X-\alpha)^k}\), \(a,\alpha \in \Rr\).
+      correct: True
+
+    - value: |
+        Les éléments simples sur \(\Rr\) peuvent être de la forme \(\frac{aX+b}{X-\alpha}\), \(a,b,\alpha \in \Rr\).
+      correct: False
+
+explanations: |
+        Sur \(\Cc\) les éléments simples sont de la forme \(\frac{a}{(X-\alpha)^k}\), \(a,\alpha \in \Cc\), \(k\in\Nn^*\).
+        Sur \(\Rr\) les éléments simples sont de la forme \(\frac{a}{(X-\alpha)^k}\), \(a,\alpha \in \Rr\), \(k \in \Nn^*\) ou bien
+        \(\frac{aX+b}{(X^2+\alpha X+\beta)^k}\), \(a,b,\alpha,\beta \in \Rr\), \(k \in \Nn^*\) avec 
+        \(X^2+\alpha X+\beta\) sans racines réelles.
+
+---
+author: Arnaud Bodin, Abdellah Hanani, Mohamed Mzari
+
+section: Polynômes -- Fractions rationnelles | 105
+
+subsection: Fractions rationnelles | Facile | 105.04
+
+link:
+    - type: cours
+      link: http://exo7.emath.fr/cours/ch_polynomes.pdf
+      title: Polynômes
+
+    - type: video
+      link: http://youtu.be/dDKI3jkMjfw
+      title: Définitions
+
+    - type: video
+      link: http://youtu.be/CnMrf9aW-LU
+      title: Arithmétique des polynômes
+
+    - type: video
+      link: http://youtu.be/qCMnvqc2t8A
+      title: Racine d'un polynôme, factorisation
+
+    - type: video
+      link: http://youtu.be/wf-eEQPBX0Y
+      title: Fractions rationnelles
+
+    - type: exercices
+      link: http://exo7.emath.fr/ficpdf/fic00007.pdf
+      title: Polynômes
+
+    - type: exercices
+      link: http://exo7.emath.fr/ficpdf/fic00008.pdf
+      title: Fractions rationnelles
+
+tags:
+    - motcle: éléments simples
+
+question: |
+        Soient \(P(X)=X-1\), \(Q(X)=(X+1)^2(X^2+X+1)\). On décompose la fraction \(F = \frac{P}{Q}\) sur \(\Rr\).
+
+answers: 
+    - value: |
+        La partie polynomiale est nulle.
+      correct: True
+
+    - value: |
+        Il peut y avoir un élément simple \(\frac{a}{X-1}\).
+      correct: False
+
+    - value: |
+        Il peut y avoir un élément simple \(\frac{a}{X+1}\) mais pas  \(\frac{a}{(X+1)^2}\).
+      correct: False
+
+    - value: |
+        Il peut y avoir un élément simple \(\frac{aX+b}{X^2+X+1}\) mais pas  \(\frac{aX+b}{(X^2+X+1)^2}\).
+      correct: True
+
+explanations: |
+        \(\frac{P(X)}{Q(X)} = \frac{X-1}{(X+1)^2(X^2+X+1)}
+        = \frac{-1}{X+1}+\frac{-2}{(X+1)^2}+\frac{X+2}{X^2+X+1}\).
+
+---
+author: Arnaud Bodin, Abdellah Hanani, Mohamed Mzari
+
+section: Polynômes -- Fractions rationnelles | 105
+
+subsection: Fractions rationnelles | Moyen | 105.04
+
+link:
+    - type: cours
+      link: http://exo7.emath.fr/cours/ch_polynomes.pdf
+      title: Polynômes
+
+    - type: video
+      link: http://youtu.be/dDKI3jkMjfw
+      title: Définitions
+
+    - type: video
+      link: http://youtu.be/CnMrf9aW-LU
+      title: Arithmétique des polynômes
+
+    - type: video
+      link: http://youtu.be/qCMnvqc2t8A
+      title: Racine d'un polynôme, factorisation
+
+    - type: video
+      link: http://youtu.be/wf-eEQPBX0Y
+      title: Fractions rationnelles
+
+    - type: exercices
+      link: http://exo7.emath.fr/ficpdf/fic00007.pdf
+      title: Polynômes
+
+    - type: exercices
+      link: http://exo7.emath.fr/ficpdf/fic00008.pdf
+      title: Fractions rationnelles
+
+tags:
+    - motcle: division euclidienne
+
+question: |
+        Soit \(\frac{P(X)}{Q(X)}\) une fraction rationnelle. On note \(E(X)\) sa partie polynomiale (appelée aussi partie entière).
+
+answers: 
+    - value: |
+        Si \(\deg P < \deg Q\) alors \(E(X) = 0\).
+      correct: True
+
+    - value: |
+        Si \(\deg P \ge \deg Q\) alors \(\deg E(X) = \deg P - \deg Q\).
+      correct: True
+
+    - value: |
+        Si \(P(X) = X^3+X+2\) et \(Q(X) = X^2-1\) alors \(E(X) = X+1\).
+      correct: False
+
+    - value: |
+        Si \(P(X) = X^5+X-2\) et \(Q(X) = X^2-1\) alors \(E(X) = X^3+X\).
+      correct: True
+
+explanations: |
+        La partie entière s'obtient comme le quotient de la division euclidienne de \(P\) par \(Q\).
+
+---
+author: Arnaud Bodin, Abdellah Hanani, Mohamed Mzari
+
+section: Polynômes -- Fractions rationnelles | 105
+
+subsection: Fractions rationnelles | Moyen | 105.04
+
+link:
+    - type: cours
+      link: http://exo7.emath.fr/cours/ch_polynomes.pdf
+      title: Polynômes
+
+    - type: video
+      link: http://youtu.be/dDKI3jkMjfw
+      title: Définitions
+
+    - type: video
+      link: http://youtu.be/CnMrf9aW-LU
+      title: Arithmétique des polynômes
+
+    - type: video
+      link: http://youtu.be/qCMnvqc2t8A
+      title: Racine d'un polynôme, factorisation
+
+    - type: video
+      link: http://youtu.be/wf-eEQPBX0Y
+      title: Fractions rationnelles
+
+    - type: exercices
+      link: http://exo7.emath.fr/ficpdf/fic00007.pdf
+      title: Polynômes
+
+    - type: exercices
+      link: http://exo7.emath.fr/ficpdf/fic00008.pdf
+      title: Fractions rationnelles
+
+tags:
+    - motcle: éléments simples
+
+question: |
+        Soit \(P(X)=3X\) et \(Q(X) = (X-2)(X-1)^2(X^2-X+1)\).
+        On écrit 
+        \[\frac{P(X)}{Q(X)} = \frac{a}{X-2} + \frac{b}{X-1} +  \frac{c}{(X-1)^2}
+        + \frac{dX+e}{X^2-X+1}.\]
+        Quelles sont les affirmations vraies ?
+
+answers: 
+    - value: |
+        En multipliant par \(X-2\), puis en évaluant en \(X=2\), j'obtiens \(a=1\).
+      correct: False
+
+    - value: |
+        En multipliant par \((X-1)^2\), puis en évaluant en \(X=1\), j'obtiens \(c=-3\).
+      correct: True
+
+    - value: |
+        En multipliant par \(X\), puis en faisant tendre \(X \to +\infty\), j'obtiens la relation \(a+b+d=0\).
+      correct: True
+
+    - value: |
+        En évaluant en \(X=0\), j'obtiens la relation \(a+b+c+e=0\).
+      correct: False
+
+explanations: |
+        \(\frac{P(X)}{Q(X)} = \frac{3X}{(X-2)(X-1)^2(X^2-X+1)}
+        =\frac{2}{X-2} + \frac{-3}{X-1} +  \frac{-3}{(X-1)^2}
+        + \frac{X+1}{X^2-X+1}\).
+
+---
+author: Arnaud Bodin, Abdellah Hanani, Mohamed Mzari
+
+section: Polynômes -- Fractions rationnelles | 105
+
+subsection: Fractions rationnelles | Difficile | 105.04
+
+link:
+    - type: cours
+      link: http://exo7.emath.fr/cours/ch_polynomes.pdf
+      title: Polynômes
+
+    - type: video
+      link: http://youtu.be/dDKI3jkMjfw
+      title: Définitions
+
+    - type: video
+      link: http://youtu.be/CnMrf9aW-LU
+      title: Arithmétique des polynômes
+
+    - type: video
+      link: http://youtu.be/qCMnvqc2t8A
+      title: Racine d'un polynôme, factorisation
+
+    - type: video
+      link: http://youtu.be/wf-eEQPBX0Y
+      title: Fractions rationnelles
+
+    - type: exercices
+      link: http://exo7.emath.fr/ficpdf/fic00007.pdf
+      title: Polynômes
+
+    - type: exercices
+      link: http://exo7.emath.fr/ficpdf/fic00008.pdf
+      title: Fractions rationnelles
+
+tags:
+    - motcle: éléments simples
+
+question: |
+        Soit \(F(X) = \dfrac{1}{(X^2+1)X^3}\).
+        On écrit 
+        \[F(X) = \frac{a}{X} + \frac{b}{X^2} +  \frac{c}{X^3}
+        + \frac{dX+e}{X^2+1}.\]
+        Quelles sont les affirmations vraies ?
+
+answers: 
+    - value: |
+        \(c=1\)
+      correct: True
+
+    - value: |
+        \(b=1\)
+      correct: False
+
+    - value: |
+        \(a=1\)
+      correct: False
+
+    - value: |
+        \(e=0\)
+      correct: True
+
+explanations: |
+        On profite que \(F\) est impaire pour déduire \(b=0\), \(e=0\).
+        \(F(X) = \dfrac{1}{(X^2+1)X^3} = \frac{-1}{X}  +  \frac{1}{X^3}
+        + \frac{X}{X^2+1}.\)
+
+---
+author: Arnaud Bodin, Abdellah Hanani, Mohamed Mzari
+
+section: Polynômes -- Fractions rationnelles | 105
+
+subsection: Fractions rationnelles | Difficile | 105.04
+
+link:
+    - type: cours
+      link: http://exo7.emath.fr/cours/ch_polynomes.pdf
+      title: Polynômes
+
+    - type: video
+      link: http://youtu.be/dDKI3jkMjfw
+      title: Définitions
+
+    - type: video
+      link: http://youtu.be/CnMrf9aW-LU
+      title: Arithmétique des polynômes
+
+    - type: video
+      link: http://youtu.be/qCMnvqc2t8A
+      title: Racine d'un polynôme, factorisation
+
+    - type: video
+      link: http://youtu.be/wf-eEQPBX0Y
+      title: Fractions rationnelles
+
+    - type: exercices
+      link: http://exo7.emath.fr/ficpdf/fic00007.pdf
+      title: Polynômes
+
+    - type: exercices
+      link: http://exo7.emath.fr/ficpdf/fic00008.pdf
+      title: Fractions rationnelles
+
+tags:
+    - motcle: éléments simples
+
+question: |
+        Soit \(F(X) = \dfrac{X-1}{X(X^2+1)^2}\).
+        On écrit 
+        \[F(X) = \frac{a}{X} + \frac{bX+c}{X^2+1} +  \frac{dX+e}{(X^2+1)^2}.\]
+        Quelles sont les affirmations vraies ?
+
+answers: 
+    - value: |
+        \(a=-1\)
+      correct: True
+
+    - value: |
+        \(d=0\) et \(e=0\)
+      correct: False
+
+    - value: |
+        \(b=0\) et \(c=0\)
+      correct: False
+
+    - value: |
+        \(b=0\) et \(d=0\)
+      correct: False
+
+explanations: |
+        \(F(X) = \dfrac{1}{X(X^2+1)^2} = \frac{-1}{X} + \frac{X}{X^2+1} +  \frac{X+1}{(X^2+1)^2}.\)
+
