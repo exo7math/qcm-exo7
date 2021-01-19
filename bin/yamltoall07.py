@@ -275,6 +275,7 @@ def replace_latex_macros(text):
 
     return text
 
+
 # Test
 # text = "Une question avec une balise html <a>lien</a>. Et ici des maths \(b<a\) et \(a<b<c>b>a\), ici (a<b<c) la une formule :\[a<b<i>a'\]"
 # print(text)
@@ -293,6 +294,7 @@ def delete_exo7_category(text):
 
     return text
 
+
 # Test
 # text = "Logique | Facile | 100.01, 100.02"
 # print(text)
@@ -303,7 +305,6 @@ def delete_exo7_category(text):
 # print(text)
 # text = delete_exo7_category(text)
 # print(text)
-
 
 
 # --------------------------------------------------
