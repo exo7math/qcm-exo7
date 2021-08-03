@@ -83,41 +83,41 @@ def add_data_one_exo(text_exo,**kwargs):
     if ('subsection' in kwargs) and kwargs['subsection']:
         thesubsection = re.search(r'(?<=\\qsubsection\{)(.*?)(?=\})',new_text_exo, flags=re.MULTILINE|re.DOTALL)
         if thesubsection:  # overwrite an existing subsection
-            new_subsection = r"\\qsubsection{" + kwargs['subsection'] + "}"
+            new_subsection = r"\qsubsection{" + kwargs['subsection'] + "}"
             new_text_exo = re.sub(r"\\qsubsection\{(.*?)\}",new_subsection,new_text_exo, flags=re.MULTILINE|re.DOTALL)
         else: # new subsection
-            new_text_exo = "\n\\qsubsection{" + kwargs['subsection'] + "}" + new_text_exo
+            new_text_exo = r"\qsubsection{" + kwargs['subsection'] + "}" + new_text_exo
 
     # the current section
     if ('section' in kwargs) and kwargs['section']:
         thesection = re.search(r'(?<=\\qsection\{)(.*?)(?=\})',new_text_exo, flags=re.MULTILINE|re.DOTALL)
         if thesection:  # overwrite an existing section
-            new_section = r"\\qsection{" + kwargs['section'] + "}"
+            new_section = r"\qsection{" + kwargs['section'] + "}"
             new_text_exo = re.sub(r"\\qsection\{(.*?)\}",new_section,new_text_exo, flags=re.MULTILINE|re.DOTALL)
         else: # new section
-            new_text_exo = r"\n\\qsection{" + kwargs['section'] + "}" + new_text_exo
+            new_text_exo = r"\qsection{" + kwargs['section'] + "}" + "\n"  + new_text_exo
 
     # the author
     if ('author' in kwargs) and kwargs['author']:
         theauthor = re.search(r'(?<=\\qauthor\{)(.*?)(?=\})',new_text_exo, flags=re.MULTILINE|re.DOTALL)
         if theauthor:  # overwrite an existing author
-            new_author = r"\\qauthor{" + kwargs['author'] + "}"
+            new_author = r"\qauthor{" + kwargs['author'] + "}"
             new_text_exo = re.sub(r"\\qauthor\{(.*?)\}",new_author,new_text_exo, flags=re.MULTILINE|re.DOTALL)
         else: # new author
-            new_text_exo = r"\n\\qauthor{" + kwargs['author'] + "}" + new_text_exo
+            new_text_exo = r"\qauthor{" + kwargs['author'] + "}" + "\n" + new_text_exo
 
     # the counter qnum
     thenum = re.search(r'(?<=\\qnum\{)(.*?)(?=\})',new_text_exo, flags=re.MULTILINE|re.DOTALL)
 
     if thenum and is_overwrite and kwargs['num']:  # overwrite an existing numerotation
-        new_num = r"\\qnum{"+str(kwargs['num'])+"}"
+        new_num = r"\qnum{"+str(kwargs['num'])+"}"
         new_text_exo = re.sub(r"\\qnum\{(.*?)\}",new_num,new_text_exo, flags=re.MULTILINE|re.DOTALL)
 
     if (not thenum) and option_num and kwargs['num'] : # new author
-        new_text_exo = r"\\qnum{"+str(kwargs['num'])+"}"+new_text_exo
+        new_text_exo = r"\qnum{"+str(kwargs['num'])+"}"+new_text_exo
 
     title = title+"\n"
-    new_text_exo = r"\\begin{question}" + title + new_text_exo + r"\\end{question}"
+    new_text_exo = r"\begin{question}" + title + new_text_exo + r"\end{question}"
    
     return new_text_exo
 
