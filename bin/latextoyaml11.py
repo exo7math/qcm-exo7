@@ -139,6 +139,21 @@ def add_space(text):
 #print(spacetext) 
 
 
+
+def delete_commented_lines(text):
+    """
+    Deleted all lines starting with a % (or space + %)
+    """
+    truetext = re.sub(r'^[\s]*%[^\n\r]*$','',text,flags=re.MULTILINE) # Delete commented lines
+    return truetext
+
+# Test
+# mytext = 'Ici Londres\n%Les français\n\n  % parlent aux français\nFin % Coucou\nVraie fin'
+# truetext = delete_commented_lines(mytext)
+# print(mytext)
+# print(truetext)
+
+
 def dollars_to_tags(text):
     """Convert a text with dollars to text with \( \) or \[ \]
     :param text: texte contenant des formules de mathématiques codées en LaTeX
@@ -499,6 +514,10 @@ def one_exo_to_yaml(text_exo,qcmdict={}):
 
 #--------------------------------------------------
 #--------------------------------------------------
+
+# Delete full commented lines
+text_all = delete_commented_lines(text_all)
+
 # Search for global tags (title, author, section, subsection)
 qcmtitle = ""
 qcmauthor = ""

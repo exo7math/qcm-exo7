@@ -272,6 +272,12 @@ def replace_latex_macros(text):
     text = re.sub(r"\\Cc(?=[^a-zA-Z])",r"\\mathbf{C}",text, flags=re.MULTILINE|re.DOTALL)
     text = re.sub(r"\\Kk(?=[^a-zA-Z])",r"\\mathbf{K}",text, flags=re.MULTILINE|re.DOTALL)
 
+    text = re.sub(r"\\pgcd",r"\\text{pgcd}",text, flags=re.MULTILINE|re.DOTALL)   
+    text = re.sub(r"\\ppcm",r"\\text{ppcm}",text, flags=re.MULTILINE|re.DOTALL)   
+    text = re.sub(r"\\Card",r"\\text{Card}",text, flags=re.MULTILINE|re.DOTALL)   
+    text = re.sub(r"\\val(?=[^a-zA-Z])",r"\\text{val}",text, flags=re.MULTILINE|re.DOTALL)
+
+
     # Replace '<' (resp. '>'') by ' < ' (resp. ' > ') to avoid html mixed up (note the spaces)
     # text = re.sub("<"," < ",text, flags=re.MULTILINE|re.DOTALL)
     # text = re.sub(">"," > ",text, flags=re.MULTILINE|re.DOTALL)
@@ -280,7 +286,7 @@ def replace_latex_macros(text):
     # text1 = re.sub("\$(.+?)\$","\\\(\g<1>\\\)",text2, flags=re.MULTILINE|re.DOTALL)
 
     # Gestion of "<"" in text mode (do nothing) and math mode (add space)
-    # Would be happy to a solution using regex!!!
+    # Would be happy to have a solution using regex!!!
     in_math = False
     is_slash = False
     new_text = ""
