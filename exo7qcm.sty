@@ -63,14 +63,13 @@
 \newcommand{\Cc}{\mathbb{C}}
 \newcommand{\Kk}{\mathbb{K}}
 
+
 %----- Modifications de symboles -----
 \renewcommand{\epsilon}{\varepsilon}
 \renewcommand{\Re}{\mathop{\mathrm{Re}}\nolimits}
 \renewcommand{\Im}{\mathop{\mathrm{Im}}\nolimits}
 \renewcommand{\ge}{\geqslant} \renewcommand{\geq}{\geqslant}
 \renewcommand{\le}{\leqslant} \renewcommand{\leq}{\leqslant}
-
-
 
 
 %----- Presentation ------
@@ -92,6 +91,7 @@
 \end{tikzpicture}}
 }
 
+
 %----- Commandes supplementaires ------
 \newcommand{\Card}{\mathop{\text{Card}}}
 \newcommand{\pgcd}{\mathop{\text{pgcd}}}
@@ -99,12 +99,12 @@
 \newcommand{\val}{\mathop{\text{val}}}
 
 
-
 % Packages pour qcm
 \usepackage{import}
 \usepackage{ifthen}
 \usepackage[inline]{enumitem}
-\usepackage{comment}
+%\usepackage{comment}
+\usepackage{environ}
 
 % PPour liens externes
 \usepackage[hypertexnames=false,pdfencoding=auto]{hyperref}
@@ -114,8 +114,8 @@
 % Personnalisation pour les théorèmes,...
 
 \newtheoremstyle{qcmexo7}% name
-{5ex}% space above
-{5ex}% space below
+{3ex}% space above
+{2ex}% space below
 {}% body font
 {}% indent amount
 {\itshape\bfseries}% head font
@@ -132,8 +132,6 @@
 %{.\newline}% Punctuation after theorem head
 %{0pt}% Space after theorem head
 %{}% Theorem head spec (can be left empty, meaning ‘normal’ )
-
-
 
 
 %----- Structure des qcm ------
@@ -213,7 +211,6 @@
                                               \ifthenelse{\equal{\mymulticols}{0}}{\end{itemize}}{\end{itemize}\end{multicols}}}%
                                              {\end{itemize*}\end{center}}
 \fi
-
 %\if@nosolutions
 %\ifthenelse{\equal{\myqtype}{numerical}}{Fin coucou}{}
 %\fi
@@ -223,7 +220,8 @@
 % Explanations (if \nosolutions not called by user)
 \newenvironment{explanations}{\vspace*{-2ex}~\\\emph{\nameExplanations :}}{}
 \if@nosolutions
-\excludecomment{explanations}
+\RenewEnviron{explanations}{\par}
+%\excludecomment{explanations}
 \fi
 
 \if@nosolutions
