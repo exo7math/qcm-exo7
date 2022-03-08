@@ -30,9 +30,9 @@ Questions
   - par Abdellah Hanani, Mohamed Mzari de l'université de Lille
 
 * 163 questions sur les chapitres "Logique", "Arithmétique" et "Équations différentielles". 
-   - [Questions](https://github.com/exo7math/qcm-exo7/blob/master/questions-hilisit/qcm-hilisit.pdf)
+  - [Questions](https://github.com/exo7math/qcm-exo7/blob/master/questions-hilisit/qcm-hilisit.pdf)
   - [Questions corrigées](https://github.com/exo7math/qcm-exo7/blob/master/questions-hilisit/qcm-hilisit-correc.pdf)   
-    - par A. Bodin, B. Croizat, C. Sacré, université de Lille.
+  - par A. Bodin, B. Croizat, C. Sacré, université de Lille.
 
 * 46 questions de probabilité niveau L1
   - [Questions](https://github.com/exo7math/qcm-exo7/blob/master/questions-probabilites-worms/qcm-worms.pdf)
