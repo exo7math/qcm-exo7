@@ -1,0 +1,882 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\qcmtitle{Equations différentielles}
+
+\qcmauthor{Arnaud Bodin, Barnabé Croizat, Christine Sacré}
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Equations différentielles}
+
+
+%--------------------------------------------
+\subsection{Primitive | Facile}
+
+
+\begin{question}
+Quelles sont les affirmations vraies ?
+\begin{answers} 
+  \bad{$x^3$ est une primitive de $3x^2+3$.}
+  \good{$x^3+3$ est une primitive de $3x^2$.}
+  \bad{ $\ln(x^2+1)$ est une primitive de $\frac 1{x^2+1}$.}
+  \good{$\sqrt x$ est une primitive de $\frac 1{2\sqrt x}$ (sur $]0,+\infty[$).}
+\end{answers}
+\begin{explanations} 
+Pour vérifier si une fonction \(f\) est une primitive d'une fonction \(g\), on calcule la dérivée de  \(f\) et on regarde si on obtient bien la fonction \(g\). La dérivée de $x^3$ et de $x^3+3$ est $3x^2$. La dérivée de $\ln(x^2+1)$ est $\frac {2x}{x^2+1}$ et non $\frac 1{x^2+1}$. La dérivée de $\sqrt x$ sur $]0,+\infty[$ est bien $\frac 1{2\sqrt x}$.
+\end{explanations}
+\end{question}
+
+
+\begin{question}
+Quelles sont les affirmations vraies ?
+\begin{answers}  
+  \bad{$\cos(x)$ est une primitive de $\sin(x)$.}
+  \good{$\exp(x)$ est une primitive de $\exp(x)$.}
+  \good{$x^4-3x^3+2x^2-8$ est une primitive de $4x^3-9x^2+4x$.}
+  \bad{$4x^3+x^2-3x+6$ est une primitive de $x^4+2x-3$.}
+\end{answers}
+\begin{explanations}
+Pour vérifier si une fonction \(f\) est une primitive d'une fonction \(g\), on calcule la dérivée de  \(f\) et on regarde si on obtient bien la fonction \(g\).
+$\cos'(x)=-\sin(x)$ ; $\exp'(x)=\exp(x)$ ; $(x^4-3x^3+2x^2-8)'=4x^3-9x^2+4x$ ; $(4x^3+x^2-3x+6)'=12x^2+2x-3$.
+\end{explanations}
+\end{question}
+
+
+\begin{question}
+Parmi les phrases suivantes, quelles sont les affirmations correctes ?
+\begin{answers}  
+  \good{L'opération du calcul de primitives est le contraire de l'opération du calcul de dérivées.}
+  \good{L'opération du calcul de dérivées est le contraire de l'opération du calcul de primitives.}
+  \good{Deux primitives d'une même fonction sur un intervalle sont égales à une constante près.}
+  \good{Si on connaît une primitive d'une fonction, alors on les connaît toutes.}
+\end{answers}
+\begin{explanations}
+Tout est vrai ! Les calculs de dérivées et de primitives sont bien réciproques l'un de l'autre, et dès que l'on connaît une primitive \(F\) d'une fonction \(f\) sur un intervalle, alors toutes les primitives de \(f\) sur cet intervalle seront de la forme $F(x) + C$ (où $C$ est une constante).
+\end{explanations}
+\end{question}
+
+
+\begin{question}
+Pour chacune des équations différentielles suivantes, la fonction donnée est-elle solution ?
+\begin{answers}  
+  \bad{Pour $y'=\sin(x)$ la fonction $f(x) = \cos(x)$ est solution.}
+  \bad{Pour $y'=e^{2x}$ la fonction $f(x) = e^{2x}+1$ est solution.}
+  \bad{Pour $y'=\ln(x)$ la fonction $f(x) = \frac1x$ est solution.}
+  \good{Pour $y'=\frac{1}{e^x}$ la fonction $f(x) = 1-e^{-x}$ est solution.}
+\end{answers}
+\begin{explanations}
+Pour $y'=\sin(x)$ la fonction $f(x) = -\cos(x)$ est solution.
+Pour $y'=e^{2x}$ la fonction $f(x) =\frac12 e^{2x}+1$ est solution.
+C'est pour $y'=\frac1x$ que $f(x) = \ln(x)$ est solution.
+Pour $y'=\frac{1}{e^x}=e^{-x}$ la fonction $f(x) = 1-e^{-x}$ est bien solution puisque $f'(x) = -(-e^{-x})=e^{-x} = \frac{1}{e^x}$.
+\end{explanations}
+\end{question}
+
+
+
+%--------------------------------------------
+\subsection{Primitive | Moyen}
+
+
+\begin{question}
+On considère la fonction \(f:x\mapsto 2 e^{-2x}-3\). Quelles sont les affirmations exactes ?
+\begin{answers}  
+  \bad{\(f\) est une primitive de \(- e^{-2x}-3x\) sur \(\Rr\).}
+  \good{\(f\) est une primitive de \(-4 e^{-2x}\) sur \(\Rr\).}
+  \good{\(f\) est la primitive de \(-4 e^{-2x}\) sur \(\Rr\) valant \(-1\) en \(x=0\).}
+  \bad{\(f\) est la dérivée de \(x\mapsto - e^{-2x}\)}
+\end{answers}
+\begin{explanations}
+Pour vérifier si une fonction \(f\) est une primitive d'une fonction \(g\), on calcule la dérivée de  \(f\) et on regarde si on obtient bien la fonction \(g\). La dérivée de $ e^{-2x}$ est $-2 e^{-2x}$ donc $f'(x)=-4 e^{-2x}$. De plus $f(0)=2 e^0-3=2-3=-1$.
+\end{explanations}
+\end{question}
+
+
+\begin{question}
+Quelles sont les affirmations vraies ?
+\begin{answers}  
+  \bad{$x\mapsto \ln(x)$ est une primitive de $x\mapsto 1/x$ sur $\Rr$.}
+  \bad{$x\mapsto \ln(x)$ est une primitive de $x\mapsto 1/x$ sur $]-\infty,0[$.}
+  \good{$x\mapsto \ln(x)$ est une primitive de $x\mapsto 1/x$ sur $]0,+\infty[$.}
+  \good{$x\mapsto \ln(-x)$ est une primitive de $x\mapsto 1/x$ sur $]-\infty,0[$.}
+\end{answers}
+\begin{explanations}
+La fonction $\ln$ n'est définie et dérivable que sur $]0,+\infty[$. Pour tout $x$ de $]0,+\infty[$, $(\ln(x))'=1/x$ ; pour tout $x$ de $]-\infty,0[$, la fonction $x \mapsto \ln(-x)$ est bien définie et dérivable, et on a $(\ln(-x))'=-1/-x=1/x$.
+\end{explanations}
+\end{question}
+
+
+\begin{question}
+Soit $F$ une primitive d'une fonction $f$ et $G$ une primitive d'une fonction $g$ sur un intervalle $I$.
+Quelles sont les affirmations vraies ?
+\begin{answers}  
+  \bad{Si $f=g$ alors $F=G$.}
+  \good{Si $F=G$ alors $f=g$.}
+  \bad{Si $f=g^2$ alors $F=G^2$.}
+  \good{Si $F=G+C$ (où $C$ est une constante) alors $f=g$.}
+\end{answers}
+\begin{explanations}
+Si $f=g$ alors $F=G+C$ (où $C$ est une constante).
+On rappelle que $F'=f$ et $G'=g$, donc si $F=G+C$ alors en dérivant l'égalité on obtient $F'=f = (G+C)'=G'+0=g$. Remarquez par ailleurs que les primitives de $x^2$ sont $\frac{x^3}{3} + C$ (où $C$ est une constante) : ce ne sont les carrés des primitives de $x$ (qui sont $\frac{x^2}{2} + \widetilde{C}$, où $\widetilde{C}$ est une constante).
+\end{explanations}
+\end{question}
+
+
+\begin{question}
+Quelles sont les affirmations vraies ?
+\begin{answers}  
+  \bad{Une primitive de $x^k$ est $\frac{x^k}{k}$.}
+  \bad{Une primitive de $\ln(x)$ est $\frac{1}{x}$.}
+  \good{Une primitive de $\frac{1}{\sqrt x}$ est $2\sqrt{x}$.}
+  \bad{Une primitive de $e^{ax}$ est $e^{ax}$ (où $a>0$ est une constante).}
+\end{answers}
+\begin{explanations}
+Une primitive de $x^k$ est $\frac{x^{k+1}}{k+1}$.
+C'est $\ln(x)$ qui est une primitive de $\frac{1}{x}$, l'inverse est faux.
+Oui, une primitive de $\frac{1}{\sqrt x}$ est $2\sqrt{x}$ puisque $(2 \sqrt{x})' = 2 \times \frac{1}{2\sqrt{x}} = \frac{1}{\sqrt{x}}$.
+Enfin, une primitive de $e^{ax}$ est $\frac1a e^{ax}$.
+\end{explanations}
+\end{question}
+
+
+%--------------------------------------------
+\subsection{Primitive | Difficile}
+
+\begin{question}
+Parmi les fonctions suivantes, laquelle est une primitive de $\sqrt x$ sur l'intervalle $]0,+\infty[$ ?
+\begin{answers}  
+  \bad{$2x\sqrt x$}
+  \bad{$\frac 1{2\sqrt x}$}
+  \bad{$x^2\sqrt x$}
+  \good{$\frac 23 x\sqrt x$}
+\end{answers}
+\begin{explanations} La dérivée de $x\sqrt x$ est $\sqrt x+x\times \frac 1{2\sqrt x}=\sqrt x+ \frac {(\sqrt x)^2}{2\sqrt x}=\sqrt x+\frac 12\sqrt x= \frac 32\sqrt x$ donc $\frac 23x\sqrt x$ est une primitive de  $\sqrt x$. Remarquez d'ailleurs que $x \sqrt{x}$ peut aussi s'écrire $x^{3/2}$, ce qui permet d'obtenir différemment sa dérivée : $(x^{3/2})' = \frac{3}{2} x^{3/2 - 1}= \frac{3}{2} x^{1/2} = \frac{3}{2} \sqrt{x}$. Par ailleurs, les dérivées de $x^2\sqrt x$ et de $\frac 1{2\sqrt x}$ donnent respectivement $\frac{5}{2} x \sqrt{x}$ et $\frac{-1}{4x \sqrt{x}}$, qui sont donc bien distinctes de $\sqrt{x}$.
+\end{explanations}
+\end{question}
+
+
+\begin{question}
+Quelles sont les affirmations vraies ?
+\begin{answers} 
+  \good{$x^2 e^{1/x}$ est une primitive de $(2x-1) e^{1/x}$ sur $]-\infty,0[$.}
+  \bad{$\ln(\vert x\vert)$ est une primitive de $1/x$ sur $\Rr$.}
+  \bad{$\ln(x^2+x+1)$ est une primitive de $\frac{2x}{x^2+x+1}$ sur $\Rr$.}
+  \good{$ e^x\ln(x)$ est une primitive de $ e^x\ln(x)+ e^x/x$ sur $]0,+\infty[$.}
+\end{answers}
+\begin{explanations}
+On calcule que $(x^2 e^{1/x})'=2x e^{1/x}+x^2  (-1/x^2) e^{1/x}=(2x-1) e^{1/x}$. Ensuite, la fonction $x \mapsto \ln(x^2+x+1)$ est bien définie sur $\Rr$ puisque $x^2+x+1>0$ pour tout nombre réel $x$. Mais on a : $(\ln(x^2+x+1))'=\frac{(x^2+x+1)'}{x^2+x+1}=\frac{2x+1}{x^2+x+1}$. La fonction $x \mapsto \frac1x$ n'est pas définie en $x=0$ : il est donc impossible de lui déterminer une primitive sur $\Rr$ ($x \mapsto\ln(\vert x\vert)$ est une primitive de $x \mapsto \frac1x$ seulement sur $\Rr^*$). Enfin, on calcule que $( e^x\ln(x))'= (e^x)'\ln(x)+ e^x (\ln(x))' = e^x \ln(x) + e^x \cdot \frac 1x$.
+\end{explanations}
+\end{question}
+
+
+\begin{question}
+Quelles sont les affirmations vraies ?
+\begin{answers}  
+  \good{Une primitive de $\sin(x)e^{\cos(x)}$ est $-e^{\cos(x)}$.}
+  \bad{Une primitive de $\cos(x^3+x)$ est $\sin(x^3+x)$.}
+  \good{Une primitive de $\ln(x)$ est $x\ln(x)-x$ (sur $]0,+\infty[$).}
+  \good{Une primitive de $4x^3+4x$ est $(x^2+1)^2$.}
+\end{answers}
+\begin{explanations}
+Une primitive de $\sin(x)e^{\cos(x)}$ est bien $-e^{\cos(x)}$ puisque $(-e^{\cos(x)})' = -(-\sin(x))e^{\cos(x)} = \sin(x) e^{\cos(x)}$.
+La dérivée de $\sin(x^3+x)$ est $(3x^2+1)\cos(x^3+x)$, donc $\sin(x^3+x)$ n'est pas une primitive de $\cos(x^3+x)$. Oui une primitive de $\ln(x)$ est $x\ln(x)-x$ puisque la dérivée de cette-dernière donne bien $\ln(x) + x \cdot \frac 1x - 1 = \ln(x)$.
+Enfin, la dérivée de $(x^2+1)^2$ est $2 \times 2x \times (x^2+1) = 4x^3+4x$, donc  $(x^2+1)^2$ est bien une primitive de $4x^3+4x$.
+\end{explanations}
+\end{question}
+
+
+\begin{question}
+Soit $f : I \to \Rr$ une fonction définie sur un intervalle. Soit $F$ une primitive de $f$.
+$C$ désigne une constante.
+Quelles sont les affirmations vraies ?
+\begin{answers}  
+  \good{Si $f(x)=0$ sur $I$ alors $F(x)=C$.}
+  \bad{Si $f(x)=x$ alors $F(x) = x^2+C$.}
+  \bad{Si $f(x) \times \cos(x) = 1$ alors $F(x) = \frac{1}{\sin(x)} + C$.}
+  \bad{Si $f( \ln(x) ) = 0$ alors $F(x) = e^x + C$.}
+\end{answers}
+\begin{explanations}
+Si $f$ est la fonction nulle, alors $F$ est une fonction constante.
+Si $f(x)=x$, alors $F(x) = \frac12 x^2+ C$. Les autres affirmations sont fantaisistes : lorsqu'on dérive $\frac{1}{\sin(x)} + C$ on obtient $\frac{-\cos(x)}{\sin^2(x)}$ qui n'est pas du tout l'inverse de $\cos(x)$. Et si $F(x) = e^x + C$, alors $f(x) = F'(x) = e^x$ ce qui donne $f(\ln(x)) = e^{\ln(x)} = x \neq 0$ !
+\end{explanations}
+\end{question}
+
+
+
+%--------------------------------------------
+\subsection{Notion d'équation différentielle | Facile}
+
+
+\begin{question}
+On considère la fonction $f:x\mapsto 2 e^{-x}+3$. Parmi les équations différentielles suivantes, quelles sont celles dont $f$ est solution ?
+\begin{answers}  
+  \good{$y'=-y+3$}
+  \good{$y'=y-4 e^{-x}-3$}
+  \bad{$y'=2y+3$}
+  \good{$y'=-2 e^{-x}$}
+\end{answers}
+\begin{explanations}
+Pour vérifier si une fonction \(f\) est solution d'une équation différentielle du premier ordre, on 	remplace \(y\) par \(f(x)\), \(y'\) par \(f'(x)\) et on regarde si l'égalité est vraie pour tout \(x\) (égalité entre fonctions). Ici \(f'(x)=-2 e^{-x}\). Donc \(f'(x)=-f(x)+3=f(x)-4 e^{-x}-3\) pour tout réel \(x\). Par contre \(2f(x)+3\) n'est pas la même fonction que \( f'(x)\).
+\end{explanations}
+\end{question}
+
+
+\begin{question}
+Parmi les fonctions suivantes, quelles sont celles qui sont solutions de l'équation différentielle \(y'=2y-10\).
+\begin{answers}  
+  \good{\(f:x\mapsto 4 e^{2x}+5\)}
+  \good{\(f:x\mapsto  e^{2x}+5\)}
+  \bad{\(f:x\mapsto 2 e^x+5\)}
+  \bad{\(f:x\mapsto 2x+5\)}
+\end{answers}
+\begin{explanations}
+Pour vérifier si une fonction \(f\) est solution d'une équation différentielle du premier ordre, on remplace \(y\) par \(f(x)\), \(y'\) par \(f'(x)\) et on regarde si l'égalité est vraie pour tout \(x\) (égalité entre fonctions). La dérivée de \( e^{2x}\) étant \(2 e^{2x}\), on constate que l'égalité \(f'(x)= 2f(x)-10\) a seulement lieu pour \(4 e^{2x}+5\) et \(e^{2x}+5\) parmi les solutions proposées.
+\end{explanations}
+\end{question}
+
+
+\begin{question}
+Parmi les fonctions suivantes quelles sont celles qui sont des solutions de l'équation différentielle $y'=xy$ ?
+\begin{answers}  
+  \bad{$f(x) = \exp(x^2)$}
+  \good{$f(x) = 2\exp(x^2/2)$}
+  \good{$f(x) = 0$}
+  \bad{$f(x) = 1$}
+\end{answers}
+\begin{explanations}
+On calcule $f'(x)$ dans chaque cas et on observe si elle vérifie l'équation $f'(x) = x f(x)$.
+C'est le cas pour la fonction définie par $f(x) = 2\exp(x^2/2)$ (dont la dérivée est $f'(x) = 2x\exp(x^2/2)$) et pour $f(x) = 0$ (de dérivée $f'(x)=0$).
+\end{explanations}
+\end{question}
+
+
+\begin{question}
+Soit la fonction $f(x) = \cos(x)$.
+De quelle(s) équation(s) différentielle(s) $f$ est-elle solution ? 
+\begin{answers}  
+  \bad{$y' = y$}
+  \good{$y'' = -y$}
+  \good{$y' - y = -\sin(x) - \cos(x)$}
+  \bad{$y'' = - y'$}
+\end{answers}
+\begin{explanations}
+D'une part $f'(x) = -\sin(x)$,  donc $f'(x)-f(x) =  -\sin(x) - \cos(x)$.
+D'autre part $f''(x) = -\cos(x)$, donc $f'' = -f$. En revanche, on a $f'(x) \neq f(x)$ et $f''(x) \neq -f'(x)$.
+\end{explanations}
+\end{question}
+
+
+%--------------------------------------------
+\subsection{Notion d'équation différentielle | Moyen}
+
+\begin{question}
+Soit l'équation différentielle $y'=2x(y+x)-1$. Quelles sont les affirmations vraies ?
+
+\begin{answers}
+ \good{$y= e^{x^2}-x$ est une solution.}
+ \good{Cette équation différentielle n'a pas de solution constante.}
+ \good{$y=-x$ est une solution.}
+ \bad{$y= e^{x^2}-x+1$ est une solution.}
+\end{answers}
+\begin{explanations} Pour une fonction constante $y=C$, $y'=0$ et $2x(y+x)-1=2x(C+x)-1$, ce qui n'est pas la fonction nulle (c'est un polynôme du second degré), donc $y=C$ n'est pas solution. Pour $y=-x$, $2x(y+x)-1=-1=y'$, donc $y=-x$ est solution. Pour $y= e^{x^2}-x$, $2x(y+x)-1=2x e^{x^2}-1=y'$ donc $y= e^{x^2}-x$ est une solution. Pour $y= e^{x^2}-x+1$, $y'=2x e^{x^2}-1$ et  $2x(y+x)-1=2x e^{x^2}+2x-1$ donc $y= e^{x^2}-x+1$ n'est pas solution.
+\end{explanations}
+\end{question}
+
+
+\begin{question}
+Soit l'équation différentielle $xy'-3y=0$. Quelles sont les affirmations vraies ?
+\begin{answers}
+  \bad{$x^3+1$ est une solution.}
+  \good{$x^3$ est une solution.}
+  \bad{$ e^{3x}$ est une solution.}
+  \good{La fonction nulle est la seule solution constante.}
+\end{answers}
+\begin{explanations}
+Pour une solution constante $y=C$, $y'=0$ donc $3y=0$ donc $y$ est la fonction nulle (et réciproquement, la fonction nulle est bien solution). Pour $y=x^3$, $xy'-3y=x \cdot  3x^2-3x^3=0$ donc $x^3$ est solution. Pour $y=x^3+1$, $xy'-3y=x \cdot 3x^2-3x^3-3=-3$ donc $x^3+1$ n'est pas solution. Pour $y= e^{3x}$, $xy'-3y=x \cdot 3 e^{3x}-3 e^{3x}=3(x-1) e^{3x}$, ce qui n'est pas la fonction nulle, donc $y= e^{3x}$ n'est pas solution.
+\end{explanations}
+\end{question}
+
+
+
+\begin{question}
+Soit $f$ une solution de l'équation différentielle $y'=y^2 + 1$.
+Quelles sont les affirmations vraies sur la fonction $f$ ?
+\begin{answers} 
+  \good{$f$ est une fonction croissante.} 
+  \bad{$f$ est une fonction décroissante.}
+  \good{$f'$ est une fonction positive.}
+  \bad{$f$ peut être une fonction constante.}
+\end{answers}
+\begin{explanations}
+Si $f$ est solution de l'équation $y'=y^2 + 1$, alors on a $f'(x) = f^2(x) + 1$ et donc $f'(x) \geq 1 > 0$. Ainsi $f'$ est strictement positive, et par conséquent $f$ est strictement croissante.  
+\end{explanations}
+\end{question}
+
+
+\begin{question}
+Soit l'équation différentielle $y'- 2xy = 4x$.
+Quelles sont les affirmations vraies concernant les solutions de cette équation ?
+\begin{answers}  
+  \good{$y = -2$ est une solution.}
+  \bad{$y = +2$ est une solution.}
+  \bad{$y = e^{x^2}+2$ est une solution.}
+  \good{$y = e^{x^2}-2$ est une solution.}
+\end{answers}
+\begin{explanations}
+Si $y=C$ est constante, alors $y'=0$ et on a $0-2x \cdot C = 4x$ donc $C=-2$ est la seule solution constante de notre équation différentielle. D'autre part, la dérivée de \(e^{x^2}\) étant \(2x e^{x^2}\), on vérifie en remplaçant dans l'équation différentielle que \(e^{x^2}-2\) est solution puisqu'alors $y'-2xy = 2xe^{x^2}-2x(e^{x^2}-2)=4x$. En revanche \(e^{x^2}+2\) n'est pas solution puisque $y'-2xy = 2xe^{x^2}-2x(e^{x^2}+2) = -4x$.
+\end{explanations}
+\end{question}
+
+
+
+%--------------------------------------------
+\subsection{Notion d'équation différentielle | Difficile}
+
+
+\begin{question}
+Soit \(f\) une solution de l'équation différentielle \(y'=2y-x^3\). On sait que la courbe représentative de \(f\) passe par le point \(A(1,2)\). Quelle est la pente de sa tangente au point \(A\) ?
+\begin{answers}  
+	\bad{\(-1\)}
+	\bad{\(1\)}
+	\bad{\(2\)}
+    \good{\(3\)}
+\end{answers}
+\begin{explanations}
+La pente de la tangente au point $A(1,2)$ est le nombre $f'(1)$. Or on sait que \(f(1)=2\) puisque la courbe représentative de \(f\) passe par \(A(1,2)\). De plus, comme \(f\) est solution de l'équation différentielle \(y'=2y-x^3\), on a - en considérant cette égalité pour la fonction $f$ et pour $x=1$ : \(f'(1)=2f(1)-1^3=2\times 2 -1=3\).
+\end{explanations}
+\end{question}
+
+
+\begin{question}
+Soit \(f\) une solution de l'équation différentielle \(y'=y+3x\). On sait de plus que la courbe représentative de \(f\) passe par le point \(A(-1,2)\). Quelles sont les affirmations exactes ?
+\begin{answers}  
+    \good{La pente de la tangente à la courbe de \(f\) au point \(A\) est \(-1\).}
+	\bad{La pente de la tangente à la courbe de \(f\) au point \(A\) est \(4\).}
+	\good{La tangente à la courbe de \(f\) au point \(A\) admet pour équation : \(y=-x+1\).}
+	\bad{La tangente à la courbe de \(f\) au point \(A\) admet pour équation : \(y=4x+6\).}
+\end{answers}
+\begin{explanations}
+ La pente de la tangente au point $A(-1,2)$ est le nombre $f'(-1)$. Or on sait que \(f(-1)=2\) puisque la courbe représentative de \(f\) passe par \(A(-1,2)\). De plus, comme \(f\) est solution de l'équation différentielle \(y'=y+3x\), en considérant cette égalité pour la fonction $f$ et pour $x=-1$, on a : \(f'(-1)=f(-1)+3\times (-1)=2-3=-1\). La pente de la tangente en \(A\) est donc \(-1\). Enfin, les coordonnées du point \(A\) vérifient l'équation de cette tangente, ce qui permet d'obtenir que l'ordonnée à l'origine vaut bien $+1$ (on sait aussi  plus directement que l'équation de la tangente est $y = (-1) (x-(-1))+1 = -x+1$).	
+\end{explanations}
+\end{question}
+
+
+\begin{question}
+Soit l'équation différentielle $x y' = y - x$ définie pour $x\in ]0,+\infty[$.
+Quelles sont les fonctions solutions de cette équation, quelle que soit la constante $C$ ?
+\begin{answers}  
+  \bad{$f(x) = x-C\ln(x)$}
+  \bad{$f(x) = x-\ln(x)+C$}
+  \good{$f(x) = Cx-x\ln(x)$}
+  \bad{$f(x) = x-C$}
+\end{answers}
+\begin{explanations}
+Seule la fonction $f(x) = Cx-x\ln(x)$, avec $f'(x) = C-\ln(x)-1$, vérifie l'équation différentielle. On a en effet $x f'(x) = Cx - x \ln(x) - x = f(x) - x$. Pour les autres fonctions proposées, les calculs de $x f'(x)$ et de $f(x)-x$ diffèrent.
+\end{explanations}
+\end{question}
+
+
+\begin{question}
+Soit $f$ une solution de l'équation différentielle $y' = \cos(x) y$, vérifiant $f(\frac\pi3)=3$. On considère la courbe représentative de \(f\).
+Quelles sont les affirmations vraies ?
+\begin{answers}
+  \bad{La tangente en $x=\frac\pi3$ a pour équation $y=\frac32x + 3 $.}
+  \good{La tangente en $x=\frac\pi3$ a pour équation $y=\frac32(x-\frac\pi3) + 3$.}  
+  \good{La tangente en $x=\frac\pi2$ est horizontale.}
+  \bad{La tangente en $x=\frac\pi3$ est horizontale.}
+\end{answers}
+\begin{explanations}
+En $x=\frac\pi2$, par l'équation différentielle on a $f'(\frac\pi2) = 0$ (car $\cos\frac\pi2=0$), donc la tangente est horizontale.
+En $x=\frac\pi3$, on obtient $f'(\frac\pi3) = \cos(\frac\pi3) y(\frac\pi3) = \frac12 \times 3 = \frac32$, donc la pente de la tangente en $x=\frac\pi3$ est $\frac32$. Cette tangente passe par le point $(\frac\pi3,3)$ donc son équation est $y=\frac32(x-\frac\pi3) + 3$.
+\end{explanations}
+\end{question}
+
+
+
+%--------------------------------------------
+\subsection{$y'=ay$ | Facile}
+
+\begin{question}
+Les solutions de l'équation différentielle $y'=-y$ sont :
+\begin{answers}
+   \bad{$e^{-x}+C$ avec $C$ constante réelle.}
+   \bad{$e^{x}+C$ avec $C$ constante réelle.}
+   \good{$C e^{-x}$ avec $C$ constante réelle.}
+   \bad{$C e^{x}$ avec $C$ constante réelle.}
+\end{answers}
+\begin{explanations}
+Les solutions de l'équation différentielle $y'=ay$ sont les fonctions $C e^{ax}$ avec $C$ constante réelle. Ici, $a=-1$.
+\end{explanations}
+\end{question}
+
+\begin{question}
+Les solutions de l'équation différentielle $y'+2y=0$ sont :
+\begin{answers}
+   \bad{$e^{-2x}+C$ avec $C$ constante réelle.}
+   \bad{$e^{2x}+C$ avec $C$ constante réelle.}
+   \bad{$C e^{2x}$ avec $C$ constante réelle.}
+   \good{$C e^{-2x}$ avec $C$ constante réelle.}
+\end{answers}
+\begin{explanations}
+Les solutions de l'équation différentielle $y'=ay$ sont les fonctions $C e^{ax}$ avec $C$ constante réelle. Ici, $a=-2$ puisque $y' +2y = 0$ se réécrit comme $y' = -2y$.
+\end{explanations}
+\end{question}
+
+
+\begin{question}
+De quelle(s) équation(s) différentielle(s) $4 e^{3x}$ est-elle une solution ?
+\begin{answers}
+  \good{$y'=3y$}
+  \bad{$3y'=y$}
+  \bad{$y'=4y$}
+  \bad{$4y'=y$}
+\end{answers}
+\begin{explanations}
+Les solutions de l'équation différentielle $y'=ay$ sont les fonctions $C e^{ax}$ avec $C$ constante réelle. Ici, $a=3$ et $C=4$.
+\end{explanations}
+\end{question}
+
+
+\begin{question}
+Parmi les fonctions suivantes, quelles sont celles solutions de l'équation différentielle $y' = 3y$ ?
+\begin{answers}  
+  \bad{$f(x) = 3e^{2x}$}
+  \good{$f(x) = 2e^{3x}$}
+  \bad{$f(x) = e^{-3x}$}
+  \bad{$f(x) = e^{-2x}$}
+\end{answers}
+\begin{explanations}
+La forme générale des solutions est $y(x) = Ce^{3x}$ où $C$ est une constante réelle.
+\end{explanations}
+\end{question}
+
+
+\begin{question}
+Parmi les fonctions suivantes, quelles sont celles solutions de l'équation différentielle $y' = \frac1e y$ ?
+\begin{answers}
+  \good{$f(x) = C\exp(x/e)$}  
+  \bad{$f(x) = C\exp(ex)$}
+  \bad{$f(x) = Ce\exp(x)$}
+  \bad{$f(x) = C\frac{\exp(x)}{e}$}
+\end{answers}
+\begin{explanations}
+La forme générale des solutions de $y' = ay$ est $y(x) = C \exp(ax) = Ce^{ax}$. Ici $a = \frac 1 e$, donc la forme générale des solutions est $y(x) = C\exp(x/e)$.
+\end{explanations}
+\end{question}
+
+
+%--------------------------------------------
+\subsection{$y'=ay$ | Moyen}
+
+
+\begin{question}
+Que peut-on dire des solutions de l'équation différentielle $y'=ay$ ?
+\begin{answers}
+  \bad{Ce sont toutes des fonctions croissantes sur $\Rr$.}
+  \bad{Ce sont toutes des fonctions décroissantes sur $\Rr$.}
+  \bad{Si $a\ge 0$, ce sont des fonctions croissantes sur $\Rr$.}
+  \good{Ce sont toutes des fonctions monotones sur $\Rr$.}
+\end{answers}
+\begin{explanations}
+Les solutions de l'équation différentielle $y'=ay$ sont les fonctions $C e^{ax}$ avec $C$ constante réelle. Si $a\ge 0$, ce sont des fonctions croissantes pour $C\ge 0$ et décroissantes pour $C\le 0$. Si $a\le 0$, ce sont des fonctions décroissantes pour $C\ge 0$ et croissantes pour $C\le0$. Dans tous les cas, ce sont toutes des fonctions monotones sur $\Rr$.
+\end{explanations}
+\end{question}
+
+
+\begin{question}
+Soit $f: x\mapsto -2 e^{3x}$. Quelles sont les affirmations vraies ?
+\begin{answers}
+  \bad{$f$ est la seule solution de l'équation différentielle $y'=3y$ dont la courbe représentative passe par le point $A(0,3)$.}
+  \bad{$f$ est la seule solution de l'équation différentielle $y'=3y$ qui tend vers $-\infty$ lorsque $x$ tend vers $+\infty$.}
+  \good{$f$ est la seule solution de l'équation différentielle $y'=3y$ valant $-2$ en $x=0$.}
+  \good{$f$ est la seule solution de l'équation différentielle $y'=3y$ dont la dérivée en $x=0$ est $-6$.}
+\end{answers}
+\begin{explanations} 
+Les solutions de l'équation différentielle $y'=3y$ sont les fonctions $f_C:x\mapsto C e^{3x}$ avec $C$ constante réelle. $f=f_{-2}$ est donc bien solution de $y'=3y$. $f_C(0)=C$ : la valeur de la constante $C$ correspond à la valeur de la fonction en $x=0$. Ainsi $f(x) = -2e^{3x}$ est bien la seule solution valant $-2$ en $x=0$. Par contre, $f(0)\ne 3$ donc sa courbe représentative ne passe pas par $A(0,3)$. Puisque d'après l'équation différentielle on a $f_C'(0)=3 f_C(0) = 3C$, alors $f$ est la seule solution telle que $f'_C(0)=-6$ car cela impose $C=-2$. Enfin, dès que $C<0$, $C e^{3x}$ tend vers $-\infty$ lorsque $x$ tend vers $+\infty$ donc $f$ n'est pas la seule fonction ayant cette propriété.
+\end{explanations}
+\end{question}
+
+
+\begin{question}
+Soit l'équation différentielle $y' +5y =0$.
+Quelles sont les affirmations vraies ?
+\begin{answers}   
+  \good{Les solutions générales sont $y(x) = Ce^{-5x}$.} 
+  \bad{Les solutions générales sont $y(x) = Ce^{5x}$.}
+  \bad{La solution vérifiant $y(1)=0$ est $y(x) = e^{-5x}$.}
+  \bad{La solution vérifiant $y(1)=0$ est $y(x) = e^{5x}$.}
+\end{answers}
+\begin{explanations}
+Les solutions générales sont $y(x) = Ce^{-5x}$. Si $y(1)=0$ alors $C=0$ et $y$ est la solution nulle partout.
+\end{explanations}
+\end{question}
+
+
+\begin{question}
+Pour quelles valeurs de $a$ et $b$ la fonction $y(x) = 7e^{-5x}$ est-elle solution de $y'=ay$ avec $y(0)=b$ ?
+\begin{answers}  
+  \good{$a = -5$ et $b=7$}
+  \bad{$a = 5$ et $b=7$}
+  \bad{$a = 5$ et $b=0$}
+  \bad{$a = 0$ et $b=7$}
+\end{answers}
+\begin{explanations}
+La solution de $y'=ay$ vérifiant $y(0)=b$ est $y(x) = b e^{ax}$. Donc on identifie : $a = -5$ et $b=7$.
+\end{explanations}
+\end{question}
+
+
+
+%--------------------------------------------
+\subsection{$y'=ay$ | Difficile}
+
+\begin{question}
+Soit $f$ la solution de l'équation différentielle $y'+3y=0$ telle que $f'(0)=-6$. Quelles sont les affirmations vraies ?
+\begin{answers}
+  \good{La courbe représentative de $f$ passe par $A(0,2)$.}
+  \bad{La courbe représentative de $f$ passe par $A(0,-6)$.}
+  \bad{$f$ est toujours négative.}
+  \good{$f$ est une fonction décroissante sur $\Rr$.}
+\end{answers}
+\begin{explanations} 
+Comme $f$ est solution de l'équation différentielle, $f'(0)+3f(0)=0$ donc $f(0)=2$ donc la courbe représentative de $f$ passe par le point de coordonnées $(0,2)$ et ne passe pas par celui de coordonnées $(0,-6)$. De plus, $f(x)=2 e^{-3x}$ et $f'(x)=-6 e^{-3x}$ donc $f$ est toujours positive et $f'$ est toujours négative. Par conséquent $f$ est décroissante sur $\Rr$.
+
+\end{explanations}
+\end{question}
+
+
+\begin{question}
+Soit $f$ la solution de l'équation différentielle $y'=4y$ telle que $f(1)= e^4$.
+\begin{answers}
+  \good{La courbe représentative de $f$ passe par le point $A(1, e^4)$.}
+  \good{La courbe représentative de $f$ passe par le point $B(0,1)$.}
+  \bad{La pente de la tangente à la courbe de $f$ en $x=1$ est $4$.}
+  \bad{On n'a pas assez de données pour déterminer la pente de la tangente à la courbe de $f$ en $x=0$.}
+\end{answers}
+\begin{explanations} Les solutions de l'équation différentielle $y'=4y$ sont les fonctions $C e^{4x}$ avec $C$ constante réelle. Comme on a $f(1)= e^4$, on obtient que $C=1$ et donc $f(x)= e^{4x}$. Par conséquent la courbe représentative de $f$ passe par les points $A$ et $B$. De plus $f'(1)=4f(1)=4 e^4$ et $f'(0)=4$, ce qui donne la pente de la tangente à la courbe en $x=1$ et $x=0$ respectivement.
+\end{explanations}
+\end{question}
+
+
+\begin{question}
+Soit l'équation différentielle $y' = ay$ avec $a>0$.
+Quelles sont les affirmations vraies ?
+\begin{answers}  
+  \bad{Il n'y a pas de solutions constantes.}
+  \good{Il y a une seule solution constante.}
+  \bad{Toute solution vérifie $y(x) \ge 0$.}
+  \good{Toute solution $y(x)$ tend vers $0$ lorsque $x$ tend vers $-\infty$.}
+\end{answers}
+\begin{explanations}
+Les solutions générales sont $y(x) = Ce^{ax}$. La solution est constante dans le seul cas où $C=0$ ($y$ est alors la solution partout nulle). Puisque $a>0$, on sait que $Ce^{ax}$ tend vers $0$ lorsque $x$ tend vers $-\infty$. Attention, si $C<0$ alors la fonction $y$ est strictement négative et décroissante.
+\end{explanations}
+\end{question}
+
+
+\begin{question}
+Soit la solution de l'équation différentielle $y'= 2y$ vérifiant $y(0) = -1$.
+Quelles sont les affirmations vraies ?
+\begin{answers}  
+  \good{La solution est toujours négative.}
+  \good{La solution est une fonction décroissante.}
+  \bad{La pente de la tangente en $x=0$ vaut $1$.}
+  \good{La pente de la tangente en $x=1$ vaut $-2e^2$.}
+\end{answers}
+\begin{explanations}
+Les solutions générales sont $y(x) = Ce^{2x}$. Comme $y(0)=-1$ alors $C = -1$.
+La solution est donc  $f(x) = -e^{2x}$.
+La pente de la tangente en $x_0$ est donnée par $f'(x_0)$.
+Comme $f(0)=-1$ alors $f'(0) = -2$, la pente de la tangente en $x=0$ vaut $-2$.
+De façon générale, comme $f(x) = -e^{2x}$, alors $f'(x) = -2e^{2x}$ qui est une fonction toujours négative : ainsi $f$ est une fonction décroissante. La pente de sa tangente en $x=1$ vaut bien $f'(1) = -2e^2$.
+\end{explanations}
+\end{question}
+
+
+%--------------------------------------------
+\subsection{$y'=ay+b$ et $y'=ay+f$ | Facile}
+
+\begin{question}
+Soit l'équation différentielle $2y'+4y=3$. Quelles sont les affirmations vraies ?
+\begin{answers}
+  \bad{La seule solution constante est $y=3/2$.}
+  \good{La seule solution constante est $y=3/4$.}
+  \bad{Les solutions sont $C e^{-4x}-3$  avec $C$ constante réelle.}
+  \good{Les solutions sont $C e^{-2x}+3/4$  avec $C$ constante réelle.}
+\end{answers}
+\begin{explanations}
+La seule solution constante est $y=3/4$ : c'est ce qu'on retrouve dans l'équation différentielle lorsqu'on cherche $y$ constante avec donc $y'=0$ : l'équation devient $2y = 3/2$ donc $y = 3/4$.
+On peut réécrire l'équation différentielle $y'=-2y+3/2$, dont les solutions sont $C e^{-2x}+3/4$ avec $C$ constante réelle. 
+\end{explanations}
+\end{question}
+
+
+\begin{question}
+Soit l'équation différentielle $3y'=y-3$. Quelles sont les affirmations vraies ?
+\begin{answers}
+  \bad{La seule solution constante est $y=1$.}
+  \good{La seule solution constante est $y=3$.}
+  \bad{Les solutions sont $C e^{3x}+1$ avec $C$ constante réelle.}
+  \good{Les solutions sont $C e^{x/3}+3$ avec $C$ constante réelle.}
+\end{answers}
+\begin{explanations}
+La seule solution constante est $y=3$ : c'est ce qu'on retrouve dans l'équation différentielle lorsqu'on cherche $y$ constante avec donc $y'=0$ : l'équation devient $y-3 = 0$ donc $y = 3$. 
+On peut réécrire l'équation différentielle $y'=\frac 13y-1$, dont les solutions sont $C e^{x/3}+3$ avec $C$ constante réelle. 
+\end{explanations}
+\end{question}
+
+
+\begin{question}
+Soit $f(x) = e^x+3$.
+De quelle(s) équations(s) différentielle(s) cette fonction est-elle solution ?
+\begin{answers}  
+  \bad{$y' - y = e^x$}
+  \good{$y' = y -3$}
+  \bad{$3y'-y=0$}
+  \bad{$y'-3y=0$}
+\end{answers}
+\begin{explanations}
+Lorsqu'on dérive $f$, on obtient $f'(x) = e^x = (e^x+3)-3 = f(x) - 3$ : ainsi $f$ est solution de l'équation différentielle $y' = y - 3$. On vérifie en remplaçant dans les autres équations différentielles $y$ par $f$ (et $y'$ par $f'$) que les égalités ne sont pas vérifiées, donc que $f$ n'est pas une solution.
+\end{explanations}
+\end{question}
+
+
+\begin{question}
+Soit l'équation différentielle $y' = 2y + \cos(x)$.
+Quelles sont les affirmations vraies ?
+\begin{answers}  
+  \bad{Les solutions de l'équation homogène associée sont les $y(x) = C\sin(x)$.}
+  \bad{Les solutions de l'équation homogène associée sont les $y(x) = C\cos(x)$.}
+  \good{Une solution particulière est $y(x) = \frac15\sin(x)-\frac25\cos(x)$.}
+  \bad{Une solution particulière est $y(x) = e^{2x}$.}
+\end{answers}
+\begin{explanations}
+L'équation homogène est $y'=2y$, dont les solutions sont les $y_h(x) = Ce^{2x}$.
+Une solution particulière de l'équation $y' = 2y +\cos(x)$ est $y_p(x) = \frac15\sin(x)-\frac25\cos(x)$.
+Les solutions générales sont alors $y(x) = y_h(x) + y_p(x)$.
+\end{explanations}
+\end{question}
+
+
+
+\begin{question}
+Soit l'équation différentielle $y'=2y-2x+1$.
+Quelles sont les affirmations vraies ?
+\begin{answers}
+   \bad{La seule solution constante est $y(x) = x - \frac 12$.}
+   \good{$y(x) = x$ est une solution particulière.}
+   \good{$y(x) = 3e^{2x} + x$ est une solution particulière.}
+   \bad{$y(x) = x^2$ est une solution particulière.}
+\end{answers}
+\begin{explanations}
+Si l'on recherche une solution constante $y=C$, avec donc $y'=0$, on obtient dans l'équation différentielle $0 = 2C - 2x + 1$ et donc $C = x - \frac 12$. Mais ceci n'est pas une constante ! Donc il n'existe aucune solution constante. Pour $f(x) = x$ et $f'(x) = 1$, on constate en remplaçant que $f$ est bien solution de l'équation différentielle puisque $f' = 1 = 2x - 2x + 1$. Il en va de même pour $f(x) = 3e^{2x} + x$, avec $f'(x) = 6e^{2x} + 1$ puisque $6e^{2x}+1 = 2(3e^{2x}+x) - 2x + 1$. En revanche, pour $f(x) = x^2$, et donc $f'(x) = 2x$, l'équation différentielle n'est pas vérifiée puisque $2x \neq 2x^2 - 2x +1$.
+\end{explanations}
+\end{question}
+
+
+%--------------------------------------------
+\subsection{$y'=ay+b$ et $y'=ay+f$ | Moyen}
+
+\begin{question}
+Quelles sont les valeurs de $a$, $b$ et $c$ telles que $f:x\mapsto ax^2+bx+c$ soit solution de l'équation différentielle $y'+2y=4x^2+2x-1$ ?
+\begin{answers}  
+  \bad{$a=4$, $b=2$, $c=-1$}
+  \good{$a=2$, $b=-1$, $c=0$}
+  \bad{$a=2$, $b=-1$, $c=-1$}
+  \bad{$a=4$, $b=-3$, $c=1$}
+\end{answers}
+\begin{explanations}
+On a \(f'(x)=2ax+b\) donc \(f'(x)+2f(x)=2ax^2+(2a+2b)x+b+2c\). Ce polynôme doit être égal à \(4x^2+2x-1\). On calcule alors \(a\), \(b\) et \(c\) en identifiant les coefficients : $2a=4$ ; $2a+2b=2$ ; $b+2c=-1$. On obtient $a=2$, puis $b=1-a=-1$, et enfin $c=(-1-b)/2=0$.
+\end{explanations}
+\end{question}
+
+
+\begin{question}
+Parmi les fonctions suivantes, quelles sont celles qui sont solutions sur \(\Rr\) de l'équation différentielle \(y'=2y+ e^{2x}\) et qui valent \(2\) en \(x=0\) :
+\begin{answers}  
+	\bad{\(x\mapsto 2 e^{2x}\)}
+	\bad{\(x\mapsto x e^{2x}\)}
+	\bad{\(x\mapsto x e^{2x}+2\)}
+    \good{\(x\mapsto (x+2) e^{2x}\)}
+\end{answers}
+\begin{explanations}
+On peut éliminer la fonction \(x\mapsto x e^{2x}\) qui ne prend pas la valeur \(2\) en \(x=0\) contrairement aux trois autres. On calcule ensuite la dérivée des autres fonctions proposées et on remplace \(y\)  et \(y'\) dans l'équation différentielle pour identifier celle qui est solution : la seule qui soit solution de notre équation différentielle est $x \mapsto (x+2)e^{2x}$. Rappel : la dérivée du produit de deux fonctions \(u\) et \(v\) est \(u'v+uv'\). Ainsi $[(x+2)e^{2x}]' =  e^{2x} + 2(x+2)e^{2x}$.
+\end{explanations}
+\end{question}
+
+
+\begin{question}
+Le graphique ci-dessous représente plusieurs solutions de l'équation différentielle \(y'+2y=b\), où \(b\) est un réel. Quelle est la valeur de \(b\) ?
+
+\qimage{calcul_b}
+
+\begin{answers}
+	\good{\(b=-2\)}
+	\bad{\(b=-1\)}
+	\bad{\(b=1/2\)}
+	\bad{\(b=1\)}
+\end{answers}
+\begin{explanations} 
+L'équation différentielle peut s'écrire \(y'=ay+b\) avec \(a=-2\) donc ses solutions  sont les fonctions \(x\mapsto C e^{ax}-\frac ba=C e^{-2x}+\frac b2\). De plus \(\lim_{x\to +\infty} e^{-2x}=0\) donc \(b/2\) est la limite des solutions lorsque \(x\) tend vers \(+\infty\). On lit graphiquement que cette limite vaut $-1 = b/2$ donc on en déduit que $b=-2$.
+\end{explanations}
+\end{question}
+
+
+\begin{question}
+Soit l'équation différentielle $y' + y = e^{x}$.
+Quelles sont les affirmations vraies ?
+\begin{answers}  
+  \bad{Les solutions de l'équation homogène associée sont $y(x) = Ce^x$.}
+  \bad{Une solution particulière est $y(x) = e^{-x}$.}
+  \good{La solution vérifiant $y(0)=1$ est $y(x) = \frac{e^x+e^{-x}}{2}$.}
+  \bad{La solution vérifiant $y(1)=1$ est $y(x) = e \cdot e^{-x}$.}
+\end{answers}
+\begin{explanations}
+L'équation homogène est $y' + y = 0$, dont les solutions sont les $y_h(x) = Ce^{-x}$.
+Pour aller plus loin : une solution particulière de l'équation $y' + y = e^{x}$ est $y_p(x) = \frac12e^{x}$ ; les solutions générales sont alors $y(x) = y_h(x) + y_p(x) = Ce^{-x} + \frac12e^{x}$.
+\end{explanations}
+\end{question}
+
+
+\begin{question}
+Soit l'équation différentielle $y' = y + x^2-1$.
+Quelles sont les affirmations vraies ?
+\begin{answers} 
+  \bad{Les solutions de l'équation homogène associée sont $y(x) = \frac13x^3-x+C$.}
+  \bad{Les solutions de l'équation homogène associée sont $y(x) = Ce^{x^2-1}$.} 
+  \bad{Une solution particulière est $y(x) = e^{x}$.}
+  \good{Une solution particulière est $y(x) = -x^2-2x-1$.}
+\end{answers}
+\begin{explanations}
+L'équation homogène est $y' = y$, dont les solutions sont les $y_h(x) = Ce^{x}$.
+Une solution particulière de l'équation $y' = y + x^2-1$ est $y_p(x) = -x^2-2x-1$.
+Les solutions générales sont alors $y(x) = y_h(x) + y_p(x)$.
+\end{explanations}
+\end{question}
+
+
+\begin{question}
+On considère l'équation différentielle $y'+y = 2x^2(x+3)$. Quelles sont les affirmations vraies ?
+\begin{answers}
+	\bad{Il existe un nombre réel $r$ tel que $y(x) = e^{rx}$ soit une solution particulière.}
+	\good{Il existe deux nombres entiers $k$ et $n$ tels que $y(x) = kx^n$ soit une solution particulière.}
+	\bad{$y(x) = e^{-x} + 2x^3$ est une solution particulière vérifiant $y(0)=0$.}
+	\bad{$y(x) = -2e^{-x} + 2x^3$ est une solution particulière vérifiant $y(0)=0$.}
+\end{answers}
+\begin{explanations}
+Si l'on cherche une solution sous la forme $y(x) = kx^n$, on a $y'(x) = kn x^{n-1}$. En remplaçant dans l'équation différentielle, on obtient alors (en développant) : $ kn x^{n-1} + k x^n = 6x^2 + 2x^3 $. En identifiant, on vérifie que l'égalité est vraie pour $k=2$ et $n=3$. Ainsi $f(x) = 2x^3$ est une solution particulière. En revanche, si on cherche une solution sous la forme $f(x) = e^{rx}$, alors $f'(x) = r e^{rx}$, et en remplaçant on obtient $ (r+1)e^{rx} = 2x^2(x+3)$ ce qui est impossible (un côté est une exponentielle et l'autre un polynôme). Enfin, on vérifie que les fonctions $y(x) = e^{-x} + 2x^3$ et $y(x) = -2e^{-x}+2x^3$ sont bien solutions de notre équation différentielle, mais aucune des deux ne vaut $0$ en $x=0$ (elles valent respectivement $1$ et $-2$).
+\end{explanations}
+\end{question}
+
+
+\begin{question}
+Soit $(E)$ l'équation différentielle $y'+5y = 5x^2 + 2x$. Alors :
+\begin{answers}
+	\bad{Si $f$ est solution de $(E)$, alors la fonction $x \mapsto f(x)-5x^2-2x$ est solution de l'équation différentielle $(H)$ : $y'+5y = 0$.}
+	\good{Si $f$ est solution de $(E)$, alors la fonction $x \mapsto f(x)-x^2$ est solution de l'équation différentielle $(H)$ : $y'+5y = 0$.}
+	\bad{Si $f$ est solution de $(E)$, alors la fonction $x \mapsto f(x)-e^{-5x}$ est solution de l'équation différentielle $(H)$ : $y'+5y = 0$.}
+	\bad{Si $f$ est solution de $(E)$, alors la fonction $x \mapsto f(x)-2x$ est solution de l'équation différentielle $(H)$ : $y'+5y = 0$.}
+\end{answers}
+\begin{explanations}
+Si $f$ est solution de $(E)$, alors $f'(x) + 5f(x) = 5x^2 + 2x$. On calcule alors que : $(f(x)-x^2)' + 5(f(x)-x^2) = f'(x) - 2x + 5f(x) - 5x^2 = f'(x)+5f(x) - 2x - 5x^2 = 5x^2+2x-2x-5x^2 = 0$. Ainsi la fonction $x \mapsto (f(x)-x^2)$ est bien solution de $(H)$. En revanche, lorsqu'on remplace dans $y'+5y$ avec les fonctions $x \mapsto f(x)-5x^2-2x$, $x \mapsto f(x)-e^{-5x}$ et $x \mapsto f(x)-2x$ (toujours en utilisant le fait que $f'(x)+5f(x)$ peut être remplacé par $5x^2+2x$) on ne trouve pas $0$.
+\end{explanations}
+\end{question}
+
+
+\begin{question}
+Soit l'équation différentielle $y'=y+2e^{3x} + 4x e^{3x}$. On recherche une solution particulière sous la forme $f(x) = ax e^{bx}$. Quelles doivent être les valeurs de $a$ et $b$ ?
+\begin{answers}
+	\bad{$a=4$, $b=3$}
+	\good{$a=2$, $b=3$}
+	\bad{$a=1$, $b=3$}
+	\bad{$a=1$, $b=4$}
+\end{answers}
+\begin{explanations}
+On calcule qu'avec la forme voulue, on a $f'(x) = a e^{bx} + abxe^{bx}$. Ainsi en remplaçant dans l'équation différentielle, on obtient : $a e^{bx} + abxe^{bx} = ax e^{bx} + 2e^{3x} + 4x e^{3x}$, ce qu'on peut écrire $(a+a(b-1)x)e^{bx} = (2+4x)e^{3x}$ pour y voir plus clair. On peut donc identifier dans l'exposant de l'exponentielle que $b=3$. Puis cela donne pour le polynôme qui accompagne les exponentielles $a+2ax = 2 + 4x$, et donc $a=2$.
+\end{explanations}
+\end{question}
+
+
+
+%--------------------------------------------
+\subsection{$y'=ay+b$ et $y'=ay+f$ | Difficile}
+
+
+\begin{question}
+Le graphique ci-dessous représente la courbe représentative d'une fonction \(f\) ainsi que sa tangente en un point \(A\). Cette fonction \(f\) est solution d'une des équations différentielles suivantes ; laquelle ?
+
+\qimage{courbe_tan}
+
+\begin{answers}
+	\bad{\(y'=2x\)}
+	\bad{\(y'=y+1\)}
+	\good{\(y'=2y+2\)}
+	\bad{\(y'=2y-2\)}
+\end{answers}
+\begin{explanations} 
+On a \(f(0)=0\) et \(f'(0)=2\) puisqu'il s'agit de la pente de la tangente à la courbe de $f$ au point d'abscisse $x=0$. Ceci élimine toutes les réponses proposées sauf \(y'=2y+2\). De fait, la courbe représentative donnée est celle de \(x\mapsto  e^{2x}-1\) qui en est bien une solution.	
+\end{explanations}
+\end{question}
+
+
+\begin{question}
+Soit $f$ une fonction dont la courbe représentative admet pour tangente en $x=-1$ la droite d'équation $y=2x-2$. Parmi les équations différentielles suivantes, quelle est la seule dont $f$ peut être une solution ?
+\begin{answers}
+  \bad{$y'=y+ e^x$}
+  \good{$y'=-y+2x$}
+  \bad{$y'=2y+3x^3$}
+  \bad{$2y'-y=2$}
+\end{answers}
+\begin{explanations}
+Sur la droite $y=2x-2$, le point d'abscisse $x=-1$ est $A(-1,-4)$ donc $f(-1)=-4$. De plus, la pente de la droite est $2$, donc $f'(-1)=2$. Parmi les équations différentielles proposées, $y'=-y+2x$ est la seule qui permet d'obtenir ces deux valeurs (on remplace $y$ par $f$, $y'$ par $f'$, et on évalue tout cela en $x=-1$).
+\end{explanations}
+\end{question}
+
+
+\begin{question}
+Soit l'équation différentielle $2y' = 3y + 1$.
+Quelles sont les affirmations vraies ?
+\begin{answers} 
+  \bad{Il y a au moins une solution dont la limite en $-\infty$ est $0$.}
+  \good{La solution vérifiant $y(0)=0$ est $y(x) = \frac 13 (e^{\frac32x} - 1)$.}
+  \bad{La solution vérifiant $y(0)=0$ est $y(x) = 0$.}
+  \bad{La solution vérifiant $y(0)=0$ est $y(x) = e^{\frac32x} - 1$.}
+\end{answers}
+\begin{explanations}
+Notre équation différentielle peut se réécrire sous la forme $y' = \frac 32 y + \frac 12$. Les solutions d'une équation diffférentielle $y' = ay + b$ sont les fonctions $x \mapsto C e^{ax} - \frac ba$. Donc ici les solutions de l'équation différentielle sont les fonctions $f(x) = Ce^{\frac32x} -\frac13$.
+La solution vérifiant $y(0)=0$ est $y_0(x) = \frac13e^{\frac32x} -\frac13 = \frac 13 (e^{\frac 32 x} - 1)$. Enfin, puisque la limite de $e^{\frac 32 x}$ en $-\infty$ est nulle, la limite de toutes les fonctions solutions en $-\infty$ sera $-\frac 13$.
+\end{explanations}
+\end{question}
+
+
+\begin{question}
+Soit l'équation différentielle $y' = y + 3x-2$.
+Quelles sont les affirmations vraies ?
+\begin{answers} 
+  \good{Une solution particulière est $y(x) = -3x-1$.}
+  \bad{Une solution particulière est $y(x) = 3x-2$.}
+  \good{La solution vérifiant $y(0)=1$ est $y(x) = 2e^x-3x-1$.}
+  \bad{La solution vérifiant $y(0)=1$ est $y(x) = 3e^x +3x-2$.}
+\end{answers}
+\begin{explanations}
+L'équation homogène est $y' = y$, dont les solutions sont les $y_h(x) = Ce^{x}$.
+Une solution particulière de l'équation $y' = y + 3x-2$ est $y_p(x) = -3x-1$.
+Les solutions générales sont alors $y(x) = y_h(x) + y_p(x)$.
+La solutions vérifiant $y(0)=1$ est $y_0(x) = 2e^{x} -3x-1$.
+\end{explanations}
+\end{question}
+
+
+\begin{question}
+Soit $f$ une solution de l'équation différentielle $(H)$ : $y'=4y$. De quelle équation différentielle la fonction $g : x \mapsto f(x)+e^{2x}$ sera-t-elle solution ?
+\begin{answers}
+	\bad{$y'=4y+e^{2x}$}
+	\bad{$y'-4y=4e^{2x}$}
+	\good{$y'=4y-2e^{2x}$}
+	\bad{$y'=2y$}
+\end{answers}
+\begin{explanations}
+Si $f$ est solution de $(H)$, alors $f'(x)=4f(x)$. On calcule alors la dérivée de $g$ : $g'(x) = f'(x) + 2e^{2x}$. Mais on a alors : $g'(x) = 4f(x) + 2e^{2x} = 4f(x) + 4e^{2x} - 2e^{2x} = 4(f(x)+e^{2x})-2e^{2x} = 4g(x) - 2e^{2x}$. De ce fait, $g$ est solution de $y'=4y-2e^{2x}$. On pouvait aussi exploiter le fait que $f(x)$ s'écrit sous la forme $C e^{4x}$ et tenter de remplacer directement dans chacune des équations différentielles les expressions de $g$ et de $g'$ pour voir quelle égalité était vérifiée.
+\end{explanations}
+\end{question}
+
+

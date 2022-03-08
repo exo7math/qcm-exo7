@@ -1,0 +1,983 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\qcmtitle{Logique}
+
+\qcmauthor{Arnaud Bodin, Barnabé Croizat, Christine Sacré}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Logique, ensembles et raisonnements}
+
+
+%--------------------------------------------
+\subsection{Logique | Facile}
+
+
+\begin{question}
+Quelles sont les assertions vraies ?
+\begin{answers} 
+  \good{Il existe des triangles rectangles.}
+  \bad{Tout triangle est un triangle rectangle.}
+  \good{Tout triangle équilatéral est isocèle.}
+  \bad{Il existe un triangle équilatéral qui est rectangle.} 
+\end{answers}
+\begin{explanations} 
+Il existe des triangles rectangles, mais ce n'est pas le cas de tous les triangles.
+Un triangle équilatéral (trois côtés égaux) est aussi isocèle (deux côtés égaux). 
+Un triangle équilatéral ne peut pas être un triangle rectangle (par le théorème de Pythagore ou parce que les angles d'un triangle équilatéral sont de $60^\circ$ tandis que l'angle droit mesure $90^\circ$).	
+\end{explanations}
+\end{question}
+
+
+\begin{question}
+Quelles sont les assertions vraies ?	
+\begin{answers} 
+	\bad{Si $\cos\theta=0$ alors $\theta=\frac\pi2$.}
+	\bad{Si $\theta \in[0,\pi]$ alors $0\le\cos\theta\le1$.}	
+	\good{Si $\theta=0$ alors $\sin\theta=0$.}
+	\good{Si $\theta \in[0,\pi]$ et $\sin\theta=0$ alors ($\theta=0$ ou $\theta=\pi$).}
+\end{answers}
+\begin{explanations} 
+$\cos\theta=0$  si et seulement si $\theta=\frac\pi2 + k\pi$ pour un certain $k\in\Zz$.
+$\sin\theta=0$  si et seulement si $\theta=0 + k\pi$ pour un certain $k\in\Zz$.	
+\end{explanations}
+\end{question}
+
+
+\begin{question}
+Quelles sont les assertions vraies ?	
+\begin{answers} 
+	\good{Le chiffre des unités de tout entier pair est 0, 2, 4, 6 ou 8.}
+	\bad{Le chiffre des unités de tout entier multiple de 3 est 3, 6 ou 9.}
+	\bad{Le chiffre des unités de tout entier multiple de 4 est 4 ou 8.}	
+	\good{Le chiffre des unités de tout entier multiple de 5 est 0 ou 5.}
+\end{answers}
+\begin{explanations} 
+$12 = 3\times 4$ est un multiple de 3 et de 4. Pourtant son chiffre des unités n'est ni 3, ni 6, ni 9, ni 4 ni 8. 
+\end{explanations}
+\end{question}
+
+
+\begin{question}
+Soient $x,y$ des nombres réels. Quelles sont les assertions vraies ?
+\begin{answers} 
+  \good{Si $x=-5$ alors $x^2=25$.}
+  \bad{Si $x^2=25$ alors $x=5$.}
+  \good{Si $xy=0$ alors $x=0$ ou $y=0$.}
+  \bad{Si $xy=0$ alors $x=0$ et $y=0$.}
+\end{answers}
+\begin{explanations} 
+$(-5)^2=25$ donc $x=-5$ est une autre solution de l'équation $x^2=25$.
+Si $xy=0$, $x$ et $y$ ne sont pas nécessairement tous les deux nuls, mais ce qui est sûr c'est que au moins l'un des deux est nul.
+\end{explanations}
+\end{question}
+
+
+%--------------------------------------------
+\subsection{Logique | Moyen}
+
+\begin{question}
+Soit $\mathcal{P}$ une assertion vraie et $\mathcal{Q}$ une assertion fausse.
+Quelles sont les assertions vraies ?	
+\begin{answers} 
+	\good{$\mathcal{P} \text{ ou }\mathcal{Q}$}	
+	\bad{$\mathcal{Q} \text{ et }\mathcal{P}$}	
+	\good{$\mathcal{P} \text{ ou }\text{non}(\mathcal{Q})$}
+	\bad{$\mathcal{Q} \text{ ou }\text{non}(\mathcal{P})$}
+\end{answers}
+\begin{explanations} 
+"$\mathcal{P} \text{ ou }\mathcal{Q}$" est vraie car l'un des deux termes est vrai.\\
+"$\mathcal{P} \text{ et }\mathcal{Q}$" est fausse car l'un des termes est faux.\\
+"$\mathcal{P} \text{ ou }\text{non}(\mathcal{Q})$" est vraie car l'un des deux termes de part et d'autre du "ou" est vrai.\\
+"$\mathcal{Q} \text{ ou }\text{non}(\mathcal{P})$" est fausse car les deux termes de part et d'autre du "ou" sont faux ("$\text{non}(\mathcal{P})$" est une assertion fausse puisque $\mathcal{P}$ est vraie).
+\end{explanations}
+\end{question}
+
+
+\begin{question}
+On considère l'assertion "$\text{non}(\mathcal{P}) \text{ et } \mathcal{Q}$".
+Quand est-ce que cette assertion est vraie ?
+\begin{answers} 
+	\bad{Si $\mathcal{P}$ vraie et $\mathcal{Q}$ vraie.}
+	\bad{Si $\mathcal{P}$ vraie et $\mathcal{Q}$ fausse.}
+	\good{Si $\mathcal{P}$ fausse et $\mathcal{Q}$ vraie.}
+	\bad{Si $\mathcal{P}$ fausse et $\mathcal{Q}$ fausse.}
+\end{answers}
+\begin{explanations}
+Il faut  $\text{non}(\mathcal{P})$ vraie et $\mathcal{Q}$ vraie, c'est-à-dire
+$\mathcal{P}$ fausse et $\mathcal{Q}$ vraie.
+\end{explanations}
+\end{question}
+
+
+\begin{question}
+Soit $n \ge 3$ un entier.
+On considère l'implication :
+$$\text{"}n \text{ nombre premier } \implies  n \text{ est impair".}$$
+Quelles sont les affirmations vraies ?
+\begin{answers}
+	\bad{L'implication réciproque est "$n$ est pair $\implies$ $n$ est un nombre premier".}
+	\good{La contraposée est "$n$ est pair $\implies$  $n$ n'est pas nombre premier".}
+	\bad{Si l'implication est vraie alors l'implication réciproque l'est aussi.}
+	\good{Si l'implication est vraie alors sa contraposée l'est aussi.}
+\end{answers}
+\begin{explanations}
+L'implication réciproque est "$n$ est impair $\implies$ $n$ est un nombre premier" (ce qui est une affirmation fausse). \\
+La contraposée est "$n$ est pair $\implies$  $n$ n'est pas nombre premier" (ce qui est une affirmation vraie). \\
+Une implication directe peut être vraie sans que l'implication réciproque soit vraie ; c'est le cas ici.
+Une implication et sa contraposée sont des propositions équivalentes (donc vraies en même temps, et fausses en même temps). \\
+\end{explanations}
+\end{question}
+
+
+\begin{question}
+Soit $x$ un réel. On considère l'implication :
+$$\text{"}x^2>0\implies x>0\text{".}$$
+Quelles sont les affirmations vraies ?
+\begin{answers}
+	\good{L'implication réciproque est "$x>0\implies x^2>0$".}
+	\bad{La contraposée est "$x>0\implies x^2>0$".}
+	\bad{Si l'implication est fausse alors l'implication réciproque l'est aussi.}
+	\good{Si l'implication est fausse alors sa contraposée l'est aussi.}
+\end{answers}
+\begin{explanations}
+L'implication réciproque est "$x>0\implies x^2>0$" (ce qui est une affirmation vraie). \\
+La contraposée est "$x\le 0\implies x^2\le 0$" (ce qui est une affirmation fausse).\\
+Une implication et sa contraposée sont des propositions équivalentes (donc vraies en même temps, et fausses en même temps). \\
+\end{explanations}
+\end{question}
+
+
+\begin{question}
+On considère l'implication :
+$$\text{"tu prépares un repas } \implies \text{ je viens chez toi".}$$
+Quelles sont les affirmations vraies ?
+\begin{answers}
+	\bad{L'implication réciproque est "je viens chez toi $\implies$ tu ne prépares pas de repas".}
+	\good{La contraposée est "je ne viens pas chez toi $\implies$  tu ne prépares pas de repas".}
+	\bad{Si l'implication est vraie alors l'implication réciproque l'est aussi.}
+	\good{Si l'implication est vraie alors sa contraposée l'est aussi.}
+\end{answers}
+\begin{explanations}
+L'implication réciproque est "je viens chez toi $\implies$ tu prépares un repas". \\
+La contraposée est "je ne viens pas chez toi $\implies$ tu ne prépares pas de repas".\\
+Une implication et sa contraposée sont des propositions équivalentes (donc vraies en même temps, et fausses en même temps). \\
+\end{explanations}
+\end{question}
+
+
+\begin{question}
+Quelles sont les assertions vraies, quel que soit $x>0$, un réel strictement positif ?
+\begin{answers} 
+	\bad{$\exists y > 0 \quad \ln(x) = y$}
+	\good{$\exists y >0 \quad e^x = y$}
+	\good{$\exists y > 0 \quad \ln(y) = x$}
+	\bad{$\exists y > 0 \quad e^y = x$}
+\end{answers}
+\begin{explanations} 
+La valeur $y=\ln(x)$ est un nombre réel bien défini (car $x>0$), mais elle n'est pas nécessairement strictement supérieure à $0$ (prenez $x\leq 1$ pour que ce soit faux).\\
+Tout nombre réel $x>0$ possède un antécédent par la fonction exponentielle. Si l'on note $y$ cet antécédent, cela signifie que $e^y = x$. Mais cet antécédent n'est pas nécessairement strictement positif ! En effet, pour $x=1$ par exemple, on aura $e^0 = 1$.\\
+En revanche, le nombre $y=e^x$ sera toujours un réel strictement positif. Et en appliquant le logarithme à cette égalité, on obtient bien $\ln(y) = x$ avec ce même nombre $y>0$.
+\end{explanations}
+\end{question}
+
+
+%--------------------------------------------
+\subsection{Logique | Difficile}
+
+
+\begin{question}
+Pour quelles phrases, l'assertion est vraie si on remplace "$??$" par "$\exists$", mais est fausse si on remplace "$??$ " par "$\forall$" ?
+\begin{answers} 
+	\good{$??\; n \in \Nn^* \quad n \text{ est pair}$}
+	\bad{$??\; n \in \Nn^* \quad n(n+1) \text{ est pair}$}
+	\good{$??\; n \in \Nn^* \quad n \text{ et } n + 2 \text{ sont des nombres premiers}$}
+	\good{$??\; n \in \Nn^* \quad$ si $n$ n'est pas premier alors $n$ admet au moins deux facteurs premiers distincts}
+\end{answers}
+\begin{explanations} 
+Il existe des entiers pairs (par exemple $n=4$), mais tous les entiers ne sont pas pairs (par exemple $n=5$).\\
+Pour tous les entiers, $n(n+1)$ est pair.\\
+Il existe un entier (par exemple $n=11$) tel que $n$ et $n+2$ soient deux nombres premiers ; mais ce n'est pas vrai pour tous les entiers (par exemple pour $n=13$, $n+2$ n'est pas premier). \\
+Il existe un entier (par exemple $n=21$) qui a deux facteurs premiers distincts (ici $3$ et $7$) ; mais ce n'est pas vrai pour tous les entiers (par exemple $n=9$, a pour seul facteur premier $3$). 
+\end{explanations}
+\end{question}
+
+
+\begin{question}
+Soit $x\in\Rr$. Quelles sont les assertions vraies si on remplace "$\ldots\ldots$" par "$\iff$" ?
+\begin{answers} 
+	\good{$x^2 = 0  \qquad \ldots\ldots \qquad x = 0$}
+	\bad{$x^2 = 1  \qquad \ldots\ldots \qquad x = 1$}
+	\bad{$x<0  \qquad \ldots\ldots \qquad \frac1x > 0$}
+	\good{$0<x<1  \qquad \ldots\ldots \qquad \frac1x > 1$}
+\end{answers}
+\begin{explanations}
+$x^2 = 0  \iff x = 0$ \\
+$x^2 = 1  \impliedby x = 1$ \\
+$x<0$ et $\frac1x > 0$ ne peuvent pas êtres vraies en même temps : un nombre non nul et son inverse possèdent en effet le même signe !\\
+$0<x<1  \iff \frac1x > 1$ \\
+\end{explanations}
+\end{question}
+
+
+\begin{question}
+$f : \Rr \to \Rr$ désigne une fonction. 
+Pour les phrases suivantes dire si la négation proposée est correcte.
+\begin{answers} 
+	\good{La négation de "Il existe $x\in\Rr$ tel que $f(x)=0$" est "Pour tout $x\in\Rr$ on a $f(x)\neq0$".}
+	\good{La négation de "Pour tout $x\in\Rr$ on a $f(x)=0$" est "Il existe $x\in\Rr$ tel que $f(x)\neq0$".}
+	\good{La négation de "Il existe $x\in\Rr$ tel que $f(x)\ge0$" est "Pour tout $x\in\Rr$ on a $f(x)<0$".}
+	\bad{La négation de "Pour tout $x\in\Rr$ on a $f(x)>0$" est "Pour tout $x\in\Rr$ on a $f(x)\le0$".}
+\end{answers}
+\begin{explanations}
+La négation de "Pour tout" est "Il existe" (et réciproquement). La négation de "$f(x)=0$" est "$f(x) \neq 0$".  La négation de "$f(x)\ge0$" est "$f(x) < 0$".
+
+Toutes les affirmations sont vraies sauf la négation de "Pour tout $x\in\Rr$ on a $f(x)>0$" qui est "Il existe $x\in\Rr$ tel que $f(x)\le0$".
+\end{explanations}
+\end{question}
+
+
+\begin{question}
+Soit $x\in\Rr$. 
+Pour quelles phrases, l'assertion est vraie si on remplace "$??$" par "$\exists$", mais est fausse si on remplace "$??$ " par "$\forall$" ?
+\begin{answers} 
+	\good{$??\; x\in \Rr \quad x^2>0$}
+	\bad{$??\; x\in \Rr \quad x^2-2x+1\ge 0$}
+	\good{$??\; x\in\Rr \quad x^2-2x+1=0$}
+	\good{$??\; x\in\Rr \quad x^2\le 0$}
+\end{answers}
+\begin{explanations} 
+Il existe un réel $x$ tel que $x^2>0$, par exemple $x=1$, mais ce n'est pas vrai pour $x=0$.\\
+$x^2-2x+1=(x-1)^2\ge 0$ pour tout réel $x$.\\
+ $x^2-2x+1$ est nul pour $x=1$ mais n'est pas nul pour $x=0$. \\
+ $x^2\le 0$ pour $x=0$ mais ce n'est pas vrai pour $x=1$.
+\end{explanations}
+\end{question}
+
+
+\begin{question}
+Soit $\mathcal{P}$ et $\mathcal{Q}$ deux assertions telles que "$\mathcal{P} \implies \mathcal{Q}$" soit vraie, et "$\text{non}(\mathcal{P}) \implies \text{non}(\mathcal{Q})$" soit aussi vraie. On a alors :
+\begin{answers} 
+	\good{"$\mathcal{Q} \implies \mathcal{P}$" est vraie.}
+	\good{"$\mathcal{P} \iff \mathcal{Q}$" est vraie.}
+	\bad{"$\mathcal{Q} \implies \text{non}(\mathcal{P})$" est vraie.}
+	\bad{"$\mathcal{P} \implies \text{non}(\mathcal{Q})$" est vraie.}
+\end{answers}
+\begin{explanations} 
+Par contraposition de "$\text{non}(\mathcal{P}) \implies \text{non}(\mathcal{Q})$", on obtient "$\mathcal{Q} \implies \mathcal{P}$". On a donc "$\mathcal{P} \iff \mathcal{Q}$". Ceci signifie que les assertions $\mathcal{P}$ et $\mathcal{Q}$ sont soit simultanément vraies, soit simultanément fausses. Cela exclut la possibilité d'avoir l'une vraie et l'autre fausse.
+\end{explanations}
+\end{question}
+
+
+\begin{question}
+En 1761, le mathématicien suisse Lambert, ami d'Euler, démontre l'implication $\mathcal{I}$ : "$x \in \Qq \implies \tan(x) \notin \Qq$". Il remarque ensuite que $1 = \tan(\frac{\pi}{4})$. Qu'en conclut-il ?
+\begin{answers} 
+	\bad{D'après $\mathcal{I}$, $\tan(\frac{\pi}{4}) \notin \Qq$.}
+	\bad{D'après la contraposée de $\mathcal{I}$, $\tan(\frac{\pi}{4}) \notin \Qq$.}
+	\bad{D'après la contraposée de $\mathcal{I}$, $\frac{\pi}{4} \in \Qq$.}
+	\good{D'après la contraposée de $\mathcal{I}$, $\frac{\pi}{4} \notin \Qq$.}
+\end{answers}
+\begin{explanations} 
+On a $\tan(\frac{\pi}{4}) = 1 \in \Qq$. On utilise la contraposée de l'implication $\mathcal{I}$ : $1 = \tan(\frac{\pi}{4}) \in \Qq \implies \frac{\pi}{4} \notin \Qq$. Ceci constituait la toute première preuve de l'irrationalité de $\pi$.
+\end{explanations}
+\end{question}
+
+
+\begin{question}
+Quelles sont les assertions vraies ?
+\begin{answers} 
+	\good{$\forall x \in \Rr \; \exists \, y \in \Rr \quad y = e^x$}
+	\bad{$\forall y \in \Rr \; \exists \, x \in \Rr \quad y = e^x$}
+	\bad{$\forall y \in \Rr \; \exists \, x > 0 \quad y = e^x$}
+	\good{$\forall y > 0 \; \exists \, x \in \Rr \quad y = e^x$}
+\end{answers}
+\begin{explanations} 
+"$\forall x \in \Rr \; \exists \, y \in \Rr \quad y = e^x$" signifie : pour tout nombre réel $x$, il existe un nombre réel $y$ qui est égal à $e^x$ : c'est vrai ($e^x$ est bien un nombre réel).\\
+"$\forall y \in \Rr \; \exists \, x \in \Rr \quad y = e^x$" signifie : pour tout nombre réel $y$, il existe un nombre $x$ tel que $y = e^x$. Ceci est faux puisque si $y<0$, on ne pourra jamais l'écrire comme une exponentielle.\\
+"$\forall y \in \Rr \; \exists \, x > 0 \quad y = e^x$" signifie : pour tout nombre réel $y$, il existe un réel strictement positif $x$ tel que $y = e^x$. Ceci est faux : si $y<0$, on ne pourra jamais l'écrire comme une exponentielle. Et si $0 \leq y < 1$, on ne pourra jamais écrire $y$ comme une exponentielle d'un nombre strictement positif.\\
+"$\forall y > 0 \; \exists \, x \in \Rr \quad y = e^x$" signifie : pour tout nombre strictement positif $y$, il existe un nombre réel $x$ tel que $y = e^x$. Ceci est vrai : si $y>0$, alors on peut écrire $y = e^{\ln(y)}$. Donc on peut choisir $x = \ln(y)$.
+\end{explanations}
+\end{question}
+
+
+%--------------------------------------------
+\subsection{Ensembles | Facile}
+
+\begin{question}
+Quels sont les ensembles ayant au moins $4$ éléments ?
+\begin{answers} 
+	\bad{$\varnothing$}
+	\good{$[0,2] \cap [1,3]$}
+	\bad{$\{0,3\} \cap \{1,3\}$}
+	\good{$\Nn \setminus \{0,1,2,3\}$}
+\end{answers}
+\begin{explanations}
+$\varnothing$ ne contient aucun élément. \\
+$[0,2] \cap [1,3] = [1,2]$ contient une infinité d'éléments. Rappel : $[1,2] = \{x\in\Rr \mid 1 \le x \le 2\}$.\\
+$\{0,3\} \cap \{1,3\} = \{3\}$ ne contient qu'un seul élément. \\
+$\Nn \setminus \{0,1,2,3\} = \{4,5,6,7,\ldots\}$ contient une infinité d'éléments. 
+\end{explanations}
+\end{question}
+
+
+\begin{question}
+Quels sont les ensembles qui contiennent l'intervalle $[0,2]$ ?
+\begin{answers} 
+	\good{$[-3,3] \cap \mathopen]-1,5]$}
+	\bad{$\Rr \setminus ]1,3[$}
+	\bad{$]0,1[ \; \cup \; ]1,2]$}
+	\bad{$\{0,1,2\}$}
+\end{answers}
+\begin{explanations}
+On a $[-3,3] \cap  \mathopen]-1,5] = ]-1,3]$ contient $[0,2]$. \\
+Le nombre $\frac32 = 1,5$ n'appartient pas à $\Rr \setminus ]1,3[$ donc cet ensemble ne contient pas $[0,2]$. \\
+Le nombre $1$ n'appartient pas à $]0,1[ \; \cup \; ]1,2]$  donc cet ensemble ne contient pas $[0,2]$. \\
+Le nombre $\frac32$  n'appartient pas à $\{0,1,2\}$ (qui ne contient que trois éléments), donc cet ensemble ne contient pas $[0,2]$. \\ 
+\end{explanations}
+\end{question}
+
+
+\begin{question}
+Soit la fonction $f : \Rr \to \Rr$ définie par $f(x) = x^2+2$.
+Quelles sont les affirmations vraies ?
+\begin{answers} 
+	\good{L'image de $-2$ est $6$.}
+	\bad{Un antécédent de $18$ est $-5$.}
+	\bad{La valeur $2$ admet plusieurs images.}
+	\good{La valeur $18$ admet plusieurs antécédents.}
+\end{answers}
+\begin{explanations} 
+L'image de $-2$ est $6$ car $f(-2) = 6$. \\
+Le nombre $-5$ n'est pas antécédent de $18$ car $f(-5) = 27 \neq 18$. \\
+La valeur $x=2$ admet une seule image. C'est en fait vrai pour tout $x\in\Rr$ !\\
+Les antécédents de $18$ sont les solutions de l'équations $f(x) = 18$, c'est-à-dire $x^2+2=18$ ou encore $x^2=16$, ce sont donc $x=4$ et $x=-4$. Il y a donc deux antécédents à la valeur $18$.
+\end{explanations}
+\end{question}
+
+
+\begin{question}
+Soient $A=\{1,2,3,4\}$ et $B=\{0,1,2\}$. Quelles sont les affirmations vraies ?
+\begin{answers} 
+	\bad{$A\cup B$ a 7 éléments.}
+	\good{$A\cap B=\{1,2\}$}
+	\bad{$A\setminus B=\{0,3,4\}$}
+	\good{$B\setminus A=\{0\}$}
+\end{answers}
+\begin{explanations}
+$A\cup B=\{0,1,2,3,4\}$, on ne répète pas les éléments.\\
+Les nombres $1$ et $2$ sont les deux éléments qui sont à la fois dans $A$ et dans $B$.\\
+Les éléments qui sont dans $A$ mais pas dans $B$ sont $3$ et $4$.\\
+Le nombre $0$ est le seul élément qui est dans $B$ mais pas dans $A$.
+\end{explanations}
+\end{question}
+
+
+\begin{question}
+Quels sont les ensembles qui contiennent l'intervalle $[-1,1]$ ?
+\begin{answers} 
+	\good{$[-3,1] \cap \mathopen]-2,5]$}
+	\good{$\Rr \setminus ]1,3[$}
+	\bad{$[-1,0[ \; \cup \; ]0,2]$}
+	\bad{$\{-1,0,1\}$}
+\end{answers}
+\begin{explanations}
+On a $[-3,1] \cap  \mathopen]-2,5] = ]-2,1]$ qui contient $[-1,1]$. \\
+On a $\Rr \setminus ]1,3[=\mathopen]-\infty,1]\cup[3,+\infty\mathclose[$ et $\mathopen]-\infty,1]$ contient $[-1,1]$.\\
+Le nombre $0$ n'appartient pas à $[-1,0[ \; \cup \; ]0,2]$  donc cet ensemble ne contient pas $[-1,1]$. \\
+Le nombre $\frac12$ n'appartient pas à $\{-1,0,1\}$ (qui ne contient que trois éléments), donc cet ensemble ne contient pas $[-1,1]$. \\ 
+\end{explanations}
+\end{question}
+
+
+\begin{question}
+Soit la fonction $f : \Rr \to \Rr$ définie par $f(x) = x^2-2$.
+Quelles sont les affirmations vraies ?
+\begin{answers} 
+	\bad{L'image de $-2$ est $-6$.}
+	\good{Un antécédent de $7$ est $-3$.}
+	\bad{La valeur $-2$ admet plusieurs images.}
+	\good{La valeur $7$ admet plusieurs antécédents.}
+\end{answers}
+\begin{explanations} 
+L'image de $-2$ n'est pas $-6$ car $f(-2) = (-2)^2-2=4-2=2$. \\
+Le nombre $-3$ est antécédent de $7$ car $f(-3) = 7$. \\
+La valeur $x=-2$ admet une seule image. C'est en fait vrai pour tout $x\in\Rr$ !\\
+Les antécédents de $7$ sont les solutions de l'équations $f(x) = 7$, c'est-à-dire $x^2-2=7$ ou encore $x^2=9$, ce sont donc $x=3$ et $x=-3$. Il y a donc deux antécédents à la valeur $7$.
+\end{explanations}
+\end{question}
+
+
+\begin{question}
+Soit la fonction réelle définie par $f(x) = 2x$. Soit $x\in\Rr$. On a :
+\begin{answers} 
+	\bad{$(f \circ f) (x) = 4x^2$}
+	\good{$(f \circ f) (x) = 4x$}
+	\bad{$(f \circ f) \circ f (x) = 6x$}
+	\bad{$(f \circ f \circ f) (x) = 8x^3$}
+\end{answers}
+\begin{explanations} 
+On a $(f\circ f) (x) = f(f(x)) = f(2x) = 2\times 2x = 4x$. Et de même $(f \circ f \circ f) (x) = f(4x) = 2\times (4x) = 8x$.
+\end{explanations}
+\end{question}
+
+
+\begin{question}
+Soient les ensembles $A = [1,3]$ et $B= \{ 0 , 1 , 2 , 3 \}$. Quelles sont les assertions vraies ?
+\begin{answers} 
+	\bad{$B \subset A$}
+	\bad{$A \subset B$}
+	\bad{$A \setminus B = ]1,3[$}
+	\good{$A \cap B = \{ 1,2,3 \}$}
+\end{answers}
+\begin{explanations} 
+Il n'y a pas d'inclusion entre $A$ et $B$ : Le nombre $\frac32 \in A $ et $\frac32 \notin B$ d'une part ; et $0 \in B$ avec $0 \notin A$ d'autre part.\\
+On a $A \setminus B = ]1,2[ \cup ]2,3[$.\\
+En revanche, on a bien $A \cap B = \{1,2,3\}$.
+\end{explanations}
+\end{question}
+
+
+%--------------------------------------------
+\subsection{Ensembles | Moyen}
+
+\begin{question}
+Soient $A,B$ deux parties d'un ensemble $E$.
+Quelles sont les affirmations vraies (quel que soit le choix de $A$ et $B$) ?
+\begin{answers} 
+	\bad{$A \cup B \ \subset \ A \cap B$}
+	\good{$A \cap B \ \subset \ A \cup B$}
+	\good{$A \setminus B \ \subset \ A$}
+	\bad{$A \setminus B \ \subset \ B$}
+\end{answers}
+\begin{explanations}
+L'intersection est incluse dans l'union :  $A \cap B \ \subset \ A \cup B$.
+Un ensemble $A$ auquel on retire quelque chose reste inclus dans $A$ : $A \setminus B \ \subset \ A$.
+\end{explanations}
+\end{question}
+
+
+\begin{question}
+Les fonctions suivantes sont-elles définies sur l'ensemble associé ?
+\begin{answers} 
+	\bad{$x \mapsto \ln(|x-3|)$ sur $\Rr$}
+	\good{$x \mapsto \sqrt{1-x^2}$ sur $[-1,1]$}
+	\bad{$x \mapsto \frac{1}{x^2-4}$ sur $\Rr \setminus \{ 2 \}$}
+	\bad{$x \mapsto \frac{1}{\sin(\pi x)}$ sur $\Rr^*$}
+\end{answers}
+\begin{explanations} 
+$\ln(|x-3|)$ est définie sur $\Rr \setminus \{ 3 \}$.\\
+$\sqrt{1-x^2}$ est définie sur $[-1,1]$.\\
+$\frac{1}{x^2-4}$ est définie sur $\Rr \setminus \{ -2, 2 \}$.\\
+$\frac{1}{\sin(\pi x)}$ est définie sur $\Rr \setminus \Zz$.
+\end{explanations}
+\end{question}
+
+
+\begin{question}
+Soient $f,g,h$ des fonctions définies par 
+$$f(x) = x^2-3x \qquad g(x) = 2x+1 \qquad h(x) = \frac{x}{x-1}.$$
+Quelles sont les affirmations vraies ?
+\begin{answers} 
+	\bad{$(f \circ g)(x) =4x^2-2x+4$}
+	\bad{$(g \circ f)(x) = 2x^2+5$}
+	\bad{$(h \circ f)(x) = \left(\frac{x}{x-1}\right)^2 - \frac{3x}{x-1}$}
+	\good{$(g \circ h)(x) = \frac{3x-1}{x-1}$}
+\end{answers}
+\begin{explanations} 
+$(f \circ g)(x) = f(g(x)) = (2x+1)^2-3(2x+1) = 4x^2-2x-2$, \\
+$(g \circ f)(x) = g(f(x)) = 2(x^2-3x)+1 = 2x^2-6x+1$. \\
+$(h \circ f)(x) = h(f(x)) = \frac{x^2-3x}{x^2-3x-1}$ ce qui est proposé c'est $(f \circ h)(x)$.\\
+$(g \circ h)(x) = g(h(x)) = 2\frac{x}{x-1} +1 = \frac{2x}{x-1} + \frac{x-1}{x-1} = \frac{3x-1}{x-1}$.
+\end{explanations}
+\end{question}
+
+
+\begin{question}
+Les fonctions suivantes sont-elles définies sur l'ensemble associé ?
+\begin{answers} 
+	\bad{$x \mapsto \ln(|x+1|)$ sur $\Rr$}
+	\good{$x \mapsto \sqrt{1+x^2}$ sur $\Rr$}
+	\bad{$x \mapsto \frac{x}{1-x^2}$ sur $\Rr \setminus \{ 0 \}$}
+	\good{$x \mapsto \tan(x)$ sur $\mathopen]\frac\pi 2,\pi\mathclose[$}
+\end{answers}
+\begin{explanations} 
+$\ln(|x+1|)$ est définie sur $\Rr \setminus \{ -1 \}$.\\
+$1+x^2\ge 0$ pour tout $x$ de $\Rr$.\\
+$\frac{x}{1-x^2}$ est définie sur $\Rr \setminus \{ -1,1 \}$.\\
+$\tan( x)=\dfrac{\sin(x)}{\cos(x)}$ et $\cos(x)$ ne s'annule pas sur $\mathopen]\frac\pi 2,\pi\mathclose[$.
+\end{explanations}
+\end{question}
+
+
+\begin{question}
+Soient $f,g,h$ des fonctions définies par 
+$$f(x) = x^2+x \qquad g(x) = 2x-1 \qquad h(x) = \frac{1}{x+1}.$$
+Quelles sont les affirmations vraies ?
+\begin{answers} 
+	\good{$(f \circ g)(x) =4x^2-2x$}
+	\bad{$(g \circ f)(x) = 2x^2+2x$}
+	\good{$(h \circ f)(x) = \frac 1{x^2+x+1}$}
+	\bad{$(g \circ h)(x) = \frac{1}{2x}$}
+\end{answers}
+\begin{explanations} 
+$(f \circ g)(x) = f(g(x)) = (2x-1)^2+(2x-1) = 4x^2-2x$. \\
+$(g \circ f)(x) = g(f(x)) = 2(x^2+x)-1 = 2x^2+2x-1$. \\
+$(h \circ f)(x) = h(f(x)) = \frac{1}{f(x)+1}=\frac 1{x^2+x+1}$.\\
+$(g \circ h)(x) = g(h(x)) = 2\frac{1}{x+1} -1 = \frac{2}{x+1} - \frac{x+1}{x+1} = \frac{1-x}{x+1}$. Ce qui est proposé est $(h\circ g)(x)$.
+\end{explanations}
+\end{question}
+
+
+\begin{question}
+Parmi ces ensembles, quels sont ceux qui sont inclus dans $\{ 0 , 1 , 2 \}$ ?
+\begin{answers} 
+	\good{$\{ x \in \Rr \; | \; x(x-2)=0 \}$}
+	\good{$\{ x \in \Rr \; | \; e^x = 1 \}$}
+	\bad{$\{ x > 0 \; | \; \ln(x) = 1 \}$}
+	\good{$[0,3] \cap \{ x \in \Rr \; | \; (x+2)^2 = 4  \}$}
+\end{answers}
+\begin{explanations} 
+$\{ x \in \Rr \; | \; x(x-2)=0 \} = \{0,2\}$.\\
+$\{ x \in \Rr \; | \; e^x = 1 \} = \{0\}$.\\
+$\{ x > 0 \; | \; \ln(x) = 1 \} = \{ e \}$.\\
+$[0,3] \cap \{ x \in \Rr \; | \; (x+2)^2 = 4  \}$ = $[0,3] \cap \{ -4 , 0\} = \{0\}$. 
+\end{explanations}
+\end{question}
+
+
+\begin{question}
+Soit l'ensemble $A = \{ -1 , 0 , 1 \}$ et la fonction réelle donnée par $f(x) = x^2-1$. Quelles sont les assertions vraies ?
+\begin{answers} 
+	\bad{$\forall x \in A \quad f(x) = 0$}
+	\good{$\exists \, x \in A \quad f(x) = 0$}
+	\bad{$f$ est bijective de $A$ dans son image $f(A)$.}
+	\good{$\forall x \in A \quad f(x) \in A$}
+\end{answers}
+\begin{explanations} 
+On a $f(-1) = f(1) = 0 \in A$, $f(0) = -1 \in A$ mais $-1 \neq 0$.\\
+La fonction $f$ n'est pas bijective de $A$ dans $f(A)$ puisque $1$ et $-1$ ont la même image.
+\end{explanations}
+\end{question}
+
+
+\begin{question}
+Soient les fonctions réelle définies par $f(x) = 3x+2$ et $g(x) = ax + b$. Pour quelle(s) valeur(s) des réels $a$ et $b$ a-t-on $g \circ f (x) = 6x + 7$ ?
+\begin{answers} 
+	\bad{$a=1$ et $b=3$}
+	\bad{$a=1$ et $b=5$}
+	\good{$a=2$ et $b=3$}
+	\bad{$a=2$ et $b=5$}
+\end{answers}
+\begin{explanations} 
+On calcule que $g \circ f (x) = g(3x+2) = a(3x+2) + b = 3a x + 2a + b$. Pour que cette expression soit égale à $6x+7$, on doit avoir $3a = 6$ et $2a+b=7$. Cela donne $a=2$ et $b=7- 2 \times 2 = 3$.
+\end{explanations}
+\end{question}
+
+
+%--------------------------------------------
+\subsection{Ensembles | Difficile}
+
+\begin{question}
+Soit $E$ un ensemble. Pour $A$ et $B$ deux parties de $E$, on définit l'ensemble
+$$\Delta(A,B) = (A \cup B) \setminus (A \cap B).$$
+Quelles sont les affirmations vraies ?
+\begin{answers}
+	\good{$\Delta(A,B)=\Delta(B,A)$} 
+	\bad{Si $B = \varnothing$ alors $\Delta(A,B) = \varnothing$.}
+	\good{Si $A$ et $B$ sont disjoints alors $\Delta(A,B) = A \cup B$.}
+	\good{Si $B \subset A$ alors $\Delta(A,B) = A \setminus B$.}
+\end{answers}
+\begin{explanations} 
+L'ensemble $\Delta(A,B)$ s'appelle la "différence symétrique" de $A$ et $B$.
+Toutes les propriétés sont vraies, sauf une. On a : "Si $B = \varnothing$ alors $\Delta(A,B) = A$".
+Faites des schémas avec des "patates" (diagrammes de Venn) pour visualiser ces propriétés.
+\end{explanations}
+\end{question}
+
+
+\begin{question}
+Les fonctions $f$ et $g$ définies par les expressions suivantes sont-elles bijections réciproques l'une de l'autre ?
+(On ne se préoccupera pas des ensembles de départ et d'arrivée.)
+\begin{answers} 
+	\bad{$f(x) = \exp(2x)$ et $g(x) = \ln(\tfrac12x)$}
+	\bad{$f(x) = \cos(x-1)$ et $g(x) = \sin(x+1)$}
+	\good{$f(x) = \frac{1}{1+x}$ et $g(x) = \frac{1-x}{x}$}
+	\bad{$f(x)= \sqrt{2x+1}$ et $g(x) = \frac12x^2-1$}
+\end{answers}
+\begin{explanations}
+Si $f(x) = \exp(2x)$ et $g(x) = \ln(\tfrac12x)$ alors 
+$$(f \circ g)(x) 
+= e^{2 \ln(\tfrac12x) }
+= e^{2 \ln(x) + 2\ln(\tfrac12) }
+= e^{2 \ln(x))}\times e^{2\ln(\tfrac12) }
+= x^2 \times (\tfrac12)^2 = \frac{x^2}{4}$$
+et ne vaut donc pas $x$.
+
+Si $f(x) = \cos(x-1)$ et $g(x) = \sin(x+1)$ alors $(f \circ g)(x) = \cos( \sin(x+1) -1)$ ne se simplifie pas du tout et n'a aucune chance d'être égal à $x$. Prendre par exemple $x=10$, alors $(f \circ g)(x)$ est une valeur renvoyée par un cosinus donc est compris entre $-1$ et $+1$ donc ne peut pas être égale à $10$.
+
+Si $f(x) = \frac{1}{1+x}$ et $g(x) = \frac{1-x}{x}$
+$$(f \circ g)(x) 
+= f\left(\frac{1-x}{x} \right)
+=  \frac{1}{1+\frac{1-x}{x}}
+= \frac{x}{x+(1-x)} = x.$$
+On vérifie de même que $(g \circ f)(x) = x$. Donc $f$ et $g$ sont des bijections réciproques l'une de l'autre.
+
+Si $f(x)= \sqrt{2x+1}$ et $g(x) = \frac12x^2-1$ alors
+$$(f \circ g)(x)
+= f\left(\tfrac12x^2-1  \right)
+= \sqrt{ 2(\tfrac12x^2-1)+1 }
+= \sqrt{ x^2-1}$$
+qui n'est pas égale à $x$ (par exemple pour $x=10$, $(f\circ g)(10)= \sqrt{10^2-1}=\sqrt{99} \neq 10$).
+\end{explanations}
+\end{question}
+
+
+\begin{question}
+Soient $A$ et $B$ deux parties d'un ensemble $E$.
+Quelles sont les affirmations vraies (quel que soit le choix de $A$ et $B$) ?
+\begin{answers}
+	\good{$(A\cap B)\cup(A\setminus B)=A$} 
+	\bad{$(A\cap B)\cup(A\setminus B)=B$}    
+	\bad{$(A\cap B)\cup(A\setminus B)= A\cup B$}
+	\good{$(A\cap B)\cup(A\setminus B)\cup(B\setminus A)=A\cup B$}
+\end{answers}
+\begin{explanations} 
+Si l'on réunit les éléments qui sont dans $A$ et dans $B$ avec ceux qui sont dans $A$ et pas dans $B$, on obtient tous les éléments de $A$.\\
+On a 3 possibilités pour les éléments qui sont dans $A$ ou dans $B$ : ils sont dans $A$ et pas dans $B$, ou dans $A$ et dans $B$, ou dans $A$ et dans $B$.
+Faites des schémas avec des "patates" (diagrammes de Venn) pour visualiser ces propriétés.
+\end{explanations}
+\end{question}
+
+
+\begin{question}
+Soit $E$ un ensemble. Pour deux parties $A$ et $B$ de $E$, on définit $\Delta(A,B)=(A \cup B)\setminus (A \cap B)$. Quelles sont les affirmations vraies (quel que soit le choix de $A$ et $B$) ?
+\begin{answers}
+	\good{Si $A=B$, $\Delta(A,B) = \varnothing$.} 
+	\bad{$A\cup B\subset \Delta(A,B)$}    
+	\bad{$A\cap B\subset \Delta(A,B)$}
+    \good{$\Delta(A,B)=(A\setminus B)\cup (B\setminus A)$}   
+\end{answers}
+\begin{explanations} 
+$\Delta(A,B)$ comprend les éléments qui sont soit dans $A$ soit dans $B$, mais pas dans les deux à la fois.
+Faites des schémas avec des "patates" (diagrammes de Venn) pour visualiser ces propriétés.
+\end{explanations}
+\end{question}
+
+
+\begin{question}
+Les fonctions $f$ et $g$ définies par les expressions suivantes sont-elles bijections réciproques l'une de l'autre ?
+(On ne se préoccupera pas des ensembles de départ et d'arrivée.)
+\begin{answers} 
+	\good{$f(x) = \exp(-3x)$ et $g(x) = -\frac13\ln(x)$}
+	\bad{$f(x) = \cos(x+1)$ et $g(x) = \frac 1{\cos(x)}-1$}
+	\good{$f(x) = \frac{x}{1+x}$ et $g(x) = \frac{x}{1-x}$}
+	\bad{$f(x)= \sqrt{x+1}$ et $g(x) = x^2+1$}
+\end{answers}
+\begin{explanations}
+Si $f(x) = \exp(-3x)$ et $g(x) = -\frac13\ln(x))$ alors 
+$$(f \circ g)(x) 
+= e^{(-3) \times (-\frac13\ln(x)) }
+= e^{ \ln(x)  }
+= x$$
+On vérifie de même que $(g\circ f)(x)=x$, donc $f$ et $g$ sont bijections réciproques l'une de l'autre.
+
+Si $f(x) = \cos(x+1)$ et $g(x) =  \frac 1{\cos(x)}-1$ alors $(f \circ g)(x) = \cos( \frac 1{\cos(x)})$ ne se simplifie pas du tout et n'a aucune chance d'être égal à $x$. Prendre $x=10$, alors $(f \circ g)(x)$ est une valeur renvoyée par un cosinus donc est compris entre $-1$ et $+1$ donc ne peut pas être égale à $10$.
+
+Si $f(x) = \frac{x}{1+x}$ et $g(x) = \frac{x}{1-x}$
+$$(f \circ g)(x) 
+= f\left(\frac{x}{1-x} \right)
+=  \frac{\frac{x}{1-x}}{1+\frac{x}{1-x}}=\frac{\frac{x}{1-x}}{\frac{1-x}{1-x}+\frac x{1-x}}=\frac x{1-x+x} = x.$$
+On vérifie de même que $(g \circ f)(x) = x$. Donc $f$ et $g$ sont bijections réciproques l'une de l'autre.
+
+Si $f(x)= \sqrt{x+1}$ et $g(x) = x^2+1$ alors
+$$(f \circ g)(x)
+= f\left(x^2+1 \right)
+= \sqrt{ x^2+2 }
+$$
+qui n'est pas égal à $x$ (par exemple pour $x=0$, $(f\circ g)(0)= \sqrt{2} \neq 0$).
+\end{explanations}
+\end{question}
+
+
+\begin{question}
+Soit la fonction réelle définie par $f(x) = x^2 - x - 2$. Pour quelle fonction $u$ a-t-on $f \circ u (x) = 9(x^2+x)$ ?
+\begin{answers} 
+	\bad{$u(x) = 9x$}
+	\good{$u(x) = 3x+2$}
+	\bad{$u(x) = -3x$}
+	\bad{$u(x) = 9x+2$}
+\end{answers}
+\begin{explanations} 
+On calcule pour $u(x) = 3x+2$ que $f \circ u (x) = f(3x+2) = (3x+2)^2 - (3x+2)-2 = 9x^2 + 12x + 4 - 3x - 2 - 2 = 9x^2 + 9x = 9(x^2+x)$.
+\end{explanations}
+\end{question}
+
+%--------------------------------------------
+\subsection{Raisonnements | Facile}
+
+\begin{question}
+Pour montrer que $\sqrt2$ est un nombre irrationnel une preuve classique utilise :
+\begin{answers} 
+	\bad{Un raisonnement par contraposition.}
+	\bad{Un raisonnement par disjonction.}
+	\good{Un raisonnement par l'absurde.}
+	\bad{Un raisonnement par récurrence.}
+\end{answers}
+\begin{explanations} 
+La preuve se fait par l'absurde.
+\end{explanations}
+\end{question}
+
+
+\begin{question}
+Pour montrer que pour tout $x\in\Rr$ et tout $n\in\Nn$ on a $(1+x)^n \ge 1+nx$, quelle est la démarche la plus adaptée ?
+\begin{answers} 
+	\good{On fixe $x$, on fait une récurrence sur $n$.}
+	\bad{On fixe $n$, on fait une récurrence sur $x$.}
+	\bad{Par l'absurde on suppose $(1+x)^n < 1+nx$.}
+	\bad{Par disjonction des cas $n$ pair/$n$ impair.}
+\end{answers}
+\begin{explanations} 
+On fixe $x \in \Rr$, on fait une récurrence sur $n \in \Nn$. On ne peut pas procéder à une récurrence sur $x \in \Rr$.
+\end{explanations}
+\end{question}
+
+
+\begin{question}
+On voudrait montrer que pour tout $n\in\Nn^*$ on a $2^{n-1} \le n^n$. Quel type de raisonnement vous parait adapté ?
+\begin{answers} 
+	\bad{Un raisonnement par contraposition.}
+	\bad{Un raisonnement par disjonction : $n$ pair/$n$ impair.}
+	\good{Un raisonnement par l'absurde.}
+	\bad{Un raisonnement par récurrence.}
+\end{answers}
+\begin{explanations} 
+La preuve se fait par récurrence sur $n$ avec initialisation à $n=1$.
+\end{explanations}
+\end{question}
+
+
+\begin{question}
+Soit $x$ un réel. On définit une suite par $u_0=x$ et, pour tout entier $n\in \Nn$, $u_{n+1}=xu_n$. 
+\begin{answers} 
+	\bad{On montre par récurrence sur $n$ que $u_n=x^n$ pour tout entier $n$.}    
+	\bad{On montre par récurrence sur $x$ que $u_n=x^n$ pour tout entier $n$.}      
+	\good{On montre par récurrence sur $n$ que $u_n=x^{n+1}$ pour tout entier $n$.}
+	\bad{On montre par récurrence sur $x$ que $u_n=x^{n+1}$ pour tout entier $n$.}
+\end{answers}
+\begin{explanations} 
+On fixe $x \in \Rr$, on fait une récurrence sur $n \in \Nn$. Pour $n=0$, $u_0=x^1$ et, pour $n$ quelconque, $u_n = x^{n+1}$.
+\end{explanations}
+\end{question}
+
+
+\begin{question}
+On commence une démonstration par l'absurde avec la rédaction suivante : "Supposons que $\log_{10}(3) \in \Qq$. Alors on peut écrire $\log_{10}(3) = \frac p q$ avec ...". Que cherche-t-on à démontrer ?
+\begin{answers} 
+	\bad{$\log_{10}(3) \in \Qq$}
+	\good{$\log_{10}(3) \notin \Qq$}
+	\bad{$\log_{10}(3) \in \Rr$}
+	\bad{$\log_{10}(3) \notin \Rr$}
+\end{answers}
+\begin{explanations} 
+On a commencé par supposer que $\log_{10}(3) \in \Qq$. Puisqu'il s'agit d'une démonstration par l'absurde, cette supposition correspond à la négation de ce qu'on doit démontrer. On doit donc démontrer que $\log_{10}(3) \notin \Qq$.
+\end{explanations}
+\end{question}
+
+
+%--------------------------------------------
+\subsection{Raisonnements | Moyen}
+
+\begin{question}
+On souhaite prouver par récurrence, pour tout $n\ge0$, une proposition $\mathcal{P}_n$.
+Après avoir prouvé $\mathcal{P}_0$, quelle rédaction du démarrage de l'étape d'hérédité convient ?
+\begin{answers} 
+	\bad{Soit $n\ge0$. Je prouve $\mathcal{P}_1$.}
+	\good{Soit $n\ge0$. Je suppose $\mathcal{P}_n$ vraie et je montre $\mathcal{P}_{n+1}$.}
+	\bad{Soit $n\ge0$. Je suppose $\mathcal{P}_n$ vraie pour tout $n$ et je montre $\mathcal{P}_{n+1}$.}
+	\bad{Soit $n\ge0$. Je suppose $\mathcal{P}_{n+1}$ vraie et je montre $\mathcal{P}_{n}$.}
+\end{answers}
+\begin{explanations} 
+La rédaction d'une récurrence est assez figée. L'étape d'hérédité commence toujours par "Soit $n\ge0$. Je suppose $\mathcal{P}_n$ vraie et je montre $\mathcal{P}_{n+1}$."
+\end{explanations}
+\end{question}
+
+
+\begin{question}
+Pour montrer que $\sqrt{3}$ est un nombre irrationnel, je commence une démonstration par l'absurde en écrivant :
+\begin{answers} 
+	\good{Je suppose $\sqrt3\in\Qq$ et je cherche une contradiction.}
+	\bad{Je suppose $\sqrt3\notin\Qq$ et je cherche une contradiction.}
+	\bad{Je suppose $\sqrt3\notin\Rr$ et je cherche une contradiction.}
+	\bad{Je suppose que $\sqrt3$ n'existe pas et je cherche une contradiction.}
+\end{answers}
+\begin{explanations} 
+Pour montrer que $\sqrt{3} \notin \Qq$ par l'absurde, on commence par supposer $\sqrt3\in\Qq$, donc on écrit $\sqrt{3}=\frac pq$ avec $p$ et $q$ entiers, puis on cherche une contradiction.
+\end{explanations}
+\end{question}
+
+
+\begin{question}
+Quel type de raisonnement est adapté pour montrer qu'il existe une infinité de nombres premiers ?
+\begin{answers} 
+	\bad{Au cas par cas : on étudie $n=2$, $n=3$, $n=5$,...}
+	\bad{Par récurrence sur $n$ parcourant l'ensemble des nombres premiers.}
+	\good{Par l'absurde en supposant qu'il n'existe qu'un nombre fini de nombres premiers.}
+	\bad{C'est une propriété que l'on ne sait pas démontrer.}
+\end{answers}
+\begin{explanations} 
+La démonstration classique se fait par l'absurde en supposant qu'il n'existe qu'un nombre fini de nombres premiers puis en cherchant une contradiction.
+\end{explanations}
+\end{question}
+
+
+\begin{question}
+Pour montrer que les solutions réelles de l'équation $\vert x+1\vert =2$ sont $1$ et $-3$, on peut utiliser :
+\begin{answers} 
+	\bad{Un raisonnement par contraposition.}
+	\good{Un raisonnement par disjonction des cas.}
+	\bad{Un raisonnement par l'absurde.}
+	\bad{Un raisonnement par récurrence.}
+\end{answers}
+\begin{explanations} 
+Soit $x\in\Rr$. On distingue les cas $x+1\ge 0$ et $x+1<0$ :
+
+Si $x+1\ge 0$, alors $\vert x+1\vert =x+1$ et l'équation devient $x+1=2$, qui a $1$ pour unique solution.
+
+Si $x+1<0$, alors $x+1=-(x+1)$ et l'équation devient $-(x+1)=2$, qui a $-3$ pour unique solution.
+\end{explanations}
+\end{question}
+
+
+\begin{question}
+Soient $a$ et $b$ deux nombres réels. On considère la proposition suivante : "si $a+b$ est irrationnel, alors $a$ est irrationnel ou $b$ est irrationnel". Comment puis-je montrer cette affirmation par contraposée ?
+\begin{answers} 
+	\good{Je prends deux rationnels $a$ et $b$ et je montre que $a+b$ est rationnel.}
+	\bad{Je prends deux irrationnels $a$ et $b$ et je montre que $a+b$ est irrationnel.}
+	\bad{Je prends un irrationnel et j'essaie de l'écrire sous la forme $a+b$ avec $a$ et $b$ irrationnels.}
+	\bad{Je prends deux rationnels $a$ et $b$ et je montre que $a+b$ est irrationnel.}
+\end{answers}
+\begin{explanations} 
+La contraposée est : si $a$ et $b$ sont rationnels alors $a+b$ est rationnel. On prend donc $a$ et $b$ deux rationnels : $a=\dfrac cd$, $b=\dfrac ef$. Alors $a+b=\dfrac cd+\dfrac ef=\dfrac {cf+de}{df}$ donc $a+b$ est rationnel.
+\end{explanations}
+\end{question}
+
+
+\begin{question}
+Téo et Théa jouent à un jeu de société. Téo est proche de la victoire ; il doit lancer un dé et Théa remarque avec raison que : "si Téo fait 4, alors il gagne le jeu". Quelles sont les affirmations certaines ?
+\begin{answers} 
+	\bad{Si Téo fait 3, alors il n'aura pas gagné.}
+	\bad{Si Téo gagne, c'est qu'il a fait 4.}
+	\good{Si Téo ne gagne pas, c'est qu'il n'a pas fait 4.}
+	\bad{Si Téo gagne fait 5, il perd.}
+\end{answers}
+\begin{explanations} 
+L'affirmation de Théa est "Dé $=4 \implies $ Téo gagne". Cette affirmation ne nous dit rien sur ce qui adviendra si le lancer de dé ne donne pas $4$ ! En revanche, la contraposée de l'affirmation nous informe que "Téo ne gagne pas $\implies$ Dé $\neq 4$".
+\end{explanations}
+\end{question}
+
+
+%--------------------------------------------
+\subsection{Raisonnements | Difficile}
+
+\begin{question}
+Pour montrer que $3^n > 3n$ pour des entiers $n$ naturels suffisamment grands, je fais une preuve par récurrence.
+Je peux commencer l'initialisation avec :
+\begin{answers} 
+	\bad{$n=0$}
+	\bad{$n=1$}
+	\good{$n=2$}
+	\good{$n=3$}
+\end{answers}
+\begin{explanations} 
+La propriété $3^n > 3n$ est vraie pour $n=0$ mais fausse pour $n=1$.
+Ensuite pour tout $n\ge2$ elle est vraie.
+Je peux choisir l'initialisation avec $n=2$, mais je peux aussi choisir de démarrer avec $n=3$ (je montrerai alors la propriété pour les $n\geq 3$).
+\end{explanations}
+\end{question}
+
+
+\begin{question}
+Pour montrer une implication $\mathcal{P} \implies \mathcal{Q}$ par contraposition :
+\begin{answers} 
+	\bad{Je suppose $\mathcal{P}$ et je montre $\mathcal{Q}$.}
+	\bad{Je suppose $\mathcal{Q}$ et je montre $\mathcal{P}$.}
+	\bad{Je suppose $\text{non}(\mathcal{P})$ et je montre $\text{non}(\mathcal{Q})$.}
+	\good{Je suppose $\text{non}(\mathcal{Q})$ et je montre $\text{non}(\mathcal{P})$.}
+\end{answers}
+\begin{explanations} 
+Je suppose $\text{non}(\mathcal{Q})$ et je montre $\text{non}(\mathcal{P})$.
+Par exemple pour montrer "$n^2$ pair $\implies$ $n$ pair", par contraposition je suppose $n$ non pair (c-à-d impair)
+et je prouve alors que $n^2$ est aussi non pair. 
+\end{explanations}
+\end{question}
+
+
+\begin{question}
+Pour démontrer que, pour tout $x\in\Rr$, on a $|x-2| \le x^2-x+2$.
+\begin{answers} 
+	\bad{Je distingue les cas $x\ge0$ et $x<0$.}
+	\good{Je distingue les cas $x\ge2$ et $x<2$.}
+	\bad{Je suis amené à vérifier $x^2-x+2 \ge 0$.}
+	\good{Je suis amené à vérifier $x^2-2x+4 \ge 0$.}
+\end{answers}
+\begin{explanations} 
+Soit $x\in\Rr$. On discute selon le signe de $x-2$.\\
+Si $x-2\ge0$ alors $|x-2| = x-2$ donc $(x^2-x+2) - |x-2| = x^2-x+2 - (x-2) = x^2-2x+4$ toujours positif (car le discriminant est négatif).\\
+Si $x-2<0$ alors $|x-2| = -(x-2)$ donc $(x^2-x+2) - |x-2| = x^2-x+2 + (x-2) = x^2$ toujours positif. 
+\end{explanations}
+\end{question}
+
+
+\begin{question}
+Pour montrer que $4^n > 20n$ pour des entiers $n$ naturles suffisamment grands je fais une preuve par récurrence.
+Je peux commencer l'initialisation avec :
+\begin{answers} 
+	\bad{$n=0$}
+	\bad{$n=1$}
+	\bad{$n=2$}
+	\good{$n=3$}
+\end{answers}
+\begin{explanations} 
+La propriété $4^n > 20n$ est vraie pour $n=0$ mais fausse pour $n=1$ et pour $n=2$.
+Ensuite pour tout $n\ge3$ elle est vraie.
+Je peux donc choisir l'initialisation avec $n=3$.\end{explanations}
+\end{question}
+
+
+\begin{question}
+Pour démontrer que, pour tout $x\in\Rr$, on a $|x+1| \le x^2+2$.
+\begin{answers} 
+	\bad{Je distingue les cas $x\ge0$ et $x<0$.}
+	\good{Je distingue les cas $x\ge-1$ et $x<-1$.}
+	\good{Je suis amené à vérifier $x^2-x+1 \ge 0$.}
+	\good{Je suis amené à vérifier $x^2+x+3 \ge 0$.}
+\end{answers}
+\begin{explanations} 
+Soit $x\in\Rr$. On discute selon le signe de $x+1$.\\
+Si $x+1\ge0$ alors $|x+1| = x+1$ donc $(x^2+2) - |x+1| = x^2+2 - (x+1) = x^2-x+1$ toujours positif (car le discriminant est négatif).\\
+Si $x+1<0$ alors $|x+1| = -(x+1)$ donc $(x^2+2) - |x+1| = x^2+2 + (x+1) = x^2+x+3$ toujours positif (car le discriminant est négatif).
+\end{explanations}
+\end{question}
+
+
+\begin{question}
+Soit $n\ge2$ un entier. Que pensez-vous du raisonnement par récurrence suivant : on note ${\cal P}_n$ la propriété "$n$ points distincts quelconques dans le plan sont toujours alignés". 
+
+Initialisation : pour $n=2$, la propriété est vraie. En effet, deux points distincts du plan sont toujours alignés.
+
+Hérédité : soit $n$ un entier naturel quelconque supérieur ou égal à deux. Supposons la propriété ${\cal P}_n$ vraie. Soient $n+1$ points quelconques du plan, $A_1$, $A_2$,\ldots, $A_n$, $A_{n+1}$, tous distincts. D'après l'hypothèse de récurrence, les $n$ points $A_1$, $A_2$,\ldots, $A_n$ sont alignés. Ils le sont donc sur la droite $(A_2A_n)$. 
+De même, les $n$ points $A_2$, \ldots, $A_n$, $A_{n+1}$ sont alignés. Ils le sont donc également sur la droite $(A_2A_n)$.
+On en déduit donc que les $n+1$ points sont tous sur la droite $(A_2A_n)$, donc ils sont alignés. La propriété ${\cal P}_{n+1}$ est donc vraie, d'où la propriété est héréditaire.
+
+En conclusion, on a montré par récurrence que ${\cal P}_n$ est vraie pour tout entier $n\ge 2$ : $n$ points distincts du plan sont toujours alignés.
+\begin{answers} 
+	\bad{Le raisonnement par récurrence est juste donc le résultat est juste.}
+	\bad{Le raisonnement par récurrence est juste mais le résultat est faux.}
+	\good{Il y a une erreur dans l'étape d'hérédité.}
+	\bad{Il y a une erreur dans l'étape d'initialisation.}
+\end{answers}
+\begin{explanations} 
+Il y a une erreur dans l'étape d'hérédité : en effet, pour $n=2$, $A_2=A_n$ et on ne peut pas parler de la droite $(A_2A_n)$. On n'a donc pas ${\cal P}_2\implies {\cal P}_3$, ce qui suffit à rendre faux le raisonnement par récurrence.
+\end{explanations}
+\end{question}
+

@@ -1,0 +1,1732 @@
+---
+author: Arnaud Bodin, Barnabé Croizat, Christine Sacré
+
+section: Arithmétique
+
+subsection: pgcd | Facile
+
+question: |
+        On considère \(a = 28\) et \(b = 42\). Quelles sont les affirmations vraies ?
+
+answers: 
+    - value: |
+        Les diviseurs communs à \(a\) et à \(b\) sont : \(1\), \(2\), \(7\).
+      correct: False
+
+    - value: |
+        \(14\) est un diviseur de \(a\) mais pas de \(b\).
+      correct: False
+
+    - value: |
+        \(6\) est un diviseur de \(b\) mais pas de \(a\).
+      correct: True
+
+    - value: |
+        \(84\) est un multiple de \(a\) et de \(b\).
+      correct: True
+
+explanations: |
+        Les diviseurs communs à \(a\) et à \(b\) sont : \(1\), \(2\), \(7\) et \(14\).
+        Le ppcm de \(a\) et \(b\) est \(84\).   
+        
+
+---
+author: Arnaud Bodin, Barnabé Croizat, Christine Sacré
+
+section: Arithmétique
+
+subsection: pgcd | Facile
+
+question: |
+        Quelles sont les valeurs qui correspondent à la division euclidienne \(a=bq+r\) de \(a\) par \(b\) ?
+
+answers: 
+    - value: |
+        \(a=48\), \(b=7\), \(q=6\), \(r=6\)
+      correct: True
+
+    - value: |
+        \(a=101\), \(b=11\), \(q=9\), \(r=2\)
+      correct: True
+
+    - value: |
+        \(a=56\), \(b=9\), \(q=5\), \(r=11\)
+      correct: False
+
+    - value: |
+        \(a=123\), \(b=10\), \(q=13\), \(r=-7\)
+      correct: False
+
+explanations: |
+        \(48 = 7 \times 6 + 6\) \\
+        \(101 = 11 \times 9 + 2\) \\
+        \(56 = 9 \times 6 + 2\). Attention \(56 = 9 \times 5 + 11\), mais on n'a pas \(0 \le 11 \le 9-1\), donc cette écriture n’est pas la division euclidienne de \(56\) par \(9\).\\  
+        \(123 = 10 \times 12 + 3\). Attention \(123 = 10 \times 13 + (-7)\), mais on n'a pas \(0 \le -7 \le 10-1\), donc cette écriture n’est pas la division euclidienne de \(123\) par \(10\).\\             
+        
+
+---
+author: Arnaud Bodin, Barnabé Croizat, Christine Sacré
+
+section: Arithmétique
+
+subsection: pgcd | Facile
+
+question: |
+        Quelles sont les affirmations vraies ?
+
+answers: 
+    - value: |
+        \(456\) est divisible par \(3\).
+      correct: True
+
+    - value: |
+        \(754\) est divisible par \(4\).
+      correct: False
+
+    - value: |
+        \(5552\) est divisible par \(5\).
+      correct: False
+
+    - value: |
+        \(987\) est divisible par \(9\).
+      correct: False
+
+explanations: |
+        Critère de divisibilité par \(3\) : la somme des chiffres est divisible par \(3\). \\
+        Critère de divisibilité par \(2\) : le dernier chiffre est pair. \\    
+        Pour décider si un entier est divisible par \(4\) : diviser l'entier par \(2\) et appliquer le critère de divisibilité par \(2\). \\  
+        Critère de divisibilité par \(5\) : le dernier chiffre est \(0\) ou \(5\). \\ 
+        Critère de divisibilité par \(9\) : la somme des chiffres est divisible par \(9\). \\                  
+        
+
+---
+author: Arnaud Bodin, Barnabé Croizat, Christine Sacré
+
+section: Arithmétique
+
+subsection: pgcd | Facile
+
+question: |
+        Quel est le reste \(r\) dans la division euclidienne de \(145\) par \(13\) ?
+
+answers: 
+    - value: |
+        \(r=0\)
+      correct: False
+
+    - value: |
+        \(r=2\)
+      correct: True
+
+    - value: |
+        \(r=7\)
+      correct: False
+
+    - value: |
+        \(r=-11\)
+      correct: False
+
+explanations: |
+        La division euclidienne de \(145\) par \(13\) nous donne l'écriture : \(145 = 13 \times 11 + 2\). Le reste \(r\) est donc \(2\).\\
+        Il est vrai que \(145 = 13 \times 12 - 11\), mais cela ne correspond pas à une division euclidienne puisque le reste \(r\) n'est pas compris entre \(0\) et \(13-1=12\).
+        
+
+---
+author: Arnaud Bodin, Barnabé Croizat, Christine Sacré
+
+section: Arithmétique
+
+subsection: pgcd | Moyen
+
+question: |
+        Soit \(a=bq+r\) la division euclidienne de \(a\) par \(b\).
+        Quelle condition définit le reste \(r\) ?
+
+answers: 
+    - value: |
+        \(0 \le r < a\)
+      correct: False
+
+    - value: |
+        \(0 \le r < b\)
+      correct: True
+
+    - value: |
+        \(0 \le r \le q\)
+      correct: False
+
+    - value: |
+        \(0 \le r < q\)
+      correct: False
+
+explanations: |
+        Dans la division euclidienne, on a \(0 \le r \le b-1\), c’est-à-dire \(0 \le r < b\) puisque \(r\) est un entier. 
+        Cela permet d'avoir l'unicité du quotient \(q\) et du reste \(r\).
+        
+
+---
+author: Arnaud Bodin, Barnabé Croizat, Christine Sacré
+
+section: Arithmétique
+
+subsection: pgcd | Moyen
+
+question: |
+        Pour \(a=220\) et \(b=60\), quelles sont les affirmations vraies ?
+
+answers: 
+    - value: |
+        \(\ppcm(a,b) = 440\).
+      correct: False
+
+    - value: |
+        \(440\) est un multiple commun à \(a\) et \(b\).
+      correct: False
+
+    - value: |
+        \(10\) est un diviseur commun à \(a\) et \(b\).
+      correct: True
+
+    - value: |
+        \(\pgcd(a,b) = 20\).
+      correct: True
+
+explanations: |
+        Le plus grand diviseur commun à \(a=220\) et \(b=60\) est \(\pgcd(220,60) = 20\) (on peut l'obtenir via l'algorithme d'Euclide, on en dressant les listes exhaustives des diviseurs communs à \(220\) et \(60\)). Puisque \(10\) est un diviseur de \(20\), \(10\) est bien un diviseur commun à \(a\) et \(b\) (ce qui se voit sur l'écriture des deux nombres : ils finissent par \(0\)).\\
+        En revanche \(440\) n'est pas un multiple de \(b=60\) (on a \(60 \times 7 = 420\) et \(60 \times 8 = 480\)). On peut d'ailleurs calculer que \(\ppcm(a,b) = \frac{a \times b}{\pgcd(a,b)} = 660\).
+        
+
+---
+author: Arnaud Bodin, Barnabé Croizat, Christine Sacré
+
+section: Arithmétique
+
+subsection: pgcd | Moyen
+
+question: |
+        Grâce à l'application de l'algorithme d'Euclide, on obtient pour \(a=630\) et \(b=165\) :
+
+answers: 
+    - value: |
+        \(\pgcd(a,b) = \pgcd(165,135)\)
+      correct: True
+
+    - value: |
+        \(\pgcd(a,b) = \pgcd(135,30)\)
+      correct: True
+
+    - value: |
+        \(\pgcd(a,b) = \pgcd(30,0)\)
+      correct: False
+
+    - value: |
+        \(\pgcd(a,b) = 15\)
+      correct: True
+
+explanations: |
+        L'algorithme d'Euclide nous donne :\\
+        \[ 630 = 165 \times 3 + 135 \]
+        \[ 165 = 135 \times 1 + 30 \]
+        \[ 135 = 30 \times 4 + \boxed{ \; 15 \; } \]
+        \[ 30 = 15 \times 2 + 0 \]
+        Ainsi on a :
+        \[ \pgcd(a,b) = \pgcd(165,135) = \pgcd(135,30) = \pgcd(30,15) = \pgcd(15,0) = 15 \]
+        En revanche, \( \pgcd(30,0) = 30 \neq \pgcd(a,b)\).
+        
+
+---
+author: Arnaud Bodin, Barnabé Croizat, Christine Sacré
+
+section: Arithmétique
+
+subsection: pgcd | Moyen
+
+question: |
+        Soit \(a>0\) un entier strictement positif dont le reste dans la division euclidienne par \(8\) est \(r=5\). Quelles sont les affirmations vraies ?
+
+answers: 
+    - value: |
+        \(a\) est pair.
+      correct: False
+
+    - value: |
+        \(a\) est impair.
+      correct: True
+
+    - value: |
+        \(a\) est nécessairement divisible par \(13\).
+      correct: False
+
+    - value: |
+        \((a-5)\) est un multiple de \(8\).
+      correct: True
+
+explanations: |
+        Puisque le reste dans la division euclidienne de \(a\) par \(8\) est \(5\), on peut écrire \( a = 8k + 5 \), avec \(k\) un nombre entier (positif car \(a > 0\)).\\
+        On peut réécrire \(a = 8k+5 = 2(4k+2) + 1\) : ainsi \(a\) est impair.\\
+        Pour \(k=0\), on a \(a=5\) qui n'est pas divisible par \(13\) (ou aussi pour \(k=2\) avec \(a = 21\) par exemple).\\
+        Puisqu'on a \((a-5) = 8k\), cela signifie que \((a-5)\) est bien un multiple de \(8\).
+        
+
+---
+author: Arnaud Bodin, Barnabé Croizat, Christine Sacré
+
+section: Arithmétique
+
+subsection: pgcd | Moyen
+
+question: |
+        Pour \(a=24\) et \(b=8\), on a :
+
+answers: 
+    - value: |
+        \(\ppcm(a,b) = 8\).
+      correct: False
+
+    - value: |
+        \(\ppcm(a,b) = 24\).
+      correct: True
+
+    - value: |
+        \(a\) est un multiple de \(b\).
+      correct: True
+
+    - value: |
+        \(a\) est dans la liste des diviseurs de \(b\).
+      correct: False
+
+explanations: |
+        \(a\) étant un multiple de \(b\) (on a \(24 = 8 \times 3\)), on a immédiatement \(\pgcd(a,b) = b\) et \(\ppcm(a,b) = a\).
+        
+
+---
+author: Arnaud Bodin, Barnabé Croizat, Christine Sacré
+
+section: Arithmétique
+
+subsection: pgcd | Difficile
+
+question: |
+        On considère \(a,b\) et \(d\) des entiers tels que \(d | a\) et \(d | b\).
+        Quelles sont les affirmations vraies ?
+
+answers: 
+    - value: |
+        \(d | a+b\)
+      correct: True
+
+    - value: |
+        \(d | a-b\)
+      correct: True
+
+    - value: |
+        \(d | a \times b\)
+      correct: True
+
+    - value: |
+        \(d | \frac{a}{b}\)
+      correct: False
+
+explanations: |
+        L'affirmation \(d | \frac{a}{b}\) est fausse et n'a même pas toujours de sens. Le reste est vrai.
+        
+
+---
+author: Arnaud Bodin, Barnabé Croizat, Christine Sacré
+
+section: Arithmétique
+
+subsection: pgcd | Difficile
+
+question: |
+        On considère \(a,b\) et \(n\) des entiers tels que \(a | n\) et \(b | n\).
+        Quelles sont les affirmations vraies ?
+
+answers: 
+    - value: |
+        \(a+b | n\)
+      correct: False
+
+    - value: |
+        \(a \times b | n\)
+      correct: False
+
+    - value: |
+        \(a+b | n^2\)
+      correct: False
+
+    - value: |
+        \(a \times b | n^2\)
+      correct: True
+
+explanations: |
+        Si \(a | n\) et \(b | n\) alors \(ab\) divise \(n \times n  = n^2\). Les autres affirmations sont fausses. Trouver des contre-exemples, du style : \(2|12\) et \(3|12\) mais \(2+3\) ne divise pas \(12\).
+        
+
+---
+author: Arnaud Bodin, Barnabé Croizat, Christine Sacré
+
+section: Arithmétique
+
+subsection: pgcd | Difficile
+
+question: |
+        Soit \(a_1\) un entier dont le reste dans la division euclidienne par \(5\) est \(r_1 = 2\). Soit \(a_2\) un entier dont le reste dans la division euclidienne par \(5\) est \(r_2 = 3\). Quelles sont alors les affirmations vraies ?
+
+answers: 
+    - value: |
+        Le reste de la division euclidienne de \(a_1 + a_2\) par \(5\) est \(0\).
+      correct: True
+
+    - value: |
+        Le reste de la division euclidienne de \(a_1 + a_2\) par \(5\) est \(5\).
+      correct: False
+
+    - value: |
+        Le reste de la division euclidienne de \(2a_1 + 2a_2\) par \(5\) est \(0\).
+      correct: True
+
+    - value: |
+        L'écriture décimale de \(2a_1 + 2a_2\) finit par le chiffre \(0\).
+      correct: True
+
+explanations: |
+        Les divisions euclidiennes par \(5\) nous donnent : \(a_1 = 5k_1 + 2\) et \(a_2 = 5k_2 + 3\). On a ainsi :
+        \[ a_1 + a_2 = 5(k_1+k_2) + 5 = 5(k_1+k_2+1) + 0 \]
+        La dernière écriture correspond bien à la division euclidienne de \(a_1 + a_2\) par \(5\) car le reste (c'est \(0\)) est bien compris entre \(0\) et \(4\).\\
+        De même, on calcule :
+        \[ 2a_1 + 2a_2 = 2 \times 5(k_1+k_2+1) = 5 (2k_1 + 2k_2 + 2) = 10 (k_1 + k_2 + 1) \]
+        Aussi \(2a_1 + 2a_2\) est un entier divisible par \(5\) et par \(10\), donc son écriture décimale se termine par \(0\).
+        
+
+---
+author: Arnaud Bodin, Barnabé Croizat, Christine Sacré
+
+section: Arithmétique
+
+subsection: pgcd | Difficile
+
+question: |
+        Soit \(a>0\) un entier impair qui est un multiple de \(3\). Quelles sont alors les affirmations vraies ?
+
+answers: 
+    - value: |
+        \(a\) est un multiple de \(6\).
+      correct: False
+
+    - value: |
+        L'écriture décimale de \(a\) finit nécessairement soit par \(7\) soit par \(9\).
+      correct: False
+
+    - value: |
+        \(\pgcd(a,3) = 3\).
+      correct: True
+
+    - value: |
+        \(\ppcm(a,3) = a\).
+      correct: True
+
+explanations: |
+        Les multiples positifs de \(3\) s'écrivent \(3N\), avec \(N\) un entier positif. Si \(N=2k\) est pair, alors \(3N = 6k\) est un entier pair. Donc \(a\), notre entier impair multiple de \(3\), s'écrit \(a = 3N\) avec \(N = 2k+1\) un nombre impair ; ou encore \(a = 3(2k+1) = 6k + 3\).\\
+        Le reste de la division euclidienne de \(a\) par \(6\) est \(3\). Donc \(a\) n'est pas un multiple de \(6\).\\
+        Pour \(k=2\) par exemple, on a \(a = 6 \times 2 + 3 = 15\) qui est un entier impair, multiple de \(3\), dont l'écriture décimale ne finit ni par \(7\) ni par \(9\).\\
+        La liste des diviseurs de \(3\) se réduit à \(1\) et \(3\). Puisque \(3\) divise \(a\), \(3\) est un multiple commun à \(3\) et \(a\) : on a donc \(\pgcd(a,3) = 3\). Par conséquent, on a aussi \(\ppcm(a,3) = a\) de sorte que \(\pgcd(a,3) \times \ppcm(a,3) = a \times 3\).
+        
+
+---
+author: Arnaud Bodin, Barnabé Croizat, Christine Sacré
+
+section: Arithmétique
+
+subsection: pgcd | Difficile
+
+question: |
+        Soient \(a\) et \(b\) deux entiers positifs tels que \(\pgcd(a,b) = 10\) et \(\ppcm(a,b) = 140\). Quelles sont les affirmations vraies ?
+
+answers: 
+    - value: |
+        \(\pgcd(2a,2b) = 20\)
+      correct: True
+
+    - value: |
+        \(\ppcm(2a,2b) = 70\)
+      correct: False
+
+    - value: |
+        \(\pgcd(2a,2b) = 10\)
+      correct: False
+
+    - value: |
+        \(\ppcm(2a,2b) = 280\)
+      correct: True
+
+explanations: |
+        On utilise la relation \(\pgcd(a,b) \times \ppcm(a,b) = a \times b\) pour obtenir \(ab = 10 \times 140 = 1400\).\\
+        On a alors \(\pgcd(2a,2b) = 2 \times \pgcd(a,b) = 2 \times 10 = 20\).\\
+        Mais on obtient aussi 
+        \[ \pgcd(2a, 2b) \times \ppcm(2a,2b) = (2a) \times (2b) = 4 \times ab = 5600\]
+        donc 
+        \[\ppcm(2a,2b) = \frac{5600}{\pgcd(2a,2b)} = \frac{5600}{20} = 280 \]
+        Remarquez qu'on a donc \(\ppcm(2a,2b) = 2 \times \ppcm(2a,2b)\), et plus généralement \(\ppcm(na,nb) = |n| \ppcm(a,b)\).
+        
+
+---
+author: Arnaud Bodin, Barnabé Croizat, Christine Sacré
+
+section: Arithmétique
+
+subsection: Théorème de Bézout | Facile
+
+question: |
+        Soient deux entiers \(a,b\) tels que \(\pgcd(a,b)=1\).
+        Quelles sont les affirmations vraies ?
+
+answers: 
+    - value: |
+        \(a\) et \(b\) sont des nombres premiers.
+      correct: False
+
+    - value: |
+        \(a\) et \(b\) sont des nombres premiers entre eux.
+      correct: True
+
+    - value: |
+        Il existe \(u,v\in\Zz\) tels que \(au+bv=1\).
+      correct: True
+
+    - value: |
+        Il existe \(u,v\in\Zz\) tels que \(au+bv=2\).
+      correct: True
+
+explanations: |
+        \(\pgcd(a,b)=1\) est la définition de   \(a\) et \(b\) sont des nombres premiers entre eux.
+        Le théorème de Bézout affirme qu'il existe \(u,v\in\Zz\) tels que \(au+bv=1\).
+        En multipliant cette égalité par \(2\), on obtient \(a(2u)+b(2v)=2\).
+        
+
+---
+author: Arnaud Bodin, Barnabé Croizat, Christine Sacré
+
+section: Arithmétique
+
+subsection: Théorème de Bézout | Facile
+
+question: |
+        Soient \(a,b,c\) des entiers tels que \(a | bc\).
+        Dans le lemme de Gauss, quelle est la condition pour pouvoir conclure que \(a|c\) ?
+
+answers: 
+    - value: |
+        \(\pgcd(a,b)=1\)
+      correct: True
+
+    - value: |
+        \(\pgcd(a,c)=1\)
+      correct: False
+
+    - value: |
+        \(\pgcd(b,c)=1\)
+      correct: False
+
+    - value: |
+        \(a\), \(b\) et \(c\) sont des nombres premiers.
+      correct: False
+
+explanations: |
+        Lemme de Gauss : si \(a | bc\) et \(\pgcd(a,b)=1\) alors \(a|c\).
+        
+
+---
+author: Arnaud Bodin, Barnabé Croizat, Christine Sacré
+
+section: Arithmétique
+
+subsection: Théorème de Bézout | Facile
+
+question: |
+        Soit \(a\) et \(b\) deux entiers tels que \(\pgcd(a,b) = 4\). Alors on peut trouver deux entiers \(u\) et \(v\) tels que :
+
+answers: 
+    - value: |
+        \(au-bv=2\)
+      correct: False
+
+    - value: |
+        \(au+bv=2\)
+      correct: False
+
+    - value: |
+        \(au-bv=4\)
+      correct: True
+
+    - value: |
+        \(au+bv=12\)
+      correct: True
+
+explanations: |
+        Une égalité \(au \pm bv = 2\) nous indiquerait que tout diviseur de \(a\) et \(b\) diviserait \(2\) donc \(\pgcd(a,b) = 1\) ou \(2\), ce qui n'est pas le cas ici.\\
+        Le théorème de Bézout nous garantit l'existence de deux entiers \(U\) et \(V\) tels que \(aU + bV = 4\). Si l'on prend \(v=-V\), on obtient \(au-bv=4\). Si l'on multiplie l'égalité de Bézout par \(3\), on a alors \(a \times (3U) + b \times (3V) = 3 \times 4 = 12\).
+        
+
+---
+author: Arnaud Bodin, Barnabé Croizat, Christine Sacré
+
+section: Arithmétique
+
+subsection: Théorème de Bézout | Moyen
+
+question: |
+        Soient deux entiers positifs \(a,b\), on calcule le pgcd de \(a\) et \(b\) par l'algorithme d'Euclide.
+        La première étape est d'écrire la division euclidienne de \(a\) par \(b\) : \(a=bq+r\).
+        Quelle est la second étape ?
+
+answers: 
+    - value: |
+        La division de \(a\) par \(r\).
+      correct: False
+
+    - value: |
+        La division de \(b\) par \(r\).
+      correct: True
+
+    - value: |
+        La division de \(q\) par \(r\).
+      correct: False
+
+    - value: |
+        Cela dépend des valeurs de \(a\) et \(b\).
+      correct: False
+
+explanations: |
+        Une conséquence de l’égalité est que \(\pgcd(a,b)=\pgcd(b,r)\). On remplace donc \(a\) par \(b\) et \(b\) par \(r\) dans l’étape suivante, c’est-à-dire qu’on fait la division euclidienne de \(b\) par \(r\).      
+        
+
+---
+author: Arnaud Bodin, Barnabé Croizat, Christine Sacré
+
+section: Arithmétique
+
+subsection: Théorème de Bézout | Moyen
+
+question: |
+        Soient deux entiers positifs \(a,b\) et \(d=\pgcd(a,b)\).
+        Quelles sont les affirmations vraies ?
+
+answers: 
+    - value: |
+        Il existe \(u,v\in\Zz\) uniques tels que \(au+bv=d\).
+      correct: False
+
+    - value: |
+        Il existe \(u,v\in\Zz\) tels que \(au+bv=d\).
+      correct: True
+
+    - value: |
+        Il existe \(u,v\in\Nn\) uniques tels que \(au+bv=d\).
+      correct: False
+
+    - value: |
+        Il existe \(u,v\in\Nn\) tels que \(au+bv=d\).
+      correct: False
+
+explanations: |
+        Il existe \(u,v\in\Zz\) tels que \(au+bv=d\). \(u\) et \(v\) ne sont pas uniques. Comme \(a,b,d>0\), \(d \le a\) et \(d \le b\) alors soit \(u\) soit \(v\) sera négatif.         
+        
+
+---
+author: Arnaud Bodin, Barnabé Croizat, Christine Sacré
+
+section: Arithmétique
+
+subsection: Théorème de Bézout | Moyen
+
+question: |
+        Pour \(a=453\) et \(b=201\), l'algorithme d'Euclide (étendu) fournit des coefficients de Bézout \(u\) et \(v\) tels que \(au+bv=\pgcd(a,b)\) avec :
+
+answers: 
+    - value: |
+        \(u=4\), \(v=-9\), \(\pgcd(a,b)=1\).
+      correct: False
+
+    - value: |
+        \(u=-12\), \(v=27\), \(\pgcd(a,b) = 51\).
+      correct: False
+
+    - value: |
+        \(u=1\), \(v=-2\), \(\pgcd(a,b)=51\)
+      correct: False
+
+    - value: |
+        \(u=4\), \(v=-9\), \(\pgcd(a,b)=3\).
+      correct: True
+
+explanations: |
+        L'algorithme d'Euclide nous fournit :
+        \[ 453 = 2 \times 201 + 51\]
+        \[201 = 3 \times 51 + 48 \]
+        \[ 51 = 1 \times 48 + 3\]
+        \[48 = 16 \times 3 + 0 \]
+        Ainsi on a \(\pgcd(a,b) = 3\). En remontant cet algorithme, on obtient :
+        \[ 3 = 51 - 48 = 201 \times (-1) + 51 \times 4 = 453 \times 4 + 201 \times (-9)\] 
+        
+
+---
+author: Arnaud Bodin, Barnabé Croizat, Christine Sacré
+
+section: Arithmétique
+
+subsection: Théorème de Bézout | Moyen
+
+question: |
+        Pour les entiers \(a,b\) suivants, les \(u,v\) donnés sont-ils des coefficients de Bézout, c'est-à-dire tels que \(au+bv=\pgcd(a,b)\) ?
+
+answers: 
+    - value: |
+        \(a=7\), \(b=11\), \(u=2\), \(v=-3\)
+      correct: False
+
+    - value: |
+        \(a=20\), \(b=55\), \(u=6\), \(v=-2\)
+      correct: False
+
+    - value: |
+        \(a=28\), \(b=12\), \(u=1\), \(v=-2\)
+      correct: True
+
+    - value: |
+        \(a=36\), \(b=15\), \(u=-2\), \(v=5\)
+      correct: True
+
+explanations: |
+        Pour \(a=7\), \(b=11\), \(u=2\), \(v=-3\), on a \(\pgcd(a,b)=1\) et \(au+bv= -19 \neq 1\). \\
+        Pour \(a=20\), \(b=55\), \(u=6\), \(v=-2\), on a \(\pgcd(a,b)=5\) et \(au+bv= 10 \neq5\). \\
+        Pour \(a=28\), \(b=12\), \(u=1\), \(v=-2\), on a \(\pgcd(a,b)=4\) et \(au+bv=4\). \\
+        Pour \(a=36\), \(b=15\), \(u=-2\), \(v=5\), on a \(\pgcd(a,b)=3\) et \(au+bv=3\). \\  
+        
+
+---
+author: Arnaud Bodin, Barnabé Croizat, Christine Sacré
+
+section: Arithmétique
+
+subsection: Théorème de Bézout | Moyen
+
+question: |
+        Pour \(a=41\) et \(b=7\), on a notamment l'égalité \(a \times (-3) + b \times 18 = 3\). Que peut-on en conclure ?
+
+answers: 
+    - value: |
+        \(\pgcd(a,b)=3\).
+      correct: False
+
+    - value: |
+        \(\pgcd(a,b)\) est un diviseur de \(3\).
+      correct: True
+
+    - value: |
+        Comme \(3\) ne divise pas \(7\) alors \(a\) et \(b\) sont premiers entre eux.
+      correct: True
+
+    - value: |
+        \(-3\) et \(18\) sont premiers entre eux.
+      correct: False
+
+explanations: |
+        Comme \(\pgcd(a,b)\) divise \(a\) et \(b\), il divise aussi \(a \times (-3) + b \times 18 = 3\). Donc \(\pgcd(a,b)\) est un diviseur de \(3\) : c'est donc soit \(3\), soit \(1\). Mais puisque \(3\) ne divise pas \(b\) (ni \(a\) d'ailleurs), on a donc \(\pgcd(a,b)=1\) : \(a\) et \(b\) sont premiers entre eux.\\
+        Enfin, les nombres \(-3\) et \(18\) sont divisibles par \(3\).
+        
+
+---
+author: Arnaud Bodin, Barnabé Croizat, Christine Sacré
+
+section: Arithmétique
+
+subsection: Théorème de Bézout | Moyen
+
+question: |
+        Soit deux nombres entiers \(a\) et \(b\) tels que \(5a^2 - 4b^2 = 1\). Quelles sont les affirmations vraies ?
+
+answers: 
+    - value: |
+        \(\pgcd(a^2,b^2) = 1\).
+      correct: True
+
+    - value: |
+        \(\pgcd(5a,4b) = 1\).
+      correct: True
+
+    - value: |
+        \(5\) divise \(4b^2\).
+      correct: False
+
+    - value: |
+        \(4\) divise \(5a^2-1\).
+      correct: True
+
+explanations: |
+        L'égalité fournie peut s'écrire sous les formes \(5 \times a^2 + (-4) \times b^2 = 1 = a \times (5a) + (-b) \times 4b = 1\). Ce sont notamment des identités de Bézout pour les couples \((a^2,b^2)\) et \((5a,4b)\) qui sont donc premiers entre eux.\\
+        Si \(5\) était un diviseur de \(4b^2\), il diviserait \((5a^2 - 4b^2)\) et donc \(1\) ce qui est impossible.\\
+        Enfin ayant \(5a^2 - 1 = 4 b^2\), le nombre \(5a^2-1\) est bien un multiple de \(4\).
+        
+
+---
+author: Arnaud Bodin, Barnabé Croizat, Christine Sacré
+
+section: Arithmétique
+
+subsection: Théorème de Bézout | Difficile
+
+question: |
+        Quelles sont les affirmations vraies concernant l'algorithme d'Euclide ?
+
+answers: 
+    - value: |
+        Il se peut que le processus n'aboutisse pas à cause d'un nombre infini de divisions à effectuer.
+      correct: False
+
+    - value: |
+        Il se peut que le processus ne fournisse pas le pgcd correct.
+      correct: False
+
+    - value: |
+        Le pgcd est le dernier reste non nul.
+      correct: True
+
+    - value: |
+        L'algorithme étendu permet en plus de calculer des coefficients de Bézout.
+      correct: True
+
+explanations: |
+        L'algorithme d'Euclide fournit un résultat \emph{correct} en un nombre \emph{fini} d'étapes. La remontée de l'algorithme d'Euclide permet de calculer des coefficients de Bézout.
+        
+
+---
+author: Arnaud Bodin, Barnabé Croizat, Christine Sacré
+
+section: Arithmétique
+
+subsection: Théorème de Bézout | Difficile
+
+question: |
+        Soit \(n\) un entier tel que \(5n\) soit un multiple de \(7\). Quelles sont alors les affirmations vraies ?
+
+answers: 
+    - value: |
+        \(n\) est un multiple de \(7\).
+      correct: True
+
+    - value: |
+        \(5\) divise \(7n\).
+      correct: False
+
+    - value: |
+        \(7\) divise \(n\).
+      correct: True
+
+    - value: |
+        \(35\) divise \(n\).
+      correct: False
+
+explanations: |
+        D'après le lemme de Gauss, puisque \(7 | 5n\) et que \(\pgcd(5,7) = 1\), on a \( 7 | n \) : ceci revient à dire que \(n\) est un multiple de \(7\).\\
+        En revanche si l'on prend \(n=7\), on constate que \(5n = 35\) est bien multiple de \(7\) mais que \(5\) ne divise pas \(7n=49\) et que \(35\) ne divise pas \(n=7\).
+        
+
+---
+author: Arnaud Bodin, Barnabé Croizat, Christine Sacré
+
+section: Arithmétique
+
+subsection: Théorème de Bézout | Difficile
+
+question: |
+        Soient \(5\) entiers relatifs \(a,b,c,u,v\) tels que \(au+bv=1\) et \(a | bc\). Quelles sont alors les affirmations vraies ?
+
+answers: 
+    - value: |
+        \(\pgcd(a,c)=1\).
+      correct: False
+
+    - value: |
+        \(\pgcd(a,b)=1\).
+      correct: True
+
+    - value: |
+        \(a|c\).
+      correct: True
+
+    - value: |
+        \(\pgcd(a,c) = |a|\).
+      correct: True
+
+explanations: |
+        \(au+bv=1\) est une identité de Bézout qui garantit que \(\pgcd(a,b)=1\). D'après le lemme de Gauss, puisque \(a|bc\), on a alors \(a|c\).\\
+        Puisque \(a|c\), \(|a|\) est un diviseur de \(c\). Or c'est le plus grand diviseur de \(a\) : donc \(|a| = \pgcd(a,c)\).\\
+        Un contre-exemple pour établir que \(\pgcd(a,c)\) n'est pas nécessairement égal à \(1\) peut par exemple être \(a=5\), \(b=7\) (bien premiers entre eux) et \(c=10\). On a bien \(a | bc \) mais \(\pgcd(a,c) = 5\). Plus généralement, on peut toujours respecter la condition \(a | bc\) avec \(c=a\), ce qui contredit \(\pgcd(a,c)=1\) dès que \(a\) n'est pas égal à \(\pm 1\).
+        
+
+---
+author: Arnaud Bodin, Barnabé Croizat, Christine Sacré
+
+section: Arithmétique
+
+subsection: Nombres premiers | Facile
+
+question: |
+        Les entiers suivants sont-ils des nombres premiers ?
+
+answers: 
+    - value: |
+        \(107\)
+      correct: True
+
+    - value: |
+        \(113\)
+      correct: True
+
+    - value: |
+        \(145\)
+      correct: False
+
+    - value: |
+        \(153\)
+      correct: False
+
+explanations: |
+        \(107\) et \(113\) sont des nombres premiers ;
+        \(145 = 5 \times 29\) ;  \(153 = 3^2 \times 17\).
+        
+
+---
+author: Arnaud Bodin, Barnabé Croizat, Christine Sacré
+
+section: Arithmétique
+
+subsection: Nombres premiers | Facile
+
+question: |
+        Quelles sont les affirmations vraies ?
+
+answers: 
+    - value: |
+        Tout nombre impair supérieur à \(3\) est premier.
+      correct: False
+
+    - value: |
+        Tout nombre premier supérieur à \(3\) est impair.
+      correct: True
+
+    - value: |
+        Il existe une infinité de nombres premiers impairs.
+      correct: True
+
+    - value: |
+        Il existe une infinité de nombres premiers pairs.
+      correct: False
+
+explanations: |
+        Par exemple \(9\) est un nombre impair qui n'est pas premier. 
+        Le seul nombre premier pair est \(2\), tous les autres sont impairs et il y en a une infinité.     
+        
+
+---
+author: Arnaud Bodin, Barnabé Croizat, Christine Sacré
+
+section: Arithmétique
+
+subsection: Nombres premiers | Facile
+
+question: |
+        Les entiers suivants sont-ils des nombres premiers ?
+
+answers: 
+    - value: |
+        \(161\)
+      correct: False
+
+    - value: |
+        \(169\)
+      correct: False
+
+    - value: |
+        \(171\)
+      correct: False
+
+    - value: |
+        \(179\)
+      correct: True
+
+explanations: |
+        On a \(161 = 7 \times 23\), \(169 = 13^2\) et \(171\) est divisible par \(9\) (car la somme de ses chiffres fait \(9\)).\\
+        En revanche, \(179\) n'est pas divisible par \(2,3, 5, 7, 11, 13\) ce qui garantit sa primalité. 
+        
+
+---
+author: Arnaud Bodin, Barnabé Croizat, Christine Sacré
+
+section: Arithmétique
+
+subsection: Nombres premiers | Moyen
+
+question: |
+        Quelles sont les affirmations vraies ?
+
+answers: 
+    - value: |
+        La somme de deux nombres premiers \(\ge3\) n'est jamais un nombre premier.
+      correct: True
+
+    - value: |
+        Le produit de deux nombres premiers \(\ge3\) n'est jamais un nombre premier.
+      correct: True
+
+    - value: |
+        Il existe un nombre premier \(p\ge3\) tel que \(p+1\) soit aussi premier.
+      correct: False
+
+    - value: |
+        Il existe un nombre premier \(p\ge3\) tel que \(p+2\) soit aussi premier.
+      correct: True
+
+explanations: |
+        Le produit de deux nombres premiers n'est jamais un nombre premier (par définition de ce qu'est un nombre premier).
+        Pour la somme, cela peut arriver, par exemple \(2+3=5\), mais pour deux nombres premiers \(\ge3\), ils sont impairs, donc la somme est paire et n'est pas un nombre premier.
+        De même si \(p\ge3\) est premier, il est impair, donc \(p+1\) est pair et n'est pas premier.
+        Par contre pour \(p=11\) alors \(p+2=13\) est aussi premier, d'autres exemples sont \(17\) et \(19\) ou bien \(101\) et \(103\).
+        
+
+---
+author: Arnaud Bodin, Barnabé Croizat, Christine Sacré
+
+section: Arithmétique
+
+subsection: Nombres premiers | Moyen
+
+question: |
+        Soient \(p\) un nombre premier et \(a,b\) des entiers avec \(p | ab\).
+        Par application du lemme d'Euclide, quelles sont les affirmations vraies ?
+
+answers: 
+    - value: |
+        \(p\) divise \(a\) et \(p\) divise \(b\).
+      correct: False
+
+    - value: |
+        \(p\) divise \(a\) ou \(p\) divise \(b\).
+      correct: True
+
+    - value: |
+        \(p\) divise \(a\) ou \(p\) divise \(b\), mais pas les deux en même temps.
+      correct: False
+
+    - value: |
+        \(p\) ne divise ni \(a\), ni \(b\).
+      correct: False
+
+explanations: |
+        Lemme d'Euclide : Si \(p\) premier et \(p | ab\), alors \(p|a\) ou \(p|b\).
+        Les autres affirmations sont fausses. Voici des contre-exemples :
+        \(2 | (3 \times 4)\) mais \(2\) ne divise pas \(3\), mais divise bien \(4\) ; 
+        \(2 | (4 \times 6)\) et \(2|4\) et \(2|6\).        
+        
+
+---
+author: Arnaud Bodin, Barnabé Croizat, Christine Sacré
+
+section: Arithmétique
+
+subsection: Nombres premiers | Moyen
+
+question: |
+        Soit \(n\) un entier tel que \(n^2-1\) est un multiple de \(11\). Quelles sont les affirmations vraies ?
+
+answers: 
+    - value: |
+        \(11\) divise \(n-1\).
+      correct: False
+
+    - value: |
+        \(11\) divise \(n+1\).
+      correct: False
+
+    - value: |
+        (\(11\) divise \(n-1\)) ou (\(11\) divise \(n+1\)).
+      correct: True
+
+    - value: |
+        (\(11\) divise \(n-1\)) et (\(11\) divise \(n+1\)).
+      correct: False
+
+explanations: |
+        \(11\) est premier et divise \(n^2-1 = (n-1)(n+1)\). D'après le lemme d'Euclide, soit \(11 | (n-1)\), soit \(11 | (n+1)\).\\
+        Pour \(n=10\), on a \(11 | (10^2-1)\) mais \(11\) ne divise pas \(10-1=9\).\\
+        Pour \(n=12\), on a \(11 | 12^2 - 1\) mais \(11\) ne divise pas \(12+1=13\).\\
+        Et si \(11\) divisait \(n-1\) et \(n+1\) alors \(11\) diviserait  \(n+1-(n-1) = 2\).
+        
+
+---
+author: Arnaud Bodin, Barnabé Croizat, Christine Sacré
+
+section: Arithmétique
+
+subsection: Nombres premiers | Moyen
+
+question: |
+        À l'aide d'une calculatrice, quelle est l'écriture de la décomposition en produit de facteurs premiers de \(N = 111 \, 111\) ?
+
+answers: 
+    - value: |
+        \(N = 11 \times 10\,101\).
+      correct: False
+
+    - value: |
+        \(N = 3 \times 11 \times 3367\).
+      correct: False
+
+    - value: |
+        \(N = 7 \times 33 \times 481\).
+      correct: False
+
+    - value: |
+        \(N = 3 \times 7 \times 11 \times 13 \times3713\).
+      correct: True
+
+explanations: |
+        Les entiers \(10\,101\), \(3367\) et \(481\) sont des multiples de \(13\) !
+        
+
+---
+author: Arnaud Bodin, Barnabé Croizat, Christine Sacré
+
+section: Arithmétique
+
+subsection: Nombres premiers | Moyen
+
+question: |
+        Soit \(p \geq 3\) un nombre premier et \( p = 4q + r\) le résultat de sa division euclidienne par \(4\). On peut alors avoir :
+
+answers: 
+    - value: |
+        \(r=0\)
+      correct: False
+
+    - value: |
+        \(r=1\)
+      correct: True
+
+    - value: |
+        \(r=2\)
+      correct: False
+
+    - value: |
+        \(r=3\)
+      correct: True
+
+explanations: |
+        Un nombre premier \(\geq 3\) est nécessairement impair. Ceci exclut donc les possibilité \(r=0\) et \(r=2\) qui correspondent à des nombres pairs.\\
+        On peut à titre d'exemple obtenir pour \(p=3\) que \(r=3\) ; et pour \(p=5\) que  \(r=1\).
+        
+
+---
+author: Arnaud Bodin, Barnabé Croizat, Christine Sacré
+
+section: Arithmétique
+
+subsection: Nombres premiers | Moyen
+
+question: |
+        Soit \(p\) un nombre premier tel que \(10 < p < 100\). On note \(A\) le chiffre des dizaines et \(B\) le chiffre des unités de l'écriture décimale de \(p\). Quelles sont les affirmations vraies ?
+
+answers: 
+    - value: |
+        \(A\) peut être pair.
+      correct: True
+
+    - value: |
+        \(B\) peut être pair.
+      correct: False
+
+    - value: |
+        On peut avoir \(A = B\).
+      correct: True
+
+    - value: |
+        On peut avoir \(B = 9 - A\).
+      correct: False
+
+explanations: |
+        Pour \(p = 23\) qui est premier, on a bien \(A = 2\) qui est pair.\\ 
+        Si le chiffre des unités \(B\) est pair, alors \(p\) est pair ce qui est impossible pour un nombre premier \(\geq 3\).\\    
+        Pour \(p=11\) premier, on a bien \(A=B\) (les autres nombres avec deux chiffres identiques sont justement les multiples de \(11\), et ne sont donc pas premiers).\\    
+        Si \(B = 9-A\), alors la somme des chiffres de \(p\) vaut \(A + B = 9\) : ainsi \(p\) est divisible par \(9\), ce qui contredit sa primalité.
+        
+
+---
+author: Arnaud Bodin, Barnabé Croizat, Christine Sacré
+
+section: Arithmétique
+
+subsection: Nombres premiers | Difficile
+
+question: |
+        Les entiers suivants ont été factorisés correctement. 
+        Quelles sont les écritures qui sont des décompositions en facteurs premiers ?
+
+answers: 
+    - value: |
+        \(3\,025 = 1^3 \times 5^2 \times 11^2\)
+      correct: False
+
+    - value: |
+        \(1\,836 = 2^2 \times 3 \times 3^2 \times 17\)
+      correct: False
+
+    - value: |
+        \(1\,444\,716 = 2^2 \times 7^3 \times 9^2 \times13\)
+      correct: False
+
+    - value: |
+        \(13\,915 = 5 \times 11^2 \times 23\)
+      correct: True
+
+explanations: |
+        Chaque facteur doit être de la forme \(p_i^{\alpha_i}\) avec \(p_i\) un nombre premier (donc pas \(1\) ni \(9\)) et \(\alpha_i>0\). En plus les \(p_i\) doivent être deux à deux distincts. Avec ces contraintes la décomposition est unique (à l'ordre des facteurs près).
+        
+
+---
+author: Arnaud Bodin, Barnabé Croizat, Christine Sacré
+
+section: Arithmétique
+
+subsection: Nombres premiers | Difficile
+
+question: |
+        Soient \(a = 5^3 \times 11^2 \times 13^5 \times 19\) 
+        et \(b = 5^5 \times 7^4 \times 11 \times 19\)  
+        Quelles sont les affirmations vraies ?
+
+answers: 
+    - value: |
+        \(\pgcd(a,b) = 5^3 \times 7^4 \times 11 \times 13^5 \times 19\)
+      correct: False
+
+    - value: |
+        \(\pgcd(a,b) = 5 \times 11 \times 19\)
+      correct: False
+
+    - value: |
+        \(\ppcm(a,b) = 5^5 \times 7^4 \times 11^2 \times 13^5 \times 19\)
+      correct: True
+
+    - value: |
+        \(\ppcm(a,b) = 5^5 \times 11^2 \times 19\)
+      correct: False
+
+explanations: |
+        Pour le pgcd, on garde le plus petit exposant des décompositions de \(a\) et \(b\) ; pour le ppcm, on garde le plus grand exposant. \\
+        \(\pgcd(a,b) = 5^3 \times 11 \times 19\) \\         
+        \(\ppcm(a,b) = 5^5 \times 7^4 \times 11^2 \times 13^5 \times 19\)   
+        
+
+---
+author: Arnaud Bodin, Barnabé Croizat, Christine Sacré
+
+section: Arithmétique
+
+subsection: Nombres premiers | Difficile
+
+question: |
+        Soit \(a = 79 \, 475 = 5^2 \times 11 \times 17^2\). Quelles sont les affirmations vraies ?
+
+answers: 
+    - value: |
+        \(\pgcd(a,75) = 3 \times 5^2\)
+      correct: False
+
+    - value: |
+        \(\pgcd(a,75) = 5^2\)
+      correct: True
+
+    - value: |
+        \(\ppcm(a,75) = 3 \times 11 \times 17^2\)
+      correct: False
+
+    - value: |
+        \(75 | a\)
+      correct: False
+
+explanations: |
+        On a \(75 = 3 \times 5^2\). En utilisant les décompositions en produits de facteurs premiers, on obtient :
+        \[ \pgcd(a,75) = 5^2 = 25 \qquad ; \qquad \ppcm(a,75) = 3 \times 5^2 \times 11 \times 17^2\]
+        Enfin \(a\) n'est pas divisible par \(3\) donc il n'est pas divisible par \(75 = 3 \times 25\).
+        
+
+---
+author: Arnaud Bodin, Barnabé Croizat, Christine Sacré
+
+section: Arithmétique
+
+subsection: Nombres premiers | Difficile
+
+question: |
+        Soit \(p \geq 5\) un nombre premier et \(N = (p+3)^2 - p^2\). Quelles sont les affirmations vraies ?
+
+answers: 
+    - value: |
+        \(2 | N\).
+      correct: False
+
+    - value: |
+        \(3 | N\).
+      correct: True
+
+    - value: |
+        \(6 | N\).
+      correct: False
+
+    - value: |
+        \(p\) ne divise pas \(N\).
+      correct: True
+
+explanations: |
+        En développant, on constate que \(N = 6p+9 = 6(p+1)+3 =  3(2p+3)\). \(N\) est donc un multiple de \(3\), non divisible par \(6\) (le reste dans la division euclidienne par \(6\) est \(3\)). \(N\) est impair (produit de deux nombres impairs) et n'est donc pas divisible par \(2\).\\
+        Enfin, si \(p|N\), on a \(p | (6p+9)\) et donc \(p|9\). Puisque \(p\) est premier, cela signifie que \(p=3\) ce qui est impossible car \(p \geq 5\).
+        
+
+---
+author: Arnaud Bodin, Barnabé Croizat, Christine Sacré
+
+section: Arithmétique
+
+subsection: Congruences | Facile
+
+question: |
+        Quelles sont les affirmations vraies ?
+
+answers: 
+    - value: |
+        \(31 \equiv 6 \; [12]\)
+      correct: False
+
+    - value: |
+        \(42 \equiv 16 \; [13]\)
+      correct: True
+
+    - value: |
+        \(25 \equiv -11 \; [14]\)
+      correct: False
+
+    - value: |
+        \(158 \equiv 8 \; [15]\)
+      correct: True
+
+explanations: |
+        \(12\) ne divise pas \(31-6 =25\) ; en fait \(31 \equiv 7 \; [12]\). \\
+        \(13\) divise \(42-16=26\) ; en fait \(42 \equiv 16 \equiv 3 \; [13]\). \\
+        \(14\) ne divise pas \(25-(-11)=36\) ; en fait \(25 \equiv +11  \equiv -3 \; [14]\). \\
+        \(15\) divise \(158-8=150\) ;  en fait \(158 = 15\times10+8 \equiv 8 \; [15]\).
+        
+
+---
+author: Arnaud Bodin, Barnabé Croizat, Christine Sacré
+
+section: Arithmétique
+
+subsection: Congruences | Facile
+
+question: |
+        Quelles sont les affirmations vraies ?
+
+answers: 
+    - value: |
+        \(456\,789 \equiv 0 \; [2]\)
+      correct: False
+
+    - value: |
+        \(43\,210 \equiv 0 \; [5]\)
+      correct: True
+
+    - value: |
+        \(23\,769 \equiv 3 \; [9]\)
+      correct: False
+
+    - value: |
+        \(10\,326 \equiv 8 \; [10]\)
+      correct: False
+
+explanations: |
+        \(456\,789\) est impair, donc n’est pas congru à \(0\) modulo \(2\). \\
+        \(43\,210\) est divisible par \(5\) donc congru à \(0\) modulo \(5\). \\
+        \(23\,769\) est divisible par \(9\) (la somme des chiffres est divisible par \(9\)) donc congru à \(0\) modulo \(9\). \\
+        \(10\,326 \equiv 6 \; [10]\), réduire modulo \(10\) c'est garder le chiffre des unités.
+        
+
+---
+author: Arnaud Bodin, Barnabé Croizat, Christine Sacré
+
+section: Arithmétique
+
+subsection: Congruences | Facile
+
+question: |
+        Si \(x \equiv 2 \; [5]\), alors on a :
+
+answers: 
+    - value: |
+        \(x^2 \equiv 2x \; [5]\)
+      correct: True
+
+    - value: |
+        \(3x \equiv -1 \; [5]\)
+      correct: False
+
+    - value: |
+        \(x+1 \equiv 3 \; [5]\)
+      correct: True
+
+    - value: |
+        \(10x \equiv 2 \; [5]\)
+      correct: False
+
+explanations: |
+        D'après les propriétés arithmétiques des congruences et notre congruence initiale \(x \equiv 2 \;[5]\) :\\
+        en ajoutant \(1\) : \(x+1 \equiv 2+1 = 3 \; [5]\),\\
+        en multipliant par \(3\) : \(3x \equiv 3 \times 2 = 6 \equiv 1 \;[5]\),\\
+        en multipliant par \(10\) : \(10x \equiv 10 \times 2 = 20 \equiv 0 \;[5]\),\\
+        Enfin on calcule : \(x^2 \equiv 2 \times 2 \equiv 2x \;[5]\).
+        
+
+---
+author: Arnaud Bodin, Barnabé Croizat, Christine Sacré
+
+section: Arithmétique
+
+subsection: Congruences | Facile
+
+question: |
+        Parmi les nombres \(n\) ci-dessous, lequel vérifie à la fois \(n \equiv 5 \;[14]\) et \(n \equiv 1 \;[8]\) ?
+
+answers: 
+    - value: |
+        \(n=47\)
+      correct: False
+
+    - value: |
+        \(n=57\)
+      correct: False
+
+    - value: |
+        \(n=89\)
+      correct: True
+
+    - value: |
+        \(n=103\)
+      correct: False
+
+explanations: |
+        On a bien \(89 \equiv 5 \;[14]\) (\(89 = 14 \times 6 + 5\)) et \(89 \equiv 1 \; [8]\) (\(89 = 8 \times 11 + 1\)).\\
+        On calcule que \(47 \equiv 7 \;[8]\), \(57 \equiv 1 \; [14]\) et \(103 \equiv 7 \;[8]\).
+        
+
+---
+author: Arnaud Bodin, Barnabé Croizat, Christine Sacré
+
+section: Arithmétique
+
+subsection: Congruences | Moyen
+
+question: |
+        Soient \(a\equiv 2 \;[13]\) et \(b \equiv 7 \; [13]\).
+        Quelles sont les affirmations vraies ?
+
+answers: 
+    - value: |
+        \(a+b \equiv 9 \;[13]\)
+      correct: True
+
+    - value: |
+        \(ab \equiv 1 \; [13]\)
+      correct: True
+
+    - value: |
+        \(a^2 \equiv -9 \;[13]\)
+      correct: True
+
+    - value: |
+        \(b^3 \equiv 5 \;[13]\)
+      correct: True
+
+explanations: |
+        Tout est vrai ! Modulo \(13\), on a bien : 
+        \[a+b = 2+7 = 9 \equiv 9,\]
+        \[ab = 2 \times 7 = 14 \equiv 1,\]
+        \[a^2 = 2^2 = 4 \equiv -9,\]
+        \[b^3 = 7^3 = 343 \equiv 5.\]
+        
+
+---
+author: Arnaud Bodin, Barnabé Croizat, Christine Sacré
+
+section: Arithmétique
+
+subsection: Congruences | Moyen
+
+question: |
+        Soient \(a\equiv b \;[n]\) et \(c \equiv d \; [n]\).
+        Quelles sont les affirmations vraies ?
+
+answers: 
+    - value: |
+        \(a+b \equiv c+d \;[n]\)
+      correct: False
+
+    - value: |
+        \(a+c \equiv b+d \;[n]\)
+      correct: True
+
+    - value: |
+        \(a^2 \equiv b^2 \;[n]\)
+      correct: True
+
+    - value: |
+        \(c^2 \equiv d^2 \;[n]\)
+      correct: True
+
+explanations: |
+        \(a+c \equiv b+d \;[n]\) et  \(a^k \equiv b^k \;[n]\) et aussi \(c^k \equiv d^k \;[n]\).
+        
+
+---
+author: Arnaud Bodin, Barnabé Croizat, Christine Sacré
+
+section: Arithmétique
+
+subsection: Congruences | Moyen
+
+question: |
+        Soit \(n\) un entier premier avec \(3\). On peut alors affirmer :
+
+answers: 
+    - value: |
+        \( 2n \equiv 1 \;[3]\)
+      correct: False
+
+    - value: |
+        \(2n \equiv -1\; [3]\)
+      correct: False
+
+    - value: |
+        \(n^2 \equiv 1 \;[3]\)
+      correct: True
+
+    - value: |
+        \(n^2 \equiv -1 \;[3]\)
+      correct: False
+
+explanations: |
+        Puisque \(n\) n'est pas un multiple de \(3\), on a soit \(n \equiv 1 \;[3]\) (cas 1) soit \(n \equiv 2 \equiv -1 \;[3]\) (cas 2). Dans le cas 1, on a \(2n \equiv 2 \equiv -1 \;[3]\), et dans le cas 2 on a \(2n \equiv -2 \equiv 1 \; [3]\).\\
+        Dans les deux cas, on aura \(n^2 \equiv 1 \; [3]\).
+        
+
+---
+author: Arnaud Bodin, Barnabé Croizat, Christine Sacré
+
+section: Arithmétique
+
+subsection: Congruences | Moyen
+
+question: |
+        Soit \(k\) un entier et \(N = 5k^2-10k+4\). On peut affirmer :
+
+answers: 
+    - value: |
+        \(N \equiv 4 \;[5]\)
+      correct: True
+
+    - value: |
+        \(N \equiv 5 \; [5]\)
+      correct: False
+
+    - value: |
+        \(N \equiv 5k^2 \;[2]\)
+      correct: True
+
+    - value: |
+        \(N \equiv 1 \;[2]\)
+      correct: False
+
+explanations: |
+        Puisque \(5 \equiv 10 \equiv 0 \;[5]\), on a \(5k^2-10k \equiv 0 \;[5]\). Donc \(N \equiv 4 \;[5]\).\\
+        D'autre part, puisque \(10 \equiv 4 \equiv 0 \;[2]\), on a \(-10k+4 \equiv 0 \;[2]\). Donc \(N \equiv 5k^2 \;[2]\). Le cas \(k=2\) (ou tout autre entier pair) montre que l'on peut avoir \(N \equiv 5k^2 \equiv 0 \;[2]\).
+        
+
+---
+author: Arnaud Bodin, Barnabé Croizat, Christine Sacré
+
+section: Arithmétique
+
+subsection: Congruences | Difficile
+
+question: |
+        Soit \(p\) un nombre premier et \(x\) un entier.
+        Quel(s) énoncé(s) du petit théorème de Fermat sont corrects ?
+
+answers: 
+    - value: |
+        \(x^p \equiv p \;[x]\)
+      correct: False
+
+    - value: |
+        \(x^p \equiv x \;[p]\)
+      correct: True
+
+    - value: |
+        Si \(p\) ne divise pas \(x\), alors \(x^{p-1} \equiv 0 \;[x]\)
+      correct: False
+
+    - value: |
+        Si \(p\) ne divise pas \(x\), alors \(x^{p-1} \equiv 0 \;[p]\)
+      correct: False
+
+explanations: |
+        Le théorème de Fermat stipule que \(x^p \equiv x \;[p]\), et que si \(p\) ne divise pas \(x\) alors \(x^{p-1} \equiv 1 \;[p]\).
+        
+
+---
+author: Arnaud Bodin, Barnabé Croizat, Christine Sacré
+
+section: Arithmétique
+
+subsection: Congruences | Difficile
+
+question: |
+        Quelles sont les affirmations vraies ?
+
+answers: 
+    - value: |
+        \(2^8 \equiv 2 \;[8]\)
+      correct: False
+
+    - value: |
+        \(3^{12} \equiv 3 \;[13]\)
+      correct: False
+
+    - value: |
+        \(18^7 \equiv 1 \; [19]\)
+      correct: False
+
+    - value: |
+        \(4^{16} \equiv 1 \; [17]\)
+      correct: True
+
+explanations: |
+        \(8\) n'est pas un nombre premier, le petit théorème de Fermat ne s'applique pas. En fait \(2^8 \equiv 0 \;[8]\) car \(2^3 = 8 \equiv 0 \;[8]\). \\ 
+        Petit théorème de Fermat, avec \(p=13\),  \(3^{12} \equiv 1 \;[13]\). \\
+        \(18^7 \equiv (-1)^7 \equiv -1  \equiv 18 \; [19]\) (le calcul n'a rien à voir avec le petit théorème de Fermat). \\
+        Petit théorème de Fermat, avec \(p=17\),  \(4^{16} \equiv 1 \; [17]\).
+        
+
+---
+author: Arnaud Bodin, Barnabé Croizat, Christine Sacré
+
+section: Arithmétique
+
+subsection: Congruences | Difficile
+
+question: |
+        Soit un entier \(k\) tel que \(k \equiv 2 \;[7]\). Quelles sont les affirmations vraies ?
+
+answers: 
+    - value: |
+        \(2k^2 + k \equiv k^3 \;[7]\)
+      correct: False
+
+    - value: |
+        \(3(k^4-k) \equiv 0 \;[7]\)
+      correct: True
+
+    - value: |
+        \(14k-2 \equiv 5 \;[7]\)
+      correct: True
+
+    - value: |
+        \(k^{18} + k^{12} + k^6 \equiv k \;[7]\)
+      correct: False
+
+explanations: |
+        On calcule que \(k^2 \equiv 4 \;[7]\) ; \(k^3 \equiv 2^3 \equiv 1 \;[7]\) et
+        \(k^4 \equiv 2^4 \equiv 2 \;[7]\). On a alors :\\
+        \(2k^2 + k \equiv 2 \times 2^2 + 2 \equiv 10 \equiv 3 \;[7]\).\\
+        \(k^4 \equiv k \;[7]\) donc \(3(k^4-k) \equiv 3 \times 0 \equiv 0 \;[7]\).\\
+        \(14k \equiv 7 \times 2k \equiv 0 \;[7]\) donc \(14k-2 \equiv -2 \equiv 5 \;[7]\).\\
+        Enfin on a \(k^{18} \equiv k^{12} \equiv k^6 \equiv 1 \;[7]\) (c'est le théorème de Fermat, ou une conséquence directe de \(k^3 \equiv 1 \;[7]\)). Donc 
+        \(k^{18} + k^{12} + k^6 \equiv 3 \;[7]\).
+        
+
+---
+author: Arnaud Bodin, Barnabé Croizat, Christine Sacré
+
+section: Arithmétique
+
+subsection: Congruences | Difficile
+
+question: |
+        Pour quel(s) entier(s) \(n\) a-t-on \(10^{10} \equiv 7^{18} \; [n]\) ?
+
+answers: 
+    - value: |
+        \(n=3\)
+      correct: True
+
+    - value: |
+        \(n=5\)
+      correct: False
+
+    - value: |
+        \(n=7\)
+      correct: False
+
+    - value: |
+        \(n=9\)
+      correct: True
+
+explanations: |
+        On a \(10 \equiv 7 \equiv 1 \;[3]\). Donc \(10^{10} \equiv 1 \equiv 7^{18} \;[3]\).\\
+        \(10 \equiv 0 \;[5]\) donc \(10^{10} \equiv 0 \;[5]\). Mais \(7^{18} \equiv (7^4)^4 \times 7^2 \equiv 1^4 \times 49 \equiv -1 \;[5]\).\\
+        \(7^{18} \equiv 0 \;[7]\) mais \(10^{10} \equiv 3^{10} \equiv 3^6 \times 3^4 \equiv 1 \times 81 \equiv 4 \;[7]\).\\
+        Enfin, on a \(10^{10} \equiv 1^{10} \equiv 1 \;[9]\), et également \(7^{18} \equiv (-2)^{18} \equiv 2^{18} \equiv 8^6 \equiv (-1)^6 \equiv 1 \;[9]\).
+        
+
+---
+author: Arnaud Bodin, Barnabé Croizat, Christine Sacré
+
+section: Arithmétique
+
+subsection: Congruences | Difficile
+
+question: |
+        Quel est le chiffre des unités de \(7^{100}\) ?
+
+answers: 
+    - value: |
+        \(1\)
+      correct: True
+
+    - value: |
+        \(3\)
+      correct: False
+
+    - value: |
+        \(5\)
+      correct: False
+
+    - value: |
+        \(9\)
+      correct: False
+
+explanations: |
+        Le chiffre des unités est donné par la congruence modulo \(10\).\\
+        Puisque \(7^2 = 49 \equiv (-1) \;[10]\), on a :
+        \[ 7^{100} = (7^2)^{50} \equiv (-1)^{50} \equiv 1 \;[10]\]
+        
+

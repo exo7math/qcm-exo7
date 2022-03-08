@@ -10,6 +10,8 @@ Vous trouverez ici deux choses :
 
 Nouvautés
 =========
+
+* 163 nouvelles questions (issu d'un projet Hilisit-Unisciel transition lycée-université) sur les chapitres "Logique", "Arithmétique" et "Équations différentielles". (A. Bodin, B. Croizat, C. Sacré, mars 2022).
 * Afficher les réponses sur deux colonnes (Vincent Ledda, janvier 2021)
 * Conversion vers le format 'latex-moodle' afin de compiler directement du code Latex vers un export moodle via le package 'moodle' (https://ctan.org/pkg/moodle) (janvier 2021)
 * Les 720 questions de Lille sont directement disponibles au format 'yaml' et 'latex-moodle' (janvier 2021).
@@ -26,6 +28,11 @@ Questions
   - [Questions](https://github.com/exo7math/qcm-exo7/blob/master/questions-lille-2/qcm-lille-2.pdf)
   - [Questions corrigées](https://github.com/exo7math/qcm-exo7/blob/master/questions-lille-2/qcm-lille-2-correc.pdf)
   - par Abdellah Hanani, Mohamed Mzari de l'université de Lille
+
+  * 163 questions sur les chapitres "Logique", "Arithmétique" et "Équations différentielles". 
+   - [Questions](https://github.com/exo7math/qcm-exo7/blob/master/questions-hilisit/qcm-hilisit.pdf)
+  - [Questions corrigées](https://github.com/exo7math/qcm-exo7/blob/master/questions-hilisit/qcm-hilisit.pdf)   
+    - par A. Bodin, B. Croizat, C. Sacré, université de Lille.
 
 * 46 questions de probabilité niveau L1
   - [Questions](https://github.com/exo7math/qcm-exo7/blob/master/questions-probabilites-worms/qcm-worms.pdf)
